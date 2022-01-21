@@ -26,10 +26,13 @@
 <script>
     // Initialize all input of date type.
     var defaultOptions = {
+        type: 'date',
+        displayMode: 'inline',
         color: 'primary',
+        showHeader: false,
         isRange: false,
         allowSameDayRange: true,
-        lang: 'en-US',
+        lang: 'fr',
         startDate: undefined,
         endDate: undefined,
         minDate: null,
@@ -42,6 +45,8 @@
         enableMonthSwitch: true,
         enableYearSwitch: true,
         displayYearsCount: 50,
+        todayLabel: 'Aujourd\'hui',
+        showClearButton: false,
     };
     const calendars = bulmaCalendar.attach('[type="date"]', defaultOptions);
 
