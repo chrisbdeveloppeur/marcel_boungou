@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+
+    {% block stylesheets %}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-calendar@6.1.14/dist/css/bulma-calendar.min.css">
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
+</head>
+<body>
+{% block body %}{% endblock %}
+</body>
+</html>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bulma-calendar@6.1.14/dist/js/bulma-calendar.min.js"></script>
+<script>
+    // Initialize all input of date type.
+    var defaultOptions = {
+        color: 'primary',
+        isRange: false,
+        allowSameDayRange: true,
+        lang: 'en-US',
+        startDate: undefined,
+        endDate: undefined,
+        minDate: null,
+        maxDate: null,
+        disabledDates: [],
+        disabledWeekDays: undefined,
+        highlightedDates: [],
+        weekStart: 0,
+        dateFormat: 'MM/dd/yyyy',
+        enableMonthSwitch: true,
+        enableYearSwitch: true,
+        displayYearsCount: 50,
+    };
+    const calendars = bulmaCalendar.attach('[type="date"]', defaultOptions);
+
+    // Loop on each calendar initialized
+    calendars.forEach(calendar => {
+        // Add listener to select event
+        calendar.on('select', date => {
+            console.log(date);
+        });
+    });
+
+    // To access to bulmaCalendar instance of an element
+    const element = document.querySelector('#my-element');
+    if (element) {
+        // bulmaCalendar instance is available as element.bulmaCalendar
+        element.bulmaCalendar.on('select', datepicker => {
+            console.log(datepicker.data.value());
+        });
+    }
+
+</script>
+
+
+
