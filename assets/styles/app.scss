@@ -1,5 +1,19 @@
+$info: #3488CE;
 
+//button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.datepicker-nav-previous:active, button.datepicker-nav-previous:focus{
+//  background: rgba(255,255,255,.3) !important;
+//}
+.datepicker > *{
+  transition: .5s;
+}
+.datetimepicker-footer-today{
+  background: $info !important;
+}
 
+.datepicker-year.is-active, .datepicker-month.is-active{
+  background: $info !important;
+  border-color: $info !important;
+}
 
 @import "~bulma";
 @import "~bulma-calendar";

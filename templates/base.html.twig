@@ -28,8 +28,8 @@
     var defaultOptions = {
         type: 'date',
         displayMode: 'inline',
-        color: 'primary',
-        showHeader: false,
+        color: 'info',
+        showHeader: true,
         isRange: false,
         allowSameDayRange: true,
         lang: 'fr',
@@ -41,12 +41,14 @@
         disabledWeekDays: undefined,
         highlightedDates: [],
         weekStart: 0,
-        dateFormat: 'MM/dd/yyyy',
-        enableMonthSwitch: true,
-        enableYearSwitch: true,
+        dateFormat: 'dd/MM/yyyy',
+        enableMonthSwitch: false,
+        enableYearSwitch: false,
         displayYearsCount: 50,
         todayLabel: 'Aujourd\'hui',
         showClearButton: false,
+        showButtons: false,
+        showTodayButton: false,
     };
     const calendars = bulmaCalendar.attach('[type="date"]', defaultOptions);
 
