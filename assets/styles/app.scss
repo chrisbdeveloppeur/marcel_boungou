@@ -1,8 +1,13 @@
-$info: #3488CE;
 
-//button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.datepicker-nav-previous:active, button.datepicker-nav-previous:focus{
-//  background: rgba(255,255,255,.3) !important;
-//}
+$link: #3488CE;
+$info: #DA4600;
+$primary: #7C4A8C;
+
+
+
+button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.datepicker-nav-previous:active, button.datepicker-nav-previous:focus{
+  background: rgba(255,255,255,.3) !important;
+}
 .datepicker > *{
   transition: .5s;
 }
@@ -18,4 +23,3 @@ $info: #3488CE;
 @import "~bulma";
 @import "~bulma-calendar";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
-

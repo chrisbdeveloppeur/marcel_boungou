@@ -25,21 +25,27 @@
 <script src="https://cdn.jsdelivr.net/npm/bulma-calendar@6.1.14/dist/js/bulma-calendar.min.js"></script>
 <script>
     // Initialize all input of date type.
+    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    var today  = new Date();
+    var hightlightsDates = ['25/01/2022'];
+
+    console.log(today.toLocaleDateString("fr-FR"));
+
     var defaultOptions = {
         type: 'date',
         displayMode: 'inline',
-        color: 'info',
+        color: 'primary',
         showHeader: true,
         isRange: false,
         allowSameDayRange: true,
         lang: 'fr',
-        startDate: undefined,
+        startDate: today,
         endDate: undefined,
         minDate: null,
         maxDate: null,
         disabledDates: [],
         disabledWeekDays: undefined,
-        highlightedDates: [],
+        highlightedDates: hightlightsDates,
         weekStart: 0,
         dateFormat: 'dd/MM/yyyy',
         enableMonthSwitch: false,
