@@ -7,17 +7,17 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/", name="home_")
+ * @Route("/biography", name="biography_")
  */
-class HomeController extends AbstractController
+class BiographyController extends AbstractController
 {
     /**
-     * @Route("/", name="index")
+     * @Route("/index", name="index")
      */
     public function index(): Response
     {
-        return $this->render('includes/calendar.html.twig', [
-            'controller_name' => 'HomeController',
+        return $this->render('biography/index.html.twig', [
+            'controller_name' => 'BiographyController',
         ]);
     }
 }

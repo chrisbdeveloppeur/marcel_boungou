@@ -1,0 +1,11 @@
+<div class="px-3 py-3 is-flex is-align-items-center box-shadow-bulma" id="header">
+
+    <div class="level-right">
+        {% for locale in locales %}
+            <a href="{{ path('change_locale', {'locale': locale }) }}" class="button is-small">
+                {{ locale }}
+            </a>
+        {% endfor %}
+    </div>
+
+</div>

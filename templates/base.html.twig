@@ -17,12 +17,19 @@
     {% endblock %}
 </head>
 <body>
-{% for locale in locales %}
-    <a href="{{ path('change_locale', {'locale': locale }) }}" class="button is-small">
-        {{ locale }}
-    </a>
-{% endfor %}
-{% block body %}{% endblock %}
+
+{% block header %}
+    {{ include('includes/header.html.twig') }}
+{% endblock %}
+
+<section class="body">
+    {% block body %}{% endblock %}
+</section>
+
+{% block footer %}
+    {{ include('includes/footer.html.twig') }}
+{% endblock %}
+
 </body>
 </html>
 
