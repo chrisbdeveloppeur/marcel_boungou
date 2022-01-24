@@ -43,8 +43,10 @@
 {#     BULMA CALENDAR     #}
 <script src="https://cdn.jsdelivr.net/npm/bulma-calendar@6.1.14/dist/js/bulma-calendar.min.js"></script>
 <script>
-    // Initialize all input of date type.
+
     var today  = new Date();
+    var yesterday = new Date();
+    yesterday.setDate(today.getDate() - 1);
     var highlightsDates = [];
 
     {% if highlights_dates is defined %}
@@ -71,7 +73,7 @@
         lang: '{{ app.request.locale }}',
         startDate: today,
         endDate: undefined,
-        minDate: today,
+        minDate: yesterday,
         maxDate: null,
         disabledDates: [],
         disabledWeekDays: undefined,
@@ -94,7 +96,7 @@
     calendars.forEach(calendar => {
         // Add listener to select event
         calendar.on('select', date => {
-            console.log(date);
+            //console.log(date);
         });
     });
 
@@ -103,7 +105,13 @@
     if (element) {
         // bulmaCalendar instance is available as element.bulmaCalendar
         element.bulmaCalendar.on('select', datepicker => {
-            console.log(datepicker.data.value());
+            selectedDate = datepicker.data.value();
+            console.log(selectedDate);
+            highlightsDates.forEach(function (highlight) {
+                if (highlight === selectedDate){
+                    console.log('This is an Highlight !');
+                }
+            })
         });
     }
 
