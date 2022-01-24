@@ -52,6 +52,12 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   border-color: $info !important;
 }
 
+.highlight-info{
+  background: $primary;
+  min-height: 50px;
+  width: 320px;
+}
+
 @import "~bulma";
 @import "~bulma-calendar";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";

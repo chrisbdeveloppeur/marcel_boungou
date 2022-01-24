@@ -105,10 +105,14 @@
     if (element) {
         // bulmaCalendar instance is available as element.bulmaCalendar
         element.bulmaCalendar.on('select', datepicker => {
+            let highlightsInfos = document.querySelectorAll('.highlight-info');
+            highlightsInfos.forEach(highlight => highlight.classList.add('is-hidden'));
             selectedDate = datepicker.data.value();
             console.log(selectedDate);
             highlightsDates.forEach(function (highlight) {
                 if (highlight === selectedDate){
+                    let highlightInfoId = document.getElementById(highlight);
+                    highlightInfoId.classList.remove('is-hidden');
                     console.log('This is an Highlight !');
                 }
             })

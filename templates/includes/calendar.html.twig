@@ -3,7 +3,14 @@
 {% block title %}Hello HomeController!{% endblock %}
 
 {% block body %}
-    <div class="container is-flex is-justify-content-center is-align-items-center has-background-danger-light is-100vh">
+    <div class="container is-flex is-flex-direction-column is-justify-content-center is-align-items-center has-background-danger-light is-100vh is-relative">
         <input type="date" class="bulma-calendar is-small" id="my-element">
+        {% if highlights_dates is defined %}
+            {% for highlight_date in highlights_dates %}
+                <div class="highlight-info is-hidden has-text-light px-3 py-3" id="{{ highlight_date }}">
+                    HIGHLIGHT ! {{ highlight_date }}
+                </div>
+            {% endfor %}
+        {% endif %}
     </div>
 {% endblock %}
