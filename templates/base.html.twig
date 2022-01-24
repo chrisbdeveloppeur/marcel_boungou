@@ -25,6 +25,11 @@
 <section class="body">
     {% block body %}{% endblock %}
 </section>
+{% if hightlights_dates is defined %}
+{% for hightlight_date in hightlights_dates %}
+    {{ hightlight_date }}
+{% endfor %}
+{% endif %}
 
 {% block footer %}
     {{ include('includes/footer.html.twig') }}
@@ -34,15 +39,27 @@
 </html>
 
 
+
+{#     BULMA CALENDAR     #}
 <script src="https://cdn.jsdelivr.net/npm/bulma-calendar@6.1.14/dist/js/bulma-calendar.min.js"></script>
 <script>
     // Initialize all input of date type.
-    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     var today  = new Date();
-    var hightlightsDates = ['25/01/2022'];
+    var hightlightsDates = [];
 
-    console.log(today.toLocaleDateString("fr-FR"));
-    console.log();
+    {% if hightlights_dates is defined %}
+        let date;
+        {% for hightlight_date in hightlights_dates %}
+            date = '{{ hightlight_date }}';
+            hightlightsDates.push(date);
+        {% endfor %}
+    {% else %}
+        hightlightsDates = false;
+    {% endif %}
+
+
+    //console.log(today.toLocaleDateString("fr-FR"));
+    console.log(hightlightsDates);
 
     var defaultOptions = {
         type: 'date',
@@ -69,6 +86,8 @@
         showButtons: false,
         showTodayButton: false,
     };
+
+
     const calendars = bulmaCalendar.attach('[type="date"]', defaultOptions);
 
     // Loop on each calendar initialized
