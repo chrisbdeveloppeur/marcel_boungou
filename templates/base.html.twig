@@ -45,21 +45,21 @@
 <script>
     // Initialize all input of date type.
     var today  = new Date();
-    var hightlightsDates = [];
+    var highlightsDates = [];
 
-    {% if hightlights_dates is defined %}
+    {% if highlights_dates is defined %}
         let date;
-        {% for hightlight_date in hightlights_dates %}
-            date = '{{ hightlight_date }}';
-            hightlightsDates.push(date);
+        {% for highlight_date in highlights_dates %}
+            date = '{{ highlight_date }}';
+            highlightsDates.push(date);
         {% endfor %}
     {% else %}
-        hightlightsDates = false;
+        highlightsDates = false;
     {% endif %}
 
 
     //console.log(today.toLocaleDateString("fr-FR"));
-    console.log(hightlightsDates);
+    //console.log(hightlightsDates);
 
     var defaultOptions = {
         type: 'date',
@@ -75,7 +75,7 @@
         maxDate: null,
         disabledDates: [],
         disabledWeekDays: undefined,
-        highlightedDates: hightlightsDates,
+        highlightedDates: highlightsDates,
         weekStart: 0,
         dateFormat: 'dd/MM/yyyy',
         enableMonthSwitch: false,
@@ -106,6 +106,7 @@
             console.log(datepicker.data.value());
         });
     }
+
 
 </script>
 

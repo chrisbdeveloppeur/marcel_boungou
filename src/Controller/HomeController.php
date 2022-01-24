@@ -17,9 +17,9 @@ class HomeController extends AbstractController
      */
     public function index(): Response
     {
-        $hightlights_dates = [strval(date("d/m/Y", time() - 60 * 60 * 24)),strval(date("d/m/Y", time() + 60 * 60 * 24))];
+        $highlights_dates = [strval(date("d/m/Y", time() - 60 * 60 * 24)),strval(date("d/m/Y", time() + 60 * 60 * 24))];
         return $this->render('includes/calendar.html.twig', [
-            'hightlights_dates' => $hightlights_dates,
+            'highlights_dates' => $highlights_dates,
         ]);
     }
 }
