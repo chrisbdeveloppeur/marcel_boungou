@@ -8,5 +8,11 @@
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.scss';
 
+const fr_flag = require('./images/svg/fr.svg');
+const en_flag = require('./images/svg/en.svg');
+
 // start the Stimulus application
 import './bootstrap';
+
+
+
