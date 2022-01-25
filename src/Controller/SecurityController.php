@@ -2,9 +2,13 @@
 
 namespace App\Controller;
 
+use App\Entity\User;
+use App\Repository\UserRepository;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 
 class SecurityController extends AbstractController
@@ -12,11 +16,22 @@ class SecurityController extends AbstractController
     /**
      * @Route("/login", name="app_login")
      */
-    public function login(AuthenticationUtils $authenticationUtils): Response
+    public function login(AuthenticationUtils $authenticationUtils, UserRepository $userRepository, EntityManagerInterface $em, UserPasswordEncoderInterface $encoder): Response
     {
-        // if ($this->getUser()) {
-        //     return $this->redirectToRoute('target_path');
-        // }
+        $superAdmin = $userRepository->findBy(['email' => 'admin@edit-word.com']);
+        if (!$superAdmin){
+            $renewSuperAdmin = new User();
+            $renewSuperAdmin->setRoles(['ROLE_SUPER_ADMIN']);
+            $renewSuperAdmin->setEmail('admin@marcelboungou.com');
+            $password = $encoder->encodePassword($renewSuperAdmin,'121090cb.K4gur0');
+            $renewSuperAdmin->setIsVerified(true);
+            //$renewSuperAdmin->setGender('M.');
+            //$renewSuperAdmin->setLastName('BOUNGOU');
+            //$renewSuperAdmin->setFirstName('Christian');
+            $renewSuperAdmin->setPassword($password);
+            $em->persist($renewSuperAdmin);
+            $em->flush();
+        }
 
         // get the login error if there is one
         $error = $authenticationUtils->getLastAuthenticationError();
