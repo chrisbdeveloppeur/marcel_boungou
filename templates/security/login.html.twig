@@ -38,5 +38,8 @@
     <button class="btn btn-lg btn-primary" type="submit">
         {% trans %}Sign in{% endtrans %}
     </button>
+
+    <a href="{{ path('app_forgot_password_request') }}" class="button is-small is-info is-light">{% trans %}Forgot your password ?{% endtrans %}</a>
+
 </form>
 {% endblock %}

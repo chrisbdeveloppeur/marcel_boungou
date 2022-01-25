@@ -41,6 +41,50 @@
         <source>Sign in</source>
         <target>Se connecter</target>
       </trans-unit>
+      <trans-unit id="U28cTzJ" resname="Password Reset Email Sent">
+        <source>Password Reset Email Sent</source>
+        <target>__Password Reset Email Sent</target>
+      </trans-unit>
+      <trans-unit id="FmrMHS6" resname="If an account matching your email exists, then an email was just sent that contains a link that you can use to reset your password.">
+        <source>If an account matching your email exists, then an email was just sent that contains a link that you can use to reset your password.</source>
+        <target>__If an account matching your email exists, then an email was just sent that contains a link that you can use to reset your password.</target>
+      </trans-unit>
+      <trans-unit id="87wG9uu" resname="This link will expire in">
+        <source>This link will expire in</source>
+        <target>__This link will expire in</target>
+      </trans-unit>
+      <trans-unit id="bs9avOq" resname="If you don't receive an email please check your spam folder or">
+        <source>If you don't receive an email please check your spam folder or</source>
+        <target>__If you don't receive an email please check your spam folder or</target>
+      </trans-unit>
+      <trans-unit id="W13t7jL" resname="try again">
+        <source>try again</source>
+        <target>__try again</target>
+      </trans-unit>
+      <trans-unit id="WfpDeb4" resname="Reset your password">
+        <source>Reset your password</source>
+        <target>__Reset your password</target>
+      </trans-unit>
+      <trans-unit id="TKRt6tu" resname="Enter your email address and we will send you a">
+        <source>Enter your email address and we will send you a</source>
+        <target>__Enter your email address and we will send you a</target>
+      </trans-unit>
+      <trans-unit id="o28hBFw" resname="link to reset your password.">
+        <source>link to reset your password.</source>
+        <target>__link to reset your password.</target>
+      </trans-unit>
+      <trans-unit id="y2XxXvP" resname="Send password reset email">
+        <source>Send password reset email</source>
+        <target>__Send password reset email</target>
+      </trans-unit>
+      <trans-unit id="4O3_s6c" resname="Reset password">
+        <source>Reset password</source>
+        <target>__Reset password</target>
+      </trans-unit>
+      <trans-unit id="wzmr1yx" resname="Forgot your password ?">
+        <source>Forgot your password ?</source>
+        <target>__Forgot your password ?</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
