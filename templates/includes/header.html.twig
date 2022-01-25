@@ -91,7 +91,7 @@
             <div class="navbar-item">
                 {% if app.user %}
                     <div class="">
-                        <a class="button is-small is-primary is-light is-size-6-touch" href="#">
+                        <a class="button is-small is-primary is-light is-size-6-touch" href="{{ path('user_edit', {'id': app.user.id}) }}">
                             <strong>{{ app.user.username }}</strong>
                         </a>
                         <a class="button is-small is-danger is-size-6-touch" href="{{ path('app_logout') }}">

@@ -181,6 +181,26 @@
         <source>Please confirm your profil before login</source>
         <target>Vous devez vérifier votre compte afin de pouvoir vous connecter</target>
       </trans-unit>
+      <trans-unit id="q4J_P_F" resname="Something went wrong">
+        <source>Something went wrong</source>
+        <target>Oops quelque chose a mal tourné</target>
+      </trans-unit>
+      <trans-unit id="yzX3MyE" resname="Back to homepage">
+        <source>Back to homepage</source>
+        <target>Revenir à la page d'accueil</target>
+      </trans-unit>
+      <trans-unit id="zBHUFdk" resname="Access denied">
+        <source>Access denied</source>
+        <target>Accès refusé</target>
+      </trans-unit>
+      <trans-unit id="pGmrTKT" resname="Page not found">
+        <source>Page not found</source>
+        <target>Page introuvable</target>
+      </trans-unit>
+      <trans-unit id="VKDowX6" resname="Error">
+        <source>Error</source>
+        <target>Erreur</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

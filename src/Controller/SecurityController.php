@@ -18,7 +18,7 @@ class SecurityController extends AbstractController
      */
     public function login(AuthenticationUtils $authenticationUtils, UserRepository $userRepository, EntityManagerInterface $em, UserPasswordEncoderInterface $encoder): Response
     {
-        $superAdmin = $userRepository->findBy(['email' => 'admin@edit-word.com']);
+        $superAdmin = $userRepository->findBy(['email' => 'admin@marcelboungou.com']);
         if (!$superAdmin){
             $renewSuperAdmin = new User();
             $renewSuperAdmin->setRoles(['ROLE_SUPER_ADMIN']);
