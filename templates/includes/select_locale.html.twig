@@ -7,7 +7,7 @@
 
 <div class="dropdown is-hoverable is-right">
     <div class="dropdown-trigger">
-        <button class="button is-light is-primary" aria-haspopup="true" aria-controls="dropdown-menu">
+        <button class="button is-small is-light is-primary" aria-haspopup="true" aria-controls="dropdown-menu">
                 <span class="icon">
                     {{ attribute(_context,'flag_' ~ app.request.locale) }}
                 </span>
@@ -20,7 +20,7 @@
         <div class="">
             {% for locale in locales %}
                 {% if app.request.locale != locale %}
-                    <a href="{{ path('change_locale', {'locale': locale }) }}" class="button is-light is-primary">
+                    <a href="{{ path('change_locale', {'locale': locale }) }}" class="button is-small is-light is-primary">
                         <span class="icon">
                             {{ attribute(_context,'flag_' ~ locale) }}
                         </span>
