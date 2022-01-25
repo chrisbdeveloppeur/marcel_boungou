@@ -101,6 +101,46 @@
         <source>Log in</source>
         <target>Connexion</target>
       </trans-unit>
+      <trans-unit id="0Aqua3_" resname="Shop">
+        <source>Shop</source>
+        <target>Boutique</target>
+      </trans-unit>
+      <trans-unit id="jRT25y3" resname="Events">
+        <source>Events</source>
+        <target>Événements</target>
+      </trans-unit>
+      <trans-unit id="01cXXP6" resname="Media">
+        <source>Media</source>
+        <target>Médiathèque</target>
+      </trans-unit>
+      <trans-unit id="thYciDT" resname="Discography">
+        <source>Discography</source>
+        <target>Discographie</target>
+      </trans-unit>
+      <trans-unit id="nyjfr.j" resname="Bibliography">
+        <source>Bibliography</source>
+        <target>Bibliographie</target>
+      </trans-unit>
+      <trans-unit id="NSz8dJ5" resname="Gallery">
+        <source>Gallery</source>
+        <target>Galerie</target>
+      </trans-unit>
+      <trans-unit id="tVQJBtq" resname="MB Ministry">
+        <source>MB Ministry</source>
+        <target>MB Ministry</target>
+      </trans-unit>
+      <trans-unit id="lC2_2pF" resname="Biography">
+        <source>Biography</source>
+        <target>Biographie</target>
+      </trans-unit>
+      <trans-unit id="K1w9JnI" resname="Contact">
+        <source>Contact</source>
+        <target>Contact</target>
+      </trans-unit>
+      <trans-unit id="XatQK.u" resname="Partners">
+        <source>Partners</source>
+        <target>Partenaires</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
