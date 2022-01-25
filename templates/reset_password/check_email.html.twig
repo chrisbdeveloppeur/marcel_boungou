@@ -7,5 +7,6 @@
         {% trans %}If an account matching your email exists, then an email was just sent that contains a link that you can use to reset your password.{% endtrans %}
         {% trans %}This link will expire in{% endtrans %} {{ resetToken.expirationMessageKey|trans(resetToken.expirationMessageData, 'ResetPasswordBundle') }}.
     </p>
-    <p>{% trans %}If you don't receive an email please check your spam folder or {% endtrans %}<a href="{{ path('app_forgot_password_request') }}">{% trans %}try again{% endtrans %}</a>.</p>
+    <p>{% trans %}If you don't receive an email please check your spam folder or {% endtrans %}</p>
+    <a href="{{ path('app_forgot_password_request') }}">{% trans %}try again{% endtrans %}</a>.
 {% endblock %}

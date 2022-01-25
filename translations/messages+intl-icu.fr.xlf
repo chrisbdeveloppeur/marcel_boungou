@@ -89,6 +89,18 @@
         <source>Enter your email address and we will send you a link to reset your password.</source>
         <target>Indiquer votre mail de récupération afin de vous envoyer un lien pour redéfinir votre mot de passe</target>
       </trans-unit>
+      <trans-unit id="OnhpU4i" resname="Home">
+        <source>Home</source>
+        <target>Accueil</target>
+      </trans-unit>
+      <trans-unit id="XiuOllA" resname="Sign up">
+        <source>Sign up</source>
+        <target>S'enregistrer</target>
+      </trans-unit>
+      <trans-unit id="wYmEDPf" resname="Log in">
+        <source>Log in</source>
+        <target>Connexion</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

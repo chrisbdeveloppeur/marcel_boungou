@@ -1,11 +1,98 @@
+{#
 <div class="px-3 py-3 is-flex is-align-items-center is-justify-content-space-between box-shadow-bulma" id="header">
 
     <div id="logo">
-        <a href="" class="has-text-light">
+        <a href="{{ path('home_index') }}" class="has-text-light">
             Logo
         </a>
     </div>
 
-    {{ include('includes/select_locale.html.twig') }}
+    <div class="header-end is-flex is-justify-content-space-evenly is-align-items-center">
+        {% if app.user %}
+            <span class="tags has-addons">
+                <a href="#" class="tag">
+                    {{ app.user.username }}
+                </a>
+                <a class="tag is-danger" href="{{ path('app_logout') }}">{% trans %}Logout{% endtrans %}</a>
+            </span>
+        {% endif %}
+        {{ include('includes/select_locale.html.twig') }}
+    </div>
 
 </div>
+#}
+
+<nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a href="{{ path('home_index') }}" class="navbar-item has-text-light">
+            Logo
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="{{ path('home_index') }}">
+                {% trans %}Home{% endtrans %}
+            </a>
+
+            <a class="navbar-item">
+                Documentation
+            </a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    More
+                </a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                        About
+                    </a>
+                    <a class="navbar-item">
+                        Jobs
+                    </a>
+                    <a class="navbar-item">
+                        Contact
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                        Report an issue
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                {% if app.user %}
+                    <div class="buttons has-addons">
+                        <a class="button is-primary is-light" href="#">
+                            <strong>{{ app.user.username }}</strong>
+                        </a>
+                        <a class="button is-danger" href="{{ path('app_logout') }}">
+                            {% trans %}Logout{% endtrans %}
+                        </a>
+                    </div>
+                {% else %}
+                    <div class="buttons">
+                        <a class="button is-primary" href="{{ path('app_register') }}">
+                            <strong>{% trans %}Sign up{% endtrans %}</strong>
+                        </a>
+                        <a class="button is-light" href="{{ path('app_login') }}">
+                            {% trans %}Log in{% endtrans %}
+                        </a>
+                    </div>
+                {% endif %}
+            </div>
+            <div class="navbar-item">
+                {{ include('includes/select_locale.html.twig') }}
+            </div>
+        </div>
+    </div>
+</nav>
