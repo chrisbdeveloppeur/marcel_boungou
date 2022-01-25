@@ -1,6 +1,6 @@
 
 $link: #3488CE;
-$info: #DA4600;
+$success: #DA4600;
 $primary: #7C4A8C;
 
 $dropdown-menu-min-width: 0;
@@ -51,12 +51,12 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   transition: .5s;
 }
 .datetimepicker-footer-today{
-  background: $info !important;
+  background: $success !important;
 }
 
 .datepicker-year.is-active, .datepicker-month.is-active{
-  background: $info !important;
-  border-color: $info !important;
+  background: $success !important;
+  border-color: $success !important;
 }
 
 .highlight-info{

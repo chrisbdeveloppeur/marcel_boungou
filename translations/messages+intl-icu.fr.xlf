@@ -157,6 +157,30 @@
         <source>charachters</source>
         <target>charachters</target>
       </trans-unit>
+      <trans-unit id="vSTb9IR" resname="Hi! Please confirm your email!">
+        <source>Hi! Please confirm your email!</source>
+        <target>Hello! Merci de confirmer ton adresse Email!</target>
+      </trans-unit>
+      <trans-unit id="nZPB._o" resname="Please confirm your email address by clicking the following link">
+        <source>Please confirm your email address by clicking the following link</source>
+        <target>Confirmer mon adresse Email en cliquant sur le lien suivant</target>
+      </trans-unit>
+      <trans-unit id="ITaQX9q" resname="Confirm my Email">
+        <source>Confirm my Email</source>
+        <target>Confirmation par mail</target>
+      </trans-unit>
+      <trans-unit id="F7WctIl" resname="Cheers!">
+        <source>Cheers!</source>
+        <target>A bientot !</target>
+      </trans-unit>
+      <trans-unit id="NfVEJmi" resname="A confirmation mail as been send to : ">
+        <source>A confirmation mail as been send to : </source>
+        <target>Un mail de confirmation vient d'être envoyer à : </target>
+      </trans-unit>
+      <trans-unit id="r2mAPvY" resname="Please confirm your profil before login">
+        <source>Please confirm your profil before login</source>
+        <target>Vous devez vérifier votre compte afin de pouvoir vous connecter</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
