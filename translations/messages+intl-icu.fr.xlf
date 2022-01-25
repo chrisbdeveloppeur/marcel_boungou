@@ -141,6 +141,22 @@
         <source>Partners</source>
         <target>Partenaires</target>
       </trans-unit>
+      <trans-unit id="wB0OBR." resname="You should agree to our terms">
+        <source>You should agree to our terms</source>
+        <target>Vous devez accepter les termes</target>
+      </trans-unit>
+      <trans-unit id="YXZ26gK" resname="Please enter a password">
+        <source>Please enter a password</source>
+        <target>Veuillez entrer un mot de passe</target>
+      </trans-unit>
+      <trans-unit id="3GG3iDl" resname="Your password should be at least ">
+        <source>Your password should be at least </source>
+        <target>Votre mot de passe doit contenir au moins </target>
+      </trans-unit>
+      <trans-unit id="SpNH3_g" resname="charachters">
+        <source>charachters</source>
+        <target>charachters</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
