@@ -43,47 +43,51 @@
       </trans-unit>
       <trans-unit id="U28cTzJ" resname="Password Reset Email Sent">
         <source>Password Reset Email Sent</source>
-        <target>__Password Reset Email Sent</target>
+        <target>Mail de réinitilisation du mot de passe envoyer</target>
       </trans-unit>
       <trans-unit id="FmrMHS6" resname="If an account matching your email exists, then an email was just sent that contains a link that you can use to reset your password.">
         <source>If an account matching your email exists, then an email was just sent that contains a link that you can use to reset your password.</source>
-        <target>__If an account matching your email exists, then an email was just sent that contains a link that you can use to reset your password.</target>
+        <target>Si un compte correspondant à votre adresse e-mail existe, un e-mail vient d'être envoyé contenant un lien que vous pouvez utiliser pour réinitialiser votre mot de passe.</target>
       </trans-unit>
       <trans-unit id="87wG9uu" resname="This link will expire in">
         <source>This link will expire in</source>
-        <target>__This link will expire in</target>
+        <target>Ce lien expire dans</target>
       </trans-unit>
       <trans-unit id="bs9avOq" resname="If you don't receive an email please check your spam folder or">
         <source>If you don't receive an email please check your spam folder or</source>
-        <target>__If you don't receive an email please check your spam folder or</target>
+        <target>Si vous ne recevez pas de mail, veuillez vérifier vos SPAM</target>
       </trans-unit>
       <trans-unit id="W13t7jL" resname="try again">
         <source>try again</source>
-        <target>__try again</target>
+        <target>Renvoyer le mail</target>
       </trans-unit>
       <trans-unit id="WfpDeb4" resname="Reset your password">
         <source>Reset your password</source>
-        <target>__Reset your password</target>
+        <target>Réinitialiser votre mot de passe</target>
       </trans-unit>
       <trans-unit id="TKRt6tu" resname="Enter your email address and we will send you a">
         <source>Enter your email address and we will send you a</source>
-        <target>__Enter your email address and we will send you a</target>
+        <target>Indiquer votre mail de récupération afin de vous envoyer un</target>
       </trans-unit>
       <trans-unit id="o28hBFw" resname="link to reset your password.">
         <source>link to reset your password.</source>
-        <target>__link to reset your password.</target>
+        <target>Redéfinir mon mot de passe.</target>
       </trans-unit>
       <trans-unit id="y2XxXvP" resname="Send password reset email">
         <source>Send password reset email</source>
-        <target>__Send password reset email</target>
+        <target>Envoyer un mail de réinitialisation du mot de passe</target>
       </trans-unit>
       <trans-unit id="4O3_s6c" resname="Reset password">
         <source>Reset password</source>
-        <target>__Reset password</target>
+        <target>Réinitiliser mon mot de passe</target>
       </trans-unit>
       <trans-unit id="wzmr1yx" resname="Forgot your password ?">
         <source>Forgot your password ?</source>
-        <target>__Forgot your password ?</target>
+        <target>Mot de passe oublié ?</target>
+      </trans-unit>
+      <trans-unit id="INrYpr8" resname="Enter your email address and we will send you a link to reset your password.">
+        <source>Enter your email address and we will send you a link to reset your password.</source>
+        <target>Indiquer votre mail de récupération afin de vous envoyer un lien pour redéfinir votre mot de passe</target>
       </trans-unit>
     </body>
   </file>
