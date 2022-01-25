@@ -12,7 +12,6 @@ body{
 }
 
 section.body{
-  //padding-top: 4em;
   min-height: inherit;
 }
 
@@ -25,13 +24,14 @@ section.body{
   top: 0;
   z-index: 5;
 }
-*/
+
 #footer{
   width: 100%;
   min-height: 6em;
   background: $primary;
   position: relative;
 }
+*/
 
 .is-100vh{
   height: 100vh;
