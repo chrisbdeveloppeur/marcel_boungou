@@ -285,6 +285,14 @@
         <source>Your password has correctly been changed !</source>
         <target>Votre mot de passe a bien été modifié !</target>
       </trans-unit>
+      <trans-unit id="haeel.s" resname="Changes have been made">
+        <source>Changes have been made</source>
+        <target>Des modifications ont été apportées</target>
+      </trans-unit>
+      <trans-unit id=".1nEsCO" resname="Saved account information">
+        <source>Saved account information</source>
+        <target>Informations de compte enregistrées</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

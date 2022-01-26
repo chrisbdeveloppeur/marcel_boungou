@@ -11,12 +11,19 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Contracts\Translation\TranslatorInterface;
 
 /**
  * @Route("/user")
  */
 class UserController extends AbstractController
 {
+    private $translator;
+    public function __construct(TranslatorInterface $translator)
+    {
+        $this->translator = $translator;
+    }
+
     /**
      * @Route("/", name="user_index", methods={"GET"})
      * @Security("is_granted('ROLE_SUPER_ADMIN')", statusCode=403, message="Access denied !")
@@ -66,7 +73,7 @@ class UserController extends AbstractController
      * @Route("/{id}/edit", name="user_edit", methods={"GET", "POST"})
      * @Security("user.getId() == id || is_granted('ROLE_SUPER_ADMIN')", statusCode=403, message="Access denied !")
      */
-    public function edit(Request $request, User $user, EntityManagerInterface $entityManager): Response
+    public function edit(Request $request, User $user, EntityManagerInterface $entityManager, $id): Response
     {
         $form = $this->createForm(UserType::class, $user);
         $form->handleRequest($request);
@@ -74,7 +81,9 @@ class UserController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
 
-            return $this->redirectToRoute('user_index', [], Response::HTTP_SEE_OTHER);
+            $msg = $this->translator->trans('Saved account information');
+            $this->addFlash('success', $msg);
+            return $this->redirectToRoute('user_edit', ['id' => $id], Response::HTTP_SEE_OTHER);
         }
 
         return $this->render('user/edit.html.twig', [
