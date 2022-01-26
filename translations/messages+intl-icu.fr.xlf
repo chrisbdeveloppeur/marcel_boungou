@@ -281,6 +281,10 @@
         <source>The password fields must match.</source>
         <target>Les champs de mot de passe doivent correspondre.</target>
       </trans-unit>
+      <trans-unit id="Et1vxV_" resname="Your password has correctly been changed !">
+        <source>Your password has correctly been changed !</source>
+        <target>Votre mot de passe a bien été modifié !</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
