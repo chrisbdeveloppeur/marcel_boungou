@@ -210,7 +210,7 @@
         <target>termes et conditions</target>
       </trans-unit>
       <trans-unit id="U0M9PNE" resname="back to list">
-        <source>Back to list</source>
+        <source>back to list</source>
         <target>Retour à la liste</target>
       </trans-unit>
       <trans-unit id="KYYlqoz" resname="'Are you sure you want to delete this item?'">
@@ -240,6 +240,46 @@
       <trans-unit id="9vRoj.I" resname="Send">
         <source>Send</source>
         <target>Envoyer</target>
+      </trans-unit>
+      <trans-unit id="PaInB_f" resname="No reset password token found in the URL or in the session.">
+        <source>No reset password token found in the URL or in the session.</source>
+        <target>Aucun jeton de réinitialisation du mot de passe trouvé dans l'URL ou dans la session.</target>
+      </trans-unit>
+      <trans-unit id="fEmId2i" resname="There was a problem validating your reset request">
+        <source>There was a problem validating your reset request</source>
+        <target>Un problème est survenu lors de la validation de votre demande de réinitialisation</target>
+      </trans-unit>
+      <trans-unit id="xxsBwHe" resname="No user correspond to this Email">
+        <source>No user correspond to this Email</source>
+        <target>Aucun utilisateur ne correspond à cette adresse email</target>
+      </trans-unit>
+      <trans-unit id="ylHOH7F" resname="Hi!">
+        <source>Hi!</source>
+        <target>Bonjour!</target>
+      </trans-unit>
+      <trans-unit id="vQH5j0c" resname="To reset your password, please visit the following link">
+        <source>To reset your password, please visit the following link</source>
+        <target>Pour réinitialiser votre mot de passe, veuillez visiter le lien suivant</target>
+      </trans-unit>
+      <trans-unit id="uLn48jm" resname="new-password">
+        <source>new-password</source>
+        <target>nouveau mot de passe</target>
+      </trans-unit>
+      <trans-unit id="NZVj2rE" resname=" characters">
+        <source> characters</source>
+        <target> caractères</target>
+      </trans-unit>
+      <trans-unit id="PdnfREH" resname="New password">
+        <source>New password</source>
+        <target>Nouveau mot de passe</target>
+      </trans-unit>
+      <trans-unit id="Hkmh4Tp" resname="Repeat Password">
+        <source>Repeat Password</source>
+        <target>Répéter le mot de passe</target>
+      </trans-unit>
+      <trans-unit id="TdLhlyP" resname="The password fields must match.">
+        <source>The password fields must match.</source>
+        <target>Les champs de mot de passe doivent correspondre.</target>
       </trans-unit>
     </body>
   </file>

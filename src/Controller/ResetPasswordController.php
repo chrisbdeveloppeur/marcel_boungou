@@ -15,6 +15,7 @@ use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mime\Address;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
+use Symfony\Contracts\Translation\TranslatorInterface;
 use SymfonyCasts\Bundle\ResetPassword\Controller\ResetPasswordControllerTrait;
 use SymfonyCasts\Bundle\ResetPassword\Exception\ResetPasswordExceptionInterface;
 use SymfonyCasts\Bundle\ResetPassword\ResetPasswordHelperInterface;
@@ -28,11 +29,13 @@ class ResetPasswordController extends AbstractController
 
     private $resetPasswordHelper;
     private $entityManager;
+    private $translator;
 
-    public function __construct(ResetPasswordHelperInterface $resetPasswordHelper, EntityManagerInterface $entityManager)
+    public function __construct(ResetPasswordHelperInterface $resetPasswordHelper, EntityManagerInterface $entityManager, TranslatorInterface $translator)
     {
         $this->resetPasswordHelper = $resetPasswordHelper;
         $this->entityManager = $entityManager;
+        $this->translator = $translator;
     }
 
     /**
@@ -92,14 +95,16 @@ class ResetPasswordController extends AbstractController
 
         $token = $this->getTokenFromSession();
         if (null === $token) {
-            throw $this->createNotFoundException('No reset password token found in the URL or in the session.');
+            $msg = $this->translator->trans('No reset password token found in the URL or in the session.');
+            throw $this->createNotFoundException($msg);
         }
 
         try {
             $user = $this->resetPasswordHelper->validateTokenAndFetchUser($token);
         } catch (ResetPasswordExceptionInterface $e) {
+            $msg = $this->translator->trans('There was a problem validating your reset request');
             $this->addFlash('reset_password_error', sprintf(
-                'There was a problem validating your reset request - %s',
+                $msg . ' - %s',
                 $e->getReason()
             ));
 
@@ -142,7 +147,9 @@ class ResetPasswordController extends AbstractController
 
         // Do not reveal whether a user account was found or not.
         if (!$user) {
-            return $this->redirectToRoute('app_check_email');
+            $msg = $this->translator->trans('No user correspond to this Email');
+            $this->addFlash('warning', $msg);
+            return $this->redirectToRoute('app_forgot_password_request');
         }
 
         try {
