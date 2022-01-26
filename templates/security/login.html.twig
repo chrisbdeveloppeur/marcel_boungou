@@ -3,49 +3,51 @@
 {% block title %}{% trans %}Log in!{% endtrans %}{% endblock %}
 
 {% block body %}
-<form method="post" class="column is-two-fifths-desktop is-two-thirds-tablet has-background-light" id="login-form">
-    {% if error %}
-        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-    {% endif %}
+<div class="column is-two-fifths-desktop is-two-thirds-tablet has-background-light">
+    <form method="post" class="" id="login-form">
+        {% if error %}
+            <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+        {% endif %}
 
-    <h1 class="is-3 subtitle">{% trans %}Please sign in{% endtrans %}</h1>
+        <h1 class="is-3 subtitle">{% trans %}Please sign in{% endtrans %}</h1>
 
-    <div class="field">
-        <label class="label" for="inputEmail">{% trans %}Email{% endtrans %}</label>
-        <div class="control">
-            <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control input" autocomplete="email" required autofocus>
+        <div class="field">
+            <label class="label" for="inputEmail">{% trans %}Email{% endtrans %}</label>
+            <div class="control">
+                <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control input" autocomplete="email" required autofocus>
+            </div>
         </div>
-    </div>
 
-    <div class="field">
-        <label class="label" for="inputPassword">{% trans %}Password{% endtrans %}</label>
-        <div class="control">
-            <input type="password" name="password" id="inputPassword" class="form-control input" autocomplete="current-password" required>
+        <div class="field">
+            <label class="label" for="inputPassword">{% trans %}Password{% endtrans %}</label>
+            <div class="control">
+                <input type="password" name="password" id="inputPassword" class="form-control input" autocomplete="current-password" required>
+            </div>
         </div>
-    </div>
 
-    <input type="hidden" name="_csrf_token"
-           value="{{ csrf_token('authenticate') }}"
-    >
+        <input type="hidden" name="_csrf_token"
+               value="{{ csrf_token('authenticate') }}"
+        >
 
-    {#
-        Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
-        See https://symfony.com/doc/current/security/remember_me.html
+        {#
+            Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+            See https://symfony.com/doc/current/security/remember_me.html
 
-        <div class="checkbox mb-3">
-            <label>
-                <input type="checkbox" name="_remember_me"> Remember me
-            </label>
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" name="_remember_me"> Remember me
+                </label>
+            </div>
+        #}
+
+        <div class="is-flex is-justify-content-space-between">
+            <button class="button is-primary" type="submit">
+                {% trans %}Sign in{% endtrans %}
+            </button>
+
+            <a href="{{ path('app_forgot_password_request') }}" class="button is-small is-info is-light">{% trans %}Forgot your password ?{% endtrans %}</a>
         </div>
-    #}
 
-    <div class="is-flex is-justify-content-space-between">
-        <button class="button is-primary" type="submit">
-            {% trans %}Sign in{% endtrans %}
-        </button>
-
-        <a href="{{ path('app_forgot_password_request') }}" class="button is-small is-info is-light">{% trans %}Forgot your password ?{% endtrans %}</a>
-    </div>
-
-</form>
+    </form>
+</div>
 {% endblock %}

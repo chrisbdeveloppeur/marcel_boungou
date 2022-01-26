@@ -3,6 +3,7 @@
 {% block title %}{% trans %}Reset your password{% endtrans %}{% endblock %}
 
 {% block body %}
+<div class="column is-two-fifths-desktop is-two-thirds-tablet has-background-light">
     <h1>{% trans %}Reset your password{% endtrans %}</h1>
 
     {#
@@ -13,5 +14,5 @@
     #}
 
     {{ include('themes/_form.html.twig') }}
-
+</div>
 {% endblock %}

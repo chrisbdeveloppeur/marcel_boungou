@@ -203,15 +203,15 @@
       </trans-unit>
       <trans-unit id="JqWNACs" resname="I agree to the">
         <source>I agree to the</source>
-        <target>je suis d'accord avec les</target>
+        <target>Je suis d'accord avec les</target>
       </trans-unit>
       <trans-unit id="6Rjthbf" resname="terms and conditions">
         <source>terms and conditions</source>
         <target>termes et conditions</target>
       </trans-unit>
       <trans-unit id="U0M9PNE" resname="back to list">
-        <source>back to list</source>
-        <target>retour à la liste</target>
+        <source>Back to list</source>
+        <target>Retour à la liste</target>
       </trans-unit>
       <trans-unit id="KYYlqoz" resname="'Are you sure you want to delete this item?'">
         <source>'Are you sure you want to delete this item?'</source>
@@ -220,6 +220,26 @@
       <trans-unit id="4tClSWj" resname="Delete">
         <source>Delete</source>
         <target>Supprimer</target>
+      </trans-unit>
+      <trans-unit id="PUtzLt4" resname="Is verified">
+        <source>Is verified</source>
+        <target>Compte vérifié</target>
+      </trans-unit>
+      <trans-unit id="kQWnsB7" resname="Your email address has been verified.">
+        <source>Your email address has been verified.</source>
+        <target>Votre adresse e-mail a été vérifiée.</target>
+      </trans-unit>
+      <trans-unit id="6KiDUxl" resname="Edit User">
+        <source>Edit User</source>
+        <target>Modifier l'utilisateur</target>
+      </trans-unit>
+      <trans-unit id="QGEau92" resname="Validate">
+        <source>Validate</source>
+        <target>Valider</target>
+      </trans-unit>
+      <trans-unit id="9vRoj.I" resname="Send">
+        <source>Send</source>
+        <target>Envoyer</target>
       </trans-unit>
     </body>
   </file>

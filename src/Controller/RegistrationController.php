@@ -20,16 +20,18 @@ use SymfonyCasts\Bundle\VerifyEmail\Exception\VerifyEmailExceptionInterface;
 class RegistrationController extends AbstractController
 {
     private EmailVerifier $emailVerifier;
+    private $translator;
 
-    public function __construct(EmailVerifier $emailVerifier)
+    public function __construct(EmailVerifier $emailVerifier, TranslatorInterface $translator)
     {
         $this->emailVerifier = $emailVerifier;
+        $this->translator = $translator;
     }
 
     /**
      * @Route("/register", name="app_register")
      */
-    public function register(Request $request, UserPasswordEncoderInterface $userPasswordEncoder, EntityManagerInterface $entityManager, TranslatorInterface $translator): Response
+    public function register(Request $request, UserPasswordEncoderInterface $userPasswordEncoder, EntityManagerInterface $entityManager): Response
     {
         $user = new User();
         $form = $this->createForm(RegistrationFormType::class, $user);
@@ -57,7 +59,8 @@ class RegistrationController extends AbstractController
             );
             // do anything else you need here, like send an email
 
-            $this->addFlash('success', $translator->trans('A confirmation mail as been send to : ') . '<b>'.$user->getEmail().'</b>');
+            $msg = $this->translator->trans('A confirmation mail as been send to : ') . '<b>'.$user->getEmail().'</b>';
+            $this->addFlash('success', $msg);
             return $this->redirectToRoute('home_index');
         }
 
@@ -92,8 +95,9 @@ class RegistrationController extends AbstractController
             return $this->redirectToRoute('app_register');
         }
 
+        $msg = $this->translator->trans('Your email address has been verified.');
         // @TODO Change the redirect on success and handle or remove the flash message in your templates
-        $this->addFlash('success', 'Your email address has been verified.');
+        $this->addFlash('success', $msg);
 
         return $this->redirectToRoute('app_login');
     }
