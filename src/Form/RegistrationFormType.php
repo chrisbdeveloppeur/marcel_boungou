@@ -29,14 +29,6 @@ class RegistrationFormType extends AbstractType
                 'attr' => ['class' => 'input'],
                 'label_attr' => ['class' => 'label']
             ])
-            ->add('agreeTerms', CheckboxType::class, [
-                'mapped' => false,
-                'constraints' => [
-                    new IsTrue([
-                        'message' => $this->translator->trans('You should agree to our terms'),
-                    ]),
-                ],
-            ])
             ->add('plainPassword', PasswordType::class, [
                 // instead of being set onto the object directly,
                 // this is read and encoded in the controller
@@ -52,6 +44,15 @@ class RegistrationFormType extends AbstractType
                         'minMessage' => $this->translator->trans('Your password should be at least ') . '{{ limit }} ' . $this->translator->trans('charachters') ,
                         // max length allowed by Symfony for security reasons
                         'max' => 4096,
+                    ]),
+                ],
+            ])
+            ->add('agreeTerms', CheckboxType::class, [
+                'mapped' => false,
+                'label' => false,
+                'constraints' => [
+                    new IsTrue([
+                        'message' => $this->translator->trans('You should agree to our terms'),
                     ]),
                 ],
             ])

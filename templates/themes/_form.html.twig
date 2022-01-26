@@ -18,6 +18,14 @@
         {{ form_widget(child) }}
 
     </div>
+    {% elseif child.vars.block_prefixes[1] == 'checkbox' %}
+        {% if 'agreeTerms' in child.vars.name %}
+            <label class="checkbox">
+                {{ form_widget(child) }}
+                {% trans %}I agree to the{% endtrans %} <a href="#">{% trans %}terms and conditions{% endtrans %}</a>
+            </label>
+        {% else %}
+        {% endif %}
 
     {% elseif child.vars.block_prefixes[1] == 'file' %}
     <div class="file has-name is-fullwidth">
@@ -42,21 +50,25 @@
     <p class="control has-icons-left has-icons-right">
         {{ form_widget(child) }}
         {% if 'mail' in child.vars.name %}
-        <span class="icon is-small is-left">
-            <i class="fas fa-at"></i>
-        </span>
+            <span class="icon is-small is-left">
+                <i class="fas fa-at"></i>
+            </span>
         {% elseif 'phone' in child.vars.name or 'Phone' in child.vars.name %}
-        <span class="icon is-small is-left">
-            <i class="fas fa-phone"></i>
-        </span>
+            <span class="icon is-small is-left">
+                <i class="fas fa-phone"></i>
+            </span>
         {% elseif ('street' in child.vars.name) or ('cp' in child.vars.name) or ('city' in child.vars.name) or ('building' in child.vars.name) or ('Adresse' in child.vars.name) %}
-        <span class="icon is-small is-left">
-            <i class="fas fa-map-marked-alt"></i>
-        </span>
+            <span class="icon is-small is-left">
+                <i class="fas fa-map-marked-alt"></i>
+            </span>
         {% elseif ('name' in child.vars.name) or ('Name' in child.vars.name) or ('Contact' in child.vars.name) %}
-        <span class="icon is-small is-left">
-            <i class="fas fa-signature"></i>
-        </span>
+            <span class="icon is-small is-left">
+                <i class="fas fa-signature"></i>
+            </span>
+        {% elseif ('password' in child.vars.name) or ('Password' in child.vars.name) %}
+            <span class="icon is-small is-left">
+                <i class="fas fa-key"></i>
+            </span>
         {% endif %}
     </p>
 
