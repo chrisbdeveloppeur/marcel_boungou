@@ -31,11 +31,11 @@
             </label>
         {% endif %}
 
-    {% elseif child.vars.block_prefixes[1] == 'file' %}
+    {% elseif child.vars.block_prefixes[1] == 'file' or child.vars.block_prefixes[1] == 'vich_file' %}
     <div class="file has-name is-fullwidth">
         <label class="file-label">
             {{ form_widget(child) }}
-            <input class="file-input" type="file" name="resume">
+{#            <input class="file-input" type="file" name="resume">#}
             <span class="file-cta has-background-white">
                 <span class="file-icon">
                     <i class="fas fa-upload"></i>

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:UTC
+BEGIN:STANDARD
+DTSTART:20210502T180838Z
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:61f2e65b9f4e7
+DTSTAMP:20220127T183715Z
+SUMMARY:iure
+DESCRIPTION:Sit quia perspiciatis aperiam ullam explicabo. Velit temporibus
+  neque facilis fugit.
+LOCATION:9\, impasse Mathilde Garcia\, 11 570 Clerc-sur-Lopez\, Clerc-sur-L
+ opez
+DTSTART:20220127T180838Z
+DTEND:20220127T180838Z
+END:VEVENT
+END:VCALENDAR

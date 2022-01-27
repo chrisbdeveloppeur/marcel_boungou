@@ -12,6 +12,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Security\Core\Security;
+use Vich\UploaderBundle\Form\Type\VichFileType;
 
 class UserType extends AbstractType
 {
@@ -30,10 +31,14 @@ class UserType extends AbstractType
                     'class' => 'input'
                 ]
             ])
-            //->add('roles')
             ->add('password', PasswordType::class,[
                 'attr' => [
                     'class' => 'input'
+                ]
+            ])
+            ->add('imageFile', VichFileType::class,[
+                'attr' => [
+                    'class' => 'file-input'
                 ]
             ])
         ;

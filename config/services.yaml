@@ -5,6 +5,11 @@
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     app.locales: [en, fr]
+    app.path.user_img: /uploads/images/user_img
+    app.path.discography_img: /uploads/images/discography_img
+    app.path.event_img: /uploads/images/event_img
+    app.path.news_img: /uploads/images/news_img
+    app.path.gallery_img: /uploads/images/gallery_img
 
 services:
     # default configuration for services in *this* file
