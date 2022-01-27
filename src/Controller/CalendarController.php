@@ -22,10 +22,13 @@ class CalendarController
     {
         $projectRoot = $this->appKernel->getProjectDir();
         $event = $this->eventRepository->find($event_id);
+        $adresse = $event->getStreet().', '.$event->getCp().' '.$event->getCity().', '.$event->getCity();
         $calendar = Calendar::create('www.marcel-boungou.com')
             ->event(Event::create($event->getTitle())
                 ->startsAt($event->getDatetime())
-                //->endsAt(new \DateTime('28 January 2022 16:00'))
+                ->endsAt($event->getDatetime())
+                ->address($adresse)
+                ->description($event->getDescription())
             )
             ->get();
         file_put_contents($projectRoot.'/public/documents/events_files/'.$event->getTitle().'.ics',$calendar);
