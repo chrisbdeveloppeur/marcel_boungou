@@ -8,7 +8,8 @@
         {% if events is defined %}
             {% for event in events %}
                 <div class="highlight-info is-hidden has-text-light px-3 py-3" id="{{ event.datetime|date('d/m/Y') }}">
-                   {% trans %} HIGHLIGHT {% endtrans %} ! {{ event.datetime|date('d/m/Y') }}
+                   {% trans %} HIGHLIGHT {% endtrans %} : {{ event.title }}
+                    <br> {{ event.datetime|date('d/m/Y') }}
                     {#
                     <br>
                     {% set title = 'Titre de l\'evenement !' %}

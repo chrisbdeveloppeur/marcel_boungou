@@ -22,7 +22,7 @@ class AppFixtures extends Fixture
 
         for ($e = 1; $e <= 10; $e++){
             $event = new Event();
-            $event->setDatetime($faker->dateTime());
+            $event->setDatetime($faker->dateTimeBetween('-6 month','+6 month'));
             $event->setTitle($faker->word);
             $event->setCountry($faker->country);
             $event->setCity($faker->city);

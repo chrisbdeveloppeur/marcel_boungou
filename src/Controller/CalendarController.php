@@ -28,8 +28,7 @@ class CalendarController
                 //->endsAt(new \DateTime('28 January 2022 16:00'))
             )
             ->get();
-        fopen($projectRoot.'/public/documents/events_files/'.$event->getTitle().'.ics','w+');
-        //file_put_contents('../public/documents/events_files/'.$event->getTitle().'.ics',$calendar);
+        file_put_contents($projectRoot.'/public/documents/events_files/'.$event->getTitle().'.ics',$calendar);
 
         return $calendar;
     }
