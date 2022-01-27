@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\EventRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Spatie\IcalendarGenerator\Components\Calendar;
 
 /**
  * @ORM\Entity(repositoryClass=EventRepository::class)
@@ -51,6 +52,27 @@ class Event
      * @ORM\Column(type="text")
      */
     private $ics_file;
+
+    private $calendar;
+
+    public function __construct()
+    {
+        $this->calendar = Calendar::create('www.marcel-boungou.com')
+            ->event(\Spatie\IcalendarGenerator\Components\Event::create($this->title)
+                ->startsAt(new \DateTime('NOW'))
+            //->endsAt(new \DateTime('28 January 2022 16:00'))
+            )
+            ->get();
+
+        file_put_contents('../public/documents/events_files/'.$this->title.'.ics',$this->calendar);
+
+        dd($this->calendar);
+    }
+
+    public function __toString()
+    {
+        return $this->getTitle();
+    }
 
     public function getId(): ?int
     {
@@ -134,10 +156,12 @@ class Event
         return $this->ics_file;
     }
 
-    public function setIcsFile(string $ics_file): self
+    public function setIcsFile()
     {
-        $this->ics_file = $ics_file;
+        $this->ics_file = $this->calendar;
 
         return $this;
     }
+
+
 }
