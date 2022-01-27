@@ -1,0 +1,19 @@
+vich_uploader:
+    db_driver: orm
+
+    mappings:
+        user_img:
+            uri_prefix: /images/user_img
+            upload_destination: '%kernel.project_dir%/public/images/user_img'
+        discography_img:
+            uri_prefix: /images/discography_img
+            upload_destination: '%kernel.project_dir%/public/images/discography_img'
+        event_img:
+            uri_prefix: /images/event_img
+            upload_destination: '%kernel.project_dir%/public/images/event_img'
+        news_img:
+            uri_prefix: /images/news_img
+            upload_destination: '%kernel.project_dir%/public/images/news_img'
+        gallery_img:
+            uri_prefix: /images/gallery_img
+            upload_destination: '%kernel.project_dir%/public/images/gallery_img'

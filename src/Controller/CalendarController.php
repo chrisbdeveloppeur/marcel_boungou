@@ -3,10 +3,16 @@
 namespace App\Controller;
 
 use App\Repository\EventRepository;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Spatie\IcalendarGenerator\Components\Calendar;
 use Spatie\IcalendarGenerator\Components\Event;
 use Symfony\Component\HttpKernel\KernelInterface;
 
+/**
+ * Class CalendarController
+ * @package App\Controller
+ * @Security("is_granted('ROLE_ADMIN')", statusCode=403, message="Access denied !")
+ */
 class CalendarController
 {
     private $eventRepository;

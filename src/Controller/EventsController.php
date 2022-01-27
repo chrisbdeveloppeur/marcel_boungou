@@ -6,6 +6,7 @@ use App\Entity\Event;
 use App\Form\EventType;
 use App\Repository\EventRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -30,15 +31,14 @@ class EventsController extends AbstractController
     public function index(EventRepository $eventRepository): Response
     {
         $events = $eventRepository->findAll();
-        //$highlights_dates = [strval(date("d/m/Y", time() - 60 * 60 * 24)),strval(date("d/m/Y", time() + 60 * 60 * 24))];
         return $this->render('includes/calendar.html.twig', [
             'events' => $events,
-            //'highlights_dates' => $highlights_dates,
         ]);
     }
 
     /**
      * @Route("/new", name="new", methods={"GET", "POST"})
+     * @Security("is_granted('ROLE_ADMIN')", statusCode=403, message="Access denied !")
      */
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
@@ -62,6 +62,7 @@ class EventsController extends AbstractController
 
     /**
      * @Route("/{id}", name="show", methods={"GET"})
+     * @Security("is_granted('ROLE_ADMIN')", statusCode=403, message="Access denied !")
      */
     public function show(Event $event): Response
     {
@@ -72,6 +73,7 @@ class EventsController extends AbstractController
 
     /**
      * @Route("/{id}/edit", name="edit", methods={"GET", "POST"})
+     * @Security("is_granted('ROLE_ADMIN')", statusCode=403, message="Access denied !")
      */
     public function edit(Request $request, Event $event, EntityManagerInterface $entityManager): Response
     {
@@ -92,6 +94,7 @@ class EventsController extends AbstractController
 
     /**
      * @Route("/{id}", name="delete", methods={"POST"})
+     * @Security("is_granted('ROLE_ADMIN')", statusCode=403, message="Access denied !")
      */
     public function delete(Request $request, Event $event, EntityManagerInterface $entityManager): Response
     {
