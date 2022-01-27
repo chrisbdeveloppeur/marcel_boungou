@@ -27,7 +27,9 @@
                         return false;"
                     >{% trans %}Add to Calendar{% endtrans %}</a>
                     #}
-                    <a href="{{ asset('documents/events_files/') }}{{ event.icsFile }}" class="addToCalendar button is-small is-primary is-light">{% trans %}Add to Calendar{% endtrans %}</a>
+                    <div class="column px-0 pb-0 is-flex is-justify-content-end">
+                        <a href="{{ asset('documents/events_files/') }}{{ event.icsFile }}" class="addToCalendar button is-small is-primary is-light">{% trans %}Add to Calendar{% endtrans %}</a>
+                    </div>
                 </div>
             {% endfor %}
         {% endif %}

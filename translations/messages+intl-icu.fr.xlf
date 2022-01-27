@@ -293,6 +293,10 @@
         <source>Saved account information</source>
         <target>Informations de compte enregistrées</target>
       </trans-unit>
+      <trans-unit id="9daud9h" resname="Add to Calendar">
+        <source>Add to Calendar</source>
+        <target>Ajouter au calendrier</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
