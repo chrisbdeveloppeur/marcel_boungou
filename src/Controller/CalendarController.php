@@ -7,7 +7,7 @@ use Spatie\IcalendarGenerator\Components\Event;
 
 class CalendarController
 {
-    public function calendar()
+    public function calendar($event_title)
     {
         $calendar = Calendar::create('Laracon online')
             ->event(Event::create('Creating calender feeds')
@@ -16,7 +16,7 @@ class CalendarController
             )
             ->get();
 
-        file_put_contents('../public/documents/events_files/event.ics',$calendar);
+        file_put_contents('../public/documents/events_files/'.$event_title.'.ics',$calendar);
 
         return $calendar;
     }
