@@ -2,17 +2,12 @@
 
 namespace App\Controller;
 
-
 use Spatie\IcalendarGenerator\Components\Calendar;
 use Spatie\IcalendarGenerator\Components\Event;
-use Symfony\Component\Routing\Annotation\Route;
 
 class CalendarController
 {
-    /**
-     * @Route("/calendar", name="calendar")
-     */
-    public function index()
+    public function calendar()
     {
         $calendar = Calendar::create('Laracon online')
             ->event(Event::create('Creating calender feeds')
@@ -21,6 +16,8 @@ class CalendarController
             )
             ->get();
 
-        dd($calendar);
+        file_put_contents('../public/documents/events_files/event.ics',$calendar);
+
+        return $calendar;
     }
 }
