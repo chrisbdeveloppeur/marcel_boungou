@@ -51,10 +51,10 @@
     yesterday.setDate(today.getDate() - 1);
     var highlightsDates = [];
 
-    {% if highlights_dates is defined %}
+    {% if events is defined %}
         let date;
-        {% for highlight_date in highlights_dates %}
-            date = '{{ highlight_date }}';
+        {% for event in events %}
+            date = '{{ event.datetime|date('d/m/Y') }}';
             highlightsDates.push(date);
         {% endfor %}
     {% else %}
@@ -63,7 +63,7 @@
 
 
     //console.log(today.toLocaleDateString("fr-FR"));
-    //console.log(hightlightsDates);
+    //console.log(highlightsDates);
 
     var defaultOptions = {
         type: 'date',
@@ -112,8 +112,10 @@
             selectedDate = datepicker.data.value();
             console.log(selectedDate);
             highlightsDates.forEach(function (highlight) {
+                console.log(highlight);
                 if (highlight === selectedDate){
                     let highlightInfoId = document.getElementById(highlight);
+                    console.log(highlightInfoId);
                     highlightInfoId.classList.remove('is-hidden');
                     console.log('This is an Highlight !');
                 }

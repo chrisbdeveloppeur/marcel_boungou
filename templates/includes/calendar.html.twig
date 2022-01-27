@@ -5,10 +5,10 @@
 {% block body %}
     <div class="container is-flex is-flex-direction-column is-justify-content-center is-align-items-center has-background-danger-light is-relative">
         <input type="date" class="bulma-calendar is-small" id="my-element">
-        {% if highlights_dates is defined %}
-            {% for highlight_date in highlights_dates %}
-                <div class="highlight-info is-hidden has-text-light px-3 py-3" id="{{ highlight_date }}">
-                   {% trans %} HIGHLIGHT {% endtrans %} ! {{ highlight_date }}
+        {% if events is defined %}
+            {% for event in events %}
+                <div class="highlight-info is-hidden has-text-light px-3 py-3" id="{{ event.datetime|date('d/m/Y') }}">
+                   {% trans %} HIGHLIGHT {% endtrans %} ! {{ event.datetime|date('d/m/Y') }}
                     {#
                     <br>
                     {% set title = 'Titre de l\'evenement !' %}
@@ -23,7 +23,7 @@
                         return false;"
                     >{% trans %}Add to Calendar{% endtrans %}</a>
                     #}
-                    <a href="{{ asset('documents/events_files/event.ics') }}" class="addToCalendar button is-small is-primary is-light">{% trans %}Add to Calendar{% endtrans %}</a>
+                    <a href="{{ asset('documents/events_files/') }}{{ event.icsFile }}" class="addToCalendar button is-small is-primary is-light">{% trans %}Add to Calendar{% endtrans %}</a>
                 </div>
             {% endfor %}
         {% endif %}

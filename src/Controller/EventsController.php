@@ -16,13 +16,24 @@ use Symfony\Component\Routing\Annotation\Route;
  */
 class EventsController extends AbstractController
 {
+
+    private $calendarController;
+
+    public function __construct(CalendarController $calendarController)
+    {
+        $this->calendarController = $calendarController;
+    }
+
     /**
      * @Route("/", name="index", methods={"GET"})
      */
     public function index(EventRepository $eventRepository): Response
     {
-        return $this->render('event/index.html.twig', [
-            'events' => $eventRepository->findAll(),
+        $events = $eventRepository->findAll();
+        //$highlights_dates = [strval(date("d/m/Y", time() - 60 * 60 * 24)),strval(date("d/m/Y", time() + 60 * 60 * 24))];
+        return $this->render('includes/calendar.html.twig', [
+            'events' => $events,
+            //'highlights_dates' => $highlights_dates,
         ]);
     }
 
@@ -38,6 +49,7 @@ class EventsController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->persist($event);
             $entityManager->flush();
+            $this->calendarController->createIcsFile($event->getId());
 
             return $this->redirectToRoute('events_index', [], Response::HTTP_SEE_OTHER);
         }

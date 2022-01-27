@@ -18,7 +18,7 @@ class EventType extends AbstractType
             ->add('city')
             ->add('cp')
             ->add('street')
-            ->add('ics_file')
+            //->add('ics_file')
         ;
     }
 
