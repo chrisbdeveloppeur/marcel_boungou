@@ -9,6 +9,20 @@
             {% for highlight_date in highlights_dates %}
                 <div class="highlight-info is-hidden has-text-light px-3 py-3" id="{{ highlight_date }}">
                    {% trans %} HIGHLIGHT {% endtrans %} ! {{ highlight_date }}
+                    {#
+                    <br>
+                    {% set title = 'Titre de l\'evenement !' %}
+                    {% set date = '20220128T193000Z/20220128T203000Z' %}
+                    {% set time_zone = 'FR' %}
+                    {% set description = 'Test de description' %}
+                    {% set adresse = '136 rue Georges le du, 91100, Corbeil-Essonnes' %}
+                    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text={{ title }}&dates={{ date }}&ctz={{ time_zone }}&details={{ description }}&location={{ adresse }}" class="addToCalendar button is-small is-primary is-light" onclick="window.open(
+                        this.href,
+                        'newwindow',
+                        'width=850,height=650');
+                        return false;"
+                    >{% trans %}Add to Calendar{% endtrans %}</a>
+                    #}
                 </div>
             {% endfor %}
         {% endif %}

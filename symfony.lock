@@ -109,6 +109,9 @@
     "monolog/monolog": {
         "version": "1.26.1"
     },
+    "nesbot/carbon": {
+        "version": "2.56.0"
+    },
     "nikic/php-parser": {
         "version": "v4.13.2"
     },
@@ -132,6 +135,12 @@
         "files": [
             "./config/packages/sensio_framework_extra.yaml"
         ]
+    },
+    "spatie/enum": {
+        "version": "3.11.1"
+    },
+    "spatie/icalendar-generator": {
+        "version": "2.3.2"
     },
     "symfony/asset": {
         "version": "v4.4.27"
