@@ -54,13 +54,13 @@ class EventType extends AbstractType
                 'attr' => [
                     'class' => 'input'
                 ],
-                'label' => $this->translator->trans('Post code'),
+                'label' => $this->translator->trans('ZIP code'),
             ])
             ->add('street', TextType::class,[
                 'attr' => [
                     'class' => 'input'
                 ],
-                'label' => $this->translator->trans('Adresse street'),
+                'label' => $this->translator->trans('Name of the street'),
             ])
             ->add('description', TextareaType::class,[
                 'required' => false,

@@ -387,35 +387,35 @@
       </trans-unit>
       <trans-unit id="8yP.u6s" resname="Name of the event">
         <source>Name of the event</source>
-        <target>__Name of the event</target>
+        <target>Nom de l'événement</target>
       </trans-unit>
       <trans-unit id="JdirFTF" resname="Select the date">
         <source>Select the date</source>
-        <target>__Select the date</target>
+        <target>Sélectionnez la date</target>
       </trans-unit>
       <trans-unit id="cB0CHQj" resname="Country">
         <source>Country</source>
-        <target>__Country</target>
+        <target>Pays</target>
       </trans-unit>
       <trans-unit id=".DP3Mkb" resname="City">
         <source>City</source>
-        <target>__City</target>
+        <target>Ville</target>
       </trans-unit>
-      <trans-unit id="_nUxZic" resname="Post code">
-        <source>Post code</source>
-        <target>__Post code</target>
+      <trans-unit id="_nUxZic" resname="ZIP code">
+        <source>ZIP code</source>
+        <target>Code postale</target>
       </trans-unit>
-      <trans-unit id="gvcTBt7" resname="Adresse street">
-        <source>Adresse street</source>
-        <target>__Adresse street</target>
+      <trans-unit id="gvcTBt7" resname="Name of the street">
+        <source>Name of the street</source>
+        <target>Nom de la rue</target>
       </trans-unit>
       <trans-unit id="Um4Ah8w" resname="Description">
         <source>Description</source>
-        <target>__Description</target>
+        <target>Description</target>
       </trans-unit>
       <trans-unit id="GkRmWSc" resname="Create new Event">
         <source>Create new Event</source>
-        <target>__Create new Event</target>
+        <target>Créer un nouvel événement</target>
       </trans-unit>
     </body>
   </file>
