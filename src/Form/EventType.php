@@ -6,6 +6,7 @@ use App\Entity\Event;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -30,8 +31,10 @@ class EventType extends AbstractType
             ])
             ->add('datetime', DateTimeType::class,[
                 'attr' => [
-                    'class' => 'is-hidden'
+                    'class' => 'input has-text-centered',
+                    'type' => 'date', 'value' => date_format(new \DateTime('now'), 'Y-m-d')
                 ],
+                'widget' => 'single_text',
                 'label' => $this->translator->trans('Select the date'),
             ])
             ->add('country', TextType::class,[
@@ -57,6 +60,13 @@ class EventType extends AbstractType
                     'class' => 'input'
                 ],
                 'label' => $this->translator->trans('Adresse street'),
+            ])
+            ->add('description', TextareaType::class,[
+                'required' => false,
+                'attr' => [
+                    'class' => 'textarea'
+                ],
+                'label' => $this->translator->trans('Description'),
             ])
             //->add('ics_file')
         ;
