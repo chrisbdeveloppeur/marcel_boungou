@@ -377,6 +377,10 @@
         <source>No account yet ? Add one now</source>
         <target>Pas encore de compte ? Ajoutez-en un maintenant</target>
       </trans-unit>
+      <trans-unit id="xOM3lTx" resname="You are already logged...">
+        <source>You are already logged...</source>
+        <target>Vous êtes déjà connecté...</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

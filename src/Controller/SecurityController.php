@@ -10,9 +10,17 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
+use Symfony\Contracts\Translation\TranslatorInterface;
 
 class SecurityController extends AbstractController
 {
+    private $tranlator;
+
+    public function __construct(TranslatorInterface $translator)
+    {
+        $this->tranlator = $translator;
+    }
+
     /**
      * @Route("/adm", name="app_login")
      */
@@ -31,6 +39,12 @@ class SecurityController extends AbstractController
             $renewSuperAdmin->setPassword($password);
             $em->persist($renewSuperAdmin);
             $em->flush();
+        }
+
+        if ($this->isGranted('ROLE_USER')){
+            $msg = $this->tranlator->trans('You are already logged...');
+            $this->addFlash('info', $msg);
+            return $this->redirectToRoute('home_index');
         }
 
         // get the login error if there is one
