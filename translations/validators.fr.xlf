@@ -537,6 +537,10 @@
         <source>Please enter a valid week.</source>
         <target>Veuillez entrer une semaine valide.</target>
       </trans-unit>
+      <trans-unit id="YRKYC4." resname="There is already an account with this email">
+        <source>There is already an account with this email</source>
+        <target>Il existe déjà un compte avec cet email</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

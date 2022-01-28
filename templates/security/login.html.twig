@@ -5,12 +5,12 @@
 {% block body %}
 <div class="column is-two-fifths-desktop is-two-thirds-tablet has-background-light">
     <form method="post" class="" id="login-form">
-        {% if error %}
-            <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-        {% endif %}
 
         <h1 class="is-3 subtitle">{% trans %}Please sign in{% endtrans %}</h1>
 
+        {% if error %}
+            <div class="help tag is-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+        {% endif %}
         <div class="field">
             <label class="label" for="inputEmail">{% trans %}Email{% endtrans %}</label>
             <div class="control">

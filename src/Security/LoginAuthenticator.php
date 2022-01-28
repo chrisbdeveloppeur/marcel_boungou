@@ -33,7 +33,7 @@ class LoginAuthenticator extends AbstractFormLoginAuthenticator implements Passw
     private $urlGenerator;
     private $csrfTokenManager;
     private $passwordEncoder;
-    private  $translator;
+    private $translator;
 
     public function __construct(EntityManagerInterface $entityManager, UrlGeneratorInterface $urlGenerator, CsrfTokenManagerInterface $csrfTokenManager, UserPasswordEncoderInterface $passwordEncoder, TranslatorInterface $translator)
     {
@@ -73,14 +73,8 @@ class LoginAuthenticator extends AbstractFormLoginAuthenticator implements Passw
         }
 
         $user = $this->entityManager->getRepository(User::class)->findOneBy(['email' => $credentials['email']]);
-
         if (!$user) {
-            throw new UsernameNotFoundException('Email could not be found.');
-        }
-
-        if (!$user->isVerified()){
-            $msg = $this->translator->trans('Please confirm your profil before login');
-            throw new CustomUserMessageAuthenticationException($msg);
+            throw new CustomUserMessageAuthenticationException($this->translator->trans('Email could not be found.'));
         }
 
         return $user;
@@ -88,6 +82,16 @@ class LoginAuthenticator extends AbstractFormLoginAuthenticator implements Passw
 
     public function checkCredentials($credentials, UserInterface $user)
     {
+        if (!$user->isVerified()){
+            $msg = $this->translator->trans('Please confirm your profil before login');
+            throw new CustomUserMessageAuthenticationException($msg);
+        }
+
+        if (!$this->passwordEncoder->isPasswordValid($user,$credentials['password'])){
+            $msg = $this->translator->trans('Wrong password');
+            throw new CustomUserMessageAuthenticationException($msg);
+        }
+
         return $this->passwordEncoder->isPasswordValid($user, $credentials['password']);
     }
 

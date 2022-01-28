@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\User;
+use App\Form\RegistrationFormType;
 use App\Form\UserType;
 use App\Repository\UserRepository;
 use Doctrine\ORM\EntityManagerInterface;
@@ -35,14 +36,16 @@ class UserController extends AbstractController
         ]);
     }
 
-    /**
+
+    /*
      * @Route("/new", name="user_new", methods={"GET", "POST"})
      * @Security("is_granted('ROLE_SUPER_ADMIN')", statusCode=403, message="Access denied !")
      */
+    /*
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
         $user = new User();
-        $form = $this->createForm(UserType::class, $user);
+        $form = $this->createForm(RegistrationFormType::class, $user);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -57,6 +60,7 @@ class UserController extends AbstractController
             'form' => $form->createView(),
         ]);
     }
+    */
 
     /**
      * @Route("/{id}", name="user_show", methods={"GET"})
@@ -93,16 +97,22 @@ class UserController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="user_delete", methods={"POST"})
+     * @Route("/{id}", name="user_delete", methods={"POST","GET"})
      * @Security("user.getId() == id || is_granted('ROLE_ADMIN')", statusCode=403, message="Access denied !")
      */
-    public function delete(Request $request, User $user, EntityManagerInterface $entityManager): Response
+    public function delete(Request $request, User $user, EntityManagerInterface $em): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$user->getId(), $request->request->get('_token'))) {
-            $entityManager->remove($user);
-            $entityManager->flush();
+        if (in_array('ROLE_SUPER_ADMIN', $user->getRoles()) )
+        {
+            $this->addFlash('danger', $this->translator->trans('The super manager account can\'t be deleted'));
+            $referer = $request->headers->get('referer');
+            return $this->redirect($referer);
+        }else{
+            $this->container->get('security.token_storage')->setToken(null);
+            $em->remove($user);
+            $em->flush();
+            $this->addFlash('danger', $this->translator->trans('Account deleted !'));
+            return $this->redirectToRoute('home_index');
         }
-
-        return $this->redirectToRoute('home_index', [], Response::HTTP_SEE_OTHER);
     }
 }

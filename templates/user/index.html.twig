@@ -1,41 +1,53 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}User index{% endblock %}
+{% block title %}{% trans %}List of Managers{% endtrans %}{% endblock %}
 
 {% block body %}
-    <h1>User index</h1>
 
-    <table class="table">
-        <thead>
+    <div class="table-container is-flex is-justify-content-center has-text-centered is-flex-direction-column">
+        <h1 class="subtitle is-3">{% trans %}List of Managers{% endtrans %}</h1>
+        <table class="table">
+            <thead>
             <tr>
-                <th>Id</th>
-                <th>Email</th>
-                <th>Roles</th>
-                <th>Password</th>
-                <th>IsVerified</th>
-                <th>actions</th>
+                <th>{% trans %}Email{% endtrans %}</th>
+                <th>{% trans %}Roles{% endtrans %}</th>
+                <th>{% trans %}Verified{% endtrans %} ?</th>
+                <th>{% trans %}Actions{% endtrans %}</th>
             </tr>
-        </thead>
-        <tbody>
-        {% for user in users %}
-            <tr>
-                <td>{{ user.id }}</td>
-                <td>{{ user.email }}</td>
-                <td>{{ user.roles ? user.roles|json_encode : '' }}</td>
-                <td>{{ user.password }}</td>
-                <td>{{ user.isVerified ? 'Yes' : 'No' }}</td>
-                <td>
-                    <a href="{{ path('user_show', {'id': user.id}) }}">show</a>
-                    <a href="{{ path('user_edit', {'id': user.id}) }}">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="6">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+            {% for user in users %}
+                <tr>
+                    <td>{{ user.email }}</td>
+                    <td>
+                        {% if 'ROLE_SUPER_ADMIN' in user.roles %}
+                            {% trans %}Super Manager{% endtrans %}
+                        {% else %}
+                            {% trans %}Manager{% endtrans %}
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if user.verified %}
+                            {% trans %}Yes{% endtrans %}
+                        {% else %}
+                            {% trans %}No{% endtrans %}
+                        {% endif %}
+                    </td>
+                    <td>
+                        <a href="{{ path('user_edit', {'id': user.id}) }}">{% trans %}edit{% endtrans %}</a>
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="6">{% trans %}no records found{% endtrans %}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
 
-    <a href="{{ path('user_new') }}">Create new</a>
+        <div class="column">
+            <a class="button is-success is-small" href="{{ path('app_register') }}">{% trans %}Add a Manager{% endtrans %}</a>
+        </div>
+    </div>
+
 {% endblock %}

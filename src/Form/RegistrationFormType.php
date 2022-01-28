@@ -27,6 +27,7 @@ class RegistrationFormType extends AbstractType
         $builder
             ->add('email', EmailType::class,[
                 'attr' => ['class' => 'input'],
+                'label' => $this->translator->trans('Email'),
                 'label_attr' => ['class' => 'label']
             ])
             ->add('plainPassword', PasswordType::class, [
@@ -34,6 +35,7 @@ class RegistrationFormType extends AbstractType
                 // this is read and encoded in the controller
                 'mapped' => false,
                 'attr' => ['autocomplete' => 'new-password', 'class' => 'input'],
+                'label' => $this->translator->trans('Password'),
                 'label_attr' => ['class' => 'label'],
                 'constraints' => [
                     new NotBlank([
@@ -47,6 +49,7 @@ class RegistrationFormType extends AbstractType
                     ]),
                 ],
             ])
+
             ->add('agreeTerms', CheckboxType::class, [
                 'mapped' => false,
                 'label' => false,
@@ -56,6 +59,7 @@ class RegistrationFormType extends AbstractType
                     ]),
                 ],
             ])
+
         ;
     }
 

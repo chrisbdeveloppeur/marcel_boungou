@@ -5,11 +5,7 @@
 {% block body %}
 
     <div class="column is-two-fifths-desktop is-two-thirds-tablet has-background-light">
-        <h1>{% trans %}Edit User{% endtrans %}</h1>
-
-        {#
-        {{ include('user/_form.html.twig', {'button_label': 'Update'}) }}
-        #}
+        <h1 class="subtitle is-3">{% trans %}Edit User{% endtrans %}</h1>
 
         {{ include('themes/_form.html.twig') }}
 

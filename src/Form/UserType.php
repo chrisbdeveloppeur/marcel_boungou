@@ -31,16 +31,19 @@ class UserType extends AbstractType
                     'class' => 'input'
                 ]
             ])
+            /*
             ->add('password', PasswordType::class,[
                 'attr' => [
                     'class' => 'input'
                 ]
             ])
+
             ->add('imageFile', VichFileType::class,[
                 'attr' => [
                     'class' => 'file-input'
                 ]
             ])
+            */
         ;
         if(in_array('ROLE_SUPER_ADMIN',$this->user->getRoles())){
             $builder

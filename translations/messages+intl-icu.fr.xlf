@@ -233,8 +233,8 @@
         <source>Edit User</source>
         <target>Modifier l'utilisateur</target>
       </trans-unit>
-      <trans-unit id="QGEau92" resname="Validate">
-        <source>Validate</source>
+      <trans-unit id="7r3SSnf" resname="Confirm">
+        <source>Confirm</source>
         <target>Valider</target>
       </trans-unit>
       <trans-unit id="9vRoj.I" resname="Send">
@@ -296,6 +296,82 @@
       <trans-unit id="9daud9h" resname="Add to Calendar">
         <source>Add to Calendar</source>
         <target>Ajouter au calendrier</target>
+      </trans-unit>
+      <trans-unit id="uzPm79P" resname="Add a manager">
+        <source>Add a manager</source>
+        <target>Ajouter un gestionnaire</target>
+      </trans-unit>
+      <trans-unit id="emEszJR" resname="List of Managers">
+        <source>List of Managers</source>
+        <target>Liste des Gestionnaires</target>
+      </trans-unit>
+      <trans-unit id="wlM3BVR" resname="Roles">
+        <source>Roles</source>
+        <target>Rôles</target>
+      </trans-unit>
+      <trans-unit id="T3g4QC8" resname="Verified">
+        <source>Verified</source>
+        <target>Vérifié</target>
+      </trans-unit>
+      <trans-unit id=".4BZ3Gd" resname="Actions">
+        <source>Actions</source>
+        <target>Actions</target>
+      </trans-unit>
+      <trans-unit id="ddnoOH2" resname="Super Manager">
+        <source>Super Manager</source>
+        <target>Super Gestionnaire</target>
+      </trans-unit>
+      <trans-unit id="iyCF903" resname="Manager">
+        <source>Manager</source>
+        <target>Gestionnaire</target>
+      </trans-unit>
+      <trans-unit id="JiEhxTc" resname="edit">
+        <source>edit</source>
+        <target>Éditer</target>
+      </trans-unit>
+      <trans-unit id="D5lam8." resname="no records found">
+        <source>no records found</source>
+        <target>Aucun Gestionnaires trouvés</target>
+      </trans-unit>
+      <trans-unit id="nz33U6Q" resname="Create new">
+        <source>Create new</source>
+        <target>Créer un nouveau</target>
+      </trans-unit>
+      <trans-unit id="IJwcEkN" resname="Add a Manager">
+        <source>Add a Manager</source>
+        <target>Ajouter un Gestionnaire</target>
+      </trans-unit>
+      <trans-unit id="haOas0X" resname="Yes">
+        <source>Yes</source>
+        <target>Oui</target>
+      </trans-unit>
+      <trans-unit id="HqRCoTS" resname="No">
+        <source>No</source>
+        <target>Non</target>
+      </trans-unit>
+      <trans-unit id="dgwpGpB" resname="New Manager">
+        <source>New Manager</source>
+        <target>Nouveau Gestionnaire</target>
+      </trans-unit>
+      <trans-unit id="yMy7xe4" resname="Create new Manager">
+        <source>Create new Manager</source>
+        <target>Créer un nouveau Gestionnaire</target>
+      </trans-unit>
+      <trans-unit id="WV31RQ7" resname="The super manager account can't be deleted">
+        <source>The super manager account can't be deleted</source>
+        <target>Le compte super administrateur ne peut pas être supprimé</target>
+      </trans-unit>
+      <trans-unit id="zKLKpXd" resname="Account deleted !">
+        <source>Account deleted !</source>
+        <target>Compte supprimé !</target>
+      </trans-unit>
+      <trans-unit id="0xSwaIv" resname="Email could not be found.">
+        <source>Email could not be found.</source>
+        <target>L'e-mail est introuvable.</target>
+      </trans-unit>
+      <trans-unit id="Ld4QveS" resname="Wrong password">
+        <source>Wrong password</source>
+        <target>Mauvais mot de passe</target>
       </trans-unit>
     </body>
   </file>
