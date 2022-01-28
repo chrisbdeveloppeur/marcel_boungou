@@ -30,12 +30,13 @@ class EventType extends AbstractType
                 'label' => $this->translator->trans('Name of the event'),
             ])
             ->add('datetime', DateTimeType::class,[
+                'label' => $this->translator->trans('Select the date'),
                 'attr' => [
                     'class' => 'input has-text-centered',
-                    'type' => 'date', 'value' => date_format(new \DateTime('now'), 'Y-m-d')
+                    'type' => 'date',
                 ],
                 'widget' => 'single_text',
-                'label' => $this->translator->trans('Select the date'),
+                'with_seconds' => false,
             ])
             ->add('country', TextType::class,[
                 'attr' => [

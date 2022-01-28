@@ -29,14 +29,22 @@ class CalendarController
         $projectRoot = $this->appKernel->getProjectDir();
         $event = $this->eventRepository->find($event_id);
         $adresse = $event->getStreet().', '.$event->getCp().' '.$event->getCity().', '.$event->getCity();
+        if (!$event->getDescription()) {
+            $description = 'N/C';
+        }else{
+            $description = $event->getDescription();
+        }
         $calendar = Calendar::create('www.marcel-boungou.com')
             ->event(Event::create($event->getTitle())
                 ->startsAt($event->getDatetime())
                 ->endsAt($event->getDatetime())
                 ->address($adresse)
-                ->description($event->getDescription())
+                ->description($description)
             )
             ->get();
+        if (!file_exists($projectRoot.'/public/documents/events_files/')) {
+            mkdir($projectRoot.'/public/documents/events_files/', 0777, true);
+        }
         file_put_contents($projectRoot.'/public/documents/events_files/'.$event->getTitle().'.ics',$calendar);
 
         return $calendar;

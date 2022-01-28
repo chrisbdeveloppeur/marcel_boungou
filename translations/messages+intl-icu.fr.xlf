@@ -385,6 +385,38 @@
         <source>You cannot delete the super admin account</source>
         <target>Vous ne pouvez pas supprimer le compte super administrateur</target>
       </trans-unit>
+      <trans-unit id="8yP.u6s" resname="Name of the event">
+        <source>Name of the event</source>
+        <target>__Name of the event</target>
+      </trans-unit>
+      <trans-unit id="JdirFTF" resname="Select the date">
+        <source>Select the date</source>
+        <target>__Select the date</target>
+      </trans-unit>
+      <trans-unit id="cB0CHQj" resname="Country">
+        <source>Country</source>
+        <target>__Country</target>
+      </trans-unit>
+      <trans-unit id=".DP3Mkb" resname="City">
+        <source>City</source>
+        <target>__City</target>
+      </trans-unit>
+      <trans-unit id="_nUxZic" resname="Post code">
+        <source>Post code</source>
+        <target>__Post code</target>
+      </trans-unit>
+      <trans-unit id="gvcTBt7" resname="Adresse street">
+        <source>Adresse street</source>
+        <target>__Adresse street</target>
+      </trans-unit>
+      <trans-unit id="Um4Ah8w" resname="Description">
+        <source>Description</source>
+        <target>__Description</target>
+      </trans-unit>
+      <trans-unit id="GkRmWSc" resname="Create new Event">
+        <source>Create new Event</source>
+        <target>__Create new Event</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

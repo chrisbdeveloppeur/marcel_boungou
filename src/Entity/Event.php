@@ -59,6 +59,7 @@ class Event
 
     public function __construct()
     {
+        $this->datetime = new \DateTime();
     }
 
     public function __toString()
@@ -155,12 +156,12 @@ class Event
         return $this;
     }
 
-    public function getDescription(): ?string
+    public function getDescription()
     {
         return $this->description;
     }
 
-    public function setDescription(?string $description): self
+    public function setDescription($description)
     {
         $this->description = $description;
 
