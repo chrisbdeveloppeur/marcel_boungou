@@ -9,7 +9,19 @@
         <h1 class="is-3 subtitle">{% trans %}Please sign in{% endtrans %}</h1>
 
         {% if error %}
-            <div class="help tag is-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+            {% if error.line == 77 %}
+                <div class="tags has-addons">
+                    <div class="help tag is-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                    <a href="{{ path('app_register') }}" class="help tag is-info">{% trans %}No account yet? Add one now{% endtrans %}</a>
+                </div>
+            {% elseif error.line == 95  %}
+                <div class="tags has-addons">
+                    <div class="help tag is-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                    <a href="{{ path('app_forgot_password_request') }}" class="help tag is-info">{% trans %}Forgot your password ?{% endtrans %}</a>
+                </div>
+            {% else %}
+                <div class="help tag is-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+            {% endif %}
         {% endif %}
         <div class="field">
             <label class="label" for="inputEmail">{% trans %}Email{% endtrans %}</label>
@@ -45,7 +57,9 @@
                 {% trans %}Sign in{% endtrans %}
             </button>
 
+            {#
             <a href="{{ path('app_forgot_password_request') }}" class="button is-small is-info is-light">{% trans %}Forgot your password ?{% endtrans %}</a>
+            #}
         </div>
 
     </form>
