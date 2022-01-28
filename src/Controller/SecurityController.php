@@ -43,7 +43,7 @@ class SecurityController extends AbstractController
 
         if ($this->isGranted('ROLE_USER')){
             $msg = $this->tranlator->trans('You are already logged...');
-            $this->addFlash('info', $msg);
+            $this->addFlash('primary', $msg);
             return $this->redirectToRoute('home_index');
         }
 

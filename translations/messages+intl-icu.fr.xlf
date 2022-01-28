@@ -381,6 +381,10 @@
         <source>You are already logged...</source>
         <target>Vous êtes déjà connecté...</target>
       </trans-unit>
+      <trans-unit id="d61EmI6" resname="You cannot delete the super admin account">
+        <source>You cannot delete the super admin account</source>
+        <target>Vous ne pouvez pas supprimer le compte super administrateur</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
