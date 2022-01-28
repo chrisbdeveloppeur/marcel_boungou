@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\Event;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -27,10 +28,9 @@ class EventType extends AbstractType
                 ],
                 'label' => $this->translator->trans('Name of the event'),
             ])
-            ->add('datetime', null,[
+            ->add('datetime', DateTimeType::class,[
                 'attr' => [
-                    'type' => 'date',
-                    'class' => 'bulma-calendar bulma-calendar-2'
+                    'class' => 'is-hidden'
                 ],
                 'label' => $this->translator->trans('Select the date'),
             ])

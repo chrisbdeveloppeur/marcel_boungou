@@ -18,6 +18,9 @@
         {{ form_widget(child) }}
 
     </div>
+    {% elseif child.vars.block_prefixes[1] == 'datetime' %}
+        {{ form_widget(child) }}
+        <input type="date" class="bulma-calendar bulma-calendar-1 is-small">
     {% elseif child.vars.block_prefixes[1] == 'checkbox' %}
         {% if 'agreeTerms' in child.vars.name %}
             <label class="checkbox">
