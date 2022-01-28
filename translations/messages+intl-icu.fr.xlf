@@ -373,6 +373,10 @@
         <source>Wrong password</source>
         <target>Mauvais mot de passe</target>
       </trans-unit>
+      <trans-unit id="KPtW2AX" resname="No account yet ? Add one now">
+        <source>No account yet ? Add one now</source>
+        <target>Pas encore de compte ? Ajoutez-en un maintenant</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

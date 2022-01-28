@@ -73,6 +73,14 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   width: 320px;
 }
 
+.show-password{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 40px;
+}
+
 @import "~bulma";
 @import "~bulma-calendar";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";

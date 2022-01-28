@@ -9,31 +9,31 @@
         <h1 class="is-3 subtitle">{% trans %}Please sign in{% endtrans %}</h1>
 
         {% if error %}
-            {% if error.line == 77 %}
-                <div class="tags has-addons">
-                    <div class="help tag is-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-                    <a href="{{ path('app_register') }}" class="help tag is-info">{% trans %}No account yet? Add one now{% endtrans %}</a>
-                </div>
-            {% elseif error.line == 95  %}
-                <div class="tags has-addons">
-                    <div class="help tag is-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-                    <a href="{{ path('app_forgot_password_request') }}" class="help tag is-info">{% trans %}Forgot your password ?{% endtrans %}</a>
-                </div>
-            {% else %}
-                <div class="help tag is-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-            {% endif %}
-        {% endif %}
+            <div class="help tag is-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+        {% endif%}
+
         <div class="field">
             <label class="label" for="inputEmail">{% trans %}Email{% endtrans %}</label>
-            <div class="control">
+            <div class="control has-icons-left has-icons-right">
                 <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control input" autocomplete="email" required autofocus>
+                <span class="icon is-small is-left">
+                    <i class="fas fa-at"></i>
+                </span>
             </div>
         </div>
 
         <div class="field">
             <label class="label" for="inputPassword">{% trans %}Password{% endtrans %}</label>
-            <div class="control">
-                <input type="password" name="password" id="inputPassword" class="form-control input" autocomplete="current-password" required>
+            <div class="control has-icons-left">
+                <input type="password" name="password" id="inputPassword" class="form-control input input-password" autocomplete="current-password" required>
+                <span class="icon is-small is-left">
+                    <i class="fas fa-key"></i>
+                </span>
+                <div class="show-password">
+                    <span class="icon is-small">
+                        <i class="fas fa-eye-slash"></i>
+                    </span>
+                </div>
             </div>
         </div>
 
@@ -52,14 +52,18 @@
             </div>
         #}
 
-        <div class="is-flex is-justify-content-space-between">
+        <div class="">
             <button class="button is-primary" type="submit">
                 {% trans %}Sign in{% endtrans %}
             </button>
 
-            {#
-            <a href="{{ path('app_forgot_password_request') }}" class="button is-small is-info is-light">{% trans %}Forgot your password ?{% endtrans %}</a>
-            #}
+            {% if error %}
+                {% if error.line == 77 %}
+                    <a href="{{ path('app_register') }}" class="help button is-warning is-light">{% trans %}No account yet ? Add one now{% endtrans %}</a>
+                {% elseif error.line == 92  %}
+                    <a href="{{ path('app_forgot_password_request') }}" class="help button is-warning is-light">{% trans %}Forgot your password ?{% endtrans %}</a>
+                {% endif %}
+            {% endif %}
         </div>
 
     </form>

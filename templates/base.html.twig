@@ -149,6 +149,35 @@
     });
     {######################################}
 
+
+
+    {#     SCRIPT POUR TOOGLE NAVBAR IS-ACTIVE     #}
+    function toggleAttr(element) {
+        element.forEach(function (el) {
+            if (el.type === 'password'){
+                el.type = 'text';
+            }else if(el.type === 'text'){
+                el.type = 'password';
+            }
+        });
+    }
+
+    let showPasswordBtn = document.querySelectorAll('.show-password');
+    showPasswordBtn.forEach(function (el) {
+            el.addEventListener('click', function (){
+                if (el.querySelector('i').classList.contains('fa-eye-slash')){
+                    el.querySelector('i').classList.replace('fa-eye-slash','fa-eye');
+                    el.querySelector('i').classList.add('has-text-dark');
+                } else {
+                    el.querySelector('i').classList.replace('fa-eye','fa-eye-slash');
+                    el.querySelector('i').classList.remove('has-text-dark');
+                }
+
+                toggleAttr(document.querySelectorAll('.input-password'))
+            })
+        }
+    )
+
 </script>
 
 
