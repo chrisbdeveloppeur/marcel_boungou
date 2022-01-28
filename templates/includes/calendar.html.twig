@@ -11,11 +11,11 @@
                    {% trans %} HIGHLIGHT {% endtrans %} : {{ event.title }}
                     <br>
                     {% if app.request.locale == 'fr' %}
-                        {{ event.datetime|date('d/m/Y') }}
+                        {{ event.datetime|date('d/m/Y - H:i') }}
                     {% elseif app.request.locale == 'en' %}
-                        {{ event.datetime|date('m/d/Y') }}
+                        {{ event.datetime|date('m/d/Y - h:i a') }}
                     {% else %}
-                        {{ event.datetime|date('d/m/Y') }}
+                        {{ event.datetime|date('d/m/Y - H:i') }}
                     {% endif %}
                     <p class="help">
                         {{ event.description }}
@@ -35,7 +35,7 @@
                     >{% trans %}Add to Calendar{% endtrans %}</a>
                     #}
                     <div class="column px-0 pb-0 is-flex is-justify-content-end">
-                        <a href="{{ asset('documents/events_files/') }}{{ event.icsFile }}" class="addToCalendar button is-small is-primary is-light">{% trans %}Add to Calendar{% endtrans %}</a>
+                        <a href="{{ asset('documents/events_files/') }}{{ event.icsFile }}" target="_blank" download="{{ asset('documents/events_files/') }}{{ event.icsFile }}" type=".ics" class="addToCalendar button is-small is-primary is-light">{% trans %}Add to Calendar{% endtrans %}</a>
                     </div>
                 </div>
             {% endfor %}

@@ -130,54 +130,27 @@
     });
 
     // To access to bulmaCalendar instance of an element
-    //const element = document.querySelector('#my-element');
+
     const agendas = document.querySelectorAll('.bulma-calendar');
     agendas.forEach(function (agenda) {
         if (agenda) {
             // bulmaCalendar instance is available as element.bulmaCalendar
             agenda.bulmaCalendar.on('select', datepicker => {
                 selectedDate = datepicker.data.value();
-
-{#                {% if app.request.get('_route') == 'events_new' %}#}
-
-{#                    let inputEventDateTime = document.getElementById('event_datetime');#}
-{#                    inputEventDateTime.select = selectedDate;#}
-{#                    console.log(inputEventDateTime);#}
-{#                    console.log(inputEventDateTime.value);#}
-
-{#                {% else %}#}
-
-                    let highlightsInfos = document.querySelectorAll('.highlight-info');
-                    highlightsInfos.forEach(highlight => highlight.classList.add('is-hidden'));
-                    console.log(selectedDate);
-                    highlightsDates.forEach(function (highlight) {
-                        if (highlight === selectedDate){
-                            let highlightInfoId = document.getElementById(highlight);
-                            highlightInfoId.classList.remove('is-hidden');
-                        }
-                    });
-
-{#                {% endif %}#}
+                let highlightsInfos = document.querySelectorAll('.highlight-info');
+                highlightsInfos.forEach(highlight => highlight.classList.add('is-hidden'));
+                console.log(selectedDate);
+                highlightsDates.forEach(function (highlight) {
+                    if (highlight === selectedDate){
+                        let highlightInfoId = document.getElementById(highlight);
+                        highlightInfoId.classList.remove('is-hidden');
+                    }
+                });
             });
         }
     });
 
 
-    // function formatDateTimeInput(input) {
-    //     let daySelect = input.querySelector('#event_datetime_date_day');
-    //     let monthSelect = input.querySelector('#event_datetime_date_month');
-    //     let yearSelect = input.querySelector('#event_datetime_date_year');
-    //     let minuteSelect = input.querySelector('#event_datetime_time_minute');
-    //     let hourSelect = input.querySelector('#event_datetime_time_hour');
-    //     var dateFormated = {
-    //         'minutes' : minuteSelect,
-    //         'hours' : hourSelect,
-    //         'days' : daySelect,
-    //         'months' : monthSelect,
-    //         'years' : yearSelect,
-    //         };
-    //     return dateFormated;
-    // }
 
 
 
