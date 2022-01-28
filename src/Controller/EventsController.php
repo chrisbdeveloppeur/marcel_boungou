@@ -47,6 +47,7 @@ class EventsController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            dd($form->getData());
             $entityManager->persist($event);
             $entityManager->flush();
             $this->calendarController->createIcsFile($event->getId());

@@ -80,6 +80,9 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   height: 100%;
   width: 40px;
 }
+.show-password:hover{
+  cursor: pointer;
+}
 
 @import "~bulma";
 @import "~bulma-calendar";

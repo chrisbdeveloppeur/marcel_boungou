@@ -65,6 +65,33 @@
     //console.log(today.toLocaleDateString("fr-FR"));
     //console.log(highlightsDates);
 
+    {% if app.request.get('_route') == 'events_new' %}
+    var defaultOptions = {
+        type: 'datetime',
+        displayMode: 'default',
+        color: 'info',
+        showHeader: true,
+        isRange: false,
+        allowSameDayRange: true,
+        lang: '{{ app.request.locale }}',
+        startDate: today,
+        endDate: undefined,
+        minDate: undefined,
+        maxDate: null,
+        disabledDates: [],
+        disabledWeekDays: undefined,
+        highlightedDates: highlightsDates,
+        weekStart: 0,
+        dateFormat: 'dd/MM/yyyy',
+        enableMonthSwitch: false,
+        enableYearSwitch: false,
+        displayYearsCount: 50,
+        todayLabel: 'Aujourd\'hui',
+        showClearButton: true,
+        showButtons: true,
+        showTodayButton: true,
+    };
+    {% else %}
     var defaultOptions = {
         type: 'date',
         displayMode: 'inline',
@@ -90,7 +117,7 @@
         showButtons: false,
         showTodayButton: false,
     };
-
+    {% endif %}
 
     const calendars = bulmaCalendar.attach('[type="date"]', defaultOptions);
 
@@ -98,26 +125,31 @@
     calendars.forEach(calendar => {
         // Add listener to select event
         calendar.on('select', date => {
-            //console.log(date);
+            console.log(date);
         });
     });
 
     // To access to bulmaCalendar instance of an element
-    const element = document.querySelector('#my-element');
-    if (element) {
-        // bulmaCalendar instance is available as element.bulmaCalendar
-        element.bulmaCalendar.on('select', datepicker => {
-            let highlightsInfos = document.querySelectorAll('.highlight-info');
-            highlightsInfos.forEach(highlight => highlight.classList.add('is-hidden'));
-            selectedDate = datepicker.data.value();
-            highlightsDates.forEach(function (highlight) {
-                if (highlight === selectedDate){
-                    let highlightInfoId = document.getElementById(highlight);
-                    highlightInfoId.classList.remove('is-hidden');
-                }
-            })
-        });
-    }
+    //const element = document.querySelector('#my-element');
+    const agendas = document.querySelectorAll('.bulma-calendar');
+    agendas.forEach(function (agenda) {
+        if (agenda) {
+            // bulmaCalendar instance is available as element.bulmaCalendar
+            agenda.bulmaCalendar.on('select', datepicker => {
+                {% if app.request.get('_route') != 'events_new' %}
+                let highlightsInfos = document.querySelectorAll('.highlight-info');
+                highlightsInfos.forEach(highlight => highlight.classList.add('is-hidden'));
+                selectedDate = datepicker.data.value();
+                highlightsDates.forEach(function (highlight) {
+                    if (highlight === selectedDate){
+                        let highlightInfoId = document.getElementById(highlight);
+                        highlightInfoId.classList.remove('is-hidden');
+                    }
+                })
+                {% endif %}
+            });
+        }
+    });
 
 
 

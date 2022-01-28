@@ -51,7 +51,7 @@
         </label>
     </div>
     {% else %}
-    <p class="control has-icons-left has-icons-right">
+    <div class="control has-icons-left">
         {{ form_widget(child) }}
         {% if 'mail' in child.vars.name %}
             <span class="icon is-small is-left">

@@ -34,7 +34,7 @@ class RegistrationFormType extends AbstractType
                 // instead of being set onto the object directly,
                 // this is read and encoded in the controller
                 'mapped' => false,
-                'attr' => ['autocomplete' => 'new-password', 'class' => 'input'],
+                'attr' => ['autocomplete' => 'new-password', 'class' => 'input input-password'],
                 'label' => $this->translator->trans('Password'),
                 'label_attr' => ['class' => 'label'],
                 'constraints' => [

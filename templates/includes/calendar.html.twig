@@ -4,7 +4,7 @@
 
 {% block body %}
     <div class="container is-flex is-flex-direction-column is-justify-content-center is-align-items-center has-background-danger-light is-relative">
-        <input type="date" class="bulma-calendar is-small" id="my-element">
+        <input type="date" class="bulma-calendar bulma-calendar-1 is-small">
         {% if events is defined %}
             {% for event in events %}
                 <div class="highlight-info is-hidden has-text-light px-3 py-3" id="{{ event.datetime|date('d/m/Y') }}">

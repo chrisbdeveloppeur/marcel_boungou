@@ -3,9 +3,11 @@
 {% block title %}New Event{% endblock %}
 
 {% block body %}
-    <h1>Create new Event</h1>
+<div class="column is-two-fifths-desktop is-two-thirds-tablet has-background-light">
+    <h1 class="subtitle is-3">{% trans %}Create new Event{% endtrans %}</h1>
 
-    {{ include('event/_form.html.twig') }}
+    {{ include('themes/_form.html.twig') }}
 
-    <a href="{{ path('events_index') }}">back to list</a>
+    <a class="button is-small is-success" href="{{ path('events_index') }}">{% trans %}back to list{% endtrans %}</a>
+</div>
 {% endblock %}
