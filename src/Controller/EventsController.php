@@ -105,4 +105,5 @@ class EventsController extends AbstractController
 
         return $this->redirectToRoute('events_index', [], Response::HTTP_SEE_OTHER);
     }
+
 }

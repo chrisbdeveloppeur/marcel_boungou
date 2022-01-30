@@ -35,8 +35,10 @@
                     >{% trans %}Add to Calendar{% endtrans %}</a>
                     #}
                     <div class="column px-0 pb-0 is-flex is-justify-content-end">
-                        <a href="{{ asset('documents/events_files/') }}{{ event.icsFile }}" target="_blank" download="{{ asset('documents/events_files/') }}{{ event.icsFile }}" type=".ics" class="addToCalendar button is-small is-primary is-light">{% trans %}Add to Calendar{% endtrans %}</a>
+                        <a href="{{ asset('documents/events_files/') }}{{ event.icsFile }}" target="_blank" download="{{ event.icsFile }}" type=".ics" class="addToCalendar button is-small is-primary is-light">{% trans %}Add to Calendar{% endtrans %}</a>
                     </div>
+
+                    <a href="" class="button is-small">send reminder</a>
                 </div>
             {% endfor %}
         {% endif %}
