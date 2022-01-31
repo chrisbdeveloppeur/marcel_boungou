@@ -84,6 +84,10 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   cursor: pointer;
 }
 
+.borderless{
+  border-radius: 0 !important;
+}
+
 @import "~bulma";
 @import "~bulma-calendar";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
