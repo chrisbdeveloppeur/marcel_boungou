@@ -88,6 +88,22 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   border-radius: 0 !important;
 }
 
+.transition-3ms{
+  transition: .3s !important;
+}
+
+.opacity0{
+  opacity: 0 !important;
+  visibility: hidden;
+  height: 0px;
+}
+
+.opacity100{
+  opacity: 100% !important;
+  visibility: visible;
+  height: max-content;
+}
+
 @import "~bulma";
 @import "~bulma-calendar";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";

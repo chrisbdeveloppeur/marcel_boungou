@@ -40,8 +40,8 @@
 
 
                     <div class="">
-                        <a class="column is-fullwidth has-text-centered" onclick="this.nextElementSibling.classList.toggle('is-hidden')">{% trans %}I want to be called back by email{% endtrans %}</a>
-                        <form action="{{ path('events_add_email_reminder', {'id': event.id}) }}" method="post" class="is-hidden">
+                        <a class="column is-fullwidth has-text-centered has-text-weight-bold has-text-light" onclick="this.nextElementSibling.classList.toggle('opacity0');this.nextElementSibling.classList.toggle('opacity100');">{% trans %}I want to be called back by email{% endtrans %}</a>
+                        <form action="{{ path('events_add_email_reminder', {'id': event.id}) }}" method="post" class="transition-3ms opacity0">
                             <div class="field">
                                 <input type="text" class="input is-small has-text-centered" placeholder="My Email" name="email">
                             </div>
