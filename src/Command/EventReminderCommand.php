@@ -17,7 +17,7 @@ class EventReminderCommand extends Command
 {
     private $mailer;
     private $eventRepository;
-    protected static $defaultName = 'event:remind';
+    protected static $defaultName = 'event:reminder';
     protected static $defaultDescription = 'Add a short description for your command';
 
     public function __construct(string $name = null, MailerInterface $mailer, EventRepository $eventRepository)

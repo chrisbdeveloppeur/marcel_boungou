@@ -29,6 +29,10 @@ class AppFixtures extends Fixture
             $event->setCp($faker->postcode);
             $event->setStreet($faker->streetAddress);
             $event->setDescription($faker->text($faker->numberBetween('50','100')));
+            for ($j = 1; $j <= $faker->numberBetween('2','10'); $j++){
+                $mail = $faker->email;
+                $event->addMailToRemind($mail);
+            }
             $manager->persist($event);
             $manager->flush();
             $this->calendar->createIcsFile($event->getId());

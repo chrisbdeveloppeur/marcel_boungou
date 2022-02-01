@@ -57,6 +57,11 @@ class Event
      */
     private $description;
 
+    /**
+     * @ORM\Column(type="array", nullable=true)
+     */
+    private $mails_to_remind = [];
+
     public function __construct()
     {
         $this->datetime = new \DateTime();
@@ -165,6 +170,30 @@ class Event
     {
         $this->description = $description;
 
+        return $this;
+    }
+
+    public function getMailsToRemind(): ?array
+    {
+        return $this->mails_to_remind;
+    }
+
+    public function addMailToRemind(?string $mail)
+    {
+        $array = $this->mails_to_remind;
+        array_push($array,$mail);
+        $this->mails_to_remind = $array;
+
+        return $this;
+    }
+
+    public function removeMailToRemind(?string $mail)
+    {
+        $array = $this->mails_to_remind;
+        if (($key = array_search($mail, $array, true)) !== false) {
+            array_splice($array,$key);
+        }
+        $this->mails_to_remind = $array;
         return $this;
     }
 
