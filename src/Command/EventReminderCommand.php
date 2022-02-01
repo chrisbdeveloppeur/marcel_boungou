@@ -38,6 +38,7 @@ class EventReminderCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
+        date_default_timezone_set('Europe/Paris');
         $io = new SymfonyStyle($input, $output);
         $this->sendReminder();
         //if ($event_id) {
@@ -59,42 +60,46 @@ class EventReminderCommand extends Command
 
     public function sendReminder()
     {
+        //$timezone = new \DateTimeZone('Europe/Paris');
+        date_default_timezone_set("Europe/Paris");
         $date = new \DateTime();
         $date = $date->format('d/m/Y');
         $events = $this->eventRepository->findAll();
-        dump('Current day : '.$date);
         foreach ($events as $event){
-            $dateEvent = $event->getDatetime();
+            $dateEvent = $event->getDatetime()->format('d/m/Y');
+            $dateEventMonth = $event->getDatetime()->modify('-1 month')->format('d/m/Y');
+            $dateEventDay = $event->getDatetime()->modify('-1 day')->format('d/m/Y');
+            //dump('Current day : '.$date->format('d/m/Y') . ' | ' . 'Event date : '.$dateEvent->format('d/m/Y'));
 
-            dump('One Monthe befre event date : '.$dateEvent->modify('-1 month')->format('d/m/Y'));
-            if ($date == $dateEvent->modify('-1 month')->format('d/m/Y')){
+            if ($date == $dateEventMonth){
                 dump('1 mois avant');
                 $email = (new Email())
                     ->from('admin@mercalboungou.com')
                     ->to('kenshin91cb@gmail.com','christian.boungou@gmail.com')
                     ->subject('Prepare the date !')
-                    ->html('Current date is : ' . $date . '<br> Event date is : ' . $dateEvent->format('d/m/Y h:i'))
+                    ->html('Current date is : ' . $date . '<br> Event date is : ' . $dateEvent)
                 ;
                 $this->mailer->send($email);
-            }else if ($date == $dateEvent->modify('-1 day')->format('d/m/Y')){
+            }else if ($date == $dateEventDay){
                 dump('1 Jour avant');
                 $email = (new Email())
                     ->from('admin@mercalboungou.com')
                     ->to('kenshin91cb@gmail.com','christian.boungou@gmail.com')
                     ->subject('Tommorrow is the great day !')
-                    ->html('Current date is : ' . $date . '<br> Event date is : ' . $dateEvent->format('d/m/Y h:i'))
+                    ->html('Current date is : ' . $date . '<br> Event date is : ' . $dateEvent)
                 ;
                 $this->mailer->send($email);
-            }else if ($date == $dateEvent->format('d/m/Y')){
+            }else if ($date == $dateEvent){
                 dump('JOUR J');
                 $email = (new Email())
                     ->from('admin@mercalboungou.com')
                     ->to('kenshin91cb@gmail.com','christian.boungou@gmail.com')
                     ->subject('Here is the day !')
-                    ->html('Current date is : ' . $date . '<br> Event date is : ' . $dateEvent->format('d/m/Y h:i'))
+                    ->html('Current date is : ' . $date . '<br> Event date is : ' . $dateEvent)
                 ;
                 $this->mailer->send($email);
             }
+
         }
 
         //return [
