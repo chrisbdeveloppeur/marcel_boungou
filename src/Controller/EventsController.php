@@ -106,4 +106,18 @@ class EventsController extends AbstractController
         return $this->redirectToRoute('events_index', [], Response::HTTP_SEE_OTHER);
     }
 
+
+    /**
+     * @Route("/reminder/{id}", name="add_email_reminder", methods={"POST","GET"})
+     */
+    public function addEmailReminder($id, EventRepository $eventRepository){
+        $event = $eventRepository->find($id);
+
+        if ($_POST){
+            $mail = $_POST['email'];
+            $event->addMailToRemind($mail);
+            return $this->redirectToRoute('');
+        }
+    }
+
 }

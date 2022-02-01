@@ -39,7 +39,11 @@
                     </div>
 
 
-                    <a href="" class="button is-small">add reminder</a>
+                    <form action="{{ path('events_add_email_reminder', {'id': event.id}) }}" method="post">
+                        <input type="text" class="input is-small has-text-centered" placeholder="My Email" name="email">
+                        <button class="button is-small">add reminder</button>
+                    </form>
+
                 </div>
             {% endfor %}
         {% endif %}

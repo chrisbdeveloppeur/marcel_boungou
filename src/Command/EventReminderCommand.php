@@ -2,7 +2,6 @@
 
 namespace App\Command;
 
-use App\Entity\Event;
 use App\Repository\EventRepository;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -12,7 +11,6 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mime\Email;
-use Symfony\Component\Validator\Constraints\Date;
 
 class EventReminderCommand extends Command
 {
