@@ -52,7 +52,7 @@ class EventReminderCommand extends Command
         //    // ...
         //}
 
-        $io->success('You have a new command! Now make it your own! Pass --help to see your options.');
+        $io->success('Mail reminder sended !');
 
         return 0;
     }
@@ -60,7 +60,6 @@ class EventReminderCommand extends Command
 
     public function sendReminder()
     {
-        //$timezone = new \DateTimeZone('Europe/Paris');
         date_default_timezone_set("Europe/Paris");
         $date = new \DateTime();
         $date = $date->format('d/m/Y');
@@ -72,7 +71,6 @@ class EventReminderCommand extends Command
             //dump('Current day : '.$date->format('d/m/Y') . ' | ' . 'Event date : '.$dateEvent->format('d/m/Y'));
 
             if ($date == $dateEventMonth){
-                dump('1 mois avant');
                 $email = (new Email())
                     ->from('admin@mercalboungou.com')
                     ->to('kenshin91cb@gmail.com','christian.boungou@gmail.com')
@@ -81,7 +79,6 @@ class EventReminderCommand extends Command
                 ;
                 $this->mailer->send($email);
             }else if ($date == $dateEventDay){
-                dump('1 Jour avant');
                 $email = (new Email())
                     ->from('admin@mercalboungou.com')
                     ->to('kenshin91cb@gmail.com','christian.boungou@gmail.com')
@@ -90,7 +87,6 @@ class EventReminderCommand extends Command
                 ;
                 $this->mailer->send($email);
             }else if ($date == $dateEvent){
-                dump('JOUR J');
                 $email = (new Email())
                     ->from('admin@mercalboungou.com')
                     ->to('kenshin91cb@gmail.com','christian.boungou@gmail.com')
