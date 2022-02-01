@@ -186,7 +186,6 @@ class Event
             array_push($array,$mail);
             $this->mails_to_remind = $array;
         }
-
         return $this;
     }
 

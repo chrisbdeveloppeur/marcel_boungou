@@ -11,6 +11,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Translation\Translator;
+use Symfony\Contracts\Translation\TranslatorInterface;
 
 /**
  * @Route("/event", name="events_")
@@ -110,13 +112,23 @@ class EventsController extends AbstractController
     /**
      * @Route("/reminder/{id}", name="add_email_reminder", methods={"POST","GET"})
      */
-    public function addEmailReminder($id, EventRepository $eventRepository){
+    public function addEmailReminder($id, EventRepository $eventRepository, TranslatorInterface $translator, EntityManagerInterface $em){
         $event = $eventRepository->find($id);
 
         if ($_POST){
             $mail = $_POST['email'];
-            $event->addMailToRemind($mail);
-            return $this->redirectToRoute('');
+            if (in_array($mail, $event->getMailsToRemind())){
+                $msg = $translator->trans('You are already in the list of contacts to call back');
+                $this->addFlash('warning', $msg);
+            }else{
+                $msg = $translator->trans('Thanks you ! You will be notified by mail when the event date is approaching');
+                $event->addMailToRemind($mail);
+                $em->persist($event);
+                $em->flush();
+                $this->addFlash('success', $msg);
+            }
+
+            return $this->redirectToRoute('events_index');
         }
     }
 
