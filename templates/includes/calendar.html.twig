@@ -34,18 +34,29 @@
                         return false;"
                     >{% trans %}Add to Calendar{% endtrans %}</a>
                     #}
-                    <div class="column px-0 pb-0 is-flex is-justify-content-end">
-                        <a href="{{ asset('documents/events_files/') }}{{ event.icsFile }}" target="_blank" download="{{ event.icsFile }}" type=".ics" class="addToCalendar button is-small is-primary is-light">{% trans %}Add to Calendar{% endtrans %}</a>
+                    <div class="column px-0 is-flex is-justify-content-end">
+                        <a href="{{ asset('documents/events_files/') }}{{ event.icsFile }}" target="_blank" download="{{ event.icsFile }}" type=".ics" class="addToCalendar button is-small is-primary is-light" title="{% trans %}Add to Calendar{% endtrans %}">
+                            <span class="icon">
+                                <i class="fas fa-lg fa-calendar-day"></i>
+                            </span>
+                            <span>.ics</span>
+                        </a>
                     </div>
 
 
-                    <div class="">
-                        <a class="column is-fullwidth has-text-centered has-text-weight-bold has-text-light" onclick="this.nextElementSibling.classList.toggle('opacity0');this.nextElementSibling.classList.toggle('opacity100');">{% trans %}I want to be called back by email{% endtrans %}</a>
-                        <form action="{{ path('events_add_email_reminder', {'id': event.id}) }}" method="post" class="transition-3ms opacity0">
+                    <div class="has-text-centered">
+                        <a class="is-fullwidth has-text-light" onclick="this.nextElementSibling.classList.toggle('is-hidden');">
+                            <span class="icon">
+                                <i class="far fa-bell"></i>
+                            </span>
+                            <span>{% trans %}I want to be called back by email{% endtrans %}</span>
+                        </a>
+                        <form action="{{ path('events_add_email_reminder', {'id': event.id}) }}" method="post" class="transition-3ms is-hidden">
                             <div class="field">
-                                <input type="text" class="input is-small has-text-centered" placeholder="My Email" name="email">
+                                <input type="email" class="input is-small has-text-centered" placeholder="{% trans %}my@email.com{% endtrans %}" name="email">
                             </div>
                             <div class="is-flex is-justify-content-space-between">
+                                <a href="{{ path('events_remove_email_reminder', {'id': event.id}) }}" class="button is-small">{% trans %}remove reminder{% endtrans %}</a>
                                 <button class="button is-small">{% trans %}add reminder{% endtrans %}</button>
                             </div>
                         </form>

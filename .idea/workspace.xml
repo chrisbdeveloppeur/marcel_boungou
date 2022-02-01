@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c513a9b-8917-4b63-8b91-a519e09de280" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Controller/EventsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EventsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/event/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/event/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220128083512.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220201132003.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/veniam.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/veniam.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/voluptas.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/voluptas.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/includes/calendar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/calendar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf" beforeDir="false" afterPath="$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,31 +58,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/Event.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="185" column="37" selection-start-line="185" selection-start-column="37" selection-end-line="185" selection-end-column="37" />
+            <state relative-caret-position="508">
+              <caret line="210" selection-start-line="210" selection-end-line="210" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/includes/calendar.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+            <state relative-caret-position="219">
+              <caret line="41" column="45" lean-forward="true" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
               <folding>
-                <element signature="e#2701#2726#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/includes/flash_message.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#2756#2781#0#Twig" expanded="true" />
+                <element signature="e#3198#3226#0#Twig" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/styles/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="103" column="21" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
+            <state relative-caret-position="260">
+              <caret line="92" column="1" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -95,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+            <state relative-caret-position="374">
+              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -104,24 +98,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/EventsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+            <state relative-caret-position="543">
+              <caret line="166" column="5" selection-start-line="166" selection-start-column="5" selection-end-line="166" selection-end-column="5" />
               <folding>
-                <element signature="e#34#55#0#PHP" expanded="true" />
-                <element signature="e#4477#4491#1#PHP" expanded="true" />
-                <element signature="e#5429#5443#1#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/event/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-              <folding>
-                <element signature="e#12#26#0#Twig" expanded="true" />
+                <element signature="e#5727#5741#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,7 +110,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="das://999c275e-131c-417a-8015-5705ab7315c1/schema/marcel_boungou/table/event">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="23f2e770-fec3-4d4c-bc3d-f658bf04e2d0">
+            <state projectRestartId="b8a6f949-360a-454b-8bca-f0db3df896ae">
               <filtering>
                 <filter text="" />
               </filtering>
@@ -197,24 +177,24 @@
         <option value="$PROJECT_DIR$/templates/themes/_form.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/CalendarController.php" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
-        <option value="$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf" />
         <option value="$PROJECT_DIR$/src/Form/EventType.php" />
         <option value="$PROJECT_DIR$/src/Notifier/MailController.php" />
         <option value="$PROJECT_DIR$/src/EventSubscriber/TwigEventSubscriber.php" />
         <option value="$PROJECT_DIR$/templates/security/login.html.twig" />
         <option value="$PROJECT_DIR$/templates/gallery/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/GalleryController.php" />
-        <option value="$PROJECT_DIR$/.env.local" />
         <option value="$PROJECT_DIR$/src/Controller/EventRiminderController.php" />
         <option value="$PROJECT_DIR$/.symfony.cloud.yaml" />
         <option value="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" />
         <option value="$PROJECT_DIR$/src/Command/EventReminderCommand.php" />
         <option value="$PROJECT_DIR$/src/Entity/Event.php" />
         <option value="$PROJECT_DIR$/templates/includes/flash_message.html.twig" />
-        <option value="$PROJECT_DIR$/templates/includes/calendar.html.twig" />
-        <option value="$PROJECT_DIR$/assets/styles/app.scss" />
         <option value="$PROJECT_DIR$/src/Controller/EventsController.php" />
         <option value="$PROJECT_DIR$/templates/event/index.html.twig" />
+        <option value="$PROJECT_DIR$/.env.local" />
+        <option value="$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf" />
+        <option value="$PROJECT_DIR$/assets/styles/app.scss" />
+        <option value="$PROJECT_DIR$/templates/includes/calendar.html.twig" />
       </list>
     </option>
   </component>
@@ -339,7 +319,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -350,13 +329,12 @@
             <path>
               <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
               <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
               <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Command" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
@@ -387,10 +365,16 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="includes" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
+              <item name="translations" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -453,17 +437,18 @@
       <workItem from="1643402526466" duration="836000" />
       <workItem from="1643540077139" duration="4443000" />
       <workItem from="1643621622203" duration="30536000" />
+      <workItem from="1643740072511" duration="1287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158680000" />
+    <option name="totallyTimeSpent" value="160139000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16778524" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16950959" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -477,7 +462,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49932885" visible="true" weight="0.2875354" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49932885" visible="true" weight="0.28710726" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067115" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.3286119" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
@@ -485,7 +470,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Word Book" order="3" side_tool="true" />
-      <window_info anchor="right" id="Database" order="4" weight="0.14496644" />
+      <window_info anchor="right" id="Database" order="4" weight="0.1444563" />
       <window_info anchor="right" id="Translation Assistant" order="5" weight="0.32995737" />
     </layout>
     <layout-to-restore>
@@ -754,13 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="422" selection-start-line="422" selection-end-line="422" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/GalleryController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -775,13 +753,6 @@
           <folding>
             <element signature="e#12#26#0#Twig" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env.local">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -834,33 +805,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Command/TestCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php.ini">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.symfony.cloud.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Command/EventReminderCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding>
-            <element signature="e#31#66#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Command/TestCommand.php" />
+    <entry file="file://$PROJECT_DIR$/php.ini" />
+    <entry file="file://$PROJECT_DIR$/.symfony.cloud.yaml" />
+    <entry file="file://$PROJECT_DIR$/src/Command/EventReminderCommand.php" />
     <entry file="file://$PROJECT_DIR$/src/Controller/CalendarController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -868,22 +816,6 @@
           <folding>
             <element signature="e#34#69#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://999c275e-131c-417a-8015-5705ab7315c1/schema/marcel_boungou/table/event">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="23f2e770-fec3-4d4c-bc3d-f658bf04e2d0">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="185" column="37" selection-start-line="185" selection-start-column="37" selection-end-line="185" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -897,48 +829,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/includes/calendar.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+        <state relative-caret-position="374">
+          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/event/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://999c275e-131c-417a-8015-5705ab7315c1/schema/marcel_boungou/table/event">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="b8a6f949-360a-454b-8bca-f0db3df896ae">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="210" selection-start-line="210" selection-end-line="210" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="447" column="44" selection-start-line="447" selection-start-column="44" selection-end-line="447" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.local">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="38" selection-start-line="38" selection-end-line="38" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/EventsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="166" column="5" selection-start-line="166" selection-start-column="5" selection-end-line="166" selection-end-column="5" />
           <folding>
-            <element signature="e#2701#2726#0#Twig" expanded="true" />
+            <element signature="e#5727#5741#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="103" column="21" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
+        <state relative-caret-position="260">
+          <caret line="92" column="1" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php">
+    <entry file="file://$PROJECT_DIR$/templates/includes/calendar.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/EventsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+        <state relative-caret-position="375">
+          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
           <folding>
-            <element signature="e#34#55#0#PHP" expanded="true" />
-            <element signature="e#4477#4491#1#PHP" expanded="true" />
-            <element signature="e#5429#5443#1#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/event/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
+            <element signature="e#3107#3132#0#Twig" expanded="true" />
+            <element signature="e#3580#3608#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>

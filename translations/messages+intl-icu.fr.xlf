@@ -401,11 +401,11 @@
         <source>City</source>
         <target>Ville</target>
       </trans-unit>
-      <trans-unit id="_nUxZic" resname="ZIP code">
+      <trans-unit id="lch.4y1" resname="ZIP code">
         <source>ZIP code</source>
         <target>Code postale</target>
       </trans-unit>
-      <trans-unit id="gvcTBt7" resname="Name of the street">
+      <trans-unit id="LJ4ONWJ" resname="Name of the street">
         <source>Name of the street</source>
         <target>Nom de la rue</target>
       </trans-unit>
@@ -416,6 +416,38 @@
       <trans-unit id="GkRmWSc" resname="Create new Event">
         <source>Create new Event</source>
         <target>Créer un nouvel événement</target>
+      </trans-unit>
+      <trans-unit id="rlj43As" resname="You are already in the list of contacts to call back">
+        <source>You are already in the list of contacts to call back</source>
+        <target>Vous êtes déjà dans la liste des contacts à rappeler</target>
+      </trans-unit>
+      <trans-unit id="HNwM3sL" resname="Thanks you ! You will be notified by mail when the event date is approaching">
+        <source>Thanks you ! You will be notified by mail when the event date is approaching</source>
+        <target>Merci ! Vous serez averti par mail lorsque la date de l'événement approche</target>
+      </trans-unit>
+      <trans-unit id="SB5Ox4H" resname="This mail in the list of contacts to call back">
+        <source>This mail in the list of contacts to call back</source>
+        <target>Ce mail dans la liste des contacts à rappeler</target>
+      </trans-unit>
+      <trans-unit id="b9.lQQm" resname="You have removed yourself from the list of contacts to call back">
+        <source>You have removed yourself from the list of contacts to call back</source>
+        <target>Vous vous êtes retiré de la liste des contacts à rappeler</target>
+      </trans-unit>
+      <trans-unit id="F0jwnR5" resname="I want to be called back by email">
+        <source>I want to be called back by email</source>
+        <target>Je souhaite être rappelé par email</target>
+      </trans-unit>
+      <trans-unit id="UOlTTYt" resname="remove reminder">
+        <source>remove reminder</source>
+        <target>supprimer le rappel</target>
+      </trans-unit>
+      <trans-unit id="cfPG7od" resname="add reminder">
+        <source>add reminder</source>
+        <target>ajouter un rappel</target>
+      </trans-unit>
+      <trans-unit id="L3p_ZNe" resname="my@email.com">
+        <source>my@email.com</source>
+        <target>mon@email.com</target>
       </trans-unit>
     </body>
   </file>
