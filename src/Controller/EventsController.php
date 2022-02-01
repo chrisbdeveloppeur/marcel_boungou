@@ -39,6 +39,17 @@ class EventsController extends AbstractController
     }
 
     /**
+     * @Route("/list", name="list", methods={"GET"})
+     */
+    public function list(EventRepository $eventRepository): Response
+    {
+        $events = $eventRepository->findAll();
+        return $this->render('event/index.html.twig', [
+            'events' => $events,
+        ]);
+    }
+
+    /**
      * @Route("/new", name="new", methods={"GET", "POST"})
      * @Security("is_granted('ROLE_ADMIN')", statusCode=403, message="Access denied !")
      */

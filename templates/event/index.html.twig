@@ -8,7 +8,6 @@
     <table class="table">
         <thead>
             <tr>
-{#                <th>Id</th>#}
                 <th>Title</th>
                 <th>Datetime</th>
                 <th>Country</th>
@@ -22,7 +21,6 @@
         <tbody>
         {% for event in events %}
             <tr>
-{#                <td>{{ event.id }}</td>#}
                 <td>{{ event.title }}</td>
                 <td>{{ event.datetime ? event.datetime|date('Y-m-d H:i:s') : '' }}</td>
                 <td>{{ event.country }}</td>

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c513a9b-8917-4b63-8b91-a519e09de280" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/calendar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/calendar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/EventsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EventsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/event/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/event/index.html.twig" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,11 +83,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/styles/app.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="343">
-              <caret line="103" column="20" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
+              <caret line="103" column="21" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -96,12 +104,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/EventsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="145" column="43" selection-start-line="145" selection-start-column="43" selection-end-line="145" selection-end-column="43" />
+            <state relative-caret-position="319">
+              <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
               <folding>
                 <element signature="e#34#55#0#PHP" expanded="true" />
                 <element signature="e#4477#4491#1#PHP" expanded="true" />
                 <element signature="e#5429#5443#1#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/event/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+              <folding>
+                <element signature="e#12#26#0#Twig" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -153,7 +173,6 @@
         <option value="$PROJECT_DIR$/templates/event/_delete_form.html.twig" />
         <option value="$PROJECT_DIR$/templates/event/edit.html.twig" />
         <option value="$PROJECT_DIR$/templates/event/show.html.twig" />
-        <option value="$PROJECT_DIR$/templates/event/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/config/packages/vich_uploader.yaml" />
         <option value="$PROJECT_DIR$/config/services.yaml" />
@@ -191,10 +210,11 @@
         <option value="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" />
         <option value="$PROJECT_DIR$/src/Command/EventReminderCommand.php" />
         <option value="$PROJECT_DIR$/src/Entity/Event.php" />
-        <option value="$PROJECT_DIR$/src/Controller/EventsController.php" />
         <option value="$PROJECT_DIR$/templates/includes/flash_message.html.twig" />
         <option value="$PROJECT_DIR$/templates/includes/calendar.html.twig" />
         <option value="$PROJECT_DIR$/assets/styles/app.scss" />
+        <option value="$PROJECT_DIR$/src/Controller/EventsController.php" />
+        <option value="$PROJECT_DIR$/templates/event/index.html.twig" />
       </list>
     </option>
   </component>
@@ -305,7 +325,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/process" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="951" />
     <option name="y" value="-9" />
     <option name="width" value="978" />
@@ -432,17 +452,18 @@
       <workItem from="1643395461702" duration="6991000" />
       <workItem from="1643402526466" duration="836000" />
       <workItem from="1643540077139" duration="4443000" />
-      <workItem from="1643621622203" duration="30185000" />
+      <workItem from="1643621622203" duration="30536000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158329000" />
+    <option name="totallyTimeSpent" value="158680000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16778524" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16778524" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -456,7 +477,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49932885" visible="true" weight="0.2875354" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49932885" visible="true" weight="0.2875354" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067115" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.3286119" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
@@ -501,9 +522,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/packages/translation.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -843,13 +861,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/CalendarController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -876,18 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/EventsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="145" column="43" selection-start-line="145" selection-start-column="43" selection-end-line="145" selection-end-column="43" />
-          <folding>
-            <element signature="e#34#55#0#PHP" expanded="true" />
-            <element signature="e#4477#4491#1#PHP" expanded="true" />
-            <element signature="e#5429#5443#1#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/includes/flash_message.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -911,7 +910,36 @@
     <entry file="file://$PROJECT_DIR$/assets/styles/app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
-          <caret line="103" column="20" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
+          <caret line="103" column="21" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/EventsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+          <folding>
+            <element signature="e#34#55#0#PHP" expanded="true" />
+            <element signature="e#4477#4491#1#PHP" expanded="true" />
+            <element signature="e#5429#5443#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/event/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

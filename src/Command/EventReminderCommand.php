@@ -71,7 +71,7 @@ class EventReminderCommand extends Command
 
             if ($date == $dateEventMonth){
                 $email = (new Email())
-                    ->from('admin@mercalboungou.com')
+                    ->from('admin@marcelboungou.com')
                     ->subject('Prepare the date !')
                     ->html('<h1>'.$event->getTitle().'</h1>' . $date . '<br>Event date is : ' . $dateEvent
                         . '<br><br><b>Adresse</b> : <a href="https://www.google.com/maps/search/'.$adresse.'">'.$adresse.'</a>'
