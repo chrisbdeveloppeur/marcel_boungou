@@ -2,6 +2,7 @@
 
 namespace App\Command;
 
+use App\Entity\Event;
 use App\Repository\EventRepository;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -38,13 +39,13 @@ class EventReminderCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = new SymfonyStyle($input, $output);
-        $event_id = $input->getArgument('event_id');
-
-        if ($event_id) {
-            $io->note(sprintf('Event id selected is: %s', $event_id));
-            $this->sendReminder($event_id);
-            $io->note('MailReminder sended for the event id : '. $event_id);
-        }
+        $this->sendReminder();
+        //if ($event_id) {
+        //    $io->note(sprintf('Event id selected is: %s', $event_id));
+        //    $this->sendReminder($event_id);
+        //$io->note($result);
+        $io->note('MailReminder sended for the event');
+        //}
 
         //if ($input->getOption('option1')) {
         //    // ...
@@ -56,31 +57,52 @@ class EventReminderCommand extends Command
     }
 
 
-    public function sendReminder($event_id)
+    public function sendReminder()
     {
-        $event = $this->eventRepository->find($event_id);
         $date = new \DateTime();
         $date = $date->format('d/m/Y');
-        $eventDate = $event->getDatetime()->format('d/m/Y');
+        $events = $this->eventRepository->findAll();
+        dump('Current day : '.$date);
+        foreach ($events as $event){
+            $dateEvent = $event->getDatetime();
 
-        $email = (new Email())
-            ->from('admin@mercalboungou.com')
-            ->to('kenshin91cb@gmail.com','christian.boungou@gmail.com')
-            ->subject('Time for Symfony Mailer!')
-            ->html('Current date is : ' . $date . '<br> Event date is : ' . $eventDate)
-            //->html('<p>See Twig integration for better HTML integration!</p>')
-        ;
-
-        //$date = new \DateTime();
-        //$date = $date->format('d/m/Y');
-        //$dateEvent = new \DateTime($event->getDatetime()->format('d/m/Y'));
-        //$eventMonthRemindDate = $dateEvent->modify('-1 month');
-        //$eventDayRemindDate = $dateEvent->modify('-1 day');
-
-        if (1 == 1){
-            //dd('test');
-            $this->mailer->send($email);
+            dump('One Monthe befre event date : '.$dateEvent->modify('-1 month')->format('d/m/Y'));
+            if ($date == $dateEvent->modify('-1 month')->format('d/m/Y')){
+                dump('1 mois avant');
+                $email = (new Email())
+                    ->from('admin@mercalboungou.com')
+                    ->to('kenshin91cb@gmail.com','christian.boungou@gmail.com')
+                    ->subject('Prepare the date !')
+                    ->html('Current date is : ' . $date . '<br> Event date is : ' . $dateEvent->format('d/m/Y h:i'))
+                ;
+                $this->mailer->send($email);
+            }else if ($date == $dateEvent->modify('-1 day')->format('d/m/Y')){
+                dump('1 Jour avant');
+                $email = (new Email())
+                    ->from('admin@mercalboungou.com')
+                    ->to('kenshin91cb@gmail.com','christian.boungou@gmail.com')
+                    ->subject('Tommorrow is the great day !')
+                    ->html('Current date is : ' . $date . '<br> Event date is : ' . $dateEvent->format('d/m/Y h:i'))
+                ;
+                $this->mailer->send($email);
+            }else if ($date == $dateEvent->format('d/m/Y')){
+                dump('JOUR J');
+                $email = (new Email())
+                    ->from('admin@mercalboungou.com')
+                    ->to('kenshin91cb@gmail.com','christian.boungou@gmail.com')
+                    ->subject('Here is the day !')
+                    ->html('Current date is : ' . $date . '<br> Event date is : ' . $dateEvent->format('d/m/Y h:i'))
+                ;
+                $this->mailer->send($email);
+            }
         }
+
+        //return [
+        //    'monthReminder' => $dateEvent->modify('-1 month')->format('d/m/Y'),
+        //    'dayRiminder' => $dateEvent->modify('-1 day')->format('d/m/Y'),
+        //    'date' => $date
+        //];
+
 
     }
 

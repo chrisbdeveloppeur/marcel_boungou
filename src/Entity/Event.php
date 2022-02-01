@@ -85,12 +85,12 @@ class Event
         return $this;
     }
 
-    public function getDatetime(): ?\DateTimeInterface
+    public function getDatetime(): ?\DateTime
     {
         return $this->datetime;
     }
 
-    public function setDatetime(\DateTimeInterface $datetime): self
+    public function setDatetime(\DateTime $datetime): self
     {
         $this->datetime = $datetime;
 
