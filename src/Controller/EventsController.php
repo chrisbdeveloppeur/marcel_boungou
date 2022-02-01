@@ -110,7 +110,7 @@ class EventsController extends AbstractController
 
 
     /**
-     * @Route("/reminder/{id}", name="add_email_reminder", methods={"POST","GET"})
+     * @Route("/reminder/add/{id}", name="add_email_reminder", methods={"POST","GET"})
      */
     public function addEmailReminder($id, EventRepository $eventRepository, TranslatorInterface $translator, EntityManagerInterface $em){
         $event = $eventRepository->find($id);
@@ -132,4 +132,26 @@ class EventsController extends AbstractController
         }
     }
 
+
+    /**
+     * @Route("/reminder/remove/{id}", name="remove_email_reminder", methods={"POST","GET"})
+     */
+    public function removeEmailReminder($id, EventRepository $eventRepository, TranslatorInterface $translator, EntityManagerInterface $em){
+        $event = $eventRepository->find($id);
+
+        if ($_POST){
+            $mail = $_POST['email'];
+            if (!in_array($mail, $event->getMailsToRemind())){
+                $msg = $translator->trans('This mail in the list of contacts to call back');
+                $this->addFlash('warning', $msg);
+            }else{
+                $msg = $translator->trans('You have removed yourself from the list of contacts to call back');
+                $event->removeMailToRemind($mail);
+                $em->persist($event);
+                $em->flush();
+                $this->addFlash('success', $msg);
+            }
+            return $this->redirectToRoute('events_index');
+        }
+    }
 }

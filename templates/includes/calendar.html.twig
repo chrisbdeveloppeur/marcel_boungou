@@ -39,10 +39,17 @@
                     </div>
 
 
-                    <form action="{{ path('events_add_email_reminder', {'id': event.id}) }}" method="post">
-                        <input type="text" class="input is-small has-text-centered" placeholder="My Email" name="email">
-                        <button class="button is-small">add reminder</button>
-                    </form>
+                    <div class="">
+                        <a class="column is-fullwidth has-text-centered" onclick="this.nextElementSibling.classList.toggle('is-hidden')">{% trans %}I want to be called back by email{% endtrans %}</a>
+                        <form action="{{ path('events_add_email_reminder', {'id': event.id}) }}" method="post" class="is-hidden">
+                            <div class="field">
+                                <input type="text" class="input is-small has-text-centered" placeholder="My Email" name="email">
+                            </div>
+                            <div class="is-flex is-justify-content-space-between">
+                                <button class="button is-small">{% trans %}add reminder{% endtrans %}</button>
+                            </div>
+                        </form>
+                    </div>
 
                 </div>
             {% endfor %}
