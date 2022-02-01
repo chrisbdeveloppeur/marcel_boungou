@@ -97,6 +97,7 @@ class Event
 
     public function setDatetime(\DateTime $datetime): self
     {
+        date_default_timezone_set("Europe/Paris");
         $this->datetime = $datetime;
 
         return $this;
@@ -181,19 +182,28 @@ class Event
     public function addMailToRemind(?string $mail)
     {
         $array = $this->mails_to_remind;
-        array_push($array,$mail);
-        $this->mails_to_remind = $array;
+        if (!in_array($mail, $array)){
+            array_push($array,$mail);
+            $this->mails_to_remind = $array;
+        }
 
         return $this;
     }
 
+
+    /**
+     * @param string|null $mail
+     * @return $this
+     */
     public function removeMailToRemind(?string $mail)
     {
         $array = $this->mails_to_remind;
-        if (($key = array_search($mail, $array, true)) !== false) {
-            array_splice($array,$key);
+        if (in_array($mail, $array)){
+            if (($key = array_search($mail, $array, true)) !== false) {
+                array_splice($array,$key);
+            }
+            $this->mails_to_remind = $array;
         }
-        $this->mails_to_remind = $array;
         return $this;
     }
 

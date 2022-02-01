@@ -12,6 +12,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mime\Email;
+use Symfony\Component\Validator\Constraints\Date;
 
 class EventReminderCommand extends Command
 {
@@ -41,16 +42,7 @@ class EventReminderCommand extends Command
         date_default_timezone_set('Europe/Paris');
         $io = new SymfonyStyle($input, $output);
         $this->sendReminder();
-        //if ($event_id) {
-        //    $io->note(sprintf('Event id selected is: %s', $event_id));
-        //    $this->sendReminder($event_id);
-        //$io->note($result);
         $io->note('MailReminder sended for the event');
-        //}
-
-        //if ($input->getOption('option1')) {
-        //    // ...
-        //}
 
         $io->success('Mail reminder sended !');
 
@@ -65,45 +57,77 @@ class EventReminderCommand extends Command
         $date = $date->format('d/m/Y');
         $events = $this->eventRepository->findAll();
         foreach ($events as $event){
+            $adresse = $event->getStreet(). ', ' .$event->getCp(). ' ' .$event->getCity(). ', ' .$event->getCountry();
             $dateEvent = $event->getDatetime()->format('d/m/Y');
-            $dateEventMonth = $event->getDatetime()->modify('-1 month')->format('d/m/Y');
-            $dateEventDay = $event->getDatetime()->modify('-1 day')->format('d/m/Y');
-            //dump('Current day : '.$date->format('d/m/Y') . ' | ' . 'Event date : '.$dateEvent->format('d/m/Y'));
+
+            $dateEventMonth = new \DateTime($event->getDatetime()->format('d/m/Y'));
+            $dateEventMonth = $dateEventMonth->modify('-1 month')->format('d/m/Y');
+
+            $dateEventWeek = new \DateTime($event->getDatetime()->format('d/m/Y'));
+            $dateEventWeek = $dateEventWeek->modify('-1 week')->format('d/m/Y');
+
+            $dateEventDay = new \DateTime($event->getDatetime()->format('d/m/Y'));
+            $dateEventDay = $dateEventDay->modify('-1 day')->format('d/m/Y');
+
+            $mails = $event->getMailsToRemind();
 
             if ($date == $dateEventMonth){
                 $email = (new Email())
                     ->from('admin@mercalboungou.com')
-                    ->to('kenshin91cb@gmail.com','christian.boungou@gmail.com')
                     ->subject('Prepare the date !')
-                    ->html('Current date is : ' . $date . '<br> Event date is : ' . $dateEvent)
+                    ->html('<h1>'.$event->getTitle().'</h1>' . $date . '<br>Event date is : ' . $dateEvent
+                        . '<br><br><b>Adresse</b> : <a href="https://www.google.com/maps/search/'.$adresse.'">'.$adresse.'</a>'
+                    )
                 ;
+                foreach ($mails as $mail){
+                    $email->addTo($mail);
+                }
                 $this->mailer->send($email);
-            }else if ($date == $dateEventDay){
+            }
+
+            if ($date == $dateEventWeek){
                 $email = (new Email())
                     ->from('admin@mercalboungou.com')
-                    ->to('kenshin91cb@gmail.com','christian.boungou@gmail.com')
+                    ->subject('Get ready for next week\'s event!')
+                                        ->html('<h1>'.$event->getTitle().'</h1>' . $date . '<br>Event date is : ' . $dateEvent
+                        . '<br><br><b>Adresse</b> : <a href="https://www.google.com/maps/search/'.$adresse.'">'.$adresse.'</a>'
+                    )
+                ;
+                foreach ($mails as $mail){
+                    $email->addTo($mail);
+                }
+                $this->mailer->send($email);
+            }
+
+            if ($date == $dateEventDay){
+                $email = (new Email())
+                    ->from('admin@mercalboungou.com')
                     ->subject('Tommorrow is the great day !')
-                    ->html('Current date is : ' . $date . '<br> Event date is : ' . $dateEvent)
+                                        ->html('<h1>'.$event->getTitle().'</h1>' . $date . '<br>Event date is : ' . $dateEvent
+                        . '<br><br><b>Adresse</b> : <a href="https://www.google.com/maps/search/'.$adresse.'">'.$adresse.'</a>'
+                    )
                 ;
+                foreach ($mails as $mail){
+                    $email->addTo($mail);
+                }
                 $this->mailer->send($email);
-            }else if ($date == $dateEvent){
+            }
+
+            if ($date == $dateEvent){
                 $email = (new Email())
                     ->from('admin@mercalboungou.com')
-                    ->to('kenshin91cb@gmail.com','christian.boungou@gmail.com')
                     ->subject('Here is the day !')
-                    ->html('Current date is : ' . $date . '<br> Event date is : ' . $dateEvent)
+                                        ->html('<h1>'.$event->getTitle().'</h1>' . $date . '<br>Event date is : ' . $dateEvent
+                        . '<br><br><b>Adresse</b> : <a href="https://www.google.com/maps/search/'.$adresse.'">'.$adresse.'</a>'
+                    )
                 ;
+                foreach ($mails as $mail){
+                    $email->addTo($mail);
+                }
                 $this->mailer->send($email);
             }
 
         }
-
-        //return [
-        //    'monthReminder' => $dateEvent->modify('-1 month')->format('d/m/Y'),
-        //    'dayRiminder' => $dateEvent->modify('-1 day')->format('d/m/Y'),
-        //    'date' => $date
-        //];
-
 
     }
 

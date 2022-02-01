@@ -20,9 +20,10 @@ class AppFixtures extends Fixture
     {
         $faker = Faker\Factory::create('fr_FR');
 
+        $date = new \DateTime('yesterday');
         for ($e = 1; $e <= 10; $e++){
             $event = new Event();
-            $event->setDatetime($faker->dateTimeBetween('-1 week','+1 week'));
+            $event->setDatetime($date->modify('+1 day'));
             $event->setTitle($faker->word);
             $event->setCountry($faker->country);
             $event->setCity($faker->city);
