@@ -465,6 +465,14 @@
         <source>You are about to unsubscribe for the event reminder : </source>
         <target>Vous êtes sur le point de vous désabonner du rappel de l'événement : </target>
       </trans-unit>
+      <trans-unit id="zA442px" resname="Subscribe">
+        <source>Subscribe</source>
+        <target>Souscrire</target>
+      </trans-unit>
+      <trans-unit id="CG9UULI" resname="Edit my profile">
+        <source>Edit my profile</source>
+        <target>Modifier mon profil</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
