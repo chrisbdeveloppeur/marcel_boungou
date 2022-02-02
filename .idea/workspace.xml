@@ -2,9 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c513a9b-8917-4b63-8b91-a519e09de280" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/AVEC KURK CARK 2019.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/AVEC SHIRLEY CESAR 2019.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/Damita CHANDLER &amp; MB 2018.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/ISRAEI H. - MB.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/Jean CARPENTER &amp; Jo Ann PINKENS.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/KEVIN BOND et MB (2).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB &amp; Donnie McCLURKIN.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB &amp; Mahalia BUKENAM.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB &amp; Ray charles 2000.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB &amp; Ron KENOLY (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB &amp; Ron KENOLY (2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB &amp; Smoki NORFUL.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB - I78C7594 (1).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB - I78C7594 (2).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB - I78C7594 (3).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB - I78C7594 (4).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB - I78C7594 (5).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (1).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (10).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (11).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (12).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (13).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (2).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (3).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (4).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (5).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (6).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (7).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (8).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB avec Maggie BLANCHARD &amp; DELY BENSON 2018.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB avec l'Equipe de EMCI.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/Mahalia BUKENAM, Damita CHANDLER, Israël HUGHTON,Tina CAMPBELL, MB.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/PALATA SINGERS 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/palata_singers_1.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/parallax.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/parallax.html.twig" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/styles/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="119" column="16" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
+            <state relative-caret-position="1785">
+              <caret line="183" selection-start-line="183" selection-end-line="183" />
             </state>
           </provider>
         </entry>
@@ -63,11 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/home/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="e#12#26#0#Twig" expanded="true" />
-              </folding>
+            <state>
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -75,7 +104,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="221">
               <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
@@ -84,8 +113,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+            <state relative-caret-position="118">
+              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+              <folding>
+                <element signature="e#740#762#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,15 +125,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/includes/parallax.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
+            <state relative-caret-position="119">
               <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#6;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#8;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -109,12 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/includes/header.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
-              <folding>
-                <element signature="e#1425#1443#0#Twig" expanded="true" />
-                <element signature="e#1596#1609#0#Twig" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -123,7 +144,7 @@
         <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2397">
-              <caret line="141" column="18" selection-start-line="141" selection-start-column="18" selection-end-line="141" selection-end-column="18" />
+              <caret line="141" column="20" selection-start-line="141" selection-start-column="20" selection-end-line="141" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -321,10 +342,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-195" />
-    <option name="y" value="-30" />
-    <option name="width" value="1940" />
-    <option name="height" value="1060" />
+    <option name="x" value="414" />
+    <option name="y" value="-26" />
+    <option name="width" value="978" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -334,7 +355,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -413,6 +433,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -476,17 +497,17 @@
       <workItem from="1643540077139" duration="4443000" />
       <workItem from="1643621622203" duration="30536000" />
       <workItem from="1643740072511" duration="1287000" />
+      <workItem from="1643823795649" duration="1434000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173860000" />
+    <option name="totallyTimeSpent" value="175294000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16778524" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16950959" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -500,7 +521,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49932885" visible="true" weight="0.28611898" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49932885" visible="true" weight="0.28602383" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067115" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.3286119" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
@@ -861,27 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/includes/header.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
-          <folding>
-            <element signature="e#1425#1443#0#Twig" expanded="true" />
-            <element signature="e#1596#1609#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2397">
-          <caret line="141" column="18" selection-start-line="141" selection-start-column="18" selection-end-line="141" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/discography/disc_box.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/discography/disc_list.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -899,20 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/includes/parallax.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#6;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#8;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -922,32 +908,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="119" column="16" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
+        <state relative-caret-position="1785">
+          <caret line="183" selection-start-line="183" selection-end-line="183" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/home/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
+        <state>
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="221">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/includes/parallax.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/includes/header.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2397">
+          <caret line="141" column="20" selection-start-line="141" selection-start-column="20" selection-end-line="141" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/discography/disc_box.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        <state relative-caret-position="118">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="e#740#762#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

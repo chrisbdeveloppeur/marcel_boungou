@@ -16,18 +16,16 @@ class HomeController extends AbstractController
      */
     public function home(): Response
     {
-        /*
-        $jpgs = scandir('../assets/images/jpg/');
 
-        foreach ($jpgs as $jpg){
-                $file = file('../assets/images/jpg/'.$jpg);
-                $old_name = $jpg;
-                $new_name = str_replace(' ','',$old_name);
-                if (copy($file,'../assets/images/jpg/'.$new_name)) {
-                    unlink('../assets/images/jpg/'.$jpg);
-                }
-        }
-        */
+//        POUR RENAME LES FICHIER IMG
+//        $jpgs = array_slice(scandir('../assets/images/jpg/'), 2);
+//
+//        foreach ($jpgs as $jpg){
+//                $old_name = $jpg;
+//                $new_name = strtolower(preg_replace('~[\\\\/:*?"<>|()&, \']~','',$old_name));
+//                rename('../assets/images/jpg/'.$old_name,'../assets/images/jpg/'.$new_name);
+//        }
+
 
         return $this->render('home/index.html.twig', [
 
