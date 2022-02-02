@@ -1,3 +1,4 @@
+
 /*
  * Welcome to your app's main JavaScript file!
  *
@@ -10,6 +11,8 @@ import './styles/app.scss';
 
 const fr_flag = require('./images/svg/fr.svg');
 const en_flag = require('./images/svg/en.svg');
+//const palata_1 = require('./images/jpg/palata_singers_1.jpg');
+//const palata_2 = require('./images/jpg/PALATA SINGERS 2.jpg');
 
 // start the Stimulus application
 import './bootstrap';
