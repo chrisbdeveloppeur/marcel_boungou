@@ -2,41 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c513a9b-8917-4b63-8b91-a519e09de280" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/AVEC KURK CARK 2019.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/AVEC SHIRLEY CESAR 2019.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/Damita CHANDLER &amp; MB 2018.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/ISRAEI H. - MB.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/Jean CARPENTER &amp; Jo Ann PINKENS.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/KEVIN BOND et MB (2).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB &amp; Donnie McCLURKIN.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB &amp; Mahalia BUKENAM.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB &amp; Ray charles 2000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB &amp; Ron KENOLY (1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB &amp; Ron KENOLY (2).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB &amp; Smoki NORFUL.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB - I78C7594 (1).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB - I78C7594 (2).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB - I78C7594 (3).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB - I78C7594 (4).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB - I78C7594 (5).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (1).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (10).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (11).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (12).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (13).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (2).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (3).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (4).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (5).JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (6).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (7).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB I78C7900 (8).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB avec Maggie BLANCHARD &amp; DELY BENSON 2018.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/MB avec l'Equipe de EMCI.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/Mahalia BUKENAM, Damita CHANDLER, Israël HUGHTON,Tina CAMPBELL, MB.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/PALATA SINGERS 2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/palata_singers_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mb-i78c75941.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mb-i78c75942.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mb-i78c75943.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mb-i78c75944.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mb-i78c75945.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mbi78c79001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mbi78c790010.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mbi78c790011.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mbi78c790012.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mbi78c790013.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mbi78c79002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mbi78c79003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mbi78c79004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mbi78c79005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mbi78c79006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mbi78c79007.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mbi78c79008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/includes/parallax.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/parallax.html.twig" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,11 +69,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/styles/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1785">
-              <caret line="183" selection-start-line="183" selection-end-line="183" />
+            <state relative-caret-position="442">
+              <caret line="128" column="35" lean-forward="true" selection-start-line="128" selection-start-column="35" selection-end-line="128" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -95,7 +81,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/home/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="102">
               <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
@@ -104,17 +90,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="306">
+              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/packages/liip_imagine.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+            <state relative-caret-position="306">
+              <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
               <folding>
                 <element signature="e#740#762#0#PHP" expanded="true" />
               </folding>
@@ -125,8 +120,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/includes/parallax.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+            <state relative-caret-position="221">
+              <caret line="13" column="73" selection-start-line="13" selection-start-column="73" selection-end-line="13" selection-end-column="73" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -180,7 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/event/show.html.twig" />
         <option value="$PROJECT_DIR$/config/packages/vich_uploader.yaml" />
         <option value="$PROJECT_DIR$/config/services.yaml" />
         <option value="$PROJECT_DIR$/config/routes/liip_imagine.yaml" />
@@ -226,11 +225,12 @@
         <option value="$PROJECT_DIR$/templates/discography/index.html.twig" />
         <option value="$PROJECT_DIR$/templates/includes/header.html.twig" />
         <option value="$PROJECT_DIR$/templates/discography/disc_list.html.twig" />
-        <option value="$PROJECT_DIR$/assets/styles/app.scss" />
         <option value="$PROJECT_DIR$/templates/home/index.html.twig" />
-        <option value="$PROJECT_DIR$/templates/includes/parallax.html.twig" />
-        <option value="$PROJECT_DIR$/assets/app.js" />
         <option value="$PROJECT_DIR$/src/Controller/HomeController.php" />
+        <option value="$PROJECT_DIR$/assets/app.js" />
+        <option value="$PROJECT_DIR$/config/packages/liip_imagine.yaml" />
+        <option value="$PROJECT_DIR$/templates/includes/parallax.html.twig" />
+        <option value="$PROJECT_DIR$/assets/styles/app.scss" />
       </list>
     </option>
   </component>
@@ -371,13 +371,18 @@
               <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
               <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
               <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
@@ -389,6 +394,13 @@
               <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
@@ -497,12 +509,12 @@
       <workItem from="1643540077139" duration="4443000" />
       <workItem from="1643621622203" duration="30536000" />
       <workItem from="1643740072511" duration="1287000" />
-      <workItem from="1643823795649" duration="1434000" />
+      <workItem from="1643823795649" duration="3788000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175294000" />
+    <option name="totallyTimeSpent" value="177648000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -566,16 +578,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/registration/register.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="84" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/bulma-calendar/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -906,34 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="183" selection-start-line="183" selection-end-line="183" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/includes/parallax.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/includes/header.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -951,13 +925,53 @@
     <entry file="file://$PROJECT_DIR$/templates/discography/disc_box.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        <state relative-caret-position="306">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
           <folding>
             <element signature="e#740#762#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/liip_imagine.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/includes/parallax.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="73" selection-start-line="13" selection-start-column="73" selection-end-line="13" selection-end-column="73" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="128" column="35" lean-forward="true" selection-start-line="128" selection-start-column="35" selection-end-line="128" selection-end-column="35" />
         </state>
       </provider>
     </entry>

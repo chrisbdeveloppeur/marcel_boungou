@@ -13,6 +13,7 @@ const fr_flag = require('./images/svg/fr.svg');
 const en_flag = require('./images/svg/en.svg');
 const palata_1 = require('./images/jpg/palatasingers1.jpg');
 const palata_2 = require('./images/jpg/palatasingers2.jpg');
+const mb_cost_blue_1 = require('./images/jpg/mb_cost_blue_1.jpg');
 
 // start the Stimulus application
 import './bootstrap';

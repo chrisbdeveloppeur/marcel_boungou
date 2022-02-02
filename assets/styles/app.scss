@@ -2,6 +2,7 @@
 $link: #3488CE;
 $success: #DA4600;
 $primary: #7C4A8C;
+$black: #0a0a0a;
 
 $dropdown-menu-min-width: 0;
 $dropdown-content-padding-top: 0;
@@ -110,14 +111,14 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed !important;
-  background-position: center !important;
+  //background-position: left !important;
   background-repeat: no-repeat !important;
-  background-size: cover !important;
+  background-size: contain !important;
   //object-fit: cover;
 }
 
 .parallax > *{
-  height: 100vh;
+  min-height: 100vh;
   color: white;
   padding: 11rem 0;
   //backdrop-filter: blur(1px);
@@ -125,8 +126,8 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
 
 .separator{
   width: 100%;
-  background: white;
-  box-shadow: 0 0 5rem 10rem white;
+  background: $black;
+  box-shadow: 0 0 5rem 10rem $black;
   position: relative;
   z-index: 1;
 }
