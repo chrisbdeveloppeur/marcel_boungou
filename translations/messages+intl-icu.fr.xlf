@@ -445,9 +445,25 @@
         <source>add reminder</source>
         <target>ajouter un rappel</target>
       </trans-unit>
-      <trans-unit id="L3p_ZNe" resname="my@email.com">
+      <trans-unit id="zz2CWXQ" resname="my@email.com">
         <source>my@email.com</source>
         <target>mon@email.com</target>
+      </trans-unit>
+      <trans-unit id="qdkUKod" resname="This mail is not in the list of contacts to call back">
+        <source>This mail is not in the list of contacts to call back</source>
+        <target>Ce mail n'est pas dans la liste des contacts à rappeler</target>
+      </trans-unit>
+      <trans-unit id="ZxkRMB6" resname="You have removed the mail : ">
+        <source>You have removed the mail : </source>
+        <target>Vous avez supprimé le mail : </target>
+      </trans-unit>
+      <trans-unit id="TPsUSws" resname=" from the list of contacts to call back">
+        <source> from the list of contacts to call back</source>
+        <target> de la liste des contacts à rappeler</target>
+      </trans-unit>
+      <trans-unit id="wzHbzPU" resname="You are about to unsubscribe for the event reminder : ">
+        <source>You are about to unsubscribe for the event reminder : </source>
+        <target>Vous êtes sur le point de vous désabonner du rappel de l'événement : </target>
       </trans-unit>
     </body>
   </file>

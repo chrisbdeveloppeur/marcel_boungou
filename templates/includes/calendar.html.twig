@@ -56,7 +56,14 @@
                                 <input type="email" class="input is-small has-text-centered" placeholder="{% trans %}my@email.com{% endtrans %}" name="email">
                             </div>
                             <div class="is-flex is-justify-content-space-between">
-                                <a href="{{ path('events_remove_email_reminder', {'id': event.id}) }}" class="button is-small">{% trans %}remove reminder{% endtrans %}</a>
+                                <a href="{{ path('events_remove_email_reminder', {'id': event.id}) }}" class="help has-text-light">
+                                    <span class="icon">
+                                        <i class="fas fa-info"></i>
+                                    </span>
+                                    <span>
+                                        {% trans %}remove reminder{% endtrans %}
+                                    </span>
+                                </a>
                                 <button class="button is-small">{% trans %}add reminder{% endtrans %}</button>
                             </div>
                         </form>

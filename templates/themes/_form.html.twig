@@ -1,3 +1,14 @@
+{% if form_title is defined %}
+<h2 class="subtitle">
+    <span class="icon">
+        <i class="fas fa-info-circle"></i>
+    </span>
+    <span>
+        {{ form_title|raw }}
+    </span>
+</h2>
+{% endif %}
+
 {{ form_start(form, {'attr': {'class': '', 'id': form.vars.name } }) }}
 
 
@@ -87,7 +98,7 @@
                 <i class="fas fa-globe"></i>
             </span>
         {% endif %}
-    </p>
+    </div>
 
     {% endif %}
 
