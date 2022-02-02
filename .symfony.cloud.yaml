@@ -51,6 +51,6 @@ timezone: Europe/Paris
 crons:
     send_event_reminder:
         # every day at 1h15 AM
-        spec: 0 9 * * *
+        spec: 5 * * * *
         cmd: croncape bin/console event:reminder
 

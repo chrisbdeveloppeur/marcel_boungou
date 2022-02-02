@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Event;
 use App\Form\EventType;
+use App\Form\RemoveEmailReminderType;
 use App\Repository\EventRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
@@ -147,16 +148,18 @@ class EventsController extends AbstractController
     /**
      * @Route("/reminder/remove/{id}", name="remove_email_reminder", methods={"POST","GET"})
      */
-    public function removeEmailReminder($id, EventRepository $eventRepository, TranslatorInterface $translator, EntityManagerInterface $em){
+    public function removeEmailReminder($id, EventRepository $eventRepository, TranslatorInterface $translator, EntityManagerInterface $em, Request $request){
+        $form = $this->createForm(RemoveEmailReminderType::class);
+        $form->handleRequest($request);
         $event = $eventRepository->find($id);
 
-        if ($_POST){
-            $mail = $_POST['email'];
+        if ($form->isSubmitted() && $form->isValid()){
+            $mail = $form->get('email')->getData();
             if (!in_array($mail, $event->getMailsToRemind())){
-                $msg = $translator->trans('This mail in the list of contacts to call back');
+                $msg = $translator->trans('This mail is not in the list of contacts to call back');
                 $this->addFlash('warning', $msg);
             }else{
-                $msg = $translator->trans('You have removed yourself from the list of contacts to call back');
+                $msg = $translator->trans('You have removed the mail : ') .$mail. $translator->trans(' from the list of contacts to call back');
                 $event->removeMailToRemind($mail);
                 $em->persist($event);
                 $em->flush();
@@ -164,5 +167,9 @@ class EventsController extends AbstractController
             }
             return $this->redirectToRoute('events_index');
         }
+
+        return $this->render('themes/just_the_form.html.twig',[
+            'form' => $form->createView(),
+        ]);
     }
 }
