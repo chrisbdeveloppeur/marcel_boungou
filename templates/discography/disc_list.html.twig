@@ -1,0 +1,105 @@
+<div class="is-flex-desktop is-justify-content-center">
+    {% for nb in 1..10 %}
+        <div class="column box-shadow-bulma is-one-quarter-desktop is-one-fifth-widescreen disc-hidden disc disc-{{ nb }} {% if nb == 1 %}disc-selected{% endif %}">
+            {{ include('discography/disc_box.twig') }}
+        </div>
+    {% endfor %}
+</div>
+
+
+
+
+
+<script>
+        document.onload = initDiscs();
+        let discs = document.querySelectorAll('.disc');
+
+        discs.forEach(function (disc) {
+                disc.addEventListener('click', function () {
+
+                        removeDiskClasses();
+
+                        giveNearAndFarDiscClasses(disc);
+
+                        initDiscs();
+
+                })
+        });
+
+        function giveNearAndFarDiscClasses(thisDisc) {
+                thisDisc.classList.add('disc-selected');
+                let discNearLeft = thisDisc.previousElementSibling;
+                if (discNearLeft){
+                        discNearLeft.classList.add('disc-near-left');
+                        let discFarLeft = discNearLeft.previousElementSibling;
+                        // console.log('Deuxième disque avant : ');
+                        // console.log(discNearLeft);
+                        if (discFarLeft){
+                                discFarLeft.classList.add('disc-far-left');
+                                // console.log('Premier disque avant : ');
+                                // console.log(diskFarLeft);
+                        }
+                }
+                let discNearRight = thisDisc.nextElementSibling;
+                if (discNearRight){
+                        discNearRight.classList.add('disc-near-right');
+                        // console.log('Premier disque après : ');
+                        // console.log(discNearRight);
+                        let discFarRight = discNearRight.nextElementSibling;
+                        if (discFarRight){
+                                discFarRight.classList.add('disc-far-right');
+                                // console.log('Deuxième disque après : ');
+                                // console.log(discFarRight);
+                        }
+                }
+        }
+
+        function initDiscs(){
+                let discs = document.querySelectorAll('.disc');
+                discs.forEach(function (disc) {
+                        if (disc.classList.contains('disc-selected')){
+                                disc.classList.remove('disc-hidden');
+                                giveNearAndFarDiscClasses(disc);
+                        }else if(disc.classList.contains('disc-near-left') || disc.classList.contains('disc-near-right')){
+                                disc.classList.remove('disc-hidden');
+                        }else if(disc.classList.contains('disc-far-left') || disc.classList.contains('disc-far-right')){
+                                disc.classList.remove('disc-hidden');
+                        }else {
+                                disc.classList.add('disc-hidden');
+                        }
+                })
+        }
+
+        function showOrHideNearDisk(diskSelected) {
+                let discNearLeft = diskSelected.previousElementSibling;
+                console.log(discNearLeft);
+        }
+
+        function removeDiskClasses() {
+                let discs = document.querySelectorAll('.disc');
+                discs.forEach(dsk => dsk.classList.remove("disc-selected", "disc-far-left", "disc-near-left", "disc-near-right", "disc-far-right"));
+        }
+
+
+
+        //console.log(discsContainer);
+        discs.forEach(function (disc) {
+                var lastScrollTop = 0;
+                if (disc){
+                        // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+                        disc.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
+                                console.log('scroll');
+                                var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+                                if (st > lastScrollTop){
+                                        // downscroll code
+                                        console.log('scroll down')
+                                } else {
+                                        // upscroll code
+                                        console.log('scroll up')
+                                }
+                                lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+                        }, false);
+                }
+        });
+
+</script>

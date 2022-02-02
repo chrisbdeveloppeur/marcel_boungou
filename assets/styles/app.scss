@@ -100,6 +100,84 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   opacity: 100% !important;
 }
 
+
+.parallax {
+  position: relative;
+  /* The image used */
+
+  /* Set a specific height */
+  min-height: 100vh !important;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  //object-fit: cover;
+}
+
+.parallax > *{
+  height: 100vh;
+  color: white;
+  padding: 11rem 0;
+  //backdrop-filter: blur(1px);
+}
+
+.separator{
+  width: 100%;
+  background: white;
+  box-shadow: 0 0 5rem 10rem white;
+  position: relative;
+  z-index: 1;
+}
+
+
+// BREAK RESPONSIVE FOR TOUCH (MOBIL & TABLET)
+@media (min-width: 1023px ) {
+
+  .disc{
+    position: absolute;
+    transition: .3s;
+    z-index: 1;
+  }
+  .disc-hidden{
+    display: none !important;
+  }
+  .disc-far-left{
+    left:25vw;
+  }
+  .disc-near-left{
+    left:30vw;
+  }
+  .disc-near-right{
+    right:30vw;
+  }
+  .disc-far-right{
+    right:25vw;
+  }
+  .disc-far-left, .disc-far-right{
+    opacity : .2;
+    z-index : 1;
+    transform : scale(.90);
+  }
+  .disc-near-left, .disc-near-right{
+    opacity : .5;
+    z-index : 2;
+    transform : scale(.95);
+  }
+  .disc-selected{
+    opacity: 1;
+    z-index: 3;
+    transform: scale(1);
+  }
+}
+
+
+
+.disc:hover{
+  cursor: pointer;
+}
+
 @import "~bulma";
 @import "~bulma-calendar";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
