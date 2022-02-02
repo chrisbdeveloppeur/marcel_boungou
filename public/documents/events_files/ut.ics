@@ -4,20 +4,29 @@ PRODID:spatie/icalendar-generator
 NAME:www.marcel-boungou.com
 X-WR-CALNAME:www.marcel-boungou.com
 BEGIN:VTIMEZONE
-TZID:UTC
+TZID:Europe/Paris
 BEGIN:STANDARD
-DTSTART:20210507T135931Z
-TZOFFSETFROM:+0000
-TZOFFSETTO:+0000
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
 END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:61f93cc32dd69
-DTSTAMP:20220201T135931Z
+UID:61fa6eb379184
+DTSTAMP;TZID=Europe/Paris:20220202T124451
 SUMMARY:ut
-DESCRIPTION:Odit exercitationem odio ad ut atque ea ut.
-LOCATION:783\, chemin Hoarau\, 88 530 Gilletdan\, Gilletdan
-DTSTART:20220208T000000Z
-DTEND:20220208T000000Z
+DESCRIPTION:Qui natus officia assumenda consequatur dolorem rerum. Voluptat
+ em harum et voluptate sunt sed. Sequi magni perferendis est ut suscipit co
+ mmodi culpa deleniti. Et inventore ipsam explicabo earum repellat quae id.
+  Mollitia non explicabo repellendus aperiam. Id accusantium id ut perferen
+ dis libero iste.
+LOCATION:998\, rue Mercier\, 80104 Bretonboeuf\, Bretonboeuf
+DTSTART;TZID=Europe/Paris:20220202T133149
+DTEND;TZID=Europe/Paris:20220202T133149
 END:VEVENT
 END:VCALENDAR

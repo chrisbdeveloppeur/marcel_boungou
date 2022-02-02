@@ -473,6 +473,10 @@
         <source>Edit my profile</source>
         <target>Modifier mon profil</target>
       </trans-unit>
+      <trans-unit id="Dy3.Shl" resname="Paris time">
+        <source>Paris time</source>
+        <target>Heure de Paris</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

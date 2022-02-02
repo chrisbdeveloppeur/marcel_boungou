@@ -31,7 +31,7 @@ class AppFixtures extends Fixture
             $event->setCity($faker->city);
             $event->setCp($faker->postcode);
             $event->setStreet($faker->streetAddress);
-            $event->setDescription($faker->text($faker->numberBetween('50','100')));
+            $event->setDescription($faker->text($faker->numberBetween('100','500')));
             for ($j = 1; $j <= $faker->numberBetween('2','10'); $j++){
                 $mail = $faker->email;
                 $event->addMailToRemind($mail);

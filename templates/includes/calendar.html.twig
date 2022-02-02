@@ -8,18 +8,26 @@
         {% if events is defined %}
             {% for event in events %}
                 <div class="highlight-info is-hidden has-text-light px-3 py-3" id="{{ event.datetime|date('d/m/Y') }}">
-                   {% trans %} HIGHLIGHT {% endtrans %} : {{ event.title }}
-                    <br>
-                    {% if app.request.locale == 'fr' %}
-                        {{ event.datetime|date('d/m/Y - H:i') }}
-                    {% elseif app.request.locale == 'en' %}
-                        {{ event.datetime|date('m/d/Y - h:i a') }}
-                    {% else %}
-                        {{ event.datetime|date('d/m/Y - H:i') }}
-                    {% endif %}
-                    <p class="help">
-                        {{ event.description }}
-                    </p>
+                    <a href="#" class="has-text-light">
+                        <h3>
+                            {% trans %} HIGHLIGHT {% endtrans %} : {{ event.title }}
+                        </h3>
+                        <p>
+                            {% if app.request.locale == 'fr' %}
+                                {{ event.datetime|date('d/m/Y - H:i') }}
+                            {% elseif app.request.locale == 'en' %}
+                                {{ event.datetime|date('m/d/Y - h:i a') }}
+                            {% else %}
+                                {{ event.datetime|date('d/m/Y - H:i') }}
+                            {% endif %}
+                            ({% trans %}Paris time{% endtrans %})
+                        </p>
+                        <p class="help">
+                            {{ event.description|raw|length > 200 ? event.description|slice(0, 200) ~ '...' : event.description|raw }}
+                        </p>
+                    </a>
+
+
                     {#
                     <br>
                     {% set title = 'Titre de l\'evenement !' %}
@@ -34,6 +42,8 @@
                         return false;"
                     >{% trans %}Add to Calendar{% endtrans %}</a>
                     #}
+
+
                     <div class="column px-0 is-flex is-justify-content-end">
                         <a href="{{ asset('documents/events_files/') }}{{ event.icsFile }}" target="_blank" download="{{ event.icsFile }}" type=".ics" class="addToCalendar button is-small is-primary is-light" title="{% trans %}Add to Calendar{% endtrans %}">
                             <span class="icon">

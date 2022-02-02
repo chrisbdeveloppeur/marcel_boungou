@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c513a9b-8917-4b63-8b91-a519e09de280" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/animi.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/animi.ics" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/documents/events_files/aut.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/aut.ics" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/documents/events_files/blanditiis.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/blanditiis.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/cupiditate.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/cupiditate.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/eligendi.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/eligendi.ics" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/documents/events_files/et.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/et.ics" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/documents/events_files/sed.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/sed.ics" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/documents/events_files/totam.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/totam.ics" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/documents/events_files/voluptatem.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/voluptatem.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/fugiat.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/fugiat.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/numquam.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/numquam.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/perferendis.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/perferendis.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/qui.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/qui.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/reprehenderit.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/reprehenderit.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/ut.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/ut.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/velit.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/velit.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/veritatis.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/veritatis.ics" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/includes/calendar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/calendar.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/header.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf" beforeDir="false" afterPath="$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
@@ -67,12 +73,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/includes/calendar.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+            <state relative-caret-position="221">
+              <caret line="22" column="65" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
               <folding>
+                <element signature="e#1129#2017#0#Twig" />
                 <element signature="e#3117#3142#0#Twig" expanded="true" />
                 <element signature="e#3590#3618#0#Twig" expanded="true" />
               </folding>
@@ -124,30 +131,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf">
+        <entry file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="477" column="8" selection-start-line="477" selection-start-column="8" selection-end-line="477" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="das://999c275e-131c-417a-8015-5705ab7315c1/schema/marcel_boungou/table/event">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="23f2e770-fec3-4d4c-bc3d-f658bf04e2d0">
-              <filtering>
-                <filter text="" />
-              </filtering>
+            <state relative-caret-position="408">
+              <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php">
+        <entry file="file://$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="26" column="63" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
+            <state relative-caret-position="295">
+              <caret line="477" column="16" selection-start-line="477" selection-start-column="16" selection-end-line="477" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -238,10 +234,10 @@
         <option value="$PROJECT_DIR$/src/Form/RemoveEmailReminderType.php" />
         <option value="$PROJECT_DIR$/src/Controller/EventsController.php" />
         <option value="$PROJECT_DIR$/templates/themes/_form.html.twig" />
-        <option value="$PROJECT_DIR$/templates/includes/calendar.html.twig" />
         <option value="$PROJECT_DIR$/templates/includes/header.html.twig" />
-        <option value="$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf" />
         <option value="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" />
+        <option value="$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf" />
+        <option value="$PROJECT_DIR$/templates/includes/calendar.html.twig" />
       </list>
     </option>
   </component>
@@ -489,13 +485,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165164000" />
+    <option name="totallyTimeSpent" value="168266000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16778524" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16778524" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -517,7 +513,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Word Book" order="3" side_tool="true" />
-      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.1442953" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.1442953" />
       <window_info anchor="right" id="Translation Assistant" order="5" weight="0.32995737" />
     </layout>
     <layout-to-restore>
@@ -888,17 +884,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/includes/calendar.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
-          <folding>
-            <element signature="e#3117#3142#0#Twig" expanded="true" />
-            <element signature="e#3590#3618#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -917,13 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="477" column="8" selection-start-line="477" selection-start-column="8" selection-end-line="477" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://999c275e-131c-417a-8015-5705ab7315c1/schema/marcel_boungou/table/user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="23f2e770-fec3-4d4c-bc3d-f658bf04e2d0">
@@ -936,19 +914,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="26" column="63" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://999c275e-131c-417a-8015-5705ab7315c1/schema/marcel_boungou/table/event">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="23f2e770-fec3-4d4c-bc3d-f658bf04e2d0">
           <filtering>
             <filter text="" />
           </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="477" column="16" selection-start-line="477" selection-start-column="16" selection-end-line="477" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/includes/calendar.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="65" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
+          <folding>
+            <element signature="e#1129#2017#0#Twig" />
+            <element signature="e#3117#3142#0#Twig" expanded="true" />
+            <element signature="e#3590#3618#0#Twig" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

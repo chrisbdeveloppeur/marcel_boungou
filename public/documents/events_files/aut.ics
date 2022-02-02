@@ -17,13 +17,12 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:61fa5a28304e6
-DTSTAMP;TZID=Europe/Paris:20220202T111712
+UID:61fa611e67b74
+DTSTAMP;TZID=Europe/Paris:20220202T114654
 SUMMARY:aut
-DESCRIPTION:Saepe et totam incidunt voluptatibus inventore.
-LOCATION:26\, chemin Evrard\, 87 232 Pruvost-sur-Allain\, Pruvost-sur-Allai
- n
-DTSTART;TZID=Europe/Paris:20220203T014040
-DTEND;TZID=Europe/Paris:20220203T014040
+DESCRIPTION:Incidunt et nihil quas dolorem debitis quae laudantium.
+LOCATION:boulevard Letellier\, 62 273 Chauvet\, Chauvet
+DTSTART;TZID=Europe/Paris:20220205T125906
+DTEND;TZID=Europe/Paris:20220205T125906
 END:VEVENT
 END:VCALENDAR

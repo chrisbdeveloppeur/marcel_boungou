@@ -4,20 +4,28 @@ PRODID:spatie/icalendar-generator
 NAME:www.marcel-boungou.com
 X-WR-CALNAME:www.marcel-boungou.com
 BEGIN:VTIMEZONE
-TZID:UTC
+TZID:Europe/Paris
 BEGIN:STANDARD
-DTSTART:20210430T222319Z
-TZOFFSETFROM:+0000
-TZOFFSETTO:+0000
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
 END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:61f93a8114b26
-DTSTAMP:20220201T134953Z
+UID:61fa6eb392a0f
+DTSTAMP;TZID=Europe/Paris:20220202T124451
 SUMMARY:animi
-DESCRIPTION:Accusamus accusantium ex dolore et quaerat.
-LOCATION:126\, chemin Leblanc\, 12554 Millet-les-Bains\, Millet-les-Bains
-DTSTART:20220125T222319Z
-DTEND:20220125T222319Z
+DESCRIPTION:Aut ea quam ut debitis odio sit pariatur. Odio voluptatem ullam
+  consequatur. Sapiente natus ut ratione. Molestiae hic aliquam voluptatem 
+ dicta ad velit consequuntur quidem. Illum molestiae sint quos est minima v
+ elit quaerat. Consequatur sit est omnis aut.
+LOCATION:7\, place Chevallier\, 01 592 Colin\, Colin
+DTSTART;TZID=Europe/Paris:20220210T185614
+DTEND;TZID=Europe/Paris:20220210T185614
 END:VEVENT
 END:VCALENDAR

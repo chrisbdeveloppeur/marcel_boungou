@@ -4,14 +4,6 @@ PRODID:spatie/icalendar-generator
 NAME:www.marcel-boungou.com
 X-WR-CALNAME:www.marcel-boungou.com
 BEGIN:VTIMEZONE
-TZID:UTC
-BEGIN:STANDARD
-DTSTART:20210515T090228
-TZOFFSETFROM:+0000
-TZOFFSETTO:+0000
-END:STANDARD
-END:VTIMEZONE
-BEGIN:VTIMEZONE
 TZID:Europe/Paris
 BEGIN:STANDARD
 DTSTART:20211031T030000
@@ -25,13 +17,18 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:61fa59c69f261
-DTSTAMP;TZID=Europe/Paris:20220202T111534
+UID:61fa6eb39420f
+DTSTAMP;TZID=Europe/Paris:20220202T124451
 SUMMARY:et
-DESCRIPTION:Et deleniti qui nesciunt dolorem maiores praesentium numquam. S
- unt quia placeat quia.
-LOCATION:place Cécile Camus\, 12 967 Leleu\, Leleu
-DTSTART:20220209T090228Z
-DTEND:20220209T090228Z
+DESCRIPTION:Et facilis ex esse ut molestiae laudantium minus. Eos omnis par
+ iatur ipsum consequatur necessitatibus repellendus. Provident qui earum mo
+ llitia omnis. Et iusto quibusdam cupiditate ipsum autem est. Sit aperiam o
+ fficia architecto cupiditate aut. Esse amet eveniet atque accusantium nost
+ rum perspiciatis. Ducimus eos eius ab et molestias aut. Et esse quia qui f
+ acere fugiat eos. Eaque temporibus distinctio natus quasi fugit velit. Eos
+  odio tenetur omnis quae dolore laudantium ut.
+LOCATION:84\, place Paulette Guerin\, 78160 Perrin\, Perrin
+DTSTART;TZID=Europe/Paris:20220211T191130
+DTEND;TZID=Europe/Paris:20220211T191130
 END:VEVENT
 END:VCALENDAR

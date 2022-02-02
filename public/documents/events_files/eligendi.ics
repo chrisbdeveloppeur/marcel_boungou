@@ -4,20 +4,30 @@ PRODID:spatie/icalendar-generator
 NAME:www.marcel-boungou.com
 X-WR-CALNAME:www.marcel-boungou.com
 BEGIN:VTIMEZONE
-TZID:UTC
+TZID:Europe/Paris
 BEGIN:STANDARD
-DTSTART:20210507T135846Z
-TZOFFSETFROM:+0000
-TZOFFSETTO:+0000
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
 END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:61f93c967c8bc
-DTSTAMP:20220201T135846Z
+UID:61fa6eb391313
+DTSTAMP;TZID=Europe/Paris:20220202T124451
 SUMMARY:eligendi
-DESCRIPTION:Voluptatem est quisquam sunt veniam quia et.
-LOCATION:place Michel Voisin\, 77034 Moreno\, Moreno
-DTSTART:20220210T135846Z
-DTEND:20220210T135846Z
+DESCRIPTION:Corrupti beatae voluptatem sit in. Repellendus enim nisi conseq
+ uuntur et enim similique sunt. Porro explicabo quis similique cumque et qu
+ ibusdam facere. A et non autem voluptatem neque eius. Aut illo minus moles
+ tiae autem officia sit error consequatur. Optio sit deleniti voluptatem. D
+ icta vitae laborum voluptas omnis. Quis non nam rerum in modi et distincti
+ o.
+LOCATION:79\, place de Aubry\, 97 728 Lebrun\, Lebrun
+DTSTART;TZID=Europe/Paris:20220209T091906
+DTEND;TZID=Europe/Paris:20220209T091906
 END:VEVENT
 END:VCALENDAR
