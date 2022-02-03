@@ -7,6 +7,7 @@ $black: #0a0a0a;
 $dropdown-menu-min-width: 0;
 $dropdown-content-padding-top: 0;
 $dropdown-content-padding-bottom: 0;
+$calendar-border-radius: 0;
 
 body{
   min-height: 100vh;
@@ -71,7 +72,7 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
 .highlight-info{
   background: $primary;
   min-height: 50px;
-  width: 320px;
+  width: auto;
 }
 
 .show-password{

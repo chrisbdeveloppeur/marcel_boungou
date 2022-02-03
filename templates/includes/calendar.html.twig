@@ -1,9 +1,4 @@
-{% extends 'base.html.twig' %}
-
-{% block title %}Hello HomeController!{% endblock %}
-
-{% block body %}
-    <div class="container is-flex is-flex-direction-column is-justify-content-center is-align-items-center has-background-danger-light is-relative">
+    <div class="is-flex is-flex-direction-column is-justify-content-center is-align-items-center has-background-primary is-relative">
         <input type="date" class="bulma-calendar bulma-calendar-1 is-small">
         {% if events is defined %}
             {% for event in events %}
@@ -23,7 +18,7 @@
                             ({% trans %}Paris time{% endtrans %})
                         </p>
                         <p class="help">
-                            {{ event.description|raw|length > 200 ? event.description|slice(0, 200) ~ '...' : event.description|raw }}
+                            {{ event.description|raw|length > 100 ? event.description|slice(0, 100) ~ '...' : event.description|raw }}
                         </p>
                     </a>
 
@@ -55,7 +50,7 @@
 
 
                     <div class="has-text-centered">
-                        <div class="is-fullwidth has-text-light">
+                        <div class="is-fullwidth has-text-light help">
                             <span class="icon">
                                 <i class="far fa-bell"></i>
                             </span>
@@ -83,4 +78,3 @@
             {% endfor %}
         {% endif %}
     </div>
-{% endblock %}

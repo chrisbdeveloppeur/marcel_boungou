@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}Events{% endtrans %}{% endblock %}
+
+{% block body %}
+<div class="is-flex-tablet">
+    <div class="column">
+
+    </div>
+    <div class="column is-one-quarter-desktop is-one-third-tablet">
+        {{ include('includes/calendar.html.twig') }}
+    </div>
+</div>
+{% endblock %}
