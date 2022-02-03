@@ -73,6 +73,8 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   background: $primary;
   min-height: 50px;
   width: auto;
+  position: absolute;
+  top: 100%;
 }
 
 .show-password{

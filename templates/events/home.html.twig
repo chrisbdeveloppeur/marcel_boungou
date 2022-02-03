@@ -5,10 +5,35 @@
 {% block body %}
 <div class="is-flex-tablet">
     <div class="column">
-
+        <div class="box">
+            {{ events[0].title }}
+            -
+            {% if app.request.locale == 'fr' %}
+                {{ events[0].datetime|date('d/m/Y - H:i') }}
+            {% elseif app.request.locale == 'en' %}
+                {{ events[0].datetime|date('m/d/Y - h:i a') }}
+            {% else %}
+                {{ events[0].datetime|date('d/m/Y - H:i') }}
+            {% endif %}
+        </div>
     </div>
     <div class="column is-one-quarter-desktop is-one-third-tablet">
         {{ include('includes/calendar.html.twig') }}
     </div>
 </div>
+    <div class="column">
+        {% for event in events[1:] %}
+            <div class="box">
+                {{ event.title }}
+                 -
+                {% if app.request.locale == 'fr' %}
+                    {{ event.datetime|date('d/m/Y - H:i') }}
+                {% elseif app.request.locale == 'en' %}
+                    {{ event.datetime|date('m/d/Y - h:i a') }}
+                {% else %}
+                    {{ event.datetime|date('d/m/Y - H:i') }}
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}
