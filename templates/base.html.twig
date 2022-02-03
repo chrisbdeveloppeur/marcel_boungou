@@ -102,7 +102,7 @@
         lang: '{{ app.request.locale }}',
         startDate: today,
         endDate: undefined,
-        minDate: undefined,
+        minDate: today.toLocaleDateString('fr-FR'),
         maxDate: null,
         disabledDates: [],
         disabledWeekDays: undefined,
