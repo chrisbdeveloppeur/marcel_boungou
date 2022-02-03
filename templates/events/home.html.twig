@@ -24,18 +24,22 @@
         </div>
 
         <div class="column">
+            {% set count = 0 %}
             {% for event in events[1:] %}
-                <div class="box">
-                    {{ event.title }}
-                    -
-                    {% if app.request.locale == 'fr' %}
-                        {{ event.datetime|date('d/m/Y - H:i') }}
-                    {% elseif app.request.locale == 'en' %}
-                        {{ event.datetime|date('m/d/Y - h:i a') }}
-                    {% else %}
-                        {{ event.datetime|date('d/m/Y - H:i') }}
-                    {% endif %}
-                </div>
+                {% if count < 4 %}
+                    <div class="box">
+                        {{ event.title }}
+                        -
+                        {% if app.request.locale == 'fr' %}
+                            {{ event.datetime|date('d/m/Y - H:i') }}
+                        {% elseif app.request.locale == 'en' %}
+                            {{ event.datetime|date('m/d/Y - h:i a') }}
+                        {% else %}
+                            {{ event.datetime|date('d/m/Y - H:i') }}
+                        {% endif %}
+                    </div>
+                {% endif %}
+                {% set count = count + 1 %}
             {% endfor %}
         </div>
     </section>

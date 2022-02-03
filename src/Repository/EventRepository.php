@@ -29,7 +29,7 @@ class EventRepository extends ServiceEntityRepository
             //->andWhere('e.dateTime = :val')
             //->setParameter('val', $value)
             ->orderBy('e.datetime', 'ASC')
-            ->setMaxResults(5)
+            ->setMaxResults(500)
             ->getQuery()
             ->getResult()
         ;
