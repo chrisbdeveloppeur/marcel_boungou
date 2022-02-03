@@ -8,6 +8,7 @@ $dropdown-menu-min-width: 0;
 $dropdown-content-padding-top: 0;
 $dropdown-content-padding-bottom: 0;
 $calendar-border-radius: 0;
+$box-radius: 0;
 
 body{
   min-height: 100vh;
@@ -75,6 +76,11 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   width: 100%;
   position: absolute;
   top: 100%;
+}
+
+.datetimepicker{
+  width: 100% !important;
+  max-width: none !important;
 }
 
 .show-password{
