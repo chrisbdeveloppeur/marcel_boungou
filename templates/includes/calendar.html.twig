@@ -1,8 +1,9 @@
-    <div class="is-flex is-flex-direction-column is-justify-content-center is-align-items-center has-background-primary is-relative">
+    <div class="is-flex is-flex-direction-column is-justify-content-center is-align-items-center is-relative">
         <input type="date" class="bulma-calendar bulma-calendar-1 is-small">
         {% if events is defined %}
             {% for event in events %}
                 <div class="highlight-info is-hidden has-text-light px-3 py-3" id="{{ event.datetime|date('d/m/Y') }}">
+                    <button class="delete" style="position: absolute;top: .5rem;right: .5rem" onclick="this.parentElement.classList.add('is-hidden')"></button>
                     <a href="#" class="has-text-light">
                         <h3>
                             {% trans %} HIGHLIGHT {% endtrans %} : {{ event.title }}
