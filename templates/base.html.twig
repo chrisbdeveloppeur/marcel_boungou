@@ -43,14 +43,17 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bulma-calendar@6.1.14/dist/js/bulma-calendar.min.js"></script>
 {# BULMA CAROUSEL #}
-<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.24/dist/js/bulma-carousel.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.24/dist/js/bulma-carousel.min.js"></script>
+
 <script>
     //initialize options :
     var options = {
         initialSlide: 0,
-        infinite: true,
-        effect: 'fade',
-        autoplay: true,
+        slidesToShow: 1,
+        infinite: false,
+        loop:true,
+        effect: 'translate',
+        autoplay: false,
     };
     // Initialize all div with carousel class
     var carousels = bulmaCarousel.attach('.carousel', options);
@@ -64,6 +67,7 @@
     }
 
     // Access to bulmaCarousel instance of an element
+    /*
     var element = document.querySelector('#my-element');
     if (element && element.bulmaCarousel) {
         // bulmaCarousel instance is available as element.bulmaCarousel
@@ -71,6 +75,7 @@
             console.log(state);
         });
     }
+    */
 </script>
 <script>
 

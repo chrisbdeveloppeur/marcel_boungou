@@ -9,7 +9,7 @@
                 {{ include('includes/calendar.html.twig') }}
             </div>
             <div class="column">
-                <div class="box" style="height: 100%">
+                <div class="box has-background-primary-light" style="height: 100%">
                     {{ events[0].title }}
                     -
                     {% if app.request.locale == 'fr' %}
@@ -24,24 +24,46 @@
         </div>
 
         <div class="column">
+            <!-- Events box for mobile -->
+            {% set count_1 = 0 %}
+            {% for event in events[1:] %}
+                {% if count_1 < 4 %}
+                    <div class="box item-{{ count_1 }} is-hidden-tablet has-background-primary-light">
+                        {{ event.title }}
+                        -
+                        {% if app.request.locale == 'fr' %}
+                            {{ event.datetime|date('d/m/Y - H:i') }}
+                        {% elseif app.request.locale == 'en' %}
+                            {{ event.datetime|date('m/d/Y - h:i a') }}
+                        {% else %}
+                            {{ event.datetime|date('d/m/Y - H:i') }}
+                        {% endif %}
+                    </div>
+                {% endif %}
+                {% set count_1 = count_1 + 1 %}
+            {% endfor %}
+            <!-- End Event box for mobile -->
+
             <!-- Start Carousel -->
-            <div id="carousel-demo" class="carousel">
-                {% set count = 0 %}
+            <div class="carousel is-hidden-mobile" style="height: 200px">
+                {% set count_2 = 0 %}
                 {% for event in events[1:] %}
-                    {% if count < 4 %}
-                        <div class="box">
-                            {{ event.title }}
-                            -
-                            {% if app.request.locale == 'fr' %}
-                                {{ event.datetime|date('d/m/Y - H:i') }}
-                            {% elseif app.request.locale == 'en' %}
-                                {{ event.datetime|date('m/d/Y - h:i a') }}
-                            {% else %}
-                                {{ event.datetime|date('d/m/Y - H:i') }}
-                            {% endif %}
+                    {% if count_2 < 4 %}
+                        <div class="column" style="height: 100%;">
+                            <div class="box has-background-primary-light item-{{ count_2 }}" style="height: 100%;">
+                                {{ event.title }}
+                                -
+                                {% if app.request.locale == 'fr' %}
+                                    {{ event.datetime|date('d/m/Y - H:i') }}
+                                {% elseif app.request.locale == 'en' %}
+                                    {{ event.datetime|date('m/d/Y - h:i a') }}
+                                {% else %}
+                                    {{ event.datetime|date('d/m/Y - H:i') }}
+                                {% endif %}
+                            </div>
                         </div>
                     {% endif %}
-                    {% set count = count + 1 %}
+                    {% set count_2 = count_2 + 1 %}
                 {% endfor %}
             </div>
             <!-- End Carousel -->

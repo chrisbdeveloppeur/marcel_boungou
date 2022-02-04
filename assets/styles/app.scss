@@ -76,6 +76,7 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   width: 100%;
   position: absolute;
   top: 100%;
+  z-index: 1;
 }
 
 .datetimepicker{
@@ -182,7 +183,9 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   }
 }
 
-
+.slider{
+  height: 100%;
+}
 
 .disc:hover{
   cursor: pointer;
