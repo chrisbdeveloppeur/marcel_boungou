@@ -11,8 +11,9 @@ $calendar-border-radius: 0;
 $box-radius: 0;
 $navbar-height: 4rem;
 $navbar-dropdown-background-color: $primary;
-$navbar-dropdown-item-hover-background-color: #975ba8;
+$navbar-dropdown-item-hover-background-color: #7C4A8C;
 $navbar-dropdown-radius: 0;
+$radius : 0;
 
 body{
   min-height: 100vh;
@@ -185,6 +186,9 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
 
 .slider{
   height: 100%;
+}
+.slider-container{
+  width: 100% !important;
 }
 
 .disc:hover{
