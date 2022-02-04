@@ -11,14 +11,7 @@
             <div class="column">
                 <div class="box has-background-primary-light" id="majorEvent">
                     {{ events[0].title }}
-                    -
-                    {% if app.request.locale == 'fr' %}
-                        {{ events[0].datetime|date('d/m/Y - H:i') }}
-                    {% elseif app.request.locale == 'en' %}
-                        {{ events[0].datetime|date('m/d/Y - h:i a') }}
-                    {% else %}
-                        {{ events[0].datetime|date('d/m/Y - H:i') }}
-                    {% endif %}
+                    - {{ events[0].datetime|format_datetime('full','short',locale=app.request.locale) }}
                 </div>
             </div>
         </div>
@@ -30,14 +23,7 @@
                 {% if count_1 < 4 %}
                     <div class="box item-{{ count_1 }} is-hidden-tablet has-background-primary-light">
                         {{ event.title }}
-                        -
-                        {% if app.request.locale == 'fr' %}
-                            {{ event.datetime|date('d/m/Y - H:i') }}
-                        {% elseif app.request.locale == 'en' %}
-                            {{ event.datetime|date('m/d/Y - h:i a') }}
-                        {% else %}
-                            {{ event.datetime|date('d/m/Y - H:i') }}
-                        {% endif %}
+                        - {{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}
                     </div>
                 {% endif %}
                 {% set count_1 = count_1 + 1 %}
@@ -52,14 +38,7 @@
                         <div class="" style="height: 100%;">
                             <div class="has-background-primary-light item-{{ count_2 }}" style="height: 100%;">
                                 {{ event.title }}
-                                -
-                                {% if app.request.locale == 'fr' %}
-                                    {{ event.datetime|date('d/m/Y - H:i') }}
-                                {% elseif app.request.locale == 'en' %}
-                                    {{ event.datetime|date('m/d/Y - h:i a') }}
-                                {% else %}
-                                    {{ event.datetime|date('d/m/Y - H:i') }}
-                                {% endif %}
+                                - {{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}
                             </div>
                         </div>
                     {% endif %}
