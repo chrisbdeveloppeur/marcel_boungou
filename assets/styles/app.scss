@@ -36,12 +36,8 @@ section.body{
 }
 */
 
-.is-size-mega{
+.is-size-mega {
   font-size: 10em !important;
-}
-
-.addToCalendar{
-
 }
 
 .is-100vh{
@@ -52,7 +48,7 @@ section.body{
 }
 
 .box-shadow-bulma{
-  box-shadow: 0 0.5em 1em -0.125em rgba(0,0,0,.5), 0 0px 0 1px rgba(0,0,0,0.2);
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0px 0 1px rgb(10 10 10 / 2%);
 }
 
 button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.datepicker-nav-previous:active, button.datepicker-nav-previous:focus{

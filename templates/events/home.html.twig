@@ -49,7 +49,7 @@
                 {% set count_2 = 0 %}
                 {% for event in events[1:] %}
                     {% if count_2 < 4 %}
-                        <div class="column" style="height: 100%;">
+                        <div class="pb-5" style="height: 100%;">
                             <div class="box has-background-primary-light item-{{ count_2 }}" style="height: 100%;">
                                 {{ event.title }}
                                 -
@@ -90,10 +90,6 @@ highlightsDates.push(date);
 {% else %}
 highlightsDates = false;
 {% endif %}
-
-
-//console.log(today.toLocaleDateString("fr-FR"));
-//console.log(highlightsDates);
 
 {% if app.request.get('_route') == 'events_new' %}
 var defaultOptions = {
@@ -181,5 +177,41 @@ agendas.forEach(function (agenda) {
 });
 
 </script>
+
+{#          BULMA CALENDAR            #}
+    <script>
+        //initialize options :
+        var options = {
+            initialSlide: 0,
+            slidesToShow: 1,
+            infinite: false,
+            loop:true,
+            effect: 'fade',
+            autoplay: true,
+            navigationSwipe: true,
+            navigationKeys: false,
+        };
+        // Initialize all div with carousel class
+        var carousels = bulmaCarousel.attach('.carousel', options);
+
+        // Loop on each carousel initialized
+        for(var i = 0; i < carousels.length; i++) {
+            // Add listener to  event
+            carousels[i].on('before:show', state => {
+                console.log(state);
+            });
+        }
+
+        // Access to bulmaCarousel instance of an element
+        /*
+        var element = document.querySelector('#my-element');
+        if (element && element.bulmaCarousel) {
+            // bulmaCarousel instance is available as element.bulmaCarousel
+            element.bulmaCarousel.on('before-show', function(state) {
+                console.log(state);
+            });
+        }
+        */
+    </script>
 {% endblock %}
 
