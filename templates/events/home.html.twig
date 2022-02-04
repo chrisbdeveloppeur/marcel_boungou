@@ -45,12 +45,12 @@
             <!-- End Event box for mobile -->
 
             <!-- Start Carousel -->
-            <div class="carousel is-hidden-mobile" style="height: 200px">
+            <div class="carousel is-hidden-mobile box px-0 py-0" style="height: 200px">
                 {% set count_2 = 0 %}
                 {% for event in events[1:] %}
                     {% if count_2 < 4 %}
-                        <div class="pb-5" style="height: 100%;">
-                            <div class="box has-background-primary-light item-{{ count_2 }}" style="height: 100%;">
+                        <div class="" style="height: 100%;">
+                            <div class="has-background-primary-light item-{{ count_2 }}" style="height: 100%;">
                                 {{ event.title }}
                                 -
                                 {% if app.request.locale == 'fr' %}
@@ -67,6 +67,10 @@
                 {% endfor %}
             </div>
             <!-- End Carousel -->
+        </div>
+
+        <div class="column">
+            <a href="#" class="button is-success is-light is-fullwidth box-shadow-bulma">{% trans %}See all events{% endtrans %}</a>
         </div>
     </section>
 {% endblock %}
@@ -138,7 +142,7 @@ var defaultOptions = {
     enableMonthSwitch: false,
     enableYearSwitch: false,
     displayYearsCount: 50,
-    todayLabel: 'Aujourd\'hui',
+    //todayLabel: {% trans %}'Today'{% endtrans %},
     showClearButton: false,
     showButtons: false,
     showTodayButton: false,

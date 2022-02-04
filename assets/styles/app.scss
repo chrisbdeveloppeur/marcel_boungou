@@ -48,7 +48,7 @@ section.body{
 }
 
 .box-shadow-bulma{
-  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0px 0 1px rgb(10 10 10 / 2%);
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0px 0 1px rgb(10 10 10 / 2%) !important;
 }
 
 button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.datepicker-nav-previous:active, button.datepicker-nav-previous:focus{
@@ -58,7 +58,7 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   transition: .5s;
 }
 .datetimepicker-footer-today{
-  background: $success !important;
+  background: $primary !important;
 }
 
 .datepicker-year.is-active, .datepicker-month.is-active{
@@ -190,6 +190,10 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
 #majorEvent{
   height: 100%;
   min-height: 30vh;
+}
+
+.slider-navigation-next, .slider-navigation-previous{
+  border-radius: 0 !important;
 }
 
 @import "~bulma";
