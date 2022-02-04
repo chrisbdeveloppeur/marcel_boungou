@@ -9,7 +9,7 @@
                 {{ include('includes/calendar.html.twig') }}
             </div>
             <div class="column">
-                <div class="box has-background-primary-light" style="height: 100%">
+                <div class="box has-background-primary-light" id="majorEvent">
                     {{ events[0].title }}
                     -
                     {% if app.request.locale == 'fr' %}
