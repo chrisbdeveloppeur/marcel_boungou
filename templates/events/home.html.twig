@@ -51,7 +51,7 @@
                             <div class="has-background-primary-light item-{{ count_2 }}" style="height: 100%;">
                                 <div class="is-flex is-flex-direction-row has-background-success"  style="height: 100%;">
                                     <img src="{{ asset('build/images/palatasingers1.4e6d4fc8.jpg') }}" alt="" style="height: 100%;max-height: 100%">
-                                    <div class="column has-background-black" style="z-index: 1;box-shadow: -5px 0 25px 15px #0A0A0A">
+                                    <div class="column has-background-black slider-container-child">
                                         <div class="has-text-white">
                                             {{ event.title }}
                                             - {{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}
@@ -183,6 +183,7 @@ agendas.forEach(function (agenda) {
 {#          BULMA CAROUSEL            #}
     <script>
         //initialize options :
+
         var options = {
             initialSlide: 0,
             slidesToShow: 1,
@@ -193,6 +194,7 @@ agendas.forEach(function (agenda) {
             navigationSwipe: true,
             navigationKeys: false,
         };
+
         // Initialize all div with carousel class
         var carousels = bulmaCarousel.attach('.carousel', options);
 

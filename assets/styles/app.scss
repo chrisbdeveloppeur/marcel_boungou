@@ -187,8 +187,14 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
 .slider{
   height: 100%;
 }
+.slider-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .slider-container{
-  width: 100% !important;
+  //width: 100% !important;
+  max-height: 100%;
 }
 
 .disc:hover{
@@ -202,6 +208,11 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
 
 .slider-navigation-next, .slider-navigation-previous{
   border-radius: 0 !important;
+}
+
+.slider-container-child{
+  //box-shadow: -5px 0 25px 15px #0A0A0A;
+  z-index: 1;
 }
 
 @import "~bulma";
