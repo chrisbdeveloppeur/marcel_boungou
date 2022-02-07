@@ -11,8 +11,9 @@ $dropdown-content-padding-bottom: 0;
 $calendar-border-radius: 0;
 $box-radius: 0;
 $navbar-height: 4rem;
-$navbar-dropdown-background-color: $primary;
-$navbar-dropdown-item-hover-background-color: #7C4A8C;
+//$navbar-dropdown-background-color: $primary;
+//$navbar-item-active-background-color: #7C4A8C;
+//$navbar-dropdown-item-active-background-color:#7C4A8C;
 $navbar-dropdown-radius: 0;
 $radius : 0;
 $box-shadow-bulma: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0px 0 1px rgb(10 10 10 / 2%) !important;
@@ -147,8 +148,16 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
 
 // BREAK RESPONSIVE FOR DESKTOP
 @media (max-width: 1023px ) {
+
+  #navbarBasic{
+   // background: $primary !important;
+    height: 100vh;
+  }
   .has-text-white-desktop{
     color: white !important;
+  }
+  .has-text-dark-desktop{
+    color: $dark !important;
   }
 }
 // BREAK RESPONSIVE FOR TOUCH (MOBIL & TABLET)
@@ -156,6 +165,9 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
 
   .has-text-dark-touch{
     color: $dark !important;
+  }
+  .has-text-white-touch{
+    color: white !important;
   }
   .disc{
     position: absolute;

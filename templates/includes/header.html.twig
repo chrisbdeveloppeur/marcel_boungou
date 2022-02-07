@@ -4,14 +4,14 @@
             Logo
         </a>
 
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
         </a>
     </div>
 
-    <div id="navbarBasicExample" class="navbar-menu has-text-centered-touch">
+    <div id="navbarBasic" class="navbar-menu has-text-centered-touch">
         <div class="navbar-start">
             <a class="navbar-item" href="{{ path('home_index') }}">
                 {% trans %}Home{% endtrans %}
@@ -25,75 +25,68 @@
                 {% trans %}Events{% endtrans %}
             </a>
 
+            <hr class="dropdown-divider">
+
             <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link">
                     {% trans %}Media{% endtrans %}
                 </a>
 
                 <div class="navbar-dropdown">
-                    <a href="{{ path('discography_index') }}" class="navbar-item has-text-white-desktop">
+                    <a href="{{ path('discography_index') }}" class="navbar-item">
                         {% trans %}Discography{% endtrans %}
                     </a>
-                    <a href="{{ path('bibliography_index') }}" class="navbar-item has-text-white-desktop">
+                    <a href="{{ path('bibliography_index') }}" class="navbar-item">
                         {% trans %}Bibliography{% endtrans %}
                     </a>
-                    <a href="{{ path('gallery_index') }}" class="navbar-item has-text-white-desktop">
+                    <a href="{{ path('gallery_index') }}" class="navbar-item">
                         {% trans %}Gallery{% endtrans %}
                     </a>
                 </div>
             </div>
+
+            <hr class="dropdown-divider">
 
             <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link">
                     {% trans %}MB Ministry{% endtrans %}
                 </a>
                 <div class="navbar-dropdown">
-                    <a class="navbar-item has-text-white-desktop">
+                    <a class="navbar-item">
                         {% trans %}Biography{% endtrans %}
                     </a>
-                    <a class="navbar-item has-text-white-desktop">
+                    <a class="navbar-item">
                         {% trans %}Contact{% endtrans %}
                     </a>
-                    <a class="navbar-item has-text-white-desktop">
+                    <a class="navbar-item">
                         {% trans %}Partners{% endtrans %}
                     </a>
                 </div>
             </div>
 
-
         </div>
 
+        <hr class="dropdown-divider">
+
         <div class="navbar-end">
-            <div class="navbar-item">
+            <div class="navbar-item has-dropdown is-hoverable">
                 {% if app.user %}
-                    <div class="dropdown is-hoverable is-right">
-                        <div class="dropdown-trigger">
-                            <button class="button is-primary is-small" aria-haspopup="true" aria-controls="dropdown-menu4">
-                                <span>
-                                    <strong>{{ app.user.username }}</strong>
-                                </span>
-                                <span class="icon is-small">
-                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
-                                </span>
-                            </button>
-                        </div>
-                        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
-                            <div class="dropdown-content">
-                                <a class="dropdown-item has-text-white-desktop" href="{{ path('user_edit', {'id': app.user.id}) }}">
-                                    {% trans %}Edit my profile{% endtrans %}
-                                </a>
-                                {% if is_granted('ROLE_SUPER_ADMIN') %}
-                                    <a class="dropdown-item has-text-white-desktop" href="{{ path('app_register') }}">
-                                        {% trans %}Add a Manager{% endtrans %}
-                                    </a>
-                                {% endif %}
-                                <hr class="dropdown-divider">
-                                <a class="dropdown-item has-text-white-desktop" href="{{ path('app_logout') }}">
-                                    {% trans %}Logout{% endtrans %}
-                                </a>
-                            </div>
-                        </div>
+                    <span class="navbar-link">
+                        {{ app.user.username }}
+                    </span>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="{{ path('user_edit', {'id': app.user.id}) }}">
+                            {% trans %}Edit my profile{% endtrans %}
+                        </a>
+                        {% if is_granted('ROLE_SUPER_ADMIN') %}
+                            <a class="navbar-item" href="{{ path('app_register') }}">
+                                {% trans %}Add a Manager{% endtrans %}
+                            </a>
+                        {% endif %}
                     </div>
+                    <a class="navbar-item" href="{{ path('app_logout') }}">
+                        {% trans %}Logout{% endtrans %}
+                    </a>
                 {% endif %}
             </div>
             <div class="navbar-item">
