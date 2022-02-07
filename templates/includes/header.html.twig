@@ -69,8 +69,8 @@
         <hr class="dropdown-divider">
 
         <div class="navbar-end">
-            <div class="navbar-item has-dropdown is-hoverable">
-                {% if app.user %}
+            {% if app.user %}
+                <div class="navbar-item has-dropdown is-hoverable">
                     <span class="navbar-link">
                         {{ app.user.username }}
                     </span>
@@ -84,11 +84,11 @@
                             </a>
                         {% endif %}
                     </div>
-                    <a class="navbar-item" href="{{ path('app_logout') }}">
-                        {% trans %}Logout{% endtrans %}
-                    </a>
-                {% endif %}
-            </div>
+                </div>
+                <a class="navbar-item" href="{{ path('app_logout') }}">
+                    {% trans %}Logout{% endtrans %}
+                </a>
+            {% endif %}
             <div class="navbar-item">
                 {{ include('includes/select_locale.html.twig') }}
             </div>

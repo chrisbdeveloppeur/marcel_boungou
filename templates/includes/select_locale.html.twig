@@ -5,19 +5,19 @@
     <img src="{{ asset('build/images/en.1bba84f0.svg') }}" alt="Drapeau Royaume Unis">
 {% endset %}
 
-<div class="dropdown is-hoverable is-right">
+<div class="dropdown is-hoverable is-right is-hidden-touch">
     <div class="dropdown-trigger">
-        <button class="button is-primary is-light is-small is-size-6-touch is-rounded" aria-haspopup="true" aria-controls="dropdown-menu">
+        <div class="tag is-primary is-small is-size-6-touch" aria-haspopup="true" aria-controls="dropdown-menu">
                 <span class="icon">
                     {{ attribute(_context,'flag_' ~ app.request.locale) }}
                 </span>
-        </button>
+        </div>
     </div>
     <div class="dropdown-menu" id="dropdown-menu" role="menu">
         <div class="">
             {% for locale in locales %}
                 {% if app.request.locale != locale %}
-                    <a href="{{ path('change_locale', {'locale': locale }) }}" class="button is-primary is-light is-small is-size-6-touch is-rounded">
+                    <a href="{{ path('change_locale', {'locale': locale }) }}" class="tag is-primary is-light is-small is-size-6-touch">
                         <span class="icon">
                             {{ attribute(_context,'flag_' ~ locale) }}
                         </span>
@@ -26,4 +26,16 @@
             {% endfor %}
         </div>
     </div>
+</div>
+
+<div class="tags is-hidden-desktop">
+    {% for locale in locales %}
+        {% if app.request.locale != locale %}
+            <a href="{{ path('change_locale', {'locale': locale }) }}" class="tag is-primary is-light is-small is-size-6-touch">
+                <span class="icon">
+                    {{ attribute(_context,'flag_' ~ locale) }}
+                </span>
+            </a>
+        {% endif %}
+    {% endfor %}
 </div>
