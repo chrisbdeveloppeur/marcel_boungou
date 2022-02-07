@@ -1,8 +1,8 @@
 {% set flag_fr %}
-    <img src="{{ asset('build/images/fr.e9608955.svg') }}" alt="Drapeau France">
+    <img src="{{ asset('build/images/fr.e9608955.svg') }}" style="height: 12px" alt="Drapeau France">
 {% endset %}
 {% set flag_en %}
-    <img src="{{ asset('build/images/en.1bba84f0.svg') }}" alt="Drapeau Royaume Unis">
+    <img src="{{ asset('build/images/en.1bba84f0.svg') }}" style="height: 12px" alt="Drapeau Royaume Unis">
 {% endset %}
 
 <div class="dropdown is-hoverable is-right is-hidden-touch">
@@ -17,7 +17,7 @@
         <div class="">
             {% for locale in locales %}
                 {% if app.request.locale != locale %}
-                    <a href="{{ path('change_locale', {'locale': locale }) }}" class="tag is-primary is-light is-small is-size-6-touch">
+                    <a href="{{ path('change_locale', {'locale': locale }) }}" class="tag is-small is-size-6-touch">
                         <span class="icon">
                             {{ attribute(_context,'flag_' ~ locale) }}
                         </span>

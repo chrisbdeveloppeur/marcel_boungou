@@ -10,7 +10,6 @@
         <!-- Start Carousel -->
         <div class="carousel" style="height: 250px;">
                 {% for nb in 1..10 %}
-{#                        <div class="" style="height: 100%;">#}
                                 <div class="px-5 py-5 item-{{ nb }} music-carousel">
                                     <a href="#" class="card" style="height: 200px;width: 200px">
                                         <div class="card-image">
@@ -25,30 +24,32 @@
                                         </div>
                                     </a>
                                 </div>
-{#                        </div>#}
                 {% endfor %}
         </div>
         <!-- End Carousel -->
 </div>
 
 <div class="column">
-        <!-- Start Carousel -->
-        <div class="carousel" style="height: 250px;">
-                {% for nb in 1..10 %}
-                        {#                        <div class="" style="height: 100%;">#}
-                        <a href="#" class="px-5 py-5 item-{{ nb }} music-carousel">
-                                <div class="box-shadow-bulma is-flex is-flex-direction-row">
-                                        <div class="column has-background-black slider-container-child">
-                                                <div class="has-text-white">
-                                                        Music {{ nb }}
-                                                </div>
-                                        </div>
-                                </div>
-                        </a>
-                        {#                        </div>#}
-                {% endfor %}
-        </div>
-        <!-- End Carousel -->
+    <!-- Start Carousel -->
+    <div class="carousel" style="height: 250px;">
+        {% for nb in 1..10 %}
+            <div class="px-5 py-5 item-{{ nb }} music-carousel">
+                <a href="#" class="card" style="height: 200px;width: 200px">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            Music {{ nb }}
+                        </div>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+    <!-- End Carousel -->
 </div>
 
 
