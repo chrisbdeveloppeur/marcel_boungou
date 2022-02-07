@@ -3,6 +3,7 @@ $link: #3488CE;
 $success: #DA4600;
 $primary: #7C4A8C;
 $black: #0a0a0a;
+$dark: #4a4a4a;
 
 $dropdown-menu-min-width: 0;
 $dropdown-content-padding-top: 0;
@@ -144,10 +145,18 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   z-index: 1;
 }
 
-
+// BREAK RESPONSIVE FOR DESKTOP
+@media (max-width: 1023px ) {
+  .has-text-white-desktop{
+    color: white !important;
+  }
+}
 // BREAK RESPONSIVE FOR TOUCH (MOBIL & TABLET)
 @media (min-width: 1023px ) {
 
+  .has-text-dark-touch{
+    color: $dark !important;
+  }
   .disc{
     position: absolute;
     transition: .3s;
