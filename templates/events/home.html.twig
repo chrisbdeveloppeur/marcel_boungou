@@ -30,41 +30,22 @@
             {% set count_1 = 0 %}
             {% for event in events[1:] %}
                 {% if count_1 < 4 %}
-                    <div class="box-shadow-bulma item-{{ count_1 }} is-hidden-tablet has-background-primary-light">
+                    <div class="my-2 box-shadow-bulma item-{{ count_1 }} is-hidden-tablet has-background-primary-light has-text-centered">
                         <div class="is-flex is-flex-direction-row has-background-success-light"  style="height: 100%;">
                             <img src="{{ asset('build/images/palatasingers1.4e6d4fc8.jpg') }}" alt="" style="height: 100%;max-height: 100%;max-width: 100%">
                         </div>
-                        {{ event.title }}
-                        - {{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}
+                        <h3 class="title">{{ event.title }}</h3>
+                        <span>{{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}</span>
+                        <br>
+                        <span>{{ event.adresse }}</span>
                     </div>
                 {% endif %}
                 {% set count_1 = count_1 + 1 %}
             {% endfor %}
             <!-- End Event box for mobile -->
 
-            <!-- Start Carousel -->
-            <div class="carousel is-hidden-mobile box-shadow-bulma" style="height: 200px;">
-                {% set count_2 = 0 %}
-                {% for event in events[1:] %}
-                    {% if count_2 < 4 %}
-                        <div class="" style="height: 100%;">
-                            <div class="has-background-primary-light item-{{ count_2 }}" style="height: 100%;">
-                                <div class="is-flex is-flex-direction-row has-background-success-light"  style="height: 100%;">
-                                    <img src="{{ asset('build/images/palatasingers1.4e6d4fc8.jpg') }}" alt="" style="height: 100%;max-height: 100%">
-                                    <div class="column has-background-success-light slider-container-child is-flex is-align-items-center">
-                                        <div class="has-text-dark">
-                                            {{ event.title }}
-                                            - {{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    {% endif %}
-                    {% set count_2 = count_2 + 1 %}
-                {% endfor %}
-            </div>
-            <!-- End Carousel -->
+            {{ include('events/carousel_events.html.twig') }}
+
         </div>
 
         <div class="column">

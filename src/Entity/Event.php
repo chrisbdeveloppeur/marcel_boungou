@@ -206,5 +206,11 @@ class Event
         return $this;
     }
 
+    public function getAdresse()
+    {
+        $adresse = $this->street.', '.$this->cp.' '.$this->city.', '.$this->country;
+        return $adresse;
+    }
+
 
 }
