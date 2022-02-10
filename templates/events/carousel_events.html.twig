@@ -12,7 +12,14 @@
                                 <h3 class="title">{{ event.title }}</h3>
                                 <span>{{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}</span>
                                 <br>
-                                <span>{{ event.adresse }}</span>
+                                <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="icon is-info" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
+                                    <i class="fas fa-lg fa-map-marker-alt"></i>
+                                </a>
+
+                                <a class="icon has-text-info" onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
+                                    <i class="fas fa-lg fa-calendar-alt"></i>
+                                </a>
+
                             </div>
                         </div>
                     </div>

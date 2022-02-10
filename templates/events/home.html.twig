@@ -3,6 +3,15 @@
 {% block title %}{% trans %}Events{% endtrans %}{% endblock %}
 
 {% block body %}
+    {% for event in events %}
+        <div class="modal" id="modalEvent{{ event.id }}">
+            <div class="modal-background" onclick="this.parentElement.classList.remove('is-active')"></div>
+            <div class="modal-content">
+                {{ include('includes/modal_event.html.twig') }}
+            </div>
+            <button class="modal-close is-large" aria-label="close" onclick="this.parentElement.classList.remove('is-active')"></button>
+        </div>
+    {% endfor %}
     <section class="container">
         <div class="is-flex-tablet is-flex-direction-row-reverse">
             <div class="column is-one-quarter-desktop is-one-third-tablet">
@@ -20,6 +29,11 @@
                                 - {{ events[0].datetime|format_datetime('full','short',locale=app.request.locale) }}
                             </div>
                         </div>
+                        <button class="button is-small borderless" onclick="document.querySelector('#modalEvent'+{{ events[0].id }}).classList.add('is-active')">
+                            <span class="icon">
+                                <i class="fas fa-lg fa-calendar-alt"></i>
+                            </span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -174,6 +188,7 @@ agendas.forEach(function (agenda) {
             autoplay: false,
             navigationSwipe: true,
             navigationKeys: false,
+            pagination: false,
         };
 
         // Initialize all div with carousel class

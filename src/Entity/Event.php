@@ -62,6 +62,11 @@ class Event
      */
     private $mails_to_remind = [];
 
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $ticketing_link;
+
     public function __construct()
     {
         $this->datetime = new \DateTime();
@@ -210,6 +215,18 @@ class Event
     {
         $adresse = $this->street.', '.$this->cp.' '.$this->city.', '.$this->country;
         return $adresse;
+    }
+
+    public function getTicketingLink(): ?string
+    {
+        return $this->ticketing_link;
+    }
+
+    public function setTicketingLink(?string $ticketing_link): self
+    {
+        $this->ticketing_link = $ticketing_link;
+
+        return $this;
     }
 
 
