@@ -31,6 +31,23 @@ section.body{
   height: 100vh;
   width: 100vw;
 }
+.main-background img{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  filter: grayscale(100%);
+  object-fit: cover;
+}
+.main-background-layer{
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background: $success;
+  opacity: 70%;
+}
 
 /*
 #header{
