@@ -39,16 +39,36 @@ section.body{
   filter: grayscale(100%);
   object-fit: cover;
 }
-.main-background-layer{
+.main-background-layer, .nav-background-layer{
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   position: absolute;
   z-index: 1;
-  background: $success;
   opacity: 70%;
 }
+.nav-background-layer{
+  background: $success;
+}
+.main-background-layer{
+  background: $primary;
+}
+.nav-background{
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.nav-background img{
+  filter: grayscale(100%);
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
 
 /*
 #header{

@@ -24,7 +24,7 @@
 
 <section class="body">
     <div class="main-background" style="background: center / cover no-repeat url()">
-        <img src="{{ asset('build/images/snowfall.fb18a3ec.jpg') }}" alt="">
+        {% block main_background_img %}<img src="{{ asset('build/images/sunset.50dc6889.jpg') }}" alt="">{% endblock %}
         <div class="main-background-layer"></div>
     </div>
     {% block body %}{% endblock %}
