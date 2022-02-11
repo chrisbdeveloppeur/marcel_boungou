@@ -14,42 +14,48 @@
     {% endfor %}
     <section class="container">
         <div class="is-flex-tablet is-flex-direction-row-reverse">
+
             <div class="column is-one-quarter-desktop is-one-third-tablet">
                 {{ include('includes/calendar.html.twig') }}
             </div>
+
             <div class="column">
                 <div class="box-shadow-bulma has-background-primary-light" id="majorEvent">
                     <div class="is-flex is-flex-direction-column has-background-light"  style="height: 100%;">
-                        <figure class="is-flex is-justify-content-center" style="height: 300px;">
-                            <img src="{{ asset('build/images/mb_cost_blue_1.4e43ac8e.jpg') }}" alt="" style="height: 100%;max-height: 100%;object-fit: contain">
+                        <figure class="is-flex is-justify-content-center" style="">
+                            <img src="{{ asset('build/images/palatasingers2.e391d9b6.jpg') }}" alt="" style="height: 100%;max-height: 100%;object-fit: contain">
                         </figure>
-                        <div class="column has-background-success-light is-flex is-align-items-center is-justify-content-center" style="z-index: 1;">
-                            <h3 class="has-text-dark title has-text-weight-bold">
-                                {{ events[0].title }}
-                            </h3>
-                        </div>
-                        <div class="column has-background-success-light slider-container-child is-flex-desktop is-justify-content-space-between has-text-centered">
-                            <div class="column is-flex is-align-items-center is-justify-content-center px-0 py-0">
-                                <a href="https://www.google.fr/maps/search/{{ events[0].adresse }}" class="has-text-success" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
+
+                        <div class="box-shadow-bulma-event-card">
+                            <div class="column has-background-success-light is-flex is-align-items-center is-justify-content-center" style="z-index: 1;">
+                                <h3 class="has-text-dark title has-text-weight-bold">
+                                    {{ events[0].title }}
+                                </h3>
+                            </div>
+                            <div class="column has-background-success-light slider-container-child is-flex-desktop is-justify-content-space-between has-text-centered">
+                                <div class="column is-flex is-align-items-center is-justify-content-center px-0 py-0">
+                                    <a href="https://www.google.fr/maps/search/{{ events[0].adresse }}" class="has-text-success" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
                                     <span>
                                         {{ events[0].adresse }}
                                     </span>
-                                    <span  class="icon">
+                                        <span  class="icon">
                                         <i class="fas fa-lg fa-map-marker-alt"></i>
                                     </span>
-                                </a>
-                            </div>
-                            <div class="column is-flex is-align-items-center is-justify-content-center px-0 py-0">
-                                <a class="has-text-success" onclick="document.querySelector('#modalEvent'+{{ events[0].id }}).classList.add('is-active')">
+                                    </a>
+                                </div>
+                                <div class="column is-flex is-align-items-center is-justify-content-center px-0 py-0">
+                                    <a class="has-text-success" onclick="document.querySelector('#modalEvent'+{{ events[0].id }}).classList.add('is-active')">
                                     <span>
                                         {{ events[0].datetime|format_datetime('full','short',locale=app.request.locale) }}
                                     </span>
-                                    <span  class="icon">
+                                        <span  class="icon">
                                         <i class="fas fa-lg fa-calendar-alt"></i>
                                     </span>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>

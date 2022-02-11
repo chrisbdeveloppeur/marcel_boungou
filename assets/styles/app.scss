@@ -23,16 +23,30 @@ $navbar-dropdown-item-hover-color: $success;
 $navbar-item-hover-color: $success;
 $dropdown-divider-background-color: $white-layer;
 
+$font-great-vibes : 'Great Vibes', cursive;
+$font-nothing-you-could-do: 'Nothing You Could Do', cursive;
+$font-kavivanar: 'Kavivanar', cursive;
+$font-eagle-lake: 'Eagle Lake', cursive;
+$font-amita: 'Amita', cursive;
+$font-marcellus: 'Marcellus', serif;
+//$font-third
+
 //$navbar-item-active-background-color: #7C4A8C;
 //$navbar-dropdown-item-active-background-color:#7C4A8C;
 $navbar-dropdown-radius: 0;
 $radius : 0;
 $box-shadow-bulma: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0px 0 1px rgb(10 10 10 / 2%) !important;
 $box-shadow-bulma-dark: 0 0.5em 1em -0.125em rgba(10, 10, 10, .5) !important;
-
+.box-shadow-bulma-event-card{
+  box-shadow: 0 0.5em 1em 0.3em rgba(10, 10, 10, 0.2) !important;
+}
 
 *{
   transition: .3s;
+  font-family: $font-marcellus;
+}
+h1, h2, h3{
+  font-family: $font-nothing-you-could-do;
 }
 
 body{
@@ -69,7 +83,7 @@ section.body{
   background: $success;
 }
 .main-background-layer{
-  background: $primary;
+  background: white;
 }
 .nav-background{
   position: absolute;
@@ -239,7 +253,9 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
 }
 // BREAK RESPONSIVE FOR TOUCH (MOBIL & TABLET)
 @media (min-width: 1023px ) {
-
+  #majorEvent figure{
+    height: 300px;
+  }
   .has-text-dark-touch{
     color: $dark !important;
   }
