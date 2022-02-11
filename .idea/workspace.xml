@@ -2,45 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c513a9b-8917-4b63-8b91-a519e09de280" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/aveckurkcark2019.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/avecshirleycesar2019.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/damitachandlermb2018.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/israeih.-mb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/jeancarpenterjoannpinkens.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/kevinbondetmb2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mahaliabukenamdamitachandlerisraã£â«lhughtontinacampbellmb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mb_cost_argent_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mb_cost_black_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mb_cost_black_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mb_cost_black_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mb_cost_blanc_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mb_cost_blue_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mb_cost_blue_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mb_cost_cyan_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mb_cost_cyan_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mbaveclequipedeemci.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mbavecmaggieblancharddelybenson2018.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mbdonniemcclurkin.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mbmahaliabukenam.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mbraycharles2000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mbronkenoly1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mbronkenoly2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/mbsmokinorful.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/palatasingers1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/palatasingers2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/portrait_mb_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/portrait_mb_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/portrait_mb_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/portrait_mb_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/younger_mb_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/younger_mb_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/younger_mb_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jpg/younger_mb_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/events/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/events/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/events/home.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+            <state relative-caret-position="85">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#figure#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#!!top" expanded="true" />
@@ -102,74 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Command/FormatFileNameCommand.php">
+        <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="52" column="71" selection-start-line="52" selection-start-column="71" selection-end-line="52" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/includes/modal_event.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/events/carousel_events.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/styles/app.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1397">
-              <caret line="150" selection-start-line="150" selection-end-line="150" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity/Event.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="232" column="1" selection-start-line="232" selection-start-column="1" selection-end-line="232" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/includes/calendar.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="43" selection-start-line="43" selection-end-line="48" selection-end-column="28" />
+            <state relative-caret-position="269">
+              <caret line="24" column="86" selection-start-line="24" selection-start-column="86" selection-end-line="24" selection-end-column="86" />
             </state>
           </provider>
         </entry>
@@ -245,7 +144,6 @@
         <option value="$PROJECT_DIR$/src/Controller/EventsController.php" />
         <option value="$PROJECT_DIR$/src/EventSubscriber/TwigEventSubscriber.php" />
         <option value="$PROJECT_DIR$/src/Repository/EventRepository.php" />
-        <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/templates/includes/calendar.html.twig" />
         <option value="$PROJECT_DIR$/templates/discography/index.html.twig" />
         <option value="$PROJECT_DIR$/assets/styles/app.scss" />
@@ -262,6 +160,7 @@
         <option value="$PROJECT_DIR$/src/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/config/services.yaml" />
         <option value="$PROJECT_DIR$/src/Command/FormatFileNameCommand.php" />
+        <option value="$PROJECT_DIR$/templates/base.html.twig" />
       </list>
     </option>
   </component>
@@ -373,7 +272,7 @@
       <path value="$PROJECT_DIR$/vendor/twig/intl-extra" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-195" />
     <option name="y" value="-30" />
     <option name="width" value="1940" />
@@ -535,12 +434,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237400000" />
+    <option name="totallyTimeSpent" value="237670000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1738255" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1738255" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -554,7 +453,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4986577" visible="true" weight="0.28611898" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4986577" visible="true" weight="0.28611898" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5013423" side_tool="true" weight="0.28611898" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.3286119" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
@@ -875,13 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/includes/header.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -948,30 +840,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/events/home.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#figure#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="e#4013#8074#0#Twig" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -984,8 +856,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Command/FormatFileNameCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="52" column="71" selection-start-line="52" selection-start-column="71" selection-end-line="52" selection-end-column="71" />
+        <state relative-caret-position="714">
+          <caret line="47" column="66" lean-forward="true" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/events/home.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#figure#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
+            <element signature="e#4013#8074#0#Twig" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="24" column="86" selection-start-line="24" selection-start-column="86" selection-end-line="24" selection-end-column="86" />
         </state>
       </provider>
     </entry>
