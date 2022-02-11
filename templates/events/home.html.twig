@@ -13,15 +13,48 @@
         </div>
     {% endfor %}
     <section class="container">
-        <div class="is-flex-tablet is-flex-direction-row-reverse">
+        <div class="is-flex-tablet is-flex-direction-row-reverse pt-6">
 
             <div class="column is-one-quarter-desktop is-one-third-tablet">
                 {{ include('includes/calendar.html.twig') }}
             </div>
 
-            <div class="column">
-                <div class="box-shadow-bulma has-background-primary-light" id="majorEvent">
-                    <div class="is-flex is-flex-direction-column has-background-light"  style="height: 100%;">
+            <div class="column is-relative">
+                <h2 class="has-text-centered is-size-3 is-size-6-touch has-text-weight-bold next-event-logo is-uppercase">
+{#                    {% trans %}Next event{% endtrans %}#}
+                    {% if app.request.locale == 'fr' %}
+                        <span style="--i:1">P</span>
+                        <span style="--i:2">r</span>
+                        <span style="--i:3">o</span>
+                        <span style="--i:4">c</span>
+                        <span style="--i:5">h</span>
+                        <span style="--i:6">a</span>
+                        <span style="--i:7">i</span>
+                        <span style="--i:8">n</span>
+                        <span style="--i:9">&nbsp;é</span>
+                        <span style="--i:10">v</span>
+                        <span style="--i:11">é</span>
+                        <span style="--i:12">n</span>
+                        <span style="--i:13">e</span>
+                        <span style="--i:14">m</span>
+                        <span style="--i:15">e</span>
+                        <span style="--i:16">n</span>
+                        <span style="--i:17">t</span>
+                    {% else %}
+                        <span style="--i:1">N</span>
+                        <span style="--i:2">e</span>
+                        <span style="--i:3">x</span>
+                        <span style="--i:4">t</span>
+                        <span style="--i:5">&nbsp;E</span>
+                        <span style="--i:6">v</span>
+                        <span style="--i:7">e</span>
+                        <span style="--i:8">n</span>
+                        <span style="--i:9">t</span>
+                    {% endif %}
+                </h2>
+
+                <div class="" id="majorEvent">
+                    <div class="is-flex is-flex-direction-column"  style="height: 100%;">
                         <figure class="is-flex is-justify-content-center" style="">
                             <img src="{{ asset('build/images/palatasingers2.e391d9b6.jpg') }}" alt="" style="height: 100%;max-height: 100%;object-fit: contain">
                         </figure>

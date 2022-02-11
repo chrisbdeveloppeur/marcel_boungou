@@ -111,7 +111,23 @@ section.body{
   background: none !important;
 }
 
-
+.next-event-logo{
+  z-index: 1;
+  position:absolute;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  //animation: waviy 1s infinite;
+  //animation-delay: calc(.1s * var(--i));
+}
+.next-event-logo span{
+  position: relative;
+  display: inline-block;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  font-family: $font-nothing-you-could-do;
+}
 
 
 /*
@@ -338,6 +354,16 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
 .slider-container-child{
   //box-shadow: -5px 0 25px 15px #0A0A0A;
   z-index: 1;
+}
+
+
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-10px)
+  }
 }
 
 @import "~bulma";
