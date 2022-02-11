@@ -12,7 +12,7 @@
                                 {{ event.title }}
                             </h3>
                             <div class="column is-flex is-align-items-center px-0 py-0">
-                                <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="has-text-info" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
+                                <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="has-text-success" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
                                     <span>
                                         {{ event.adresse }}
                                     </span>
@@ -22,7 +22,7 @@
                                 </a>
                             </div>
                             <div class="column is-flex is-align-items-center px-0 py-0">
-                                <a class="has-text-info" onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
+                                <a class="has-text-success" onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
                                     <span>
                                         {{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}
                                     </span>

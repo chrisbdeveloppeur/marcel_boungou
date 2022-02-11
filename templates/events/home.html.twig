@@ -30,7 +30,7 @@
                         </div>
                         <div class="column has-background-success-light slider-container-child is-flex is-justify-content-space-between">
                             <div class="column is-flex is-align-items-center is-justify-content-center px-0 py-0">
-                                <a href="https://www.google.fr/maps/search/{{ events[0].adresse }}" class="has-text-info" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
+                                <a href="https://www.google.fr/maps/search/{{ events[0].adresse }}" class="has-text-success" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
                                     <span>
                                         {{ events[0].adresse }}
                                     </span>
@@ -40,7 +40,7 @@
                                 </a>
                             </div>
                             <div class="column is-flex is-align-items-center is-justify-content-center px-0 py-0">
-                                <a class="has-text-info" onclick="document.querySelector('#modalEvent'+{{ events[0].id }}).classList.add('is-active')">
+                                <a class="has-text-success" onclick="document.querySelector('#modalEvent'+{{ events[0].id }}).classList.add('is-active')">
                                     <span>
                                         {{ events[0].datetime|format_datetime('full','short',locale=app.request.locale) }}
                                     </span>
