@@ -5,7 +5,7 @@
         </span>
         <span>.ics</span>
     </a>
-    <form action="{{ path('events_add_email_reminder', {'id': event.id}) }}" method="post" class="column px-0 py-0 is-half">
+    <form action="{{ path('events_add_email_reminder', {'id': event.id}) }}" method="post" class="column px-0 py-0">
         <div class="field">
             <input type="email" class="input is-small has-text-centered" placeholder="{% trans %}my@email.com{% endtrans %}" name="email">
         </div>
