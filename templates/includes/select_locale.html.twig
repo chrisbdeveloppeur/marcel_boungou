@@ -1,23 +1,23 @@
 {% set flag_fr %}
-    <img src="{{ asset('build/images/fr.e9608955.svg') }}" style="height: 12px" alt="Drapeau France">
+    <img src="{{ asset('build/images/fr.e9608955.svg') }}" style="height: 15px" alt="Drapeau France">
 {% endset %}
 {% set flag_en %}
-    <img src="{{ asset('build/images/en.1bba84f0.svg') }}" style="height: 12px" alt="Drapeau Royaume Unis">
+    <img src="{{ asset('build/images/en.1bba84f0.svg') }}" style="height: 15px" alt="Drapeau Royaume Unis">
 {% endset %}
 
 <div class="dropdown is-hoverable is-right is-hidden-touch">
     <div class="dropdown-trigger">
-        <div class="is-size-6-touch" aria-haspopup="true" aria-controls="dropdown-menu">
-                <span class="icon">
-                    {{ attribute(_context,'flag_' ~ app.request.locale) }}
-                </span>
+        <div class="button is-small is-success is-light is-size-6-touch" aria-haspopup="true" aria-controls="dropdown-menu">
+            <span class="icon">
+                {{ attribute(_context,'flag_' ~ app.request.locale) }}
+            </span>
         </div>
     </div>
     <div class="dropdown-menu" id="dropdown-menu" role="menu">
         <div class="">
             {% for locale in locales %}
                 {% if app.request.locale != locale %}
-                    <a href="{{ path('change_locale', {'locale': locale }) }}" class="is-size-6-touch">
+                    <a href="{{ path('change_locale', {'locale': locale }) }}" class="button is-small is-outlined is-light is-size-6-touch">
                         <span class="icon">
                             {{ attribute(_context,'flag_' ~ locale) }}
                         </span>
@@ -28,14 +28,18 @@
     </div>
 </div>
 
-<div class="tags is-hidden-desktop">
-    {% for locale in locales %}
-        {% if app.request.locale != locale %}
-            <a href="{{ path('change_locale', {'locale': locale }) }}" class="tag is-primary is-light is-small is-size-6-touch">
-                <span class="icon">
-                    {{ attribute(_context,'flag_' ~ locale) }}
-                </span>
-            </a>
-        {% endif %}
-    {% endfor %}
+<div class="is-hidden-desktop has-text-centered">
+    <span class="help pb-3">{% trans %}Choose your language{% endtrans %}</span>
+    <div class="buttons is-justify-content-center">
+        {% for locale in locales %}
+
+                <a href="{{ path('change_locale', {'locale': locale }) }}" class="button is-light is-small {% if app.request.locale != locale %}is-outlined{% endif %}">
+                    <span class="icon">
+                        {{ attribute(_context,'flag_' ~ locale) }}
+                    </span>
+                </a>
+
+        {% endfor %}
+    </div>
 </div>
+

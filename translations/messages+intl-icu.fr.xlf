@@ -477,6 +477,18 @@
         <source>Paris time</source>
         <target>Heure de Paris</target>
       </trans-unit>
+      <trans-unit id="ztUphKD" resname="See all events">
+        <source>See all events</source>
+        <target>Voir tous les événements</target>
+      </trans-unit>
+      <trans-unit id="jxkPUG." resname="'Today'">
+        <source>'Today'</source>
+        <target>'Aujourd'hui'</target>
+      </trans-unit>
+      <trans-unit id="wKlb0Mr" resname="Choose your language">
+        <source>Choose your language</source>
+        <target>Choisissez votre langue</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

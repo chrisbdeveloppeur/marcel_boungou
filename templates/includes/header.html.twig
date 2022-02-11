@@ -1,14 +1,14 @@
-<nav class="navbar is-primary is-fixed-top box-shadow-bulma" role="navigation" aria-label="main navigation">
+<nav class="navbar is-fixed-top box-shadow-bulma-dark" role="navigation" aria-label="main navigation">
     <div class="nav-background">
         <img src="{{ asset('build/images/snowfall.fb18a3ec.jpg') }}" alt="">
         <div class="nav-background-layer"></div>
     </div>
     <div class="navbar-brand">
-        <a href="{{ path('home_index') }}" class="navbar-item has-text-light is-expanded is-justify-content-center">
+        <a href="{{ path('home_index') }}" class="navbar-item is-expanded is-justify-content-center">
             Logo
         </a>
 
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic" onclick="console.log(this)">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -32,7 +32,7 @@
             <hr class="dropdown-divider">
 
             <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">
+                <a class="navbar-item">
                     {% trans %}Media{% endtrans %}
                 </a>
 
@@ -52,7 +52,7 @@
             <hr class="dropdown-divider">
 
             <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">
+                <a class="navbar-item">
                     {% trans %}MB Ministry{% endtrans %}
                 </a>
                 <div class="navbar-dropdown">

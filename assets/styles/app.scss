@@ -1,9 +1,12 @@
 
 $link: #3488CE;
 $success: #DA4600;
+$success-layer: rgba(218, 70, 0, 0.7);
 $primary: #7C4A8C;
+$primary-layer : rgba(124, 74, 140, 0.7);
 $black: #0a0a0a;
 $dark: #4a4a4a;
+$white-layer: rgba(255, 255, 255, 0.7);
 
 $dropdown-menu-min-width: 0;
 $dropdown-content-padding-top: 0;
@@ -11,12 +14,26 @@ $dropdown-content-padding-bottom: 0;
 $calendar-border-radius: 0;
 $box-radius: 0;
 $navbar-height: 4rem;
-//$navbar-dropdown-background-color: $primary;
+$navbar-item-hover-background-color: $white-layer;
+$navbar-item-color: white;
+
+$navbar-dropdown-background-color: $success-layer;
+$navbar-dropdown-item-hover-background-color: white;
+$navbar-dropdown-item-hover-color: $success;
+$navbar-item-hover-color: $success;
+$dropdown-divider-background-color: $white-layer;
+
 //$navbar-item-active-background-color: #7C4A8C;
 //$navbar-dropdown-item-active-background-color:#7C4A8C;
 $navbar-dropdown-radius: 0;
 $radius : 0;
 $box-shadow-bulma: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0px 0 1px rgb(10 10 10 / 2%) !important;
+$box-shadow-bulma-dark: 0 0.5em 1em -0.125em rgba(10, 10, 10, .5) !important;
+
+
+*{
+  transition: .3s;
+}
 
 body{
   min-height: 100vh;
@@ -69,6 +86,19 @@ section.body{
   width: 100%;
 }
 
+.navbar-item{
+  font-weight: lighter;
+}
+.navbar-item:hover{
+  letter-spacing: 5px !important;
+}
+
+.navbar-menu{
+  background: none !important;
+}
+
+
+
 
 /*
 #header{
@@ -101,6 +131,9 @@ section.body{
 
 .box-shadow-bulma{
   box-shadow: $box-shadow-bulma;
+}
+.box-shadow-bulma-dark{
+  box-shadow: $box-shadow-bulma-dark;
 }
 
 button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.datepicker-nav-previous:active, button.datepicker-nav-previous:focus{
