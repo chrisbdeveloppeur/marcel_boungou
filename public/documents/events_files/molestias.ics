@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6207cd8b448dc
+DTSTAMP;TZID=Europe/Paris:20220212T160859
+SUMMARY:molestias
+DESCRIPTION:Saepe molestiae non quas ea ex numquam. Facilis non placeat sus
+ cipit pariatur reprehenderit iste. Deserunt quasi sit laudantium velit. Si
+ milique porro aspernatur rerum iure nobis magni velit.
+LOCATION:72\, place Valentine Guyot\, 79 094 Mallet-sur-Mer\, Mallet-sur-Me
+ r
+DTSTART;TZID=Europe/Paris:20220220T130722
+DTEND;TZID=Europe/Paris:20220220T130722
+END:VEVENT
+END:VCALENDAR

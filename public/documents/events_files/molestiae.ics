@@ -17,14 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6207a54191d25
-DTSTAMP;TZID=Europe/Paris:20220212T131705
+UID:6207cd8b236ec
+DTSTAMP;TZID=Europe/Paris:20220212T160859
 SUMMARY:molestiae
-DESCRIPTION:Odio corrupti ab error velit voluptatem. Officiis officiis ab q
- ui impedit qui porro. Modi nisi explicabo iste non accusamus. In corrupti 
- dolorem voluptas voluptas et iure.
-LOCATION:92\, place Susan Dupont\, 29768 Cordier\, Cordier
-DTSTART;TZID=Europe/Paris:20220215T062024
-DTEND;TZID=Europe/Paris:20220215T062024
+DESCRIPTION:Reprehenderit tempore veritatis mollitia est perferendis commod
+ i et. Facere vel quibusdam pariatur laboriosam et alias. Praesentium at el
+ igendi et aut. Libero mollitia quis perspiciatis omnis maiores labore veli
+ t. Voluptatem ex totam hic veniam est. Sint consequuntur sed quo quia atqu
+ e fugit excepturi.
+LOCATION:48\, impasse de Petitjean\, 91026 Boyernec\, Boyernec
+DTSTART;TZID=Europe/Paris:20220218T100258
+DTEND;TZID=Europe/Paris:20220218T100258
 END:VEVENT
 END:VCALENDAR

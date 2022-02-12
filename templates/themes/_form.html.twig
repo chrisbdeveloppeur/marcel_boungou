@@ -46,10 +46,19 @@
         {% endif %}
 
     {% elseif child.vars.block_prefixes[1] == 'file' or child.vars.block_prefixes[1] == 'vich_file' %}
+{#        {{ form_widget(child) }}#}
+        {% if event is defined and event.image %}
+            <figure>
+                <img src="{{ asset('images/event_img/'~event.image) }}" alt="" class="image">
+            </figure>
+        {% else %}
+            {% trans %}Empty{% endtrans %}
+        {% endif %}
+
     <div class="file has-name is-fullwidth">
         <label class="file-label">
             {{ form_widget(child) }}
-{#            <input class="file-input" type="file" name="resume">#}
+            <input class="file-input" type="file" name="resume">
             <span class="file-cta has-background-white">
                 <span class="file-icon">
                     <i class="fas fa-upload"></i>

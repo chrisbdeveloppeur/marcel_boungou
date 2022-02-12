@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6207cd8b247ae
+DTSTAMP;TZID=Europe/Paris:20220212T160859
+SUMMARY:dolorem
+DESCRIPTION:Id unde at quae sit aut eos explicabo quaerat. Adipisci et dese
+ runt odit quo. Fugit dolores minima at doloribus et harum enim.
+LOCATION:545\, avenue Moreno\, 43 043 Samson-sur-Diaz\, Samson-sur-Diaz
+DTSTART;TZID=Europe/Paris:20220219T184055
+DTEND;TZID=Europe/Paris:20220219T184055
+END:VEVENT
+END:VCALENDAR

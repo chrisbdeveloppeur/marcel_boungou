@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6207cd8b214ab
+DTSTAMP;TZID=Europe/Paris:20220212T160859
+SUMMARY:non
+DESCRIPTION:Rerum consequatur quia corporis ut est velit ut. Iusto est est 
+ vel aut excepturi temporibus. Reprehenderit iure aspernatur nobis sequi qu
+ ae quo repudiandae. Exercitationem velit aliquam cum et cumque asperiores.
+  Et odio vitae qui quae quaerat reprehenderit iusto. Consectetur rerum aut
+  sed saepe ea voluptas.
+LOCATION:10\, place Susan Delattre\, 74 382 DavidVille\, DavidVille
+DTSTART;TZID=Europe/Paris:20220216T040953
+DTEND;TZID=Europe/Paris:20220216T040953
+END:VEVENT
+END:VCALENDAR

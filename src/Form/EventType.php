@@ -44,7 +44,8 @@ class EventType extends AbstractType
             ->add('imageFile', VichFileType::class,[
                 'attr' => [
                     'class' => 'file-input'
-                ]
+                ],
+                'required' => false,
             ])
             ->add('country', TextType::class,[
                 'required' => true,

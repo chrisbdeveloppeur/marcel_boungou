@@ -29,7 +29,7 @@ $navbar-dropdown-item-hover-color: $success;
 $navbar-item-hover-color: $success;
 $dropdown-divider-background-color: $white-layer;
 
-$font-great-vibes : 'Great Vibes', cursive;
+$font-quintessential : 'Quintessential', cursive;
 $font-nothing-you-could-do: 'Nothing You Could Do', cursive;
 $font-kavivanar: 'Kavivanar', cursive;
 $font-eagle-lake: 'Eagle Lake', cursive;
@@ -47,12 +47,14 @@ $box-shadow-bulma-dark: 0 0.5em 1em -0.125em rgba(10, 10, 10, .5) !important;
   box-shadow: 0 0.5em 1em 0.3em rgba(10, 10, 10, 0.2) !important;
 }
 
+$title-font: $font-quintessential;
+
 *{
   transition: .3s;
   font-family: $font-marcellus;
 }
 h1, h2, h3{
-  font-family: $font-nothing-you-could-do;
+  font-family: $title-font;
 }
 
 body{
@@ -133,7 +135,7 @@ section.body{
   display: inline-block;
   animation: waviy 1s infinite;
   animation-delay: calc(.1s * var(--i));
-  font-family: $font-nothing-you-could-do;
+  font-family: $title-font;
 }
 
 .flash-msg
