@@ -6,7 +6,11 @@
             <div class="" style="height: 100%;">
                 <div class="has-background-primary-light item-{{ count_2 }}" style="height: 100%;">
                     <div class="is-flex is-flex-direction-row has-background-success-light"  style="height: 100%;">
-                        <img src="{{ asset('build/images/palatasingers1.4e6d4fc8.jpg') }}" alt="" style="height: 100%;max-height: 100%">
+                        {% if event.imagefile %}
+                            <img src="{{ asset('images/event_img/' ~ event.imagefile) }}" alt="" style="height: 100%;max-height: 100%;object-fit: contain">
+                        {% else %}
+                            <img src="{{ asset('build/images/default_event_affiche.6019243e.png') }}" alt="" style="height: 100%;max-height: 100%;object-fit: contain">
+                        {% endif %}
                         <div class="column has-background-success-light slider-container-child is-flex is-flex-direction-column">
                             <h3 class="has-text-dark title has-text-weight-bold">
                                 {{ event.title }}

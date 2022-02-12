@@ -19,6 +19,8 @@ const sunset_pecheur = require('./images/jpg/sunset_pecheur.jpg');
 const clouds = require('./images/jpg/clouds.jpg');
 const snowfall = require('./images/jpg/snowfall.jpg');
 const scene = require('./images/jpg/scene.jpg');
+const tickets = require('./images/jpg/tickets.jpg');
+const default_event_affiche = require('./images/png/default_event_affiche.png');
 
 // start the Stimulus application
 import './bootstrap';

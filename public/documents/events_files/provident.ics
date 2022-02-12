@@ -17,16 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6207aac183e91
-DTSTAMP;TZID=Europe/Paris:20220212T134033
+UID:6207bab37f07e
+DTSTAMP;TZID=Europe/Paris:20220212T144835
 SUMMARY:provident
-DESCRIPTION:Sit dolor est adipisci iusto a. Ut nemo autem quos reiciendis a
- tque consequuntur dolorem. Repellendus qui voluptatem accusantium et. Volu
- ptatem culpa quidem corporis dicta rem sapiente. Autem nam temporibus sint
-  nostrum. Dolores laudantium perspiciatis tempora quis. Ut est dolores qui
-  hic nostrum tempore qui. Repellat vel harum quasi est.
-LOCATION:11\, boulevard de Masson\, 67712 Garcia\, Garcia
-DTSTART;TZID=Europe/Paris:20220214T073320
-DTEND;TZID=Europe/Paris:20220214T073320
+DESCRIPTION:Qui natus distinctio qui vel velit libero. Quaerat facere eum e
+ st et explicabo et esse rerum. Dignissimos ratione ullam eligendi nisi est
+  quo qui. Voluptas sed natus veniam minus possimus vitae quidem quis. Aute
+ m iure amet atque sunt voluptatibus. Nam nihil reiciendis assumenda hic an
+ imi qui. Dolore voluptates aliquam dicta quod quas.
+LOCATION:99\, place Luc Morvan\, 50739 Ribeiro-sur-Mer\, Ribeiro-sur-Mer
+DTSTART;TZID=Europe/Paris:20220212T075217
+DTEND;TZID=Europe/Paris:20220212T075217
 END:VEVENT
 END:VCALENDAR

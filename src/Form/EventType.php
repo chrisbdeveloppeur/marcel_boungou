@@ -11,6 +11,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Contracts\Translation\TranslatorInterface;
+use Vich\UploaderBundle\Form\Type\VichFileType;
 
 class EventType extends AbstractType
 {
@@ -39,6 +40,11 @@ class EventType extends AbstractType
                 ],
                 'widget' => 'single_text',
 //                'format' => 'dd/MM/yyyy  HH:mm',
+            ])
+            ->add('imageFile', VichFileType::class,[
+                'attr' => [
+                    'class' => 'file-input'
+                ]
             ])
             ->add('country', TextType::class,[
                 'required' => true,
