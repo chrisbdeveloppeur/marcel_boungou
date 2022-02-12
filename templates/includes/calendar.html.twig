@@ -5,10 +5,10 @@
                 <div class="highlight-info is-hidden has-text-light px-3 py-3 highlight-{{ event.id }} box-shadow-bulma" id="{{ event.datetime|date('d/m/Y') }}">
                     <button class="delete" style="position: absolute;top: .5rem;right: .5rem" onclick="this.parentElement.classList.add('is-hidden')"></button>
                     <a href="#" class="has-text-light">
-                        <h3>
-                            {% trans %} HIGHLIGHT {% endtrans %} : {{ event.title }}
+                        <h3 class="has-text-weight-bold">
+                            {{ event.title }}
                         </h3>
-                        <p>
+                        <p class="help">
                             {% if app.request.locale == 'fr' %}
                                 {{ event.datetime|date('d/m/Y - H:i') }}
                             {% elseif app.request.locale == 'en' %}

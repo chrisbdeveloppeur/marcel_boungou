@@ -19,8 +19,8 @@
                 {{ include('includes/calendar.html.twig') }}
             </div>
 
-            <div class="column">
-                <h2 class="has-text-centered is-size-3 is-size-6-touch has-text-weight-bold next-event-logo is-uppercase">
+            <div class="column is-relative">
+                <h2 class="has-text-centered is-size-3 is-size-6-touch has-text-weight-bold next-event-logo is-uppercase has-background-success-light">
                     {% if app.request.locale == 'fr' %}
                         <span style="--i:1">P</span>
                         <span style="--i:2">r</span>
