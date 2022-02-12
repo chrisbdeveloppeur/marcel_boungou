@@ -4,21 +4,29 @@ PRODID:spatie/icalendar-generator
 NAME:www.marcel-boungou.com
 X-WR-CALNAME:www.marcel-boungou.com
 BEGIN:VTIMEZONE
-TZID:UTC
+TZID:Europe/Paris
 BEGIN:STANDARD
-DTSTART:20210507T135813Z
-TZOFFSETFROM:+0000
-TZOFFSETTO:+0000
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
 END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:61f93c75e13b9
-DTSTAMP:20220201T135813Z
+UID:6207aac183e91
+DTSTAMP;TZID=Europe/Paris:20220212T134033
 SUMMARY:provident
-DESCRIPTION:Laboriosam id cupiditate quisquam ipsam. Aut corrupti sed simil
- ique soluta natus.
-LOCATION:rue Joseph Toussaint\, 40507 Pineauboeuf\, Pineauboeuf
-DTSTART:20220309T135813Z
-DTEND:20220309T135813Z
+DESCRIPTION:Sit dolor est adipisci iusto a. Ut nemo autem quos reiciendis a
+ tque consequuntur dolorem. Repellendus qui voluptatem accusantium et. Volu
+ ptatem culpa quidem corporis dicta rem sapiente. Autem nam temporibus sint
+  nostrum. Dolores laudantium perspiciatis tempora quis. Ut est dolores qui
+  hic nostrum tempore qui. Repellat vel harum quasi est.
+LOCATION:11\, boulevard de Masson\, 67712 Garcia\, Garcia
+DTSTART;TZID=Europe/Paris:20220214T073320
+DTEND;TZID=Europe/Paris:20220214T073320
 END:VEVENT
 END:VCALENDAR

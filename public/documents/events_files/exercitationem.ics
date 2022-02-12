@@ -4,14 +4,6 @@ PRODID:spatie/icalendar-generator
 NAME:www.marcel-boungou.com
 X-WR-CALNAME:www.marcel-boungou.com
 BEGIN:VTIMEZONE
-TZID:UTC
-BEGIN:STANDARD
-DTSTART:20210511T000000
-TZOFFSETFROM:+0000
-TZOFFSETTO:+0000
-END:STANDARD
-END:VTIMEZONE
-BEGIN:VTIMEZONE
 TZID:Europe/Paris
 BEGIN:STANDARD
 DTSTART:20211031T030000
@@ -25,13 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:61f97c6d748ff
-DTSTAMP;TZID=Europe/Paris:20220201T193109
+UID:6207a5419571c
+DTSTAMP;TZID=Europe/Paris:20220212T131705
 SUMMARY:exercitationem
-DESCRIPTION:Enim repellat consectetur veniam. Ut ipsum laborum libero corpo
- ris eius.
-LOCATION:3\, place de Hubert\, 32083 Joly\, Joly
-DTSTART:20220205T000000Z
-DTEND:20220205T000000Z
+DESCRIPTION:Distinctio beatae et architecto rerum. Consequatur iste fugiat 
+ repudiandae dolorem repellendus earum. Voluptatem veritatis rerum est. In 
+ velit qui harum dolores. Excepturi at laborum voluptate sed impedit. A sed
+  omnis magni voluptas eum et dolor nemo. Tempora amet fugit et nisi soluta
+  natus neque. Repudiandae excepturi aut molestias.
+LOCATION:20\, chemin de Maillot\, 51824 Roux-sur-Thierry\, Roux-sur-Thierry
+DTSTART;TZID=Europe/Paris:20220219T191921
+DTEND;TZID=Europe/Paris:20220219T191921
 END:VEVENT
 END:VCALENDAR

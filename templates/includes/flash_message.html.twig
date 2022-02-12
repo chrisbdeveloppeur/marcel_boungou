@@ -1,8 +1,8 @@
 {# Affichage des messages flash #}
 {% for type, message_list in app.flashes %}
-    <div class="" style="position: fixed;top: 3.25rem;z-index: 5;width: 100%;opacity: 90%">
+    <div class="flash-msg">
         {% for message in message_list %}
-            <div class="notification is-{{ type }} column is-full is-full-touch has-text-weight-bold borderless has-text-centered">
+            <div class="notification is-{{ type }} column is-full is-full-touch borderless has-text-centered">
                 <button class="delete" onclick="this.parentElement.parentElement.removeChild(this.parentElement);"></button>
                 {{ message|raw }}
             </div>

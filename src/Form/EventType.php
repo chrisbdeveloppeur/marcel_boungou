@@ -24,43 +24,56 @@ class EventType extends AbstractType
     {
         $builder
             ->add('title', TextType::class,[
+                'required' => true,
                 'attr' => [
                     'class' => 'input'
                 ],
                 'label' => $this->translator->trans('Name of the event'),
             ])
             ->add('datetime', DateTimeType::class,[
+//                'required' => true,
                 'label' => $this->translator->trans('Select the date'),
                 'attr' => [
                     'class' => 'input has-text-centered',
-                    'type' => 'date',
+                    'type' => 'datetime',
                 ],
                 'widget' => 'single_text',
-                'with_seconds' => false,
+//                'format' => 'dd/MM/yyyy  HH:mm',
             ])
             ->add('country', TextType::class,[
+                'required' => true,
                 'attr' => [
                     'class' => 'input'
                 ],
                 'label' => $this->translator->trans('Country'),
             ])
             ->add('city', TextType::class,[
+                'required' => true,
                 'attr' => [
                     'class' => 'input'
                 ],
                 'label' => $this->translator->trans('City'),
             ])
             ->add('cp', TextType::class,[
+                'required' => true,
                 'attr' => [
                     'class' => 'input'
                 ],
                 'label' => $this->translator->trans('ZIP code'),
             ])
             ->add('street', TextType::class,[
+                'required' => true,
                 'attr' => [
                     'class' => 'input'
                 ],
                 'label' => $this->translator->trans('Name of the street'),
+            ])
+            ->add('ticketingLink', TextType::class,[
+                'required' => false,
+                'attr' => [
+                    'class' => 'input'
+                ],
+                'label' => $this->translator->trans('Redirect link for tickets'),
             ])
             ->add('description', TextareaType::class,[
                 'required' => false,

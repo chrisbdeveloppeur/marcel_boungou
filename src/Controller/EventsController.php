@@ -22,20 +22,20 @@ class EventsController extends AbstractController
 {
 
     private $calendarController;
+    private $translator;
 
-    public function __construct(CalendarController $calendarController)
+    public function __construct(CalendarController $calendarController, TranslatorInterface $translator)
     {
         $this->calendarController = $calendarController;
+        $this->translator = $translator;
     }
 
     /**
      * @Route("/", name="index", methods={"GET"})
      */
-    public function index(EventRepository $eventRepository): Response
+    public function index(): Response
     {
-        //$events = $eventRepository->findAll();
         return $this->render('events/home.html.twig', [
-            //'events' => $events,
         ]);
     }
 
@@ -64,7 +64,8 @@ class EventsController extends AbstractController
             $entityManager->persist($event);
             $entityManager->flush();
             $this->calendarController->createIcsFile($event->getId());
-
+            $msg = $this->translator->trans('Event <b>'.$event->getTitle().'</b> created with success');
+            $this->addFlash('success',$msg);
             return $this->redirectToRoute('events_index', [], Response::HTTP_SEE_OTHER);
         }
 

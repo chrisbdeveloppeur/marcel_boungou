@@ -17,14 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6207a54191068
+UID:6207a54194555
 DTSTAMP;TZID=Europe/Paris:20220212T131705
-SUMMARY:rerum
-DESCRIPTION:Sit veritatis ipsam et aut. Voluptate excepturi adipisci corpor
- is corrupti molestiae omnis aut. Alias repellendus omnis tempora aliquam q
- uasi laudantium.
-LOCATION:rue de Berger\, 92574 Cordier-la-Forêt\, Cordier-la-Forêt
-DTSTART;TZID=Europe/Paris:20220214T174918
-DTEND;TZID=Europe/Paris:20220214T174918
+SUMMARY:tempore
+DESCRIPTION:Maiores voluptatum nam nihil. Eveniet facilis voluptatum reicie
+ ndis commodi.
+LOCATION:53\, boulevard Ollivier\, 31952 Ferrand\, Ferrand
+DTSTART;TZID=Europe/Paris:20220218T050706
+DTEND;TZID=Europe/Paris:20220218T050706
 END:VEVENT
 END:VCALENDAR

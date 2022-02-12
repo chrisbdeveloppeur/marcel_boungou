@@ -4,14 +4,6 @@ PRODID:spatie/icalendar-generator
 NAME:www.marcel-boungou.com
 X-WR-CALNAME:www.marcel-boungou.com
 BEGIN:VTIMEZONE
-TZID:UTC
-BEGIN:STANDARD
-DTSTART:20210514T000000
-TZOFFSETFROM:+0000
-TZOFFSETTO:+0000
-END:STANDARD
-END:VTIMEZONE
-BEGIN:VTIMEZONE
 TZID:Europe/Paris
 BEGIN:STANDARD
 DTSTART:20211031T030000
@@ -25,13 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:61f97c6d7f684
-DTSTAMP;TZID=Europe/Paris:20220201T193109
+UID:6207aac1889c8
+DTSTAMP;TZID=Europe/Paris:20220212T134033
 SUMMARY:veniam
-DESCRIPTION:Soluta quasi vel aut. Molestias corrupti adipisci similique lab
- oriosam et ullam.
-LOCATION:28\, avenue Paris\, 24079 Laroche\, Laroche
-DTSTART:20220208T000000Z
-DTEND:20220208T000000Z
+DESCRIPTION:Et suscipit voluptate doloremque qui vitae nobis et. Est conseq
+ uatur velit quo voluptatem rem repudiandae.
+LOCATION:rue Édith Chauvet\, 48 828 Berthelot\, Berthelot
+DTSTART;TZID=Europe/Paris:20220220T112311
+DTEND;TZID=Europe/Paris:20220220T112311
 END:VEVENT
 END:VCALENDAR

@@ -17,16 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:61fa6eb379184
-DTSTAMP;TZID=Europe/Paris:20220202T124451
+UID:6207a54192a89
+DTSTAMP;TZID=Europe/Paris:20220212T131705
 SUMMARY:ut
-DESCRIPTION:Qui natus officia assumenda consequatur dolorem rerum. Voluptat
- em harum et voluptate sunt sed. Sequi magni perferendis est ut suscipit co
- mmodi culpa deleniti. Et inventore ipsam explicabo earum repellat quae id.
-  Mollitia non explicabo repellendus aperiam. Id accusantium id ut perferen
- dis libero iste.
-LOCATION:998\, rue Mercier\, 80104 Bretonboeuf\, Bretonboeuf
-DTSTART;TZID=Europe/Paris:20220202T133149
-DTEND;TZID=Europe/Paris:20220202T133149
+DESCRIPTION:Minus totam voluptatum voluptatem dicta tenetur aspernatur. Nul
+ la optio inventore eligendi. Soluta nulla doloremque deserunt sunt.
+LOCATION:41\, chemin Lemaitre\, 79 959 Leblanc-la-Forêt\, Leblanc-la-Forê
+ t
+DTSTART;TZID=Europe/Paris:20220216T053532
+DTEND;TZID=Europe/Paris:20220216T053532
 END:VEVENT
 END:VCALENDAR

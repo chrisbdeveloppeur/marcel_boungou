@@ -19,6 +19,9 @@
     {% if 'token' not in form_label(child) %}
     <div class="label is-size-7">
         {{ form_label(child) }}
+        {% if child.vars.required %}
+            *
+        {% endif %}
     </div>
     {% endif %}
 

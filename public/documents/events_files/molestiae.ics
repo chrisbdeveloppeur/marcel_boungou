@@ -4,14 +4,6 @@ PRODID:spatie/icalendar-generator
 NAME:www.marcel-boungou.com
 X-WR-CALNAME:www.marcel-boungou.com
 BEGIN:VTIMEZONE
-TZID:UTC
-BEGIN:STANDARD
-DTSTART:20210507T000000
-TZOFFSETFROM:+0000
-TZOFFSETTO:+0000
-END:STANDARD
-END:VTIMEZONE
-BEGIN:VTIMEZONE
 TZID:Europe/Paris
 BEGIN:STANDARD
 DTSTART:20211031T030000
@@ -25,12 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:61f9420a192bb
-DTSTAMP;TZID=Europe/Paris:20220201T152202
+UID:6207a54191d25
+DTSTAMP;TZID=Europe/Paris:20220212T131705
 SUMMARY:molestiae
-DESCRIPTION:Ab illum voluptates cum occaecati modi dolores nihil.
-LOCATION:35\, rue Philippe\, 50222 Merleboeuf\, Merleboeuf
-DTSTART:20220201T000000Z
-DTEND:20220201T000000Z
+DESCRIPTION:Odio corrupti ab error velit voluptatem. Officiis officiis ab q
+ ui impedit qui porro. Modi nisi explicabo iste non accusamus. In corrupti 
+ dolorem voluptas voluptas et iure.
+LOCATION:92\, place Susan Dupont\, 29768 Cordier\, Cordier
+DTSTART;TZID=Europe/Paris:20220215T062024
+DTEND;TZID=Europe/Paris:20220215T062024
 END:VEVENT
 END:VCALENDAR

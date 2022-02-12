@@ -129,6 +129,13 @@ section.body{
   font-family: $font-nothing-you-could-do;
 }
 
+.flash-msg
+{
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  opacity: 90%;
+}
 
 /*
 #header{

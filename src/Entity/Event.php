@@ -102,7 +102,7 @@ class Event
 
     public function setDatetime(\DateTime $datetime): self
     {
-        date_default_timezone_set("Europe/Paris");
+//        date_default_timezone_set("Europe/Paris");
         $this->datetime = $datetime;
 
         return $this;

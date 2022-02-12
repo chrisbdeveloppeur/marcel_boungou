@@ -4,20 +4,30 @@ PRODID:spatie/icalendar-generator
 NAME:www.marcel-boungou.com
 X-WR-CALNAME:www.marcel-boungou.com
 BEGIN:VTIMEZONE
-TZID:UTC
+TZID:Europe/Paris
 BEGIN:STANDARD
-DTSTART:20210507T135931Z
-TZOFFSETFROM:+0000
-TZOFFSETTO:+0000
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
 END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:61f93cc32b390
-DTSTAMP:20220201T135931Z
+UID:6207a541877a7
+DTSTAMP;TZID=Europe/Paris:20220212T131705
 SUMMARY:quos
-DESCRIPTION:Consequatur possimus adipisci fuga sed.
-LOCATION:76\, place Emmanuel Joubert\, 65 608 Carre-sur-Mer\, Carre-sur-Mer
-DTSTART:20220206T000000Z
-DTEND:20220206T000000Z
+DESCRIPTION:Ducimus labore ut eveniet id. Modi numquam eaque praesentium si
+ nt enim. Iure cumque accusamus et iure at odit laboriosam. Libero commodi 
+ laborum hic dicta ex. Iure ratione et quam molestiae nulla placeat. Volupt
+ atem aspernatur laudantium accusantium beatae. Quis et blanditiis cupidita
+ te est. Possimus consequatur dolore esse ipsa. Pariatur debitis est ab del
+ ectus nesciunt.
+LOCATION:71\, rue de Roussel\, 30 255 ColasBourg\, ColasBourg
+DTSTART;TZID=Europe/Paris:20220212T140618
+DTEND;TZID=Europe/Paris:20220212T140618
 END:VEVENT
 END:VCALENDAR

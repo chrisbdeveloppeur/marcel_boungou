@@ -18,12 +18,14 @@ class EventReminderCommand extends Command
     private $eventRepository;
     protected static $defaultName = 'event:reminder';
     protected static $defaultDescription = 'Add a short description for your command';
+    private $projectRoot;
 
-    public function __construct(string $name = null, MailerInterface $mailer, EventRepository $eventRepository)
+    public function __construct(string $name = null, MailerInterface $mailer, EventRepository $eventRepository, string $projectRoot)
     {
         parent::__construct($name);
         $this->mailer = $mailer;
         $this->eventRepository = $eventRepository;
+        $this->projectRoot = $projectRoot;
     }
 
     protected function configure(): void
@@ -58,22 +60,42 @@ class EventReminderCommand extends Command
             $adresse = $event->getStreet(). ', ' .$event->getCp(). ' ' .$event->getCity(). ', ' .$event->getCountry();
             $dateEvent = $event->getDatetime()->format('d/m/Y');
 
-            $dateEventMonth = new \DateTime($event->getDatetime()->format('d/m/Y'));
+            $dateEventMonth = $event->getDatetime()->format('d-m-Y');
+            $dateEventMonth = new \DateTime($dateEventMonth);
             $dateEventMonth = $dateEventMonth->modify('-1 month')->format('d/m/Y');
 
-            $dateEventWeek = new \DateTime($event->getDatetime()->format('d/m/Y'));
+            $dateEventWeek = $event->getDatetime()->format('d-m-Y');
+            $dateEventWeek = new \DateTime($dateEventWeek);
             $dateEventWeek = $dateEventWeek->modify('-1 week')->format('d/m/Y');
 
-            $dateEventDay = new \DateTime($event->getDatetime()->format('d/m/Y'));
+            $dateEventDay = $event->getDatetime()->format('d-m-Y');
+            $dateEventDay = new \DateTime($dateEventDay);
             $dateEventDay = $dateEventDay->modify('-1 day')->format('d/m/Y');
 
             $mails = $event->getMailsToRemind();
 
-            if ($date == $dateEventMonth){
+            if ($event->getTicketingLink()){
+                $link = '<span>Vous n\'avez pas encore pris vos entrées ?  
+                            <a href="'.$event->getTicketingLink().'">
+                                <span style="font-size: large;font-weight: bold">
+                                    Cliquez ici !
+                                </span>
+                            </a>
+                         </span><br>';
+            }else{
+                $link ='';
+            }
+            if ($date == $dateEventMonth || $date == $dateEventWeek || $date == $dateEventDay){
                 $email = (new Email())
                     ->from('admin@marcelboungou.com')
-                    ->subject('Prepare the date !')
-                    ->html('<h1>'.$event->getTitle().'</h1>' . $date . '<br>Event date is : ' . $dateEvent
+                    ->subject($event->getTitle())
+                    ->html('<h1>'.$event->getTitle().'</h1>'
+                        .$link
+                        .'<br>Date de l\'événement : le <span style="font-size: large;font-weight: bold">' . $event->getDatetime()->format('d/m/Y') .'</span><br>'
+                        .'Heure : <span style="font-size: large;font-weight: bold">'.$event->getDatetime()->format('H:i').'</span>'
+//                        .'<a target="_blank" download="'.$event->getIcsFile().'" type=".ics"  href="'.$dir.$event->getIcsFile().'">
+//                            Ajouter au calendier
+//                        </a>'
                         . '<br><br><b>Adresse</b> : <a href="https://www.google.com/maps/search/'.$adresse.'">'.$adresse.'</a>'
                     )
                 ;
@@ -83,47 +105,47 @@ class EventReminderCommand extends Command
                 $this->mailer->send($email);
             }
 
-            if ($date == $dateEventWeek){
-                $email = (new Email())
-                    ->from('admin@mercalboungou.com')
-                    ->subject('Get ready for next week\'s event!')
-                                        ->html('<h1>'.$event->getTitle().'</h1>' . $date . '<br>Event date is : ' . $dateEvent
-                        . '<br><br><b>Adresse</b> : <a href="https://www.google.com/maps/search/'.$adresse.'">'.$adresse.'</a>'
-                    )
-                ;
-                foreach ($mails as $mail){
-                    $email->addTo($mail);
-                }
-                $this->mailer->send($email);
-            }
+//            if ($date == $dateEventWeek){
+//                $email = (new Email())
+//                    ->from('admin@mercalboungou.com')
+//                    ->subject($event->getTitle())
+//                    ->html('<h1>'.$event->getTitle().'</h1>' . $date . '<br>Date de l\'événement : ' . $event->getDatetime()->format('d/m/Y H:i')
+//                        . '<br><br><b>Adresse</b> : <a href="https://www.google.com/maps/search/'.$adresse.'">'.$adresse.'</a>'
+//                    )
+//                ;
+//                foreach ($mails as $mail){
+//                    $email->addTo($mail);
+//                }
+//                $this->mailer->send($email);
+//            }
+//
+//            if ($date == $dateEventDay){
+//                $email = (new Email())
+//                    ->from('admin@mercalboungou.com')
+//                    ->subject($event->getTitle())
+//                                        ->html('<h1 class="is-uppercase">'.$event->getTitle().'</h1>' . $date . '<br>Event date is : ' . $event->getDatetime()->format('d/m/Y H:i')
+//                        . '<br><br><b>Adresse</b> : <a href="https://www.google.com/maps/search/'.$adresse.'">'.$adresse.'</a>'
+//                    )
+//                ;
+//                foreach ($mails as $mail){
+//                    $email->addTo($mail);
+//                }
+//                $this->mailer->send($email);
+//            }
 
-            if ($date == $dateEventDay){
-                $email = (new Email())
-                    ->from('admin@mercalboungou.com')
-                    ->subject('Tommorrow is the great day !')
-                                        ->html('<h1>'.$event->getTitle().'</h1>' . $date . '<br>Event date is : ' . $dateEvent
-                        . '<br><br><b>Adresse</b> : <a href="https://www.google.com/maps/search/'.$adresse.'">'.$adresse.'</a>'
-                    )
-                ;
-                foreach ($mails as $mail){
-                    $email->addTo($mail);
-                }
-                $this->mailer->send($email);
-            }
-
-            if ($date == $dateEvent){
-                $email = (new Email())
-                    ->from('admin@mercalboungou.com')
-                    ->subject('Here is the day !')
-                                        ->html('<h1>'.$event->getTitle().'</h1>' . $date . '<br>Event date is : ' . $dateEvent
-                        . '<br><br><b>Adresse</b> : <a href="https://www.google.com/maps/search/'.$adresse.'">'.$adresse.'</a>'
-                    )
-                ;
-                foreach ($mails as $mail){
-                    $email->addTo($mail);
-                }
-                $this->mailer->send($email);
-            }
+//            if ($date == $dateEvent){
+//                $email = (new Email())
+//                    ->from('admin@mercalboungou.com')
+//                    ->subject($event->getTitle() . ' Jour J')
+//                                        ->html('<h1>'.$event->getTitle().'</h1>' . $date . '<br>Event date is : ' . $dateEvent
+//                        . '<br><br><b>Adresse</b> : <a href="https://www.google.com/maps/search/'.$adresse.'">'.$adresse.'</a>'
+//                    )
+//                ;
+//                foreach ($mails as $mail){
+//                    $email->addTo($mail);
+//                }
+//                $this->mailer->send($email);
+//            }
 
         }
 
