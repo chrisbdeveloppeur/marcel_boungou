@@ -75,9 +75,9 @@
         <div class="navbar-end">
             {% if app.user %}
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <span class="navbar-item">
+                    <a class="navbar-item">
                         {{ app.user.username }}
-                    </span>
+                    </a>
                     <div class="navbar-dropdown">
                         <a class="navbar-item" href="{{ path('user_edit', {'id': app.user.id}) }}">
                             {% trans %}Edit my profile{% endtrans %}

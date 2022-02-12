@@ -1,12 +1,17 @@
 
 $link: #3488CE;
-$success: #DA4600;
-$success-layer: rgba(218, 70, 0, 0.7);
+$success: #da6d00;
+$success-layer: rgba(218, 112, 0, 0.7);
 $primary: #7C4A8C;
 $primary-layer : rgba(124, 74, 140, 0.7);
 $black: #0a0a0a;
 $dark: #4a4a4a;
 $white-layer: rgba(255, 255, 255, 0.7);
+$black-layer: rgba(0, 0, 0, 0.7);
+
+$footer-background-color: $black;
+$footer-color: $success;
+$footer-padding: 3rem 1.5rem 6rem;
 
 $dropdown-menu-min-width: 0;
 $dropdown-content-padding-top: 0;
@@ -83,7 +88,7 @@ section.body{
   background: $success;
 }
 .main-background-layer{
-  background: white;
+  background: black;
 }
 .nav-background{
   position: absolute;
