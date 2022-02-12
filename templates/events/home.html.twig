@@ -6,7 +6,7 @@
     {% for event in events %}
         <div class="modal" id="modalEvent{{ event.id }}">
             <div class="modal-background" onclick="this.parentElement.classList.remove('is-active')"></div>
-            <div class="modal-content">
+            <div class="modal-content box has-background-success-light">
                 {{ include('includes/modal_event.html.twig') }}
             </div>
             <button class="modal-close is-large" aria-label="close" onclick="this.parentElement.classList.remove('is-active')"></button>
@@ -20,7 +20,7 @@
             </div>
 
             <div class="column is-relative">
-                <h2 class="has-text-centered is-size-3 is-size-6-touch has-text-weight-bold next-event-logo is-uppercase has-background-success-light">
+                <h2 class="has-text-centered is-size-3 is-size-4-touch has-text-weight-bold next-event-logo is-uppercase has-background-success-light box-shadow-bulma-dark is-relative">
                     {% if app.request.locale == 'fr' %}
                         <span style="--i:1">P</span>
                         <span style="--i:2">r</span>
@@ -59,11 +59,9 @@
                         </figure>
 
                         <div class="box-shadow-bulma-event-card is-relative">
-                            <a href="{{ path('events_edit', {'id': events[0].id}) }}" class="button borderless is-warning is-small" style="position:absolute;right: 0;z-index: 2;">
-                                <span class="icon">
-                                    <i class="fas fa-lg fa-edit"></i>
-                                </span>
-                            </a>
+                            {% if is_granted('ROLE_ADMIN') %}
+                                {{ include('event/edit_event_button.html.twig') }}
+                            {% endif %}
                             <div class="column has-background-success-light is-flex is-align-items-center is-justify-content-center" style="z-index: 1;">
                                 <h3 class="has-text-dark title has-text-weight-bold">
                                     {{ events[0].title }}
@@ -72,22 +70,22 @@
                             <div class="column has-background-success-light slider-container-child is-flex-desktop is-justify-content-space-between has-text-centered">
                                 <div class="column is-flex is-align-items-center is-justify-content-center px-0 py-0">
                                     <a href="https://www.google.fr/maps/search/{{ events[0].adresse }}" class="has-text-success" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
-                                    <span>
-                                        {{ events[0].adresse }}
-                                    </span>
-                                        <span  class="icon">
-                                        <i class="fas fa-lg fa-map-marker-alt"></i>
-                                    </span>
+                                        <span>
+                                            {{ events[0].adresse }}
+                                        </span>
+                                        <span  class="icon has-text-primary">
+                                            <i class="fas fa-lg fa-map-marker-alt"></i>
+                                        </span>
                                     </a>
                                 </div>
                                 <div class="column is-flex is-align-items-center is-justify-content-center px-0 py-0">
                                     <a class="has-text-success" onclick="document.querySelector('#modalEvent'+{{ events[0].id }}).classList.add('is-active')">
-                                    <span>
-                                        {{ events[0].datetime|format_datetime('full','short',locale=app.request.locale) }}
-                                    </span>
-                                        <span  class="icon">
-                                        <i class="fas fa-lg fa-calendar-alt"></i>
-                                    </span>
+                                        <span>
+                                            {{ events[0].datetime|format_datetime('full','short',locale=app.request.locale) }}
+                                        </span>
+                                        <span  class="icon has-text-primary">
+                                            <i class="fas fa-lg fa-calendar-alt"></i>
+                                        </span>
                                     </a>
                                 </div>
                             </div>
@@ -169,7 +167,7 @@ var defaultOptions = {
 var defaultOptions = {
     type: 'date',
     displayMode: 'inline',
-    color: 'primary',
+    color: 'success',
     showHeader: true,
     isRange: false,
     allowSameDayRange: true,
@@ -236,7 +234,7 @@ agendas.forEach(function (agenda) {
             infinite: false,
             loop:true,
             effect: 'fade',
-            autoplay: true,
+            autoplay: false,
             navigationSwipe: true,
             navigationKeys: false,
             pagination: false,

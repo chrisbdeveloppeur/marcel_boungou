@@ -1,9 +1,4 @@
 <div class="mb-5 box-shadow-bulma item-{{ count_1 }} is-hidden-desktop has-background-primary-light has-text-centered">
-    <a href="{{ path('events_edit', {'id': event.id}) }}" class="button borderless is-warning is-small" style="position:absolute;right: 0;z-index: 2;">
-        <span class="icon">
-            <i class="fas fa-lg fa-edit"></i>
-        </span>
-    </a>
     <div class="is-flex is-flex-direction-row has-background-success-light"  style="height: 100%;">
         <figure class="image is-3by1" style="width: 100%">
             {% if event.image %}
@@ -13,7 +8,10 @@
             {% endif %}
         </figure>
     </div>
-    <div class="column has-background-success-light is-flex is-align-items-center is-justify-content-center" style="z-index: 1;">
+    <div class="column has-background-success-light is-flex is-align-items-center is-justify-content-center is-relative" style="z-index: 1;">
+        {% if is_granted('ROLE_ADMIN') %}
+            {{ include('event/edit_event_button.html.twig') }}
+        {% endif %}
         <h3 class="has-text-dark title has-text-weight-bold">
             {{ event.title }}
         </h3>
@@ -21,22 +19,22 @@
     <div class="column has-background-success-light slider-container-child is-flex-desktop is-justify-content-space-between has-text-centered">
         <div class="column is-flex is-align-items-center is-justify-content-center px-0 py-0">
             <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="has-text-success" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
-                                    <span>
-                                        {{ event.adresse }}
-                                    </span>
+                <span>
+                    {{ event.adresse }}
+                </span>
                 <span  class="icon">
-                                        <i class="fas fa-lg fa-map-marker-alt"></i>
-                                    </span>
+                    <i class="fas fa-lg fa-map-marker-alt"></i>
+                </span>
             </a>
         </div>
         <div class="column is-flex is-align-items-center is-justify-content-center px-0 py-0">
             <a class="has-text-success" onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
-                                    <span>
-                                        {{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}
-                                    </span>
+                <span>
+                    {{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}
+                </span>
                 <span  class="icon">
-                                        <i class="fas fa-lg fa-calendar-alt"></i>
-                                    </span>
+                    <i class="fas fa-lg fa-calendar-alt"></i>
+                </span>
             </a>
         </div>
     </div>

@@ -35,6 +35,7 @@ $font-kavivanar: 'Kavivanar', cursive;
 $font-eagle-lake: 'Eagle Lake', cursive;
 $font-amita: 'Amita', cursive;
 $font-marcellus: 'Marcellus', serif;
+$font-montserrat: 'Montserrat', sans-serif;
 //$font-third
 
 //$navbar-item-active-background-color: #7C4A8C;
@@ -47,7 +48,7 @@ $box-shadow-bulma-dark: 0 0.5em 1em -0.125em rgba(10, 10, 10, .5) !important;
   box-shadow: 0 0.5em 1em 0.3em rgba(10, 10, 10, 0.2) !important;
 }
 
-$title-font: $font-quintessential;
+$title-font: $font-montserrat;
 
 *{
   transition: .3s;
@@ -55,6 +56,10 @@ $title-font: $font-quintessential;
 }
 h1, h2, h3{
   font-family: $title-font;
+}
+
+.font-montserrat{
+  font-family: $font-montserrat;
 }
 
 body{
@@ -128,13 +133,14 @@ section.body{
   //left: 50%;
   //transform: translate(-50%);
   width: 100%;
-  color: $success;
+  color: white;
 }
 .next-event-logo span{
   position: relative;
   display: inline-block;
-  animation: waviy 1s infinite;
-  animation-delay: calc(.1s * var(--i));
+  //animation: waviy 1s infinite;
+  //animation-delay: calc(.1s * var(--i));
+  animation: glow 2s ease-in-out infinite;
   font-family: $title-font;
 }
 
@@ -198,7 +204,7 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
 }
 
 .highlight-info{
-  background: $primary;
+  background: $success;
   min-height: 50px;
   width: 100%;
   position: absolute;
@@ -379,6 +385,19 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   }
   20% {
     transform: translateY(-10px)
+  }
+}
+
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 20px $success;
+  }
+  50% {
+    text-shadow: 0 0 30px $success, 0 0 10px #daba00;
+  }
+  100%{
+    text-shadow: 0 0 20px $success;
   }
 }
 
