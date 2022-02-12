@@ -20,6 +20,11 @@
             </div>
 
             <div class="column is-relative">
+                <a href="{{ path('events_edit', {'id': events[0].id}) }}" class="button borderless is-warning is-small" style="position:absolute;right: 0;z-index: 2;">
+                    <span class="icon">
+                        <i class="fas fa-lg fa-edit"></i>
+                    </span>
+                </a>
                 <h2 class="has-text-centered is-size-3 is-size-6-touch has-text-weight-bold next-event-logo is-uppercase">
                     {% if app.request.locale == 'fr' %}
                         <span style="--i:1">P</span>
@@ -54,9 +59,9 @@
 
                 <div class="" id="majorEvent">
                     <div class="is-flex is-flex-direction-column"  style="height: 100%;">
-                        <figure class="is-flex is-justify-content-center" style="">
-                            {% if events[0].imagefile %}
-                                <img src="{{ asset('images/event_img/' ~ events[0].imagefile) }}" alt="" style="height: 100%;max-height: 100%;object-fit: contain">
+                        <figure class="image is-3by1">
+                            {% if events[0].image %}
+                                <img src="{{ asset('images/event_img/' ~ events[0].image) }}" alt="" style="height: 100%;max-height: 100%;object-fit: contain">
                             {% else %}
                                 <img src="{{ asset('build/images/default_event_affiche.6019243e.png') }}" alt="" style="height: 100%;max-height: 100%;object-fit: contain">
                             {% endif %}
@@ -102,42 +107,7 @@
             {% set count_1 = 0 %}
             {% for event in events[1:] %}
                 {% if count_1 < 4 %}
-                    <div class="mb-5 box-shadow-bulma item-{{ count_1 }} is-hidden-tablet has-background-primary-light has-text-centered">
-                        <div class="is-flex is-flex-direction-row has-background-success-light"  style="height: 100%;">
-                            {% if event.imagefile %}
-                                <img src="{{ asset('images/event_img/' ~ event.imagefile) }}" alt="" style="height: 100%;max-height: 100%;object-fit: contain">
-                            {% else %}
-                                <img src="{{ asset('build/images/default_event_affiche.6019243e.png') }}" alt="" style="height: 100%;max-height: 100%;object-fit: contain">
-                            {% endif %}
-                        </div>
-                        <div class="column has-background-success-light is-flex is-align-items-center is-justify-content-center" style="z-index: 1;">
-                            <h3 class="has-text-dark title has-text-weight-bold">
-                                {{ event.title }}
-                            </h3>
-                        </div>
-                        <div class="column has-background-success-light slider-container-child is-flex-desktop is-justify-content-space-between has-text-centered">
-                            <div class="column is-flex is-align-items-center is-justify-content-center px-0 py-0">
-                                <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="has-text-success" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
-                                    <span>
-                                        {{ event.adresse }}
-                                    </span>
-                                    <span  class="icon">
-                                        <i class="fas fa-lg fa-map-marker-alt"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="column is-flex is-align-items-center is-justify-content-center px-0 py-0">
-                                <a class="has-text-success" onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
-                                    <span>
-                                        {{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}
-                                    </span>
-                                    <span  class="icon">
-                                        <i class="fas fa-lg fa-calendar-alt"></i>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    {{ include('event/event_container_touch.html.twig') }}
                 {% endif %}
                 {% set count_1 = count_1 + 1 %}
             {% endfor %}
@@ -270,7 +240,7 @@ agendas.forEach(function (agenda) {
             infinite: false,
             loop:true,
             effect: 'fade',
-            autoplay: false,
+            autoplay: true,
             navigationSwipe: true,
             navigationKeys: false,
             pagination: false,
