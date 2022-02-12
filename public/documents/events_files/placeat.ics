@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6207f4b6125be
+DTSTAMP;TZID=Europe/Paris:20220212T185606
+SUMMARY:placeat
+DESCRIPTION:Repellendus necessitatibus aliquam pariatur quas quia praesenti
+ um. Doloremque ea deserunt optio dolor. Sed temporibus voluptatem est itaq
+ ue sint ullam aut. Dignissimos rem minus autem quos. Et reprehenderit mole
+ stiae dolores doloribus saepe. Ratione debitis est doloremque quidem. Cons
+ equatur voluptatem autem est ad et enim dicta. Qui eos sed non eaque qui c
+ onsequatur omnis.
+LOCATION:69\, place de Renault\, 77959 MunozBourg\, MunozBourg
+DTSTART;TZID=Europe/Paris:20220218T183934
+DTEND;TZID=Europe/Paris:20220218T183934
+END:VEVENT
+END:VCALENDAR

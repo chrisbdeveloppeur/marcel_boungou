@@ -3,6 +3,7 @@
 namespace App\Command;
 
 use App\Repository\EventRepository;
+use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -74,30 +75,15 @@ class EventReminderCommand extends Command
 
             $mails = $event->getMailsToRemind();
 
-            if ($event->getTicketingLink()){
-                $link = '<span>Vous n\'avez pas encore pris vos entrées ?  
-                            <a href="'.$event->getTicketingLink().'">
-                                <span style="font-size: large;font-weight: bold">
-                                    Cliquez ici !
-                                </span>
-                            </a>
-                         </span><br>';
-            }else{
-                $link ='';
-            }
+
             if ($date == $dateEventMonth || $date == $dateEventWeek || $date == $dateEventDay){
-                $email = (new Email())
+                $email = (new TemplatedEmail())
                     ->from('admin@marcelboungou.com')
                     ->subject($event->getTitle())
-                    ->html('<h1>'.$event->getTitle().'</h1>'
-                        .$link
-                        .'<br>Date de l\'événement : le <span style="font-size: large;font-weight: bold">' . $event->getDatetime()->format('d/m/Y') .'</span><br>'
-                        .'Heure : <span style="font-size: large;font-weight: bold">'.$event->getDatetime()->format('H:i').'</span>'
-//                        .'<a target="_blank" download="'.$event->getIcsFile().'" type=".ics"  href="'.$dir.$event->getIcsFile().'">
-//                            Ajouter au calendier
-//                        </a>'
-                        . '<br><br><b>Adresse</b> : <a href="https://www.google.com/maps/search/'.$adresse.'">'.$adresse.'</a>'
-                    )
+                    ->htmlTemplate('emails/event_reminder.html.twig')
+                    ->context([
+                        'event' => $event,
+                    ])
                 ;
                 foreach ($mails as $mail){
                     $email->addTo($mail);

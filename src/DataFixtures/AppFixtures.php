@@ -32,6 +32,7 @@ class AppFixtures extends Fixture
             $event->setCp($faker->postcode);
             $event->setStreet($faker->streetAddress);
             $event->setDescription($faker->text($faker->numberBetween('100','500')));
+            $event->setTicketingLink('https://www.fnac.com/ia233457/Marcel-Boungou');
             for ($j = 1; $j <= $faker->numberBetween('2','10'); $j++){
                 $mail = $faker->email;
                 $event->addMailToRemind($mail);

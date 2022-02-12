@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6207f4b613ed6
+DTSTAMP;TZID=Europe/Paris:20220212T185606
+SUMMARY:quibusdam
+DESCRIPTION:Omnis quasi ut facere quis eum ab. Doloremque quo perferendis e
+ xcepturi occaecati nulla fugiat officia. Iste voluptate debitis totam volu
+ ptatem voluptates. Illo laudantium voluptates nulla. Deserunt dolor labore
+  placeat sapiente libero culpa modi. Qui quia voluptatem eligendi quo et.
+LOCATION:25\, chemin Lemonnier\, 33490 Ruiz-sur-Mer\, Ruiz-sur-Mer
+DTSTART;TZID=Europe/Paris:20220220T234455
+DTEND;TZID=Europe/Paris:20220220T234455
+END:VEVENT
+END:VCALENDAR

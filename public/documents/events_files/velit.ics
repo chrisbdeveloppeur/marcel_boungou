@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6207f4b61176f
+DTSTAMP;TZID=Europe/Paris:20220212T185606
+SUMMARY:velit
+DESCRIPTION:Et non non placeat minima. Ex ab ratione nemo earum quos tempor
+ ibus. Rerum voluptatem assumenda minus doloribus eos id. Facilis quos volu
+ ptatibus ipsam sequi sapiente dolor exercitationem. Qui reprehenderit sit 
+ aliquid maiores. Ducimus consequatur dolores quis dolor modi. Distinctio s
+ equi quia minima dignissimos. Officiis explicabo rerum odio impedit offici
+ a alias.
+LOCATION:chemin Voisin\, 56155 Pasquier-sur-Lebon\, Pasquier-sur-Lebon
+DTSTART;TZID=Europe/Paris:20220217T184217
+DTEND;TZID=Europe/Paris:20220217T184217
+END:VEVENT
+END:VCALENDAR
