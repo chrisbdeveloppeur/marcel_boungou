@@ -127,9 +127,9 @@
     {% endif %}
 
     {% if form_errors(child) %}
-    <span class="help has-background-danger has-text-light px-2 py-1">
-        {{ form_errors(child) }}
-    </span>
+        <span class="help has-background-danger has-text-light px-2 py-1">
+            {{ form_errors(child) }}
+        </span>
     {% endif %}
 
     {% for sub_child in child.children %}
