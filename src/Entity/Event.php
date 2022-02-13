@@ -6,6 +6,7 @@ use App\Repository\EventRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\File;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=EventRepository::class)
@@ -74,6 +75,14 @@ class Event
     /**
      * @Vich\UploadableField(mapping="event_img", fileNameProperty="image")
      * @var File
+     * @Assert\File(
+     *     mimeTypes = {"application/jpg", "application/jpeg", "application/png", "application/svg", "application/bmp", "application/jfif", "application/pjpeg", "application/pjp"},
+     *     mimeTypesMessage = "Please upload a valid image file format",
+     * )
+     * @Assert\Image(
+     *     maxRatio="3",
+     *     maxRatioMessage="Format image should be 3 by 1 (ex : 720 x 240)",
+     * )
      */
     private $imageFile;
 
