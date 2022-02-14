@@ -1,6 +1,6 @@
 
-$link: #705d00;
-$link-hover: #dac100;
+$link: #987f00;
+$link-hover: white;
 $success: #da6d00;
 $success-layer: rgba(218, 112, 0, 0.7);
 $primary: #7C4A8C;
@@ -22,6 +22,7 @@ $box-radius: 0;
 $navbar-height: 4rem;
 $navbar-item-hover-background-color: $white-layer;
 $navbar-item-color: white;
+$navbar-burger-color: white;
 
 $navbar-dropdown-background-color: $success-layer;
 $navbar-dropdown-item-hover-background-color: white;
@@ -59,6 +60,9 @@ h1, h2, h3{
 }
 
 .font-montserrat{
+  font-family: $font-montserrat;
+}
+.navbar-item{
   font-family: $font-montserrat;
 }
 

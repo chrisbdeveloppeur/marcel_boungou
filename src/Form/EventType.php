@@ -42,10 +42,13 @@ class EventType extends AbstractType
 //                'format' => 'dd/MM/yyyy  HH:mm',
             ])
             ->add('imageFile', VichFileType::class,[
+                'label' => $this->translator->trans('Image'),
                 'attr' => [
                     'class' => 'file-input'
                 ],
                 'required' => false,
+                'download_link' => false,
+                'allow_delete' => false,
             ])
             ->add('country', TextType::class,[
                 'required' => true,

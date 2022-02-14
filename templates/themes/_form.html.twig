@@ -48,8 +48,8 @@
     {% elseif child.vars.block_prefixes[1] == 'file' or child.vars.block_prefixes[1] == 'vich_file' %}
 {#        {{ form_widget(child) }}#}
         {% if event is defined and event.image %}
-            <figure>
-                <img src="{{ asset('images/event_img/'~event.image) }}" alt="" class="image">
+            <figure class="">
+                <img src="{{ asset('images/event_img/'~event.image) }}" alt="">
             </figure>
         {% else %}
             {% trans %}Empty{% endtrans %}

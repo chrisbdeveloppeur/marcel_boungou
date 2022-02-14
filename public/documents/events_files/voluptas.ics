@@ -17,17 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6207bab392359
-DTSTAMP;TZID=Europe/Paris:20220212T144835
+UID:620a43554db64
+DTSTAMP;TZID=Europe/Paris:20220214T125605
 SUMMARY:voluptas
-DESCRIPTION:Doloribus odio dolore maxime commodi inventore minima. Dolorem 
- iste unde dolores odio itaque enim. Temporibus officiis sed mollitia repel
- lat consequuntur. Deleniti rerum doloribus architecto consequatur. Fuga op
- tio corporis provident fugit. Consequuntur est quia provident officiis et 
- cupiditate. Omnis provident et similique consectetur corporis doloremque t
- otam. Totam et eos sit.
-LOCATION:44\, rue Evrard\, 85508 Petit-sur-Le Roux\, Petit-sur-Le Roux
-DTSTART;TZID=Europe/Paris:20220221T215345
-DTEND;TZID=Europe/Paris:20220221T215345
+DESCRIPTION:Quidem natus porro consectetur corrupti qui velit ut. Quam ut n
+ ihil non et. Eum itaque et id et est enim. Molestias et necessitatibus ips
+ a accusantium. Amet dolorem ducimus eveniet omnis. Ad quam necessitatibus 
+ sit et. Tempore dignissimos fugit nam consectetur.
+LOCATION:52\, boulevard Gimenez\, 82 062 Mace\, Mace
+DTSTART;TZID=Europe/Paris:20220220T111854
+DTEND;TZID=Europe/Paris:20220220T111854
 END:VEVENT
 END:VCALENDAR

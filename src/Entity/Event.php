@@ -75,6 +75,10 @@ class Event
     /**
      * @Vich\UploadableField(mapping="event_img", fileNameProperty="image")
      * @var File
+     * @Assert\File(
+     *     mimeTypes={"image/jpeg", "image/jpg","image/bmp", "image/png"},
+     *     mimeTypesMessage="The type of the file is invalid ({{ type }})",
+     * )
      */
     private $imageFile;
 
