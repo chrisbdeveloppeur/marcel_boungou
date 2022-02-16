@@ -49,6 +49,7 @@ class EventType extends AbstractType
                 'required' => false,
                 'download_link' => false,
                 'allow_delete' => false,
+                'help' => 'jpeg, jpg, bmp, png'
             ])
             ->add('country', TextType::class,[
                 'required' => true,

@@ -48,7 +48,7 @@
     {% elseif child.vars.block_prefixes[1] == 'file' or child.vars.block_prefixes[1] == 'vich_file' %}
 {#        {{ form_widget(child) }}#}
         {% if event is defined and event.image %}
-            <figure class="">
+            <figure class="is-flex is-justify-content-center">
                 <img src="{{ asset('images/event_img/'~event.image) }}" alt="">
             </figure>
         {% else %}
@@ -68,7 +68,11 @@
                 </span>
             </span>
             <span class="file-name">
-                <i>Vide</i>
+                {% if event is defined and event.image %}
+                    {{ event.image }}
+                {% else %}
+                    {% trans %}Empty{% endtrans %}
+                {% endif %}
             </span>
 
         </label>
