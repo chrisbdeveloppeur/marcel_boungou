@@ -30,15 +30,15 @@ $navbar-dropdown-item-hover-color: $success;
 $navbar-item-hover-color: $success;
 $dropdown-divider-background-color: $white-layer;
 
-$font-quintessential : 'Quintessential', cursive;
-$font-nothing-you-could-do: 'Nothing You Could Do', cursive;
-$font-kavivanar: 'Kavivanar', cursive;
-$font-eagle-lake: 'Eagle Lake', cursive;
-$font-amita: 'Amita', cursive;
-$font-marcellus: 'Marcellus', serif;
-$font-montserrat: 'Montserrat', sans-serif;
+//$font-quintessential : 'Quintessential', cursive;
+//$font-nothing-you-could-do: 'Nothing You Could Do', cursive;
+//$font-kavivanar: 'Kavivanar', cursive;
+//$font-eagle-lake: 'Eagle Lake', cursive;
+//$font-amita: 'Amita', cursive;
+//$font-marcellus: 'Marcellus', serif;
+//$font-montserrat: 'Montserrat', sans-serif;
 $font-josefin-sans: 'Josefin Sans', sans-serif;
-//$font-third
+$font-quicksand : 'Quicksand', sans-serif;
 
 //$navbar-item-active-background-color: #7C4A8C;
 //$navbar-dropdown-item-active-background-color:#7C4A8C;
@@ -54,17 +54,17 @@ $title-font: $font-josefin-sans;
 
 *{
   transition: .3s;
-  font-family: $font-montserrat;
+  font-family: $font-quicksand;
 }
 h1, h2, h3{
   font-family: $title-font;
 }
 
-.font-montserrat{
-  font-family: $font-montserrat;
+.font-quicksand{
+  font-family: $font-quicksand;
 }
 .navbar-item{
-  font-family: $font-montserrat;
+  font-family: $font-quicksand;
 }
 
 body{
@@ -205,6 +205,7 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
 
 .date-item.is-today{
   border-style: dotted !important;
+  border-width: 3px !important;
 }
 
 .date-item.is-highlighted{

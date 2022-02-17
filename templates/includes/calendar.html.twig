@@ -62,7 +62,9 @@
                                 <input type="email" class="input is-small has-text-centered" placeholder="{% trans %}my@email.com{% endtrans %}" name="email">
                             </div>
                             <div class="is-flex is-flex-direction-column">
-                                <button class="button is-small is-success">{% trans %}Subscribe{% endtrans %}</button>
+                                <button class="button is-small is-success">
+                                    <span>{% trans %}Subscribe{% endtrans %}</span>
+                                </button>
                                 <a href="{{ path('events_remove_email_reminder', {'id': event.id}) }}" class="button is-small is-success">
                                     <span class="icon">
                                         <i class="far fa-bell-slash"></i>

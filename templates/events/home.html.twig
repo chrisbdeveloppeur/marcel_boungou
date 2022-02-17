@@ -197,7 +197,6 @@ const calendars = bulmaCalendar.attach('[type="date"]', defaultOptions);
 calendars.forEach(calendar => {
     // Add listener to select event
     calendar.on('select', date => {
-        // console.log(date);
     });
 });
 
@@ -211,7 +210,6 @@ agendas.forEach(function (agenda) {
             selectedDate = datepicker.data.value();
             let highlightsInfos = document.querySelectorAll('.highlight-info');
             highlightsInfos.forEach(highlight => highlight.classList.add('is-hidden'));
-            //console.log(selectedDate);
             highlightsDates.forEach(function (highlight) {
                 if (highlight === selectedDate){
                     let highlightInfoId = document.getElementById(highlight);
@@ -247,7 +245,7 @@ agendas.forEach(function (agenda) {
         for(var i = 0; i < carousels.length; i++) {
             // Add listener to  event
             carousels[i].on('before:show', state => {
-                console.log(state);
+
             });
         }
 
@@ -257,7 +255,7 @@ agendas.forEach(function (agenda) {
         if (element && element.bulmaCarousel) {
             // bulmaCarousel instance is available as element.bulmaCarousel
             element.bulmaCarousel.on('before-show', function(state) {
-                console.log(state);
+
             });
         }
         */

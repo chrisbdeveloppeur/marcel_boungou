@@ -9,6 +9,7 @@
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.scss';
 
+const favicon = require('./images/png/favicon.png');
 const fr_flag = require('./images/svg/fr.svg');
 const en_flag = require('./images/svg/en.svg');
 const palata_1 = require('./images/jpg/MB/palatasingers1.jpg');
