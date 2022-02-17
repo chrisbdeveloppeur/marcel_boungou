@@ -289,5 +289,10 @@ class Event
         return $this->image;
     }
 
+    public function getClassName()
+    {
+        return 'Event';
+    }
+
 
 }

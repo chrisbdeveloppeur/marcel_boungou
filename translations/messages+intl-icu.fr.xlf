@@ -505,6 +505,22 @@
         <source>Empty</source>
         <target>Vide</target>
       </trans-unit>
+      <trans-unit id="OMADE2d" resname="Changes made successfully">
+        <source>Changes made successfully</source>
+        <target>Modifications effectuées avec succès</target>
+      </trans-unit>
+      <trans-unit id="pJf89Hx" resname="Image removed successfully">
+        <source>Image removed successfully</source>
+        <target>Image supprimée avec succès</target>
+      </trans-unit>
+      <trans-unit id="Xaj3_8K" resname="Back to list">
+        <source>Back to list</source>
+        <target>Retour à la liste</target>
+      </trans-unit>
+      <trans-unit id="JeB6DfN" resname="(recommended ratio : 640x320)">
+        <source>(recommended ratio : 640x320)</source>
+        <target>(ratio recommandé : 640x320)</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

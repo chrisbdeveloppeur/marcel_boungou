@@ -48,11 +48,10 @@
     {% elseif child.vars.block_prefixes[1] == 'file' or child.vars.block_prefixes[1] == 'vich_file' %}
 {#        {{ form_widget(child) }}#}
         {% if event is defined and event.image %}
-            <figure class="is-flex is-justify-content-center">
+            <figure class="is-flex is-justify-content-center is-relative">
                 <img src="{{ asset('images/event_img/'~event.image) }}" alt="">
+                <a href="{{ path('image_delete', {'id': event.id}) }}" class="delete is-large" style="position: absolute;right: .5rem;top: .5rem;"></a>
             </figure>
-        {% else %}
-            {% trans %}Empty{% endtrans %}
         {% endif %}
 
     <div class="file has-name is-fullwidth">

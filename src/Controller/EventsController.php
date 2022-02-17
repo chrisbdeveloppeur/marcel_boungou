@@ -28,7 +28,6 @@ class EventsController extends AbstractController
     {
         $this->calendarController = $calendarController;
         $this->translator = $translator;
-        //$this->previousUrl = $request->getR
     }
 
     /**
@@ -98,6 +97,7 @@ class EventsController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
+            $this->addFlash('info', $this->translator->trans('Changes made successfully'));
             $previousUrl = $request->headers->get('referer');
             return $this->redirect($previousUrl);
             //return $this->redirectToRoute('events_index', [], Response::HTTP_SEE_OTHER);

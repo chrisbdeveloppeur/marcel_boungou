@@ -4,11 +4,11 @@
             {% if is_granted('ROLE_ADMIN') %}
                 {{ include('event/edit_event_button.html.twig') }}
             {% endif %}
-            <figure class="image is-3by1" style="width: 50%;">
+            <figure class="is-3by1" style="width: 50%;height: 100%;">
             {% if event.image %}
-                <img src="{{ asset('images/event_img/' ~ event.image) }}" alt="" style="height: 100%;max-height: 100%;object-fit: cover">
+                <img src="{{ asset('images/event_img/' ~ event.image) }}" alt="" style="height: 100%;object-fit: fill">
             {% else %}
-                <img src="{{ asset('build/images/default_event_affiche.6019243e.png') }}" alt="" style="height: 100%;max-height: 100%;object-fit: cover">
+                <img src="{{ asset('build/images/640x320.4ecf1ab8.png') }}" alt="" style="height: 100%;width: 100%;object-fit: fill">
             {% endif %}
             </figure>
             <div class="column has-background-success-light slider-container-child is-flex is-flex-direction-column">
