@@ -4,15 +4,15 @@
             {% if is_granted('ROLE_ADMIN') %}
                 {{ include('event/edit_event_button.html.twig') }}
             {% endif %}
-            <figure class="is-3by1" style="width: 50%;height: 100%;">
+            <figure class="is-3by1" style="height: 100%;">
             {% if event.image %}
                 <img src="{{ asset('images/event_img/' ~ event.image) }}" alt="" style="height: 100%;object-fit: fill">
             {% else %}
-                <img src="{{ asset('build/images/640x320.4ecf1ab8.png') }}" alt="" style="height: 100%;width: 100%;object-fit: fill">
+                <img src="{{ asset('build/images/720x240.8013db28.png') }}" alt="" style="height: 100%;width: 100%;object-fit: fill">
             {% endif %}
             </figure>
             <div class="column has-background-success-light slider-container-child is-flex is-flex-direction-column">
-                <h3 class="has-text-dark title has-text-weight-bold">
+                <h3 class="has-text-primary title has-text-weight-bold">
                     {{ event.title }}
                 </h3>
                 <div class="column is-flex is-align-items-center px-0 py-0">

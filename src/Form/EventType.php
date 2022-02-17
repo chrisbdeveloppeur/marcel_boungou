@@ -44,7 +44,8 @@ class EventType extends AbstractType
             ->add('imageFile', VichFileType::class,[
                 'label' => $this->translator->trans('Image'),
                 'attr' => [
-                    'class' => 'file-input'
+                    'class' => 'file-input',
+                    'onchange' => 'this.parentElement.parentElement.querySelector(".file-name").innerText = this.files[0].name;',
                 ],
                 'required' => false,
                 'download_link' => false,

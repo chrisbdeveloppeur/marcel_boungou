@@ -2,7 +2,7 @@
         <input type="date" class="bulma-calendar bulma-calendar-1 is-small">
         {% if events is defined %}
             {% for event in events %}
-                <div class="highlight-info is-hidden has-text-light px-3 py-3 highlight-{{ event.id }} box-shadow-bulma" id="{{ event.datetime|date('d/m/Y') }}">
+                <div class="highlight-info is-hidden has-background-success has-text-light px-3 py-3 highlight-{{ event.id }} box-shadow-bulma" id="{{ event.datetime|date('d/m/Y') }}">
                     <button class="delete" style="position: absolute;top: .5rem;right: .5rem" onclick="this.parentElement.classList.add('is-hidden')"></button>
                     <a href="#" class="has-text-light">
                         <h3 class="has-text-weight-bold">
@@ -61,8 +61,9 @@
                             <div class="field">
                                 <input type="email" class="input is-small has-text-centered" placeholder="{% trans %}my@email.com{% endtrans %}" name="email">
                             </div>
-                            <div class="is-flex is-justify-content-space-between">
-                                <a href="{{ path('events_remove_email_reminder', {'id': event.id}) }}" class="help has-text-light">
+                            <div class="is-flex is-flex-direction-column">
+                                <button class="button is-small is-success">{% trans %}Subscribe{% endtrans %}</button>
+                                <a href="{{ path('events_remove_email_reminder', {'id': event.id}) }}" class="button is-small is-success">
                                     <span class="icon">
                                         <i class="far fa-bell-slash"></i>
                                     </span>
@@ -70,7 +71,6 @@
                                         {% trans %}remove reminder{% endtrans %}
                                     </span>
                                 </a>
-                                <button class="button is-small">{% trans %}Subscribe{% endtrans %}</button>
                             </div>
                         </form>
                     </div>

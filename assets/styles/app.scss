@@ -37,6 +37,7 @@ $font-eagle-lake: 'Eagle Lake', cursive;
 $font-amita: 'Amita', cursive;
 $font-marcellus: 'Marcellus', serif;
 $font-montserrat: 'Montserrat', sans-serif;
+$font-josefin-sans: 'Josefin Sans', sans-serif;
 //$font-third
 
 //$navbar-item-active-background-color: #7C4A8C;
@@ -49,11 +50,11 @@ $box-shadow-bulma-dark: 0 0.5em 1em -0.125em rgba(10, 10, 10, .5) !important;
   box-shadow: 0 0.5em 1em 0.3em rgba(10, 10, 10, 0.2) !important;
 }
 
-$title-font: $font-montserrat;
+$title-font: $font-josefin-sans;
 
 *{
   transition: .3s;
-  font-family: $font-marcellus;
+  font-family: $font-montserrat;
 }
 h1, h2, h3{
   font-family: $title-font;
@@ -123,7 +124,7 @@ section.body{
   font-weight: lighter;
 }
 .navbar-item:hover{
-  letter-spacing: 5px !important;
+  letter-spacing: .15rem !important;
 }
 
 .navbar-menu{
@@ -143,8 +144,8 @@ section.body{
   position: relative;
   display: inline-block;
   //animation: waviy 1s infinite;
-  //animation-delay: calc(.1s * var(--i));
-  animation: glow 2s ease-in-out infinite;
+  animation: glow 3s ease-in-out infinite, waviy 3s infinite;
+  animation-delay: calc(.2s * var(--i));
   font-family: $title-font;
 }
 
@@ -202,13 +203,20 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   background: $primary !important;
 }
 
+.date-item.is-today{
+  border-style: dotted !important;
+}
+
+.date-item.is-highlighted{
+  border-color: rgba(218, 109, 0, 0.58) !important;
+}
+
 .datepicker-year.is-active, .datepicker-month.is-active{
   background: $success !important;
   border-color: $success !important;
 }
 
 .highlight-info{
-  background: $success;
   min-height: 50px;
   width: 100%;
   position: absolute;
@@ -396,12 +404,15 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
 @keyframes glow {
   0% {
     text-shadow: 0 0 20px $success;
+    color: white;
   }
   50% {
     text-shadow: 0 0 30px $success, 0 0 10px #daba00;
+    color: $success;
   }
   100%{
     text-shadow: 0 0 20px $success;
+    color: white;
   }
 }
 

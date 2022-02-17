@@ -171,10 +171,12 @@ class EventsController extends AbstractController
             return $this->redirectToRoute('events_index');
         }
 
+        $redirect_link = $this->redirectToRoute('events_index')->getTargetUrl();
         $form_title = $translator->trans('You are about to unsubscribe for the event reminder : ') .'<b>'. $event->getTitle() .'</b>';
         return $this->render('themes/just_the_form.html.twig',[
             'form' => $form->createView(),
             'form_title' => $form_title,
+            'redirect_link' => $redirect_link,
         ]);
     }
 }
