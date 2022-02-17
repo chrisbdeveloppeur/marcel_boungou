@@ -1,11 +1,12 @@
 <div class="column px-0 py-0">
-    <div class="is-flex is-justify-content-space-between">
+    <h3 class="subtitle has-text-centered"><b>{{ event }}</b></h3>
+    <div class="">
         <span class="help">
             <span class="icon">
                 <i class="fas fa-info-circle"></i>
             </span>
             {% trans %}By subscribing to this service, you will receive reminder emails until the day of the event{% endtrans %}<br>
-            {% trans %} (1 month / 1 week / 1 day before){% endtrans %}
+            {% trans %} (1 month / 1 week / 1 day before){% endtrans %}<br>
         </span>
     </div>
     <form action="{{ path('events_add_email_reminder', {'id': event.id}) }}" method="post" class="column pb-0 pt-3 px-0">
