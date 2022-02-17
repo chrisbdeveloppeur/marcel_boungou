@@ -1,12 +1,12 @@
 {% if form_title is defined %}
-<h2 class="subtitle">
+<span class="help">
     <span class="icon">
         <i class="fas fa-info-circle"></i>
     </span>
     <span>
         {{ form_title|raw }}
     </span>
-</h2>
+</span>
 {% endif %}
 
 {{ form_start(form, {'attr': {'class': '', 'id': form.vars.name } }) }}
@@ -160,8 +160,8 @@
     </div>
 {% else %}
     <div class="field has-text-right" id="save">
-        {% if redirect_link is defined %}
-            <a href="{{ redirect_link }}" class="button is-small is-dark">{% trans %}Go back{% endtrans %}</a>
+        {% if redirect is defined %}
+            <a href="{{ redirect.link }}" class="button is-small is-dark">{{ redirect.txt }}</a>
         {% endif %}
         <button class="button is-success is-small btn-submit">
             <span class="icon">

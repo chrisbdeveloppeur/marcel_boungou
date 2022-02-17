@@ -176,7 +176,10 @@ class EventsController extends AbstractController
         return $this->render('themes/just_the_form.html.twig',[
             'form' => $form->createView(),
             'form_title' => $form_title,
-            'redirect_link' => $redirect_link,
+            'redirect' => [
+                'link' => $redirect_link,
+                'txt' => $this->translator->trans('Cancel'),
+            ]
         ]);
     }
 }

@@ -521,6 +521,34 @@
         <source>(recommended ratio : 640x320)</source>
         <target>(ratio recommandé : 640x320)</target>
       </trans-unit>
+      <trans-unit id="aq2sLyt" resname="Go back">
+        <source>Go back</source>
+        <target>Revenir en arrière</target>
+      </trans-unit>
+      <trans-unit id="GXZu1sy" resname="Cancel">
+        <source>Cancel</source>
+        <target>Annuler</target>
+      </trans-unit>
+      <trans-unit id="N_4Ffbf" resname="You will no longer receive reminders for the event :">
+        <source>You will no longer receive reminders for the event :</source>
+        <target>Vous ne recevrez plus de rappels pour l'événement :</target>
+      </trans-unit>
+      <trans-unit id="DNLwrmI" resname="By subscribing to this service, you will receive reminder emails until the day of the event (1 month / 1 week / 1 day before)">
+        <source>By subscribing to this service, you will receive reminder emails until the day of the event (1 month / 1 week / 1 day before)</source>
+        <target>En souscrivant à ce service, vous recevrez des emails de rappel jusqu'au jour de l'événement (1 mois / 1 semaine / 1 jour avant)</target>
+      </trans-unit>
+      <trans-unit id="ZbcGwvc" resname="By subscribing to this service, you will receive reminder emails until the day of the event">
+        <source>By subscribing to this service, you will receive reminder emails until the day of the event</source>
+        <target>En souscrivant à ce service, vous recevrez des e-mails de rappel jusqu'au jour de l'événement</target>
+      </trans-unit>
+      <trans-unit id="ue67tvQ" resname="(1 month / 1 week / 1 day before)">
+        <source>(1 month / 1 week / 1 day before)</source>
+        <target>(1 mois / 1 semaine / 1 jour avant)</target>
+      </trans-unit>
+      <trans-unit id="nWD5Em2" resname="Add to my calendar">
+        <source>Add to my calendar</source>
+        <target>Ajouter à mon calendrier</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

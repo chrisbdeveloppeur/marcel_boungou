@@ -1,16 +1,19 @@
 <div class="column px-0 py-0">
-    <a href="{{ asset('documents/events_files/') }}{{ event.icsFile }}" target="_blank" download="{{ event.icsFile }}" type=".ics" class="addToCalendar button is-small is-primary is-light" title="{% trans %}Add to Calendar{% endtrans %}">
-        <span class="icon">
-            <i class="fas fa-lg fa-calendar-day"></i>
+    <div class="is-flex is-justify-content-space-between">
+        <span class="help">
+            <span class="icon">
+                <i class="fas fa-info-circle"></i>
+            </span>
+            {% trans %}By subscribing to this service, you will receive reminder emails until the day of the event{% endtrans %}<br>
+            {% trans %} (1 month / 1 week / 1 day before){% endtrans %}
         </span>
-        <span>.ics</span>
-    </a>
-    <form action="{{ path('events_add_email_reminder', {'id': event.id}) }}" method="post" class="column px-0 py-0">
+    </div>
+    <form action="{{ path('events_add_email_reminder', {'id': event.id}) }}" method="post" class="column pb-0 pt-3 px-0">
         <div class="field">
             <input type="email" class="input is-small has-text-centered" placeholder="{% trans %}my@email.com{% endtrans %}" name="email">
         </div>
         <div class="is-flex is-justify-content-space-between">
-            <a href="{{ path('events_remove_email_reminder', {'id': event.id}) }}" class="help">
+            <a href="{{ path('events_remove_email_reminder', {'id': event.id}) }}" class="button is-small is-dark">
                 <span class="icon">
                     <i class="far fa-bell-slash"></i>
                 </span>
@@ -18,7 +21,17 @@
                     {% trans %}remove reminder{% endtrans %}
                 </span>
             </a>
-            <button class="button is-small">{% trans %}Subscribe{% endtrans %}</button>
+            <button class="button is-success is-small">{% trans %}Subscribe{% endtrans %}</button>
         </div>
     </form>
+    <div class="pt-3 has-text-right">
+        <a href="{{ asset('documents/events_files/') }}{{ event.icsFile }}" target="_blank" download="{{ event.icsFile }}" type=".ics" class="addToCalendar button is-small is-primary is-light" title="{% trans %}Add to Calendar{% endtrans %}">
+            <span>
+                {% trans %}Add to my calendar{% endtrans %}
+            </span>
+            <span class="icon">
+                <i class="fas fa-lg fa-calendar-day"></i>
+            </span>
+        </a>
+    </div>
 </div>
