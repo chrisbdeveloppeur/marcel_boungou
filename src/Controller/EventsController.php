@@ -31,16 +31,26 @@ class EventsController extends AbstractController
     }
 
     /**
-     * @Route("/", name="index", methods={"GET"})
+     * @Route("/", name="home", methods={"GET"})
      */
-    public function index(): Response
+    public function home(): Response
     {
-        return $this->render('events/home.html.twig', [
+        return $this->render('event/home.html.twig', [
+        ]);
+    }
+
+    /**
+     * @Route("/all", name="all", methods={"GET"})
+     */
+    public function all(): Response
+    {
+        return $this->render('event/_all.html.twig', [
         ]);
     }
 
     /**
      * @Route("/list", name="list", methods={"GET"})
+     * @Security("is_granted('ROLE_ADMIN')", statusCode=403, message="Access denied !")
      */
     public function list(EventRepository $eventRepository): Response
     {
