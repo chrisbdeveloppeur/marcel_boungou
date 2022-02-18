@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:620f56a01c4f6
+DTSTAMP;TZID=Europe/Paris:20220218T091944
+SUMMARY:hic
+DESCRIPTION:Rerum non animi sunt odio quod ut. Expedita quo doloribus quam 
+ error sed nihil et. Vel omnis doloremque inventore laboriosam. Eum alias u
+ t optio corrupti enim. Rem asperiores doloremque ut non. Tempore eos quaer
+ at ut illum. Distinctio et praesentium aperiam itaque.
+LOCATION:4\, boulevard Alves\, 74 812 Picard\, Picard
+DTSTART;TZID=Europe/Paris:20220226T090550
+DTEND;TZID=Europe/Paris:20220226T090550
+END:VEVENT
+END:VCALENDAR

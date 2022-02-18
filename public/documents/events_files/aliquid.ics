@@ -17,14 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6207cd8b22601
-DTSTAMP;TZID=Europe/Paris:20220212T160859
+UID:620f56a017462
+DTSTAMP;TZID=Europe/Paris:20220218T091944
 SUMMARY:aliquid
-DESCRIPTION:Distinctio ut non facilis voluptate impedit. Dolorem alias quos
-  qui ratione dignissimos consectetur. Consequatur quo quibusdam deserunt t
- empore aut aut. Vero et quisquam assumenda.
-LOCATION:3\, boulevard Normand\, 48151 Blin\, Blin
-DTSTART;TZID=Europe/Paris:20220217T181356
-DTEND;TZID=Europe/Paris:20220217T181356
+DESCRIPTION:Ducimus aut voluptas et dolor id modi aspernatur accusantium. E
+ a nihil est et ipsum provident repellat. Illo quisquam corporis dicta blan
+ ditiis. Magni ab modi deserunt neque et qui similique.
+LOCATION:555\, impasse Vincent Robert\, 59 101 Bonneau\, Bonneau
+DTSTART;TZID=Europe/Paris:20220223T105728
+DTEND;TZID=Europe/Paris:20220223T105728
 END:VEVENT
 END:VCALENDAR

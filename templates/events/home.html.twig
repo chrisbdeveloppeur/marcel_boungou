@@ -67,27 +67,43 @@
                                     {{ events[0].title }}
                                 </h3>
                             </div>
-                            <div class="column has-background-success-light slider-container-child is-flex-desktop is-justify-content-space-between has-text-centered">
-                                <div class="column is-flex is-align-items-center is-justify-content-center px-0 py-0">
-                                    <a href="https://www.google.fr/maps/search/{{ events[0].adresse }}" class="has-text-success" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
-                                        <span>
-                                            {{ events[0].adresse }}
+                            <div class="column has-background-black slider-container-child is-flex-desktop is-justify-content-space-between px-0 py-0">
+                                <div class="column is-flex px-0 py-0">
+                                    <div class="column is-expanded has-text-success is-flex-desktop is-justify-content-center is-align-items-center">
+                                        <span class="icon-text">
+                                            <span class="icon has-text-success">
+                                                <i class="fas fa-lg fa-map"></i>
+                                            </span>
+                                            <span class="has-text-success-light is-size-7-touch">
+                                                {{ events[0].adresse }}
+                                            </span>
                                         </span>
+                                    </div>
+                                    <a href="https://www.google.fr/maps/search/{{ events[0].adresse }}" class="has-text-success px-2 py-2 is-flex is-justify-content-center is-align-items-center" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
                                         <span  class="icon has-text-primary">
                                             <i class="fas fa-lg fa-map-marker-alt"></i>
                                         </span>
                                     </a>
                                 </div>
-                                <div class="column is-flex is-align-items-center is-justify-content-center px-0 py-0">
-                                    <a class="has-text-success" onclick="document.querySelector('#modalEvent'+{{ events[0].id }}).classList.add('is-active')">
-                                        <span>
-                                            {{ events[0].datetime|format_datetime('full','short',locale=app.request.locale) }}
+
+                                <div class="column is-flex px-0 py-0">
+                                    <div class="column is-expanded has-text-success is-flex-desktop is-justify-content-center is-align-items-center">
+                                        <span class="icon-text">
+                                            <span class="icon has-text-success">
+                                                <i class="fas fa-lg fa-calendar-alt"></i>
+                                            </span>
+                                            <span class="has-text-success-light is-size-7-touch">
+                                                {{ events[0].datetime|format_datetime('full','short',locale=app.request.locale) }}
+                                            </span>
                                         </span>
+                                    </div>
+                                    <a class="has-text-success px-2 py-2 is-flex is-justify-content-center is-align-items-center"  onclick="document.querySelector('#modalEvent'+{{ events[0].id }}).classList.add('is-active')">
                                         <span  class="icon has-text-primary">
-                                            <i class="fas fa-lg fa-calendar-alt"></i>
+                                            <i class="fas fa-lg fa-bell"></i>
                                         </span>
                                     </a>
                                 </div>
+
                             </div>
                         </div>
 

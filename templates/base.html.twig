@@ -41,11 +41,11 @@
     </div>
     {% block body %}{% endblock %}
 </section>
-{% if hightlights_dates is defined %}
-{% for hightlight_date in hightlights_dates %}
-    {{ hightlight_date }}
-{% endfor %}
-{% endif %}
+{#{% if hightlights_dates is defined %}#}
+{#{% for hightlight_date in hightlights_dates %}#}
+{#    {{ hightlight_date }}#}
+{#{% endfor %}#}
+{#{% endif %}#}
 
 {% block footer %}
     {{ include('includes/footer.html.twig') }}

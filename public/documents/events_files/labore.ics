@@ -17,15 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:620f56a014355
+UID:620f56a015b31
 DTSTAMP;TZID=Europe/Paris:20220218T091944
-SUMMARY:enim
-DESCRIPTION:Eos rerum cupiditate aut adipisci ab molestiae quis. Maxime nes
- ciunt ipsa dicta eos. Nulla consequatur mollitia accusantium quo qui. Eum 
- eos voluptatem dolor possimus eius voluptates. Fugit quis non voluptate au
- t culpa.
-LOCATION:664\, place Christophe Marchand\, 54668 Guillet\, Guillet
-DTSTART;TZID=Europe/Paris:20220221T225645
-DTEND;TZID=Europe/Paris:20220221T225645
+SUMMARY:labore
+DESCRIPTION:Ratione et omnis non maiores. Voluptas eum sapiente minus ipsum
+  quidem.
+LOCATION:22\, avenue de Gonzalez\, 96453 Da CostaBourg\, Da CostaBourg
+DTSTART;TZID=Europe/Paris:20220222T102633
+DTEND;TZID=Europe/Paris:20220222T102633
 END:VEVENT
 END:VCALENDAR
