@@ -257,6 +257,9 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   opacity: 100% !important;
 }
 
+.scalup-hover:hover{
+  transform: scale(1.03);
+}
 
 .parallax {
   position: relative;

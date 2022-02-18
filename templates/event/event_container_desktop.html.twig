@@ -4,9 +4,9 @@
             {% if is_granted('ROLE_ADMIN') %}
                 {{ include('event/edit_event_button.html.twig') }}
             {% endif %}
-            <figure class="is-3by1" style="height: 100%;">
+            <figure class="is-3by1" style="height: 100%;width: 50%">
             {% if event.image %}
-                <img src="{{ asset('images/event_img/' ~ event.image) }}" alt="" style="height: 100%;object-fit: fill">
+                <img src="{{ asset('images/event_img/' ~ event.image) }}" alt="" style="height: 100%;width: 100%;object-fit: fill">
             {% else %}
                 <img src="{{ asset('build/images/720x240.8013db28.png') }}" alt="" style="height: 100%;width: 100%;object-fit: fill">
             {% endif %}

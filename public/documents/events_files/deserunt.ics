@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:620f93d0ddd06
+DTSTAMP;TZID=Europe/Paris:20220218T134048
+SUMMARY:deserunt
+DESCRIPTION:Molestias ratione vero autem qui cum. Aspernatur qui aliquid qu
+ is. Rerum velit deleniti voluptates voluptatibus accusamus odit quos fugit
+ . Nobis aut temporibus aut voluptas repellat omnis. A debitis temporibus e
+ um error. Voluptatem dolor et laborum vel quod cumque beatae. Saepe sit ea
+  aliquam consequatur repudiandae accusantium.
+LOCATION:chemin Mallet\, 73 612 Bonnet\, Bonnet
+DTSTART;TZID=Europe/Paris:20220316T190753
+DTEND;TZID=Europe/Paris:20220316T190753
+END:VEVENT
+END:VCALENDAR

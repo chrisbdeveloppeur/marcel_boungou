@@ -17,14 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6207bab38bc72
-DTSTAMP;TZID=Europe/Paris:20220212T144835
+UID:620f93cfd0f34
+DTSTAMP;TZID=Europe/Paris:20220218T134047
 SUMMARY:a
-DESCRIPTION:Eos modi excepturi dolorem. Rerum earum consequatur magni in. P
- laceat itaque qui aperiam eligendi repellendus accusamus. Pariatur aut bla
- nditiis nemo.
-LOCATION:73\, avenue Bouchet\, 92 297 Regnier\, Regnier
-DTSTART;TZID=Europe/Paris:20220215T000941
-DTEND;TZID=Europe/Paris:20220215T000941
+DESCRIPTION:Repellat minus occaecati labore et molestiae et. Eligendi volup
+ tates et id qui iste. Sed a est error magnam. Eum magni quasi eum. Omnis p
+ ossimus praesentium delectus id fugit corrupti ea. Porro exercitationem ac
+ cusamus mollitia perspiciatis officiis perspiciatis.
+LOCATION:rue Marques\, 20 526 Marques-sur-Berthelot\, Marques-sur-Berthelot
+DTSTART;TZID=Europe/Paris:20220216T103052
+DTEND;TZID=Europe/Paris:20220216T103052
 END:VEVENT
 END:VCALENDAR

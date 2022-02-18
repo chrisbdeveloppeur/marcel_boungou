@@ -50,7 +50,7 @@ class EventType extends AbstractType
                 'required' => false,
                 'download_link' => false,
                 'allow_delete' => false,
-                'help' => 'jpeg, jpg, bmp, png, '.$this->translator->trans('(recommended ratio : 640x320)'),
+                'help' => 'jpeg, bmp, png, svg '.$this->translator->trans('(recommended ratio : 640x320)'),
             ])
             ->add('country', TextType::class,[
                 'required' => true,

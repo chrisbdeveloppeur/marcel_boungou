@@ -549,6 +549,18 @@
         <source>Add to my calendar</source>
         <target>Ajouter à mon calendrier</target>
       </trans-unit>
+      <trans-unit id="97kb2EV" resname="Back to Events home">
+        <source>Back to Events home</source>
+        <target>Retour à l'accueil des événements</target>
+      </trans-unit>
+      <trans-unit id="bnJJmqD" resname="All Events">
+        <source>All Events</source>
+        <target>Tous les événements</target>
+      </trans-unit>
+      <trans-unit id="8FiXwhL" resname="To be reminded">
+        <source>To be reminded</source>
+        <target>Être rappelé</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -76,12 +76,17 @@ class EventsController extends AbstractController
             $this->calendarController->createIcsFile($event->getId());
             $msg = $this->translator->trans('Event <b>'.$event->getTitle().'</b> created with success');
             $this->addFlash('success',$msg);
-            return $this->redirectToRoute('events_index', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('events_home', [], Response::HTTP_SEE_OTHER);
         }
 
+        $redirect_link = $this->redirectToRoute('events_home')->getTargetUrl();
         return $this->render('event/new.html.twig', [
             'event' => $event,
             'form' => $form->createView(),
+            'redirect' => [
+                'link' => $redirect_link,
+                'txt' => $this->translator->trans('Back to Events home'),
+            ]
         ]);
     }
 
@@ -110,12 +115,17 @@ class EventsController extends AbstractController
             $this->addFlash('info', $this->translator->trans('Changes made successfully'));
             $previousUrl = $request->headers->get('referer');
             return $this->redirect($previousUrl);
-            //return $this->redirectToRoute('events_index', [], Response::HTTP_SEE_OTHER);
+            //return $this->redirectToRoute('events_home', [], Response::HTTP_SEE_OTHER);
         }
 
+        $redirect_link = $this->redirectToRoute('events_home')->getTargetUrl();
         return $this->render('event/edit.html.twig', [
             'event' => $event,
             'form' => $form->createView(),
+            'redirect' => [
+                'link' => $redirect_link,
+                'txt' => $this->translator->trans('Back to Events home'),
+            ]
         ]);
     }
 
@@ -130,7 +140,7 @@ class EventsController extends AbstractController
             $entityManager->flush();
         }
 
-        return $this->redirectToRoute('events_index', [], Response::HTTP_SEE_OTHER);
+        return $this->redirectToRoute('events_home', [], Response::HTTP_SEE_OTHER);
     }
 
 
@@ -153,7 +163,7 @@ class EventsController extends AbstractController
                 $this->addFlash('success', $msg);
             }
 
-            return $this->redirectToRoute('events_index');
+            return $this->redirectToRoute('events_home');
         }
     }
 
@@ -178,10 +188,10 @@ class EventsController extends AbstractController
                 $em->flush();
                 $this->addFlash('success', $msg);
             }
-            return $this->redirectToRoute('events_index');
+            return $this->redirectToRoute('events_home');
         }
 
-        $redirect_link = $this->redirectToRoute('events_index')->getTargetUrl();
+        $redirect_link = $this->redirectToRoute('events_home')->getTargetUrl();
         $form_title = $translator->trans('You are about to unsubscribe for the event reminder : ') .'<b>'. $event->getTitle() .'</b>';
         return $this->render('themes/just_the_form.html.twig',[
             'form' => $form->createView(),

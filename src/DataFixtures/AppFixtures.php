@@ -22,10 +22,10 @@ class AppFixtures extends Fixture
 
         date_default_timezone_set('Europe/Paris');
         $date = new \DateTime('yesterday');
-        for ($e = 1; $e <= 10; $e++){
+        for ($e = -1; $e <= 10; $e++){
             $event = new Event();
             $time = $faker->time();
-            $event->setDatetime($date->modify('+1 day ' . $time));
+            $event->setDatetime($date->modify('+'.$e.' day ' . $time));
             $event->setTitle($faker->word);
             $event->setCountry($faker->country);
             $event->setCity($faker->city);

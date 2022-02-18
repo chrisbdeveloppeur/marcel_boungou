@@ -7,36 +7,40 @@
         <div class="container">
             <div class="columns is-multiline is-centered">
                 {% for event in events %}
-                    <div class="column is-narrow is-one-quarter-desktop is-half-tablet">
-                        <div class="card">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <figure class="image is-48x48">
-                                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+{#                    <p class="has-text-white">#}
+                        {% if event.datetime|date >= "now"|date %}
+                            <div class="column is-narrow is-one-third-desktop is-half-tablet is-relative scalup-hover">
+                                <a href="{{ path('events_show', {'id': event.id}) }}" style="position: absolute;top: 0; left: 0;width: 100%; height: 100%;z-index: 1;"></a>
+                                <div class="card is-relative">
+                                    {% if is_granted('ROLE_ADMIN') %}
+                                        {{ include('event/edit_event_button.html.twig') }}
+                                    {% endif %}
+                                    <div class="card-image">
+                                        <figure class="image is-2by1">
+                                            {% if event.image %}
+                                                <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="Placeholder image">
+                                            {% else %}
+                                                <img src="{{ asset('build/images/640x320.4ecf1ab8.png') }}" alt="Placeholder image">
+                                            {% endif %}
                                         </figure>
                                     </div>
-                                    <div class="media-content">
-                                        <p class="title is-4">John Smith</p>
-                                        <p class="subtitle is-6">@johnsmith</p>
+                                    <div class="card-content">
+                                        <div class="content">
+                                            <div class="has-text-centered">
+                                                <b>{{ event }}</b>
+                                            </div>
+                                            <hr class="has-background-black" style="height: 1px">
+                                            <time datetime="{{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}">{{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}</time>
+                                            <br><br>
+                                            {{ event.street }}<br>
+                                            {{ event.cp }}, {{ event.city }}<br>
+                                            {{ event.country }}<br>
+                                        </div>
                                     </div>
                                 </div>
-
-                                <div class="content">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                    <a href="#">#css</a> <a href="#">#responsive</a>
-                                    <br>
-                                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                                </div>
                             </div>
-                        </div>
-                    </div>
+                        {% endif %}
+{#                    </p>#}
                 {% endfor %}
             </div>
         </div>
