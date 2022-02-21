@@ -18,11 +18,12 @@
         </thead>
         <tbody>
         {% for music in music %}
+            {{ music.MusicName }}
             <tr>
                 <td>{{ music.id }}</td>
                 <td>{{ music.titre }}</td>
                 <td>{{ music.duration }}</td>
-                <td>{{ music.musicName }}</td>
+                <td>{{ music.MusicName }}</td>
                 <td>{{ music.createdDate ? music.createdDate|date('Y-m-d') : '' }}</td>
                 <td>
                     <a href="{{ path('music_show', {'id': music.id}) }}">show</a>

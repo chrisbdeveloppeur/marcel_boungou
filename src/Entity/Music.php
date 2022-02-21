@@ -11,6 +11,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=MusicRepository::class)
+ * @Vich\Uploadable
  */
 class Music
 {
@@ -119,7 +120,7 @@ class Music
      */
     public function getMusicName(): ?string
     {
-        return $this->musicFile;
+        return $this->musicName;
     }
 
     /**

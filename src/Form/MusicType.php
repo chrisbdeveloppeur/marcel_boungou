@@ -9,6 +9,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Contracts\Translation\TranslatorInterface;
+use Vich\UploaderBundle\Form\Type\VichFileType;
 
 class MusicType extends AbstractType
 {
@@ -28,7 +29,7 @@ class MusicType extends AbstractType
                 ]
             ])
 
-            ->add('musicFile', FileType::class, [
+            ->add('musicFile', VichFileType::class, [
                 'label' => false,
                 'required' => false,
                 'attr' => [
