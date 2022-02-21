@@ -13,7 +13,7 @@
     {% block stylesheets %}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-calendar@6.1.14/dist/css/bulma-calendar.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.24/dist/css/bulma-carousel.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://www.jsdelivr.com/package/npm/@creativebulma/bulma-tagsinput/dist/css/bulma-tagsinput.min.css" />
+        <!--  <link rel="stylesheet" href="https://www.jsdelivr.com/package/npm/@creativebulma/bulma-tagsinput/dist/css/bulma-tagsinput.min.css" /> -->
         {{ encore_entry_link_tags('app') }}
     {% endblock %}
 
@@ -61,7 +61,7 @@
 {# BULMA CAROUSEL #}
 <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.24/dist/js/bulma-carousel.min.js"></script>
 {# BULMA TAGS INPUT #}
-<script src="https://www.jsdelivr.com/package/npm/@creativebulma/bulma-tagsinput/dist/js/bulma-tagsinput.min.js"></script>
+<!-- <script src="https://www.jsdelivr.com/package/npm/@creativebulma/bulma-tagsinput/dist/js/bulma-tagsinput.min.js"></script> -->
 
 
 <script>
@@ -107,6 +107,7 @@
         });
     }
 
+    {#     SCRIPT POUR AFFICHER OU NON LE PASSWORD D'UN FORMULAIRE    #}
     let showPasswordBtn = document.querySelectorAll('.show-password');
     showPasswordBtn.forEach(function (el) {
             el.addEventListener('click', function (){
@@ -137,6 +138,8 @@
         }
     });
 
+
+    // Animation de rotation X pour les element de la class associés
     let rotationXItems = document.querySelectorAll('.rotationX');
     rotationXItems.forEach(function (el) {
         el.addEventListener('mouseenter', function () {
@@ -149,6 +152,7 @@
             });
         })
     });
+    // Animation de rotation Y pour les element de la class associés
     let rotationYItems = document.querySelectorAll('.rotationY');
     rotationYItems.forEach(function (el) {
         el.addEventListener('mouseenter', function () {
@@ -163,6 +167,12 @@
     });
 
 
+    let fileInputs = document.querySelectorAll('.file-input');
+    fileInputs.forEach(function (input) {
+        input.addEventListener('change', function () {
+            input.parentElement.parentElement.querySelector(".file-name").innerText = this.files[0].name;
+        });
+    })
 
 
 

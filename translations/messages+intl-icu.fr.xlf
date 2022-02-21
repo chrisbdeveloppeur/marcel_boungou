@@ -561,6 +561,34 @@
         <source>To be reminded</source>
         <target>Être rappelé</target>
       </trans-unit>
+      <trans-unit id="Yd1nE8p" resname="Select an audio file...">
+        <source>Select an audio file...</source>
+        <target>Sélectionnez un fichier audio...</target>
+      </trans-unit>
+      <trans-unit id="tFbm1a5" resname="Reservation">
+        <source>Reservation</source>
+        <target>Réservation</target>
+      </trans-unit>
+      <trans-unit id="IiRNlDw" resname="All next events">
+        <source>All next events</source>
+        <target>Tous les prochains événements</target>
+      </trans-unit>
+      <trans-unit id="yLgNpJf" resname="Events lobby">
+        <source>Events lobby</source>
+        <target>Menu des événements</target>
+      </trans-unit>
+      <trans-unit id="e3Xb_.q" resname="Select a file">
+        <source>Select a file</source>
+        <target>Sélectionner un fichier</target>
+      </trans-unit>
+      <trans-unit id="tnYHvNV" resname="Select an image file...">
+        <source>Select an image file...</source>
+        <target>Sélectionnez un fichier image...</target>
+      </trans-unit>
+      <trans-unit id="tGw4V8w" resname="(recommended ratio : 720x240)">
+        <source>(recommended ratio : 720x240)</source>
+        <target>(ratio recommandé : 720x240)</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

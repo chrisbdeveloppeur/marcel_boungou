@@ -62,7 +62,11 @@
                     <i class="fas fa-upload"></i>
                 </span>
                 <span class="file-label">
-                    Choisir une image…
+                    {% if child.vars.attr['extra-data'] is defined %}
+                        {{ child.vars.attr['extra-data'] }}
+                    {% else %}
+                        {% trans %}Select a file{% endtrans %}
+                    {% endif %}
                 </span>
             </span>
             <span class="file-name">

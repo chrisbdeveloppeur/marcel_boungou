@@ -3,9 +3,11 @@
 {% block title %}New Music{% endblock %}
 
 {% block body %}
+
+<div class="column is-two-fifths-desktop is-two-thirds-tablet has-background-light">
     <h1>Create new Music</h1>
 
-    {{ include('music/_form.html.twig') }}
+    {{ include('themes/_form.html.twig') }}
+</div>
 
-    <a href="{{ path('music_index') }}">back to list</a>
 {% endblock %}

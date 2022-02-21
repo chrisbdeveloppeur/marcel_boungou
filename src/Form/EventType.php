@@ -44,12 +44,13 @@ class EventType extends AbstractType
                 'label' => $this->translator->trans('Image'),
                 'attr' => [
                     'class' => 'file-input',
-                    'onchange' => 'this.parentElement.parentElement.querySelector(".file-name").innerText = this.files[0].name;',
+                    //'onchange' => 'this.parentElement.parentElement.querySelector(".file-name").innerText = this.files[0].name;',
+                    'data-extra' => $this->translator->trans('Select an image file...')
                 ],
                 'required' => false,
                 'download_link' => false,
                 'allow_delete' => false,
-                'help' => 'jpeg, bmp, png, svg '.$this->translator->trans('(recommended ratio : 640x320)'),
+                'help' => 'jpeg, bmp, png, svg '.$this->translator->trans('(recommended ratio : 720x240)'),
             ])
             ->add('country', TextType::class,[
                 'required' => true,
