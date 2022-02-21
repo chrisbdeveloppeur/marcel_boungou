@@ -132,8 +132,8 @@
         }
     });
 
-    let rotationItems = document.querySelectorAll('.rotationX');
-    rotationItems.forEach(function (el) {
+    let rotationXItems = document.querySelectorAll('.rotationX');
+    rotationXItems.forEach(function (el) {
         el.addEventListener('mouseenter', function () {
             this.firstElementChild.style.WebkitTransitionDuration='.5s';
             this.firstElementChild.style.webkitTransform = 'rotateX(360deg)';
@@ -143,7 +143,21 @@
                 el.firstElementChild.style.webkitTransform = 'none';
             });
         })
+    });
+    let rotationYItems = document.querySelectorAll('.rotationY');
+    rotationYItems.forEach(function (el) {
+        el.addEventListener('mouseenter', function () {
+            this.firstElementChild.style.WebkitTransitionDuration='.5s';
+            this.firstElementChild.style.webkitTransform = 'rotateY(360deg)';
+        }, false);
+        el.addEventListener('mouseleave', function () {
+            setTimeout(function () {
+                el.firstElementChild.style.webkitTransform = 'none';
+            });
+        })
     })
+
+
 
 </script>
 

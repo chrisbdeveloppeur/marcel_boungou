@@ -31,7 +31,7 @@
                 {% for event in events %}
 {#                    <p class="has-text-white">#}
                         {% if event.datetime|date >= "now"|date %}
-                            <div class="column is-narrow is-one-third-desktop is-half-tablet is-relative">
+                            <div class="column is-narrow is-one-third-desktop is-half-tablet is-relative scalup-hover transition-3ms">
                                 <a class="px-3 py-3 button is-small is-rounded is-success" style="position: absolute;top: 0; right: 0;z-index: 1;" onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
                                     <span class="icon">
                                         <i class="fas fa-info"></i>
