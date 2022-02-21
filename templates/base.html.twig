@@ -132,6 +132,19 @@
         }
     });
 
+    let rotationItems = document.querySelectorAll('.rotationX');
+    rotationItems.forEach(function (el) {
+        el.addEventListener('mouseenter', function () {
+            this.firstElementChild.style.WebkitTransitionDuration='.5s';
+            this.firstElementChild.style.webkitTransform = 'rotateX(360deg)';
+        }, false);
+        el.addEventListener('mouseleave', function () {
+            setTimeout(function () {
+                el.firstElementChild.style.webkitTransform = 'none';
+            });
+        })
+    })
+
 </script>
 
 {% block javascripts %}

@@ -149,6 +149,14 @@ section.body{
   font-family: $title-font;
 }
 
+//.rotationX:hover{
+//  animation: rotationX 1s;
+//}
+
+a{
+  animation-iteration-count: 1
+}
+
 .flash-msg
 {
   position: fixed;
@@ -444,6 +452,15 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   }
   20% {
     transform: translateY(-10px)
+  }
+}
+
+@keyframes rotationX {
+  0% {
+    transform: rotateX(0)
+  }
+  100% {
+    transform: rotateX(360deg)
   }
 }
 
