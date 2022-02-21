@@ -42,6 +42,9 @@
                                         {{ include('event/edit_event_button.html.twig') }}
                                     {% endif %}
                                     <div class="card-image">
+                                        <div class="column has-background-success-light has-text-success has-text-centered has-text-weight-bold is-uppercase">
+                                            {{ event }}
+                                        </div>
                                         <figure class="image is-3by1">
                                             {% if event.image %}
                                                 <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="Placeholder image">
@@ -52,7 +55,6 @@
                                     </div>
 
                                     <div class="column has-background-black slider-container-child px-0 py-0">
-
                                         {% if event.ticketingLink %}
                                             <div class="column is-flex is-justify-content-center is-align-items-center">
                                                 <a href="{{ event.ticketingLink }}" target="_blank" class="button is-fullwidth is-success is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center">
@@ -126,6 +128,16 @@
 {#                    </p>#}
                 {% endfor %}
             </div>
+
+            <a href="{{ path('events_home') }}" class="button is-primary">
+                <span class="icon">
+                    <i class="fas fa-lg fa-caret-left"></i>
+                </span>
+                <span>
+                    {% trans %}Events lobby{% endtrans %}
+                </span>
+            </a>
+
         </div>
     </section>
 {% endblock %}
