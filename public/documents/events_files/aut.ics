@@ -17,14 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213b63b94112
-DTSTAMP;TZID=Europe/Paris:20220221T165643
+UID:6213fcf66926d
+DTSTAMP;TZID=Europe/Paris:20220221T215830
 SUMMARY:aut
-DESCRIPTION:Voluptatem et eius omnis corporis natus excepturi itaque aperia
- m. Sint doloremque sit tempore eius rerum. In aut ut eligendi quasi cum. I
- llo deleniti quae similique non. Porro sint et exercitationem sapiente.
-LOCATION:65\, place de Hamon\, 54 402 Legendre\, Legendre
-DTSTART;TZID=Europe/Paris:20220405T212206
-DTEND;TZID=Europe/Paris:20220405T212206
+DESCRIPTION:Inventore quis quisquam sed est ipsa. Neque ea culpa cupiditate
+  quidem labore. Error aut sunt ab quia. Asperiores inventore vel qui illum
+  distinctio minus qui commodi. Natus expedita tenetur facilis. Dolore tota
+ m sequi possimus. Atque fugiat est fugiat qui quis.
+LOCATION:206\, rue de Gimenez\, 90 345 Etienne\, Etienne
+DTSTART;TZID=Europe/Paris:20220301T172322
+DTEND;TZID=Europe/Paris:20220301T172322
 END:VEVENT
 END:VCALENDAR

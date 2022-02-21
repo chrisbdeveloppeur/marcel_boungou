@@ -17,18 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62137842938db
-DTSTAMP;TZID=Europe/Paris:20220221T123218
+UID:6213fd17d1470
+DTSTAMP;TZID=Europe/Paris:20220221T215903
 SUMMARY:id
-DESCRIPTION:Blanditiis adipisci magnam libero ea omnis minus ea. Veritatis 
- qui facere eligendi eum dolor dolore minima. Saepe explicabo blanditiis ma
- xime qui molestiae ex. Nisi quisquam aut accusamus iure iusto quaerat prov
- ident. Inventore et qui perferendis quibusdam quas vero ut perspiciatis. O
- fficiis quis repellendus voluptatem ut aspernatur similique expedita. Dolo
- res possimus fugiat sit est. Quae officiis eius deleniti ratione incidunt 
- ea. Unde sunt odio dolorum tempore.
-LOCATION:332\, boulevard Humbert\, 21875 Regnier\, Regnier
-DTSTART;TZID=Europe/Paris:20220222T101926
-DTEND;TZID=Europe/Paris:20220222T101926
+DESCRIPTION:Unde placeat dolorem eligendi distinctio in facere in. Inventor
+ e commodi voluptatem impedit. Tempora distinctio dolorem et odio velit.
+LOCATION:105\, rue Poirier\, 12 920 Boucher-la-Forêt\, Boucher-la-Forêt
+DTSTART;TZID=Europe/Paris:20220225T160637
+DTEND;TZID=Europe/Paris:20220225T160637
 END:VEVENT
 END:VCALENDAR

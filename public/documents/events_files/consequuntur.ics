@@ -17,15 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62137295a21f8
-DTSTAMP;TZID=Europe/Paris:20220221T120805
+UID:6213fccd4a1d9
+DTSTAMP;TZID=Europe/Paris:20220221T215749
 SUMMARY:consequuntur
-DESCRIPTION:Dignissimos eos autem illum tempora consequatur voluptate quae 
- consectetur. Et omnis aperiam omnis id nihil labore. Et qui eligendi esse 
- minus voluptas saepe. Voluptas voluptatibus aperiam est deserunt deleniti 
- deserunt. Expedita est sapiente deleniti dignissimos deserunt.
-LOCATION:63\, place Guyot\, 84190 Dumasboeuf\, Dumasboeuf
-DTSTART;TZID=Europe/Paris:20220219T114940
-DTEND;TZID=Europe/Paris:20220219T114940
+DESCRIPTION:Deserunt quia ipsam aut cum sunt. Iste totam et aut. In repelle
+ ndus laudantium dolores aut dolorem. Ducimus non perferendis asperiores et
+  aut nam. Maiores assumenda commodi et aut. Fugit quibusdam similique nisi
+  velit blanditiis deserunt non. In architecto magni accusamus minus. Quae 
+ consequuntur non explicabo. Reprehenderit pariatur et iusto praesentium au
+ t est quibusdam facilis.
+LOCATION:74\, rue de Prevost\, 30637 Becker\, Becker
+DTSTART;TZID=Europe/Paris:20220301T165905
+DTEND;TZID=Europe/Paris:20220301T165905
 END:VEVENT
 END:VCALENDAR

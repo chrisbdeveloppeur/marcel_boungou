@@ -17,18 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213a55146b65
-DTSTAMP;TZID=Europe/Paris:20220221T154433
+UID:6213fcf658bda
+DTSTAMP;TZID=Europe/Paris:20220221T215830
 SUMMARY:enim
-DESCRIPTION:Quos sit architecto sint et porro placeat rerum. Minima ducimus
-  possimus labore qui atque sed non. Est error et odio sint. Rerum enim nis
- i est quis. Natus ea dignissimos possimus natus id enim. Consequatur numqu
- am consequuntur placeat aut. Velit asperiores qui hic ab excepturi quasi i
- taque. Hic omnis quod consequatur consequuntur. Odio molestiae consequatur
-  non voluptatum at doloremque. Quam tenetur ullam dolorem. Hic esse at sed
-  nihil officiis fuga inventore.
-LOCATION:rue Roger Legrand\, 73 408 Boulay\, Boulay
-DTSTART;TZID=Europe/Paris:20220327T051058
-DTEND;TZID=Europe/Paris:20220327T051058
+DESCRIPTION:Qui unde et id explicabo quis nisi quam. Similique aliquam odio
+  fuga assumenda est voluptatem error. Perspiciatis perspiciatis voluptas e
+ st temporibus perspiciatis accusamus vel. Quam impedit numquam quaerat qui
+  reprehenderit repudiandae aut voluptatem.
+LOCATION:30\, chemin de Nicolas\, 21828 Dupuis\, Dupuis
+DTSTART;TZID=Europe/Paris:20220219T033103
+DTEND;TZID=Europe/Paris:20220219T033103
 END:VEVENT
 END:VCALENDAR

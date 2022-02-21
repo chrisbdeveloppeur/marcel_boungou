@@ -17,14 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213a529d5b9c
-DTSTAMP;TZID=Europe/Paris:20220221T154353
+UID:6213fd17d7c1d
+DTSTAMP;TZID=Europe/Paris:20220221T215903
 SUMMARY:omnis
-DESCRIPTION:Ut illo nostrum qui accusamus. Ut corrupti voluptas excepturi v
- ero. Eveniet sunt quia aperiam dolorem distinctio. Et et delectus earum qu
- ae.
-LOCATION:46\, rue Dijoux\, 47 544 MilletVille\, MilletVille
-DTSTART;TZID=Europe/Paris:20220327T164918
-DTEND;TZID=Europe/Paris:20220327T164918
+DESCRIPTION:Rerum iusto sunt nihil et. Iure repellat odit voluptatem enim v
+ oluptatibus. Cum non et eum velit ad esse sit. Nesciunt in iusto quia ex r
+ atione est. Et exercitationem commodi et laborum id. Repellat sequi aliqui
+ d est id.
+LOCATION:719\, chemin Fabre\, 40819 Fournier\, Fournier
+DTSTART;TZID=Europe/Paris:20220327T184604
+DTEND;TZID=Europe/Paris:20220327T184604
 END:VEVENT
 END:VCALENDAR

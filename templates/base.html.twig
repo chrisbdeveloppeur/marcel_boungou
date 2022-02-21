@@ -170,9 +170,34 @@
     let fileInputs = document.querySelectorAll('.file-input');
     fileInputs.forEach(function (input) {
         input.addEventListener('change', function () {
+            console.log(this.files[0]);
             input.parentElement.parentElement.querySelector(".file-name").innerText = this.files[0].name;
         });
-    })
+    });
+
+
+    let playBtns = document.querySelectorAll('.play-btn');
+    playBtns.forEach(function (btn) {
+        btn.addEventListener('click', function (targ) {
+            let audio = btn.parentElement.querySelector('audio');
+            let target = targ.currentTarget;
+            let audioTarget = target.parentElement.querySelector('audio');
+
+            playBtns.forEach(function (el) {
+                var audio = el.parentElement.querySelector('audio');
+                audio.pause();
+            });
+
+            console.log('audio.paused status : ' + audio.paused);
+            if (audio.paused === false){
+                console.log('pause audio');
+                audio.pause();
+            }else {
+                console.log('start audio');
+                audio.play()
+            }
+        })
+    });
 
 
 

@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6213fccd522aa
+DTSTAMP;TZID=Europe/Paris:20220221T215749
+SUMMARY:architecto
+DESCRIPTION:Delectus sapiente et autem autem ipsa quo nostrum. Aut perferen
+ dis ut doloribus. Molestiae aspernatur blanditiis ducimus non voluptas a a
+ ut. Possimus quod at illum sit ut culpa et. Iure doloremque ab id reprehen
+ derit optio. Nam et reprehenderit dicta qui asperiores. Iusto quo sunt ven
+ iam ipsum. Voluptas voluptas voluptatem voluptatem dolores voluptatem accu
+ samus autem. Eveniet voluptatibus omnis accusantium eos quis nesciunt sequ
+ i.
+LOCATION:99\, impasse Isabelle Salmon\, 34 883 Roy-sur-Guillon\, Roy-sur-Gu
+ illon
+DTSTART;TZID=Europe/Paris:20220405T035412
+DTEND;TZID=Europe/Paris:20220405T035412
+END:VEVENT
+END:VCALENDAR

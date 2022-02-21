@@ -17,14 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213b63b0c9e9
-DTSTAMP;TZID=Europe/Paris:20220221T165643
+UID:6213fd17d9143
+DTSTAMP;TZID=Europe/Paris:20220221T215903
 SUMMARY:sint
-DESCRIPTION:Deleniti et eos explicabo aut amet quis. Aliquid qui quod occae
- cati non. Aut sequi ut delectus. Sunt fuga accusamus illum vel illo dolor.
-  Quia et laudantium exercitationem doloribus nam perspiciatis.
-LOCATION:rue Gilbert\, 57444 Allain\, Allain
-DTSTART;TZID=Europe/Paris:20220219T032806
-DTEND;TZID=Europe/Paris:20220219T032806
+DESCRIPTION:Ut soluta quidem omnis consequatur voluptas dolor et. Nesciunt 
+ ullam ut labore fugiat in placeat libero. Accusamus aut a omnis eos molest
+ ias. Ut optio quia non.
+LOCATION:14\, impasse de Boutin\, 82890 Devaux\, Devaux
+DTSTART;TZID=Europe/Paris:20220405T224829
+DTEND;TZID=Europe/Paris:20220405T224829
 END:VEVENT
 END:VCALENDAR

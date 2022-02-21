@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6213fcf672163
+DTSTAMP;TZID=Europe/Paris:20220221T215830
+SUMMARY:quaerat
+DESCRIPTION:Et quos dicta cumque corporis consequatur dolor expedita. Solut
+ a corporis soluta recusandae inventore laudantium commodi nemo. Id dolorem
+  nihil aut facilis eos. Eaque vitae aut quo voluptate qui dolor voluptas. 
+ Sit sapiente rem recusandae corrupti animi et ullam. Est laboriosam dolore
+ m expedita possimus vero quo unde.
+LOCATION:5\, impasse Leveque\, 55 927 Masson\, Masson
+DTSTART;TZID=Europe/Paris:20220405T063035
+DTEND;TZID=Europe/Paris:20220405T063035
+END:VEVENT
+END:VCALENDAR

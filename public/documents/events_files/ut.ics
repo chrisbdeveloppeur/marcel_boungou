@@ -17,14 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213a56c98a40
-DTSTAMP;TZID=Europe/Paris:20220221T154500
+UID:6213fcf664ee4
+DTSTAMP;TZID=Europe/Paris:20220221T215830
 SUMMARY:ut
-DESCRIPTION:Dolores nostrum dolore unde quia enim cum. Sint tempore dolorem
-  odit quo. Optio similique in sint delectus odit eum. Expedita officiis ve
- lit repudiandae maiores dicta suscipit.
-LOCATION:36\, boulevard Jules Rossi\, 09 883 Guillot\, Guillot
-DTSTART;TZID=Europe/Paris:20220222T095815
-DTEND;TZID=Europe/Paris:20220222T095815
+DESCRIPTION:Placeat esse nihil itaque ex sint eos. Dicta asperiores dicta e
+ t et. Id et eius ipsa aspernatur minima expedita alias non.
+LOCATION:53\, place de Legrand\, 15 010 Pires\, Pires
+DTSTART;TZID=Europe/Paris:20220220T180942
+DTEND;TZID=Europe/Paris:20220220T180942
 END:VEVENT
 END:VCALENDAR

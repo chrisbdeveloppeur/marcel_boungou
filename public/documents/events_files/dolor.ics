@@ -17,13 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621374219b184
-DTSTAMP;TZID=Europe/Paris:20220221T121441
+UID:6213fccd417df
+DTSTAMP;TZID=Europe/Paris:20220221T215749
 SUMMARY:dolor
-DESCRIPTION:Accusamus ut nihil exercitationem nihil. Sint rerum et quia in.
-  Quo nulla vero expedita odio.
-LOCATION:914\, rue de Collet\, 97208 Regnier-la-Forêt\, Regnier-la-Forêt
-DTSTART;TZID=Europe/Paris:20220306T175323
-DTEND;TZID=Europe/Paris:20220306T175323
+DESCRIPTION:Et dolorem odio ullam consequatur. Deserunt nisi non sint incid
+ unt amet. Et quos libero eligendi et voluptas esse. Fuga tempore laudantiu
+ m ducimus eum ipsam et. Voluptatem molestiae inventore eveniet hic ut. Min
+ us omnis aut nihil dignissimos aspernatur accusantium voluptas. Cupiditate
+  consequatur voluptatibus ut quia perspiciatis.
+LOCATION:79\, boulevard Alphonse Peron\, 77431 De Oliveira-sur-Mer\, De Oli
+ veira-sur-Mer
+DTSTART;TZID=Europe/Paris:20220219T035502
+DTEND;TZID=Europe/Paris:20220219T035502
 END:VEVENT
 END:VCALENDAR

@@ -4,6 +4,7 @@ namespace App\DataFixtures;
 
 use App\Controller\CalendarController;
 use App\Entity\Event;
+use App\Entity\Music;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use Faker;
@@ -42,6 +43,15 @@ class AppFixtures extends Fixture
             $manager->persist($event);
             $manager->flush();
             $this->calendar->createIcsFile($event->getId());
+        }
+
+        for ($e = -1; $e <= 10; $e++){
+            $music = new Music();
+            $music->setTitre($faker->word);
+            $music->setCreatedDate(new \DateTime('now'));
+            $music->setMusicName('zola-ye-yenge.mp3');
+            $manager->persist($music);
+            $manager->flush();
         }
 
     }
