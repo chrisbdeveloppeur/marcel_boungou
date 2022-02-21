@@ -3,6 +3,17 @@
 {% block title %}{% trans %}All Events{% endtrans %}{% endblock %}
 
 {% block body %}
+
+    {% for event in events %}
+        <div class="modal" id="modalEvent{{ event.id }}">
+            <div class="modal-background" onclick="this.parentElement.classList.remove('is-active')"></div>
+            <div class="modal-content box has-background-primary">
+                {{ include('event/modal_event_details.html.twig') }}
+            </div>
+            <button class="modal-close is-large" aria-label="close" onclick="this.parentElement.classList.remove('is-active')"></button>
+        </div>
+    {% endfor %}
+
     <section class="section">
         <div class="container">
             <div class="column px-0">
@@ -21,7 +32,7 @@
 {#                    <p class="has-text-white">#}
                         {% if event.datetime|date >= "now"|date %}
                             <div class="column is-narrow is-one-third-desktop is-half-tablet is-relative scalup-hover">
-                                <a href="{{ path('events_show', {'id': event.id}) }}" style="position: absolute;top: 0; left: 0;width: 100%; height: 100%;z-index: 1;"></a>
+                                <a style="position: absolute;top: 0; left: 0;width: 100%; height: 100%;z-index: 1;" onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')"></a>
                                 <div class="card is-relative">
                                     {% if is_granted('ROLE_ADMIN') %}
                                         {{ include('event/edit_event_button.html.twig') }}

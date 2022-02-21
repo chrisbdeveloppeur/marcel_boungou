@@ -1,0 +1,54 @@
+<div class="column px-0 py-0">
+    <figure class="image is-3by1">
+        {% if events[0].image %}
+            <img src="{{ vich_uploader_asset(events[0], 'imageFile') }}" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
+            {#                                <img src="{{ events[0].image }}" alt="" style="height: 100%;max-height: 100%;object-fit: fill">#}
+        {% else %}
+            <img src="{{ asset('build/images/720x240.8013db28.png') }}" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
+        {% endif %}
+    </figure>
+    <div class="is-flex is-justify-content-space-between">
+        <h3 class="subtitle has-text-centered"><b>{{ event }}</b></h3>
+        <a href="{{ asset('documents/events_files/') }}{{ event.icsFile }}" target="_blank" download="{{ event.icsFile }}" type=".ics" class="addToCalendar button is-primary" title="{% trans %}Add to Calendar{% endtrans %}">
+            <span class="icon">
+                <i class="fas fa-lg fa-calendar-day"></i>
+            </span>
+            <span>
+                {% trans %}Add to my calendar{% endtrans %}
+            </span>
+        </a>
+    </div>
+
+    <div class="">
+        <span class="help">
+            <span class="icon">
+                <i class="fas fa-info-circle"></i>
+            </span>
+            {% trans %}By subscribing to this service, you will receive reminder emails until the day of the event{% endtrans %}.<br>
+            {% trans %} (1 month / 1 week / 1 day before){% endtrans %}<br>
+        </span>
+    </div>
+    <form action="{{ path('events_add_email_reminder', {'id': event.id}) }}" method="post" class="column pb-0 pt-3 px-0">
+        <div class="field">
+            <input type="email" class="input has-text-centered" placeholder="{% trans %}my@email.com{% endtrans %}" name="email" required>
+        </div>
+        <div class="is-flex is-justify-content-end">
+            <a href="{{ path('events_remove_email_reminder', {'id': event.id}) }}" class="button is-success is-light">
+                <span class="icon">
+                    <i class="far fa-bell-slash"></i>
+                </span>
+                <span>
+                    {% trans %}remove reminder{% endtrans %}
+                </span>
+            </a>
+            <button class="button is-success">
+                <span class="icon">
+                    <i class="far fa-bell"></i>
+                </span>
+                <span>
+                    {% trans %}Subscribe{% endtrans %}
+                </span>
+            </button>
+        </div>
+    </form>
+</div>

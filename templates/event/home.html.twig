@@ -7,7 +7,7 @@
         <div class="modal" id="modalEvent{{ event.id }}">
             <div class="modal-background" onclick="this.parentElement.classList.remove('is-active')"></div>
             <div class="modal-content box has-background-success-light">
-                {{ include('includes/modal_event.html.twig') }}
+                {{ include('event/modal_event.html.twig') }}
             </div>
             <button class="modal-close is-large" aria-label="close" onclick="this.parentElement.classList.remove('is-active')"></button>
         </div>
@@ -65,6 +65,20 @@
                                 </h3>
                             </div>
                             <div class="column has-background-black slider-container-child is-flex-desktop is-justify-content-space-between px-0 py-0">
+
+                                {% if events[0].ticketingLink %}
+                                    <div class="column is-flex is-justify-content-center is-align-items-center">
+                                        <a href="{{ events[0].ticketingLink }}" target="_blank" class="button is-fullwidth is-height-100-percent is-success is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center">
+                                            <span class="icon is-large">
+                                                <i class="fas fa-lg fa-ticket"></i>
+                                            </span>
+                                            <span class="is-size-7-touch">
+                                                {% trans %}Reservation{% endtrans %}
+                                            </span>
+                                        </a>
+                                    </div>
+                                {% endif %}
+
                                 <div class="column is-flex px-0 py-0">
                                     <div class="column has-text-centered is-expanded has-text-success is-flex is-justify-content-center is-align-items-center">
                                         <span class="icon-text is-justify-content-center">
@@ -83,14 +97,13 @@
                                             </span>
                                         </a>
                                     </div>
-
                                 </div>
 
                                 <div class="column is-flex px-0 py-0">
                                     <div class="column has-text-centered is-expanded has-text-success is-flex is-justify-content-center is-align-items-center">
-                                        <span class="icon-text">
-                                            <span class="icon has-text-success">
-                                                <i class="fas fa-lg fa-calendar-alt is-hidden-touch"></i>
+                                        <span class="icon-text is-justify-content-center">
+                                            <span class="icon has-text-success is-hidden-touch">
+                                                <i class="fas fa-lg fa-calendar-alt"></i>
                                             </span>
                                             <span class="has-text-success-light is-size-7-touch">
                                                 {{ events[0].datetime|format_datetime('full','short',locale=app.request.locale) }}
