@@ -1,7 +1,7 @@
 <div class="column px-0 py-0">
     <div class="is-flex is-justify-content-space-between">
         <h3 class="subtitle has-text-centered"><b>{{ event }}</b></h3>
-        <a href="{{ asset('documents/events_files/') }}{{ event.icsFile }}" target="_blank" download="{{ event.icsFile }}" type=".ics" class="addToCalendar button is-primary is-light" title="{% trans %}Add to Calendar{% endtrans %}">
+        <a href="{{ asset('documents/events_files/') }}{{ event.icsFile }}" target="_blank" download="{{ event.icsFile }}" type=".ics" class="addToCalendar button is-primary" title="{% trans %}Add to Calendar{% endtrans %}">
             <span class="icon">
                 <i class="fas fa-lg fa-calendar-day"></i>
             </span>

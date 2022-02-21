@@ -409,8 +409,8 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   opacity: 0;
   //overflow: hidden;
   //text-overflow: ellipsis;
-  min-width: max-content;
-  //max-width: 150px;
+  width: max-content;
+  max-width: 50vw;
   background-color: black;
   color: white;
   text-align: center;
