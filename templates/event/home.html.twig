@@ -79,8 +79,8 @@
                                             </span>
                                         </span>
                                     </div>
-                                    <a href="https://www.google.fr/maps/search/{{ events[0].adresse }}" class="has-text-success px-2 py-2 is-flex is-justify-content-center is-align-items-center" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
-                                        <span  class="icon has-text-primary">
+                                    <a href="https://www.google.fr/maps/search/{{ events[0].adresse }}" class="button is-primary px-4 py-4 is-flex is-justify-content-center is-align-items-center is-height-100-percent" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
+                                        <span  class="icon">
                                             <i class="fas fa-lg fa-map-marker-alt"></i>
                                         </span>
                                     </a>
@@ -97,8 +97,8 @@
                                             </span>
                                         </span>
                                     </div>
-                                    <a class="has-text-success px-2 py-2 is-flex is-justify-content-center is-align-items-center"  onclick="document.querySelector('#modalEvent'+{{ events[0].id }}).classList.add('is-active')">
-                                        <span  class="icon has-text-primary">
+                                    <a class="button is-primary px-4 py-4 is-flex is-justify-content-center is-align-items-center is-height-100-percent"  onclick="document.querySelector('#modalEvent'+{{ events[0].id }}).classList.add('is-active')">
+                                        <span class="icon">
                                             <i class="fas fa-lg fa-bell"></i>
                                         </span>
                                     </a>
@@ -117,7 +117,7 @@
             {% set count_1 = 0 %}
             {% for event in events[1:] %}
                 {% if count_1 < 4 %}
-                    {{ include('event/event_container_touch.html.twig') }}
+{#                    {{ include('event/event_container_touch.html.twig') }}#}
                 {% endif %}
                 {% set count_1 = count_1 + 1 %}
             {% endfor %}
@@ -248,10 +248,13 @@ agendas.forEach(function (agenda) {
             infinite: false,
             loop:true,
             effect: 'fade',
-            autoplay: false,
+            autoplay: true,
+            navigation:true,
             navigationSwipe: true,
             navigationKeys: false,
             pagination: false,
+            duration:1000,
+            autoplaySpeed:3000,
         };
 
         // Initialize all div with carousel class

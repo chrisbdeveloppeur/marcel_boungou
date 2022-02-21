@@ -16,24 +16,24 @@
                     {{ event.title }}
                 </h3>
                 <div class="column is-flex is-align-items-center px-0 py-0">
-                    <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="has-text-success column px-0 py-0" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
+                    <div class="has-text-success column px-0 py-0">
+                        <span  class="icon has-text-primary">
+                            <i class="fas fa-lg fa-map"></i>
+                        </span>
                         <span>
                             {{ event.adresse }}
                         </span>
-                        <span  class="icon has-text-primary">
-                            <i class="fas fa-lg fa-map-marker-alt"></i>
-                        </span>
-                    </a>
+                    </div>
                 </div>
                 <div class="column is-flex is-align-items-center px-0 py-0">
-                    <a class="has-text-success column px-0 py-0" onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
-                        <span>
-                            {{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}
-                        </span>
+                    <div class="has-text-success column px-0 py-0">
                         <span  class="icon has-text-primary">
                             <i class="fas fa-lg fa-calendar-alt"></i>
                         </span>
-                    </a>
+                        <span>
+                            {{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>

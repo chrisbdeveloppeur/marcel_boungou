@@ -53,7 +53,7 @@ $box-shadow-bulma-dark: 0 0.5em 1em -0.125em rgba(10, 10, 10, .5) !important;
 $title-font: $font-josefin-sans;
 
 *{
-  transition: .3s;
+  //transition: .3s;
   font-family: $font-quicksand;
 }
 h1, h2, h3{
@@ -243,6 +243,10 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
 
 .borderless{
   border-radius: 0 !important;
+}
+
+.is-height-100-percent{
+  height: 100% !important;
 }
 
 .transition-3ms{
