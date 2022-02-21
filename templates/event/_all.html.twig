@@ -31,8 +31,12 @@
                 {% for event in events %}
 {#                    <p class="has-text-white">#}
                         {% if event.datetime|date >= "now"|date %}
-                            <div class="column is-narrow is-one-third-desktop is-half-tablet is-relative scalup-hover">
-                                <a style="position: absolute;top: 0; left: 0;width: 100%; height: 100%;z-index: 1;" onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')"></a>
+                            <div class="column is-narrow is-one-third-desktop is-half-tablet is-relative">
+                                <a class="px-3 py-3 button is-small is-rounded is-success" style="position: absolute;top: 0; right: 0;z-index: 1;" onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
+                                    <span class="icon">
+                                        <i class="fas fa-info"></i>
+                                    </span>
+                                </a>
                                 <div class="card is-relative">
                                     {% if is_granted('ROLE_ADMIN') %}
                                         {{ include('event/edit_event_button.html.twig') }}
@@ -46,19 +50,76 @@
                                             {% endif %}
                                         </figure>
                                     </div>
-                                    <div class="column has-background-black has-text-success has-text-centered">
-                                        <b>{{ event }}</b>
-                                    </div>
-                                    <div class="card-content">
-                                        <div class="content">
-{#                                            <hr class="has-background-black" style="height: 1px">#}
-                                            <time datetime="{{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}">{{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}</time>
-                                            <br><br>
-                                            {{ event.street }}<br>
-                                            {{ event.cp }}, {{ event.city }}<br>
-                                            {{ event.country }}<br>
+
+                                    <div class="column has-background-black slider-container-child px-0 py-0">
+
+                                        {% if event.ticketingLink %}
+                                            <div class="column is-flex is-justify-content-center is-align-items-center">
+                                                <a href="{{ event.ticketingLink }}" target="_blank" class="button is-fullwidth is-success is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center">
+                                            <span class="icon is-large">
+                                                <i class="fas fa-lg fa-ticket"></i>
+                                            </span>
+                                                    <span class="is-size-7-touch">
+                                                {% trans %}Reservation{% endtrans %}
+                                            </span>
+                                                </a>
+                                            </div>
+                                        {% endif %}
+
+                                        <div class="column is-flex px-0 py-0">
+                                            <div class="column has-text-centered is-expanded has-text-success is-flex is-justify-content-center is-align-items-center">
+                                        <span class="icon-text is-justify-content-center">
+                                            <span class="icon has-text-success is-hidden-touch">
+                                                <i class="fas fa-lg fa-map"></i>
+                                            </span>
+                                            <span class="has-text-success-light is-size-7-touch">
+                                                {{ event.adresse }}
+                                            </span>
+                                        </span>
+                                            </div>
+                                            <div class="is-flex is-justify-content-center is-align-items-center px-2 py-2">
+                                                <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="button is-primary is-outlined is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
+                                            <span  class="icon">
+                                                <i class="fas fa-lg fa-map-marker-alt"></i>
+                                            </span>
+                                                </a>
+                                            </div>
                                         </div>
+
+                                        <div class="column is-flex px-0 py-0">
+                                            <div class="column has-text-centered is-expanded has-text-success is-flex is-justify-content-center is-align-items-center">
+                                        <span class="icon-text is-justify-content-center">
+                                            <span class="icon has-text-success is-hidden-touch">
+                                                <i class="fas fa-lg fa-calendar-alt"></i>
+                                            </span>
+                                            <span class="has-text-success-light is-size-7-touch">
+                                                {{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}
+                                            </span>
+                                        </span>
+                                            </div>
+                                            <div class="is-flex is-justify-content-center is-align-items-center px-2 py-2">
+                                                <a class="button is-primary is-outlined is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center"  onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
+                                            <span class="icon">
+                                                <i class="fas fa-lg fa-bell"></i>
+                                            </span>
+                                                </a>
+                                            </div>
+                                        </div>
+
                                     </div>
+{#                                    <div class="column has-background-black has-text-success has-text-centered">#}
+{#                                        <b>{{ event }}</b>#}
+{#                                    </div>#}
+{#                                    <div class="card-content">#}
+{#                                        <div class="content">#}
+{#                                            <hr class="has-background-black" style="height: 1px">#}
+{#                                            <time datetime="{{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}">{{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}</time>#}
+{#                                            <br><br>#}
+{#                                            {{ event.street }}<br>#}
+{#                                            {{ event.cp }}, {{ event.city }}<br>#}
+{#                                            {{ event.country }}<br>#}
+{#                                        </div>#}
+{#                                    </div>#}
                                 </div>
                             </div>
                         {% endif %}
