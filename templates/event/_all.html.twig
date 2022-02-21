@@ -5,7 +5,18 @@
 {% block body %}
     <section class="section">
         <div class="container">
-            <div class="columns is-multiline is-centered">
+            <div class="column px-0">
+                <h2 class="subtitle has-text-centered is-2 has-text-weight-bold has-text-white">{% trans %}All next events{% endtrans %}</h2>
+                <a href="{{ path('events_home') }}" class="button is-primary">
+                    <span class="icon">
+                        <i class="fas fa-lg fa-caret-left"></i>
+                    </span>
+                    <span>
+                        {% trans %}Events lobby{% endtrans %}
+                    </span>
+                </a>
+            </div>
+            <div class="columns is-multiline">
                 {% for event in events %}
 {#                    <p class="has-text-white">#}
                         {% if event.datetime|date >= "now"|date %}
@@ -16,20 +27,20 @@
                                         {{ include('event/edit_event_button.html.twig') }}
                                     {% endif %}
                                     <div class="card-image">
-                                        <figure class="image is-2by1">
+                                        <figure class="image is-3by1">
                                             {% if event.image %}
                                                 <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="Placeholder image">
                                             {% else %}
-                                                <img src="{{ asset('build/images/640x320.4ecf1ab8.png') }}" alt="Placeholder image">
+                                                <img src="{{ asset('build/images/720x240.8013db28.png') }}" alt="Placeholder image">
                                             {% endif %}
                                         </figure>
                                     </div>
+                                    <div class="column has-background-black has-text-success has-text-centered">
+                                        <b>{{ event }}</b>
+                                    </div>
                                     <div class="card-content">
                                         <div class="content">
-                                            <div class="has-text-centered">
-                                                <b>{{ event }}</b>
-                                            </div>
-                                            <hr class="has-background-black" style="height: 1px">
+{#                                            <hr class="has-background-black" style="height: 1px">#}
                                             <time datetime="{{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}">{{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}</time>
                                             <br><br>
                                             {{ event.street }}<br>
