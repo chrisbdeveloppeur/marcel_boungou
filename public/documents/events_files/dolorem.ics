@@ -17,13 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213a56c756ff
-DTSTAMP;TZID=Europe/Paris:20220221T154500
+UID:6213d6701c77b
+DTSTAMP;TZID=Europe/Paris:20220221T191408
 SUMMARY:dolorem
-DESCRIPTION:Error qui omnis aut voluptate eum. Et aut ratione aut rerum inc
- idunt. Reiciendis et voluptas non vel voluptas quis ad.
-LOCATION:17\, rue de Navarro\, 75 916 Benoit-sur-Mer\, Benoit-sur-Mer
-DTSTART;TZID=Europe/Paris:20220219T103006
-DTEND;TZID=Europe/Paris:20220219T103006
+DESCRIPTION:Molestias vitae quo ut occaecati. Sunt aut autem natus. Totam i
+ psam qui quia ratione. Tenetur voluptates atque sed porro ad ea est. Incid
+ unt esse autem dignissimos. Et soluta reprehenderit id assumenda vel. Veli
+ t provident quaerat omnis sequi sapiente. Animi distinctio nulla dolorum q
+ ui sunt unde rerum. Adipisci ut et sit. At aut ea enim culpa non suscipit.
+  Omnis inventore ad quia nesciunt et.
+LOCATION:42\, chemin de Roussel\, 06488 Rossi\, Rossi
+DTSTART;TZID=Europe/Paris:20220219T160320
+DTEND;TZID=Europe/Paris:20220219T160320
 END:VEVENT
 END:VCALENDAR

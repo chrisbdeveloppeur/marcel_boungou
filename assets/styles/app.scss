@@ -53,7 +53,7 @@ $box-shadow-bulma-dark: 0 0.5em 1em -0.125em rgba(10, 10, 10, .5) !important;
 $title-font: $font-josefin-sans;
 
 *{
-  //transition: .3s;
+  transition: .2s;
   font-family: $font-quicksand;
 }
 h1, h2, h3{
@@ -133,25 +133,16 @@ section.body{
 
 .next-event-logo{
   z-index: 1;
-  //position:absolute;
-  //top: -10px;
-  //left: 50%;
-  //transform: translate(-50%);
   width: 100%;
   color: white;
 }
 .next-event-logo span{
   position: relative;
   display: inline-block;
-  //animation: waviy 1s infinite;
   animation: glow 3s ease-in-out infinite, waviy 3s infinite;
   animation-delay: calc(.2s * var(--i));
   font-family: $title-font;
 }
-
-//.rotationX:hover{
-//  animation: rotationX 1s;
-//}
 
 a{
   animation-iteration-count: 1
