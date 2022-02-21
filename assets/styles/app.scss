@@ -157,6 +157,10 @@ a{
   animation-iteration-count: 1
 }
 
+.opacity100onhover:hover{
+  opacity: 100% !important;
+}
+
 .flash-msg
 {
   position: fixed;
@@ -385,6 +389,7 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 80%;
 }
 .disc:hover{
   cursor: pointer;

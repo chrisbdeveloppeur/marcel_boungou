@@ -99,6 +99,11 @@ class Event
      */
     private $ticketing_link;
 
+    /**
+     * @ORM\Column(type="array", nullable=true)
+     */
+    private $tags = [];
+
     public function __construct()
     {
         $this->datetime = new \DateTime();
@@ -294,5 +299,29 @@ class Event
         return 'Event';
     }
 
+    public function getTags(): ?array
+    {
+        return $this->tags;
+    }
+
+    public function addTag(?string $tag): self
+    {
+        $tagFormatted = strtolower(preg_replace('~[\\\\/:*?"<>|()&, \']~','',$tag));
+        array_push($this->tags, $tagFormatted);
+
+        return $this;
+    }
+
+    public function removeTag(?string $tag): self
+    {
+        $tagFormatted = strtolower(preg_replace('~[\\\\/:*?"<>|()&, \']~','',$tag));
+            foreach ($this->tags as $id => $value){
+                if ($tagFormatted == $value){
+                    array_splice($this->tags, $id, 1);
+                }
+            };
+
+        return $this;
+    }
 
 }

@@ -13,6 +13,7 @@
     {% block stylesheets %}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-calendar@6.1.14/dist/css/bulma-calendar.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.24/dist/css/bulma-carousel.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.jsdelivr.com/package/npm/@creativebulma/bulma-tagsinput/dist/css/bulma-tagsinput.min.css" />
         {{ encore_entry_link_tags('app') }}
     {% endblock %}
 
@@ -55,9 +56,13 @@
 </html>
 
 
+{# BULMA CALENDAR #}
 <script src="https://cdn.jsdelivr.net/npm/bulma-calendar@6.1.14/dist/js/bulma-calendar.min.js"></script>
 {# BULMA CAROUSEL #}
 <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.24/dist/js/bulma-carousel.min.js"></script>
+{# BULMA TAGS INPUT #}
+<script src="https://www.jsdelivr.com/package/npm/@creativebulma/bulma-tagsinput/dist/js/bulma-tagsinput.min.js"></script>
+
 
 <script>
 
@@ -155,7 +160,9 @@
                 el.firstElementChild.style.webkitTransform = 'none';
             });
         })
-    })
+    });
+
+
 
 
 

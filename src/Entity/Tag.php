@@ -34,8 +34,8 @@ class Tag
 
     public function setName(string $name): self
     {
-        $this->name = $name;
-
+        $new_name = strtolower(preg_replace('~[\\\\/:*?"<>|()&, \']~','',$name));
+        $this->name = $new_name;
         return $this;
     }
 }

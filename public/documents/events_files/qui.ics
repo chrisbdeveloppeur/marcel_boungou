@@ -17,16 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213a56d1dbf3
-DTSTAMP;TZID=Europe/Paris:20220221T154501
+UID:6213b63b52792
+DTSTAMP;TZID=Europe/Paris:20220221T165643
 SUMMARY:qui
-DESCRIPTION:Nihil ad cupiditate reprehenderit sit facilis minus inventore. 
- Nam et rem est perspiciatis est. Laboriosam maiores recusandae porro sequi
-  veniam. Debitis et dignissimos quia reiciendis cumque voluptatem dolor. E
- st placeat magnam laboriosam omnis exercitationem tempore. Adipisci quae q
- uia at nobis fugit. Ut sequi et eum repellat.
-LOCATION:chemin Thibaut Marie\, 70544 Rodriguez\, Rodriguez
-DTSTART;TZID=Europe/Paris:20220405T224618
-DTEND;TZID=Europe/Paris:20220405T224618
+DESCRIPTION:Quae illo et quisquam et assumenda quas sed. Ratione tempore es
+ t iure exercitationem eos possimus est. Ipsa dicta ipsum perspiciatis debi
+ tis. Animi esse deserunt modi velit quia enim neque.
+LOCATION:2\, impasse Bernard\, 00 490 Lemaire-sur-Ramos\, Lemaire-sur-Ramos
+DTSTART;TZID=Europe/Paris:20220301T065416
+DTEND;TZID=Europe/Paris:20220301T065416
 END:VEVENT
 END:VCALENDAR
