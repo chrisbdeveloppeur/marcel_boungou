@@ -394,6 +394,45 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   z-index: 1;
 }
 
+// TEXTHOVER (INFOBULE)
+.hovertext {
+  position: relative;
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  //overflow: hidden;
+  //text-overflow: ellipsis;
+  min-width: max-content;
+  //max-width: 150px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  transition: opacity .5s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  font-weight: bold;
+  //left: 0;
+  top: 105%;
+  font-size: .7rem;
+}
+
+.left.hovertext:before{
+  left: 0 !important;
+}
+.right.hovertext:before{
+  right: 0 !important;
+}
+
+.hovertext:hover:before, .hovertext:active:before {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 @keyframes waviy {
   0%,40%,100% {

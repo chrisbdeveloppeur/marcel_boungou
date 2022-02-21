@@ -116,7 +116,21 @@
                 toggleAttr(document.querySelectorAll('.input-password'))
             })
         }
-    )
+    );
+
+
+
+    // POSITIONNEMENT DES INFOBULL EN FONCTION DE LECRAN
+    let hovertextbefore = document.querySelectorAll('.hovertext');
+    hovertextbefore.forEach(function (el) {
+        var w = window.innerWidth;
+        var rect = el.getBoundingClientRect();
+        if (rect.right >= (w / 2)){
+            el.classList.add('right');
+        }else {
+            el.classList.add('left');
+        }
+    });
 
 </script>
 
