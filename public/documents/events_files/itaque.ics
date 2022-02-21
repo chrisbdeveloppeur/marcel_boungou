@@ -17,14 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213a529bc84f
+UID:6213a52974054
 DTSTAMP;TZID=Europe/Paris:20220221T154353
-SUMMARY:iure
-DESCRIPTION:Fugiat non excepturi reiciendis eos ipsa a. Aut quas repudianda
- e nostrum ut quas ab sint. Ut est nulla molestiae sint possimus nobis duci
- mus. Numquam reprehenderit in dolorem amet voluptatem consequuntur.
-LOCATION:28\, avenue Philippine Bertrand\, 01 373 Jacquesnec\, Jacquesnec
-DTSTART;TZID=Europe/Paris:20220312T200832
-DTEND;TZID=Europe/Paris:20220312T200832
+SUMMARY:itaque
+DESCRIPTION:Hic veniam eos minima quos. Provident amet in placeat eos omnis
+ . Tenetur ipsam cum distinctio tenetur modi. Minima expedita magnam mollit
+ ia dolor recusandae.
+LOCATION:89\, impasse Marc Prevost\, 20 375 Rodrigues\, Rodrigues
+DTSTART;TZID=Europe/Paris:20220222T174519
+DTEND;TZID=Europe/Paris:20220222T174519
 END:VEVENT
 END:VCALENDAR

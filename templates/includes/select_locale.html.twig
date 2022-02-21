@@ -7,7 +7,7 @@
 
 <div class="dropdown is-hoverable is-right is-hidden-touch">
     <div class="dropdown-trigger">
-        <div class="button borderless is-small is-success is-light is-size-6-touch" aria-haspopup="true" aria-controls="dropdown-menu">
+        <div class="button is-rounded px-3 py-3 is-small is-success is-light is-size-6-touch" aria-haspopup="true" aria-controls="dropdown-menu">
             <span class="icon">
                 {{ attribute(_context,'flag_' ~ app.request.locale) }}
             </span>
@@ -17,7 +17,7 @@
         <div class="">
             {% for locale in locales %}
                 {% if app.request.locale != locale %}
-                    <a href="{{ path('change_locale', {'locale': locale }) }}" class="button borderless is-small is-outlined is-light is-size-6-touch">
+                    <a href="{{ path('change_locale', {'locale': locale }) }}" class="button is-rounded px-3 py-3 is-small is-outlined is-light is-size-6-touch">
                         <span class="icon">
                             {{ attribute(_context,'flag_' ~ locale) }}
                         </span>
@@ -33,7 +33,7 @@
     <div class="buttons is-justify-content-center">
         {% for locale in locales %}
 
-                <a href="{{ path('change_locale', {'locale': locale }) }}" class="button borderless is-light is-small {% if app.request.locale != locale %}is-outlined{% endif %}">
+                <a href="{{ path('change_locale', {'locale': locale }) }}" class="button is-rounded px-3 py-3 is-light is-small {% if app.request.locale != locale %}is-outlined{% endif %}">
                     <span class="icon">
                         {{ attribute(_context,'flag_' ~ locale) }}
                     </span>

@@ -17,15 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62137691131cc
-DTSTAMP;TZID=Europe/Paris:20220221T122505
+UID:6213a5510ea44
+DTSTAMP;TZID=Europe/Paris:20220221T154433
 SUMMARY:quo
-DESCRIPTION:Commodi hic et vitae dolor. Commodi sapiente ut nesciunt omnis 
- quis dolores ipsa. Commodi voluptatum cum provident et veritatis illum. Se
- d error aliquam ullam corrupti facere. Qui veritatis delectus non ut. Assu
- menda dicta in modi aut sed voluptatem hic non.
-LOCATION:rue Bertrand Bousquet\, 56 001 Lucas\, Lucas
-DTSTART;TZID=Europe/Paris:20220219T142348
-DTEND;TZID=Europe/Paris:20220219T142348
+DESCRIPTION:Quis similique consequuntur dolor libero facilis odit. Et fugit
+  quasi tenetur numquam omnis unde. Qui illo vel nostrum omnis non.
+LOCATION:2\, place de Rey\, 57 956 Besson\, Besson
+DTSTART;TZID=Europe/Paris:20220306T135408
+DTEND;TZID=Europe/Paris:20220306T135408
 END:VEVENT
 END:VCALENDAR

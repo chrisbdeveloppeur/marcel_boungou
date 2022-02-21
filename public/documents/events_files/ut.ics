@@ -17,16 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62137842a83c0
-DTSTAMP;TZID=Europe/Paris:20220221T123218
+UID:6213a56c98a40
+DTSTAMP;TZID=Europe/Paris:20220221T154500
 SUMMARY:ut
-DESCRIPTION:Modi aut quam qui et voluptas fugit. Repudiandae eum facere con
- sequuntur consequatur. Quia quo voluptatem recusandae qui dolores eos mini
- ma. Sit aut asperiores qui harum neque. Fugit facilis at eos quisquam est.
-  Repellat velit debitis quis laborum impedit. Velit dolorem ut ut quos. Ne
- que voluptatem aperiam sunt officia nulla necessitatibus voluptatem.
-LOCATION:28\, rue Margaud Robin\, 29265 Delannoy\, Delannoy
-DTSTART;TZID=Europe/Paris:20220405T215711
-DTEND;TZID=Europe/Paris:20220405T215711
+DESCRIPTION:Dolores nostrum dolore unde quia enim cum. Sint tempore dolorem
+  odit quo. Optio similique in sint delectus odit eum. Expedita officiis ve
+ lit repudiandae maiores dicta suscipit.
+LOCATION:36\, boulevard Jules Rossi\, 09 883 Guillot\, Guillot
+DTSTART;TZID=Europe/Paris:20220222T095815
+DTEND;TZID=Europe/Paris:20220222T095815
 END:VEVENT
 END:VCALENDAR

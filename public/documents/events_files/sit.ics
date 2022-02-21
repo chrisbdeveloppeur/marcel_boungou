@@ -17,14 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213753faa1c8
-DTSTAMP;TZID=Europe/Paris:20220221T121927
+UID:6213a56cd19bf
+DTSTAMP;TZID=Europe/Paris:20220221T154500
 SUMMARY:sit
-DESCRIPTION:Ipsam dolores aperiam consequatur perspiciatis rem sit. Et ea e
- rror quo. Sunt laudantium aut est perferendis consectetur rerum expedita a
- ccusantium. Nihil eius rerum vel ipsa.
-LOCATION:avenue Blot\, 55 608 Perrier\, Perrier
-DTSTART;TZID=Europe/Paris:20220220T025204
-DTEND;TZID=Europe/Paris:20220220T025204
+DESCRIPTION:Ea quasi architecto aut nihil et accusantium non. Sequi volupta
+ tem autem quam voluptas. Ut qui et dolor nesciunt quae sit est ut. Iusto d
+ ucimus sequi dolore velit.
+LOCATION:13\, boulevard Blanc\, 40 936 Roger\, Roger
+DTSTART;TZID=Europe/Paris:20220312T062450
+DTEND;TZID=Europe/Paris:20220312T062450
 END:VEVENT
 END:VCALENDAR

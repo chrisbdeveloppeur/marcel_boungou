@@ -17,15 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621376e99bcd0
-DTSTAMP;TZID=Europe/Paris:20220221T122633
+UID:6213a529d5b9c
+DTSTAMP;TZID=Europe/Paris:20220221T154353
 SUMMARY:omnis
-DESCRIPTION:Aut blanditiis reprehenderit mollitia voluptas pariatur quas en
- im minima. Aut et nihil rerum asperiores enim. Ex dolor adipisci aut ut. E
- t voluptate quia saepe eum quis ab incidunt quos.
-LOCATION:745\, rue Aimé Bodin\, 75811 Guibert-sur-Rossi\, Guibert-sur-Ross
- i
-DTSTART;TZID=Europe/Paris:20220220T120727
-DTEND;TZID=Europe/Paris:20220220T120727
+DESCRIPTION:Ut illo nostrum qui accusamus. Ut corrupti voluptas excepturi v
+ ero. Eveniet sunt quia aperiam dolorem distinctio. Et et delectus earum qu
+ ae.
+LOCATION:46\, rue Dijoux\, 47 544 MilletVille\, MilletVille
+DTSTART;TZID=Europe/Paris:20220327T164918
+DTEND;TZID=Europe/Paris:20220327T164918
 END:VEVENT
 END:VCALENDAR

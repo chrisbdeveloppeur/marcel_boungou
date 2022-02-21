@@ -17,15 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213753f9b89b
-DTSTAMP;TZID=Europe/Paris:20220221T121927
+UID:6213a52891b1b
+DTSTAMP;TZID=Europe/Paris:20220221T154352
 SUMMARY:eligendi
-DESCRIPTION:Qui aut eos ut non. Quasi omnis nulla voluptas porro quo maiore
- s. Veritatis qui magnam dignissimos et eos recusandae velit. Corrupti iste
-  corrupti earum. Aut ea ratione rem ut ad quibusdam natus. Aut rerum ut nu
- lla saepe. Expedita dolores cupiditate nulla placeat neque.
-LOCATION:47\, impasse de Giraud\, 41700 Nicolas\, Nicolas
-DTSTART;TZID=Europe/Paris:20220219T083007
-DTEND;TZID=Europe/Paris:20220219T083007
+DESCRIPTION:Saepe libero ipsa quisquam quod deserunt quas. Hic accusantium 
+ quo similique et libero quod iusto et.
+LOCATION:9\, rue Thibault Delorme\, 13765 Richard\, Richard
+DTSTART;TZID=Europe/Paris:20220219T134829
+DTEND;TZID=Europe/Paris:20220219T134829
 END:VEVENT
 END:VCALENDAR

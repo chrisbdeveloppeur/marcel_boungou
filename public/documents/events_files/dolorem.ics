@@ -17,13 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6207cd8b247ae
-DTSTAMP;TZID=Europe/Paris:20220212T160859
+UID:6213a56c756ff
+DTSTAMP;TZID=Europe/Paris:20220221T154500
 SUMMARY:dolorem
-DESCRIPTION:Id unde at quae sit aut eos explicabo quaerat. Adipisci et dese
- runt odit quo. Fugit dolores minima at doloribus et harum enim.
-LOCATION:545\, avenue Moreno\, 43 043 Samson-sur-Diaz\, Samson-sur-Diaz
-DTSTART;TZID=Europe/Paris:20220219T184055
-DTEND;TZID=Europe/Paris:20220219T184055
+DESCRIPTION:Error qui omnis aut voluptate eum. Et aut ratione aut rerum inc
+ idunt. Reiciendis et voluptas non vel voluptas quis ad.
+LOCATION:17\, rue de Navarro\, 75 916 Benoit-sur-Mer\, Benoit-sur-Mer
+DTSTART;TZID=Europe/Paris:20220219T103006
+DTEND;TZID=Europe/Paris:20220219T103006
 END:VEVENT
 END:VCALENDAR

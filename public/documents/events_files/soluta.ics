@@ -17,13 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213a56ccfd22
-DTSTAMP;TZID=Europe/Paris:20220221T154500
-SUMMARY:ratione
-DESCRIPTION:Ea quidem soluta mollitia ea et blanditiis. Fuga est laboriosam
-  saepe odit qui ad qui.
-LOCATION:9\, rue Cousin\, 07 274 Loiseaudan\, Loiseaudan
-DTSTART;TZID=Europe/Paris:20220306T121517
-DTEND;TZID=Europe/Paris:20220306T121517
+UID:6213a529bae91
+DTSTAMP;TZID=Europe/Paris:20220221T154353
+SUMMARY:soluta
+DESCRIPTION:Debitis architecto aut magni. Recusandae quia totam et libero. 
+ Enim animi iste molestias qui quis neque earum.
+LOCATION:20\, impasse de Chauvin\, 10 211 Legros-les-Bains\, Legros-les-Bai
+ ns
+DTSTART;TZID=Europe/Paris:20220306T132740
+DTEND;TZID=Europe/Paris:20220306T132740
 END:VEVENT
 END:VCALENDAR
