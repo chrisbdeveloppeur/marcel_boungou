@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6213769109e38
+DTSTAMP;TZID=Europe/Paris:20220221T122505
+SUMMARY:modi
+DESCRIPTION:Nobis reiciendis debitis tenetur. Cumque provident explicabo bl
+ anditiis eveniet sed sint sit. Vel commodi excepturi totam veniam in labor
+ um consequuntur fugit. Ipsum odio qui distinctio neque sunt. Corporis vero
+  velit eaque dolore fuga non. Reiciendis maiores id optio quod. Dolor omni
+ s molestias hic nulla autem reprehenderit voluptatibus. Odio et aut nemo s
+ unt enim. Perferendis rem exercitationem ipsum tempore debitis impedit.
+LOCATION:22\, avenue Petit\, 02251 Simon-les-Bains\, Simon-les-Bains
+DTSTART;TZID=Europe/Paris:20220219T000700
+DTEND;TZID=Europe/Paris:20220219T000700
+END:VEVENT
+END:VCALENDAR

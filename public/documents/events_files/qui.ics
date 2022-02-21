@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:62137842a44cd
+DTSTAMP;TZID=Europe/Paris:20220221T123218
+SUMMARY:qui
+DESCRIPTION:Corrupti corporis quibusdam et nostrum harum veritatis expedita
+ . Amet iure sunt quibusdam repellat voluptatem doloribus. Ut esse quis qui
+ a eos vero.
+LOCATION:57\, boulevard de Huet\, 27017 Le Goff\, Le Goff
+DTSTART;TZID=Europe/Paris:20220312T185733
+DTEND;TZID=Europe/Paris:20220312T185733
+END:VEVENT
+END:VCALENDAR

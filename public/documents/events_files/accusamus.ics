@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:621377b309fff
+DTSTAMP;TZID=Europe/Paris:20220221T122955
+SUMMARY:accusamus
+DESCRIPTION:Eum doloremque provident repellat nisi. Nobis repellat ipsa qui
+  dolores. Velit recusandae dolorum dignissimos aut facere. Modi quia repel
+ lat totam aperiam culpa quis. Dolores nulla aliquid ut nemo.
+LOCATION:81\, avenue Hamon\, 20065 Lejeune\, Lejeune
+DTSTART;TZID=Europe/Paris:20220225T135138
+DTEND;TZID=Europe/Paris:20220225T135138
+END:VEVENT
+END:VCALENDAR

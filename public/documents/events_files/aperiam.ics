@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:621378314d777
+DTSTAMP;TZID=Europe/Paris:20220221T123201
+SUMMARY:aperiam
+DESCRIPTION:Ut earum rerum aperiam repudiandae sequi fuga. Cumque aut magna
+ m vitae aliquid est. Tempora aut aperiam dicta temporibus in. Vero amet si
+ t provident sint ipsum provident. Aut quia eligendi voluptas. Est eum aut 
+ aliquid eum et consequatur. Tempore dicta dicta voluptatem hic culpa. Aliq
+ uam quasi dolorem nostrum ducimus sed.
+LOCATION:14\, boulevard de Blot\, 50 074 Pruvost\, Pruvost
+DTSTART;TZID=Europe/Paris:20220222T073248
+DTEND;TZID=Europe/Paris:20220222T073248
+END:VEVENT
+END:VCALENDAR

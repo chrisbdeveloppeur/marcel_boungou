@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:62137691131cc
+DTSTAMP;TZID=Europe/Paris:20220221T122505
+SUMMARY:quo
+DESCRIPTION:Commodi hic et vitae dolor. Commodi sapiente ut nesciunt omnis 
+ quis dolores ipsa. Commodi voluptatum cum provident et veritatis illum. Se
+ d error aliquam ullam corrupti facere. Qui veritatis delectus non ut. Assu
+ menda dicta in modi aut sed voluptatem hic non.
+LOCATION:rue Bertrand Bousquet\, 56 001 Lucas\, Lucas
+DTSTART;TZID=Europe/Paris:20220219T142348
+DTEND;TZID=Europe/Paris:20220219T142348
+END:VEVENT
+END:VCALENDAR

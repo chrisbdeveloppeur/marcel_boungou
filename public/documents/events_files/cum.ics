@@ -17,16 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6207aac186cb5
-DTSTAMP;TZID=Europe/Paris:20220212T134033
+UID:62137295cf411
+DTSTAMP;TZID=Europe/Paris:20220221T120805
 SUMMARY:cum
-DESCRIPTION:Quia et quia architecto nemo. Cupiditate velit rerum unde. Aper
- iam consectetur rerum vitae sapiente. Quis omnis dolor dolor. Neque dolor 
- et voluptatem. Maiores eius ducimus sunt non modi et eos et. Consequatur a
- speriores molestias reiciendis error fuga corrupti sapiente. At neque aute
- m libero. Eligendi eligendi ad qui saepe quaerat fugit nobis.
-LOCATION:4\, impasse de Moulin\, 68 928 Giraud\, Giraud
-DTSTART;TZID=Europe/Paris:20220218T123954
-DTEND;TZID=Europe/Paris:20220218T123954
+DESCRIPTION:Est ducimus et quia sed fugiat aut aspernatur. Et qui officiis 
+ nihil. Odio repellat cumque ad et iure error. Est iusto et odio assumenda 
+ sit autem consectetur.
+LOCATION:17\, impasse Dubois\, 91841 Lesage-sur-Mer\, Lesage-sur-Mer
+DTSTART;TZID=Europe/Paris:20220405T173150
+DTEND;TZID=Europe/Paris:20220405T173150
 END:VEVENT
 END:VCALENDAR

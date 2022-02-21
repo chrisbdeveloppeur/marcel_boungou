@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6213783160baf
+DTSTAMP;TZID=Europe/Paris:20220221T123201
+SUMMARY:corrupti
+DESCRIPTION:Eligendi autem aut consectetur autem. Sunt nemo non eligendi un
+ de veritatis tempore. Saepe animi provident eum et fugiat incidunt eveniet
+ . Ut est vel ab tempora.
+LOCATION:271\, impasse Juliette Lacroix\, 76 784 Morel\, Morel
+DTSTART;TZID=Europe/Paris:20220301T123322
+DTEND;TZID=Europe/Paris:20220301T123322
+END:VEVENT
+END:VCALENDAR

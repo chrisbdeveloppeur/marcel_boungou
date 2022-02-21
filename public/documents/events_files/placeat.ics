@@ -17,17 +17,18 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6207f4b6125be
-DTSTAMP;TZID=Europe/Paris:20220212T185606
+UID:621376e9b6195
+DTSTAMP;TZID=Europe/Paris:20220221T122633
 SUMMARY:placeat
-DESCRIPTION:Repellendus necessitatibus aliquam pariatur quas quia praesenti
- um. Doloremque ea deserunt optio dolor. Sed temporibus voluptatem est itaq
- ue sint ullam aut. Dignissimos rem minus autem quos. Et reprehenderit mole
- stiae dolores doloribus saepe. Ratione debitis est doloremque quidem. Cons
- equatur voluptatem autem est ad et enim dicta. Qui eos sed non eaque qui c
- onsequatur omnis.
-LOCATION:69\, place de Renault\, 77959 MunozBourg\, MunozBourg
-DTSTART;TZID=Europe/Paris:20220218T183934
-DTEND;TZID=Europe/Paris:20220218T183934
+DESCRIPTION:Corporis officiis quasi repudiandae dolorum. Optio adipisci asp
+ ernatur ea impedit repellendus esse ut laboriosam. Dolorum a eum ut. Dolor
+  temporibus in vel animi incidunt. Adipisci in rerum esse ducimus delectus
+  omnis earum. Aut vero odio facere temporibus ad fugiat quisquam animi. Re
+ pudiandae velit voluptate possimus dolore in ut consequatur. Vel quia ea a
+ ut voluptates voluptas. Et voluptatem earum eaque et. In perferendis id si
+ nt inventore ea iste. Ea aut vitae earum sint animi ut.
+LOCATION:1\, chemin de Charpentier\, 74757 Vasseur\, Vasseur
+DTSTART;TZID=Europe/Paris:20220327T203145
+DTEND;TZID=Europe/Paris:20220327T203145
 END:VEVENT
 END:VCALENDAR

@@ -17,14 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6207a54191068
-DTSTAMP;TZID=Europe/Paris:20220212T131705
+UID:62137842a9a17
+DTSTAMP;TZID=Europe/Paris:20220221T123218
 SUMMARY:rerum
-DESCRIPTION:Sit veritatis ipsam et aut. Voluptate excepturi adipisci corpor
- is corrupti molestiae omnis aut. Alias repellendus omnis tempora aliquam q
- uasi laudantium.
-LOCATION:rue de Berger\, 92574 Cordier-la-Forêt\, Cordier-la-Forêt
-DTSTART;TZID=Europe/Paris:20220214T174918
-DTEND;TZID=Europe/Paris:20220214T174918
+DESCRIPTION:Nam autem eius sint nihil ut. Consequuntur quis praesentium sed
+  quis optio nulla dolorem doloribus. Voluptas qui asperiores laboriosam qu
+ i.
+LOCATION:554\, impasse Nguyen\, 14 904 Meunier-sur-Gosselin\, Meunier-sur-G
+ osselin
+DTSTART;TZID=Europe/Paris:20220415T045132
+DTEND;TZID=Europe/Paris:20220415T045132
 END:VEVENT
 END:VCALENDAR

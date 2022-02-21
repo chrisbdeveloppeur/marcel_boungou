@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:621377b2de85d
+DTSTAMP;TZID=Europe/Paris:20220221T122954
+SUMMARY:officiis
+DESCRIPTION:Velit at sunt perspiciatis. Debitis consectetur aut assumenda e
+ x vero quae. Amet vero enim possimus iste ad beatae. Neque vitae ea enim i
+ llo exercitationem id. Ut corrupti quod deleniti earum. Perferendis nisi s
+ ed aut cupiditate error asperiores. Enim quis animi dolores.
+LOCATION:53\, place de Lopes\, 43951 Colas\, Colas
+DTSTART;TZID=Europe/Paris:20220219T172631
+DTEND;TZID=Europe/Paris:20220219T172631
+END:VEVENT
+END:VCALENDAR

@@ -31,6 +31,7 @@ class AppFixtures extends Fixture
             $event->setCity($faker->city);
             $event->setCp($faker->postcode);
             $event->setStreet($faker->streetAddress);
+//            $event->setImage('https://picsum.photos/720/240');
             $event->setDescription($faker->text($faker->numberBetween('100','500')));
             $event->setTicketingLink('https://www.fnac.com/ia233457/Marcel-Boungou');
             for ($j = 1; $j <= $faker->numberBetween('2','10'); $j++){

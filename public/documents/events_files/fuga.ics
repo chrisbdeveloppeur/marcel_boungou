@@ -17,17 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:620f93d0afbae
-DTSTAMP;TZID=Europe/Paris:20220218T134048
+UID:62137842a7134
+DTSTAMP;TZID=Europe/Paris:20220221T123218
 SUMMARY:fuga
-DESCRIPTION:Nihil ut est animi illo cupiditate sunt autem. Commodi cumque u
- t porro consequatur earum sed voluptatem. Commodi ratione laudantium esse 
- eum porro eligendi maxime. Placeat beatae impedit illum adipisci velit. Qu
- od esse cupiditate consequuntur. Voluptas qui eaque quia nostrum. Consecte
- tur voluptas minima sint sit dignissimos repudiandae. Voluptatem ducimus v
- elit nesciunt.
-LOCATION:9\, place de Boucher\, 55 214 Menard\, Menard
-DTSTART;TZID=Europe/Paris:20220303T040129
-DTEND;TZID=Europe/Paris:20220303T040129
+DESCRIPTION:Quod harum in quidem eos quidem. Sed sed voluptatum sint enim. 
+ Nemo aperiam tenetur consequatur rem a et consequatur. Natus eum quia aliq
+ uid soluta. Occaecati voluptatibus qui deserunt eligendi ea nulla. Quidem 
+ deserunt consequatur vitae ipsa et. Ut culpa enim nesciunt ipsa.
+LOCATION:668\, avenue Barbier\, 25 015 TanguyVille\, TanguyVille
+DTSTART;TZID=Europe/Paris:20220327T180728
+DTEND;TZID=Europe/Paris:20220327T180728
 END:VEVENT
 END:VCALENDAR

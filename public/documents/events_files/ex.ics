@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6213784289032
+DTSTAMP;TZID=Europe/Paris:20220221T123218
+SUMMARY:ex
+DESCRIPTION:Sit non velit dolorum ut qui odio ipsam. Quisquam qui unde eius
+  voluptatibus quo omnis sapiente. Sed corrupti dolorem iure perferendis es
+ se doloribus cupiditate. Et et qui est nisi assumenda nemo ut.
+LOCATION:97\, rue Guy Paris\, 02702 Pelletier\, Pelletier
+DTSTART;TZID=Europe/Paris:20220219T095428
+DTEND;TZID=Europe/Paris:20220219T095428
+END:VEVENT
+END:VCALENDAR

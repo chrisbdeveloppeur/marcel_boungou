@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6213753faefe7
+DTSTAMP;TZID=Europe/Paris:20220221T121927
+SUMMARY:veritatis
+DESCRIPTION:Fugit dolorem odit beatae tenetur eum. Veritatis odio doloribus
+  voluptates necessitatibus est nam. Nihil ipsam ratione nostrum minima. Qu
+ i aut deleniti sequi sit suscipit. Saepe vel quibusdam cumque velit labore
+ . Rerum inventore libero inventore quas distinctio esse maiores iure.
+LOCATION:impasse de Arnaud\, 68 634 Bigot\, Bigot
+DTSTART;TZID=Europe/Paris:20220306T131134
+DTEND;TZID=Europe/Paris:20220306T131134
+END:VEVENT
+END:VCALENDAR

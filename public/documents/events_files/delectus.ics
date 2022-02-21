@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:621376e9aa541
+DTSTAMP;TZID=Europe/Paris:20220221T122633
+SUMMARY:delectus
+DESCRIPTION:Eum eveniet ipsum sit. Maiores et non similique tempora. Sed id
+  suscipit fugiat nemo explicabo ratione et aliquid. Reiciendis aut facere 
+ dolor.
+LOCATION:7\, avenue Dupuis\, 07 142 Robert-la-Forêt\, Robert-la-Forêt
+DTSTART;TZID=Europe/Paris:20220312T171853
+DTEND;TZID=Europe/Paris:20220312T171853
+END:VEVENT
+END:VCALENDAR

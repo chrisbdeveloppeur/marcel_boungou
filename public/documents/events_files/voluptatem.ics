@@ -17,15 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:620a435547361
-DTSTAMP;TZID=Europe/Paris:20220214T125605
+UID:62137491df0b4
+DTSTAMP;TZID=Europe/Paris:20220221T121633
 SUMMARY:voluptatem
-DESCRIPTION:Tempora commodi accusantium voluptates autem et cum. Sed blandi
- tiis repellendus dolore temporibus. Nam ut velit doloremque occaecati magn
- am. Nulla corporis nisi quam nobis a inventore. Voluptatibus ab dolores to
- tam ut. Dicta dolore quae illo quam. Non in recusandae et beatae.
-LOCATION:37\, place de Muller\, 35 834 Bazin-les-Bains\, Bazin-les-Bains
-DTSTART;TZID=Europe/Paris:20220216T021126
-DTEND;TZID=Europe/Paris:20220216T021126
+DESCRIPTION:Impedit maxime fugit reiciendis sed voluptatem enim labore. Nem
+ o ducimus explicabo deleniti impedit. Et quia ut earum ut consequatur odio
+  est.
+LOCATION:72\, boulevard de Paul\, 91829 Aubert\, Aubert
+DTSTART;TZID=Europe/Paris:20220225T003400
+DTEND;TZID=Europe/Paris:20220225T003400
 END:VEVENT
 END:VCALENDAR

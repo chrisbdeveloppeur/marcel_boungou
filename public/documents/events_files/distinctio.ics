@@ -17,13 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6207aac17abda
-DTSTAMP;TZID=Europe/Paris:20220212T134033
+UID:6213783151b71
+DTSTAMP;TZID=Europe/Paris:20220221T123201
 SUMMARY:distinctio
-DESCRIPTION:Ad iste aut enim neque necessitatibus officiis. Unde et corrupt
- i illo. Quia illo aut explicabo sequi.
-LOCATION:2\, avenue Diaz\, 60 894 Hubert-sur-Mer\, Hubert-sur-Mer
-DTSTART;TZID=Europe/Paris:20220212T181431
-DTEND;TZID=Europe/Paris:20220212T181431
+DESCRIPTION:Aliquam qui odit vel neque labore. Labore ipsam ab enim quam vo
+ luptas magni ut. Itaque doloribus quod sed quia. Commodi necessitatibus ve
+ ro cum molestiae libero. Omnis eum officiis molestiae id. Ex et doloribus 
+ nemo recusandae quod. Ut dignissimos accusamus quos adipisci nostrum. Cons
+ equatur repudiandae sapiente et quasi dolore aliquid occaecati. Tenetur ma
+ iores repellendus excepturi incidunt sint.
+LOCATION:71\, place Émile Blanc\, 22 540 Chauvin\, Chauvin
+DTSTART;TZID=Europe/Paris:20220225T082742
+DTEND;TZID=Europe/Paris:20220225T082742
 END:VEVENT
 END:VCALENDAR

@@ -17,16 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6207aac187aba
-DTSTAMP;TZID=Europe/Paris:20220212T134033
+UID:621377b3054f7
+DTSTAMP;TZID=Europe/Paris:20220221T122955
 SUMMARY:perspiciatis
-DESCRIPTION:Quam mollitia sunt aut nesciunt voluptatem iure non. Animi prae
- sentium maiores rerum. Similique eos dolor qui asperiores. Similique quo q
- uod laudantium odio cupiditate saepe. Nulla error ducimus perferendis simi
- lique et sapiente officia. Expedita molestias a assumenda dignissimos et. 
- Enim nostrum id earum delectus iusto ducimus delectus.
-LOCATION:987\, place de Traore\, 00780 Hamel\, Hamel
-DTSTART;TZID=Europe/Paris:20220219T235212
-DTEND;TZID=Europe/Paris:20220219T235212
+DESCRIPTION:Repellat illo distinctio ex est dolores voluptatem. Perspiciati
+ s esse qui velit nam.
+LOCATION:479\, chemin Poulain\, 52361 Valleenec\, Valleenec
+DTSTART;TZID=Europe/Paris:20220220T083214
+DTEND;TZID=Europe/Paris:20220220T083214
 END:VEVENT
 END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:621377b32e30a
+DTSTAMP;TZID=Europe/Paris:20220221T122955
+SUMMARY:odit
+DESCRIPTION:Sequi facilis et quisquam quod eius. Numquam ea nihil ipsam qui
+ a commodi est magnam. Ut aut sit distinctio qui. Aut ducimus sint facere e
+ t est alias molestias. Tenetur iure enim eaque excepturi. Beatae non conse
+ ctetur porro ut quas nesciunt. Aut aut ex consequatur vitae pariatur.
+LOCATION:5\, impasse Victor Maillot\, 65889 Durand\, Durand
+DTSTART;TZID=Europe/Paris:20220415T161121
+DTEND;TZID=Europe/Paris:20220415T161121
+END:VEVENT
+END:VCALENDAR

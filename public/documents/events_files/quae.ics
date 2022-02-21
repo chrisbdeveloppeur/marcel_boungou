@@ -17,17 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6207bab38cc55
-DTSTAMP;TZID=Europe/Paris:20220212T144835
+UID:6213753fc88aa
+DTSTAMP;TZID=Europe/Paris:20220221T121927
 SUMMARY:quae
-DESCRIPTION:Possimus quas eius cupiditate ut corrupti voluptates sed ex. Eo
- s explicabo vel optio accusamus reprehenderit vitae. Consequatur illum qui
- squam voluptate. Velit nihil dolorum cumque. Veniam quae libero accusamus 
- ex. Et molestiae veniam magni in qui corporis. Molestias facere distinctio
-  quo odit nihil dolor laborum. Doloribus quibusdam sint dolore ea. Atque d
- eserunt itaque iure aut odit omnis.
-LOCATION:518\, boulevard Victor Colas\, 77 660 Rey\, Rey
-DTSTART;TZID=Europe/Paris:20220216T234957
-DTEND;TZID=Europe/Paris:20220216T234957
+DESCRIPTION:Possimus atque veniam dolor autem. Libero magni eaque est molli
+ tia nihil autem. In inventore molestias autem esse veniam. In blanditiis e
+ um possimus in temporibus porro minus. Aut accusamus quibusdam eos totam. 
+ Voluptatem labore ea necessitatibus.
+LOCATION:579\, impasse Grenier\, 66 289 Lefortnec\, Lefortnec
+DTSTART;TZID=Europe/Paris:20220415T195126
+DTEND;TZID=Europe/Paris:20220415T195126
 END:VEVENT
 END:VCALENDAR

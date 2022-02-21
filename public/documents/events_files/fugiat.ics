@@ -17,17 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6207f4b614eab
-DTSTAMP;TZID=Europe/Paris:20220212T185606
+UID:621377b318252
+DTSTAMP;TZID=Europe/Paris:20220221T122955
 SUMMARY:fugiat
-DESCRIPTION:Eaque id quis aspernatur voluptas vel ut. Aut qui hic vero et i
- ncidunt. Voluptatem in maiores distinctio ex sunt et autem. Dolorem conseq
- uuntur sunt excepturi ratione consectetur omnis ut. Incidunt modi id nobis
-  iste debitis. Aut molestiae fugit atque qui. Veritatis aut culpa hic est 
- sit.
-LOCATION:22\, chemin Éléonore Rossi\, 59345 Bruneau-la-Forêt\, Bruneau-l
- a-Forêt
-DTSTART;TZID=Europe/Paris:20220221T171430
-DTEND;TZID=Europe/Paris:20220221T171430
+DESCRIPTION:Ut fugiat et voluptatibus ipsum voluptatem eos. Modi enim adipi
+ sci velit ex veritatis tempore. Explicabo eum doloremque aspernatur nemo c
+ umque vitae. Vel quaerat debitis rerum libero. Quaerat doloremque maiores 
+ ad pariatur.
+LOCATION:94\, chemin Petit\, 88 996 Normand-les-Bains\, Normand-les-Bains
+DTSTART;TZID=Europe/Paris:20220312T161746
+DTEND;TZID=Europe/Paris:20220312T161746
 END:VEVENT
 END:VCALENDAR
