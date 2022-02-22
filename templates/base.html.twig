@@ -126,7 +126,7 @@
 
 
 
-    // POSITIONNEMENT DES INFOBULL EN FONCTION DE LECRAN
+    {# POSITIONNEMENT DES INFOBULL EN FONCTION DE LECRAN #}
     let hovertextbefore = document.querySelectorAll('.hovertext');
     hovertextbefore.forEach(function (el) {
         var w = window.innerWidth;
@@ -139,7 +139,7 @@
     });
 
 
-    // Animation de rotation X pour les element de la class associés
+    {# Animation de rotation X pour les element de la class associés #}
     let rotationXItems = document.querySelectorAll('.rotationX');
     rotationXItems.forEach(function (el) {
         el.addEventListener('mouseenter', function () {
@@ -152,7 +152,8 @@
             });
         })
     });
-    // Animation de rotation Y pour les element de la class associés
+
+    {# Animation de rotation Y pour les element de la class associés #}
     let rotationYItems = document.querySelectorAll('.rotationY');
     rotationYItems.forEach(function (el) {
         el.addEventListener('mouseenter', function () {
@@ -167,7 +168,7 @@
     });
 
 
-    // SCRIPT POUR LA RECUP DU NOM DU FICHIER A UPLOAD
+    {# SCRIPT POUR LA RECUP DU NOM DU FICHIER A UPLOAD #}
     let fileInputs = document.querySelectorAll('.file-input');
     fileInputs.forEach(function (input) {
         input.addEventListener('change', function () {
@@ -176,29 +177,7 @@
         });
     });
 
-    // SCRIPT POUR LE BOUTON PLAY DES PLAYER
-    // let playBtns = document.querySelectorAll('.play-btn');
-    // playBtns.forEach(function (btn) {
-    //     btn.addEventListener('click', function (targ) {
-    //         let audio = btn.parentElement.querySelector('audio');
-    //         let target = targ.currentTarget;
-    //         let audioTarget = target.parentElement.querySelector('audio');
-    //
-    //         playBtns.forEach(function (el) {
-    //             var audio = el.parentElement.querySelector('audio');
-    //             audio.pause();
-    //         });
-    //
-    //         console.log('audio.paused status : ' + audio.paused);
-    //         if (audio.paused === false){
-    //             console.log('pause audio');
-    //             audio.pause();
-    //         }else {
-    //             console.log('start audio');
-    //             audio.play()
-    //         }
-    //     })
-    // });
+    {# SCRIPT POUR LE BOUTON PLAY DES PLAYER #}
     function startMusic(btn){
         let audio = btn.parentElement.querySelector('audio');
         var icon = btn.parentElement.querySelector('i');
@@ -210,7 +189,6 @@
             audio.play();
         }
     }
-
     function pauseAllMusics(){
         let playBtns = document.querySelectorAll('.play-btn');
         playBtns.forEach(function (el) {
@@ -222,7 +200,7 @@
     }
 
 
-    // SCRIPT POUR BULMA TAGS INPUTS
+    {# SCRIPT POUR BULMA TAGS INPUTS #}
     let TagsInputOptions =  {
         allowDuplicates: false,
         caseSensitive: true,
