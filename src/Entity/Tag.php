@@ -22,6 +22,11 @@ class Tag
      */
     private $name;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Event::class, inversedBy="tags")
+     */
+    private $event;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -36,6 +41,18 @@ class Tag
     {
         $new_name = strtolower(preg_replace('~[\\\\/:*?"<>|()&, \']~','',$name));
         $this->name = $new_name;
+        return $this;
+    }
+
+    public function getEvent(): ?Event
+    {
+        return $this->event;
+    }
+
+    public function setEvent(?Event $event): self
+    {
+        $this->event = $event;
+
         return $this;
     }
 }

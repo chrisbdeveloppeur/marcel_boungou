@@ -146,19 +146,15 @@
         {% endif %}
     {% endfor %}
 
-{#    {% if child.vars.name == 'tags' %}#}
-{#        {% set entity = form.vars.name %}#}
-{#        {% if entity is defined and entity.tags is defined %}#}
-{#            {% for tag in event.tags %}#}
-{#                {{ tag }}#}
-{#            {% endfor %}#}
-{#        {% endif %}#}
-{#        <form action="{{ path('tag_add') }}" method="post">#}
-{#            <input type="tags">#}
-{#            <button class="button is-small">add tag</button>#}
-{#        </form>#}
-
-{#    {% endif %}#}
+    {% if child.vars.name == 'tags' %}
+        {% set entity = form.vars.name %}
+        {% if entity is defined and entity.tags is defined %}
+            {% for tag in event.tags %}
+                {{ tag }}
+            {% endfor %}
+        {% endif %}
+        <input class="input" type="tags" placeholder="Add Tag" value="Tag1,Tag2,Tag3">
+    {% endif %}
 
 </div>
 {% endfor %}
@@ -194,18 +190,3 @@
 {{ form_end(form) }}
 
 
-{#        {% if entity is defined and entity.tags is defined %}#}
-{#            {% for tag in event.tags %}#}
-{#                {{ tag }}#}
-{#            {% endfor %}#}
-{#        {% endif %}#}
-{#<form action="{{ path('tag_add') }}" method="post">#}
-{#    <div class="field has-addons">#}
-{#        <p class="control">#}
-{#            <input class="input is-small" type="tags" name="tag">#}
-{#        </p>#}
-{#        <p class="control">#}
-{#            <button type="submit" class="button is-small">add tag</button>#}
-{#        </p>#}
-{#    </div>#}
-{#</form>#}

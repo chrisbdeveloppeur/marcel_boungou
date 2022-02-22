@@ -94,6 +94,12 @@ class EventType extends AbstractType
                 ],
                 'label' => $this->translator->trans('Description'),
             ])
+            ->add('tags', null,[
+//                'attr' => [
+//                    'class' => 'input',
+//                    'type' => 'tags'
+//                ]
+            ])
         ;
     }
 

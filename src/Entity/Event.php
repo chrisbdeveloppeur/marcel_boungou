@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\EventRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\File;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
@@ -100,13 +102,16 @@ class Event
     private $ticketing_link;
 
     /**
-     * @ORM\Column(type="array", nullable=true)
+     * @ORM\OneToMany(targetEntity=Tag::class, mappedBy="event")
      */
-    private $tags = [];
+    private $tags;
+
 
     public function __construct()
     {
         $this->datetime = new \DateTime();
+//        $tagFormatted = strtolower(preg_replace('~[\\\\/:*?"<>|()&, \']~','',$tag));
+$this->tags = new ArrayCollection();
     }
 
     public function __toString()
@@ -299,29 +304,35 @@ class Event
         return 'Event';
     }
 
-    public function getTags(): ?array
+    /**
+     * @return Collection|Tag[]
+     */
+    public function getTags(): Collection
     {
         return $this->tags;
     }
 
-    public function addTag(?string $tag): self
+    public function addTag(Tag $tag): self
     {
-        $tagFormatted = strtolower(preg_replace('~[\\\\/:*?"<>|()&, \']~','',$tag));
-        array_push($this->tags, $tagFormatted);
+        if (!$this->tags->contains($tag)) {
+            $this->tags[] = $tag;
+            $tag->setEvent($this);
+        }
 
         return $this;
     }
 
-    public function removeTag(?string $tag): self
+    public function removeTag(Tag $tag): self
     {
-        $tagFormatted = strtolower(preg_replace('~[\\\\/:*?"<>|()&, \']~','',$tag));
-            foreach ($this->tags as $id => $value){
-                if ($tagFormatted == $value){
-                    array_splice($this->tags, $id, 1);
-                }
-            };
+        if ($this->tags->removeElement($tag)) {
+            // set the owning side to null (unless already changed)
+            if ($tag->getEvent() === $this) {
+                $tag->setEvent(null);
+            }
+        }
 
         return $this;
     }
+
 
 }
