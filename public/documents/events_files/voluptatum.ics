@@ -17,17 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213fccd4d125
-DTSTAMP;TZID=Europe/Paris:20220221T215749
+UID:6215004383752
+DTSTAMP;TZID=Europe/Paris:20220222T162451
 SUMMARY:voluptatum
-DESCRIPTION:Et eligendi harum sed ab expedita. Impedit quia dolorem nihil e
- os repellendus molestiae similique atque. Eveniet et vel deleniti vel labo
- re vero. Ad laborum in praesentium blanditiis corrupti. Sequi et omnis nec
- essitatibus. Voluptatem ullam ullam et consequuntur rerum. Perferendis acc
- usantium eum sed repellendus consequatur aut. Debitis asperiores voluptate
- m sint optio delectus provident.
-LOCATION:7\, boulevard Pierre Blondel\, 82509 Lambertnec\, Lambertnec
-DTSTART;TZID=Europe/Paris:20220312T114941
-DTEND;TZID=Europe/Paris:20220312T114941
+DESCRIPTION:Incidunt laborum placeat nulla ea voluptatum est qui. Dicta vel
+  cum labore. Quos ut ad quidem. Modi eligendi et nostrum et voluptas. Fugi
+ at atque et est quia doloribus non. Alias asperiores repellat repellat cul
+ pa omnis ex. Eveniet possimus autem deleniti modi nisi.
+LOCATION:252\, chemin de Allain\, 29 588 Leconte-les-Bains\, Leconte-les-Ba
+ ins
+DTSTART;TZID=Europe/Paris:20220223T151112
+DTEND;TZID=Europe/Paris:20220223T151112
 END:VEVENT
 END:VCALENDAR

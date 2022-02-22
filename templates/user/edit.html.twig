@@ -9,11 +9,6 @@
 
         {{ include('themes/_form.html.twig') }}
 
-        <div class="is-flex is-justify-content-space-between">
-            <a class="button is-small is-success" href="{{ path('user_index') }}">{% trans %}back to list{% endtrans %}</a>
-
-            {{ include('user/_delete_form.html.twig') }}
-        </div>
     </div>
 
 {% endblock %}

@@ -17,17 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213fccd417df
-DTSTAMP;TZID=Europe/Paris:20220221T215749
+UID:621500445bd1f
+DTSTAMP;TZID=Europe/Paris:20220222T162452
 SUMMARY:dolor
-DESCRIPTION:Et dolorem odio ullam consequatur. Deserunt nisi non sint incid
- unt amet. Et quos libero eligendi et voluptas esse. Fuga tempore laudantiu
- m ducimus eum ipsam et. Voluptatem molestiae inventore eveniet hic ut. Min
- us omnis aut nihil dignissimos aspernatur accusantium voluptas. Cupiditate
-  consequatur voluptatibus ut quia perspiciatis.
-LOCATION:79\, boulevard Alphonse Peron\, 77431 De Oliveira-sur-Mer\, De Oli
- veira-sur-Mer
-DTSTART;TZID=Europe/Paris:20220219T035502
-DTEND;TZID=Europe/Paris:20220219T035502
+DESCRIPTION:Qui dolores provident aspernatur ut. Nam quis atque dolorem.
+LOCATION:boulevard Aimée Imbert\, 05648 Brunel-sur-Meunier\, Brunel-sur-Me
+ unier
+DTSTART;TZID=Europe/Paris:20220416T053509
+DTEND;TZID=Europe/Paris:20220416T053509
 END:VEVENT
 END:VCALENDAR

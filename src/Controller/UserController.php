@@ -90,8 +90,13 @@ class UserController extends AbstractController
             return $this->redirectToRoute('user_edit', ['id' => $id], Response::HTTP_SEE_OTHER);
         }
 
+        $redirectLink = $this->redirectToRoute('user_index')->getTargetUrl();
         return $this->render('user/edit.html.twig', [
             'user' => $user,
+            'redirect' => [
+                'txt' => $this->translator->trans('back to list'),
+                'link' => $redirectLink,
+            ],
             'form' => $form->createView(),
         ]);
     }

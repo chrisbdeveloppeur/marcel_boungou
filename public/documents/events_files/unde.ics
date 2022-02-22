@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:621500434d881
+DTSTAMP;TZID=Europe/Paris:20220222T162451
+SUMMARY:unde
+DESCRIPTION:Fugiat eum animi perferendis commodi adipisci. Expedita neque a
+ ut enim ipsum. Autem laudantium molestiae eaque officia minima laborum. Su
+ nt sunt qui voluptatibus minima molestias et. Voluptas ipsam autem labore 
+ suscipit ut. Ea dolores consequatur numquam aut. Quia quia vitae maxime si
+ t quaerat at temporibus ipsam.
+LOCATION:186\, impasse Hoareau\, 34470 Lelievre\, Lelievre
+DTSTART;TZID=Europe/Paris:20220220T201227
+DTEND;TZID=Europe/Paris:20220220T201227
+END:VEVENT
+END:VCALENDAR

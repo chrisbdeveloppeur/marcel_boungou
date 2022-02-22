@@ -4,10 +4,10 @@
 
 {% block body %}
 <div class="column is-two-fifths-desktop is-two-thirds-tablet has-background-light">
-    <h1>Edit Event</h1>
+
+    <h1 class="subtitle is-3">{% trans %}Edit Event{% endtrans %}</h1>
 
     {{ include('themes/_form.html.twig') }}
 
-    {{ include('event/_delete_form.html.twig') }}
 </div>
 {% endblock %}

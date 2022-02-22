@@ -76,6 +76,16 @@
                 </div>
             </div>
 
+            <div class="column">
+                <div class="tags" style="z-index: 1">
+                    {% for tag in event.tagsinarray %}
+                        <a class="tag is-success" href="#{{ tag }}">#{{ tag }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+
         </div>
+
     </div>
+
 </div>
