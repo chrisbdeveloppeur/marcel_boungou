@@ -23,8 +23,8 @@ class TwigEventSubscriber implements EventSubscriberInterface
 
     public function onControllerEvent(ControllerEvent $event)
     {
-        // ...
-        $events = $this->eventRepository->findByDate();
+        $date = new \DateTime('now');
+        $events = $this->eventRepository->findByDate($date);
         $musics = $this->musicRepository->findAll();
         $this->twig->addGlobal('events', $events);
         $this->twig->addGlobal('musics', $musics);

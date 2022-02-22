@@ -30,6 +30,10 @@ $navbar-dropdown-item-hover-color: $success;
 $navbar-item-hover-color: $success;
 $dropdown-divider-background-color: $white-layer;
 
+.tag.is-active{
+  background-color: $success !important;
+}
+
 //$font-quintessential : 'Quintessential', cursive;
 //$font-nothing-you-could-do: 'Nothing You Could Do', cursive;
 //$font-kavivanar: 'Kavivanar', cursive;

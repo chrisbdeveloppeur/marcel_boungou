@@ -106,6 +106,11 @@ class Event
      */
     private $tags;
 
+    /**
+     * ORM\Column(type="array", nullable=true)
+     */
+    private $array_tags;
+
 
     public function __construct()
     {
@@ -312,8 +317,8 @@ class Event
     public function getTagsInArray()
     {
 //        $tagFormatted = strtolower(preg_replace('~[\\\\/:*?"<>|()&, \']~','',$tag));
-        $arrayTags = explode(",",$this->tags);
-        return $arrayTags;
+        $this->array_tags = explode(",",$this->tags);
+        return $this->array_tags;
     }
 
     public function setTags($tags)

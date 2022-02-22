@@ -17,14 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621377b309fff
-DTSTAMP;TZID=Europe/Paris:20220221T122955
+UID:6214f5c8ba040
+DTSTAMP;TZID=Europe/Paris:20220222T154008
 SUMMARY:accusamus
-DESCRIPTION:Eum doloremque provident repellat nisi. Nobis repellat ipsa qui
-  dolores. Velit recusandae dolorum dignissimos aut facere. Modi quia repel
- lat totam aperiam culpa quis. Dolores nulla aliquid ut nemo.
-LOCATION:81\, avenue Hamon\, 20065 Lejeune\, Lejeune
-DTSTART;TZID=Europe/Paris:20220225T135138
-DTEND;TZID=Europe/Paris:20220225T135138
+DESCRIPTION:Cum odio veniam iure est laudantium. Totam sed neque quod delec
+ tus. Ut fugiat quibusdam aspernatur ratione et sit dolor.
+LOCATION:1\, rue de Rodriguez\, 23 354 Lambert-sur-Mer\, Lambert-sur-Mer
+DTSTART;TZID=Europe/Paris:20220226T142525
+DTEND;TZID=Europe/Paris:20220226T142525
 END:VEVENT
 END:VCALENDAR

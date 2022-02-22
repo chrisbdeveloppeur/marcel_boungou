@@ -36,6 +36,11 @@
                         </span>
                     </div>
                 </div>
+                <div class="tags">
+                    {% for tag in event.tagsinarray %}
+                        <a class="tag is-success" href="#{{ tag }}">#{{ tag }}</a>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>

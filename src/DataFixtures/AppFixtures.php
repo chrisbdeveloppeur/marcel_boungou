@@ -35,7 +35,7 @@ class AppFixtures extends Fixture
             $event->setImage('https://picsum.photos/id/'.$faker->numberBetween(0,1000).'/720/240');
             $event->setDescription($faker->text($faker->numberBetween('100','500')));
             $event->setTicketingLink('https://www.fnac.com/ia233457/Marcel-Boungou');
-            $event->addTag($faker->word);
+            $event->setTags($faker->word.','.$faker->word.','.$faker->word.','.$faker->word);
             for ($j = 1; $j <= $faker->numberBetween('2','10'); $j++){
                 $mail = $faker->email;
                 $event->addMailToRemind($mail);

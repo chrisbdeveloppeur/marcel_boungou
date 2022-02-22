@@ -23,11 +23,11 @@ class EventRepository extends ServiceEntityRepository
     //  * @return Event[] Returns an array of Event objects
     //  */
 
-    public function findByDate()
+    public function findByDate($today)
     {
         return $this->createQueryBuilder('e')
-            //->andWhere('e.dateTime = :val')
-            //->setParameter('val', $value)
+            ->setParameter('today', $today)
+            ->andWhere('e.datetime >= :today ')
             ->orderBy('e.datetime', 'ASC')
             ->setMaxResults(500)
             ->getQuery()
