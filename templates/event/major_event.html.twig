@@ -53,13 +53,13 @@
 
                         {% if event.ticketingLink %}
                             <div class="column is-flex is-justify-content-center is-align-items-center rotationX scalup-hover transition-3ms">
-                                <a href="{{ event.ticketingLink }}" target="_blank" class="button is-fullwidth is-height-100-percent is-success is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center">
-                                            <span class="icon is-large">
-                                                <i class="fas fa-lg fa-ticket"></i>
-                                            </span>
-                                    <span class="is-size-7-touch">
-                                                {% trans %}Reservation{% endtrans %}
-                                            </span>
+                                <a href="{{ event.ticketingLink }}" target="_blank" class="button is-fullwidth is-height-100-percent is-success is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center is-size-4">
+                                    <span class="icon is-large">
+                                        <i class="fas fa-lg fa-ticket"></i>
+                                    </span>
+                                    <span>
+                                        {% trans %}Reservation{% endtrans %}
+                                    </span>
                                 </a>
                             </div>
                         {% endif %}

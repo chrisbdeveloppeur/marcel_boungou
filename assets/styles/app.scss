@@ -59,6 +59,7 @@ $title-font: $font-josefin-sans;
 *{
   transition: .2s;
   font-family: $font-quicksand;
+  scroll-behavior: smooth;
 }
 h1, h2, h3{
   font-family: $title-font;
@@ -305,6 +306,25 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   position: relative;
   z-index: 1;
 }
+
+.arrow_up{
+  position: fixed;
+  left: 97%;
+  transform: translate(-50%);
+  bottom: 5vh;
+  display: flex;
+  z-index: 1500;
+  width: 40px;
+  height: 40px;
+  background: rgba(150,150,150,0.7);
+  border: rgba(166, 166, 166, 0.89) solid 3px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: .2s;
+  opacity: 0;
+}
+
 
 // BREAK RESPONSIVE FOR DESKTOP
 @media (max-width: 1023px ) {

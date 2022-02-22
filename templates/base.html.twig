@@ -42,11 +42,16 @@
     </div>
     {% block body %}{% endblock %}
 </section>
-{#{% if hightlights_dates is defined %}#}
-{#{% for hightlight_date in hightlights_dates %}#}
-{#    {{ hightlight_date }}#}
-{#{% endfor %}#}
-{#{% endif %}#}
+
+{% block arrow_up %}
+    <div class="arrow_up">
+        <a href="#top" class="is-flex align-items-center justify-content-center">
+            <span class="icon justify-content-center align-items-center is-size-4">
+                <i class="fas fa-angle-up" style="color: rgba(255, 255, 255, 0.3);"></i>
+            </span>
+        </a>
+    </div>
+{% endblock %}
 
 {% block footer %}
     {{ include('includes/footer.html.twig') }}
@@ -227,6 +232,22 @@
     };
     bulmaTagsinput.attach('input[type="tags"], select[data-type="tags"], .tags-input', TagsInputOptions);
 
+    {#   SCRIPT SCROLL UP   #}
+    let divScroll = document.getElementsByClassName('arrow_up');
+    let scroll_position = 0;
+    window.addEventListener('scroll', function()
+    {
+        scroll_position = window.scrollY;
+        if (scroll_position >= 500){
+            divScroll[0].style.display = 'flex';
+            divScroll[0].style.opacity = 1;
+            divScroll[0].style.bottom = '5vh';
+        } else {
+            divScroll[0].style.opacity = 0;
+            divScroll[0].style.bottom = '-200px';
+        }
+    });
+    {#   FIN DU SCRIPT SCROLL UP   #}
 
 </script>
 
