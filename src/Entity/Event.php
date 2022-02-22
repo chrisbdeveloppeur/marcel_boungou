@@ -318,6 +318,7 @@ class Event
 
     public function setTags($tags)
     {
+        $tags = strtolower(preg_replace('~[\\\\/:*?"<>|()&\']~','',$tags));
         $this->tags = $tags;
 
         return $this;

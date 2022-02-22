@@ -14,15 +14,21 @@
 
 {% for child in form %}
 
-<div class="field">
+    {% if 'tags' in child.vars.name %}
+        <div class="label is-size-7">
+            Tags
+        </div>
+        {{ form_widget(child) }}
+    {% endif %}
 
+<div class="field">
     {% if 'token' not in form_label(child) %}
-    <div class="label is-size-7">
-        {{ form_label(child) }}
-        {% if child.vars.required %}
-            *
-        {% endif %}
-    </div>
+        <div class="label is-size-7">
+            {{ form_label(child) }}
+            {% if child.vars.required %}
+                *
+            {% endif %}
+        </div>
     {% endif %}
 
     {% if child.vars.block_prefixes[1] == 'choice' %}

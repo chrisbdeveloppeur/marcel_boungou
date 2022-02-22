@@ -100,6 +100,7 @@ class EventType extends AbstractType
             ])
             ->add('tags', TextType::class,[
                 'required'=> false,
+                'label' => false,
                 'attr' => [
                     'class' => 'tags-input',
                     'data-type' => 'tags',
