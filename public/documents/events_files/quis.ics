@@ -17,17 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213a56d0213f
-DTSTAMP;TZID=Europe/Paris:20220221T154501
+UID:6215153d0324f
+DTSTAMP;TZID=Europe/Paris:20220222T175421
 SUMMARY:quis
-DESCRIPTION:Hic alias consequuntur exercitationem eum et harum. Consequatur
-  hic commodi fuga. Blanditiis consequatur qui voluptatibus atque. Exercita
- tionem alias consequatur delectus cupiditate eius. Architecto animi in et 
- quia minus. Quam voluptate ut iure rerum et qui et animi. Qui ab et doloru
- m dolorem at ut itaque aut. Est vel voluptatibus fuga neque.
-LOCATION:9\, impasse de Daniel\, 34644 Delaunay-la-Forêt\, Delaunay-la-For
- êt
-DTSTART;TZID=Europe/Paris:20220327T082124
-DTEND;TZID=Europe/Paris:20220327T082124
+DESCRIPTION:Doloribus laborum ut quae reiciendis in deleniti. Sint ullam ex
+ plicabo voluptas eum sed voluptates optio. Sit quia sit dolorem.
+LOCATION:2\, rue Rousseau\, 82 276 Brunet\, Brunet
+DTSTART;TZID=Europe/Paris:20220302T024605
+DTEND;TZID=Europe/Paris:20220302T024605
 END:VEVENT
 END:VCALENDAR

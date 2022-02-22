@@ -17,16 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621373637b1a5
-DTSTAMP;TZID=Europe/Paris:20220221T121131
+UID:6215153d4fb6a
+DTSTAMP;TZID=Europe/Paris:20220222T175421
 SUMMARY:suscipit
-DESCRIPTION:Aut animi reiciendis aut amet magnam architecto. Laudantium qua
- erat quod occaecati et quaerat. Corrupti vero ut dolore ut labore et deser
- unt. Asperiores nostrum corporis repudiandae sapiente. Harum repellat labo
- riosam nesciunt aut. Aut ut similique aperiam dolorem soluta molestiae ani
- mi. Corrupti neque quas nesciunt optio nulla vel voluptatibus.
-LOCATION:55\, place Bazin\, 09948 Dupuis-sur-Bruneau\, Dupuis-sur-Bruneau
-DTSTART;TZID=Europe/Paris:20220306T162708
-DTEND;TZID=Europe/Paris:20220306T162708
+DESCRIPTION:Quia illo sequi repellat saepe et saepe. Consequatur atque ipsa
+ m accusantium alias. Ea qui occaecati corrupti culpa fugit quis qui exerci
+ tationem. Eligendi voluptas voluptas velit dolore. Qui suscipit nulla recu
+ sandae aut. Sit eum aut vitae. Nostrum culpa maxime labore unde et. Pariat
+ ur neque molestiae officia aut. Tenetur sit quia repudiandae praesentium.
+LOCATION:6\, boulevard Rémy Nguyen\, 24 691 Daniel-sur-Remy\, Daniel-sur-R
+ emy
+DTSTART;TZID=Europe/Paris:20220416T104010
+DTEND;TZID=Europe/Paris:20220416T104010
 END:VEVENT
 END:VCALENDAR

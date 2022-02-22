@@ -17,17 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215004384e68
-DTSTAMP;TZID=Europe/Paris:20220222T162451
+UID:6215153cb1b93
+DTSTAMP;TZID=Europe/Paris:20220222T175420
 SUMMARY:ut
-DESCRIPTION:Et quisquam odit veniam blanditiis laborum. Commodi ut consequa
- tur explicabo. Qui ea exercitationem velit a quis qui. Aliquid ut voluptat
- ibus ut. Voluptatibus eaque iusto rem explicabo qui ut. Nisi animi sunt al
- ias quia voluptatem. Animi nisi tempora aperiam. Sed ea ratione nostrum. H
- ic sed velit incidunt sint. Temporibus delectus tempore qui repellat lauda
- ntium. Voluptatem natus architecto ea officiis est ut quia.
-LOCATION:916\, avenue Julie Legrand\, 11377 Marchand\, Marchand
-DTSTART;TZID=Europe/Paris:20220226T101543
-DTEND;TZID=Europe/Paris:20220226T101543
+DESCRIPTION:Omnis eum tempora consequuntur sit reiciendis quis tempore aute
+ m. Et qui deleniti vitae aut qui accusamus dicta. Dolorem ipsa non quia di
+ gnissimos. Minima et harum iusto pariatur dolor. Totam architecto repudian
+ dae quis fugiat enim autem aut culpa. Labore corporis earum exercitationem
+  earum ratione et. Facere adipisci autem accusantium soluta enim eos quia 
+ blanditiis. Modi et sed praesentium nemo hic pariatur.
+LOCATION:72\, avenue de Gillet\, 82946 Gautier\, Gautier
+DTSTART;TZID=Europe/Paris:20220220T112023
+DTEND;TZID=Europe/Paris:20220220T112023
 END:VEVENT
 END:VCALENDAR

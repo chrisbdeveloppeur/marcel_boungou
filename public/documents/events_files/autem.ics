@@ -17,14 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213fccd4547d
-DTSTAMP;TZID=Europe/Paris:20220221T215749
+UID:6215153d290b8
+DTSTAMP;TZID=Europe/Paris:20220222T175421
 SUMMARY:autem
-DESCRIPTION:Voluptatem saepe ea impedit quaerat voluptate occaecati aut eiu
- s. Quae dicta possimus aut quos eaque quia doloribus blanditiis. Voluptate
- s libero dolor accusantium ipsum.
-LOCATION:637\, rue Turpin\, 07069 Blanc\, Blanc
-DTSTART;TZID=Europe/Paris:20220222T004602
-DTEND;TZID=Europe/Paris:20220222T004602
+DESCRIPTION:Quae eum non aliquid in. Incidunt unde voluptatem vitae facere 
+ vitae quis velit. Nam aut eius amet maiores quasi.
+LOCATION:77\, rue de Verdier\, 83 997 Petitjean\, Petitjean
+DTSTART;TZID=Europe/Paris:20220313T215813
+DTEND;TZID=Europe/Paris:20220313T215813
 END:VEVENT
 END:VCALENDAR

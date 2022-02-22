@@ -17,17 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213b63b24880
-DTSTAMP;TZID=Europe/Paris:20220221T165643
+UID:621514d9d2ca8
+DTSTAMP;TZID=Europe/Paris:20220222T175241
 SUMMARY:tempora
-DESCRIPTION:Veritatis quas dolorum est veritatis est sunt non. Ullam fuga h
- arum laboriosam velit adipisci aliquid optio. Et ipsam ex nemo maiores aut
-  dolorem aliquid impedit. Doloribus id quia aut. Fuga cum quia pariatur od
- io accusamus id. Rerum sit velit repudiandae doloribus dolor perspiciatis 
- cumque. Nobis voluptatem ut fugiat quisquam est. Minus itaque esse quae nu
- lla.
-LOCATION:632\, boulevard de Pichon\, 08 073 VerdierVille\, VerdierVille
-DTSTART;TZID=Europe/Paris:20220220T174659
-DTEND;TZID=Europe/Paris:20220220T174659
+DESCRIPTION:Ut sit architecto voluptas repellendus placeat eos quos. Conseq
+ uatur odit autem aspernatur sint repellat nesciunt. Quas culpa dicta ducim
+ us earum perspiciatis qui numquam. Porro assumenda vero necessitatibus rep
+ ellendus. Consequuntur velit quod consequatur. Aliquid voluptas voluptatib
+ us quo quae. Labore est omnis sunt est nam cum libero in.
+LOCATION:63\, place Benoît Humbert\, 80 692 Marchand-sur-Mer\, Marchand-su
+ r-Mer
+DTSTART;TZID=Europe/Paris:20220226T013705
+DTEND;TZID=Europe/Paris:20220226T013705
 END:VEVENT
 END:VCALENDAR

@@ -33,10 +33,9 @@
             <div class="is-flex is-flex-direction-column"  style="height: 100%;">
                 <figure class="image is-3by1">
                     {% if event.image %}
-                        {#                                <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="" style="height: 100%;max-height: 100%;object-fit: fill">#}
-                        <img src="{{ event.image }}" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
+                        <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
                     {% else %}
-                        <img src="{{ asset('build/images/720x240.8013db28.png') }}" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
+                        <img src="https://picsum.photos/id/{{ random(1,100) }}/720/240" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
                     {% endif %}
                 </figure>
 

@@ -17,16 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213a56c9731e
-DTSTAMP;TZID=Europe/Paris:20220221T154500
+UID:621514da124b3
+DTSTAMP;TZID=Europe/Paris:20220222T175242
 SUMMARY:impedit
-DESCRIPTION:Laudantium molestiae aut ratione laborum doloremque quo. Id qui
-  necessitatibus libero. Voluptatem exercitationem est voluptates id non of
- ficia. Autem nihil est repellendus deleniti sunt dolores mollitia. Eum dol
- oremque vero quia autem. Adipisci qui beatae et et. Mollitia omnis odio pl
- aceat temporibus labore odit exercitationem.
-LOCATION:47\, rue de Lemoine\, 68586 Lefebvre-sur-Mer\, Lefebvre-sur-Mer
-DTSTART;TZID=Europe/Paris:20220220T191912
-DTEND;TZID=Europe/Paris:20220220T191912
+DESCRIPTION:Modi repellendus quia est error. Optio accusamus possimus volup
+ tates culpa animi qui dolor. Laborum dolorem dolore tempora culpa.
+LOCATION:74\, rue de Hernandez\, 29561 Bodindan\, Bodindan
+DTSTART;TZID=Europe/Paris:20220313T000443
+DTEND;TZID=Europe/Paris:20220313T000443
 END:VEVENT
 END:VCALENDAR

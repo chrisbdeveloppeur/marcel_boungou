@@ -2,9 +2,8 @@
     <figure class="image is-3by1">
         {% if events[0].image %}
             <img src="{{ vich_uploader_asset(events[0], 'imageFile') }}" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
-            {#                                <img src="{{ events[0].image }}" alt="" style="height: 100%;max-height: 100%;object-fit: fill">#}
         {% else %}
-            <img src="{{ asset('build/images/720x240.8013db28.png') }}" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
+            <img src="https://picsum.photos/id/{{ random(1,100) }}/720/240" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
         {% endif %}
     </figure>
     <div class="pb-3">

@@ -17,16 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213fcf667a06
-DTSTAMP;TZID=Europe/Paris:20220221T215830
+UID:6215153d4e208
+DTSTAMP;TZID=Europe/Paris:20220222T175421
 SUMMARY:qui
-DESCRIPTION:Numquam et quaerat saepe possimus ut sit sed eum. Occaecati odi
- t accusantium alias et architecto voluptate repudiandae. Aliquam quibusdam
-  omnis animi accusamus labore. Quos et quo quis rerum id fugit est enim. Q
- uia dolorum est voluptatum qui voluptate. Pariatur occaecati et occaecati 
- sit reiciendis.
-LOCATION:impasse Gilles Poulain\, 98 604 Vallet-sur-Mer\, Vallet-sur-Mer
-DTSTART;TZID=Europe/Paris:20220225T112906
-DTEND;TZID=Europe/Paris:20220225T112906
+DESCRIPTION:Alias repudiandae quo pariatur saepe deleniti sed. Ea et ration
+ e ut debitis quis.
+LOCATION:avenue de Hamel\, 63 776 Rey-les-Bains\, Rey-les-Bains
+DTSTART;TZID=Europe/Paris:20220406T191150
+DTEND;TZID=Europe/Paris:20220406T191150
 END:VEVENT
 END:VCALENDAR

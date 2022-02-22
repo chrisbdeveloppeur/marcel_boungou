@@ -26,13 +26,13 @@
 
         <div class="column">
             <!-- Events box for mobile -->
-            {% set count_1 = 0 %}
-            {% for event in events[1:] %}
-                {% if count_1 < 4 %}
+{#            {% set count_1 = 0 %}#}
+{#            {% for event in events[1:] %}#}
+{#                {% if count_1 < 4 %}#}
 {#                    {{ include('event/event_container_touch.html.twig') }}#}
-                {% endif %}
-                {% set count_1 = count_1 + 1 %}
-            {% endfor %}
+{#                {% endif %}#}
+{#                {% set count_1 = count_1 + 1 %}#}
+{#            {% endfor %}#}
             <!-- End Event box for mobile -->
 
             {{ include('event/carousel_events.html.twig') }}

@@ -17,16 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213fcf672163
-DTSTAMP;TZID=Europe/Paris:20220221T215830
+UID:6215153d4c557
+DTSTAMP;TZID=Europe/Paris:20220222T175421
 SUMMARY:quaerat
-DESCRIPTION:Et quos dicta cumque corporis consequatur dolor expedita. Solut
- a corporis soluta recusandae inventore laudantium commodi nemo. Id dolorem
-  nihil aut facilis eos. Eaque vitae aut quo voluptate qui dolor voluptas. 
- Sit sapiente rem recusandae corrupti animi et ullam. Est laboriosam dolore
- m expedita possimus vero quo unde.
-LOCATION:5\, impasse Leveque\, 55 927 Masson\, Masson
-DTSTART;TZID=Europe/Paris:20220405T063035
-DTEND;TZID=Europe/Paris:20220405T063035
+DESCRIPTION:Dolore non dolor modi libero doloremque. Repudiandae eius velit
+  maxime est qui deleniti. Est mollitia exercitationem ratione suscipit ut 
+ vitae. Labore quaerat nulla accusamus rem tempore corporis. Sunt ut minus 
+ sit in in sed ad. Provident et qui dignissimos quam exercitationem sit. Er
+ ror maiores debitis omnis numquam quas voluptate consequatur. Dicta quo en
+ im odit.
+LOCATION:avenue de Laurent\, 07 182 Mallet-sur-Mer\, Mallet-sur-Mer
+DTSTART;TZID=Europe/Paris:20220328T150121
+DTEND;TZID=Europe/Paris:20220328T150121
 END:VEVENT
 END:VCALENDAR
