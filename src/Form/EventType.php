@@ -3,7 +3,10 @@
 namespace App\Form;
 
 use App\Entity\Event;
+use App\Entity\Tag;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -15,6 +18,7 @@ use Vich\UploaderBundle\Form\Type\VichFileType;
 class EventType extends AbstractType
 {
     private $translator;
+
     public function __construct(TranslatorInterface $translator)
     {
         $this->translator = $translator;
@@ -94,11 +98,13 @@ class EventType extends AbstractType
                 ],
                 'label' => $this->translator->trans('Description'),
             ])
-            ->add('tags', null,[
-//                'attr' => [
-//                    'class' => 'input',
-//                    'type' => 'tags'
-//                ]
+            ->add('tags', TextType::class,[
+                'required'=> false,
+                'attr' => [
+                    'class' => 'tags-input',
+                    'data-type' => 'tags',
+                    'placeholder' => $this->translator->trans('Add a Tag')
+                ],
             ])
         ;
     }

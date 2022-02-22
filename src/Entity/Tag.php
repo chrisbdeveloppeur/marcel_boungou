@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\TagRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -22,10 +24,15 @@ class Tag
      */
     private $name;
 
-    /**
-     * @ORM\ManyToOne(targetEntity=Event::class, inversedBy="tags")
-     */
-    private $event;
+    public function __toString()
+    {
+        return $this->name;
+    }
+
+    public function __construct()
+    {
+        $this->events = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -39,19 +46,7 @@ class Tag
 
     public function setName(string $name): self
     {
-        $new_name = strtolower(preg_replace('~[\\\\/:*?"<>|()&, \']~','',$name));
-        $this->name = $new_name;
-        return $this;
-    }
-
-    public function getEvent(): ?Event
-    {
-        return $this->event;
-    }
-
-    public function setEvent(?Event $event): self
-    {
-        $this->event = $event;
+        $this->name = $name;
 
         return $this;
     }

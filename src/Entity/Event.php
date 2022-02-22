@@ -102,7 +102,7 @@ class Event
     private $ticketing_link;
 
     /**
-     * @ORM\OneToMany(targetEntity=Tag::class, mappedBy="event")
+     * @ORM\Column(type="text", nullable=true)
      */
     private $tags;
 
@@ -111,7 +111,7 @@ class Event
     {
         $this->datetime = new \DateTime();
 //        $tagFormatted = strtolower(preg_replace('~[\\\\/:*?"<>|()&, \']~','',$tag));
-$this->tags = new ArrayCollection();
+        $this->tags = new ArrayCollection();
     }
 
     public function __toString()
@@ -304,35 +304,23 @@ $this->tags = new ArrayCollection();
         return 'Event';
     }
 
-    /**
-     * @return Collection|Tag[]
-     */
-    public function getTags(): Collection
+    public function getTags()
     {
         return $this->tags;
     }
 
-    public function addTag(Tag $tag): self
+    public function getTagsInArray()
     {
-        if (!$this->tags->contains($tag)) {
-            $this->tags[] = $tag;
-            $tag->setEvent($this);
-        }
+//        $tagFormatted = strtolower(preg_replace('~[\\\\/:*?"<>|()&, \']~','',$tag));
+        $arrayTags = explode(",",$this->tags);
+        return $arrayTags;
+    }
+
+    public function setTags($tags)
+    {
+        $this->tags = $tags;
 
         return $this;
     }
-
-    public function removeTag(Tag $tag): self
-    {
-        if ($this->tags->removeElement($tag)) {
-            // set the owning side to null (unless already changed)
-            if ($tag->getEvent() === $this) {
-                $tag->setEvent(null);
-            }
-        }
-
-        return $this;
-    }
-
 
 }

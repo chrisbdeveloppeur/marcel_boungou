@@ -589,6 +589,10 @@
         <source>(recommended ratio : 720x240)</source>
         <target>(ratio recommandé : 720x240)</target>
       </trans-unit>
+      <trans-unit id="B9NhoxR" resname="Add a Tag">
+        <source>Add a Tag</source>
+        <target>Ajouter un Tag</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

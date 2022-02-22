@@ -146,15 +146,10 @@
         {% endif %}
     {% endfor %}
 
-    {% if child.vars.name == 'tags' %}
-        {% set entity = form.vars.name %}
-        {% if entity is defined and entity.tags is defined %}
-            {% for tag in event.tags %}
-                {{ tag }}
-            {% endfor %}
-        {% endif %}
-        <input class="input" type="tags" placeholder="Add Tag" value="Tag1,Tag2,Tag3">
-    {% endif %}
+{#    {% if child.vars.name == 'tags' %}#}
+{#        {{ form_widget(child,{'attr':{'type':'tags'}}) }}#}
+{#        <input class="input" type="tags" placeholder="Add Tag" value="{% for tag in event.tags %}{{ tag }}{% endfor %}">#}
+{#    {% endif %}#}
 
 </div>
 {% endfor %}
