@@ -17,17 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213fccd4a1d9
-DTSTAMP;TZID=Europe/Paris:20220221T215749
+UID:6214fb94deeb2
+DTSTAMP;TZID=Europe/Paris:20220222T160452
 SUMMARY:consequuntur
-DESCRIPTION:Deserunt quia ipsam aut cum sunt. Iste totam et aut. In repelle
- ndus laudantium dolores aut dolorem. Ducimus non perferendis asperiores et
-  aut nam. Maiores assumenda commodi et aut. Fugit quibusdam similique nisi
-  velit blanditiis deserunt non. In architecto magni accusamus minus. Quae 
- consequuntur non explicabo. Reprehenderit pariatur et iusto praesentium au
- t est quibusdam facilis.
-LOCATION:74\, rue de Prevost\, 30637 Becker\, Becker
-DTSTART;TZID=Europe/Paris:20220301T165905
-DTEND;TZID=Europe/Paris:20220301T165905
+DESCRIPTION:Unde exercitationem et sunt eos. Quas quia et sed voluptas labo
+ rum ut. Aut rerum explicabo est consectetur asperiores. Qui voluptatibus q
+ uia et dolore nihil quae. Perferendis saepe nulla at. Aut perspiciatis ad 
+ aliquid expedita ad aliquid. Facere aut praesentium illo eveniet.
+LOCATION:7\, avenue Valérie Leclerc\, 32112 Lemaitre-la-Forêt\, Lemaitre-
+ la-Forêt
+DTSTART;TZID=Europe/Paris:20220220T055412
+DTEND;TZID=Europe/Paris:20220220T055412
 END:VEVENT
 END:VCALENDAR

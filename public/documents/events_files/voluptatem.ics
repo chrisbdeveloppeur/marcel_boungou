@@ -17,19 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213fccd507d0
-DTSTAMP;TZID=Europe/Paris:20220221T215749
+UID:6214fb956c0b9
+DTSTAMP;TZID=Europe/Paris:20220222T160453
 SUMMARY:voluptatem
-DESCRIPTION:A est voluptas rerum est quia ullam. Et perferendis aut eum. Mi
- nima id id molestiae vel. A maxime praesentium ex sit ea. A libero molesti
- as molestiae. Consequatur perferendis pariatur aut dignissimos voluptate. 
- Nisi fugiat sed deleniti eum. Et qui fugiat voluptatem ducimus perspiciati
- s ut. Quia nihil odio fugit laborum magnam officiis autem. Dolorem saepe p
- orro voluptatem sunt quidem quaerat natus. Dolorem voluptas quisquam volup
- tatem quis error.
-LOCATION:2\, impasse Jeannine Brunet\, 18 256 Dufour-les-Bains\, Dufour-les
- -Bains
-DTSTART;TZID=Europe/Paris:20220327T163958
-DTEND;TZID=Europe/Paris:20220327T163958
+DESCRIPTION:Corporis consequatur sit ea cum qui. Explicabo aut animi sed vo
+ luptatem ullam. Ipsam architecto et quasi et quia voluptatem est. Id volup
+ tatibus nemo cumque rem sit autem fugit. Ex odio ut consectetur ducimus in
+ cidunt incidunt. Consequatur a voluptatem laborum neque fuga et omnis itaq
+ ue. Facilis et neque rem. Dolor error tempore deleniti. Aut debitis iure n
+ ostrum quod id enim.
+LOCATION:chemin Arnaud\, 70 305 Boucher\, Boucher
+DTSTART;TZID=Europe/Paris:20220313T013214
+DTEND;TZID=Europe/Paris:20220313T013214
 END:VEVENT
 END:VCALENDAR

@@ -17,19 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213fccd522aa
-DTSTAMP;TZID=Europe/Paris:20220221T215749
+UID:6214fb956a308
+DTSTAMP;TZID=Europe/Paris:20220222T160453
 SUMMARY:architecto
-DESCRIPTION:Delectus sapiente et autem autem ipsa quo nostrum. Aut perferen
- dis ut doloribus. Molestiae aspernatur blanditiis ducimus non voluptas a a
- ut. Possimus quod at illum sit ut culpa et. Iure doloremque ab id reprehen
- derit optio. Nam et reprehenderit dicta qui asperiores. Iusto quo sunt ven
- iam ipsum. Voluptas voluptas voluptatem voluptatem dolores voluptatem accu
- samus autem. Eveniet voluptatibus omnis accusantium eos quis nesciunt sequ
- i.
-LOCATION:99\, impasse Isabelle Salmon\, 34 883 Roy-sur-Guillon\, Roy-sur-Gu
- illon
-DTSTART;TZID=Europe/Paris:20220405T035412
-DTEND;TZID=Europe/Paris:20220405T035412
+DESCRIPTION:Labore omnis eum deleniti repellat. Occaecati eum earum qui sin
+ t delectus culpa. Minima sint voluptas accusamus ex. Possimus dolorum omni
+ s ipsam similique alias. Ex quisquam eum provident cumque omnis sit blandi
+ tiis.
+LOCATION:48\, avenue de Leger\, 75 639 Perrotdan\, Perrotdan
+DTSTART;TZID=Europe/Paris:20220307T073320
+DTEND;TZID=Europe/Paris:20220307T073320
 END:VEVENT
 END:VCALENDAR
