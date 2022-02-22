@@ -66,7 +66,10 @@ h1, h2, h3{
 }
 
 .font-quicksand{
-  font-family: $font-quicksand;
+  font-family: $font-quicksand !important;
+}
+.font-josefin-sans{
+  font-family: $font-josefin-sans !important;
 }
 .navbar-item{
   font-family: $font-quicksand;

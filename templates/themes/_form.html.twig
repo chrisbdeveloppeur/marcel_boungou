@@ -9,7 +9,7 @@
 </span>
 {% endif %}
 
-{% if ('new' not in app.request.get('_route')) and ('register' not in app.request.get('_route')) %}
+{% if ('new' not in app.request.get('_route')) and ('register' not in app.request.get('_route')) and ('reminder' not in app.request.get('_route')) %}
     <div class="pt-1 has-text-right">
         {{ include(form.vars.name~'/_delete_form.html.twig') }}
     </div>

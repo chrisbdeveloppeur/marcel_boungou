@@ -1,4 +1,4 @@
-<div class="column px-0 py-0">
+<div class="column px-0 py-0  has-text-white">
     <figure class="image is-3by1">
         {% if events[0].image %}
             <img src="{{ vich_uploader_asset(events[0], 'imageFile') }}" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
@@ -7,9 +7,8 @@
             <img src="{{ asset('build/images/720x240.8013db28.png') }}" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
         {% endif %}
     </figure>
-    <div class="is-flex is-justify-content-space-between">
-        <h3 class="subtitle has-text-centered"><b>{{ event }}</b></h3>
-        <a href="{{ asset('documents/events_files/') }}{{ event.icsFile }}" target="_blank" download="{{ event.icsFile }}" type=".ics" class="addToCalendar button is-primary" title="{% trans %}Add to Calendar{% endtrans %}">
+    <div class="pb-3">
+        <a href="{{ asset('documents/events_files/') }}{{ event.icsFile }}" target="_blank" download="{{ event.icsFile }}" type=".ics" class="addToCalendar button is-fullwidth is-primary is-light" title="{% trans %}Add to Calendar{% endtrans %}">
             <span class="icon">
                 <i class="fas fa-lg fa-calendar-day"></i>
             </span>
@@ -19,7 +18,14 @@
         </a>
     </div>
 
+    <div class="has-text-centered subtitle is-3 has-text-white">
+        Or...
+    </div>
+
     <div class="">
+        <div class="has-text-centered">
+            {% trans %}Opt for the reminder by Email{% endtrans %}
+        </div>
         <span class="help">
             <span class="icon">
                 <i class="fas fa-info-circle"></i>
@@ -41,7 +47,7 @@
                     {% trans %}remove reminder{% endtrans %}
                 </span>
             </a>
-            <button class="button is-success">
+            <button class="button is-success is-fullwidth">
                 <span class="icon">
                     <i class="far fa-bell"></i>
                 </span>
