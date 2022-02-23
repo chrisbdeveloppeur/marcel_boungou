@@ -34,13 +34,14 @@ class AlbumType extends AbstractType
                 ]
             ])
             ->add('year', ChoiceType::class,[
-                'choices' => $this->getYears($this->date),
-                'mapped' => false,
-                'attr' => [
-//                    'class' => 'input',
-                ]
+                'required' => false,
+                'choices' => $this->getYears(1950),
+                'data' => $this->date,
+                'placeholder' => false,
+                'attr' => []
             ])
             ->add('feat', TextType::class,[
+                'required' => false,
                 'attr' => [
                     'class' => 'input'
                 ]
@@ -58,7 +59,7 @@ class AlbumType extends AbstractType
 
     private function getYears($min, $max='current')
     {
-        $years = range($min, ($max === 'current' ? date('Y') + 20 : $max));
+        $years = range($min, ($max === 'current' ? date('Y') + 50 : $max));
         return array_combine($years, $years);
     }
 

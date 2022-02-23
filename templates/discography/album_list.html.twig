@@ -9,7 +9,7 @@
 <div class="column is-full is-full-mobile">
     <!-- Start Carousel -->
     <div class="carousel" style="height: 250px;">
-        {% for album in albums %}
+        {% for album in albums|sort((a, b) => b.year <=> a.year) %}
             <div class="px-5 py-5 album-carousel opacity100onhover scalup-hover transition-3ms">
                 <div class="card is-relative" style="width: 200px">
 

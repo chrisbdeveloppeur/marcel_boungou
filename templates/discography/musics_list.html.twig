@@ -7,16 +7,20 @@
 {#</div>#}
 
 <div class="column is-half-desktop is-one-third-widescreen is-full-mobile is-flex-touch is-align-items-center is-flex-direction-column">
-    {% for music in musics %}
+    {% for music in musics|sort((a, b) => b.album.year <=> a.album.year) %}
         <div class="{{ music.album }} column is-flex is-align-items-center is-flex-direction-row has-text-white px-0 py-0 my-5 is-hidden-touch">
-            <figure class="image is-64x64 mx-3 my-3">
+            <figure class="image is-96x96 mx-3 my-3">
                 {% if music.album.image %}
                     <img src="{{ vich_uploader_asset(music.album, 'imageFile') }}" style="height: 100%;">
                 {% else %}
                     <img src="https://picsum.photos/id/{{ random(1,100) }}/240/240" style="height: 100%;">
                 {% endif %}
             </figure>
-            <div class="is-flex is-align-items-center column px-3 py-3">
+            <div class="is-flex is-flex-direction-column is-justify-content-center column px-3 py-3">
+                <div class="">
+                    <span class="has-text-weight-bold">{{ music }}</span>
+                    <span class="help">{{ music.album }} ({{ music.album.year }})</span>
+                </div>
                 <audio src="{{ vich_uploader_asset(music, 'musicFile') }}" preload="auto" controls controlsList=”nodownload” style="width: 100%" onplay="pauseAllMusics(this)"></audio>
             </div>
         </div>
