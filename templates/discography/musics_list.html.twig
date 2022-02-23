@@ -21,11 +21,11 @@
                     <span class="has-text-weight-bold">{{ music }}</span>
                     <span class="help">{{ music.album }} ({{ music.album.year }})</span>
                 </div>
-                <audio src="{{ vich_uploader_asset(music, 'musicFile') }}" preload="auto" controls controlsList=”nodownload” style="width: 100%" onplay="pauseAllMusics(this)"></audio>
+                <audio src="{{ vich_uploader_asset(music, 'musicFile') }}" preload="auto" controls controlsList="nodownload" style="width: 100%" onplay="pauseAllMusics(this)"></audio>
             </div>
         </div>
 
-        <div class="{{ music.album }} card is-relative is-hidden-desktop my-5" style="height: 150px;width: 150px">
+        <div class="{{ music.album }} card is-relative is-hidden-desktop my-5" style="height: 150px;width: 150px;{% if music.album.image %}background: center / cover url({{ vich_uploader_asset(music.album, 'imageFile') }}){% else %}background: center / cover url('https://picsum.photos/id/{{ random(1,100) }}/240/240'){% endif %}">
 
             <span class="icon has-text-black pointer-hover play-btn" onclick="startMusic(this)" style="position: absolute;height: 100%;width: 100%;z-index: 1">
                 <i class="fas fa-2x fa-play"></i>
