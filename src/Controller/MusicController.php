@@ -14,7 +14,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 /**
  * @Route("/music")
- * @Security("is_granted('ROLE_ADMIN')", statusCode=403, message="Access denied !")
+ * @Security("is_granted('ROLE_ADMIN')")
  */
 class MusicController extends AbstractController
 {

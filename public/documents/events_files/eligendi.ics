@@ -17,13 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213a52891b1b
-DTSTAMP;TZID=Europe/Paris:20220221T154352
+UID:6215f906d6999
+DTSTAMP;TZID=Europe/Paris:20220223T100614
 SUMMARY:eligendi
-DESCRIPTION:Saepe libero ipsa quisquam quod deserunt quas. Hic accusantium 
- quo similique et libero quod iusto et.
-LOCATION:9\, rue Thibault Delorme\, 13765 Richard\, Richard
-DTSTART;TZID=Europe/Paris:20220219T134829
-DTEND;TZID=Europe/Paris:20220219T134829
+DESCRIPTION:Eius doloremque culpa et nisi. Aliquam quo quas animi qui ex. N
+ eque consequatur quae magni sint ipsa similique nostrum. Perspiciatis fugi
+ at quaerat rerum qui. Eos doloremque nisi nisi. Necessitatibus quo alias p
+ ariatur unde ut in quis.
+LOCATION:avenue Brunet\, 81 805 Delannoy\, Delannoy
+DTSTART;TZID=Europe/Paris:20220224T105023
+DTEND;TZID=Europe/Paris:20220224T105023
 END:VEVENT
 END:VCALENDAR

@@ -17,16 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213783162108
-DTSTAMP;TZID=Europe/Paris:20220221T123201
+UID:6215f88d32225
+DTSTAMP;TZID=Europe/Paris:20220223T100413
 SUMMARY:maxime
-DESCRIPTION:Sint earum itaque quisquam illum nihil. Aut quidem at sed ut re
- rum in non. Quia sit sint minima similique rerum quibusdam debitis. Cum en
- im molestiae expedita. Facilis doloremque quia eius praesentium sed est de
- lectus laborum.
-LOCATION:7\, chemin Christelle Durand\, 38870 Blot-sur-Turpin\, Blot-sur-Tu
- rpin
-DTSTART;TZID=Europe/Paris:20220306T094908
-DTEND;TZID=Europe/Paris:20220306T094908
+DESCRIPTION:Mollitia maxime dicta et sit aut sit consequuntur. Dolores offi
+ cia perferendis et quidem mollitia. Est rerum neque eos rerum voluptatibus
+ . Ea iure molestias nisi.
+LOCATION:45\, chemin Guy Herve\, 13962 Legendre\, Legendre
+DTSTART;TZID=Europe/Paris:20220329T195708
+DTEND;TZID=Europe/Paris:20220329T195708
 END:VEVENT
 END:VCALENDAR

@@ -17,14 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213a529bc84f
-DTSTAMP;TZID=Europe/Paris:20220221T154353
+UID:6215f7313ac14
+DTSTAMP;TZID=Europe/Paris:20220223T095825
 SUMMARY:iure
-DESCRIPTION:Fugiat non excepturi reiciendis eos ipsa a. Aut quas repudianda
- e nostrum ut quas ab sint. Ut est nulla molestiae sint possimus nobis duci
- mus. Numquam reprehenderit in dolorem amet voluptatem consequuntur.
-LOCATION:28\, avenue Philippine Bertrand\, 01 373 Jacquesnec\, Jacquesnec
-DTSTART;TZID=Europe/Paris:20220312T200832
-DTEND;TZID=Europe/Paris:20220312T200832
+DESCRIPTION:Ipsam voluptatem sit sunt consequatur illum. Velit voluptate ac
+ cusamus in ut et nobis quo non. Optio et dolores voluptatem dolor.
+LOCATION:20\, rue de Brunet\, 17158 Delahaye\, Delahaye
+DTSTART;TZID=Europe/Paris:20220303T194207
+DTEND;TZID=Europe/Paris:20220303T194207
 END:VEVENT
 END:VCALENDAR

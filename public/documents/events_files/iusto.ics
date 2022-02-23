@@ -17,13 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213d67021bb3
-DTSTAMP;TZID=Europe/Paris:20220221T191408
+UID:6215f8d373549
+DTSTAMP;TZID=Europe/Paris:20220223T100523
 SUMMARY:iusto
-DESCRIPTION:Ipsa distinctio et ipsum magni ea. Cupiditate voluptatem ea rer
- um dolorem a. Iure qui voluptatibus saepe non.
-LOCATION:94\, chemin de Laine\, 44305 Dumont\, Dumont
-DTSTART;TZID=Europe/Paris:20220301T150405
-DTEND;TZID=Europe/Paris:20220301T150405
+DESCRIPTION:Nihil est placeat animi ex aut eos dolore. Voluptatem aut illum
+  ut dolores repellat. Totam quidem dolorum voluptatem aspernatur consequat
+ ur. Facere eos ea commodi ipsa aut aut.
+LOCATION:187\, avenue Bodin\, 57826 Barthelemy\, Barthelemy
+DTSTART;TZID=Europe/Paris:20220221T175729
+DTEND;TZID=Europe/Paris:20220221T175729
 END:VEVENT
 END:VCALENDAR

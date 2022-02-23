@@ -17,17 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215004362a36
-DTSTAMP;TZID=Europe/Paris:20220222T162451
+UID:6215f86ceafea
+DTSTAMP;TZID=Europe/Paris:20220223T100340
 SUMMARY:sed
-DESCRIPTION:Eos laudantium tempore laudantium dicta. Animi repellendus ut p
- laceat ipsum et sed. Voluptas laudantium perspiciatis est error amet. Ipsa
- m rem ut aut sit quas rerum. Porro fugiat vel quod autem. Magnam minima at
- que in culpa quasi. Aspernatur autem ut voluptas. Sed ut recusandae minus 
- corrupti voluptatem ab non. Sint fugit sunt labore officia facere consequa
- tur.
-LOCATION:75\, rue de Joubert\, 74 682 Poirier\, Poirier
-DTSTART;TZID=Europe/Paris:20220220T150559
-DTEND;TZID=Europe/Paris:20220220T150559
+DESCRIPTION:Vero eaque aut necessitatibus suscipit porro ut porro rerum. Vo
+ luptas iure quia eius rerum hic placeat sed. Ut totam laborum cupiditate b
+ eatae. Facilis possimus ea voluptatibus quam ratione nihil qui.
+LOCATION:87\, chemin Alfred Garnier\, 34149 Marie\, Marie
+DTSTART;TZID=Europe/Paris:20220222T074147
+DTEND;TZID=Europe/Paris:20220222T074147
 END:VEVENT
 END:VCALENDAR

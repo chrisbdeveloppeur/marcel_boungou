@@ -3,6 +3,7 @@
 namespace App\DataFixtures;
 
 use App\Controller\CalendarController;
+use App\Entity\Album;
 use App\Entity\Event;
 use App\Entity\Music;
 use Doctrine\Bundle\FixturesBundle\Fixture;
@@ -45,12 +46,25 @@ class AppFixtures extends Fixture
             $this->calendar->createIcsFile($event->getId());
         }
 
-        for ($e = -1; $e <= 10; $e++){
-            $music = new Music();
-            $music->setTitre($faker->word);
-            $music->setCreatedDate(new \DateTime('now'));
-            $music->setMusicName('zola-ye-yenge.mp3');
-            $manager->persist($music);
+
+        for ($e = -1; $e <= 5; $e++){
+
+            $album = new Album();
+            $album->setName($faker->word);
+            $album->setYear($faker->numberBetween(1990,2022));
+            $album->setFeat($faker->word);
+
+            for ($f = -1; $f <= 10; $f++) {
+                $music = new Music();
+                $music->setTitre($faker->word);
+                $music->setCreatedDate(new \DateTime('now'));
+                $music->setMusicName('zola-ye-yenge.mp3');
+                $manager->persist($music);
+//                $manager->flush();
+                $album->addMusic($music);
+            }
+
+            $manager->persist($album);
             $manager->flush();
         }
 

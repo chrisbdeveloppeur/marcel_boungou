@@ -17,15 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6214fb955eaae
-DTSTAMP;TZID=Europe/Paris:20220222T160453
+UID:6215f8aa75e4e
+DTSTAMP;TZID=Europe/Paris:20220223T100442
 SUMMARY:expedita
-DESCRIPTION:Sunt eligendi quia maiores fugit aperiam est omnis. Consequuntu
- r laborum eos voluptatem. Repellendus voluptatibus sunt repellat qui sed d
- olore veniam. Esse eaque est repellendus mollitia doloremque cum. Animi au
- t aut aut qui rerum veritatis.
-LOCATION:61\, place Guillou\, 63 452 Huet\, Huet
-DTSTART;TZID=Europe/Paris:20220302T123713
-DTEND;TZID=Europe/Paris:20220302T123713
+DESCRIPTION:Voluptates ut sit non distinctio recusandae consectetur. Non co
+ nsectetur quia magnam blanditiis corporis. Eum asperiores et molestiae et 
+ deserunt esse rerum. Maxime facilis eveniet non maxime. Minima eligendi ma
+ iores ut corrupti vitae.
+LOCATION:78\, avenue Samson\, 58 768 Boucher\, Boucher
+DTSTART;TZID=Europe/Paris:20220224T235740
+DTEND;TZID=Europe/Paris:20220224T235740
 END:VEVENT
 END:VCALENDAR

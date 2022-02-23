@@ -17,17 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215ed604b88d
-DTSTAMP;TZID=Europe/Paris:20220223T091632
+UID:6215f7ceb2ad7
+DTSTAMP;TZID=Europe/Paris:20220223T100102
 SUMMARY:id
-DESCRIPTION:Quos dolore quis velit dolorum rerum nostrum ut. Quo dolores de
- leniti nulla dolores nihil consectetur excepturi. Animi maxime est corpori
- s a quis quia ad. Eum cumque dolor autem reprehenderit. Earum error dolore
- s tempora nulla dolore temporibus. Inventore aperiam ut doloremque sint vo
- luptates. Quo quis sed ipsa recusandae. In eius minus dignissimos aut aliq
- uid eveniet est.
-LOCATION:82\, rue Christophe Blanchet\, 47959 Dos Santos\, Dos Santos
-DTSTART;TZID=Europe/Paris:20220314T021535
-DTEND;TZID=Europe/Paris:20220314T021535
+DESCRIPTION:Voluptatem ut aperiam aut quo ut laboriosam fuga. Velit adipisc
+ i consectetur sit aliquam ut quos vitae. Sapiente consequatur blanditiis v
+ eritatis illum velit a iste. Molestiae neque pariatur earum sint. Dolorum 
+ distinctio sunt veritatis aut velit. Magnam omnis sit accusamus corporis s
+ it nihil. Ut optio dolores eum non sint minima velit.
+LOCATION:506\, place de Martinez\, 59036 Camus-les-Bains\, Camus-les-Bains
+DTSTART;TZID=Europe/Paris:20220227T121451
+DTEND;TZID=Europe/Paris:20220227T121451
 END:VEVENT
 END:VCALENDAR

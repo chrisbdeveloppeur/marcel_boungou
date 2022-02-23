@@ -17,15 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6207cd8b448dc
-DTSTAMP;TZID=Europe/Paris:20220212T160859
+UID:6215f86ced30f
+DTSTAMP;TZID=Europe/Paris:20220223T100340
 SUMMARY:molestias
-DESCRIPTION:Saepe molestiae non quas ea ex numquam. Facilis non placeat sus
- cipit pariatur reprehenderit iste. Deserunt quasi sit laudantium velit. Si
- milique porro aspernatur rerum iure nobis magni velit.
-LOCATION:72\, place Valentine Guyot\, 79 094 Mallet-sur-Mer\, Mallet-sur-Me
- r
-DTSTART;TZID=Europe/Paris:20220220T130722
-DTEND;TZID=Europe/Paris:20220220T130722
+DESCRIPTION:Aut distinctio ipsam sint nobis. Saepe inventore eaque et in. E
+ a earum quia rem ut.
+LOCATION:36\, avenue Grégoire Mallet\, 65360 Duhamel\, Duhamel
+DTSTART;TZID=Europe/Paris:20220227T180335
+DTEND;TZID=Europe/Paris:20220227T180335
 END:VEVENT
 END:VCALENDAR

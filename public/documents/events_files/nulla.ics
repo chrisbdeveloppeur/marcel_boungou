@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6215f700a8119
+DTSTAMP;TZID=Europe/Paris:20220223T095736
+SUMMARY:nulla
+DESCRIPTION:Mollitia labore odio sint doloremque mollitia dolores placeat. 
+ Voluptatem eius ut beatae qui repellendus quia omnis. Rerum impedit nulla 
+ assumenda odit et. Architecto qui magni et delectus ducimus ex culpa. Exce
+ pturi nesciunt voluptatem aut laboriosam et quis dolorem eos. Nobis dolori
+ bus perferendis sequi quae quae maxime aut. Beatae ut itaque qui magnam re
+ rum neque illo.
+LOCATION:15\, rue de Guillaume\, 33724 Paul\, Paul
+DTSTART;TZID=Europe/Paris:20220227T042841
+DTEND;TZID=Europe/Paris:20220227T042841
+END:VEVENT
+END:VCALENDAR

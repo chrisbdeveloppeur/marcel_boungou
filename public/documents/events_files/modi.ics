@@ -17,17 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213769109e38
-DTSTAMP;TZID=Europe/Paris:20220221T122505
+UID:6215f88d2b9a4
+DTSTAMP;TZID=Europe/Paris:20220223T100413
 SUMMARY:modi
-DESCRIPTION:Nobis reiciendis debitis tenetur. Cumque provident explicabo bl
- anditiis eveniet sed sint sit. Vel commodi excepturi totam veniam in labor
- um consequuntur fugit. Ipsum odio qui distinctio neque sunt. Corporis vero
-  velit eaque dolore fuga non. Reiciendis maiores id optio quod. Dolor omni
- s molestias hic nulla autem reprehenderit voluptatibus. Odio et aut nemo s
- unt enim. Perferendis rem exercitationem ipsum tempore debitis impedit.
-LOCATION:22\, avenue Petit\, 02251 Simon-les-Bains\, Simon-les-Bains
-DTSTART;TZID=Europe/Paris:20220219T000700
-DTEND;TZID=Europe/Paris:20220219T000700
+DESCRIPTION:Rem excepturi esse aut impedit sed. Ullam natus dolores dolorib
+ us eaque est tenetur. Odio perferendis deserunt voluptas et praesentium qu
+ is.
+LOCATION:10\, boulevard Mace\, 70 507 BouvierBourg\, BouvierBourg
+DTSTART;TZID=Europe/Paris:20220222T135041
+DTEND;TZID=Europe/Paris:20220222T135041
 END:VEVENT
 END:VCALENDAR

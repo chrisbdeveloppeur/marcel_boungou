@@ -1,0 +1,4 @@
+<form method="post" action="{{ path('album_delete', {'id': album.id}) }}" onsubmit="return confirm({% trans %}'Are you sure you want to delete this item?'{% endtrans %});">
+    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ album.id) }}">
+    <button class="button is-danger is-small">{% trans %}Delete{% endtrans %}</button>
+</form>

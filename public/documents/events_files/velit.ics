@@ -17,15 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6214fb9592dac
-DTSTAMP;TZID=Europe/Paris:20220222T160453
+UID:6215f906db0bf
+DTSTAMP;TZID=Europe/Paris:20220223T100614
 SUMMARY:velit
-DESCRIPTION:Recusandae voluptatibus amet repellendus aut aut commodi repudi
- andae laudantium. Voluptas sunt iusto aut eligendi hic doloribus facilis. 
- Ea deserunt minus aut neque. At porro nobis voluptas atque aperiam. Corrup
- ti deleniti in alias non et earum dolorem. Incidunt neque quidem ut unde.
-LOCATION:60\, chemin Rodriguez\, 77333 Micheldan\, Micheldan
-DTSTART;TZID=Europe/Paris:20220328T204407
-DTEND;TZID=Europe/Paris:20220328T204407
+DESCRIPTION:Aut accusamus et non quia. Id eius velit dolor amet omnis dolor
+ um. Occaecati aliquid eligendi veritatis accusamus. Veritatis ullam aut qu
+ i maxime. Et sit in tenetur dolore dolorum doloremque quidem quaerat. Quos
+  voluptatem reiciendis dolorem facilis. Excepturi occaecati et facilis est
+  distinctio perferendis sit quisquam.
+LOCATION:53\, rue René Menard\, 44114 Barre\, Barre
+DTSTART;TZID=Europe/Paris:20220321T230613
+DTEND;TZID=Europe/Paris:20220321T230613
 END:VEVENT
 END:VCALENDAR

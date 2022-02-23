@@ -17,15 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621377b2de85d
-DTSTAMP;TZID=Europe/Paris:20220221T122954
+UID:6215f8d382c06
+DTSTAMP;TZID=Europe/Paris:20220223T100523
 SUMMARY:officiis
-DESCRIPTION:Velit at sunt perspiciatis. Debitis consectetur aut assumenda e
- x vero quae. Amet vero enim possimus iste ad beatae. Neque vitae ea enim i
- llo exercitationem id. Ut corrupti quod deleniti earum. Perferendis nisi s
- ed aut cupiditate error asperiores. Enim quis animi dolores.
-LOCATION:53\, place de Lopes\, 43951 Colas\, Colas
-DTSTART;TZID=Europe/Paris:20220219T172631
-DTEND;TZID=Europe/Paris:20220219T172631
+DESCRIPTION:Tempora deserunt ad ullam est quis labore molestiae. Sit adipis
+ ci molestiae quibusdam et enim esse beatae. Libero delectus vel qui assume
+ nda sed. Perferendis cum pariatur vero qui qui. Sapiente minus impedit qua
+ si ex vel quia illo quasi. Aperiam dolores est sunt dolores est beatae quo
+ d quia. Molestiae sit nisi nihil a et quod saepe. Corrupti hic ea cum ad e
+ st voluptate voluptatum. Asperiores quo ullam velit fuga sint accusamus.
+LOCATION:61\, avenue Meunier\, 06 994 LopesBourg\, LopesBourg
+DTSTART;TZID=Europe/Paris:20220417T225143
+DTEND;TZID=Europe/Paris:20220417T225143
 END:VEVENT
 END:VCALENDAR

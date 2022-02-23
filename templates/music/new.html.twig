@@ -3,11 +3,8 @@
 {% block title %}New Music{% endblock %}
 
 {% block body %}
-
-<div class="column is-two-fifths-desktop is-two-thirds-tablet has-background-light">
-    <h1>Create new Music</h1>
-
-    {{ include('themes/_form.html.twig') }}
-</div>
-
+    <div class="column is-two-fifths-desktop is-two-thirds-tablet has-background-light">
+        <h1 class="subtitle is-3">{% trans %}Create new Music{% endtrans %}</h1>
+        {{ include('themes/_form.html.twig') }}
+    </div>
 {% endblock %}

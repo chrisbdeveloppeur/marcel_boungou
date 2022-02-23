@@ -9,25 +9,31 @@
 <div class="column is-full is-full-mobile">
     <!-- Start Carousel -->
     <div class="carousel" style="height: 250px;">
-{#        {% for album in albums %}#}
+        {% for album in albums %}
             <div class="px-5 py-5 album-carousel opacity100onhover scalup-hover transition-3ms">
-                <div class="card is-relative" style="height: 200px;width: 200px">
+                <div class="card is-relative" style="width: 200px">
 
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            {% if album.image %}
+                                <img src="{{ vich_uploader_asset(album, 'imageFile') }}">
+                            {% else %}
+                                <img src="https://picsum.photos/id/{{ random(1,100) }}/240/240">
+                            {% endif %}
                         </figure>
                     </div>
 
                     <div class="column">
                         <div class="content">
-{#                            {{ album }}#}
+                            {{ album }}<br>
+                            {{ album.year }}<br>
+                            {{ album.feat }}
                         </div>
                     </div>
 
                 </div>
             </div>
-{#        {% endfor %}#}
+        {% endfor %}
     </div>
     <!-- End Carousel -->
 </div>

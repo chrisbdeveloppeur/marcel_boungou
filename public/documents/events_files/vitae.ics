@@ -17,13 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6207bab38aa4f
-DTSTAMP;TZID=Europe/Paris:20220212T144835
+UID:6215f69e73119
+DTSTAMP;TZID=Europe/Paris:20220223T095558
 SUMMARY:vitae
-DESCRIPTION:Quia magni cum omnis excepturi. Consequatur et saepe commodi qu
- aerat. Illo aperiam consequatur quo tempore eligendi.
-LOCATION:impasse de Pinto\, 16 529 Michel\, Michel
-DTSTART;TZID=Europe/Paris:20220214T185616
-DTEND;TZID=Europe/Paris:20220214T185616
+DESCRIPTION:Ipsam veniam tenetur est eligendi quod sequi. Beatae nesciunt a
+ tque laudantium earum. Maxime et consequatur et aut nesciunt et. Veritatis
+  culpa a et voluptas eligendi beatae sit. Vitae sunt sed velit voluptates.
+LOCATION:chemin Élisabeth Blanchet\, 27916 Delaunay\, Delaunay
+DTSTART;TZID=Europe/Paris:20220303T154719
+DTEND;TZID=Europe/Paris:20220303T154719
 END:VEVENT
 END:VCALENDAR

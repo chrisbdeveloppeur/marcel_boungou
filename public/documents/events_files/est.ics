@@ -17,14 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215ed604c75a
-DTSTAMP;TZID=Europe/Paris:20220223T091632
+UID:6215f88d2c6e2
+DTSTAMP;TZID=Europe/Paris:20220223T100413
 SUMMARY:est
-DESCRIPTION:Quia rem ut vitae aut minus suscipit omnis. Repellendus id quo 
- vero qui doloremque dolorem inventore. Impedit ut aut libero tempore liber
- o. Consectetur velit omnis minima facilis ratione aperiam ab ea.
-LOCATION:2\, chemin Marie\, 80744 Ferrand\, Ferrand
-DTSTART;TZID=Europe/Paris:20220321T080913
-DTEND;TZID=Europe/Paris:20220321T080913
+DESCRIPTION:Mollitia ut et corrupti quidem dolorem. Corporis ipsa aliquam o
+ mnis atque eveniet et dignissimos sed. Quae nemo aliquid amet numquam illu
+ m. Exercitationem architecto minima quam dolorum placeat. Nam quis adipisc
+ i non enim. Fugiat ut magni tempora non in modi.
+LOCATION:27\, rue Boucher\, 91 243 BenoitBourg\, BenoitBourg
+DTSTART;TZID=Europe/Paris:20220224T002646
+DTEND;TZID=Europe/Paris:20220224T002646
 END:VEVENT
 END:VCALENDAR

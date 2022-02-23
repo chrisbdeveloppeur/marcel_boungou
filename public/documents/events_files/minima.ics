@@ -17,14 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215ed6050117
-DTSTAMP;TZID=Europe/Paris:20220223T091632
+UID:6215f69e7831c
+DTSTAMP;TZID=Europe/Paris:20220223T095558
 SUMMARY:minima
-DESCRIPTION:Repellat dicta quia fugiat libero ipsa. Et repellendus beatae q
- uisquam aliquam. Tempore omnis quis eos enim reprehenderit doloribus rerum
-  ad. Quos dolorem iusto autem et fuga.
-LOCATION:8\, boulevard Geneviève Loiseau\, 69 721 Payetdan\, Payetdan
-DTSTART;TZID=Europe/Paris:20220417T131517
-DTEND;TZID=Europe/Paris:20220417T131517
+DESCRIPTION:Sed qui expedita vel molestiae omnis. Qui sint asperiores recus
+ andae sed in. Voluptatem reiciendis est possimus in sint placeat ut vitae.
+  Dolorem sit alias earum veniam ut qui sit sunt. Suscipit qui at consequat
+ ur quibusdam non vero quod aut. Maiores ut ratione accusantium sit tenetur
+  iusto dolorum. Adipisci magni unde officiis. Quo aspernatur nihil velit d
+ oloribus.
+LOCATION:942\, place Joseph Thomas\, 22 179 Coste\, Coste
+DTSTART;TZID=Europe/Paris:20220407T020122
+DTEND;TZID=Europe/Paris:20220407T020122
 END:VEVENT
 END:VCALENDAR

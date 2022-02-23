@@ -55,6 +55,11 @@ class Music
      */
     private $createdDate;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Album::class, inversedBy="musics", cascade={"persist"})
+     */
+    private $Album;
+
     public function __construct()
     {
         $this->createdDate = new \DateTime('now');
@@ -141,6 +146,18 @@ class Music
     public function setCreatedDate(?\DateTimeInterface $createdDate): self
     {
         $this->createdDate = $createdDate;
+
+        return $this;
+    }
+
+    public function getAlbum(): ?Album
+    {
+        return $this->Album;
+    }
+
+    public function setAlbum(?Album $Album): self
+    {
+        $this->Album = $Album;
 
         return $this;
     }

@@ -17,17 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215153cb1b93
-DTSTAMP;TZID=Europe/Paris:20220222T175420
+UID:6215f906d935d
+DTSTAMP;TZID=Europe/Paris:20220223T100614
 SUMMARY:ut
-DESCRIPTION:Omnis eum tempora consequuntur sit reiciendis quis tempore aute
- m. Et qui deleniti vitae aut qui accusamus dicta. Dolorem ipsa non quia di
- gnissimos. Minima et harum iusto pariatur dolor. Totam architecto repudian
- dae quis fugiat enim autem aut culpa. Labore corporis earum exercitationem
-  earum ratione et. Facere adipisci autem accusantium soluta enim eos quia 
- blanditiis. Modi et sed praesentium nemo hic pariatur.
-LOCATION:72\, avenue de Gillet\, 82946 Gautier\, Gautier
-DTSTART;TZID=Europe/Paris:20220220T112023
-DTEND;TZID=Europe/Paris:20220220T112023
+DESCRIPTION:Odio est eveniet omnis iusto. Quae nemo fuga omnis non a quibus
+ dam est. Et facilis cupiditate consequatur consequuntur et.
+LOCATION:80\, place de Allard\, 58 563 Delannoy-la-Forêt\, Delannoy-la-For
+ êt
+DTSTART;TZID=Europe/Paris:20220308T125128
+DTEND;TZID=Europe/Paris:20220308T125128
 END:VEVENT
 END:VCALENDAR

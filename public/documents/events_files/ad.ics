@@ -17,13 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621514d97cd5c
-DTSTAMP;TZID=Europe/Paris:20220222T175241
+UID:6215f73137d25
+DTSTAMP;TZID=Europe/Paris:20220223T095825
 SUMMARY:ad
-DESCRIPTION:Qui fugiat modi velit iusto consequatur. Voluptatem rerum ut su
- nt tenetur. Quisquam sint enim nihil eaque hic quibusdam esse tenetur.
-LOCATION:7\, rue Maggie Reynaud\, 41829 Delattre\, Delattre
-DTSTART;TZID=Europe/Paris:20220220T105837
-DTEND;TZID=Europe/Paris:20220220T105837
+DESCRIPTION:Ut dicta rerum et quia. Sunt dolorum corrupti totam inventore n
+ on ut delectus. Ullam libero est est dolorem a. Eligendi quia nam dicta eo
+ s non quasi ut. Explicabo soluta quibusdam eveniet deserunt et eos. A simi
+ lique sequi dolores voluptas voluptatem.
+LOCATION:66\, place de Blanchet\, 02110 De Oliveira\, De Oliveira
+DTSTART;TZID=Europe/Paris:20220222T092709
+DTEND;TZID=Europe/Paris:20220222T092709
 END:VEVENT
 END:VCALENDAR

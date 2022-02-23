@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6215f69e75f14
+DTSTAMP;TZID=Europe/Paris:20220223T095558
+SUMMARY:numquam
+DESCRIPTION:Facilis et totam eaque velit. Accusamus odio et et quas dicta. 
+ Qui distinctio laboriosam quaerat ut similique. Debitis voluptate libero q
+ uos laudantium. Vel omnis adipisci facere eos.
+LOCATION:741\, rue Boulay\, 49 330 Lefebvrenec\, Lefebvrenec
+DTSTART;TZID=Europe/Paris:20220321T211937
+DTEND;TZID=Europe/Paris:20220321T211937
+END:VEVENT
+END:VCALENDAR

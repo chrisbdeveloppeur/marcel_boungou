@@ -17,14 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213a52974054
-DTSTAMP;TZID=Europe/Paris:20220221T154353
+UID:6215f7ceb97fe
+DTSTAMP;TZID=Europe/Paris:20220223T100102
 SUMMARY:itaque
-DESCRIPTION:Hic veniam eos minima quos. Provident amet in placeat eos omnis
- . Tenetur ipsam cum distinctio tenetur modi. Minima expedita magnam mollit
- ia dolor recusandae.
-LOCATION:89\, impasse Marc Prevost\, 20 375 Rodrigues\, Rodrigues
-DTSTART;TZID=Europe/Paris:20220222T174519
-DTEND;TZID=Europe/Paris:20220222T174519
+DESCRIPTION:Consequatur vel ad incidunt harum. Molestiae sit quia eos. Quis
+  dolor omnis eaque sint rerum molestias repudiandae.
+LOCATION:place Simone Lemaitre\, 09 321 Picard\, Picard
+DTSTART;TZID=Europe/Paris:20220417T003108
+DTEND;TZID=Europe/Paris:20220417T003108
 END:VEVENT
 END:VCALENDAR

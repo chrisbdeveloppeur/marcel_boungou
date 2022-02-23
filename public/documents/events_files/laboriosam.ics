@@ -17,15 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6207cd8b1f4ce
-DTSTAMP;TZID=Europe/Paris:20220212T160859
+UID:6215f906da21f
+DTSTAMP;TZID=Europe/Paris:20220223T100614
 SUMMARY:laboriosam
-DESCRIPTION:Facilis expedita libero ab. Ut nostrum molestiae perferendis au
- t. Enim autem similique impedit consequatur vel. Dicta ullam ea molestiae 
- beatae rerum quod. Voluptatum dolores quo ipsa eos quia. Quasi voluptates 
- et natus adipisci et in. Quasi et beatae dolorem dolores.
-LOCATION:701\, chemin Cohen\, 50997 Chretiennec\, Chretiennec
-DTSTART;TZID=Europe/Paris:20220214T115632
-DTEND;TZID=Europe/Paris:20220214T115632
+DESCRIPTION:Sunt ea placeat iste ea ducimus. Qui qui qui porro dicta dolore
+ s. Maiores sed nulla aut est velit dicta suscipit dolores.
+LOCATION:7\, place de Renault\, 93486 Vidal-sur-Chauvin\, Vidal-sur-Chauvin
+DTSTART;TZID=Europe/Paris:20220314T142734
+DTEND;TZID=Europe/Paris:20220314T142734
 END:VEVENT
 END:VCALENDAR

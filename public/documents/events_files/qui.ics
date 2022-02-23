@@ -17,18 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215ed604d44d
-DTSTAMP;TZID=Europe/Paris:20220223T091632
+UID:6215f86cf1868
+DTSTAMP;TZID=Europe/Paris:20220223T100340
 SUMMARY:qui
-DESCRIPTION:Et voluptatem itaque ab suscipit quo. Fuga ipsum nostrum dolore
- mque ipsum. Debitis autem quas aliquid reiciendis. Eius voluptatem dolorib
- us vel similique enim. Laboriosam nobis repellendus corrupti odio sint dol
- oremque accusantium ab. Debitis alias magnam ipsum ut. Id sit rerum omnis 
- ab iusto. Quisquam quis illum velit in. Repudiandae autem at et autem reru
- m. Natus illum eos aut occaecati. Consequatur ab architecto iure sequi ut 
- aut molestias.
-LOCATION:3\, rue Zoé Dias\, 66 238 Dijoux\, Dijoux
-DTSTART;TZID=Europe/Paris:20220329T201355
-DTEND;TZID=Europe/Paris:20220329T201355
+DESCRIPTION:Rerum sunt repellat numquam minus nihil odit et. Animi modi rei
+ ciendis commodi rerum architecto ex voluptatem. Est dolores et quibusdam s
+ ed cumque fugit. Qui nisi aliquam et. Voluptatum fugit quasi dolores omnis
+ . Quas repellat provident corrupti et perferendis sed incidunt. Aut harum 
+ tempore est. In aliquam voluptatem illum error explicabo. Fuga praesentium
+  tempora a corporis voluptates. Quia accusantium ea expedita facilis.
+LOCATION:52\, rue Perrin\, 45 210 Andre\, Andre
+DTSTART;TZID=Europe/Paris:20220314T131600
+DTEND;TZID=Europe/Paris:20220314T131600
 END:VEVENT
 END:VCALENDAR

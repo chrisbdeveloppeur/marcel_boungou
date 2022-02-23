@@ -17,15 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6214fb95941c2
-DTSTAMP;TZID=Europe/Paris:20220222T160453
+UID:6215f906d75aa
+DTSTAMP;TZID=Europe/Paris:20220223T100614
 SUMMARY:sunt
-DESCRIPTION:Earum ut aspernatur fugiat quia illum ipsam ducimus libero. Sed
-  voluptatum qui eaque deleniti magni ut voluptatem. Ipsam quis rerum accus
- amus fuga suscipit non. Illum ab magni aut itaque quis facilis quia fuga.
-LOCATION:boulevard Pierre Cordier\, 84 434 Hubert-sur-Renard\, Hubert-sur-R
- enard
-DTSTART;TZID=Europe/Paris:20220406T153232
-DTEND;TZID=Europe/Paris:20220406T153232
+DESCRIPTION:Et et inventore voluptatibus aperiam. Illo repellat quae debiti
+ s. Hic distinctio aut laboriosam nihil.
+LOCATION:14\, boulevard de Fernandez\, 92 192 Colasdan\, Colasdan
+DTSTART;TZID=Europe/Paris:20220227T234908
+DTEND;TZID=Europe/Paris:20220227T234908
 END:VEVENT
 END:VCALENDAR

@@ -17,15 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:620f93cfd0f34
-DTSTAMP;TZID=Europe/Paris:20220218T134047
+UID:6215f73140416
+DTSTAMP;TZID=Europe/Paris:20220223T095825
 SUMMARY:a
-DESCRIPTION:Repellat minus occaecati labore et molestiae et. Eligendi volup
- tates et id qui iste. Sed a est error magnam. Eum magni quasi eum. Omnis p
- ossimus praesentium delectus id fugit corrupti ea. Porro exercitationem ac
- cusamus mollitia perspiciatis officiis perspiciatis.
-LOCATION:rue Marques\, 20 526 Marques-sur-Berthelot\, Marques-sur-Berthelot
-DTSTART;TZID=Europe/Paris:20220216T103052
-DTEND;TZID=Europe/Paris:20220216T103052
+DESCRIPTION:Unde est aut suscipit. Porro numquam facilis ut esse et autem. 
+ Reiciendis exercitationem perspiciatis et ut consequuntur. Ipsa odit optio
+  voluptatibus sit sapiente at vero.
+LOCATION:959\, rue de Navarro\, 90 025 Roche-les-Bains\, Roche-les-Bains
+DTSTART;TZID=Europe/Paris:20220417T204818
+DTEND;TZID=Europe/Paris:20220417T204818
 END:VEVENT
 END:VCALENDAR

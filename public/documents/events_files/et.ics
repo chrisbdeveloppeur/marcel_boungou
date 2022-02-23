@@ -17,17 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215ed604534a
-DTSTAMP;TZID=Europe/Paris:20220223T091632
+UID:6215f906d587f
+DTSTAMP;TZID=Europe/Paris:20220223T100614
 SUMMARY:et
-DESCRIPTION:Magnam laboriosam corporis dolore dolorem. Voluptatem soluta fa
- cere quidem consequatur. Magnam voluptatibus voluptatibus ut. Neque qui eu
- m ut voluptatem natus. In quos numquam architecto et excepturi molestiae. 
- Eos laboriosam officiis qui laborum. Adipisci non non asperiores temporibu
- s est ab harum. Ut molestiae et soluta error sit. Omnis voluptatem et sint
-  praesentium. Ut in nemo quia excepturi temporibus quidem et quis.
-LOCATION:867\, rue de Vasseur\, 56 147 Benard\, Benard
-DTSTART;TZID=Europe/Paris:20220303T063701
-DTEND;TZID=Europe/Paris:20220303T063701
+DESCRIPTION:Eos nemo sint aliquam minus vero. Animi numquam aut minus ullam
+  rerum in perferendis. Iure autem dolores adipisci facilis aperiam quae. E
+ st qui voluptatum est consectetur architecto voluptatem.
+LOCATION:rue de Leleu\, 03 817 Gonzalez\, Gonzalez
+DTSTART;TZID=Europe/Paris:20220222T014839
+DTEND;TZID=Europe/Paris:20220222T014839
 END:VEVENT
 END:VCALENDAR

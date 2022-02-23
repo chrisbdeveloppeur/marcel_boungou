@@ -17,16 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215ec9b18066
-DTSTAMP;TZID=Europe/Paris:20220223T091315
+UID:6215f8d381867
+DTSTAMP;TZID=Europe/Paris:20220223T100523
 SUMMARY:quibusdam
-DESCRIPTION:Facere voluptatem omnis et minus magnam. Veritatis ea sunt cons
- equatur non aut omnis deleniti voluptas. Quis rerum voluptatem quia aut su
- nt sunt exercitationem. Quibusdam sequi quia rerum voluptas mollitia sapie
- nte. Et dolores et similique sed accusantium exercitationem. Quis vel nost
- rum impedit qui quod. Ab adipisci aliquid optio tenetur.
-LOCATION:5\, boulevard Capucine Simon\, 14990 FerrandBourg\, FerrandBourg
-DTSTART;TZID=Europe/Paris:20220417T193017
-DTEND;TZID=Europe/Paris:20220417T193017
+DESCRIPTION:Alias temporibus eligendi beatae ut nihil. Nihil rem ut nisi si
+ nt.
+LOCATION:rue Briand\, 96 569 Pelletier-sur-Loiseau\, Pelletier-sur-Loiseau
+DTSTART;TZID=Europe/Paris:20220407T080519
+DTEND;TZID=Europe/Paris:20220407T080519
 END:VEVENT
 END:VCALENDAR

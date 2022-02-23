@@ -187,22 +187,22 @@
         let audio = btn.parentElement.querySelector('audio');
         // var icon = btn.parentElement.querySelector('i');
         if (!audio.paused){
-            pauseAllMusics();
+            pauseAllMusics(audio);
         } else {
-            pauseAllMusics();
+            pauseAllMusics(audio);
             // icon.classList.replace('fa-play', 'fa-pause');
             audio.play();
         }
     }
-    function pauseAllMusics(){
-        let playBtns = document.querySelectorAll('.play-btn');
-        playBtns.forEach(function (el) {
-            var audio = el.parentElement.querySelector('audio');
-            // var icon = el.parentElement.querySelector('i');
-            // icon.classList.replace('fa-pause', 'fa-play');
-            audio.pause();
+    function pauseAllMusics(target){
+        let allAudio = document.querySelectorAll('audio');
+        allAudio.forEach(function (audio) {
+            if (target !== audio){
+                audio.pause();
+            }
         });
     }
+
 
     let playBtns = document.querySelectorAll('.play-btn');
     playBtns.forEach(function (btn) {

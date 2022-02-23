@@ -50,7 +50,7 @@ class EventsController extends AbstractController
 
     /**
      * @Route("/list", name="list", methods={"GET"})
-     * @Security("is_granted('ROLE_ADMIN')", statusCode=403, message="Access denied !")
+     * @Security("is_granted('ROLE_ADMIN')")
      */
     public function list(EventRepository $eventRepository): Response
     {
@@ -62,7 +62,7 @@ class EventsController extends AbstractController
 
     /**
      * @Route("/new", name="new", methods={"GET", "POST"})
-     * @Security("is_granted('ROLE_ADMIN')", statusCode=403, message="Access denied !")
+     * @Security("is_granted('ROLE_ADMIN')")
      */
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
@@ -92,7 +92,7 @@ class EventsController extends AbstractController
 
     /**
      * @Route("/{id}", name="show", methods={"GET"})
-     * @Security("is_granted('ROLE_ADMIN')", statusCode=403, message="Access denied !")
+     * @Security("is_granted('ROLE_ADMIN')")
      */
     public function show(Event $event): Response
     {
@@ -103,7 +103,7 @@ class EventsController extends AbstractController
 
     /**
      * @Route("/{id}/edit", name="edit", methods={"GET", "POST"})
-     * @Security("is_granted('ROLE_ADMIN')", statusCode=403, message="Access denied !")
+     * @Security("is_granted('ROLE_ADMIN')")
      */
     public function edit(Request $request, Event $event, EntityManagerInterface $entityManager): Response
     {
@@ -131,7 +131,7 @@ class EventsController extends AbstractController
 
     /**
      * @Route("/{id}", name="delete", methods={"POST"})
-     * @Security("is_granted('ROLE_ADMIN')", statusCode=403, message="Access denied !")
+     * @Security("is_granted('ROLE_ADMIN')")
      */
     public function delete(Request $request, Event $event, EntityManagerInterface $entityManager): Response
     {

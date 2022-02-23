@@ -17,14 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213fd17d9143
-DTSTAMP;TZID=Europe/Paris:20220221T215903
+UID:6215f700a082f
+DTSTAMP;TZID=Europe/Paris:20220223T095736
 SUMMARY:sint
-DESCRIPTION:Ut soluta quidem omnis consequatur voluptas dolor et. Nesciunt 
- ullam ut labore fugiat in placeat libero. Accusamus aut a omnis eos molest
- ias. Ut optio quia non.
-LOCATION:14\, impasse de Boutin\, 82890 Devaux\, Devaux
-DTSTART;TZID=Europe/Paris:20220405T224829
-DTEND;TZID=Europe/Paris:20220405T224829
+DESCRIPTION:Quaerat amet beatae quos. Amet ullam ullam soluta esse molestia
+ s cumque odio error. Sit harum reprehenderit consequatur excepturi. Deleni
+ ti impedit ut magni quaerat. Qui nemo rerum fugit nam blanditiis excepturi
+ .
+LOCATION:94\, rue Lebon\, 92536 Denis\, Denis
+DTSTART;TZID=Europe/Paris:20220221T163914
+DTEND;TZID=Europe/Paris:20220221T163914
 END:VEVENT
 END:VCALENDAR

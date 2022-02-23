@@ -17,14 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621374219a2f6
-DTSTAMP;TZID=Europe/Paris:20220221T121441
+UID:6215f906d84aa
+DTSTAMP;TZID=Europe/Paris:20220223T100614
 SUMMARY:nam
-DESCRIPTION:Distinctio explicabo omnis nihil labore sed ut possimus. Dolore
- m culpa omnis deserunt distinctio. Non vero nam vero ut. Dolores laudantiu
- m suscipit consequatur voluptatum libero ipsum.
-LOCATION:78\, boulevard Denise Bailly\, 00960 Beckerdan\, Beckerdan
-DTSTART;TZID=Europe/Paris:20220301T025610
-DTEND;TZID=Europe/Paris:20220301T025610
+DESCRIPTION:Laboriosam quis sed voluptas facilis. Ratione atque vel ex elig
+ endi qui vel aut. Inventore officia deleniti corporis officia aut. Sed id 
+ est voluptatem sit minus odio. Iusto hic ipsa asperiores ut dolorem molest
+ iae nihil. Magni voluptatem possimus mollitia aut facere.
+LOCATION:boulevard François Lebrun\, 77851 Lombardnec\, Lombardnec
+DTSTART;TZID=Europe/Paris:20220303T165357
+DTEND;TZID=Europe/Paris:20220303T165357
 END:VEVENT
 END:VCALENDAR

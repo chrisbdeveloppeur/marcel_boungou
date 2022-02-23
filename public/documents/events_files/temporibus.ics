@@ -17,13 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213fcf666430
-DTSTAMP;TZID=Europe/Paris:20220221T215830
+UID:6215f7845c2ac
+DTSTAMP;TZID=Europe/Paris:20220223T095948
 SUMMARY:temporibus
-DESCRIPTION:Eveniet aut sint ipsa dolorum velit et vel. Iusto officiis laud
- antium rerum et non nam. Optio ab consequatur alias sunt maiores.
-LOCATION:2\, impasse de Fournier\, 65389 Carre\, Carre
-DTSTART;TZID=Europe/Paris:20220222T132635
-DTEND;TZID=Europe/Paris:20220222T132635
+DESCRIPTION:Expedita aut reiciendis fuga ullam aut ut. Ipsum eum debitis ut
+  optio voluptatem. Commodi aut et eaque ullam at occaecati sed.
+LOCATION:590\, place Aimé Evrard\, 05374 Moreno\, Moreno
+DTSTART;TZID=Europe/Paris:20220303T231724
+DTEND;TZID=Europe/Paris:20220303T231724
 END:VEVENT
 END:VCALENDAR

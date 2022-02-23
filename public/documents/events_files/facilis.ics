@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6215f6cf651ad
+DTSTAMP;TZID=Europe/Paris:20220223T095647
+SUMMARY:facilis
+DESCRIPTION:Minima tenetur consequuntur eius beatae et beatae maiores. Nequ
+ e sit quidem provident quos. Nihil consectetur rerum possimus voluptatem i
+ n quia numquam omnis. Quo nihil et dolore ut repellendus. Provident nemo n
+ obis officia et nulla nam quas. Ullam ullam mollitia eius delectus volupta
+ s. Ipsam a officia corporis saepe iste hic magnam.
+LOCATION:895\, chemin Alexandre\, 52090 Dias\, Dias
+DTSTART;TZID=Europe/Paris:20220314T201628
+DTEND;TZID=Europe/Paris:20220314T201628
+END:VEVENT
+END:VCALENDAR

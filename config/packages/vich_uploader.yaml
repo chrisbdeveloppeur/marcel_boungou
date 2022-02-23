@@ -5,9 +5,9 @@ vich_uploader:
         user_img:
             uri_prefix: /images/user_img
             upload_destination: '%kernel.project_dir%/public/images/user_img'
-        discography_img:
-            uri_prefix: /images/discography_img
-            upload_destination: '%kernel.project_dir%/public/images/discography_img'
+        album_img:
+            uri_prefix: /images/album_img
+            upload_destination: '%kernel.project_dir%/public/images/album_img'
         event_img:
             uri_prefix: /images/event_img
             upload_destination: '%kernel.project_dir%/public/images/event_img'

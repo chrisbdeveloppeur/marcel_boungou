@@ -12,7 +12,6 @@
                 <th>Titre</th>
                 <th>Duration</th>
                 <th>MusicName</th>
-                <th>CreatedDate</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -24,7 +23,6 @@
                 <td>{{ music.titre }}</td>
                 <td>{{ music.duration }}</td>
                 <td>{{ music.MusicName }}</td>
-                <td>{{ music.createdDate ? music.createdDate|date('Y-m-d') : '' }}</td>
                 <td>
                     <a href="{{ path('music_show', {'id': music.id}) }}">show</a>
                     <a href="{{ path('music_edit', {'id': music.id}) }}">edit</a>

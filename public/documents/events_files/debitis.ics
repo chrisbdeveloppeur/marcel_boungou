@@ -17,16 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621500441e4b3
-DTSTAMP;TZID=Europe/Paris:20220222T162452
+UID:6215f700977b0
+DTSTAMP;TZID=Europe/Paris:20220223T095736
 SUMMARY:debitis
-DESCRIPTION:Cupiditate magnam at est temporibus. Reprehenderit odit dolores
-  ipsam consequatur repellendus. Maxime rem ipsa excepturi quisquam omnis n
- ostrum vel. Vel eligendi voluptatum quaerat ea. Repellat rerum officiis am
- et sed. Excepturi velit qui iusto in ut. Et aut qui quisquam dolorum. Expe
- dita velit pariatur veniam ut repudiandae.
-LOCATION:4\, avenue de Leblanc\, 45111 Julien\, Julien
-DTSTART;TZID=Europe/Paris:20220313T050949
-DTEND;TZID=Europe/Paris:20220313T050949
+DESCRIPTION:Quaerat doloribus ex nisi occaecati autem dignissimos nisi. Eni
+ m numquam nesciunt quo velit. A dolore assumenda nostrum et. Aut dolor fug
+ a qui corrupti. Sunt corporis neque natus optio. Inventore eum rem nihil v
+ elit asperiores sint vel. Et cupiditate dolorem nihil. Eos eos eveniet per
+ ferendis voluptate accusantium. Non consectetur saepe excepturi quidem et 
+ repudiandae.
+LOCATION:chemin de Barthelemy\, 02 264 GuillonVille\, GuillonVille
+DTSTART;TZID=Europe/Paris:20220221T174842
+DTEND;TZID=Europe/Paris:20220221T174842
 END:VEVENT
 END:VCALENDAR

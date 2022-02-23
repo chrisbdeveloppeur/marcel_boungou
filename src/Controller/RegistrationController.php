@@ -31,7 +31,7 @@ class RegistrationController extends AbstractController
 
     /**
      * @Route("/register", name="app_register")
-     * @Security("is_granted('ROLE_SUPER_ADMIN')", statusCode=403, message="Access denied !")
+     * @Security("is_granted('ROLE_SUPER_ADMIN')")
      */
     public function register(Request $request, UserPasswordEncoderInterface $userPasswordEncoder, EntityManagerInterface $entityManager): Response
     {

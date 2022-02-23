@@ -17,16 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6207bab38dad7
-DTSTAMP;TZID=Europe/Paris:20220212T144835
+UID:6215f86ce9d82
+DTSTAMP;TZID=Europe/Paris:20220223T100340
 SUMMARY:repellendus
-DESCRIPTION:Molestiae expedita et nesciunt impedit. Nulla dolorem rerum nes
- ciunt itaque dolorem molestiae. In in distinctio quod. Quia tempore minima
-  vero labore error. Aut omnis provident fugiat veniam. Culpa ut eius sit q
- ui et. Et odio dolor natus vel. Voluptas dolorum sit rerum iusto. Nostrum 
- quae magni aliquam harum.
-LOCATION:98\, rue de Julien\, 88 775 Morelnec\, Morelnec
-DTSTART;TZID=Europe/Paris:20220217T201444
-DTEND;TZID=Europe/Paris:20220217T201444
+DESCRIPTION:Beatae nihil est eum quasi quam error. Odit voluptatem non in l
+ audantium quasi. Velit dignissimos et illum. Vero sint et eum cum soluta. 
+ Est eligendi harum dolores debitis corrupti consectetur culpa consequatur.
+  Maiores sint reprehenderit itaque veritatis voluptate nemo.
+LOCATION:11\, rue de Potier\, 92 080 Carre\, Carre
+DTSTART;TZID=Europe/Paris:20220221T233536
+DTEND;TZID=Europe/Paris:20220221T233536
 END:VEVENT
 END:VCALENDAR
