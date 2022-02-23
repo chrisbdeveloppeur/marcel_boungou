@@ -151,8 +151,19 @@ section.body{
   box-shadow: 0 0 10px 1px $success;
 }
 
-.opacity85{
-  opacity: 85%;
+.text-shadow-success{
+  text-shadow: 0 0 5px $success;
+}
+
+.text-shadow-primary{
+  text-shadow: 0 3px 5px $primary;
+}
+
+
+
+
+.music-container{
+  filter: grayscale(1);
 }
 
 .next-event-logo{
@@ -174,6 +185,14 @@ a{
 
 .opacity100onhover:hover{
   opacity: 100% !important;
+}
+
+.opacity85{
+  opacity: 85%;
+}
+
+.opactity0{
+  opacity: 0;
 }
 
 .flash-msg

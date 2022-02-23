@@ -11,13 +11,21 @@
         <div class=" columns is-multiline">
             {% for music in musics|sort((a, b) => b.album.year <=> a.album.year) %}
 
-                <div class="music-container opacity85 {{ music.album }} column is-one-quarter is-one-fifth-desktop is-flex is-justify-content-center is-align-items-center is-flex-direction-column">
+                <div class="music-container opacity0 {{ music.album }} column is-one-quarter is-one-fifth-desktop is-flex is-justify-content-center is-align-items-center is-flex-direction-column">
 
                     <div class="is-relative" style="height: 150px;width: 150px;{% if music.album.image %}background: center / cover url({{ vich_uploader_asset(music.album, 'imageFile') }}){% else %}background: center / cover url('https://picsum.photos/id/{{ random(1,100) }}/240/240'){% endif %}">
 
-                    <span class="icon has-text-black pointer-hover play-btn" onclick="startMusic(this)" style="position: absolute;height: 100%;width: 100%;z-index: 1">
-                        <i class="fas fa-2x fa-play has-text-black"></i>
-                    </span>
+                        <span class="icon has-text-black pointer-hover play-btn" onclick="startMusic(this)" style="position: absolute;height: 100%;width: 100%;z-index: 1">
+                            <button class="button is-success px-3 py-3 is-rounded">
+                                <i class="fas fa-lg fa-play"></i>
+                            </button>
+                        </span>
+
+                        <button class="button is-success is-small is-rounded px-3 py-3 repeat-btn" style="position: absolute;bottom: .3rem;right: .3rem;z-index: 1">
+                            <span class="icon" >
+                                <i class="fas fa-redo-alt"></i>
+                            </span>
+                        </button>
 
                         <div>
                             <audio src="{{ vich_uploader_asset(music, 'musicFile') }}" preload="auto"></audio>
