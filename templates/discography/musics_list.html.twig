@@ -15,6 +15,10 @@
 
                     <div class="is-relative" style="height: 150px;width: 150px;{% if music.album.image %}background: center / cover url({{ vich_uploader_asset(music.album, 'imageFile') }}){% else %}background: center / cover url('https://picsum.photos/id/{{ random(1,100) }}/240/240'){% endif %}">
 
+                        {% if is_granted('ROLE_ADMIN') %}
+                            {{ include('music/edit_music_button.html.twig') }}
+                        {% endif %}
+
                         <span class="icon has-text-black pointer-hover play-btn" onclick="startMusic(this)" style="position: absolute;height: 100%;width: 100%;z-index: 1">
                             <button class="button is-success px-3 py-3 is-rounded">
                                 <i class="fas fa-lg fa-play"></i>

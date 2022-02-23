@@ -92,4 +92,5 @@ class MusicController extends AbstractController
 
         return $this->redirectToRoute('music_index', [], Response::HTTP_SEE_OTHER);
     }
+
 }

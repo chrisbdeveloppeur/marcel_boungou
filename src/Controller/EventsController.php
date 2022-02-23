@@ -202,4 +202,17 @@ class EventsController extends AbstractController
             ]
         ]);
     }
+
+
+    /**
+     * @Route("/image/delete/{id}", name="image_delete")
+     */
+    public function deleteImg($id, Event $event, EntityManagerInterface $em, Request $request): Response
+    {
+        $event->setImage(null);
+        $em->flush();
+        $this->addFlash('info', $this->translator->trans('Image removed successfully'));
+        return $this->redirect($request->headers->get('referer'));
+    }
+
 }

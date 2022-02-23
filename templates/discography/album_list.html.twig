@@ -13,6 +13,10 @@
             <div class="px-5 py-5 album-carousel opacity100onhover scalup-hover transition-3ms">
                 <div class="card is-relative" style="width: 200px; height: 100%;">
 
+                    {% if is_granted('ROLE_ADMIN') %}
+                        {{ include('album/edit_album_button.html.twig') }}
+                    {% endif %}
+
                     <div class="card-image">
                         <figure class="image is-4by3">
                             {% if album.image %}

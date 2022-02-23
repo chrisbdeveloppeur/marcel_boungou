@@ -11,15 +11,23 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Contracts\Translation\TranslatorInterface;
 
 /**
- * @Route("/album")
+ * @Route("/album", name="album_")
  * @Security("is_granted('ROLE_ADMIN')")
  */
 class AlbumController extends AbstractController
 {
+    private $translator;
+
+    public function __construct(TranslatorInterface $translator)
+    {
+        $this->translator = $translator;
+    }
+
     /**
-     * @Route("/", name="album_index", methods={"GET"})
+     * @Route("/", name="index", methods={"GET"})
      */
     public function index(AlbumRepository $albumRepository): Response
     {
@@ -29,7 +37,7 @@ class AlbumController extends AbstractController
     }
 
     /**
-     * @Route("/new", name="album_new", methods={"GET", "POST"})
+     * @Route("/new", name="new", methods={"GET", "POST"})
      */
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
@@ -51,7 +59,7 @@ class AlbumController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="album_show", methods={"GET"})
+     * @Route("/{id}", name="show", methods={"GET"})
      */
     public function show(Album $album): Response
     {
@@ -61,7 +69,7 @@ class AlbumController extends AbstractController
     }
 
     /**
-     * @Route("/{id}/edit", name="album_edit", methods={"GET", "POST"})
+     * @Route("/{id}/edit", name="edit", methods={"GET", "POST"})
      */
     public function edit(Request $request, Album $album, EntityManagerInterface $entityManager): Response
     {
@@ -81,7 +89,7 @@ class AlbumController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="album_delete", methods={"POST"})
+     * @Route("/{id}", name="delete", methods={"POST"})
      */
     public function delete(Request $request, Album $album, EntityManagerInterface $entityManager): Response
     {
@@ -92,4 +100,16 @@ class AlbumController extends AbstractController
 
         return $this->redirectToRoute('album_index', [], Response::HTTP_SEE_OTHER);
     }
+
+    /**
+     * @Route("/image/delete/{id}", name="image_delete")
+     */
+    public function deleteImg($id, Album $album, EntityManagerInterface $em, Request $request): Response
+    {
+        $album->setImage(null);
+        $em->flush();
+        $this->addFlash('info', $this->translator->trans('Image removed successfully'));
+        return $this->redirect($request->headers->get('referer'));
+    }
+
 }
