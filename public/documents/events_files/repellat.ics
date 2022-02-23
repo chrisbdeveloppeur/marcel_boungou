@@ -17,16 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621514d958773
-DTSTAMP;TZID=Europe/Paris:20220222T175241
+UID:6215ed604e205
+DTSTAMP;TZID=Europe/Paris:20220223T091632
 SUMMARY:repellat
-DESCRIPTION:Reiciendis eaque officiis occaecati molestiae. Nemo omnis magni
-  possimus et eligendi voluptatibus rerum. Sed quidem nostrum atque cum et 
- in ab. Maxime velit dolore sed omnis tempore. Consequatur laudantium qui u
- t. Nostrum omnis nihil fugit aut. Rerum quasi dolorum at quia in vitae qua
- si.
-LOCATION:41\, rue Remy\, 71 203 Faure\, Faure
-DTSTART;TZID=Europe/Paris:20220220T161453
-DTEND;TZID=Europe/Paris:20220220T161453
+DESCRIPTION:Dicta consectetur hic incidunt id molestiae. Quaerat molestiae 
+ blanditiis error qui ex. Corrupti voluptate dignissimos tempore ea et dolo
+ res. Aut error est rem et et distinctio.
+LOCATION:chemin Grondin\, 23 033 Lecoq\, Lecoq
+DTSTART;TZID=Europe/Paris:20220407T224817
+DTEND;TZID=Europe/Paris:20220407T224817
 END:VEVENT
 END:VCALENDAR

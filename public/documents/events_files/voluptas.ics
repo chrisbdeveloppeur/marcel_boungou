@@ -17,13 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213a551457b3
-DTSTAMP;TZID=Europe/Paris:20220221T154433
+UID:6215ed604443f
+DTSTAMP;TZID=Europe/Paris:20220223T091632
 SUMMARY:voluptas
-DESCRIPTION:Eveniet harum commodi architecto rem vel autem quasi. Alias eaq
- ue autem eveniet. Accusamus rerum tempore rerum.
-LOCATION:place Da Costa\, 26061 Dupuy\, Dupuy
-DTSTART;TZID=Europe/Paris:20220319T122010
-DTEND;TZID=Europe/Paris:20220319T122010
+DESCRIPTION:Placeat ducimus exercitationem nisi. Et asperiores rerum ut in 
+ cum et. Id aut voluptatem aliquid omnis.
+LOCATION:37\, place Leconte\, 79 035 Bertin\, Bertin
+DTSTART;TZID=Europe/Paris:20220227T023947
+DTEND;TZID=Europe/Paris:20220227T023947
 END:VEVENT
 END:VCALENDAR

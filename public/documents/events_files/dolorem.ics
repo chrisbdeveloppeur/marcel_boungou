@@ -17,17 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213d6701c77b
-DTSTAMP;TZID=Europe/Paris:20220221T191408
+UID:6215ec9a798f6
+DTSTAMP;TZID=Europe/Paris:20220223T091314
 SUMMARY:dolorem
-DESCRIPTION:Molestias vitae quo ut occaecati. Sunt aut autem natus. Totam i
- psam qui quia ratione. Tenetur voluptates atque sed porro ad ea est. Incid
- unt esse autem dignissimos. Et soluta reprehenderit id assumenda vel. Veli
- t provident quaerat omnis sequi sapiente. Animi distinctio nulla dolorum q
- ui sunt unde rerum. Adipisci ut et sit. At aut ea enim culpa non suscipit.
-  Omnis inventore ad quia nesciunt et.
-LOCATION:42\, chemin de Roussel\, 06488 Rossi\, Rossi
-DTSTART;TZID=Europe/Paris:20220219T160320
-DTEND;TZID=Europe/Paris:20220219T160320
+DESCRIPTION:Saepe quaerat rerum repellendus molestiae. Nihil consequatur ve
+ l perferendis nobis repellat ab eum. Commodi voluptate error et est. Nesci
+ unt qui eos est qui quo dolores non.
+LOCATION:place de Vallet\, 46166 Duprenec\, Duprenec
+DTSTART;TZID=Europe/Paris:20220221T145530
+DTEND;TZID=Europe/Paris:20220221T145530
 END:VEVENT
 END:VCALENDAR

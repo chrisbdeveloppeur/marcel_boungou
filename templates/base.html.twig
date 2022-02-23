@@ -185,12 +185,12 @@
     {# SCRIPT POUR LE BOUTON PLAY DES PLAYER #}
     function startMusic(btn){
         let audio = btn.parentElement.querySelector('audio');
-        var icon = btn.parentElement.querySelector('i');
+        // var icon = btn.parentElement.querySelector('i');
         if (!audio.paused){
             pauseAllMusics();
         } else {
             pauseAllMusics();
-            icon.classList.replace('fa-play', 'fa-pause');
+            // icon.classList.replace('fa-play', 'fa-pause');
             audio.play();
         }
     }
@@ -198,11 +198,30 @@
         let playBtns = document.querySelectorAll('.play-btn');
         playBtns.forEach(function (el) {
             var audio = el.parentElement.querySelector('audio');
-            var icon = el.parentElement.querySelector('i');
-            icon.classList.replace('fa-pause', 'fa-play');
+            // var icon = el.parentElement.querySelector('i');
+            // icon.classList.replace('fa-pause', 'fa-play');
             audio.pause();
         });
     }
+
+    let playBtns = document.querySelectorAll('.play-btn');
+    playBtns.forEach(function (btn) {
+        var audio = btn.parentElement.querySelector('audio');
+        var icon = btn.parentElement.querySelector('i');
+        audio.addEventListener('ended',function () {
+            console.log('ENDED');
+            icon.classList.replace('fa-pause', 'fa-play');
+        });
+        audio.onpause = function () {
+            console.log('PAUSED');
+            icon.classList.replace('fa-pause', 'fa-play');
+        };
+        audio.onplay = function () {
+            console.log('START');
+            icon.classList.replace('fa-play', 'fa-pause');
+        };
+    });
+
 
 
     {# SCRIPT POUR BULMA TAGS INPUTS #}

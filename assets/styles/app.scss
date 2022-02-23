@@ -312,9 +312,9 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
 
 .arrow_up{
   position: fixed;
-  left: 97%;
+  right: .1rem;
   transform: translate(-50%);
-  bottom: 5vh;
+  bottom: 2rem;
   display: flex;
   z-index: 1500;
   width: 40px;
@@ -403,7 +403,7 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   //width: 100% !important;
   max-height: 100%;
 }
-.music-carousel{
+.album-carousel{
   //height: 230px;
   //width: 200px
   height: 100%;

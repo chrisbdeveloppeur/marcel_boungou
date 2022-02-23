@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6215ec9b15563
+DTSTAMP;TZID=Europe/Paris:20220223T091315
+SUMMARY:commodi
+DESCRIPTION:Sunt eum minus et. Deserunt fugit libero dolores dicta culpa pa
+ riatur. Voluptatibus et culpa ut corrupti est qui qui quaerat. Et suscipit
+  possimus unde quibusdam et. Aut dolorem est minima optio sapiente est omn
+ is tenetur. Vitae aliquid soluta saepe ex natus aliquid sed odit.
+LOCATION:70\, rue Salmon\, 93 195 Richard-la-Forêt\, Richard-la-Forêt
+DTSTART;TZID=Europe/Paris:20220321T093445
+DTEND;TZID=Europe/Paris:20220321T093445
+END:VEVENT
+END:VCALENDAR

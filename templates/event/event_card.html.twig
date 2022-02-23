@@ -11,10 +11,9 @@
         <div class="card-image">
             <figure class="image is-3by1">
                 {% if event.image %}
-{#                    <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="Placeholder image">#}
-                    <img src="{{ event.image }}" alt="" style="height: 100%;max-height: 100%;object-fit: fill;width: 100%">
+                    <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="Placeholder image">
                 {% else %}
-                    <img src="{{ asset('build/images/720x240.8013db28.png') }}" alt="Placeholder image">
+                    <img src="https://picsum.photos/id/{{ random(1,100) }}/720/240" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
                 {% endif %}
             </figure>
             <div class="column has-background-success-light has-text-success has-text-centered has-text-weight-bold is-uppercase">

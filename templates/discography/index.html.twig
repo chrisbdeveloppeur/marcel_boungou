@@ -1,8 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello DiscographyController!{% endblock %}
+{% block title %}{% trans %}Discography{% endtrans %}{% endblock %}
 
 {% block body %}
+    {{ include('discography/album_list.html.twig') }}
     {{ include('discography/disc_list.html.twig') }}
 {% endblock %}
 

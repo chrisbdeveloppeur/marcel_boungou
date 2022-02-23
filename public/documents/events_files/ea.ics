@@ -17,16 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6214fb953ad25
-DTSTAMP;TZID=Europe/Paris:20220222T160453
+UID:6215ed6042eac
+DTSTAMP;TZID=Europe/Paris:20220223T091632
 SUMMARY:ea
-DESCRIPTION:Cumque aliquid aliquam sit sit. Et molestiae ullam sapiente mol
- litia voluptatem. Eos magnam modi iste saepe est consequatur. Recusandae i
- d adipisci maiores sit. Fugiat ut assumenda sed. Voluptate ullam quod fuga
-  occaecati possimus necessitatibus. Aliquam excepturi corrupti quae at par
- iatur. Earum et enim tempora est excepturi atque assumenda sunt.
-LOCATION:82\, impasse Hoarau\, 64 515 Normand\, Normand
-DTSTART;TZID=Europe/Paris:20220221T042848
-DTEND;TZID=Europe/Paris:20220221T042848
+DESCRIPTION:Dolores commodi dolores tenetur sint rerum ut. Aperiam id occae
+ cati vel iusto quod. Iusto eius distinctio a quia commodi itaque enim accu
+ santium. Qui asperiores laudantium omnis at molestiae nesciunt aperiam aut
+ . Ipsa omnis aut vero temporibus reiciendis ut. Totam cupiditate placeat c
+ orporis et quasi qui quae. Numquam autem nesciunt expedita aliquam non non
+ .
+LOCATION:77\, boulevard de Brunet\, 58330 Brunetnec\, Brunetnec
+DTSTART;TZID=Europe/Paris:20220224T065802
+DTEND;TZID=Europe/Paris:20220224T065802
 END:VEVENT
 END:VCALENDAR

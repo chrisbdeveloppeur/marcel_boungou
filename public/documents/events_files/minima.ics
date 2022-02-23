@@ -17,16 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213769142f48
-DTSTAMP;TZID=Europe/Paris:20220221T122505
+UID:6215ed6050117
+DTSTAMP;TZID=Europe/Paris:20220223T091632
 SUMMARY:minima
-DESCRIPTION:Aut tenetur et rerum iure porro animi. Hic qui excepturi nobis 
- odit nulla. Laudantium nostrum sed vel et. Numquam dolores dolorem velit s
- unt. Saepe dolorum nisi non adipisci quibusdam aut deserunt. Voluptate vol
- uptates ut ea et culpa repellat. Quam incidunt aperiam ut. Illo porro sunt
-  non iste laborum sint.
-LOCATION:20\, place Dominique Daniel\, 41190 WeberVille\, WeberVille
-DTSTART;TZID=Europe/Paris:20220225T112335
-DTEND;TZID=Europe/Paris:20220225T112335
+DESCRIPTION:Repellat dicta quia fugiat libero ipsa. Et repellendus beatae q
+ uisquam aliquam. Tempore omnis quis eos enim reprehenderit doloribus rerum
+  ad. Quos dolorem iusto autem et fuga.
+LOCATION:8\, boulevard Geneviève Loiseau\, 69 721 Payetdan\, Payetdan
+DTSTART;TZID=Europe/Paris:20220417T131517
+DTEND;TZID=Europe/Paris:20220417T131517
 END:VEVENT
 END:VCALENDAR

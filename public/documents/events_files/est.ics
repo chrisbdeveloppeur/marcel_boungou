@@ -17,18 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215153d3bf3e
-DTSTAMP;TZID=Europe/Paris:20220222T175421
+UID:6215ed604c75a
+DTSTAMP;TZID=Europe/Paris:20220223T091632
 SUMMARY:est
-DESCRIPTION:Eum et iusto quis laborum est impedit ut. Et nesciunt commodi v
- eritatis ut sequi facilis. Eos dicta qui quae. Voluptatem libero id necess
- itatibus reiciendis deleniti optio incidunt. Dolorum saepe quia sint. Exer
- citationem numquam cum et voluptate consectetur ut a. Quidem corrupti et e
- nim rerum aut. Dolorum nesciunt et dolor delectus. In qui aut repellat lau
- dantium accusantium laudantium nesciunt. Et eum aut neque provident in ame
- t autem.
-LOCATION:chemin Teixeira\, 94742 ValetteVille\, ValetteVille
-DTSTART;TZID=Europe/Paris:20220320T114946
-DTEND;TZID=Europe/Paris:20220320T114946
+DESCRIPTION:Quia rem ut vitae aut minus suscipit omnis. Repellendus id quo 
+ vero qui doloremque dolorem inventore. Impedit ut aut libero tempore liber
+ o. Consectetur velit omnis minima facilis ratione aperiam ab ea.
+LOCATION:2\, chemin Marie\, 80744 Ferrand\, Ferrand
+DTSTART;TZID=Europe/Paris:20220321T080913
+DTEND;TZID=Europe/Paris:20220321T080913
 END:VEVENT
 END:VCALENDAR
