@@ -143,6 +143,18 @@ section.body{
   background: none !important;
 }
 
+.box-shadow-primary{
+  box-shadow: 0 0 3px 3px $primary;
+}
+
+.box-shadow-success{
+  box-shadow: 0 0 10px 1px $success;
+}
+
+.opacity85{
+  opacity: 85%;
+}
+
 .next-event-logo{
   z-index: 1;
   width: 100%;

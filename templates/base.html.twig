@@ -177,7 +177,6 @@
     let fileInputs = document.querySelectorAll('.file-input');
     fileInputs.forEach(function (input) {
         input.addEventListener('change', function () {
-            console.log(this.files[0]);
             input.parentElement.parentElement.querySelector(".file-name").innerText = this.files[0].name;
         });
     });
@@ -185,21 +184,19 @@
     {# SCRIPT POUR LE BOUTON PLAY DES PLAYER #}
     function startMusic(btn){
         let audio = btn.parentElement.querySelector('audio');
-        // var icon = btn.parentElement.querySelector('i');
         if (!audio.paused){
             pauseAllMusics(audio);
         } else {
             pauseAllMusics(audio);
-            // icon.classList.replace('fa-play', 'fa-pause');
             audio.play();
         }
     }
     function pauseAllMusics(target){
         let allAudio = document.querySelectorAll('audio');
         allAudio.forEach(function (audio) {
-            if (target !== audio){
+            // if (target !== audio){
                 audio.pause();
-            }
+            // }
         });
     }
 
@@ -208,17 +205,28 @@
     playBtns.forEach(function (btn) {
         var audio = btn.parentElement.querySelector('audio');
         var icon = btn.parentElement.querySelector('i');
+        var musicContainer = btn.parentElement.parentElement;
+        var musicText = btn.parentElement.parentElement.querySelector('.music-text');
         audio.addEventListener('ended',function () {
-            console.log('ENDED');
             icon.classList.replace('fa-pause', 'fa-play');
+            musicContainer.classList.add('opacity85');
+            musicContainer.style.transform = 'none';
+            btn.parentElement.classList.remove('box-shadow-success');
+            musicText.classList.replace('has-text-success','has-text-white')
         });
         audio.onpause = function () {
-            console.log('PAUSED');
             icon.classList.replace('fa-pause', 'fa-play');
+            musicContainer.classList.add('opacity85');
+            musicContainer.style.transform = 'none';
+            btn.parentElement.classList.remove('box-shadow-success');
+            musicText.classList.replace('has-text-success','has-text-white')
         };
         audio.onplay = function () {
-            console.log('START');
             icon.classList.replace('fa-play', 'fa-pause');
+            musicContainer.classList.remove('opacity85');
+            musicContainer.style.transform = 'scale(1.1)';
+            btn.parentElement.classList.add('box-shadow-success');
+            musicText.classList.replace('has-text-white','has-text-success')
         };
     });
 

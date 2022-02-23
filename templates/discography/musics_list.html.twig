@@ -6,45 +6,56 @@
 {#    {% endfor %}#}
 {#</div>#}
 
-<div class="column is-half-desktop is-one-third-widescreen is-full-mobile is-flex-touch is-align-items-center is-flex-direction-column">
-    {% for music in musics|sort((a, b) => b.album.year <=> a.album.year) %}
-        <div class="{{ music.album }} column is-flex is-align-items-center is-flex-direction-row has-text-white px-0 py-0 my-5 is-hidden-touch">
-            <figure class="image is-96x96 mx-3 my-3">
-                {% if music.album.image %}
-                    <img src="{{ vich_uploader_asset(music.album, 'imageFile') }}" style="height: 100%;">
-                {% else %}
-                    <img src="https://picsum.photos/id/{{ random(1,100) }}/240/240" style="height: 100%;">
-                {% endif %}
-            </figure>
-            <div class="is-flex is-flex-direction-column is-justify-content-center column px-3 py-3">
-                <div class="">
-                    <span class="has-text-weight-bold">{{ music }}</span>
-                    <span class="help">{{ music.album }} ({{ music.album.year }})</span>
+<section class="section">
+    <div class="container">
+        <div class=" columns is-multiline">
+            {% for music in musics|sort((a, b) => b.album.year <=> a.album.year) %}
+
+                <div class="music-container opacity85 {{ music.album }} column is-one-quarter is-one-fifth-desktop is-flex is-justify-content-center is-align-items-center is-flex-direction-column">
+
+                    <div class="is-relative" style="height: 150px;width: 150px;{% if music.album.image %}background: center / cover url({{ vich_uploader_asset(music.album, 'imageFile') }}){% else %}background: center / cover url('https://picsum.photos/id/{{ random(1,100) }}/240/240'){% endif %}">
+
+                    <span class="icon has-text-black pointer-hover play-btn" onclick="startMusic(this)" style="position: absolute;height: 100%;width: 100%;z-index: 1">
+                        <i class="fas fa-2x fa-play has-text-black"></i>
+                    </span>
+
+                        <div>
+                            <audio src="{{ vich_uploader_asset(music, 'musicFile') }}" preload="auto"></audio>
+                        </div>
+
+                    </div>
+
+                    <div class="is-flex is-flex-direction-column is-justify-content-center column px-3 py-3">
+                        <div class="has-text-centered has-text-white music-text">
+                            <span class="has-text-weight-bold">{{ music }}</span>
+                            <span class="help">{{ music.album }} ({{ music.album.year }})</span>
+                        </div>
+                    </div>
+
                 </div>
-                <audio src="{{ vich_uploader_asset(music, 'musicFile') }}" preload="auto" controls controlsList="nodownload" style="width: 100%" onplay="pauseAllMusics(this)"></audio>
-            </div>
+
+            {% endfor %}
         </div>
-
-        <div class="{{ music.album }} card is-relative is-hidden-desktop my-5" style="height: 150px;width: 150px;{% if music.album.image %}background: center / cover url({{ vich_uploader_asset(music.album, 'imageFile') }}){% else %}background: center / cover url('https://picsum.photos/id/{{ random(1,100) }}/240/240'){% endif %}">
-
-            <span class="icon has-text-black pointer-hover play-btn" onclick="startMusic(this)" style="position: absolute;height: 100%;width: 100%;z-index: 1">
-                <i class="fas fa-2x fa-play"></i>
-            </span>
-
-            <div class="column">
-                <div class="content">
-                    {{ music }}
-                </div>
-                <div>
-                    <audio src="{{ vich_uploader_asset(music, 'musicFile') }}" preload="auto"></audio>
-                </div>
-            </div>
-        </div>
-
-    {% endfor %}
-</div>
+    </div>
+</section>
 
 
 
 
 
+{#        <div class="{{ music.album }} column is-flex is-align-items-center is-flex-direction-row has-text-white px-0 py-0 my-5 is-hidden-touch">#}
+{#            <figure class="image is-96x96 mx-3 my-3">#}
+{#                {% if music.album.image %}#}
+{#                    <img src="{{ vich_uploader_asset(music.album, 'imageFile') }}" style="height: 100%;">#}
+{#                {% else %}#}
+{#                    <img src="https://picsum.photos/id/{{ random(1,100) }}/240/240" style="height: 100%;">#}
+{#                {% endif %}#}
+{#            </figure>#}
+{#            <div class="is-flex is-flex-direction-column is-justify-content-center column px-3 py-3">#}
+{#                <div class="">#}
+{#                    <span class="has-text-weight-bold">{{ music }}</span>#}
+{#                    <span class="help">{{ music.album }} ({{ music.album.year }})</span>#}
+{#                </div>#}
+{#                <audio src="{{ vich_uploader_asset(music, 'musicFile') }}" preload="auto" controls controlsList="nodownload" style="width: 100%" onplay="pauseAllMusics(this)"></audio>#}
+{#            </div>#}
+{#        </div>#}
