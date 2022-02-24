@@ -1,16 +1,17 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Music index{% endblock %}
+{% block title %}{% trans %}Music list{% endtrans %}{% endblock %}
 
 {% block body %}
-    <h1>Music index</h1>
+    <h1 class="title has-text-white">{% trans %}Music list{% endtrans %}</h1>
 
     <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Titre</th>
-                <th>MusicName</th>
+                <th>{% trans %}Title{% endtrans %}</th>
+                <th>{% trans %}File{% endtrans %}</th>
+                <th>{% trans %}Album{% endtrans %}</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -20,14 +21,15 @@
                 <td>{{ music.id }}</td>
                 <td>{{ music.titre }}</td>
                 <td>{{ music.MusicName }}</td>
+                <td>{% if music.album %}{{ music.album }}{% endif %}</td>
                 <td>
-                    <a href="{{ path('music_show', {'id': music.id}) }}">show</a>
-                    <a href="{{ path('music_edit', {'id': music.id}) }}">edit</a>
+                    <a href="{{ path('music_show', {'id': music.id}) }}">{% trans %}show{% endtrans %}</a>
+                    <a href="{{ path('music_edit', {'id': music.id}) }}">{% trans %}edit{% endtrans %}</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="6">no records found</td>
+                <td colspan="6">{% trans %}no records found{% endtrans %}</td>
             </tr>
         {% endfor %}
         </tbody>

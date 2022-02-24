@@ -1,9 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Music{% endblock %}
+{% block title %}{% trans %}Music{% endtrans %}{% endblock %}
 
 {% block body %}
-    <h1>Music</h1>
+    <h1 class="title has-text-white">{% trans %}Music{% endtrans %}</h1>
 
     <table class="table">
         <tbody>
@@ -12,19 +12,23 @@
                 <td>{{ music.id }}</td>
             </tr>
             <tr>
-                <th>Titre</th>
+                <th>{% trans %}Titre{% endtrans %}</th>
                 <td>{{ music.titre }}</td>
             </tr>
             <tr>
-                <th>MusicName</th>
+                <th>{% trans %}File{% endtrans %}</th>
                 <td>{{ music.musicName }}</td>
+            </tr>
+            <tr>
+                <th>{% trans %}Album{% endtrans %}</th>
+                <td>{{ music.album }}</td>
             </tr>
         </tbody>
     </table>
 
-    <a href="{{ path('music_index') }}">back to list</a>
+    <a href="{{ path('music_index') }}">{% trans %}back to list{% endtrans %}</a>
 
-    <a href="{{ path('music_edit', {'id': music.id}) }}">edit</a>
+    <a href="{{ path('music_edit', {'id': music.id}) }}">{% trans %}edit{% endtrans %}</a>
 
     {{ include('music/_delete_form.html.twig') }}
 {% endblock %}
