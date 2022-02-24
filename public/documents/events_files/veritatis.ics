@@ -17,16 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213b63b7695b
-DTSTAMP;TZID=Europe/Paris:20220221T165643
+UID:6217fca921318
+DTSTAMP;TZID=Europe/Paris:20220224T224617
 SUMMARY:veritatis
-DESCRIPTION:Architecto corporis vitae corporis labore et vero placeat. Sed 
- corrupti sunt enim distinctio. Consequuntur quis quae ut aut. Suscipit qua
- erat enim reprehenderit distinctio sint eaque. Et beatae facilis et. Qui e
- sse illo eius modi maxime ut. Quo nam est dolore laboriosam aut odit est.
-LOCATION:2\, place Teixeira\, 51 192 Vincent-sur-Wagner\, Vincent-sur-Wagne
- r
-DTSTART;TZID=Europe/Paris:20220319T200101
-DTEND;TZID=Europe/Paris:20220319T200101
+DESCRIPTION:Est veritatis necessitatibus consequatur rerum qui rerum nemo n
+ atus. Nulla porro dolorem quisquam corporis maiores error tempora. Nemo ac
+ cusantium et blanditiis quibusdam soluta. Praesentium ipsa libero ut volup
+ tatem. Rem praesentium aut sapiente quo dignissimos et.
+LOCATION:19\, rue Leconte\, 00 676 Garnier-sur-Merle\, Garnier-sur-Merle
+DTSTART;TZID=Europe/Paris:20220408T064422
+DTEND;TZID=Europe/Paris:20220408T064422
 END:VEVENT
 END:VCALENDAR

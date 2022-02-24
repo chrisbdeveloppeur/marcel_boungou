@@ -9,6 +9,7 @@ use App\Entity\Music;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use Faker;
+use Symfony\Component\HttpFoundation\File\File;
 
 class AppFixtures extends Fixture
 {
@@ -58,9 +59,9 @@ class AppFixtures extends Fixture
                 $music = new Music();
                 $music->setTitre($faker->word);
                 $music->setCreatedDate(new \DateTime('now'));
-//                $music->setMusicName('zola-ye-yenge-minimized.mp3');
+                $music->setMusicName('zola-ye-yenge-minimized.mp3');
+                $music->setUpdatedAt();
                 $manager->persist($music);
-//                $manager->flush();
                 $album->addMusic($music);
             }
 

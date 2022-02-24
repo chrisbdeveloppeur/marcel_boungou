@@ -17,14 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f78461edd
-DTSTAMP;TZID=Europe/Paris:20220223T095948
+UID:6217fa98869b4
+DTSTAMP;TZID=Europe/Paris:20220224T223728
 SUMMARY:error
-DESCRIPTION:Iste expedita et ut quia corrupti. Est molestiae quia eos bland
- itiis. Amet ducimus excepturi ab incidunt. In provident quasi reprehenderi
- t est id qui. Earum nam culpa dolores itaque magnam.
-LOCATION:8\, place Renaud\, 84 808 Joubertboeuf\, Joubertboeuf
-DTSTART;TZID=Europe/Paris:20220417T123358
-DTEND;TZID=Europe/Paris:20220417T123358
+DESCRIPTION:Quia voluptates provident suscipit fuga nam dolor. Minus autem 
+ aperiam iste est adipisci autem. Laborum repellendus eum corporis dolorem.
+LOCATION:8\, avenue de Bertin\, 42046 Sauvage-la-Forêt\, Sauvage-la-Forêt
+DTSTART;TZID=Europe/Paris:20220228T202943
+DTEND;TZID=Europe/Paris:20220228T202943
 END:VEVENT
 END:VCALENDAR

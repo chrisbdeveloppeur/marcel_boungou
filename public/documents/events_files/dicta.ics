@@ -17,17 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621733d1531a0
-DTSTAMP;TZID=Europe/Paris:20220224T082921
+UID:6217fb8faea87
+DTSTAMP;TZID=Europe/Paris:20220224T224135
 SUMMARY:dicta
-DESCRIPTION:Qui alias eligendi rerum cum omnis odit. Occaecati amet omnis e
- t nesciunt officia sed aut. Consequatur earum totam itaque voluptatem qui 
- nihil. Soluta consectetur ea voluptate. Eos quas occaecati voluptas offici
- is. Vitae animi illo autem magnam dolorem dolores qui ut. Beatae dolor aut
-  dolorem est.
-LOCATION:rue Marine Delaunay\, 69 239 Chartier-la-Forêt\, Chartier-la-For
- êt
-DTSTART;TZID=Europe/Paris:20220309T002459
-DTEND;TZID=Europe/Paris:20220309T002459
+DESCRIPTION:Sunt dolorem ullam et blanditiis. Ipsam reprehenderit dolorem p
+ erferendis quasi consequatur est aspernatur. Totam et earum distinctio. At
+  quis est voluptas accusantium. Officia doloribus quae expedita dolorem om
+ nis qui. Nemo sunt ab eaque ut qui sed officiis hic. Dolore nihil aut dolo
+ re vel sapiente.
+LOCATION:2\, avenue de Bourdon\, 74976 Guillaume\, Guillaume
+DTSTART;TZID=Europe/Paris:20220223T213734
+DTEND;TZID=Europe/Paris:20220223T213734
 END:VEVENT
 END:VCALENDAR

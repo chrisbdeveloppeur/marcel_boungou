@@ -117,8 +117,12 @@ class Music
         // It is required that at least one field changes if you are using Doctrine,
         // otherwise the event listeners won't be called and the file is lost
         if ($this->musicFile instanceof UploadedFile) {
-            $this->updatedAt = new \DateTime('now');
+            $this->setUpdatedAt();
         }
+    }
+
+    public function setUpdatedAt(){
+        $this->updatedAt = new \DateTime('now');
     }
 
     public function getMusicFile()

@@ -17,16 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6214fb94deeb2
-DTSTAMP;TZID=Europe/Paris:20220222T160452
+UID:6217fca915c3a
+DTSTAMP;TZID=Europe/Paris:20220224T224617
 SUMMARY:consequuntur
-DESCRIPTION:Unde exercitationem et sunt eos. Quas quia et sed voluptas labo
- rum ut. Aut rerum explicabo est consectetur asperiores. Qui voluptatibus q
- uia et dolore nihil quae. Perferendis saepe nulla at. Aut perspiciatis ad 
- aliquid expedita ad aliquid. Facere aut praesentium illo eveniet.
-LOCATION:7\, avenue Valérie Leclerc\, 32112 Lemaitre-la-Forêt\, Lemaitre-
- la-Forêt
-DTSTART;TZID=Europe/Paris:20220220T055412
-DTEND;TZID=Europe/Paris:20220220T055412
+DESCRIPTION:Provident voluptatem deleniti ut inventore expedita. Expedita n
+ ostrum culpa dolorem sunt unde asperiores. Et inventore cumque eum sit dol
+ ores vitae. Aliquam laboriosam enim itaque omnis quas. Officia ut ipsa inv
+ entore quidem. Rem occaecati dolorem minima alias. Dolor sed fugiat volupt
+ ate esse sapiente nulla ipsum. Tempore delectus sapiente cum ullam eos dol
+ orem molestiae. Et debitis dolores eaque saepe quis quae perferendis.
+LOCATION:514\, boulevard de Maillet\, 16246 LangloisBourg\, LangloisBourg
+DTSTART;TZID=Europe/Paris:20220223T133804
+DTEND;TZID=Europe/Paris:20220223T133804
 END:VEVENT
 END:VCALENDAR

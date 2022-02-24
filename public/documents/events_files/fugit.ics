@@ -17,16 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62173487244e7
-DTSTAMP;TZID=Europe/Paris:20220224T083223
+UID:6217fcc31cb6e
+DTSTAMP;TZID=Europe/Paris:20220224T224643
 SUMMARY:fugit
-DESCRIPTION:Aliquid et repudiandae eveniet omnis quae est. Voluptatem ab qu
- is doloribus voluptatem sit dolores quis. Nisi alias reprehenderit aut arc
- hitecto. Qui commodi vel delectus ducimus earum unde. Beatae possimus ipsu
- m aut vitae consequuntur tenetur et. Vero aut et veritatis aut facilis. Do
- loremque culpa neque eos architecto.
-LOCATION:impasse de Pascal\, 88533 RoyerBourg\, RoyerBourg
-DTSTART;TZID=Europe/Paris:20220304T105153
-DTEND;TZID=Europe/Paris:20220304T105153
+DESCRIPTION:Sunt vero possimus maxime. Perspiciatis voluptas atque voluptat
+ um non est necessitatibus quia. Perferendis excepturi ut numquam dolorum e
+ rror quis enim. In quaerat earum tempore ipsa pariatur.
+LOCATION:834\, rue Raymond Valette\, 71 060 Caron\, Caron
+DTSTART;TZID=Europe/Paris:20220304T161632
+DTEND;TZID=Europe/Paris:20220304T161632
 END:VEVENT
 END:VCALENDAR

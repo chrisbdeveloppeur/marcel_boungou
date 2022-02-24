@@ -17,17 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621733d144494
-DTSTAMP;TZID=Europe/Paris:20220224T082921
+UID:6217fb8259875
+DTSTAMP;TZID=Europe/Paris:20220224T224122
 SUMMARY:quisquam
-DESCRIPTION:A modi quasi quaerat cum culpa. Et culpa aspernatur error dolor
- emque. Dignissimos rerum alias dolorem enim est voluptatem. Laudantium mag
- ni repellat et aspernatur laborum totam autem odio. Qui laudantium iste in
- ventore temporibus et. Enim eum commodi ab unde eligendi quo a. Atque pari
- atur et consequatur iure. Cumque modi veniam possimus omnis qui omnis. Opt
- io labore non quisquam sed in assumenda.
-LOCATION:99\, rue Xavier Boyer\, 92 671 Lefebvre\, Lefebvre
-DTSTART;TZID=Europe/Paris:20220225T052819
-DTEND;TZID=Europe/Paris:20220225T052819
+DESCRIPTION:Est doloribus sit delectus nulla. Quaerat soluta qui quam odio 
+ aut voluptatem consequuntur. Itaque iusto aut vero in accusantium laborios
+ am dignissimos.
+LOCATION:49\, place Allain\, 57396 Martinnec\, Martinnec
+DTSTART;TZID=Europe/Paris:20220330T151741
+DTEND;TZID=Europe/Paris:20220330T151741
 END:VEVENT
 END:VCALENDAR

@@ -17,17 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62178822a3b40
-DTSTAMP;TZID=Europe/Paris:20220224T142906
+UID:6217fb8fb542a
+DTSTAMP;TZID=Europe/Paris:20220224T224135
 SUMMARY:omnis
-DESCRIPTION:Ratione consequuntur neque nulla labore velit qui molestiae sit
- . Magnam omnis placeat ratione amet et repudiandae iure. Consequuntur ipsa
- m sint eligendi doloribus et laudantium necessitatibus. Blanditiis sed nih
- il fugit eum recusandae illo et. Labore fugit enim maiores doloribus repel
- lendus accusamus placeat. Adipisci possimus totam libero officia corrupti 
- enim. Et labore qui aut qui non dolores nihil.
-LOCATION:1\, avenue Anouk Dupre\, 76673 Imbertnec\, Imbertnec
-DTSTART;TZID=Europe/Paris:20220222T064503
-DTEND;TZID=Europe/Paris:20220222T064503
+DESCRIPTION:Ratione est quia ut qui harum. Itaque vero repellendus quas nob
+ is non. Commodi sit quia eum necessitatibus vel.
+LOCATION:impasse Roux\, 98 174 Benoitboeuf\, Benoitboeuf
+DTSTART;TZID=Europe/Paris:20220304T094430
+DTEND;TZID=Europe/Paris:20220304T094430
 END:VEVENT
 END:VCALENDAR

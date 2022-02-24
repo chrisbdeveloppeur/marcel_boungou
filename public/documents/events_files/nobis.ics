@@ -17,17 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621780255bacb
-DTSTAMP;TZID=Europe/Paris:20220224T135501
+UID:6217fb5c308f9
+DTSTAMP;TZID=Europe/Paris:20220224T224044
 SUMMARY:nobis
-DESCRIPTION:A saepe eos fugiat magni perspiciatis exercitationem voluptas a
- met. Dolor autem et molestias neque. Voluptatibus dolorem quia ut repellat
-  et. Vitae officia aperiam consequatur mollitia odio neque autem qui. Anim
- i rerum deserunt consequatur eum sapiente error est voluptas. Omnis ut aut
-  quia sit non praesentium. Repellat alias eum cumque a vel corrupti enim l
- abore.
-LOCATION:10\, impasse Léon Camus\, 19 270 Jacob\, Jacob
-DTSTART;TZID=Europe/Paris:20220315T233007
-DTEND;TZID=Europe/Paris:20220315T233007
+DESCRIPTION:Iste facilis repudiandae vel sit soluta sequi. In aperiam perfe
+ rendis est ullam nihil laborum. Suscipit quaerat nostrum explicabo asperna
+ tur nesciunt et.
+LOCATION:84\, boulevard de Berthelot\, 81176 Pires\, Pires
+DTSTART;TZID=Europe/Paris:20220222T192609
+DTEND;TZID=Europe/Paris:20220222T192609
 END:VEVENT
 END:VCALENDAR

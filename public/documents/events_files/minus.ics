@@ -17,15 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fca907b15
+UID:6217fca916e09
 DTSTAMP;TZID=Europe/Paris:20220224T224617
-SUMMARY:nulla
-DESCRIPTION:Sed placeat est voluptates eos. Dolorem id numquam sit molestia
- s quas hic. Est recusandae tempore ut distinctio eaque velit amet. Et quas
-  porro sed dolor rerum eligendi.
-LOCATION:456\, impasse de Teixeira\, 34143 Riviere-sur-Mer\, Riviere-sur-Me
- r
-DTSTART;TZID=Europe/Paris:20220222T122850
-DTEND;TZID=Europe/Paris:20220222T122850
+SUMMARY:minus
+DESCRIPTION:Atque perferendis consequatur dicta atque. Deserunt quisquam do
+ lores voluptas magnam. Corporis minus eligendi aliquid voluptatem omnis in
+ . Officia omnis adipisci quae provident quo. Expedita quia error ut quis q
+ uia tenetur.
+LOCATION:avenue de Le Goff\, 44798 Voisin\, Voisin
+DTSTART;TZID=Europe/Paris:20220225T084534
+DTEND;TZID=Europe/Paris:20220225T084534
 END:VEVENT
 END:VCALENDAR

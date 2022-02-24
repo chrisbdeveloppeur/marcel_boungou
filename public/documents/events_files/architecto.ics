@@ -17,15 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6214fb956a308
-DTSTAMP;TZID=Europe/Paris:20220222T160453
+UID:6217fb8fb9ecc
+DTSTAMP;TZID=Europe/Paris:20220224T224135
 SUMMARY:architecto
-DESCRIPTION:Labore omnis eum deleniti repellat. Occaecati eum earum qui sin
- t delectus culpa. Minima sint voluptas accusamus ex. Possimus dolorum omni
- s ipsam similique alias. Ex quisquam eum provident cumque omnis sit blandi
- tiis.
-LOCATION:48\, avenue de Leger\, 75 639 Perrotdan\, Perrotdan
-DTSTART;TZID=Europe/Paris:20220307T073320
-DTEND;TZID=Europe/Paris:20220307T073320
+DESCRIPTION:Rerum ut non sed est sunt voluptas aut possimus. Ex vel possimu
+ s sed tempora odit voluptates est. Architecto debitis animi consectetur qu
+ ia molestias aliquam. Minus quis officia eligendi. Et enim necessitatibus 
+ neque nisi animi molestias praesentium. Minus nostrum quod omnis.
+LOCATION:70\, boulevard Lucas\, 24025 Beguedan\, Beguedan
+DTSTART;TZID=Europe/Paris:20220322T124924
+DTEND;TZID=Europe/Paris:20220322T124924
 END:VEVENT
 END:VCALENDAR

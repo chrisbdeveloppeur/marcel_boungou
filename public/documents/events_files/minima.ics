@@ -17,13 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217803eca1e2
-DTSTAMP;TZID=Europe/Paris:20220224T135526
+UID:6217fb5c4c36e
+DTSTAMP;TZID=Europe/Paris:20220224T224044
 SUMMARY:minima
-DESCRIPTION:Quia non dolor nam alias. Dolore unde doloremque explicabo volu
- ptatem sed quo. Explicabo quisquam aut earum ab aspernatur.
-LOCATION:154\, chemin Legros\, 89057 Martinsdan\, Martinsdan
-DTSTART;TZID=Europe/Paris:20220315T061005
-DTEND;TZID=Europe/Paris:20220315T061005
+DESCRIPTION:Labore et qui veniam facere. Et voluptatum nulla facere molesti
+ ae. Id sit corporis possimus et velit. Saepe non quasi omnis rerum autem e
+ t omnis.
+LOCATION:95\, rue Hoarau\, 19 293 Collet\, Collet
+DTSTART;TZID=Europe/Paris:20220418T165754
+DTEND;TZID=Europe/Paris:20220418T165754
 END:VEVENT
 END:VCALENDAR

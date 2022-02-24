@@ -17,15 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213784295c2f
-DTSTAMP;TZID=Europe/Paris:20220221T123218
+UID:6217fb8f9d311
+DTSTAMP;TZID=Europe/Paris:20220224T224135
 SUMMARY:animi
-DESCRIPTION:Consequatur autem ut incidunt autem nihil. Quis consequatur et 
- quos vero sed nobis. Reiciendis quia ut provident laborum autem iusto sed.
-  Repellat perspiciatis delectus reprehenderit error aut. Fugit totam qui q
- uos provident.
-LOCATION:12\, avenue Masse\, 48619 Samson-sur-Mer\, Samson-sur-Mer
-DTSTART;TZID=Europe/Paris:20220301T211729
-DTEND;TZID=Europe/Paris:20220301T211729
+DESCRIPTION:Et accusantium voluptate excepturi provident ut. Deleniti rem a
+ liquid earum beatae libero natus dolor ut. Omnis omnis consequatur eos vol
+ uptatem qui non suscipit. Recusandae voluptatum aliquam pariatur provident
+ . Dignissimos nesciunt tempore quis numquam in repellat quaerat. Dolor et 
+ eligendi quasi. Non vitae qui dolore voluptates excepturi.
+LOCATION:80\, avenue Benoît Colin\, 08 638 Dupuis\, Dupuis
+DTSTART;TZID=Europe/Paris:20220222T010157
+DTEND;TZID=Europe/Paris:20220222T010157
 END:VEVENT
 END:VCALENDAR

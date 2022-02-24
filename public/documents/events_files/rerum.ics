@@ -17,13 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217803ec4a66
-DTSTAMP;TZID=Europe/Paris:20220224T135526
+UID:6217fb824ebfc
+DTSTAMP;TZID=Europe/Paris:20220224T224122
 SUMMARY:rerum
-DESCRIPTION:Ipsam dicta ullam unde qui. Optio cum eveniet qui labore sint v
- oluptatem consequatur.
-LOCATION:36\, chemin Thérèse Guichard\, 21 553 Dias\, Dias
-DTSTART;TZID=Europe/Paris:20220225T040540
-DTEND;TZID=Europe/Paris:20220225T040540
+DESCRIPTION:Magni eius numquam placeat voluptates veritatis ut. Dicta volup
+ tatibus aperiam ea. Ab tempore dolor autem qui suscipit et nesciunt. Exerc
+ itationem numquam perferendis voluptatibus provident.
+LOCATION:95\, chemin Auguste Perret\, 13 308 Noelnec\, Noelnec
+DTSTART;TZID=Europe/Paris:20220225T010000
+DTEND;TZID=Europe/Paris:20220225T010000
 END:VEVENT
 END:VCALENDAR

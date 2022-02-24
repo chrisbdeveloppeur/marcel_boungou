@@ -17,17 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62173451792e3
-DTSTAMP;TZID=Europe/Paris:20220224T083129
+UID:6217fac4783c7
+DTSTAMP;TZID=Europe/Paris:20220224T223812
 SUMMARY:consectetur
-DESCRIPTION:Sint et fugiat voluptas quod. Consequuntur omnis placeat id inc
- idunt cumque fugiat itaque. Sit sint dolore adipisci voluptate. Amet moles
- tias ab unde. Aut qui nostrum enim voluptas natus. Quia natus quia eaque s
- it aut placeat voluptas. Ipsam nobis quis dolores et praesentium. Odit des
- erunt harum voluptatem et voluptatem sit minus. Iure esse ut quod voluptat
- e enim rerum itaque.
-LOCATION:57\, avenue Gilles Martinez\, 15 764 Bessonnec\, Bessonnec
-DTSTART;TZID=Europe/Paris:20220408T045227
-DTEND;TZID=Europe/Paris:20220408T045227
+DESCRIPTION:Quidem blanditiis earum natus temporibus magni consequatur ex. 
+ Nisi quidem autem sed similique dicta laudantium. Quam voluptates aut blan
+ ditiis non vel aut est perspiciatis. Ad alias cum ducimus perspiciatis qui
+ busdam provident. Dolore accusamus iste amet quas reiciendis autem. Dicta 
+ est ut harum ipsa. Voluptates adipisci consectetur velit et qui delectus q
+ uis consectetur.
+LOCATION:3\, rue de Neveu\, 49 447 Rolland\, Rolland
+DTSTART;TZID=Europe/Paris:20220315T233132
+DTEND;TZID=Europe/Paris:20220315T233132
 END:VEVENT
 END:VCALENDAR

@@ -17,15 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213fcf66351f
-DTSTAMP;TZID=Europe/Paris:20220221T215830
+UID:6217fcc311d3b
+DTSTAMP;TZID=Europe/Paris:20220224T224643
 SUMMARY:provident
-DESCRIPTION:Dolor odio distinctio distinctio assumenda aspernatur expedita 
- velit et. Eius doloremque ut dolorum numquam non et. Rem laudantium quam q
- ui esse et esse deleniti. Enim deleniti sunt quae asperiores doloribus del
- ectus. Excepturi et blanditiis aut. Autem velit quo et.
-LOCATION:53\, boulevard Schneider\, 83 720 Faure\, Faure
-DTSTART;TZID=Europe/Paris:20220219T132109
-DTEND;TZID=Europe/Paris:20220219T132109
+DESCRIPTION:Nesciunt quidem et repellendus repudiandae esse. Voluptatem num
+ quam veniam velit a. Aliquam dolore totam ab assumenda optio vel incidunt.
+  Est et ad dolore. Ullam voluptatem vel provident non nostrum dicta velit.
+  Est quam sit repudiandae molestiae voluptates qui fugiat ab. Aut quia cup
+ iditate non consequatur.
+LOCATION:rue de Boucher\, 86 040 Bruneauboeuf\, Bruneauboeuf
+DTSTART;TZID=Europe/Paris:20220222T151003
+DTEND;TZID=Europe/Paris:20220222T151003
 END:VEVENT
 END:VCALENDAR

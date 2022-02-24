@@ -17,7 +17,12 @@
             </tr>
             <tr>
                 <th>{% trans %}File{% endtrans %}</th>
-                <td>{{ music.musicName }}</td>
+                <td>
+                    {% if music.musicName %}
+                        <audio src="{{ vich_uploader_asset(music, 'musicFile') }}" controls></audio>
+                    {% endif %}
+                    <span class="help">{{ music.musicName }}</span>
+                </td>
             </tr>
             <tr>
                 <th>{% trans %}Album{% endtrans %}</th>

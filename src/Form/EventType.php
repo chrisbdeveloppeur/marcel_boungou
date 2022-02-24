@@ -53,8 +53,6 @@ class EventType extends AbstractType
                     'data-extra' => $this->translator->trans('Select an image file...')
                 ],
                 'required' => false,
-                'download_link' => false,
-                'allow_delete' => false,
                 'help' => 'jpeg, bmp, png, svg '.$this->translator->trans('(recommended ratio : 720x240)'),
             ])
             ->add('country', TextType::class,[

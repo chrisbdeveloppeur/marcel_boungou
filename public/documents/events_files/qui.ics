@@ -17,16 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62178822b123a
-DTSTAMP;TZID=Europe/Paris:20220224T142906
+UID:6217fb82551ca
+DTSTAMP;TZID=Europe/Paris:20220224T224122
 SUMMARY:qui
-DESCRIPTION:Dicta sit est est cum. Ex animi et ut aut ut recusandae quae si
- t. Aut id et veniam perferendis expedita ex. Mollitia quas pariatur qui qu
- o consequatur quas. Qui deserunt aliquid aut repellat et corporis magni. I
- n aut qui expedita et accusantium qui. Sequi sapiente non quod vel. Aut ma
- iores nihil commodi.
-LOCATION:65\, rue de Raymond\, 62737 Letellier\, Letellier
-DTSTART;TZID=Europe/Paris:20220222T011107
-DTEND;TZID=Europe/Paris:20220222T011107
+DESCRIPTION:Est error mollitia nam praesentium. Ea ea quisquam omnis distin
+ ctio et debitis ipsa et.
+LOCATION:12\, avenue Antoine Roger\, 30404 Marion\, Marion
+DTSTART;TZID=Europe/Paris:20220309T202503
+DTEND;TZID=Europe/Paris:20220309T202503
 END:VEVENT
 END:VCALENDAR

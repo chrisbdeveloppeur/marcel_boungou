@@ -17,18 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62178822b426b
-DTSTAMP;TZID=Europe/Paris:20220224T142906
+UID:6217fb5c3ec7d
+DTSTAMP;TZID=Europe/Paris:20220224T224044
 SUMMARY:unde
-DESCRIPTION:Earum assumenda magni facilis officiis. Corporis quasi deserunt
-  aut. Architecto dolorum inventore eligendi cupiditate dolores consequatur
-  labore. Nihil eveniet qui qui maxime voluptas omnis quibusdam. Necessitat
- ibus ducimus sit et vitae. Assumenda ratione fuga necessitatibus expedita 
- quo architecto itaque. Est magni porro aut autem explicabo eveniet est qui
- . Officiis laboriosam deserunt enim iste consequatur in. Quo cumque labori
- osam qui non sed.
-LOCATION:30\, boulevard de Peron\, 90137 Francois\, Francois
-DTSTART;TZID=Europe/Paris:20220304T050754
-DTEND;TZID=Europe/Paris:20220304T050754
+DESCRIPTION:Minus sed esse maxime vitae voluptas qui fugit. Dolor consequun
+ tur qui quia alias quis odit. Nihil voluptas quo dolores porro. Veniam sed
+  tempore quo velit numquam possimus.
+LOCATION:boulevard Michelle Mahe\, 77282 Courtois\, Courtois
+DTSTART;TZID=Europe/Paris:20220223T084401
+DTEND;TZID=Europe/Paris:20220223T084401
 END:VEVENT
 END:VCALENDAR

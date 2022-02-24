@@ -17,15 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217803ecba61
-DTSTAMP;TZID=Europe/Paris:20220224T135526
+UID:6217fcc31dec0
+DTSTAMP;TZID=Europe/Paris:20220224T224643
 SUMMARY:et
-DESCRIPTION:Voluptas voluptatem commodi maxime. Reprehenderit omnis in omni
- s eum voluptatum sint est. Soluta aliquid nihil cumque. Soluta ut vel pers
- piciatis. Sapiente facilis explicabo ullam voluptas velit facere voluptate
- m laboriosam. Quas in non delectus et enim. Aut enim est dolore nemo.
-LOCATION:20\, avenue de Masse\, 45 003 Klein\, Klein
-DTSTART;TZID=Europe/Paris:20220330T181130
-DTEND;TZID=Europe/Paris:20220330T181130
+DESCRIPTION:Iusto eum accusantium ea delectus harum ut ut. Odit et voluptat
+ em accusamus ad sit et distinctio. Aut quidem magnam cum odit.
+LOCATION:54\, place Jean\, 03 689 Pineauboeuf\, Pineauboeuf
+DTSTART;TZID=Europe/Paris:20220309T012312
+DTEND;TZID=Europe/Paris:20220309T012312
 END:VEVENT
 END:VCALENDAR

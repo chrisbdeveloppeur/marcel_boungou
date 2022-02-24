@@ -17,18 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62178822bc689
-DTSTAMP;TZID=Europe/Paris:20220224T142906
+UID:6217fb6ec6e56
+DTSTAMP;TZID=Europe/Paris:20220224T224102
 SUMMARY:magni
-DESCRIPTION:Quis doloremque omnis aut laudantium provident. Repellat est ma
- gni cumque vel enim. Et vero at nostrum aut est. Dolor est enim doloremque
-  consequatur atque laboriosam inventore. Quia asperiores quam saepe enim d
- oloremque a ut. Voluptatem fuga beatae mollitia nemo distinctio voluptate 
- enim. Doloribus fugit aut quia occaecati error. Consequuntur et provident 
- voluptatum.
-LOCATION:377\, impasse Aurore Menard\, 83 644 Breton-sur-Mer\, Breton-sur-M
- er
-DTSTART;TZID=Europe/Paris:20220408T142430
-DTEND;TZID=Europe/Paris:20220408T142430
+DESCRIPTION:Voluptatem minus impedit laudantium recusandae quia fugit. At e
+ t corporis sit alias. Voluptatem est vel qui quam culpa ut voluptatum ad. 
+ Odio est debitis adipisci qui. Sint dolores nisi cum rem inventore. Illo m
+ aiores et error officia sed. Libero ut eos dolorum architecto. Modi odit o
+ dio illo facere voluptatibus rem natus. Maxime iure soluta vel et. Sunt ea
+  impedit labore odio voluptas corporis officiis unde.
+LOCATION:2\, rue de Boucher\, 56 689 Coulon\, Coulon
+DTSTART;TZID=Europe/Paris:20220418T200020
+DTEND;TZID=Europe/Paris:20220418T200020
 END:VEVENT
 END:VCALENDAR

@@ -17,13 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f8d3788f3
-DTSTAMP;TZID=Europe/Paris:20220223T100523
+UID:6217fca918731
+DTSTAMP;TZID=Europe/Paris:20220224T224617
 SUMMARY:voluptatem
-DESCRIPTION:Eligendi eveniet debitis aut sapiente qui. Maxime est est ducim
- us et nostrum. Incidunt minus voluptatem aperiam est architecto alias vel.
-LOCATION:34\, boulevard Agnès Meyer\, 36 575 Lemonnier\, Lemonnier
-DTSTART;TZID=Europe/Paris:20220308T182351
-DTEND;TZID=Europe/Paris:20220308T182351
+DESCRIPTION:Ut eveniet quis est fugit aut. Adipisci laudantium et sit est e
+ veniet nemo quia. Asperiores autem modi ea sed.
+LOCATION:32\, boulevard Odette Le Goff\, 25 352 Etienne-sur-Bertrand\, Etie
+ nne-sur-Bertrand
+DTSTART;TZID=Europe/Paris:20220228T045814
+DTEND;TZID=Europe/Paris:20220228T045814
 END:VEVENT
 END:VCALENDAR

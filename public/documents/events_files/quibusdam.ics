@@ -17,13 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f8d381867
-DTSTAMP;TZID=Europe/Paris:20220223T100523
+UID:6217fca9143f7
+DTSTAMP;TZID=Europe/Paris:20220224T224617
 SUMMARY:quibusdam
-DESCRIPTION:Alias temporibus eligendi beatae ut nihil. Nihil rem ut nisi si
- nt.
-LOCATION:rue Briand\, 96 569 Pelletier-sur-Loiseau\, Pelletier-sur-Loiseau
-DTSTART;TZID=Europe/Paris:20220407T080519
-DTEND;TZID=Europe/Paris:20220407T080519
+DESCRIPTION:Fugit dignissimos nemo sequi hic aliquam. Et totam laborum atqu
+ e totam. Aliquam quia unde odit repudiandae. Sed magnam eos quis.
+LOCATION:71\, rue Morin\, 81 801 Denisboeuf\, Denisboeuf
+DTSTART;TZID=Europe/Paris:20220222T112858
+DTEND;TZID=Europe/Paris:20220222T112858
 END:VEVENT
 END:VCALENDAR

@@ -17,16 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f906db0bf
-DTSTAMP;TZID=Europe/Paris:20220223T100614
+UID:6217fb6ec23db
+DTSTAMP;TZID=Europe/Paris:20220224T224102
 SUMMARY:velit
-DESCRIPTION:Aut accusamus et non quia. Id eius velit dolor amet omnis dolor
- um. Occaecati aliquid eligendi veritatis accusamus. Veritatis ullam aut qu
- i maxime. Et sit in tenetur dolore dolorum doloremque quidem quaerat. Quos
-  voluptatem reiciendis dolorem facilis. Excepturi occaecati et facilis est
-  distinctio perferendis sit quisquam.
-LOCATION:53\, rue René Menard\, 44114 Barre\, Barre
-DTSTART;TZID=Europe/Paris:20220321T230613
-DTEND;TZID=Europe/Paris:20220321T230613
+DESCRIPTION:Molestias similique officia vel quasi. Nostrum rerum non volupt
+ as illum dolorem.
+LOCATION:6\, impasse de Gillet\, 35 677 Labbe\, Labbe
+DTSTART;TZID=Europe/Paris:20220322T162402
+DTEND;TZID=Europe/Paris:20220322T162402
 END:VEVENT
 END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6217fb6ebb5aa
+DTSTAMP;TZID=Europe/Paris:20220224T224102
+SUMMARY:natus
+DESCRIPTION:Eos placeat omnis vero quaerat totam autem a. Unde earum odit v
+ eritatis magnam aliquid. Iusto est quis possimus dolorum suscipit consequa
+ tur consequatur. Saepe delectus nesciunt iure ex voluptates dolorem. Itaqu
+ e esse provident quaerat esse. Dolore provident quae non amet est quae.
+LOCATION:224\, place de Pascal\, 66 667 Langlois\, Langlois
+DTSTART;TZID=Europe/Paris:20220228T194743
+DTEND;TZID=Europe/Paris:20220228T194743
+END:VEVENT
+END:VCALENDAR
