@@ -68,7 +68,7 @@
             var musicText = btn.parentElement.parentElement.querySelector('.music-text');
             audio.addEventListener('ended',function () {
                 icon.classList.replace('fa-pause', 'fa-play');
-                musicContainer.style.transform = 'none';
+                musicContainer.classList.remove('scalup-1-1');
                 btn.parentElement.classList.remove('box-shadow-success');
                 musicContainer.style.filter = 'grayscale(1)';
                 musicText.classList.remove('text-shadow-success');
@@ -81,14 +81,14 @@
             });
             audio.onpause = function () {
                 icon.classList.replace('fa-pause', 'fa-play');
-                musicContainer.style.transform = 'none';
+                musicContainer.classList.remove('scalup-1-1');
                 btn.parentElement.classList.remove('box-shadow-success');
                 musicContainer.style.filter = 'grayscale(1)';
                 musicText.classList.remove('text-shadow-success')
             };
             audio.onplay = function () {
                 icon.classList.replace('fa-play', 'fa-pause');
-                musicContainer.style.transform = 'scale(1.1)';
+                musicContainer.classList.add('scalup-1-1');
                 btn.parentElement.classList.add('box-shadow-success');
                 musicContainer.style.filter = 'grayscale(0)';
                 musicText.classList.add('text-shadow-success')

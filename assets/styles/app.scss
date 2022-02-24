@@ -310,6 +310,9 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
 .scalup-hover:hover{
   transform: scale(1.03);
 }
+.scalup-1-1{
+  transform: scale(1.1) !important;
+}
 
 .parallax {
   position: relative;
@@ -343,20 +346,21 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
 
 .arrow_up{
   position: fixed;
-  right: .1rem;
-  transform: translate(-50%);
+  right: 2rem;
   bottom: 2rem;
   display: flex;
   z-index: 1500;
   width: 40px;
   height: 40px;
-  background: rgba(150,150,150,0.7);
-  border: rgba(166, 166, 166, 0.89) solid 3px;
-  border-radius: 50%;
+  //background: rgba(150,150,150,0.7);
+  border: $success solid 3px;
   justify-content: center;
   align-items: center;
   transition: .2s;
   opacity: 0;
+}
+.arrow_up:hover{
+  animation: jumpUp 1s infinite ease-in-out;
 }
 
 
@@ -535,6 +539,19 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   100%{
     text-shadow: 0 0 20px $success;
     color: white;
+  }
+}
+
+
+@keyframes jumpUp {
+  0% {
+    transform: translateY(0%);
+  }
+  25% {
+    transform: translateY(-15%);
+  }
+  50%, 100% {
+    transform: translateY(0%);
   }
 }
 
