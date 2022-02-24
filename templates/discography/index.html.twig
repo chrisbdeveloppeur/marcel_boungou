@@ -94,16 +94,10 @@
                 if (musicContainer.nextElementSibling){
                     if (!musicContainer.nextElementSibling.classList.contains('is-hidden')) {
                         var nextBtnPlayAudio = musicContainer.nextElementSibling.querySelector('.play-btn');
-                    }else {
-                        var nextBtnPlayAudio = musicContainer.parentElement.firstElementChild.querySelector('.play-btn');
-                    }
-                }else {
-                    if (!musicContainer.parentElement.firstElementChild.classList.contains('is-hidden')) {
-                        console.log(musicContainer.parentElement.firstElementChild.classList.contains('is-hidden'));
-                        var nextBtnPlayAudio = musicContainer.parentElement.firstElementChild.querySelector('.play-btn');
+                        nextBtnPlayAudio.click();
                     }
                 }
-                nextBtnPlayAudio.click();
+
             });
             audio.onpause = function () {
                 icon.classList.replace('fa-pause', 'fa-play');
@@ -151,7 +145,7 @@
             if ( 0 < element.getBoundingClientRect().top && element.getBoundingClientRect().top < 750 ){
                 element.classList.replace('opacity0','opacity100');
             }else {
-                // element.classList.replace('opacity100','opacity0');
+                element.classList.replace('opacity100','opacity0');
             }
         }
         {#                               #}
