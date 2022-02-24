@@ -79,8 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/discography/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="102" column="26" lean-forward="true" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
+            <state relative-caret-position="353">
+              <caret line="95" selection-start-line="95" selection-end-line="102" selection-end-column="17" />
               <folding>
                 <element signature="e#967#986#0#HTML" expanded="true" />
               </folding>
@@ -525,12 +525,12 @@
       <workItem from="1645537417722" duration="10423000" />
       <workItem from="1645600984131" duration="13978000" />
       <workItem from="1645628133632" duration="10582000" />
-      <workItem from="1645686920933" duration="10074000" />
+      <workItem from="1645686920933" duration="11814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="415655000" />
+    <option name="totallyTimeSpent" value="417395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -982,8 +982,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/discography/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="102" column="26" lean-forward="true" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
+        <state relative-caret-position="353">
+          <caret line="95" selection-start-line="95" selection-end-line="102" selection-end-column="17" />
           <folding>
             <element signature="e#967#986#0#HTML" expanded="true" />
           </folding>

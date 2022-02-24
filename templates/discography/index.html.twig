@@ -84,16 +84,19 @@
             var audio = btn.parentElement.querySelector('audio');
             var icon = btn.parentElement.querySelector('i');
             var musicContainer = btn.parentElement.parentElement;
+            var nextContainer = musicContainer.nextElementSibling;
             var musicText = btn.parentElement.parentElement.querySelector('.music-text');
             audio.addEventListener('ended',function () {
                 icon.classList.replace('fa-pause', 'fa-play');
                 musicContainer.classList.remove('scalup-1-1');
                 btn.parentElement.classList.remove('box-shadow-success');
                 musicContainer.style.filter = 'grayscale(1)';
+
                 musicText.classList.remove('text-shadow-success');
-                if (musicContainer.nextElementSibling){
-                    if (!musicContainer.nextElementSibling.classList.contains('is-hidden')) {
-                        var nextBtnPlayAudio = musicContainer.nextElementSibling.querySelector('.play-btn');
+
+                if (nextContainer){
+                    if (!nextContainer.classList.contains('is-hidden')) {
+                        var nextBtnPlayAudio = nextContainer.querySelector('.play-btn');
                         nextBtnPlayAudio.click();
                     }
                 }
