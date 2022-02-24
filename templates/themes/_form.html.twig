@@ -81,7 +81,7 @@
                 </figure>
             {% endif %}
         {% elseif form.vars.name == 'album' %}
-            {% if album is defined and album.imageFile %}
+            {% if album is defined and album.image %}
                 <figure class="is-flex is-justify-content-center is-relative">
                     <img src="{{ vich_uploader_asset(album, 'imageFile') }}" alt="{{ album.image }}">
                     <a href="{{ path('album_image_delete', {'id': album.id}) }}" class="delete is-large" style="position: absolute;right: .5rem;top: .5rem;"></a>
@@ -89,7 +89,10 @@
             {% endif %}
         {% endif %}
 
-
+        {% if music is defined and music.musicName %}
+            <span class="help">{% trans %}Current file : {% endtrans %} {{ music.musicName }}</span>
+            <audio src="{{ vich_uploader_asset(music, 'musicFile') }}" controls style="width: 100%;"></audio>
+        {% endif %}
     <div class="file has-name is-fullwidth">
         <label class="file-label">
             {{ form_widget(child) }}
@@ -108,8 +111,6 @@
             <span class="file-name">
                 {% if event is defined and event.image %}
                     {{ event.image }}
-                {% elseif music is defined and music.musicName %}
-                    {{ music.musicName }}
                 {% else %}
                     {% trans %}Empty{% endtrans %}
                 {% endif %}

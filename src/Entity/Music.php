@@ -53,6 +53,7 @@ class Music
 
     /**
      * @ORM\ManyToOne(targetEntity=Album::class, inversedBy="musics", cascade={"persist"})
+     * @ORM\JoinColumn(onDelete="SET NULL"))
      */
     private $Album;
 

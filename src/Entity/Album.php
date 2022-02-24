@@ -40,6 +40,7 @@ class Album
 
     /**
      * @ORM\OneToMany(targetEntity=Music::class, mappedBy="Album", cascade={"persist"})
+     * @ORM\JoinColumn(onDelete="SET NULL"))
      */
     private $musics;
 
