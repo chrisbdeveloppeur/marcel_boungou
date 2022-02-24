@@ -39,11 +39,25 @@
 
     {% if child.vars.block_prefixes[1] == 'choice' %}
 
-    <div class="select is-small is-fullwidth">
+        {% if child.vars.name == 'album' %}
+            <div class="field has-addons">
+                <div class="control is-expanded">
+                    <div class="select is-fullwidth">
+                        {{ form_widget(child) }}
+                    </div>
+                </div>
+                <div class="control">
+                    <a href="{{ path('album_new') }}" class="button is-primary">{% trans %}Add an album{% endtrans %}</a>
+                </div>
+            </div>
+        {% else %}
+            <div class="select is-fullwidth">
 
-        {{ form_widget(child) }}
+                {{ form_widget(child) }}
 
-    </div>
+            </div>
+        {% endif %}
+
     {% elseif child.vars.block_prefixes[1] == 'checkbox' %}
         {% if 'agreeTerms' in child.vars.name %}
             <label class="checkbox">
@@ -94,6 +108,8 @@
             <span class="file-name">
                 {% if event is defined and event.image %}
                     {{ event.image }}
+                {% elseif music is defined and music.musicName %}
+                    {{ music.musicName }}
                 {% else %}
                     {% trans %}Empty{% endtrans %}
                 {% endif %}
@@ -102,43 +118,67 @@
         </label>
     </div>
     {% else %}
-    <div class="control has-icons-left">
-        {{ form_widget(child) }}
+
         {% if 'mail' in child.vars.name %}
-            <span class="icon is-small is-left">
-                <i class="fas fa-at"></i>
-            </span>
-        {% elseif 'phone' in child.vars.name or 'Phone' in child.vars.name %}
-            <span class="icon is-small is-left">
-                <i class="fas fa-phone"></i>
-            </span>
-        {% elseif ('street' in child.vars.name) or ('cp' in child.vars.name) or ('city' in child.vars.name) or ('building' in child.vars.name) or ('Adresse' in child.vars.name) %}
-            <span class="icon is-small is-left">
-                <i class="fas fa-map-marked-alt"></i>
-            </span>
-        {% elseif ('name' in child.vars.name) or ('Name' in child.vars.name) or ('Contact' in child.vars.name) %}
-            <span class="icon is-small is-left">
-                <i class="fas fa-signature"></i>
-            </span>
-        {% elseif ('password' in child.vars.name) or ('Password' in child.vars.name) %}
-            <span class="icon is-small is-left">
-                <i class="fas fa-key"></i>
-            </span>
-            <div class="show-password">
-                <span class="icon is-small">
-                    <i class="fas fa-eye-slash"></i>
+            <div class="control has-icons-left">
+                {{ form_widget(child) }}
+                <span class="icon is-small is-left">
+                    <i class="fas fa-at"></i>
                 </span>
             </div>
+        {% elseif 'phone' in child.vars.name or 'Phone' in child.vars.name %}
+            <div class="control has-icons-left">
+                {{ form_widget(child) }}
+                <span class="icon is-small is-left">
+                    <i class="fas fa-phone"></i>
+                </span>
+            </div>
+        {% elseif ('street' in child.vars.name) or ('cp' in child.vars.name) or ('city' in child.vars.name) or ('building' in child.vars.name) or ('Adresse' in child.vars.name) %}
+            <div class="control has-icons-left">
+                {{ form_widget(child) }}
+                <span class="icon is-small is-left">
+                    <i class="fas fa-map-marked-alt"></i>
+                </span>
+            </div>
+        {% elseif ('name' in child.vars.name) or ('Name' in child.vars.name) or ('Contact' in child.vars.name) %}
+            <div class="control has-icons-left">
+                {{ form_widget(child) }}
+                <span class="icon is-small is-left">
+                    <i class="fas fa-signature"></i>
+                </span>
+            </div>
+        {% elseif ('password' in child.vars.name) or ('Password' in child.vars.name) %}
+            <div class="control has-icons-left">
+                {{ form_widget(child) }}
+                <span class="icon is-small is-left">
+                    <i class="fas fa-key"></i>
+                </span>
+                <div class="show-password">
+                    <span class="icon is-small">
+                        <i class="fas fa-eye-slash"></i>
+                    </span>
+                </div>
+            </div>
         {% elseif 'datetime' in child.vars.name %}
-            <span class="icon is-small is-left">
-                <i class="fas fa-calendar-alt"></i>
-            </span>
+            <div class="control has-icons-left">
+                {{ form_widget(child) }}
+                <span class="icon is-small is-left">
+                    <i class="fas fa-calendar-alt"></i>
+                </span>
+            </div>
         {% elseif 'country' in child.vars.name %}
-            <span class="icon is-small is-left">
-                <i class="fas fa-globe"></i>
-            </span>
+            <div class="control has-icons-left">
+                {{ form_widget(child) }}
+                <span class="icon is-small is-left">
+                    <i class="fas fa-globe"></i>
+                </span>
+            </div>
+        {% else %}
+            <p class="control">
+                {{ form_widget(child) }}
+            </p>
         {% endif %}
-    </div>
+
 
     {% endif %}
 
@@ -179,7 +219,7 @@
 
 {% if 'reset_password' in form.vars.name %}
     <div class="field has-text-centered" id="save">
-        <button class="button is-success is-small btn-submit">
+        <button class="button is-success btn-submit">
         <span class="icon">
             <i class="fas fa-paper-plane"></i>
         </span>
@@ -191,9 +231,9 @@
 {% else %}
     <div class="field has-text-right" id="save">
         {% if redirect is defined %}
-            <a href="{{ redirect.link }}" class="button is-small is-dark">{{ redirect.txt }}</a>
+            <a href="{{ redirect.link }}" class="button is-dark">{{ redirect.txt }}</a>
         {% endif %}
-        <button class="button is-success is-small btn-submit">
+        <button class="button is-success btn-submit">
             <span class="icon">
                 <i class="fas fa-check"></i>
             </span>

@@ -76,6 +76,8 @@ class MusicController extends AbstractController
     {
         $form = $this->createForm(MusicType::class, $music);
         $form->handleRequest($request);
+        //dump($music);
+        //dd($form);
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->persist($music);

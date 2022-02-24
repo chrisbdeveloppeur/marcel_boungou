@@ -32,8 +32,8 @@ class MusicType extends AbstractType
                 ]
             ])
 
-            ->add('musicFile', VichFileType::class, [
-                'label' => false,
+            ->add('musicFile', FileType::class, [
+                'label' => $this->translator->trans('Audio file'),
                 'required' => false,
                 'attr' => [
                     'class' => 'file-input',
@@ -47,7 +47,7 @@ class MusicType extends AbstractType
                 'attr' => [
                     'class' => 'select',
                 ],
-                'placeholder' => $this->translator->trans('select a album')
+                'placeholder' => $this->translator->trans('select an album')
             ])
 
         ;

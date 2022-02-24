@@ -655,7 +655,7 @@
       </trans-unit>
       <trans-unit id="ckrH6XA" resname="Create new Music">
         <source>Create new Music</source>
-        <target>Créer une nouvelle musiquec</target>
+        <target>Créer une nouvelle musique</target>
       </trans-unit>
       <trans-unit id="sBIHLk7" resname="Album Title">
         <source>Album Title</source>
@@ -672,6 +672,18 @@
       <trans-unit id="d9FVpQ8" resname="Redirect to discography">
         <source>Redirect to discography</source>
         <target>Redirection vers la discographie</target>
+      </trans-unit>
+      <trans-unit id="8dDLPkj" resname="Audio file">
+        <source>Audio file</source>
+        <target>Fichier audio</target>
+      </trans-unit>
+      <trans-unit id="tjjNwgK" resname="select an album">
+        <source>select an album</source>
+        <target>sélectionner un album</target>
+      </trans-unit>
+      <trans-unit id="8z3fT_W" resname="Add song">
+        <source>Add song</source>
+        <target>Ajouter une chanson</target>
       </trans-unit>
     </body>
   </file>
