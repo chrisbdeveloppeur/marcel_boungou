@@ -107,10 +107,10 @@
                 musicText.classList.remove('text-shadow-success');
 
                 if (nextContainer){
-                    if (!nextContainer.classList.contains('is-hidden')) {
-                        var nextBtnPlayAudio = nextContainer.querySelector('.play-btn');
-                        nextBtnPlayAudio.click();
-                    }
+                    var nextBtnPlayAudio = nextContainer.querySelector('.play-btn');
+                    nextBtnPlayAudio.click();
+                }else {
+                    musicContainer.parentElement.firstElementChild.querySelector('.play-btn').click();
                 }
 
             });
