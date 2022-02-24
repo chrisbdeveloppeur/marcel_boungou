@@ -17,18 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f69e720b4
-DTSTAMP;TZID=Europe/Paris:20220223T095558
+UID:621734b968e1b
+DTSTAMP;TZID=Europe/Paris:20220224T083313
 SUMMARY:deserunt
-DESCRIPTION:Error repellat quisquam illum quo consequatur magnam. Assumenda
-  fugiat distinctio rerum quasi nemo illo et. Commodi animi rerum quia. Et 
- dicta deleniti autem autem autem quis quod. Ut incidunt rerum sed iusto pe
- rspiciatis. Aut quo ea eius eaque. Molestiae assumenda veniam incidunt opt
- io nostrum pariatur. Officia eum tempore facere eum consequatur quo ea. In
-  blanditiis soluta ut voluptatem. Placeat cupiditate laudantium minima ex 
- et rerum.
-LOCATION:2\, rue Pascal\, 54 653 David-sur-Brun\, David-sur-Brun
-DTSTART;TZID=Europe/Paris:20220227T015224
-DTEND;TZID=Europe/Paris:20220227T015224
+DESCRIPTION:Totam voluptate vel architecto blanditiis delectus inventore. D
+ olorem ut quidem rerum iusto. Facilis velit tempore quo. Illum amet necess
+ itatibus quis facere aliquid harum et. Deserunt sed vero omnis repudiandae
+  eaque doloremque. Odit possimus velit voluptate accusamus nobis labore es
+ t. Rerum modi dolorem et id officiis repudiandae et.
+LOCATION:21\, impasse Olivier\, 31 441 Marchal\, Marchal
+DTSTART;TZID=Europe/Paris:20220309T031120
+DTEND;TZID=Europe/Paris:20220309T031120
 END:VEVENT
 END:VCALENDAR

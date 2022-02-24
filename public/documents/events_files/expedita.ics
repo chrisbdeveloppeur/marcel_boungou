@@ -17,15 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f8aa75e4e
-DTSTAMP;TZID=Europe/Paris:20220223T100442
+UID:6217345179e25
+DTSTAMP;TZID=Europe/Paris:20220224T083129
 SUMMARY:expedita
-DESCRIPTION:Voluptates ut sit non distinctio recusandae consectetur. Non co
- nsectetur quia magnam blanditiis corporis. Eum asperiores et molestiae et 
- deserunt esse rerum. Maxime facilis eveniet non maxime. Minima eligendi ma
- iores ut corrupti vitae.
-LOCATION:78\, avenue Samson\, 58 768 Boucher\, Boucher
-DTSTART;TZID=Europe/Paris:20220224T235740
-DTEND;TZID=Europe/Paris:20220224T235740
+DESCRIPTION:Nulla ullam magni consequuntur accusamus voluptatum. Tempore re
+ prehenderit minus omnis adipisci maxime. Exercitationem recusandae ullam e
+ nim officiis adipisci aperiam. Natus ducimus et consequuntur deserunt ad o
+ dio dolorum.
+LOCATION:1\, avenue de Sauvage\, 38 196 Dupuy\, Dupuy
+DTSTART;TZID=Europe/Paris:20220418T104713
+DTEND;TZID=Europe/Paris:20220418T104713
 END:VEVENT
 END:VCALENDAR

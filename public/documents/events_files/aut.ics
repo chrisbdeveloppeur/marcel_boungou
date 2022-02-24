@@ -17,18 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f8d37ecd8
-DTSTAMP;TZID=Europe/Paris:20220223T100523
+UID:62173451363b6
+DTSTAMP;TZID=Europe/Paris:20220224T083129
 SUMMARY:aut
-DESCRIPTION:Voluptates ducimus at quod sunt qui. Sit aut et repellat asperi
- ores. Quia ea perspiciatis incidunt sequi voluptas. Qui id praesentium sap
- iente laborum ullam. Ab inventore enim saepe et dolor. Doloribus nam dolor
- e repudiandae. Iste autem eaque molestias nam earum rerum. Id hic et vel. 
- Atque praesentium deleniti commodi cupiditate. Iste et aut culpa ut eum si
- nt exercitationem laboriosam. Reiciendis nostrum voluptas magni labore seq
- ui similique illum officiis.
-LOCATION:412\, avenue Jules Dufour\, 76820 Bonneau\, Bonneau
-DTSTART;TZID=Europe/Paris:20220321T181542
-DTEND;TZID=Europe/Paris:20220321T181542
+DESCRIPTION:Eligendi sit esse pariatur doloremque ipsa consequatur et volup
+ tates. Ipsa repellat harum deserunt repudiandae totam odit quas. Et nisi e
+ t pariatur eum. Aut sed consectetur nesciunt et assumenda in.
+LOCATION:75\, rue Duval\, 90368 Hardy\, Hardy
+DTSTART;TZID=Europe/Paris:20220222T052608
+DTEND;TZID=Europe/Paris:20220222T052608
 END:VEVENT
 END:VCALENDAR

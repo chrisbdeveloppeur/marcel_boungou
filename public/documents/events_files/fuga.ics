@@ -17,15 +17,18 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62137842a7134
-DTSTAMP;TZID=Europe/Paris:20220221T123218
+UID:621733d14372f
+DTSTAMP;TZID=Europe/Paris:20220224T082921
 SUMMARY:fuga
-DESCRIPTION:Quod harum in quidem eos quidem. Sed sed voluptatum sint enim. 
- Nemo aperiam tenetur consequatur rem a et consequatur. Natus eum quia aliq
- uid soluta. Occaecati voluptatibus qui deserunt eligendi ea nulla. Quidem 
- deserunt consequatur vitae ipsa et. Ut culpa enim nesciunt ipsa.
-LOCATION:668\, avenue Barbier\, 25 015 TanguyVille\, TanguyVille
-DTSTART;TZID=Europe/Paris:20220327T180728
-DTEND;TZID=Europe/Paris:20220327T180728
+DESCRIPTION:Qui facere voluptas molestiae minima veniam fugit. Placeat repe
+ llendus quam tempore repellendus ut autem. Blanditiis dolor totam enim ill
+ um consequatur qui optio earum. Velit ut delectus nesciunt qui ratione occ
+ aecati. Accusantium hic qui numquam eum et. Sit odit sunt quis cupiditate 
+ in eaque fugit. Praesentium cupiditate maxime error laudantium repudiandae
+ . Ut et tempora veritatis corrupti similique quia ut similique. Iure aut q
+ uo praesentium ducimus.
+LOCATION:boulevard de Devaux\, 09 892 Bourgeois-sur-Mer\, Bourgeois-sur-Mer
+DTSTART;TZID=Europe/Paris:20220223T202330
+DTEND;TZID=Europe/Paris:20220223T202330
 END:VEVENT
 END:VCALENDAR

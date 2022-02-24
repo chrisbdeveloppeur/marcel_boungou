@@ -17,13 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213fd17c3c19
-DTSTAMP;TZID=Europe/Paris:20220221T215903
+UID:621733d0b3e5c
+DTSTAMP;TZID=Europe/Paris:20220224T082920
 SUMMARY:nihil
-DESCRIPTION:Esse veritatis autem harum esse et et. Inventore sed error nost
- rum ipsa nobis nisi. Aut non nobis repellat id sit totam porro.
-LOCATION:place de Mahe\, 95961 Klein\, Klein
-DTSTART;TZID=Europe/Paris:20220219T065823
-DTEND;TZID=Europe/Paris:20220219T065823
+DESCRIPTION:Architecto beatae corporis saepe. Quod error at est assumenda m
+ inima ipsum. Dolorum itaque dolorem est quia dolore quibusdam exercitation
+ em.
+LOCATION:6\, boulevard Jacquet\, 13 054 Hoareau-sur-Petitjean\, Hoareau-sur
+ -Petitjean
+DTSTART;TZID=Europe/Paris:20220222T093300
+DTEND;TZID=Europe/Paris:20220222T093300
 END:VEVENT
 END:VCALENDAR

@@ -17,18 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621376e9b6195
-DTSTAMP;TZID=Europe/Paris:20220221T122633
+UID:621734872a588
+DTSTAMP;TZID=Europe/Paris:20220224T083223
 SUMMARY:placeat
-DESCRIPTION:Corporis officiis quasi repudiandae dolorum. Optio adipisci asp
- ernatur ea impedit repellendus esse ut laboriosam. Dolorum a eum ut. Dolor
-  temporibus in vel animi incidunt. Adipisci in rerum esse ducimus delectus
-  omnis earum. Aut vero odio facere temporibus ad fugiat quisquam animi. Re
- pudiandae velit voluptate possimus dolore in ut consequatur. Vel quia ea a
- ut voluptates voluptas. Et voluptatem earum eaque et. In perferendis id si
- nt inventore ea iste. Ea aut vitae earum sint animi ut.
-LOCATION:1\, chemin de Charpentier\, 74757 Vasseur\, Vasseur
-DTSTART;TZID=Europe/Paris:20220327T203145
-DTEND;TZID=Europe/Paris:20220327T203145
+DESCRIPTION:Eaque est consequatur quis ab. Qui saepe minima voluptatem susc
+ ipit similique rem similique. Asperiores praesentium nemo et aliquid commo
+ di.
+LOCATION:9\, place Vaillant\, 35869 Lopez\, Lopez
+DTSTART;TZID=Europe/Paris:20220322T195202
+DTEND;TZID=Europe/Paris:20220322T195202
 END:VEVENT
 END:VCALENDAR

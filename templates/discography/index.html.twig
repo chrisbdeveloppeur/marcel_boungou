@@ -68,15 +68,19 @@
             var musicText = btn.parentElement.parentElement.querySelector('.music-text');
             audio.addEventListener('ended',function () {
                 icon.classList.replace('fa-pause', 'fa-play');
-                // musicContainer.classList.add('opacity85');
                 musicContainer.style.transform = 'none';
                 btn.parentElement.classList.remove('box-shadow-success');
                 musicContainer.style.filter = 'grayscale(1)';
-                musicText.classList.remove('text-shadow-success')
+                musicText.classList.remove('text-shadow-success');
+                if (musicContainer.nextElementSibling){
+                    var nextBtnPlayAudio = musicContainer.nextElementSibling.querySelector('.play-btn');
+                }else {
+                    var nextBtnPlayAudio = musicContainer.parentElement.firstElementChild.querySelector('.play-btn');
+                }
+                nextBtnPlayAudio.click();
             });
             audio.onpause = function () {
                 icon.classList.replace('fa-pause', 'fa-play');
-                // musicContainer.classList.add('opacity85');
                 musicContainer.style.transform = 'none';
                 btn.parentElement.classList.remove('box-shadow-success');
                 musicContainer.style.filter = 'grayscale(1)';
@@ -84,7 +88,6 @@
             };
             audio.onplay = function () {
                 icon.classList.replace('fa-play', 'fa-pause');
-                // musicContainer.classList.remove('opacity85');
                 musicContainer.style.transform = 'scale(1.1)';
                 btn.parentElement.classList.add('box-shadow-success');
                 musicContainer.style.filter = 'grayscale(0)';

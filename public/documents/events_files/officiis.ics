@@ -17,17 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f8d382c06
-DTSTAMP;TZID=Europe/Paris:20220223T100523
+UID:62173451672af
+DTSTAMP;TZID=Europe/Paris:20220224T083129
 SUMMARY:officiis
-DESCRIPTION:Tempora deserunt ad ullam est quis labore molestiae. Sit adipis
- ci molestiae quibusdam et enim esse beatae. Libero delectus vel qui assume
- nda sed. Perferendis cum pariatur vero qui qui. Sapiente minus impedit qua
- si ex vel quia illo quasi. Aperiam dolores est sunt dolores est beatae quo
- d quia. Molestiae sit nisi nihil a et quod saepe. Corrupti hic ea cum ad e
- st voluptate voluptatum. Asperiores quo ullam velit fuga sint accusamus.
-LOCATION:61\, avenue Meunier\, 06 994 LopesBourg\, LopesBourg
-DTSTART;TZID=Europe/Paris:20220417T225143
-DTEND;TZID=Europe/Paris:20220417T225143
+DESCRIPTION:Quo est exercitationem ratione in nihil corporis. Quis alias vo
+ luptatem dolor quis iure voluptas praesentium. Cumque quis earum ullam nam
+  non. Ullam rem maxime laboriosam. Eos sunt ut iusto dolores molestias et 
+ iusto. Explicabo quaerat qui quis. Aut explicabo odio saepe reiciendis eum
+  ea.
+LOCATION:5\, boulevard de Jacob\, 74769 Gomes-la-Forêt\, Gomes-la-Forêt
+DTSTART;TZID=Europe/Paris:20220330T162724
+DTEND;TZID=Europe/Paris:20220330T162724
 END:VEVENT
 END:VCALENDAR

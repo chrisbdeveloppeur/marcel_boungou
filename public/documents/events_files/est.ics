@@ -17,15 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f88d2c6e2
-DTSTAMP;TZID=Europe/Paris:20220223T100413
+UID:621734873696c
+DTSTAMP;TZID=Europe/Paris:20220224T083223
 SUMMARY:est
-DESCRIPTION:Mollitia ut et corrupti quidem dolorem. Corporis ipsa aliquam o
- mnis atque eveniet et dignissimos sed. Quae nemo aliquid amet numquam illu
- m. Exercitationem architecto minima quam dolorum placeat. Nam quis adipisc
- i non enim. Fugiat ut magni tempora non in modi.
-LOCATION:27\, rue Boucher\, 91 243 BenoitBourg\, BenoitBourg
-DTSTART;TZID=Europe/Paris:20220224T002646
-DTEND;TZID=Europe/Paris:20220224T002646
+DESCRIPTION:Delectus nostrum praesentium et asperiores. Eum in omnis delect
+ us praesentium illo sint quo. Sequi asperiores quisquam dicta veniam ex ve
+ ro rerum.
+LOCATION:avenue Marc Chauveau\, 37 713 Fouquet-les-Bains\, Fouquet-les-Bain
+ s
+DTSTART;TZID=Europe/Paris:20220330T104215
+DTEND;TZID=Europe/Paris:20220330T104215
 END:VEVENT
 END:VCALENDAR

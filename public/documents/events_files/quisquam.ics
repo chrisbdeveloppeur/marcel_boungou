@@ -17,14 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6207a54197112
-DTSTAMP;TZID=Europe/Paris:20220212T131705
+UID:621733d144494
+DTSTAMP;TZID=Europe/Paris:20220224T082921
 SUMMARY:quisquam
-DESCRIPTION:Omnis quis consectetur et aut aut repudiandae. Nihil culpa quo 
- ex voluptatibus voluptate. Optio illo ipsam iure velit. Cupiditate recusan
- dae sequi vero eum velit repudiandae.
-LOCATION:294\, place Barre\, 93 985 Ledoux\, Ledoux
-DTSTART;TZID=Europe/Paris:20220221T014629
-DTEND;TZID=Europe/Paris:20220221T014629
+DESCRIPTION:A modi quasi quaerat cum culpa. Et culpa aspernatur error dolor
+ emque. Dignissimos rerum alias dolorem enim est voluptatem. Laudantium mag
+ ni repellat et aspernatur laborum totam autem odio. Qui laudantium iste in
+ ventore temporibus et. Enim eum commodi ab unde eligendi quo a. Atque pari
+ atur et consequatur iure. Cumque modi veniam possimus omnis qui omnis. Opt
+ io labore non quisquam sed in assumenda.
+LOCATION:99\, rue Xavier Boyer\, 92 671 Lefebvre\, Lefebvre
+DTSTART;TZID=Europe/Paris:20220225T052819
+DTEND;TZID=Europe/Paris:20220225T052819
 END:VEVENT
 END:VCALENDAR

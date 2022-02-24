@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:62173487244e7
+DTSTAMP;TZID=Europe/Paris:20220224T083223
+SUMMARY:fugit
+DESCRIPTION:Aliquid et repudiandae eveniet omnis quae est. Voluptatem ab qu
+ is doloribus voluptatem sit dolores quis. Nisi alias reprehenderit aut arc
+ hitecto. Qui commodi vel delectus ducimus earum unde. Beatae possimus ipsu
+ m aut vitae consequuntur tenetur et. Vero aut et veritatis aut facilis. Do
+ loremque culpa neque eos architecto.
+LOCATION:impasse de Pascal\, 88533 RoyerBourg\, RoyerBourg
+DTSTART;TZID=Europe/Paris:20220304T105153
+DTEND;TZID=Europe/Paris:20220304T105153
+END:VEVENT
+END:VCALENDAR

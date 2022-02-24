@@ -17,17 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213d6702702f
-DTSTAMP;TZID=Europe/Paris:20220221T191408
+UID:621733d15d0a8
+DTSTAMP;TZID=Europe/Paris:20220224T082921
 SUMMARY:nobis
-DESCRIPTION:Voluptas repudiandae labore eaque soluta. Eveniet sunt et ratio
- ne laudantium eaque soluta totam. Sunt ut eius minus commodi cupiditate il
- lum. Voluptatem sapiente sed ullam est. Adipisci non aspernatur quis omnis
-  officiis. Dolores sint reiciendis accusamus tempora. Rerum et facere et i
- ste earum perspiciatis eos animi. Et et ratione eius rerum nihil vero porr
- o. Eum quaerat nemo amet voluptas.
-LOCATION:42\, boulevard Payet\, 15 402 BarthelemyBourg\, BarthelemyBourg
-DTSTART;TZID=Europe/Paris:20220327T232010
-DTEND;TZID=Europe/Paris:20220327T232010
+DESCRIPTION:A nihil repudiandae nobis quos est ut dolor. Eveniet officiis o
+ dio accusantium. Cum optio omnis corrupti dolores veritatis. Aut modi veli
+ t deleniti laborum voluptas similique perspiciatis. Qui et eveniet eum ven
+ iam voluptas. Error unde sint cupiditate.
+LOCATION:85\, chemin de Traore\, 91191 Bonnindan\, Bonnindan
+DTSTART;TZID=Europe/Paris:20220322T005949
+DTEND;TZID=Europe/Paris:20220322T005949
 END:VEVENT
 END:VCALENDAR

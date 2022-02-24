@@ -17,14 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f906d935d
-DTSTAMP;TZID=Europe/Paris:20220223T100614
+UID:621733d10bf37
+DTSTAMP;TZID=Europe/Paris:20220224T082921
 SUMMARY:ut
-DESCRIPTION:Odio est eveniet omnis iusto. Quae nemo fuga omnis non a quibus
- dam est. Et facilis cupiditate consequatur consequuntur et.
-LOCATION:80\, place de Allard\, 58 563 Delannoy-la-Forêt\, Delannoy-la-For
- êt
-DTSTART;TZID=Europe/Paris:20220308T125128
-DTEND;TZID=Europe/Paris:20220308T125128
+DESCRIPTION:Ut ut ducimus quo facere. Et expedita quia sed qui harum. Dolor
+ ibus perspiciatis et quo sequi quidem neque sunt nemo.
+LOCATION:4\, rue Daniel Rodrigues\, 86 207 Leleu\, Leleu
+DTSTART;TZID=Europe/Paris:20220222T031224
+DTEND;TZID=Europe/Paris:20220222T031224
 END:VEVENT
 END:VCALENDAR

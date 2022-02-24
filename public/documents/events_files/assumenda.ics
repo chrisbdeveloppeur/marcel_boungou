@@ -17,16 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f78446058
-DTSTAMP;TZID=Europe/Paris:20220223T095948
+UID:621733d175865
+DTSTAMP;TZID=Europe/Paris:20220224T082921
 SUMMARY:assumenda
-DESCRIPTION:Nobis maiores omnis ipsa qui ex optio amet. Totam voluptas dolo
- res architecto voluptas qui. Qui molestiae quia aut aut dolor. Sed alias o
- mnis quis labore esse. Voluptatibus voluptatem hic est reprehenderit recus
- andae quasi. Saepe nemo et ipsam fugit tempore. Velit eaque qui hic omnis 
- soluta consequatur odit dignissimos.
-LOCATION:49\, rue Éléonore Imbert\, 17886 Seguin\, Seguin
-DTSTART;TZID=Europe/Paris:20220221T032115
-DTEND;TZID=Europe/Paris:20220221T032115
+DESCRIPTION:Asperiores itaque architecto repudiandae ut. Et exercitationem 
+ aperiam est in vero quo excepturi. Laboriosam est reiciendis voluptatem eu
+ m. Eum in ab quo illo. Error rerum iure velit. Et veritatis cum non perspi
+ ciatis. Nemo et expedita suscipit iusto est necessitatibus. Nemo facilis e
+ um temporibus soluta cumque commodi. Eveniet commodi et ducimus sunt velit
+ .
+LOCATION:2\, avenue Jeannine Traore\, 25 115 MaceBourg\, MaceBourg
+DTSTART;TZID=Europe/Paris:20220418T140825
+DTEND;TZID=Europe/Paris:20220418T140825
 END:VEVENT
 END:VCALENDAR

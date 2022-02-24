@@ -17,14 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f906d587f
-DTSTAMP;TZID=Europe/Paris:20220223T100614
+UID:62173487294f4
+DTSTAMP;TZID=Europe/Paris:20220224T083223
 SUMMARY:et
-DESCRIPTION:Eos nemo sint aliquam minus vero. Animi numquam aut minus ullam
-  rerum in perferendis. Iure autem dolores adipisci facilis aperiam quae. E
- st qui voluptatum est consectetur architecto voluptatem.
-LOCATION:rue de Leleu\, 03 817 Gonzalez\, Gonzalez
-DTSTART;TZID=Europe/Paris:20220222T014839
-DTEND;TZID=Europe/Paris:20220222T014839
+DESCRIPTION:Tempore minus praesentium vero est tempore esse consequatur. Co
+ nsequatur dolor voluptas autem aut necessitatibus.
+LOCATION:41\, rue Claudine Riou\, 69559 LegendreBourg\, LegendreBourg
+DTSTART;TZID=Europe/Paris:20220315T093428
+DTEND;TZID=Europe/Paris:20220315T093428
 END:VEVENT
 END:VCALENDAR

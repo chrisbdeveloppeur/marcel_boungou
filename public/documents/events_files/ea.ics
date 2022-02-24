@@ -17,17 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215ed6042eac
-DTSTAMP;TZID=Europe/Paris:20220223T091632
+UID:621734b972976
+DTSTAMP;TZID=Europe/Paris:20220224T083313
 SUMMARY:ea
-DESCRIPTION:Dolores commodi dolores tenetur sint rerum ut. Aperiam id occae
- cati vel iusto quod. Iusto eius distinctio a quia commodi itaque enim accu
- santium. Qui asperiores laudantium omnis at molestiae nesciunt aperiam aut
- . Ipsa omnis aut vero temporibus reiciendis ut. Totam cupiditate placeat c
- orporis et quasi qui quae. Numquam autem nesciunt expedita aliquam non non
- .
-LOCATION:77\, boulevard de Brunet\, 58330 Brunetnec\, Brunetnec
-DTSTART;TZID=Europe/Paris:20220224T065802
-DTEND;TZID=Europe/Paris:20220224T065802
+DESCRIPTION:Esse qui dolorem quis est expedita. Enim possimus sunt atque qu
+ asi dolorem quasi. Voluptates dolorem impedit nam. Asperiores temporibus m
+ odi laborum autem amet unde. Aliquam quibusdam eos libero ut a velit sunt.
+  Culpa eveniet ut veniam recusandae qui architecto. Est qui incidunt aut o
+ mnis rerum voluptatem quod.
+LOCATION:impasse Jacquet\, 53 463 Benoit\, Benoit
+DTSTART;TZID=Europe/Paris:20220408T013132
+DTEND;TZID=Europe/Paris:20220408T013132
 END:VEVENT
 END:VCALENDAR

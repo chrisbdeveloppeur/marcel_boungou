@@ -17,16 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213fd17d4205
-DTSTAMP;TZID=Europe/Paris:20220221T215903
+UID:621734b95024d
+DTSTAMP;TZID=Europe/Paris:20220224T083313
 SUMMARY:praesentium
-DESCRIPTION:Molestiae non voluptatem vitae illum qui. Culpa in sit mollitia
-  quis eos. Ratione voluptatum omnis commodi praesentium animi qui sapiente
-  voluptatibus. Laboriosam eligendi temporibus unde praesentium ratione qui
- a ipsum. Commodi corporis et dolores odit dignissimos est. Blanditiis volu
- ptatibus sed eligendi dolores. Totam quidem ipsam ab hic sit porro.
-LOCATION:73\, rue Perrier\, 25695 Henrynec\, Henrynec
-DTSTART;TZID=Europe/Paris:20220306T052655
-DTEND;TZID=Europe/Paris:20220306T052655
+DESCRIPTION:Aspernatur ea quaerat dolor ad harum et. Recusandae fugiat nequ
+ e voluptas corporis. Autem sapiente numquam alias neque. Voluptatem consec
+ tetur nemo autem harum aliquid. Qui quod sunt ea commodi odio dicta. Eum e
+ t sapiente et non natus.
+LOCATION:54\, impasse Franck Cohen\, 74 548 Gillet\, Gillet
+DTSTART;TZID=Europe/Paris:20220222T000445
+DTEND;TZID=Europe/Paris:20220222T000445
 END:VEVENT
 END:VCALENDAR

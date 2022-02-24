@@ -17,17 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f700aab5f
-DTSTAMP;TZID=Europe/Paris:20220223T095736
+UID:621733d148b1d
+DTSTAMP;TZID=Europe/Paris:20220224T082921
 SUMMARY:nostrum
-DESCRIPTION:Totam quas dolore ipsam. Voluptatum consectetur praesentium qui
-  aut reiciendis. Quam facere a et voluptas velit ut aut. Dolorum accusanti
- um nihil nemo at. Iste blanditiis similique ratione totam explicabo ipsam.
-  Nesciunt ad eaque deleniti qui et est. Iure dolorem eum iure perferendis 
- totam earum aut. Praesentium deserunt optio numquam enim omnis. Tenetur ev
- eniet corporis perspiciatis qui illum et.
-LOCATION:57\, boulevard Garnier\, 19 073 Legros\, Legros
-DTSTART;TZID=Europe/Paris:20220314T162808
-DTEND;TZID=Europe/Paris:20220314T162808
+DESCRIPTION:Fugiat dolorem voluptatem aut. Necessitatibus fuga voluptatem a
+ . Excepturi a suscipit nihil inventore praesentium soluta. Voluptatem odit
+  magnam rerum et consequatur odio dicta. Exercitationem dignissimos provid
+ ent dolorum aut numquam eum. Modi voluptates qui rerum. Veniam fuga modi u
+ nde quia non maiores voluptatem.
+LOCATION:3\, chemin Henriette Meyer\, 08 149 Allain-sur-Mer\, Allain-sur-Me
+ r
+DTSTART;TZID=Europe/Paris:20220304T125012
+DTEND;TZID=Europe/Paris:20220304T125012
 END:VEVENT
 END:VCALENDAR

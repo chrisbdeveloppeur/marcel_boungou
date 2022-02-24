@@ -17,16 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6214fb95959da
-DTSTAMP;TZID=Europe/Paris:20220222T160453
+UID:6217345143b63
+DTSTAMP;TZID=Europe/Paris:20220224T083129
 SUMMARY:hic
-DESCRIPTION:Eum pariatur qui quia voluptatem enim nisi. Omnis tenetur earum
-  quis soluta. Et rem odio sed natus impedit repudiandae officiis. Assumend
- a voluptate aliquid sapiente sed facilis aut. A explicabo sapiente occaeca
- ti iure fugiat nostrum et. Recusandae odio occaecati debitis cum non volup
- tas omnis. Rerum quia deleniti magnam totam a ipsam ab.
-LOCATION:74\, rue Paris\, 60 582 Richard\, Richard
-DTSTART;TZID=Europe/Paris:20220416T104919
-DTEND;TZID=Europe/Paris:20220416T104919
+DESCRIPTION:Eum similique voluptatum ad dolorem necessitatibus recusandae i
+ taque dolor. Ut exercitationem vel repellendus aut cumque occaecati ea. Ne
+ mo voluptatem necessitatibus velit culpa ratione quis mollitia.
+LOCATION:56\, rue Simone Robin\, 31 803 Albert\, Albert
+DTSTART;TZID=Europe/Paris:20220225T133901
+DTEND;TZID=Europe/Paris:20220225T133901
 END:VEVENT
 END:VCALENDAR

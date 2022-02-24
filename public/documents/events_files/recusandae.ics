@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6217345160da8
+DTSTAMP;TZID=Europe/Paris:20220224T083129
+SUMMARY:recusandae
+DESCRIPTION:Eveniet quidem dolore cumque et quasi quo consequatur. Assumend
+ a distinctio quia sint amet. Molestiae est libero nesciunt expedita.
+LOCATION:23\, place Denise Marechal\, 43 090 Joseph-sur-Lambert\, Joseph-su
+ r-Lambert
+DTSTART;TZID=Europe/Paris:20220322T021320
+DTEND;TZID=Europe/Paris:20220322T021320
+END:VEVENT
+END:VCALENDAR

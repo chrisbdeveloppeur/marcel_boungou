@@ -17,15 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f7ceb02e0
-DTSTAMP;TZID=Europe/Paris:20220223T100102
+UID:621734b9625ee
+DTSTAMP;TZID=Europe/Paris:20220224T083313
 SUMMARY:ratione
-DESCRIPTION:Ducimus rerum ut aut rerum illum. Quaerat dolorum ut eius venia
- m iste fugit. Quos neque deserunt quos dolorem dignissimos fugit cumque. A
- liquid ullam cupiditate voluptatem dolorum consectetur qui. Enim minus rep
- ellat non et autem hic esse et.
-LOCATION:impasse de Toussaint\, 76362 ChauveauBourg\, ChauveauBourg
-DTSTART;TZID=Europe/Paris:20220221T181059
-DTEND;TZID=Europe/Paris:20220221T181059
+DESCRIPTION:Voluptas aut est odit ut quia et. Excepturi ullam voluptatem co
+ nsequatur vero nisi. Doloremque quas et sed. Dolores autem omnis error est
+  dicta laborum. Illo enim beatae exercitationem quis qui aliquam. Consequa
+ tur culpa dolor ipsum a porro repellendus qui. Velit nihil autem dolor cor
+ poris expedita voluptatem.
+LOCATION:97\, chemin de Da Costa\, 54 926 Dupuy-la-Forêt\, Dupuy-la-Forêt
+DTSTART;TZID=Europe/Paris:20220304T164137
+DTEND;TZID=Europe/Paris:20220304T164137
 END:VEVENT
 END:VCALENDAR

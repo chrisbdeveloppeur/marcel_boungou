@@ -17,16 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f906dbdeb
-DTSTAMP;TZID=Europe/Paris:20220223T100614
+UID:621733d1531a0
+DTSTAMP;TZID=Europe/Paris:20220224T082921
 SUMMARY:dicta
-DESCRIPTION:Consequuntur quis amet suscipit modi fugiat et. Exercitationem 
- ut quasi asperiores iste. Ea necessitatibus ratione asperiores commodi. Cu
- lpa laborum minima quis quos suscipit pariatur. Dicta placeat veritatis ut
-  rerum. Commodi quo amet odit iste dicta ut a. Nesciunt pariatur sit hic e
- ius autem. Culpa et non voluptatem fugit recusandae labore.
-LOCATION:2\, rue Breton\, 41 060 Neveu\, Neveu
-DTSTART;TZID=Europe/Paris:20220329T084912
-DTEND;TZID=Europe/Paris:20220329T084912
+DESCRIPTION:Qui alias eligendi rerum cum omnis odit. Occaecati amet omnis e
+ t nesciunt officia sed aut. Consequatur earum totam itaque voluptatem qui 
+ nihil. Soluta consectetur ea voluptate. Eos quas occaecati voluptas offici
+ is. Vitae animi illo autem magnam dolorem dolores qui ut. Beatae dolor aut
+  dolorem est.
+LOCATION:rue Marine Delaunay\, 69 239 Chartier-la-Forêt\, Chartier-la-For
+ êt
+DTSTART;TZID=Europe/Paris:20220309T002459
+DTEND;TZID=Europe/Paris:20220309T002459
 END:VEVENT
 END:VCALENDAR

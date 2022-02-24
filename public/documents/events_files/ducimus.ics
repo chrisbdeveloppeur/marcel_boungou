@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:62173487437aa
+DTSTAMP;TZID=Europe/Paris:20220224T083223
+SUMMARY:ducimus
+DESCRIPTION:Et magnam maxime sed id assumenda aut. Architecto labore incidu
+ nt voluptatem quo doloremque. Velit nemo assumenda impedit enim quibusdam 
+ esse veritatis.
+LOCATION:95\, avenue Tessier\, 03239 Le Goff\, Le Goff
+DTSTART;TZID=Europe/Paris:20220408T123532
+DTEND;TZID=Europe/Paris:20220408T123532
+END:VEVENT
+END:VCALENDAR

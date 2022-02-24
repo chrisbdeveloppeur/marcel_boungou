@@ -17,16 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621378314d777
-DTSTAMP;TZID=Europe/Paris:20220221T123201
+UID:621734b961017
+DTSTAMP;TZID=Europe/Paris:20220224T083313
 SUMMARY:aperiam
-DESCRIPTION:Ut earum rerum aperiam repudiandae sequi fuga. Cumque aut magna
- m vitae aliquid est. Tempora aut aperiam dicta temporibus in. Vero amet si
- t provident sint ipsum provident. Aut quia eligendi voluptas. Est eum aut 
- aliquid eum et consequatur. Tempore dicta dicta voluptatem hic culpa. Aliq
- uam quasi dolorem nostrum ducimus sed.
-LOCATION:14\, boulevard de Blot\, 50 074 Pruvost\, Pruvost
-DTSTART;TZID=Europe/Paris:20220222T073248
-DTEND;TZID=Europe/Paris:20220222T073248
+DESCRIPTION:Veniam cupiditate id voluptates voluptatum et. Suscipit optio b
+ landitiis et id qui. Enim voluptas nam sit reprehenderit nihil et doloribu
+ s.
+LOCATION:3\, place de Dupre\, 71 723 Bonneau\, Bonneau
+DTSTART;TZID=Europe/Paris:20220228T020609
+DTEND;TZID=Europe/Paris:20220228T020609
 END:VEVENT
 END:VCALENDAR

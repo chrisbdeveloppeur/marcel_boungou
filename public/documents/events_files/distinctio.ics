@@ -17,17 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213783151b71
-DTSTAMP;TZID=Europe/Paris:20220221T123201
+UID:6217345128bf2
+DTSTAMP;TZID=Europe/Paris:20220224T083129
 SUMMARY:distinctio
-DESCRIPTION:Aliquam qui odit vel neque labore. Labore ipsam ab enim quam vo
- luptas magni ut. Itaque doloribus quod sed quia. Commodi necessitatibus ve
- ro cum molestiae libero. Omnis eum officiis molestiae id. Ex et doloribus 
- nemo recusandae quod. Ut dignissimos accusamus quos adipisci nostrum. Cons
- equatur repudiandae sapiente et quasi dolore aliquid occaecati. Tenetur ma
- iores repellendus excepturi incidunt sint.
-LOCATION:71\, place Émile Blanc\, 22 540 Chauvin\, Chauvin
-DTSTART;TZID=Europe/Paris:20220225T082742
-DTEND;TZID=Europe/Paris:20220225T082742
+DESCRIPTION:Ut id dicta ullam at qui natus doloremque. Non dolorem aut laud
+ antium beatae aliquid asperiores quo. Officiis itaque sit sint atque.
+LOCATION:70\, rue de Blanchet\, 18529 Perez\, Perez
+DTSTART;TZID=Europe/Paris:20220222T174640
+DTEND;TZID=Europe/Paris:20220222T174640
 END:VEVENT
 END:VCALENDAR

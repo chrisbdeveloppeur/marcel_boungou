@@ -17,13 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f906d4aa9
-DTSTAMP;TZID=Europe/Paris:20220223T100614
+UID:62173451792e3
+DTSTAMP;TZID=Europe/Paris:20220224T083129
 SUMMARY:consectetur
-DESCRIPTION:Debitis omnis sequi rerum ab. Cupiditate assumenda tenetur cons
- equatur voluptatem qui et. Consectetur deleniti dolor aperiam modi soluta.
-LOCATION:37\, rue Berger\, 03403 Leclerc\, Leclerc
-DTSTART;TZID=Europe/Paris:20220221T165012
-DTEND;TZID=Europe/Paris:20220221T165012
+DESCRIPTION:Sint et fugiat voluptas quod. Consequuntur omnis placeat id inc
+ idunt cumque fugiat itaque. Sit sint dolore adipisci voluptate. Amet moles
+ tias ab unde. Aut qui nostrum enim voluptas natus. Quia natus quia eaque s
+ it aut placeat voluptas. Ipsam nobis quis dolores et praesentium. Odit des
+ erunt harum voluptatem et voluptatem sit minus. Iure esse ut quod voluptat
+ e enim rerum itaque.
+LOCATION:57\, avenue Gilles Martinez\, 15 764 Bessonnec\, Bessonnec
+DTSTART;TZID=Europe/Paris:20220408T045227
+DTEND;TZID=Europe/Paris:20220408T045227
 END:VEVENT
 END:VCALENDAR

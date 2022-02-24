@@ -17,14 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62137295a3512
-DTSTAMP;TZID=Europe/Paris:20220221T120805
+UID:6217348712df9
+DTSTAMP;TZID=Europe/Paris:20220224T083223
 SUMMARY:perferendis
-DESCRIPTION:Aut nihil quis est similique fuga itaque. Repellat quia aut ill
- o quis. Sit voluptate ut aperiam perferendis commodi suscipit. Quos quia d
- olor praesentium est sint labore accusamus.
-LOCATION:impasse Martel\, 52776 Bessonnec\, Bessonnec
-DTSTART;TZID=Europe/Paris:20220220T223920
-DTEND;TZID=Europe/Paris:20220220T223920
+DESCRIPTION:Nostrum et eaque provident. Accusamus error id nemo cumque vero
+ . Unde ipsum eum vel animi. Modi molestiae beatae blanditiis optio et aut 
+ unde. Est suscipit qui nobis cum enim quas. Beatae nesciunt consequuntur t
+ empore vel.
+LOCATION:place Gay\, 82817 Clementnec\, Clementnec
+DTSTART;TZID=Europe/Paris:20220222T060916
+DTEND;TZID=Europe/Paris:20220222T060916
 END:VEVENT
 END:VCALENDAR

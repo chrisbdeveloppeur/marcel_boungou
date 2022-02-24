@@ -17,17 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f8aa7a8c6
-DTSTAMP;TZID=Europe/Paris:20220223T100442
+UID:621734514db34
+DTSTAMP;TZID=Europe/Paris:20220224T083129
 SUMMARY:voluptatibus
-DESCRIPTION:Quo laborum voluptate et. Ut atque quasi exercitationem vitae n
- obis delectus sint provident. Non doloribus voluptatem aliquam beatae. Ten
- etur eveniet dolor dignissimos cum eum et rerum. Esse est atque eos qui. E
- sse ea minima officiis amet soluta reiciendis voluptate. Et expedita disti
- nctio non dolor maiores ullam. Voluptas aut labore ipsum inventore repella
- t. Commodi officia magni maxime ad in quas consequuntur.
-LOCATION:rue de Antoine\, 74202 Gosselin-les-Bains\, Gosselin-les-Bains
-DTSTART;TZID=Europe/Paris:20220321T083309
-DTEND;TZID=Europe/Paris:20220321T083309
+DESCRIPTION:Voluptas enim totam voluptatibus illum nam repudiandae rerum. M
+ inus et et fuga quisquam et facere. Sed magni quis in iusto dolores aperia
+ m. Vel voluptatem nobis est blanditiis voluptatum dignissimos. Sint quibus
+ dam error eius impedit qui et. Aliquid est veniam blanditiis rerum. Possim
+ us cum eaque aperiam quia consequatur omnis odio.
+LOCATION:98\, boulevard de Mace\, 95808 MorvanVille\, MorvanVille
+DTSTART;TZID=Europe/Paris:20220228T112416
+DTEND;TZID=Europe/Paris:20220228T112416
 END:VEVENT
 END:VCALENDAR

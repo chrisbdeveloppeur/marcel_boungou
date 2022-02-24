@@ -17,17 +17,12 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f7845d2dc
-DTSTAMP;TZID=Europe/Paris:20220223T095948
+UID:6217345159eba
+DTSTAMP;TZID=Europe/Paris:20220224T083129
 SUMMARY:possimus
-DESCRIPTION:Voluptas ullam consequatur officia ut rerum voluptatem. Illum e
- um dolores non inventore. Ea atque sequi eius est. Et porro commodi velit 
- sunt illum labore amet. Odit eos quidem facere rerum omnis iste necessitat
- ibus. Fuga molestias possimus doloribus facere quod facere. Nemo voluptas 
- doloribus eos dolor et qui aperiam ut. Et id porro assumenda excepturi hic
-  nulla.
-LOCATION:18\, rue Gérard Laurent\, 23 501 Alvesboeuf\, Alvesboeuf
-DTSTART;TZID=Europe/Paris:20220308T034534
-DTEND;TZID=Europe/Paris:20220308T034534
+DESCRIPTION:Qui porro dolores dolorem aut. Ut est facilis quas.
+LOCATION:94\, avenue Pruvost\, 12187 Besnard\, Besnard
+DTSTART;TZID=Europe/Paris:20220309T165115
+DTEND;TZID=Europe/Paris:20220309T165115
 END:VEVENT
 END:VCALENDAR

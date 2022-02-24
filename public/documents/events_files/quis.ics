@@ -17,16 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f8aa76d34
-DTSTAMP;TZID=Europe/Paris:20220223T100442
+UID:621733d1543a2
+DTSTAMP;TZID=Europe/Paris:20220224T082921
 SUMMARY:quis
-DESCRIPTION:Adipisci doloribus quis perspiciatis et quibusdam occaecati. Ne
- cessitatibus fugiat non repellendus voluptatem similique odit. Ipsam nam p
- ossimus maxime voluptatibus. Temporibus nam blanditiis veniam sapiente. Ev
- eniet aperiam soluta id recusandae laboriosam veniam. Placeat aspernatur u
- t labore. Et molestiae voluptatibus sequi sequi iste in quam.
-LOCATION:84\, impasse de Lacombe\, 96 800 Allard\, Allard
-DTSTART;TZID=Europe/Paris:20220227T071940
-DTEND;TZID=Europe/Paris:20220227T071940
+DESCRIPTION:Fugiat debitis qui vero nihil labore temporibus facilis et. Mai
+ ores nulla adipisci reprehenderit.
+LOCATION:201\, rue Aurore Lambert\, 15658 Ledoux\, Ledoux
+DTSTART;TZID=Europe/Paris:20220315T142924
+DTEND;TZID=Europe/Paris:20220315T142924
 END:VEVENT
 END:VCALENDAR

@@ -17,17 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6214fb9546d3e
-DTSTAMP;TZID=Europe/Paris:20220222T160453
+UID:621734b971d4f
+DTSTAMP;TZID=Europe/Paris:20220224T083313
 SUMMARY:voluptates
-DESCRIPTION:Vero quo ipsa voluptatibus libero eaque officiis et. Voluptatem
-  molestiae reiciendis fugiat aut sint sunt et. Similique autem porro ullam
-  rem nisi id inventore. Sunt consectetur suscipit occaecati rerum. Quia qu
- o illum animi ut molestiae optio dolores. Ut incidunt molestiae praesentiu
- m voluptatem sit omnis. Nostrum laboriosam hic et non dolores quae. Quibus
- dam cupiditate dignissimos sed omnis ipsa unde minus.
-LOCATION:80\, chemin Bernard Leroy\, 14 366 Devaux\, Devaux
-DTSTART;TZID=Europe/Paris:20220223T152027
-DTEND;TZID=Europe/Paris:20220223T152027
+DESCRIPTION:Ut consequatur vel expedita. Omnis assumenda veniam alias sunt.
+  Animi et et ut accusamus ad.
+LOCATION:668\, impasse Michelle Evrard\, 81614 Noel\, Noel
+DTSTART;TZID=Europe/Paris:20220330T235506
+DTEND;TZID=Europe/Paris:20220330T235506
 END:VEVENT
 END:VCALENDAR

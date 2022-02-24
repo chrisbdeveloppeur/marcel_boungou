@@ -17,17 +17,18 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215153d4c557
-DTSTAMP;TZID=Europe/Paris:20220222T175421
+UID:621734b95f799
+DTSTAMP;TZID=Europe/Paris:20220224T083313
 SUMMARY:quaerat
-DESCRIPTION:Dolore non dolor modi libero doloremque. Repudiandae eius velit
-  maxime est qui deleniti. Est mollitia exercitationem ratione suscipit ut 
- vitae. Labore quaerat nulla accusamus rem tempore corporis. Sunt ut minus 
- sit in in sed ad. Provident et qui dignissimos quam exercitationem sit. Er
- ror maiores debitis omnis numquam quas voluptate consequatur. Dicta quo en
- im odit.
-LOCATION:avenue de Laurent\, 07 182 Mallet-sur-Mer\, Mallet-sur-Mer
-DTSTART;TZID=Europe/Paris:20220328T150121
-DTEND;TZID=Europe/Paris:20220328T150121
+DESCRIPTION:Sint illo saepe a exercitationem consequatur doloribus voluptat
+ es autem. Sequi tempora et et hic animi sequi vero. Voluptatem dolorem iur
+ e occaecati qui. Ut facilis provident et labore iusto illo accusantium ame
+ t. Aliquam illum ut sit assumenda magnam accusantium quos. Magni recusanda
+ e nostrum cupiditate voluptatem sunt quis. Aut qui et earum esse dolores. 
+ Expedita modi consequatur optio aut.
+LOCATION:24\, avenue de Arnaud\, 31361 Deschamps-sur-Clerc\, Deschamps-sur-
+ Clerc
+DTSTART;TZID=Europe/Paris:20220225T142349
+DTEND;TZID=Europe/Paris:20220225T142349
 END:VEVENT
 END:VCALENDAR

@@ -17,17 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f86cf1868
-DTSTAMP;TZID=Europe/Paris:20220223T100340
+UID:621734b95d715
+DTSTAMP;TZID=Europe/Paris:20220224T083313
 SUMMARY:qui
-DESCRIPTION:Rerum sunt repellat numquam minus nihil odit et. Animi modi rei
- ciendis commodi rerum architecto ex voluptatem. Est dolores et quibusdam s
- ed cumque fugit. Qui nisi aliquam et. Voluptatum fugit quasi dolores omnis
- . Quas repellat provident corrupti et perferendis sed incidunt. Aut harum 
- tempore est. In aliquam voluptatem illum error explicabo. Fuga praesentium
-  tempora a corporis voluptates. Quia accusantium ea expedita facilis.
-LOCATION:52\, rue Perrin\, 45 210 Andre\, Andre
-DTSTART;TZID=Europe/Paris:20220314T131600
-DTEND;TZID=Europe/Paris:20220314T131600
+DESCRIPTION:Dolores saepe qui velit libero iste distinctio. Illum eum error
+  officiis ut modi nam. Placeat est a voluptas commodi vel. Nihil minima et
+  blanditiis ut corrupti sunt molestias dignissimos. Nihil porro molestiae 
+ veritatis. Id accusamus qui est fugit occaecati. Autem et omnis dolore qui
+ . Quod veritatis corrupti quia in et.
+LOCATION:rue Auguste Ferreira\, 37695 Morin-les-Bains\, Morin-les-Bains
+DTSTART;TZID=Europe/Paris:20220223T144916
+DTEND;TZID=Europe/Paris:20220223T144916
 END:VEVENT
 END:VCALENDAR

@@ -17,15 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62137295c69e2
-DTSTAMP;TZID=Europe/Paris:20220221T120805
+UID:6217348722854
+DTSTAMP;TZID=Europe/Paris:20220224T083223
 SUMMARY:facere
-DESCRIPTION:Commodi incidunt consequatur delectus ea beatae omnis. Iste lab
- orum praesentium officia sunt vel. Eum deserunt sunt itaque quidem aut exc
- epturi velit illum. Ea recusandae nobis facere dignissimos laboriosam nihi
- l.
-LOCATION:rue de Hamon\, 72334 Delaunay\, Delaunay
-DTSTART;TZID=Europe/Paris:20220319T185431
-DTEND;TZID=Europe/Paris:20220319T185431
+DESCRIPTION:A magni minus velit et voluptas. Beatae suscipit aut earum even
+ iet earum non ea fugiat. Distinctio architecto sequi autem et accusantium 
+ est. Sed voluptatum quia repudiandae reiciendis voluptatum corporis. Tenet
+ ur nemo voluptas laudantium commodi nihil et. Quae odio dolor consequatur 
+ exercitationem. Et recusandae officia non. Veniam rerum suscipit iusto ver
+ itatis delectus aut rerum.
+LOCATION:38\, chemin de Blondel\, 89670 Francois\, Francois
+DTSTART;TZID=Europe/Paris:20220228T140320
+DTEND;TZID=Europe/Paris:20220228T140320
 END:VEVENT
 END:VCALENDAR

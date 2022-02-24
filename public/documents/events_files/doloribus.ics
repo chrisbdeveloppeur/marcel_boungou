@@ -17,14 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213fccd4ebec
-DTSTAMP;TZID=Europe/Paris:20220221T215749
+UID:621734b95bfe0
+DTSTAMP;TZID=Europe/Paris:20220224T083313
 SUMMARY:doloribus
-DESCRIPTION:Nobis ut sed accusantium sed nostrum quidem cum qui. Reiciendis
-  ipsum fuga impedit non qui. Fugiat pariatur autem et quidem officia conse
- quatur. Ea exercitationem maiores sequi odio dolores aut laudantium.
-LOCATION:846\, rue Joseph Delorme\, 00 535 Leleu\, Leleu
-DTSTART;TZID=Europe/Paris:20220319T181617
-DTEND;TZID=Europe/Paris:20220319T181617
+DESCRIPTION:Ducimus quia eaque sunt. Enim provident nihil placeat ut corpor
+ is. Quis dolorem nisi quisquam tenetur.
+LOCATION:52\, chemin Gabrielle Masson\, 67 875 Chartier\, Chartier
+DTSTART;TZID=Europe/Paris:20220222T224411
+DTEND;TZID=Europe/Paris:20220222T224411
 END:VEVENT
 END:VCALENDAR
