@@ -17,19 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f700a9d14
-DTSTAMP;TZID=Europe/Paris:20220223T095736
+UID:62175545f3b21
+DTSTAMP;TZID=Europe/Paris:20220224T105205
 SUMMARY:atque
-DESCRIPTION:Repellat fugit sit non. Consequatur ut iusto repudiandae velit 
- similique earum. Et voluptas et non. Natus qui commodi qui magnam eos fugi
- t. Aliquam enim ut veniam illo. Nihil totam temporibus nam qui ipsa quam s
- int. Recusandae voluptates quas atque. Quos deleniti sit quidem earum magn
- am excepturi iure. Vero perspiciatis rem molestiae libero id ea qui expedi
- ta. Ut ut tempore excepturi vitae repellendus commodi qui. Cum eos non rer
- um nulla.
-LOCATION:38\, boulevard de Loiseau\, 38 474 Deschamps-sur-Leroux\, Deschamp
- s-sur-Leroux
-DTSTART;TZID=Europe/Paris:20220308T195656
-DTEND;TZID=Europe/Paris:20220308T195656
+DESCRIPTION:Esse iusto eius natus sed. Tenetur sapiente aperiam voluptatem 
+ modi. Dicta sit qui at ratione. At tenetur sunt molestiae eos laborum et n
+ obis. Quia et neque enim.
+LOCATION:27\, avenue Christophe Peron\, 79294 VidalBourg\, VidalBourg
+DTSTART;TZID=Europe/Paris:20220223T184046
+DTEND;TZID=Europe/Paris:20220223T184046
 END:VEVENT
 END:VCALENDAR

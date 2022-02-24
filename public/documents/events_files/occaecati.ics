@@ -17,17 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213b63b258a8
-DTSTAMP;TZID=Europe/Paris:20220221T165643
+UID:62175546008f8
+DTSTAMP;TZID=Europe/Paris:20220224T105206
 SUMMARY:occaecati
-DESCRIPTION:Et autem corporis voluptatem est. Repellat voluptatibus aut del
- eniti eum magni quo. Debitis consequatur similique sed nobis. At aut rerum
-  totam qui libero expedita. Laborum nihil itaque rem delectus voluptas aut
- em suscipit. Aut et tempore ipsum qui numquam. Quaerat saepe iure adipisci
-  velit nihil.
-LOCATION:1\, rue Bertrand Mendes\, 06117 Martineau-la-Forêt\, Martineau-la
- -Forêt
-DTSTART;TZID=Europe/Paris:20220222T042558
-DTEND;TZID=Europe/Paris:20220222T042558
+DESCRIPTION:Cumque dolorum sunt quis dolor qui velit architecto. Officiis r
+ atione minima voluptatem deleniti soluta. Quidem maiores architecto necess
+ itatibus voluptatum. Eaque officia mollitia odit. Non quisquam corporis di
+ gnissimos culpa. Sit voluptatem quo aut possimus rerum soluta accusamus. P
+ erferendis in doloremque labore ut neque dolorem architecto.
+LOCATION:222\, rue Susan Hernandez\, 19418 Lecoq-sur-Humbert\, Lecoq-sur-Hu
+ mbert
+DTSTART;TZID=Europe/Paris:20220225T083237
+DTEND;TZID=Europe/Paris:20220225T083237
 END:VEVENT
 END:VCALENDAR

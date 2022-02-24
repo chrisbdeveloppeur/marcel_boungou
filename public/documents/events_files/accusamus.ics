@@ -17,13 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6214f5c8ba040
-DTSTAMP;TZID=Europe/Paris:20220222T154008
+UID:621755460584a
+DTSTAMP;TZID=Europe/Paris:20220224T105206
 SUMMARY:accusamus
-DESCRIPTION:Cum odio veniam iure est laudantium. Totam sed neque quod delec
- tus. Ut fugiat quibusdam aspernatur ratione et sit dolor.
-LOCATION:1\, rue de Rodriguez\, 23 354 Lambert-sur-Mer\, Lambert-sur-Mer
-DTSTART;TZID=Europe/Paris:20220226T142525
-DTEND;TZID=Europe/Paris:20220226T142525
+DESCRIPTION:Qui fugit sunt et. Est harum non mollitia architecto in dolorib
+ us magnam. Sit maxime est et et vero repudiandae. Asperiores provident nes
+ ciunt ipsa quasi laudantium. Tempora id natus sunt dolorem veniam. Et inve
+ ntore et sequi. Laudantium et repudiandae aperiam esse. Perferendis sint c
+ orporis animi rerum inventore. Maxime hic deleniti et. Aut aut magnam ea s
+ oluta nihil. Expedita cum quaerat cum incidunt.
+LOCATION:24\, rue Marcel Lemaire\, 02634 Gosselin\, Gosselin
+DTSTART;TZID=Europe/Paris:20220330T160052
+DTEND;TZID=Europe/Paris:20220330T160052
 END:VEVENT
 END:VCALENDAR

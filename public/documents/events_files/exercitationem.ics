@@ -17,17 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f88d2f645
-DTSTAMP;TZID=Europe/Paris:20220223T100413
+UID:62175546020bc
+DTSTAMP;TZID=Europe/Paris:20220224T105206
 SUMMARY:exercitationem
-DESCRIPTION:Esse ex corporis vero magnam hic et praesentium ea. Deleniti li
- bero eaque ad vitae accusantium mollitia. Doloribus nesciunt ratione deser
- unt. Explicabo est perferendis aut nostrum. Quo dolorem impedit qui quas d
- icta est. Rem incidunt eaque deserunt sint distinctio dignissimos. Autem e
- t hic eligendi quidem.
-LOCATION:55\, rue de Jacques\, 73 666 Dos Santos-sur-Mer\, Dos Santos-sur-M
- er
-DTSTART;TZID=Europe/Paris:20220308T045447
-DTEND;TZID=Europe/Paris:20220308T045447
+DESCRIPTION:Officia illo qui consequatur. Atque officia itaque ea nulla rer
+ um. Porro rerum ex quo ratione eum et.
+LOCATION:40\, impasse de Daniel\, 95048 Le Gall\, Le Gall
+DTSTART;TZID=Europe/Paris:20220304T030726
+DTEND;TZID=Europe/Paris:20220304T030726
 END:VEVENT
 END:VCALENDAR

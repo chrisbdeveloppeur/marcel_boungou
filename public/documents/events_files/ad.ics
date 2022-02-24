@@ -17,15 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f73137d25
-DTSTAMP;TZID=Europe/Paris:20220223T095825
+UID:6217554601675
+DTSTAMP;TZID=Europe/Paris:20220224T105206
 SUMMARY:ad
-DESCRIPTION:Ut dicta rerum et quia. Sunt dolorum corrupti totam inventore n
- on ut delectus. Ullam libero est est dolorem a. Eligendi quia nam dicta eo
- s non quasi ut. Explicabo soluta quibusdam eveniet deserunt et eos. A simi
- lique sequi dolores voluptas voluptatem.
-LOCATION:66\, place de Blanchet\, 02110 De Oliveira\, De Oliveira
-DTSTART;TZID=Europe/Paris:20220222T092709
-DTEND;TZID=Europe/Paris:20220222T092709
+DESCRIPTION:Natus quia laudantium fugiat et voluptatem explicabo et. Sed un
+ de totam dicta corporis. Sapiente placeat consectetur rem et ut et. Nihil 
+ neque officiis dolorem aut saepe id porro vel.
+LOCATION:82\, place Michel\, 15 944 Texier-sur-Philippe\, Texier-sur-Philip
+ pe
+DTSTART;TZID=Europe/Paris:20220228T043426
+DTEND;TZID=Europe/Paris:20220228T043426
 END:VEVENT
 END:VCALENDAR

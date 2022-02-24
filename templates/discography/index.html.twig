@@ -11,7 +11,16 @@
             <br>
             {% trans %}Filter your search by clicking on an Album or by using the search bar...{% endtrans %}
         </p>
-        <input class="input mt-3" type="text" id="searchInput" onkeyup="searchFilter()" placeholder="{% trans %}Type a song here{% endtrans %}">
+        <div class="control has-icons-right mt-3 is-relative">
+            <input class="input" type="text" id="searchInput" onkeyup="searchFilter()" placeholder="{% trans %}Type a song here{% endtrans %}">
+            <div class="show-password" onclick="resetSearch()">
+                <button class="button is-primary" style="width: 100%">
+                    <span class="icon is-small">
+                        <i class="fas fa-2x fa-times"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
     </div>
     {{ include('discography/album_list.html.twig') }}
     {{ include('discography/musics_list.html.twig') }}
@@ -179,6 +188,14 @@
             var input = document.getElementById('searchInput');
             var ancrageTxt = link.getAttribute('data-href');
             input.value = ancrageTxt;
+            searchFilter();
+        }
+
+
+        {# SCRIPT RESET SEARCH #}
+        function reseatSreach() {
+            var input = document.getElementById('searchInput');
+            input.value = '';
             searchFilter();
         }
 
