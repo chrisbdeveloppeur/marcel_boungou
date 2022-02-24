@@ -62,14 +62,14 @@
         {% if form.vars.name == 'event' %}
             {% if event is defined and event.image %}
                 <figure class="is-flex is-justify-content-center is-relative">
-                    <img src={{ vich_uploader_asset(event, 'image') }}" alt="{{ event.image }}">
+                    <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="{{ event.image }}">
                     <a href="{{ path('events_image_delete', {'id': event.id}) }}" class="delete is-large" style="position: absolute;right: .5rem;top: .5rem;"></a>
                 </figure>
             {% endif %}
         {% elseif form.vars.name == 'album' %}
             {% if album is defined and album.image %}
                 <figure class="is-flex is-justify-content-center is-relative">
-                    <img src={{ vich_uploader_asset(event, 'image') }}" alt="{{ album.image }}">
+                    <img src="{{ vich_uploader_asset(album, 'imageFile') }}" alt="{{ album.image }}">
                     <a href="{{ path('album_image_delete', {'id': album.id}) }}" class="delete is-large" style="position: absolute;right: .5rem;top: .5rem;"></a>
                 </figure>
             {% endif %}

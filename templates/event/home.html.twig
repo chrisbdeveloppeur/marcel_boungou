@@ -12,36 +12,47 @@
             <button class="modal-close is-large" aria-label="close" onclick="this.parentElement.classList.remove('is-active')"></button>
         </div>
     {% endfor %}
-    <section class="container">
-
-        <div class="is-flex-tablet is-flex-direction-row pt-6">
-
-            {{ include('event/major_event.html.twig') }}
-
-            <div class="column is-one-quarter-desktop is-one-third-tablet">
-                {{ include('includes/calendar.html.twig') }}
+    <section class="section">
+        <div class="container">
+            <div class="column has-text-white">
+                <h1 class="title has-text-white">{% trans %}Events page{% endtrans %}</h1>
+                <p class="has-text-white">
+                    {% trans %}Find all the information about the next events{% endtrans %}
+                    <br>
+                    {% trans %}Dates and times, places and reservation, opt for reminders so you don't miss anything{% endtrans %}
+                </p>
             </div>
 
+            <div class="is-flex-tablet is-flex-direction-row">
+
+                {{ include('event/major_event.html.twig') }}
+
+                <div class="column is-one-quarter-desktop is-one-third-tablet">
+                    {{ include('includes/calendar.html.twig') }}
+                </div>
+
+            </div>
+
+            <div class="column">
+                <!-- Events box for mobile -->
+                {#            {% set count_1 = 0 %}#}
+                {#            {% for event in events[1:] %}#}
+                {#                {% if count_1 < 4 %}#}
+                {#                    {{ include('event/event_container_touch.html.twig') }}#}
+                {#                {% endif %}#}
+                {#                {% set count_1 = count_1 + 1 %}#}
+                {#            {% endfor %}#}
+                <!-- End Event box for mobile -->
+
+                {{ include('event/carousel_events.html.twig') }}
+
+            </div>
+
+            <div class="column">
+                <a href="{{ path('events_all') }}" class="button is-success is-light is-fullwidth box-shadow-bulma is-uppercase has-text-weight-bold">{% trans %}See all events{% endtrans %}</a>
+            </div>
         </div>
 
-        <div class="column">
-            <!-- Events box for mobile -->
-{#            {% set count_1 = 0 %}#}
-{#            {% for event in events[1:] %}#}
-{#                {% if count_1 < 4 %}#}
-{#                    {{ include('event/event_container_touch.html.twig') }}#}
-{#                {% endif %}#}
-{#                {% set count_1 = count_1 + 1 %}#}
-{#            {% endfor %}#}
-            <!-- End Event box for mobile -->
-
-            {{ include('event/carousel_events.html.twig') }}
-
-        </div>
-
-        <div class="column">
-            <a href="{{ path('events_all') }}" class="button is-success is-light is-fullwidth box-shadow-bulma is-uppercase has-text-weight-bold">{% trans %}See all events{% endtrans %}</a>
-        </div>
     </section>
 {% endblock %}
 

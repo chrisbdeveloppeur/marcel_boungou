@@ -10,13 +10,13 @@
     <!-- Start Carousel -->
     <div class="carousel">
         {% for album in albums|sort((a, b) => b.year <=> a.year) %}
-            <div class="px-5 py-5 album-carousel opacity100onhover scalup-hover transition-3ms">
+            <div class="px-5 py-5 album-carousel scalup-hover transition-3ms is-relative">
 
-                <a data-href="{{ album }}" onclick="searchAncrage(this)" class="card is-relative" style="width: 200px; height: 100%;">
+                {% if is_granted('ROLE_ADMIN') %}
+                    {{ include('album/edit_album_button.html.twig') }}
+                {% endif %}
 
-                    {% if is_granted('ROLE_ADMIN') %}
-                        {{ include('album/edit_album_button.html.twig') }}
-                    {% endif %}
+                <a data-href="{{ album }}" onclick="searchAncrage(this)" class="card" style="width: 200px; height: 100%;">
 
                     <div class="card-image">
                         <figure class="image is-4by3">

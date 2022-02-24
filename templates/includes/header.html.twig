@@ -25,9 +25,17 @@
                 {% trans %}Shop{% endtrans %}
             </a>
 
-            <a class="navbar-item" href="{{ path('events_home') }}">
-                {% trans %}Events{% endtrans %}
-            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-item" href="{{ path('events_home') }}">
+                    {% trans %}Events{% endtrans %}
+                </a>
+
+                <div class="navbar-dropdown">
+                    <a href="{{ path('events_all') }}" class="navbar-item">
+                        {% trans %}All events{% endtrans %}
+                    </a>
+                </div>
+            </div>
 
             <hr class="dropdown-divider">
 

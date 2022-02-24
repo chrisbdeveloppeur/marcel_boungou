@@ -79,7 +79,7 @@ class AlbumController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
 
-            return $this->redirectToRoute('album_index', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('discography_index', [], Response::HTTP_SEE_OTHER);
         }
 
         return $this->render('album/edit.html.twig', [

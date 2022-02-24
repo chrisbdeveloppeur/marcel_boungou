@@ -593,6 +593,70 @@
         <source>Add a Tag</source>
         <target>Ajouter un Tag</target>
       </trans-unit>
+      <trans-unit id="g074Mwd" resname="Edit Album">
+        <source>Edit Album</source>
+        <target>Edit Album</target>
+      </trans-unit>
+      <trans-unit id="YSr5cM1" resname="Create new Album">
+        <source>Create new Album</source>
+        <target>Créer un nouvel album</target>
+      </trans-unit>
+      <trans-unit id="U4EmmjE" resname="Featuring :">
+        <source>Featuring :</source>
+        <target>Avec :</target>
+      </trans-unit>
+      <trans-unit id="BAEGpDg" resname="Welcome to the discography page of the artist Marcel BOUNGOU">
+        <source>Welcome to the discography page of the artist Marcel BOUNGOU</source>
+        <target>Bienvenue sur la page discographie de l'artiste Marcel BOUNGOU</target>
+      </trans-unit>
+      <trans-unit id="hauP5xA" resname="Find all the musical collections, from the great classics to the most recent productions, including the essentials">
+        <source>Find all the musical collections, from the great classics to the most recent productions, including the essentials</source>
+        <target>Retrouvez toutes les collections musicales, des grands classiques aux productions les plus récentes, en passant par les incontournables</target>
+      </trans-unit>
+      <trans-unit id="EOPZimA" resname="Filter your search by clicking on an Album or by using the search bar...">
+        <source>Filter your search by clicking on an Album or by using the search bar...</source>
+        <target>Filtrez votre recherche en cliquant sur un Album ou en utilisant la barre de recherche...</target>
+      </trans-unit>
+      <trans-unit id="6SKEA7q" resname="Type a song here">
+        <source>Type a song here</source>
+        <target>Entrez un titre ici</target>
+      </trans-unit>
+      <trans-unit id="mAV5Fuu" resname="Edit Event">
+        <source>Edit Event</source>
+        <target>Modifier l'événement</target>
+      </trans-unit>
+      <trans-unit id="U57Qorx" resname="Events page">
+        <source>Events page</source>
+        <target>Page des événements</target>
+      </trans-unit>
+      <trans-unit id="nFE5aoz" resname="Find all the information about the next events">
+        <source>Find all the information about the next events</source>
+        <target>Retrouvez toutes les informations sur les prochains événements</target>
+      </trans-unit>
+      <trans-unit id="_NwsEei" resname="Dates and times, places and reservation, opt for reminders so you don't miss anything">
+        <source>Dates and times, places and reservation, opt for reminders so you don't miss anything</source>
+        <target>Dates et horaires, lieux et réservation, optez pour les rappels pour ne rien manquer</target>
+      </trans-unit>
+      <trans-unit id="LfU83eo" resname="Opt for the reminder by Email">
+        <source>Opt for the reminder by Email</source>
+        <target>Optez pour le rappel par Email</target>
+      </trans-unit>
+      <trans-unit id="YoIT6cn" resname="Consult the list of all upcoming events">
+        <source>Consult the list of all upcoming events</source>
+        <target>Consultez la liste de tous les événements à venir</target>
+      </trans-unit>
+      <trans-unit id="ILhIezg" resname="All events">
+        <source>All events</source>
+        <target>Tous les évènements</target>
+      </trans-unit>
+      <trans-unit id="g6NhLYO" resname="Edit Music">
+        <source>Edit Music</source>
+        <target>Modifier la musique</target>
+      </trans-unit>
+      <trans-unit id="ckrH6XA" resname="Create new Music">
+        <source>Create new Music</source>
+        <target>Créer une nouvelle musiquec</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
