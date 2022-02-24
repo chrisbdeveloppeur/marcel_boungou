@@ -151,7 +151,7 @@
             if ( 0 < element.getBoundingClientRect().top && element.getBoundingClientRect().top < 750 ){
                 element.classList.replace('opacity0','opacity100');
             }else {
-                element.classList.replace('opacity100','opacity0');
+                // element.classList.replace('opacity100','opacity0');
             }
         }
         {#                               #}
@@ -193,7 +193,7 @@
 
 
         {# SCRIPT RESET SEARCH #}
-        function reseatSreach() {
+        function resetSearch() {
             var input = document.getElementById('searchInput');
             input.value = '';
             searchFilter();
