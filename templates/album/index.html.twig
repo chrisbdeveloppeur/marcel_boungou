@@ -1,19 +1,19 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Album index{% endblock %}
+{% block title %}{% trans %}Album index{% endtrans %}{% endblock %}
 
 {% block body %}
-    <h1>Album index</h1>
+    <h1 class="title has-text-white">{% trans %}Album index{% endtrans %}</h1>
 
     <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Name</th>
-                <th>Year</th>
-                <th>Feat</th>
-                <th>Image</th>
-                <th>actions</th>
+                <th>{% trans %}Name{% endtrans %}</th>
+                <th>{% trans %}Year{% endtrans %}</th>
+                <th>{% trans %}Feat{% endtrans %}</th>
+                <th>{% trans %}Image{% endtrans %}</th>
+                <th>{% trans %}actions{% endtrans %}</th>
             </tr>
         </thead>
         <tbody>
@@ -25,17 +25,17 @@
                 <td>{{ album.feat }}</td>
                 <td>{{ album.image }}</td>
                 <td>
-                    <a href="{{ path('album_show', {'id': album.id}) }}">show</a>
-                    <a href="{{ path('album_edit', {'id': album.id}) }}">edit</a>
+                    <a href="{{ path('album_show', {'id': album.id}) }}">{% trans %}show{% endtrans %}</a>
+                    <a href="{{ path('album_edit', {'id': album.id}) }}">{% trans %}edit{% endtrans %}</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="7">no records found</td>
+                <td colspan="7">{% trans %}no records found{% endtrans %}</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href="{{ path('album_new') }}">Create new</a>
+    <a href="{{ path('album_new') }}">{% trans %}Create new{% endtrans %}</a>
 {% endblock %}
