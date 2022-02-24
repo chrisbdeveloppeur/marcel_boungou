@@ -3,13 +3,100 @@
   <component name="ChangeListManager">
     <list default="true" id="8c513a9b-8917-4b63-8b91-a519e09de280" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220221183135.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220222101613.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220222120727.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220222124237.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220222124511.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220222125528.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220222130529.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220222144303.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220223080101.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220223084946.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220223094038.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/accusantium.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/accusantium.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/ad.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/ad.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/aperiam.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/aperiam.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/asperiores.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/asperiores.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/autem.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/autem.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/corrupti.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/corrupti.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/culpa.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/culpa.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/distinctio.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/distinctio.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/dolor.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/dolor.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/dolores.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/dolores.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/ea.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/ea.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/earum.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/earum.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/eius.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/eius.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/et.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/et.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/eum.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/eum.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/exercitationem.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/exercitationem.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/facere.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/facere.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/facilis.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/facilis.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/hic.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/hic.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/illo.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/illo.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/impedit.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/impedit.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/in.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/in.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/incidunt.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/incidunt.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/inventore.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/inventore.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/iste.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/iste.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/itaque.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/itaque.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/iusto.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/iusto.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/libero.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/libero.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/magni.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/magni.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/maiores.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/maiores.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/minima.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/minima.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/molestiae.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/molestiae.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/molestias.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/molestias.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/mollitia.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/mollitia.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/nam.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/nam.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/necessitatibus.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/necessitatibus.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/nesciunt.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/nesciunt.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/nobis.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/nobis.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/non.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/non.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/occaecati.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/occaecati.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/odit.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/odit.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/officiis.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/officiis.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/omnis.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/omnis.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/perspiciatis.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/perspiciatis.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/possimus.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/possimus.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/praesentium.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/praesentium.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/quae.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/quae.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/quaerat.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/quaerat.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/quas.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/quas.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/qui.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/qui.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/quia.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/quia.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/quis.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/quis.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/quo.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/quo.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/ratione.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/ratione.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/repudiandae.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/repudiandae.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/rerum.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/rerum.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/sed.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/sed.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/sint.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/sint.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/sit.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/sit.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/soluta.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/soluta.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/sunt.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/sunt.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/tenetur.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/tenetur.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/ullam.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/ullam.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/unde.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/unde.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/ut.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/ut.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/vitae.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/vitae.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/documents/events_files/voluptas.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/voluptas.ics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/music/file/zola-ye-yenge-minimized.mp3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AlbumController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AlbumController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/album/edit_album_button.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/album/edit_album_button.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/discography/album_list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/discography/album_list.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/event/_all.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/event/_all.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MusicController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MusicController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Music.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Music.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/AlbumType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/AlbumType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/EventType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/EventType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/MusicType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/MusicType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/album/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/album/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/discography/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/discography/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/discography/musics_list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/discography/musics_list.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/event/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/event/home.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/header.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/event/major_event.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/event/major_event.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/music/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/music/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/music/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/music/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/themes/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/themes/_form.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf" beforeDir="false" afterPath="$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf" afterDir="false" />
     </list>
@@ -59,75 +146,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/styles/app.scss">
+        <entry file="file://$PROJECT_DIR$/templates/discography/musics_list.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="447" column="22" selection-start-line="447" selection-start-column="22" selection-end-line="447" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/discography/album_list.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+            <state relative-caret-position="425">
+              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
               <folding>
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/album/edit_album_button.html.twig">
+        <entry file="file://$PROJECT_DIR$/templates/music/show.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-              <folding>
-                <element signature="e#18#28#0#Twig" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/themes/_form.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="71" column="67" selection-start-line="71" selection-start-column="67" selection-end-line="71" selection-end-column="67" />
-              <folding>
-                <element signature="e#2143#2162#0#Twig" expanded="true" />
-                <element signature="e#2633#2651#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity/Album.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/packages/vich_uploader.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/event/home.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+            <state relative-caret-position="68">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
               <folding>
                 <element signature="e#12#26#0#Twig" expanded="true" />
               </folding>
@@ -136,26 +171,79 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/AlbumController.php">
+        <entry file="das://999c275e-131c-417a-8015-5705ab7315c1/schema/marcel_boungou/table/music">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="5beb3461-bcdc-43bc-8c41-72fe3faf9320">
+              <filtering>
+                <filter text="" />
+              </filtering>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/themes/_form.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="83" selection-start-line="83" selection-end-line="83" />
+            <state relative-caret-position="272">
+              <caret line="70" column="57" selection-start-line="70" selection-start-column="57" selection-end-line="70" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/MusicController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
               <folding>
-                <element signature="e#2383#2402#0#PHP" expanded="true" />
-                <element signature="e#2469#2491#0#PHP" expanded="true" />
+                <element signature="e#34#55#0#PHP" expanded="true" />
+                <element signature="e#925#948#0#PHP" expanded="true" />
+                <element signature="e#1613#1626#0#PHP" expanded="true" />
+                <element signature="e#1976#1998#0#PHP" expanded="true" />
+                <element signature="e#2491#2504#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Form/MusicType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="526">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+              <folding>
+                <element signature="e#28#49#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/includes/header.html.twig">
+        <entry file="file://$PROJECT_DIR$/config/packages/vich_uploader.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
+            <state relative-caret-position="187">
+              <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entity/Music.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1804">
+              <caret line="129" column="24" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
               <folding>
-                <element signature="e#1371#1381#0#Twig" expanded="true" />
+                <element signature="e#30#65#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entity/Album.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1115">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
             </state>
           </provider>
         </entry>
@@ -164,8 +252,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>highligh</find>
-      <find>redirec</find>
       <find>slider</find>
       <find>img</find>
       <find>100-per</find>
@@ -194,6 +280,8 @@
       <find>arro</find>
       <find>arr</find>
       <find>album</find>
+      <find>music</find>
+      <find>Ima</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -202,7 +290,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Entity/Tag.php" />
         <option value="$PROJECT_DIR$/src/Form/EventType.php" />
         <option value="$PROJECT_DIR$/src/Repository/EventRepository.php" />
         <option value="$PROJECT_DIR$/templates/includes/select_locale.html.twig" />
@@ -216,12 +303,9 @@
         <option value="$PROJECT_DIR$/src/EventSubscriber/TwigEventSubscriber.php" />
         <option value="$PROJECT_DIR$/config/packages/liip_imagine.yaml" />
         <option value="$PROJECT_DIR$/templates/discography/disc_list.html.twig" />
-        <option value="$PROJECT_DIR$/src/Entity/Music.php" />
         <option value="$PROJECT_DIR$/src/Entity/Event.php" />
         <option value="$PROJECT_DIR$/src/Entity/Album.php" />
         <option value="$PROJECT_DIR$/src/Controller/RegistrationController.php" />
-        <option value="$PROJECT_DIR$/templates/music/show.html.twig" />
-        <option value="$PROJECT_DIR$/templates/music/index.html.twig" />
         <option value="$PROJECT_DIR$/templates/album/index.html.twig" />
         <option value="$PROJECT_DIR$/templates/album/show.html.twig" />
         <option value="$PROJECT_DIR$/templates/music/new.html.twig" />
@@ -235,24 +319,28 @@
         <option value="$PROJECT_DIR$/templates/music/edit_music_button.html.twig" />
         <option value="$PROJECT_DIR$/templates/event/event_card.html.twig" />
         <option value="$PROJECT_DIR$/templates/event/event_container_desktop.html.twig" />
-        <option value="$PROJECT_DIR$/templates/event/major_event.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/ImageController.php" />
         <option value="$PROJECT_DIR$/src/Controller/EventsController.php" />
-        <option value="$PROJECT_DIR$/src/Controller/MusicController.php" />
         <option value="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" />
-        <option value="$PROJECT_DIR$/templates/discography/musics_list.html.twig" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
-        <option value="$PROJECT_DIR$/templates/discography/index.html.twig" />
         <option value="$PROJECT_DIR$/templates/event/_all.html.twig" />
-        <option value="$PROJECT_DIR$/templates/event/home.html.twig" />
         <option value="$PROJECT_DIR$/templates/includes/header.html.twig" />
         <option value="$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf" />
         <option value="$PROJECT_DIR$/assets/styles/app.scss" />
         <option value="$PROJECT_DIR$/templates/discography/album_list.html.twig" />
         <option value="$PROJECT_DIR$/templates/album/edit_album_button.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/AlbumController.php" />
+        <option value="$PROJECT_DIR$/templates/event/major_event.html.twig" />
+        <option value="$PROJECT_DIR$/templates/event/home.html.twig" />
+        <option value="$PROJECT_DIR$/templates/discography/index.html.twig" />
         <option value="$PROJECT_DIR$/config/packages/vich_uploader.yaml" />
+        <option value="$PROJECT_DIR$/templates/music/index.html.twig" />
         <option value="$PROJECT_DIR$/templates/themes/_form.html.twig" />
+        <option value="$PROJECT_DIR$/templates/discography/musics_list.html.twig" />
+        <option value="$PROJECT_DIR$/templates/music/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/Entity/Music.php" />
+        <option value="$PROJECT_DIR$/src/Controller/MusicController.php" />
+        <option value="$PROJECT_DIR$/src/Form/MusicType.php" />
       </list>
     </option>
   </component>
@@ -367,7 +455,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="width" value="976" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -388,17 +476,6 @@
             <path>
               <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
               <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="audio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -415,6 +492,19 @@
             <path>
               <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
               <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="music" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="music" type="462c0819:PsiDirectoryNode" />
+              <item name="file" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -427,24 +517,18 @@
               <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
               <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DataFixtures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
               <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Form" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
               <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="discography" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
@@ -456,18 +540,13 @@
               <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
               <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
+              <item name="music" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
               <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
-              <item name="translations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -482,7 +561,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.php.lang.actions.generation.PhpGenerateFieldAccessorHandlerBase$MyMemberChooser.fluent.setters.last.selected" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../chrisBdev" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../VINNY-SF4-" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -578,13 +657,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="420714000" />
+    <option name="totallyTimeSpent" value="426161000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20042644" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21108742" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -602,7 +680,7 @@
       <window_info anchor="bottom" id="Database Console" order="11" weight="0.3286119" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="13" show_stripe_button="false" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.4978678" visible="true" weight="0.28602383" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="14" sideWeight="0.4978678" visible="true" weight="0.28602383" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -646,20 +724,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Controller/GalleryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/RegistrationController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-238">
@@ -710,24 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/music/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/music/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -782,13 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/AlbumType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/album/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -832,13 +871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/event/major_event.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/event/event_container_desktop.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -867,13 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/MusicController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-689">
-          <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/music/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -881,22 +906,6 @@
           <folding>
             <element signature="e#12#26#0#Twig" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/MusicType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://999c275e-131c-417a-8015-5705ab7315c1/schema/marcel_boungou/table/music">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="5beb3461-bcdc-43bc-8c41-72fe3faf9320">
-          <filtering>
-            <filter text="" />
-          </filtering>
         </state>
       </provider>
     </entry>
@@ -910,27 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/discography/musics_list.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/discography/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding>
-            <element signature="e#967#986#0#HTML" expanded="true" />
-            <element signature="e#243#8409#0#Twig" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/event/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -940,27 +928,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/event/_all.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="121" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/event/home.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
           <folding>
             <element signature="e#12#26#0#Twig" expanded="true" />
           </folding>
@@ -1030,27 +1001,141 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/vich_uploader.yaml">
+    <entry file="file://$PROJECT_DIR$/templates/event/major_event.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        <state relative-caret-position="512">
+          <caret line="121" column="11" selection-start-line="121" selection-start-column="11" selection-end-line="121" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Album.php">
+    <entry file="file://$PROJECT_DIR$/templates/discography/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+        <state relative-caret-position="466">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/event/home.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2187">
+          <caret line="59" column="7" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/music/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/discography/musics_list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/music/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://999c275e-131c-417a-8015-5705ab7315c1/schema/marcel_boungou/table/album">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="5beb3461-bcdc-43bc-8c41-72fe3faf9320">
+          <filtering>
+            <filter text="" />
+          </filtering>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/themes/_form.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="71" column="67" selection-start-line="71" selection-start-column="67" selection-end-line="71" selection-end-column="67" />
+        <state relative-caret-position="272">
+          <caret line="70" column="57" selection-start-line="70" selection-start-column="57" selection-end-line="70" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Album.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1115">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/AlbumType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/vich_uploader.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/MusicController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
           <folding>
-            <element signature="e#2143#2162#0#Twig" expanded="true" />
-            <element signature="e#2633#2651#0#Twig" expanded="true" />
+            <element signature="e#34#55#0#PHP" expanded="true" />
+            <element signature="e#925#948#0#PHP" expanded="true" />
+            <element signature="e#1613#1626#0#PHP" expanded="true" />
+            <element signature="e#1976#1998#0#PHP" expanded="true" />
+            <element signature="e#2491#2504#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://999c275e-131c-417a-8015-5705ab7315c1/schema/marcel_boungou/table/music">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="5beb3461-bcdc-43bc-8c41-72fe3faf9320">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Music.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1804">
+          <caret line="129" column="24" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
+          <folding>
+            <element signature="e#30#65#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/MusicType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#28#49#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

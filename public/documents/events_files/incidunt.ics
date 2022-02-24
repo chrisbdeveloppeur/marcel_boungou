@@ -17,17 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213a52941d6d
-DTSTAMP;TZID=Europe/Paris:20220221T154353
+UID:621771c0ac46d
+DTSTAMP;TZID=Europe/Paris:20220224T125336
 SUMMARY:incidunt
-DESCRIPTION:Quo amet in cupiditate accusantium accusantium corporis. Cum mi
- nus sunt sequi illo in labore suscipit. Debitis saepe dicta occaecati volu
- ptas minima. Non ipsam tempore ut. Id voluptatem sint commodi ut. Quo eum 
- pariatur vitae harum. Est repellendus beatae nemo sint maxime cum vel volu
- ptates. Sed nemo quo quae et perspiciatis debitis sed.
-LOCATION:55\, boulevard Mathilde Duhamel\, 62 123 Toussaint-la-Forêt\, Tou
- ssaint-la-Forêt
-DTSTART;TZID=Europe/Paris:20220219T155600
-DTEND;TZID=Europe/Paris:20220219T155600
+DESCRIPTION:Qui eos hic rerum officia. Aut et qui consequatur odio aut sed 
+ eligendi sit. Corrupti natus cumque modi quisquam occaecati rem veniam mai
+ ores. Sed natus qui consequatur reiciendis fugiat quo.
+LOCATION:rue Roche\, 83 906 Diazdan\, Diazdan
+DTSTART;TZID=Europe/Paris:20220228T115032
+DTEND;TZID=Europe/Paris:20220228T115032
 END:VEVENT
 END:VCALENDAR

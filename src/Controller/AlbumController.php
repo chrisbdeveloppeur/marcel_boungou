@@ -85,6 +85,10 @@ class AlbumController extends AbstractController
         return $this->render('album/edit.html.twig', [
             'album' => $album,
             'form' => $form->createView(),
+            'redirect' => [
+                'link' => $this->redirectToRoute('discography_index')->getTargetUrl(),
+                'txt' => $this->translator->trans('Redirect to discography'),
+            ]
         ]);
     }
 

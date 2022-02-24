@@ -17,16 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f6cf651ad
-DTSTAMP;TZID=Europe/Paris:20220223T095647
+UID:621780491c7a7
+DTSTAMP;TZID=Europe/Paris:20220224T135537
 SUMMARY:facilis
-DESCRIPTION:Minima tenetur consequuntur eius beatae et beatae maiores. Nequ
- e sit quidem provident quos. Nihil consectetur rerum possimus voluptatem i
- n quia numquam omnis. Quo nihil et dolore ut repellendus. Provident nemo n
- obis officia et nulla nam quas. Ullam ullam mollitia eius delectus volupta
- s. Ipsam a officia corporis saepe iste hic magnam.
-LOCATION:895\, chemin Alexandre\, 52090 Dias\, Dias
-DTSTART;TZID=Europe/Paris:20220314T201628
-DTEND;TZID=Europe/Paris:20220314T201628
+DESCRIPTION:Possimus quos sunt sed deleniti modi. Et ratione non temporibus
+ . Voluptatibus eos blanditiis ea similique quia. Voluptas eum voluptates a
+ rchitecto accusamus. Ut ullam doloribus eveniet ipsa fugiat quam sequi.
+LOCATION:81\, rue de Lemaitre\, 49 604 Lopez\, Lopez
+DTSTART;TZID=Europe/Paris:20220418T182510
+DTEND;TZID=Europe/Paris:20220418T182510
 END:VEVENT
 END:VCALENDAR

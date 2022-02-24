@@ -17,14 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217345143b63
-DTSTAMP;TZID=Europe/Paris:20220224T083129
+UID:621771c0b2d87
+DTSTAMP;TZID=Europe/Paris:20220224T125336
 SUMMARY:hic
-DESCRIPTION:Eum similique voluptatum ad dolorem necessitatibus recusandae i
- taque dolor. Ut exercitationem vel repellendus aut cumque occaecati ea. Ne
- mo voluptatem necessitatibus velit culpa ratione quis mollitia.
-LOCATION:56\, rue Simone Robin\, 31 803 Albert\, Albert
-DTSTART;TZID=Europe/Paris:20220225T133901
-DTEND;TZID=Europe/Paris:20220225T133901
+DESCRIPTION:Mollitia eligendi quia eaque autem sit quod. Voluptatibus omnis
+  ea non tempore. Voluptatum ipsam amet beatae.
+LOCATION:43\, place Bernier\, 11071 Carre\, Carre
+DTSTART;TZID=Europe/Paris:20220304T041355
+DTEND;TZID=Europe/Paris:20220304T041355
 END:VEVENT
 END:VCALENDAR

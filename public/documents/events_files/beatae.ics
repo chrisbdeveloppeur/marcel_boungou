@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6217792989e2f
+DTSTAMP;TZID=Europe/Paris:20220224T132513
+SUMMARY:beatae
+DESCRIPTION:Quia earum est ut accusamus expedita veniam. Totam eligendi ex 
+ eum dignissimos est iusto quia. Porro et voluptatem qui atque id. Amet min
+ us beatae et repellat distinctio. Voluptatum totam aspernatur ad commodi s
+ ed cum.
+LOCATION:place de Leblanc\, 95532 Jacquesdan\, Jacquesdan
+DTSTART;TZID=Europe/Paris:20220304T135629
+DTEND;TZID=Europe/Paris:20220304T135629
+END:VEVENT
+END:VCALENDAR

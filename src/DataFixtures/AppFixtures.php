@@ -58,7 +58,7 @@ class AppFixtures extends Fixture
                 $music = new Music();
                 $music->setTitre($faker->word);
                 $music->setCreatedDate(new \DateTime('now'));
-                $music->setMusicName('zola-ye-yenge-minimized.mp3');
+//                $music->setMusicName('zola-ye-yenge-minimized.mp3');
                 $manager->persist($music);
 //                $manager->flush();
                 $album->addMusic($music);

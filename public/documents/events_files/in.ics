@@ -17,17 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621734b96ae1b
-DTSTAMP;TZID=Europe/Paris:20220224T083313
+UID:6217803ec3035
+DTSTAMP;TZID=Europe/Paris:20220224T135526
 SUMMARY:in
-DESCRIPTION:Ratione molestiae qui nostrum laudantium ut. Corporis eligendi 
- voluptas impedit ex doloremque vero. Quasi totam sit dolorem molestiae fug
- a eligendi reprehenderit. Aliquid et aspernatur explicabo laudantium nisi 
- voluptatem. Asperiores odio et hic est ut facere. Velit natus vitae adipis
- ci ab et animi voluptatibus. Ab et nemo aspernatur dignissimos perferendis
-  adipisci. Earum in nemo possimus.
-LOCATION:rue Brunet\, 47260 Devaux\, Devaux
-DTSTART;TZID=Europe/Paris:20220322T181010
-DTEND;TZID=Europe/Paris:20220322T181010
+DESCRIPTION:Culpa autem et aut doloremque quia ipsum. Laboriosam ut archite
+ cto in. Nulla et laboriosam magni id. Amet aperiam quas deleniti consequun
+ tur.
+LOCATION:rue Durand\, 44 874 Dijoux\, Dijoux
+DTSTART;TZID=Europe/Paris:20220222T144209
+DTEND;TZID=Europe/Paris:20220222T144209
 END:VEVENT
 END:VCALENDAR

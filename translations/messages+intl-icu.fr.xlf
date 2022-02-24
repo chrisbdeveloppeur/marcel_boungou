@@ -595,7 +595,7 @@
       </trans-unit>
       <trans-unit id="g074Mwd" resname="Edit Album">
         <source>Edit Album</source>
-        <target>Edit Album</target>
+        <target>Modifier l'Album</target>
       </trans-unit>
       <trans-unit id="YSr5cM1" resname="Create new Album">
         <source>Create new Album</source>
@@ -656,6 +656,22 @@
       <trans-unit id="ckrH6XA" resname="Create new Music">
         <source>Create new Music</source>
         <target>Créer une nouvelle musiquec</target>
+      </trans-unit>
+      <trans-unit id="sBIHLk7" resname="Album Title">
+        <source>Album Title</source>
+        <target>Titre de l'album</target>
+      </trans-unit>
+      <trans-unit id="jNnG6Qb" resname="Year of production">
+        <source>Year of production</source>
+        <target>Année de production</target>
+      </trans-unit>
+      <trans-unit id="OAxUwXL" resname="Featuring">
+        <source>Featuring</source>
+        <target>Featuring</target>
+      </trans-unit>
+      <trans-unit id="d9FVpQ8" resname="Redirect to discography">
+        <source>Redirect to discography</source>
+        <target>Redirection vers la discographie</target>
       </trans-unit>
     </body>
   </file>

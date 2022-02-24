@@ -17,16 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6213a56d1f9da
-DTSTAMP;TZID=Europe/Paris:20220221T154501
+UID:6217803ec8970
+DTSTAMP;TZID=Europe/Paris:20220224T135526
 SUMMARY:repudiandae
-DESCRIPTION:Doloremque rem dolor facere cum temporibus accusamus. Est minim
- a tenetur fugit quaerat laudantium ipsa. Consequuntur suscipit quia non. N
- on sit nemo quo magni. Illo molestias et doloremque mollitia placeat. Non 
- praesentium esse temporibus quam a ipsam libero reprehenderit. Rerum volup
- tas et et voluptas. Quod adipisci minima et et.
-LOCATION:rue de Fischer\, 93738 Chretien\, Chretien
-DTSTART;TZID=Europe/Paris:20220415T075658
-DTEND;TZID=Europe/Paris:20220415T075658
+DESCRIPTION:Quas delectus maxime nesciunt odio quasi quis blanditiis. Cum a
+ utem vitae perferendis similique aspernatur fugiat. Officiis et aliquam et
+  eum molestias ad.
+LOCATION:13\, impasse de Becker\, 29 835 Lejeuneboeuf\, Lejeuneboeuf
+DTSTART;TZID=Europe/Paris:20220304T100147
+DTEND;TZID=Europe/Paris:20220304T100147
 END:VEVENT
 END:VCALENDAR

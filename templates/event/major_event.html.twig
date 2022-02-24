@@ -1,5 +1,5 @@
 {% set event = events|first %}
-
+{% if event %}
     <div class="column is-relative">
         <h2 class="has-text-centered is-size-3 is-size-4-touch has-text-weight-bold next-event-logo is-uppercase has-background-success-light box-shadow-bulma-dark is-relative">
             {% if app.request.locale == 'fr' %}
@@ -29,91 +29,94 @@
             {% endif %}
         </h2>
 
-        <div class="" id="majorEvent">
-            <div class="is-flex is-flex-direction-column"  style="height: 100%;">
-                <figure class="image is-3by1">
-                    {% if event.image %}
-                        <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
-                    {% else %}
-                        <img src="https://picsum.photos/id/{{ random(1,100) }}/720/240" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
-                    {% endif %}
-                </figure>
 
-                <div class="box-shadow-bulma-event-card is-relative">
-                    {% if is_granted('ROLE_ADMIN') %}
-                        {{ include('event/edit_event_button.html.twig') }}
-                    {% endif %}
-                    <div class="column has-background-success-light is-flex is-align-items-center is-justify-content-center" style="z-index: 1;">
-                        <h3 class="has-text-primary title has-text-weight-bold is-size-4-touch">
-                            {{ event.title }}
-                        </h3>
-                    </div>
-                    <div class="column has-background-black slider-container-child is-flex-desktop is-justify-content-space-between px-0 py-0">
-
-                        {% if event.ticketingLink %}
-                            <div class="column is-flex is-justify-content-center is-align-items-center rotationX scalup-hover transition-3ms">
-                                <a href="{{ event.ticketingLink }}" target="_blank" class="button is-fullwidth is-height-100-percent is-success is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center is-size-4">
-                                    <span class="icon is-large">
-                                        <i class="fas fa-lg fa-ticket"></i>
-                                    </span>
-                                    <span>
-                                        {% trans %}Reservation{% endtrans %}
-                                    </span>
-                                </a>
-                            </div>
+            <div class="" id="majorEvent">
+                <div class="is-flex is-flex-direction-column"  style="height: 100%;">
+                    <figure class="image is-3by1">
+                        {% if event.image %}
+                            <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
+                        {% else %}
+                            <img src="https://picsum.photos/id/{{ random(1,100) }}/720/240" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
                         {% endif %}
+                    </figure>
 
-                        <div class="column is-flex px-0 py-0">
-                            <div class="column has-text-centered is-expanded has-text-success is-flex is-justify-content-center is-align-items-center">
-                                <span class="icon-text is-justify-content-center">
-                                    <span class="icon has-text-success is-hidden-touch">
-                                        <i class="fas fa-lg fa-map"></i>
+                    <div class="box-shadow-bulma-event-card is-relative">
+                        {% if is_granted('ROLE_ADMIN') %}
+                            {{ include('event/edit_event_button.html.twig') }}
+                        {% endif %}
+                        <div class="column has-background-success-light is-flex is-align-items-center is-justify-content-center" style="z-index: 1;">
+                            <h3 class="has-text-primary title has-text-weight-bold is-size-4-touch">
+                                {{ event.title }}
+                            </h3>
+                        </div>
+                        <div class="column has-background-black slider-container-child is-flex-desktop is-justify-content-space-between px-0 py-0">
+
+                            {% if event.ticketingLink %}
+                                <div class="column is-flex is-justify-content-center is-align-items-center rotationX scalup-hover transition-3ms">
+                                    <a href="{{ event.ticketingLink }}" target="_blank" class="button is-fullwidth is-height-100-percent is-success is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center is-size-4">
+                                        <span class="icon is-large">
+                                            <i class="fas fa-lg fa-ticket"></i>
+                                        </span>
+                                        <span>
+                                            {% trans %}Reservation{% endtrans %}
+                                        </span>
+                                    </a>
+                                </div>
+                            {% endif %}
+
+                            <div class="column is-flex px-0 py-0">
+                                <div class="column has-text-centered is-expanded has-text-success is-flex is-justify-content-center is-align-items-center">
+                                    <span class="icon-text is-justify-content-center">
+                                        <span class="icon has-text-success is-hidden-touch">
+                                            <i class="fas fa-lg fa-map"></i>
+                                        </span>
+                                        <span class="has-text-success-light is-size-7-touch">
+                                            {{ event.adresse }}
+                                        </span>
                                     </span>
-                                    <span class="has-text-success-light is-size-7-touch">
-                                        {{ event.adresse }}
-                                    </span>
-                                </span>
+                                </div>
+                                <div class="is-flex is-justify-content-center is-align-items-center px-2 py-2">
+                                    <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="button is-primary is-outlined is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
+                                        <span  class="icon">
+                                            <i class="fas fa-lg fa-map-marker-alt"></i>
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="is-flex is-justify-content-center is-align-items-center px-2 py-2">
-                                <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="button is-primary is-outlined is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
-                                    <span  class="icon">
-                                        <i class="fas fa-lg fa-map-marker-alt"></i>
+
+                            <div class="column is-flex px-0 py-0">
+                                <div class="column has-text-centered is-expanded has-text-success is-flex is-justify-content-center is-align-items-center">
+                                    <span class="icon-text is-justify-content-center">
+                                        <span class="icon has-text-success is-hidden-touch">
+                                            <i class="fas fa-lg fa-calendar-alt"></i>
+                                        </span>
+                                        <span class="has-text-success-light is-size-7-touch">
+                                            {{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}
+                                        </span>
                                     </span>
-                                </a>
+                                </div>
+                                <div class="is-flex is-justify-content-center is-align-items-center px-2 py-2">
+                                    <a class="button is-primary is-outlined is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center"  onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
+                                        <span class="icon">
+                                            <i class="fas fa-lg fa-bell"></i>
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="column is-flex px-0 py-0">
-                            <div class="column has-text-centered is-expanded has-text-success is-flex is-justify-content-center is-align-items-center">
-                                <span class="icon-text is-justify-content-center">
-                                    <span class="icon has-text-success is-hidden-touch">
-                                        <i class="fas fa-lg fa-calendar-alt"></i>
-                                    </span>
-                                    <span class="has-text-success-light is-size-7-touch">
-                                        {{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}
-                                    </span>
-                                </span>
-                            </div>
-                            <div class="is-flex is-justify-content-center is-align-items-center px-2 py-2">
-                                <a class="button is-primary is-outlined is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center"  onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
-                                    <span class="icon">
-                                        <i class="fas fa-lg fa-bell"></i>
-                                    </span>
-                                </a>
+                        <div class="has-background-black px-2 px-2">
+                            <div class="tags is-justify-content-end">
+                                {% for tag in event.tagsinarray %}
+                                    <a class="tag is-success" href="#{{ tag }}">#{{ tag }}</a>
+                                {% endfor %}
                             </div>
                         </div>
-                    </div>
 
-                    <div class="has-background-black px-2 px-2">
-                        <div class="tags is-justify-content-end">
-                            {% for tag in event.tagsinarray %}
-                                <a class="tag is-success" href="#{{ tag }}">#{{ tag }}</a>
-                            {% endfor %}
-                        </div>
                     </div>
 
                 </div>
-
             </div>
-        </div>
+
     </div>
+{% endif %}

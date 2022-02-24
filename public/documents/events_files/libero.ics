@@ -17,15 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f700aea98
-DTSTAMP;TZID=Europe/Paris:20220223T095736
+UID:621780182b3bd
+DTSTAMP;TZID=Europe/Paris:20220224T135448
 SUMMARY:libero
-DESCRIPTION:Odio minima nihil rerum quae pariatur. Quia vel at vel illum co
- nsectetur ea. Ut fugiat vel fuga ut nisi. Facilis ipsum ducimus nobis. Nat
- us et numquam explicabo dolores fugit consectetur. Aut alias ut distinctio
-  recusandae. Dolorem accusantium beatae quos quod esse mollitia.
-LOCATION:rue Guichard\, 84 073 Mathieu\, Mathieu
-DTSTART;TZID=Europe/Paris:20220417T165933
-DTEND;TZID=Europe/Paris:20220417T165933
+DESCRIPTION:Maxime neque explicabo corrupti beatae. Reprehenderit itaque eu
+ m consequatur dolorem. Voluptates atque voluptatem et id nobis. Nam quo qu
+ i ad consequatur quae sed. Culpa eius provident qui nostrum rerum autem de
+ bitis. Qui commodi ex beatae ut blanditiis blanditiis quo. Fugit accusamus
+  ullam debitis facilis asperiores quas. Aut et sint neque aut et.
+LOCATION:14\, avenue Céline Gros\, 70 396 Bazin-les-Bains\, Bazin-les-Bain
+ s
+DTSTART;TZID=Europe/Paris:20220309T081937
+DTEND;TZID=Europe/Paris:20220309T081937
 END:VEVENT
 END:VCALENDAR

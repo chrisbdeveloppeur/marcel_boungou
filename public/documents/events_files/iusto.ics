@@ -17,14 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f8d373549
-DTSTAMP;TZID=Europe/Paris:20220223T100523
+UID:621780491bd36
+DTSTAMP;TZID=Europe/Paris:20220224T135537
 SUMMARY:iusto
-DESCRIPTION:Nihil est placeat animi ex aut eos dolore. Voluptatem aut illum
-  ut dolores repellat. Totam quidem dolorum voluptatem aspernatur consequat
- ur. Facere eos ea commodi ipsa aut aut.
-LOCATION:187\, avenue Bodin\, 57826 Barthelemy\, Barthelemy
-DTSTART;TZID=Europe/Paris:20220221T175729
-DTEND;TZID=Europe/Paris:20220221T175729
+DESCRIPTION:Enim delectus iste et quibusdam corrupti repellat commodi. Face
+ re vero praesentium aperiam. Eius est non officia soluta quis. Sint facili
+ s rerum molestias quis. Cumque id facere eius ut et alias non. Velit dolor
+ es qui animi ipsa saepe. Cumque fugiat aut odio autem cum.
+LOCATION:123\, place de Antoine\, 45 157 Lebreton\, Lebreton
+DTSTART;TZID=Europe/Paris:20220408T204056
+DTEND;TZID=Europe/Paris:20220408T204056
 END:VEVENT
 END:VCALENDAR

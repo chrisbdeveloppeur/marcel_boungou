@@ -17,16 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f906dca04
-DTSTAMP;TZID=Europe/Paris:20220223T100614
+UID:6217804917708
+DTSTAMP;TZID=Europe/Paris:20220224T135537
 SUMMARY:eum
-DESCRIPTION:Qui natus amet voluptatem ratione maxime a. Quae et mollitia oc
- caecati voluptatem. Perferendis molestiae voluptate mollitia dolorem. Sunt
-  magnam aut error consequatur. Et aperiam sed laboriosam eum occaecati. So
- luta et corrupti qui nihil illum. Est doloribus facilis ut qui inventore q
- uasi molestiae.
-LOCATION:924\, boulevard Margaud Faivre\, 32390 Becker\, Becker
-DTSTART;TZID=Europe/Paris:20220407T053122
-DTEND;TZID=Europe/Paris:20220407T053122
+DESCRIPTION:Sint error deserunt et nam error. Quia omnis natus non voluptat
+ um odio voluptatum debitis sit. Culpa repellat vel culpa temporibus et min
+ ima. Saepe soluta et dicta dolores eius quis neque et.
+LOCATION:27\, rue de Lucas\, 01152 Dupuis\, Dupuis
+DTSTART;TZID=Europe/Paris:20220228T104435
+DTEND;TZID=Europe/Paris:20220228T104435
 END:VEVENT
 END:VCALENDAR

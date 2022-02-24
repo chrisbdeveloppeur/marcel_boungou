@@ -17,16 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621734b972976
-DTSTAMP;TZID=Europe/Paris:20220224T083313
+UID:6217804918f19
+DTSTAMP;TZID=Europe/Paris:20220224T135537
 SUMMARY:ea
-DESCRIPTION:Esse qui dolorem quis est expedita. Enim possimus sunt atque qu
- asi dolorem quasi. Voluptates dolorem impedit nam. Asperiores temporibus m
- odi laborum autem amet unde. Aliquam quibusdam eos libero ut a velit sunt.
-  Culpa eveniet ut veniam recusandae qui architecto. Est qui incidunt aut o
- mnis rerum voluptatem quod.
-LOCATION:impasse Jacquet\, 53 463 Benoit\, Benoit
-DTSTART;TZID=Europe/Paris:20220408T013132
-DTEND;TZID=Europe/Paris:20220408T013132
+DESCRIPTION:Id perspiciatis impedit deserunt ratione ducimus. In voluptatib
+ us debitis similique et error et vitae ipsa. Nihil id id minus illum velit
+  totam.
+LOCATION:730\, rue de Leclercq\, 12 660 Maillard\, Maillard
+DTSTART;TZID=Europe/Paris:20220309T002331
+DTEND;TZID=Europe/Paris:20220309T002331
 END:VEVENT
 END:VCALENDAR

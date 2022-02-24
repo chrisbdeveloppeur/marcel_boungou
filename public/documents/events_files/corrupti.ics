@@ -17,16 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f88d2418b
-DTSTAMP;TZID=Europe/Paris:20220223T100413
+UID:62178822b2da9
+DTSTAMP;TZID=Europe/Paris:20220224T142906
 SUMMARY:corrupti
-DESCRIPTION:Voluptatibus fugiat est impedit sunt veniam ipsum ducimus. In q
- uidem necessitatibus velit. Error eos voluptas et nemo eligendi eveniet re
- iciendis. Eum omnis sit suscipit magnam ut nemo. Molestias culpa quasi dol
- orem ex sed et. Rerum minima aliquid alias ipsam eligendi eveniet. Volupta
- s molestias est et exercitationem est illum.
-LOCATION:chemin Bonnet\, 90270 Michaud-la-Forêt\, Michaud-la-Forêt
-DTSTART;TZID=Europe/Paris:20220221T223413
-DTEND;TZID=Europe/Paris:20220221T223413
+DESCRIPTION:Ea dignissimos molestias consequatur ipsum voluptatem. Sit tota
+ m facilis delectus mollitia eius nostrum iusto. Architecto possimus offici
+ is odio consequatur illum id minima. Asperiores aut voluptatem facere null
+ a facilis. Non unde quisquam iure beatae magni. Eveniet totam dolores veli
+ t architecto hic saepe dolor.
+LOCATION:10\, rue Louise Duhamel\, 22356 Thibault\, Thibault
+DTSTART;TZID=Europe/Paris:20220225T173606
+DTEND;TZID=Europe/Paris:20220225T173606
 END:VEVENT
 END:VCALENDAR

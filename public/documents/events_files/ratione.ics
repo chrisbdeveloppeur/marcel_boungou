@@ -17,16 +17,12 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621734b9625ee
-DTSTAMP;TZID=Europe/Paris:20220224T083313
+UID:62178822bd3c1
+DTSTAMP;TZID=Europe/Paris:20220224T142906
 SUMMARY:ratione
-DESCRIPTION:Voluptas aut est odit ut quia et. Excepturi ullam voluptatem co
- nsequatur vero nisi. Doloremque quas et sed. Dolores autem omnis error est
-  dicta laborum. Illo enim beatae exercitationem quis qui aliquam. Consequa
- tur culpa dolor ipsum a porro repellendus qui. Velit nihil autem dolor cor
- poris expedita voluptatem.
-LOCATION:97\, chemin de Da Costa\, 54 926 Dupuy-la-Forêt\, Dupuy-la-Forêt
-DTSTART;TZID=Europe/Paris:20220304T164137
-DTEND;TZID=Europe/Paris:20220304T164137
+DESCRIPTION:Quia assumenda dolorem nulla autem. Fugiat et quia eum nemo.
+LOCATION:boulevard Bigot\, 95010 GimenezVille\, GimenezVille
+DTSTART;TZID=Europe/Paris:20220418T034020
+DTEND;TZID=Europe/Paris:20220418T034020
 END:VEVENT
 END:VCALENDAR

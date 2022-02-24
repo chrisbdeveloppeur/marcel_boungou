@@ -17,15 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621733d15d0a8
-DTSTAMP;TZID=Europe/Paris:20220224T082921
+UID:621780255bacb
+DTSTAMP;TZID=Europe/Paris:20220224T135501
 SUMMARY:nobis
-DESCRIPTION:A nihil repudiandae nobis quos est ut dolor. Eveniet officiis o
- dio accusantium. Cum optio omnis corrupti dolores veritatis. Aut modi veli
- t deleniti laborum voluptas similique perspiciatis. Qui et eveniet eum ven
- iam voluptas. Error unde sint cupiditate.
-LOCATION:85\, chemin de Traore\, 91191 Bonnindan\, Bonnindan
-DTSTART;TZID=Europe/Paris:20220322T005949
-DTEND;TZID=Europe/Paris:20220322T005949
+DESCRIPTION:A saepe eos fugiat magni perspiciatis exercitationem voluptas a
+ met. Dolor autem et molestias neque. Voluptatibus dolorem quia ut repellat
+  et. Vitae officia aperiam consequatur mollitia odio neque autem qui. Anim
+ i rerum deserunt consequatur eum sapiente error est voluptas. Omnis ut aut
+  quia sit non praesentium. Repellat alias eum cumque a vel corrupti enim l
+ abore.
+LOCATION:10\, impasse Léon Camus\, 19 270 Jacob\, Jacob
+DTSTART;TZID=Europe/Paris:20220315T233007
+DTEND;TZID=Europe/Paris:20220315T233007
 END:VEVENT
 END:VCALENDAR

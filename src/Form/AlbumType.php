@@ -6,6 +6,7 @@ use App\Entity\Album;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -29,11 +30,13 @@ class AlbumType extends AbstractType
     {
         $builder
             ->add('name', TextType::class,[
+                'label' => $this->translator->trans('Album Title'),
                 'attr' => [
                     'class' => 'input'
                 ]
             ])
             ->add('year', ChoiceType::class,[
+                'label' => $this->translator->trans('Year of production'),
                 'required' => false,
                 'choices' => $this->getYears(1950),
                 'data' => $this->date,
@@ -41,12 +44,13 @@ class AlbumType extends AbstractType
                 'attr' => []
             ])
             ->add('feat', TextType::class,[
+                'label' => $this->translator->trans('Featuring'),
                 'required' => false,
                 'attr' => [
                     'class' => 'input'
                 ]
             ])
-            ->add('imageFile', VichFileType::class, [
+            ->add('imageFile', FileType::class, [
                 'label' => false,
                 'required' => false,
                 'attr' => [

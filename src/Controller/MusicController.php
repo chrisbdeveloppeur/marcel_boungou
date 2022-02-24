@@ -11,6 +11,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Contracts\Translation\TranslatorInterface;
 
 /**
  * @Route("/music")
@@ -18,6 +19,13 @@ use Symfony\Component\Routing\Annotation\Route;
  */
 class MusicController extends AbstractController
 {
+    private $translator;
+
+    public function __construct(TranslatorInterface $translator)
+    {
+        $this->translator = $translator;
+    }
+
     /**
      * @Route("/", name="music_index", methods={"GET"})
      */
@@ -36,6 +44,7 @@ class MusicController extends AbstractController
         $music = new Music();
         $form = $this->createForm(MusicType::class, $music);
         $form->handleRequest($request);
+
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->persist($music);
@@ -69,6 +78,7 @@ class MusicController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $entityManager->persist($music);
             $entityManager->flush();
 
             return $this->redirectToRoute('music_index', [], Response::HTTP_SEE_OTHER);
@@ -77,6 +87,10 @@ class MusicController extends AbstractController
         return $this->render('music/edit.html.twig', [
             'music' => $music,
             'form' => $form->createView(),
+            'redirect' => [
+                'link' => $this->redirectToRoute('discography_index')->getTargetUrl(),
+                'txt' => $this->translator->trans('Redirect to discography'),
+            ]
         ]);
     }
 

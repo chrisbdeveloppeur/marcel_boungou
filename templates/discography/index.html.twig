@@ -22,8 +22,12 @@
             </div>
         </div>
     </div>
-    {{ include('discography/album_list.html.twig') }}
-    {{ include('discography/musics_list.html.twig') }}
+    {% if albums|length > 0 %}
+        {{ include('discography/album_list.html.twig') }}
+    {% endif %}
+    {% if musics|length > 0 %}
+        {{ include('discography/musics_list.html.twig') }}
+    {% endif %}
 {% endblock %}
 
 {% block javascripts %}
@@ -82,7 +86,7 @@
         let playBtns = document.querySelectorAll('.play-btn');
         playBtns.forEach(function (btn) {
             var audio = btn.parentElement.querySelector('audio');
-            var icon = btn.parentElement.querySelector('i');
+            var icon = btn.parentElement.querySelector('i.icon-play');
             var musicContainer = btn.parentElement.parentElement;
             var nextContainer = musicContainer.nextElementSibling;
             var musicText = btn.parentElement.parentElement.querySelector('.music-text');

@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6217792219e3b
+DTSTAMP;TZID=Europe/Paris:20220224T132506
+SUMMARY:corporis
+DESCRIPTION:Culpa molestiae tempora quis adipisci et nihil rerum. Doloribus
+  voluptas quis iste. Quos provident non eveniet sunt. Rem nemo soluta et d
+ ebitis et praesentium. Dolores aspernatur non expedita nulla quidem iste e
+ t. Qui voluptas ut iste distinctio harum aliquam sint. Maxime delectus vit
+ ae optio odit veniam. Nam sunt atque modi unde minus voluptatum culpa enim
+ . Distinctio ipsum libero animi maxime voluptatem vel ut. Assumenda natus 
+ quam quaerat facilis.
+LOCATION:chemin de Julien\, 45118 BourgeoisBourg\, BourgeoisBourg
+DTSTART;TZID=Europe/Paris:20220408T235523
+DTEND;TZID=Europe/Paris:20220408T235523
+END:VEVENT
+END:VCALENDAR

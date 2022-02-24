@@ -17,15 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f906d84aa
-DTSTAMP;TZID=Europe/Paris:20220223T100614
+UID:621779297eb6a
+DTSTAMP;TZID=Europe/Paris:20220224T132513
 SUMMARY:nam
-DESCRIPTION:Laboriosam quis sed voluptas facilis. Ratione atque vel ex elig
- endi qui vel aut. Inventore officia deleniti corporis officia aut. Sed id 
- est voluptatem sit minus odio. Iusto hic ipsa asperiores ut dolorem molest
- iae nihil. Magni voluptatem possimus mollitia aut facere.
-LOCATION:boulevard François Lebrun\, 77851 Lombardnec\, Lombardnec
-DTSTART;TZID=Europe/Paris:20220303T165357
-DTEND;TZID=Europe/Paris:20220303T165357
+DESCRIPTION:Officiis dolores veritatis voluptates temporibus. Repudiandae r
+ erum qui ipsam quia similique. Quae quidem magnam et non. Quo atque archit
+ ecto numquam aut deleniti sint. Natus cum voluptatum deserunt omnis et hic
+ . Ut eligendi asperiores veniam quia natus et excepturi. Molestias qui ull
+ am sit in culpa consequatur.
+LOCATION:54\, rue de Chauvin\, 47347 Beguedan\, Beguedan
+DTSTART;TZID=Europe/Paris:20220222T024446
+DTEND;TZID=Europe/Paris:20220222T024446
 END:VEVENT
 END:VCALENDAR

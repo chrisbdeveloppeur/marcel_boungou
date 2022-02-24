@@ -10,18 +10,15 @@
             <tr>
                 <th>Id</th>
                 <th>Titre</th>
-                <th>Duration</th>
                 <th>MusicName</th>
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         {% for music in music %}
-            {{ music.MusicName }}
             <tr>
                 <td>{{ music.id }}</td>
                 <td>{{ music.titre }}</td>
-                <td>{{ music.duration }}</td>
                 <td>{{ music.MusicName }}</td>
                 <td>
                     <a href="{{ path('music_show', {'id': music.id}) }}">show</a>

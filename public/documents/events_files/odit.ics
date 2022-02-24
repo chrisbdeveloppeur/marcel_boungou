@@ -17,15 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621377b32e30a
-DTSTAMP;TZID=Europe/Paris:20220221T122955
+UID:62178025527fc
+DTSTAMP;TZID=Europe/Paris:20220224T135501
 SUMMARY:odit
-DESCRIPTION:Sequi facilis et quisquam quod eius. Numquam ea nihil ipsam qui
- a commodi est magnam. Ut aut sit distinctio qui. Aut ducimus sint facere e
- t est alias molestias. Tenetur iure enim eaque excepturi. Beatae non conse
- ctetur porro ut quas nesciunt. Aut aut ex consequatur vitae pariatur.
-LOCATION:5\, impasse Victor Maillot\, 65889 Durand\, Durand
-DTSTART;TZID=Europe/Paris:20220415T161121
-DTEND;TZID=Europe/Paris:20220415T161121
+DESCRIPTION:Earum quis aut tempora praesentium. In dolores consequatur offi
+ ciis sequi ipsum aut consequatur. Et vitae aut laborum. Ut accusantium por
+ ro recusandae porro sit corrupti.
+LOCATION:43\, avenue Bertin\, 70 315 Goncalvesnec\, Goncalvesnec
+DTSTART;TZID=Europe/Paris:20220222T050202
+DTEND;TZID=Europe/Paris:20220222T050202
 END:VEVENT
 END:VCALENDAR

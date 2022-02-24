@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\MusicRepository;
 use Doctrine\ORM\Mapping as ORM;
+
 use Symfony\Component\HttpFoundation\File\File;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
@@ -27,33 +28,28 @@ class Music
      */
     private $titre;
 
-    /**
-     * @ORM\Column(type="integer", nullable=true)
-     */
-    private $duration;
 
     /**
-     *
-     * @Vich\UploadableField(mapping="music_file", fileNameProperty="musicName")
-     *
+     * @ORM\Column(type="string", length=255)
+     * @var string|null
+     */
+    private $musicname;
+
+    /**
+     * @Vich\UploadableField(mapping="music_file", fileNameProperty="musicname")
      * @var File|null
      * @Assert\File(
      *     maxSize="100Mi",
-     *     mimeTypes={"audio/mpeg","application/octet-stream","application/x-font-gdos","audio/x-wav"})
+     *     mimeTypes={"audio/mpeg", "audio/mp3", "application/octet-stream","application/x-font-gdos","audio/x-wav"},
+     * )
      */
     private $musicFile;
 
     /**
-     * @ORM\Column(type="string", nullable=true)
-     *
-     * @var string|null
+     * @ORM\Column(type="datetime")
+     * @var \DateTimeInterface|null
      */
-    private $musicName;
-
-    /**
-     * @ORM\Column(type="date", nullable=true)
-     */
-    private $createdDate;
+    private $updatedAt;
 
     /**
      * @ORM\ManyToOne(targetEntity=Album::class, inversedBy="musics", cascade={"persist"})
@@ -87,57 +83,6 @@ class Music
         return $this;
     }
 
-    public function getDuration(): ?int
-    {
-        return $this->duration;
-    }
-
-    public function setDuration(?int $duration): self
-    {
-        $this->duration = $duration;
-
-        return $this;
-    }
-
-    /**
-     * @return File|null
-     */
-    public function getMusicFile(): ?File
-    {
-        return $this->musicFile;
-    }
-
-    /**
-     * @param File|null $musicFile
-     * @return Music
-     */
-    public function setMusicFile(?File $musicFile): Music
-    {
-        $this->musicFile = $musicFile;
-        if ($this->musicFile instanceof UploadedFile) {
-            $this->updatedAt = new \DateTime('now');
-        }
-        return $this;
-    }
-
-    /**
-     * @return string|null
-     */
-    public function getMusicName(): ?string
-    {
-        return $this->musicName;
-    }
-
-    /**
-     * @param string|null $musicName
-     * @return Music
-     */
-    public function setMusicName(?string $musicName): Music
-    {
-        $this->musicName = $musicName;
-        return $this;
-    }
-
     public function getCreatedDate(): ?\DateTimeInterface
     {
         return $this->createdDate;
@@ -161,4 +106,33 @@ class Music
 
         return $this;
     }
+
+    public function setMusicFile(?File $file = null): void
+    {
+//        $fileName = $file->getClientOriginalName();
+        $this->musicFile = $file;
+
+        // VERY IMPORTANT:
+        // It is required that at least one field changes if you are using Doctrine,
+        // otherwise the event listeners won't be called and the file is lost
+        if ($this->musicFile instanceof UploadedFile) {
+            $this->updatedAt = new \DateTime('now');
+        }
+    }
+
+    public function getMusicFile()
+    {
+        return $this->musicFile;
+    }
+
+    public function setMusicName($musicname)
+    {
+        $this->musicname = $musicname;
+    }
+
+    public function getMusicName()
+    {
+        return $this->musicname;
+    }
+
 }

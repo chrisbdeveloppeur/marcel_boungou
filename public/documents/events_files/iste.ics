@@ -17,14 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621378428a2d5
-DTSTAMP;TZID=Europe/Paris:20220221T123218
+UID:621779220b8c9
+DTSTAMP;TZID=Europe/Paris:20220224T132506
 SUMMARY:iste
-DESCRIPTION:Pariatur enim et culpa facere sunt. Impedit illo voluptas occae
- cati dolore eius quas. Voluptatum eius earum cupiditate commodi dolore vel
- it. Voluptatum consequuntur ut molestiae aperiam est.
-LOCATION:91\, boulevard Christine Colin\, 51329 Besnard\, Besnard
-DTSTART;TZID=Europe/Paris:20220220T124225
-DTEND;TZID=Europe/Paris:20220220T124225
+DESCRIPTION:Cum corporis accusantium asperiores ut velit a. Aut voluptatibu
+ s in exercitationem. Nesciunt doloremque quia vel quidem. Nihil aliquam ex
+ plicabo rem quos qui molestias.
+LOCATION:477\, impasse de Collet\, 23 992 Bonneauboeuf\, Bonneauboeuf
+DTSTART;TZID=Europe/Paris:20220315T174309
+DTEND;TZID=Europe/Paris:20220315T174309
 END:VEVENT
 END:VCALENDAR

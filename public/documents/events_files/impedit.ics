@@ -17,14 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f7ceb1db6
-DTSTAMP;TZID=Europe/Paris:20220223T100102
+UID:62178025532a6
+DTSTAMP;TZID=Europe/Paris:20220224T135501
 SUMMARY:impedit
-DESCRIPTION:Id omnis et blanditiis architecto voluptates. Assumenda est vel
- it quo enim molestias et magni id. Dolorem adipisci ratione voluptas quas 
- qui. Et sed et aut. Quia id atque numquam nobis minima alias et.
-LOCATION:382\, rue Schneider\, 26557 GiraudBourg\, GiraudBourg
-DTSTART;TZID=Europe/Paris:20220224T130324
-DTEND;TZID=Europe/Paris:20220224T130324
+DESCRIPTION:Ea eum quia officiis nulla. Molestiae velit quas possimus aut f
+ acilis quod recusandae et. Quis et et perspiciatis nesciunt.
+LOCATION:59\, avenue Rousset\, 24 203 Benard\, Benard
+DTSTART;TZID=Europe/Paris:20220223T083105
+DTEND;TZID=Europe/Paris:20220223T083105
 END:VEVENT
 END:VCALENDAR

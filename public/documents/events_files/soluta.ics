@@ -17,17 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217554606432
-DTSTAMP;TZID=Europe/Paris:20220224T105206
+UID:621780254a366
+DTSTAMP;TZID=Europe/Paris:20220224T135501
 SUMMARY:soluta
-DESCRIPTION:Laudantium qui explicabo ea. Beatae aut laborum aspernatur opti
- o quia. Sunt ut aperiam est aut quia. Voluptas vel et harum ut nostrum ut 
- iusto. Minus quibusdam est magnam maxime. Nam dolor similique est quam bla
- nditiis aut laborum omnis. Quod est impedit dolorum quasi. Iste ea neque c
- onsequatur itaque itaque enim est. Omnis expedita ut ut. Alias modi fuga e
- ius.
-LOCATION:246\, rue Nicolas\, 54 007 Hamon\, Hamon
-DTSTART;TZID=Europe/Paris:20220408T221323
-DTEND;TZID=Europe/Paris:20220408T221323
+DESCRIPTION:Vel illo quas aut amet. Error ratione et adipisci esse. Ipsum i
+ nventore quos ut.
+LOCATION:38\, avenue de Grenier\, 33963 Caron-la-Forêt\, Caron-la-Forêt
+DTSTART;TZID=Europe/Paris:20220222T032008
+DTEND;TZID=Europe/Paris:20220222T032008
 END:VEVENT
 END:VCALENDAR

@@ -17,13 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f8aa74133
-DTSTAMP;TZID=Europe/Paris:20220223T100442
+UID:6217804914adb
+DTSTAMP;TZID=Europe/Paris:20220224T135537
 SUMMARY:non
-DESCRIPTION:Autem qui ut itaque unde. Aut dicta dolorem itaque mollitia aut
- em. Aut sit ducimus recusandae est.
-LOCATION:37\, chemin Eugène Gosselin\, 22223 GuilletVille\, GuilletVille
-DTSTART;TZID=Europe/Paris:20220221T072423
-DTEND;TZID=Europe/Paris:20220221T072423
+DESCRIPTION:Voluptatem architecto esse a qui officia officia fugit laudanti
+ um. Consequuntur laboriosam et nobis modi laborum. Quo architecto laborios
+ am hic fugiat quibusdam quia quo. Rerum delectus vero incidunt ut amet.
+LOCATION:chemin Morel\, 05807 Leleu\, Leleu
+DTSTART;TZID=Europe/Paris:20220222T143935
+DTEND;TZID=Europe/Paris:20220222T143935
 END:VEVENT
 END:VCALENDAR

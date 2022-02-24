@@ -17,13 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217345128bf2
-DTSTAMP;TZID=Europe/Paris:20220224T083129
+UID:621780491b1ca
+DTSTAMP;TZID=Europe/Paris:20220224T135537
 SUMMARY:distinctio
-DESCRIPTION:Ut id dicta ullam at qui natus doloremque. Non dolorem aut laud
- antium beatae aliquid asperiores quo. Officiis itaque sit sint atque.
-LOCATION:70\, rue de Blanchet\, 18529 Perez\, Perez
-DTSTART;TZID=Europe/Paris:20220222T174640
-DTEND;TZID=Europe/Paris:20220222T174640
+DESCRIPTION:Dolore quae delectus nihil est eum sint atque. Sunt expedita id
+  hic animi doloremque. Id exercitationem dolores id. Aut nostrum quidem ve
+ lit iste atque architecto nostrum tempore.
+LOCATION:7\, place de Bonnin\, 61 309 Devaux\, Devaux
+DTSTART;TZID=Europe/Paris:20220330T173354
+DTEND;TZID=Europe/Paris:20220330T173354
 END:VEVENT
 END:VCALENDAR

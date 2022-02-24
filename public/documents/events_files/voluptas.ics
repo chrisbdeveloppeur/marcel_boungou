@@ -17,15 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f7313db8d
-DTSTAMP;TZID=Europe/Paris:20220223T095825
+UID:6217803eb6161
+DTSTAMP;TZID=Europe/Paris:20220224T135526
 SUMMARY:voluptas
-DESCRIPTION:Nihil culpa est magnam odio praesentium expedita. Qui non omnis
-  velit tempora tempore voluptatibus. Quod et reprehenderit est qui illum. 
- Rerum ut nemo et a est. Sapiente totam temporibus omnis. A consequatur ass
- umenda dicta non. Accusamus sapiente dolores est maiores cum voluptates.
-LOCATION:99\, boulevard Christelle Remy\, 30 075 Ferrand\, Ferrand
-DTSTART;TZID=Europe/Paris:20220321T103156
-DTEND;TZID=Europe/Paris:20220321T103156
+DESCRIPTION:Consequatur blanditiis occaecati recusandae quia qui. Ex est ip
+ sum dolore optio et occaecati provident. Laborum fugiat rem a earum nisi d
+ olor non libero. Ut error ducimus id eius.
+LOCATION:rue Guibert\, 36 269 Gaillardnec\, Gaillardnec
+DTSTART;TZID=Europe/Paris:20220222T172745
+DTEND;TZID=Europe/Paris:20220222T172745
 END:VEVENT
 END:VCALENDAR

@@ -17,17 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621734872085b
-DTSTAMP;TZID=Europe/Paris:20220224T083223
+UID:62178822b37a0
+DTSTAMP;TZID=Europe/Paris:20220224T142906
 SUMMARY:maiores
-DESCRIPTION:Dolore ullam similique recusandae eaque cumque sit. Voluptas qu
- os ut maxime harum atque eligendi illo laborum. Pariatur ipsa et facilis n
- emo. Non deleniti est dolor ipsa aspernatur optio nihil. Et blanditiis ali
- as laudantium est vitae. Deleniti quasi natus dolor et. Velit dolores prov
- ident error quod est. Ea quibusdam in aspernatur quisquam voluptates sapie
- nte consequatur. Ut qui ullam earum quod eveniet doloribus.
-LOCATION:48\, chemin de Le Goff\, 52997 Jacob\, Jacob
-DTSTART;TZID=Europe/Paris:20220223T073105
-DTEND;TZID=Europe/Paris:20220223T073105
+DESCRIPTION:Sit ipsum et nisi voluptates quis rerum. Eligendi aspernatur et
+  autem nemo nemo. Nihil velit minus accusantium nobis reprehenderit sequi.
+LOCATION:48\, place Fernandez\, 61603 Blanchard\, Blanchard
+DTSTART;TZID=Europe/Paris:20220228T162349
+DTEND;TZID=Europe/Paris:20220228T162349
 END:VEVENT
 END:VCALENDAR

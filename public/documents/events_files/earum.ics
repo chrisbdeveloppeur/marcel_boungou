@@ -17,18 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f700a64a1
-DTSTAMP;TZID=Europe/Paris:20220223T095736
+UID:6217803ecc88a
+DTSTAMP;TZID=Europe/Paris:20220224T135526
 SUMMARY:earum
-DESCRIPTION:Qui aut molestiae et omnis quas enim. Illo voluptas qui assumen
- da dolorem. Excepturi laborum ea reiciendis et sed maiores. Sit sed non co
- nsequatur quod repellat. Et ex voluptates dolores voluptatum reiciendis. V
- eniam blanditiis quo molestias eius. Ducimus nihil ab et aperiam sunt reru
- m. Fuga voluptas quae occaecati nulla sequi. Ullam quod quos velit adipisc
- i. Fuga consequuntur veniam possimus. Deleniti qui ut nulla quidem animi o
- dit et.
-LOCATION:avenue Legrand\, 38 513 Godard\, Godard
-DTSTART;TZID=Europe/Paris:20220222T185352
-DTEND;TZID=Europe/Paris:20220222T185352
+DESCRIPTION:Voluptas accusamus tempore est ut. Dolorem autem iure nostrum n
+ am deleniti veritatis.
+LOCATION:27\, boulevard Anastasie Roux\, 12737 Parentboeuf\, Parentboeuf
+DTSTART;TZID=Europe/Paris:20220408T234407
+DTEND;TZID=Europe/Paris:20220408T234407
 END:VEVENT
 END:VCALENDAR
