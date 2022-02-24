@@ -3,6 +3,16 @@
 {% block title %}{% trans %}Discography{% endtrans %}{% endblock %}
 
 {% block body %}
+    <div class="section has-text-white">
+        <h1 class="title has-text-white">{% trans %}Discography{% endtrans %}</h1>
+        <h2 class="subtitle has-text-white">{% trans %}Welcome to the discography page of the artist Marcel BOUNGOU{% endtrans %}</h2>
+        <p>
+            {% trans %}Find all the musical collections, from the great classics to the most recent productions, including the essentials{% endtrans %}
+            <br>
+            {% trans %}Filter your search by clicking on an Album or by using the search bar...{% endtrans %}
+        </p>
+        <input class="input mt-3" type="text" id="searchInput" onkeyup="searchFilter()" placeholder="{% trans %}Type a song here{% endtrans %}">
+    </div>
     {{ include('discography/album_list.html.twig') }}
     {{ include('discography/musics_list.html.twig') }}
 {% endblock %}
@@ -73,9 +83,16 @@
                 musicContainer.style.filter = 'grayscale(1)';
                 musicText.classList.remove('text-shadow-success');
                 if (musicContainer.nextElementSibling){
-                    var nextBtnPlayAudio = musicContainer.nextElementSibling.querySelector('.play-btn');
+                    if (!musicContainer.nextElementSibling.classList.contains('is-hidden')) {
+                        var nextBtnPlayAudio = musicContainer.nextElementSibling.querySelector('.play-btn');
+                    }else {
+                        var nextBtnPlayAudio = musicContainer.parentElement.firstElementChild.querySelector('.play-btn');
+                    }
                 }else {
-                    var nextBtnPlayAudio = musicContainer.parentElement.firstElementChild.querySelector('.play-btn');
+                    if (!musicContainer.parentElement.firstElementChild.classList.contains('is-hidden')) {
+                        console.log(musicContainer.parentElement.firstElementChild.classList.contains('is-hidden'));
+                        var nextBtnPlayAudio = musicContainer.parentElement.firstElementChild.querySelector('.play-btn');
+                    }
                 }
                 nextBtnPlayAudio.click();
             });
@@ -129,6 +146,41 @@
             }
         }
         {#                               #}
+
+
+        {# SCRIPT POUR BARRE DE RECHERCHE FILTRE JS #}
+        function searchFilter() {
+            // Declare variables
+            var input, filter, albumName, musicName, albumTxtValue, musicTxtValue, musicContainer;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+
+            musicContainer = document.querySelectorAll('.music-container');
+
+            // Loop through all list items, and hide those who don't match the search query
+            musicContainer.forEach(function (container) {
+                albumName = container.querySelector('.album-name');
+                musicName = container.querySelector('.music-name');
+                albumTxtValue = albumName.textContent || albumName.innerText;
+                musicTxtValue = musicName.textContent || musicName.innerText;
+                if ( (albumTxtValue.toUpperCase().indexOf(filter) > -1) || (musicTxtValue.toUpperCase().indexOf(filter) > -1) ) {
+                    container.classList.remove('is-hidden');
+                    container.classList.replace('opacity0', 'opacity100')
+                } else {
+                    container.classList.add('is-hidden');
+                    container.classList.replace('opacity100', 'opacity0')
+                }
+            });
+        }
+        {#                               #}
+
+        {# SCRIPT ANCRAGE ALBUM / MUSIQUES #}
+        function searchAncrage(link) {
+            var input = document.getElementById('searchInput');
+            var ancrageTxt = link.getAttribute('data-href');
+            input.value = ancrageTxt;
+            searchFilter();
+        }
 
 
     </script>
