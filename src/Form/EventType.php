@@ -36,7 +36,7 @@ class EventType extends AbstractType
                 'label' => $this->translator->trans('Name of the event'),
             ])
             ->add('datetime', DateTimeType::class,[
-//                'required' => true,
+                'required' => false,
                 'label' => $this->translator->trans('Select the date'),
                 'attr' => [
                     'class' => 'input has-text-centered',

@@ -74,10 +74,21 @@
     {% elseif child.vars.block_prefixes[1] == 'file' or child.vars.block_prefixes[1] == 'vich_file' %}
 {#        {{ form_widget(child) }}#}
         {% if form.vars.name == 'event' %}
-            {% if event is defined and event.imageFile %}
-                <figure class="is-flex is-justify-content-center is-relative">
+            {% if event is defined and event.image %}
+                <figure class="image is-2by1 is-relative">
                     <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="{{ event.image }}">
-                    <a href="{{ path('events_image_delete', {'id': event.id}) }}" class="delete is-large" style="position: absolute;right: .5rem;top: .5rem;"></a>
+                    <div class="buttons"  style="position: absolute;right: .5rem;top: .5rem;">
+                        <a href="{{ vich_uploader_asset(event, 'imageFile') }}" class="button is-info is-rounded px-3 py-3 is-small" download="{{ event.image }}" title="{% trans %}Download image{% endtrans %}">
+                            <span class="icon">
+                                <i class="fas fa-lg fa-download"></i>
+                            </span>
+                        </a>
+                        <a href="{{ path('events_image_delete', {'id': event.id}) }}" class="button is-danger is-rounded px-3 py-3 is-small" title="{% trans %}Delete image{% endtrans %}" onclick="return confirm({% trans %}'Are you sure you want to delete the image?'{% endtrans %})">
+                            <span class="icon">
+                                <i class="fas fa-lg fa-times"></i>
+                            </span>
+                        </a>
+                    </div>
                 </figure>
             {% endif %}
         {% elseif form.vars.name == 'album' %}
