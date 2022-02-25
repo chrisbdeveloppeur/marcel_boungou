@@ -312,7 +312,6 @@ class Event
 
     public function getTagsInArray()
     {
-//        $tagFormatted = strtolower(preg_replace('~[\\\\/:*?"<>|()&, \']~','',$tag));
         $this->array_tags = explode(",",$this->tags);
         return $this->array_tags;
     }

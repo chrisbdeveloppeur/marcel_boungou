@@ -108,7 +108,9 @@
                         <div class="has-background-black px-2 px-2">
                             <div class="tags is-justify-content-end">
                                 {% for tag in event.tagsinarray %}
-                                    <a class="tag is-success" href="#{{ tag }}">#{{ tag }}</a>
+                                    {% if tag %}
+                                        <a class="tag is-success" href="#{{ tag }}">#{{ tag }}</a>
+                                    {% endif %}
                                 {% endfor %}
                             </div>
                         </div>

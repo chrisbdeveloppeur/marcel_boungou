@@ -37,7 +37,9 @@
                 </div>
                 <div class="tags is-justify-content-end" style="z-index: ">
                     {% for tag in event.tagsinarray %}
-                        <a class="tag is-success" href="#{{ tag }}">#{{ tag }}</a>
+                        {% if tag %}
+                            <a class="tag is-success" href="#{{ tag }}">#{{ tag }}</a>
+                        {% endif %}
                     {% endfor %}
                 </div>
             </div>

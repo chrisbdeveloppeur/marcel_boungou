@@ -28,6 +28,20 @@
     {% if musics|length > 0 %}
         {{ include('discography/musics_list.html.twig') }}
     {% endif %}
+
+    <div class="container has-text-white is-flex-tablet">
+        <div class="column is-half-tablet">
+            <h3 class="title has-text-white">Envie d'écouter sans limite ?</h3>
+            <p>{% trans %}Rendez-vous sur la page boutique afin de soutenir l'artiste et vous procurer du contenu exclusif{% endtrans %}</p>
+            <a href="#" class="button is-fullwidth is-success">{% trans %}boutique{% endtrans %}</a>
+        </div>
+        <div class="column is-half-tablet">
+            <figure class="image is-1by1">
+                <img class="object-fit-contain" src="{{ asset('build/images/mb_cost_blue_1.4e43ac8e.jpg') }}" alt="">
+            </figure>
+        </div>
+    </div>
+
 {% endblock %}
 
 {% block javascripts %}

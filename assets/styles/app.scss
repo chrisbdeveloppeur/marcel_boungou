@@ -30,6 +30,8 @@ $navbar-dropdown-item-hover-color: $success;
 $navbar-item-hover-color: $success;
 $dropdown-divider-background-color: $white-layer;
 
+$card-radius: 0;
+
 .tag.is-active{
   background-color: $success !important;
 }
@@ -160,7 +162,9 @@ section.body{
 }
 
 
-
+.object-fit-contain{
+  object-fit: contain;
+}
 
 .music-container{
   filter: grayscale(1);
