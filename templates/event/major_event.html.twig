@@ -1,7 +1,7 @@
 {% set event = events|first %}
 {% if event %}
     <div class="column is-relative">
-        <h2 class="has-text-centered is-size-3 is-size-4-touch has-text-weight-bold next-event-logo is-uppercase has-background-success-light box-shadow-bulma-dark is-relative">
+        <h2 class="has-text-centered is-size-3 is-size-5-touch has-text-weight-bold next-event-logo is-uppercase has-background-success-light box-shadow-bulma-dark is-relative">
             {% if app.request.locale == 'fr' %}
                 <span style="--i:1">P</span>
                 <span style="--i:2">r</span>
@@ -45,7 +45,7 @@
                             {{ include('event/edit_event_button.html.twig') }}
                         {% endif %}
                         <div class="column has-background-success-light is-flex is-align-items-center is-justify-content-center" style="z-index: 1;">
-                            <h3 class="has-text-primary title has-text-weight-bold is-size-4-touch">
+                            <h3 class="has-text-primary title has-text-weight-bold is-size-4 is-size-6-touch">
                                 {{ event.title }}
                             </h3>
                         </div>
@@ -53,7 +53,7 @@
 
                             {% if event.ticketingLink %}
                                 <div class="column is-flex is-justify-content-center is-align-items-center rotationX scalup-hover transition-3ms">
-                                    <a href="{{ event.ticketingLink }}" target="_blank" class="button is-fullwidth is-height-100-percent is-success is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center is-size-4">
+                                    <a href="{{ event.ticketingLink }}" target="_blank" class="button is-fullwidth is-height-100-percent is-success is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center is-size-4 is-size-6-touch">
                                         <span class="icon is-large">
                                             <i class="fas fa-lg fa-ticket"></i>
                                         </span>
