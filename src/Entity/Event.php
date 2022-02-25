@@ -325,4 +325,8 @@ class Event
         return $this;
     }
 
+    public function getUpdatedAt(){
+        return $this->updatedAt;
+    }
+
 }

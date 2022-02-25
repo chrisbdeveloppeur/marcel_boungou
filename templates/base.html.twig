@@ -35,6 +35,9 @@
 
 {{ include('includes/flash_message.html.twig') }}
 
+{% if is_granted('ROLE_ADMIN') %}
+    {{ include('includes/admin_nav.html.twig') }}
+{% endif %}
 <section class="body is-flex-tablet is-justify-content-center is-align-items-center is-flex-direction-column">
     <div class="main-background" style="background: center / cover no-repeat url()">
         {% block main_background_img %}<img src="{{ asset('build/images/scene.e7204ad8.jpg') }}" alt="">{% endblock %}

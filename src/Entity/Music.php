@@ -140,4 +140,8 @@ class Music
         return $this->musicname;
     }
 
+    public function getUpdatedAt(){
+        return $this->updatedAt;
+    }
+
 }

@@ -1,21 +1,23 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Event index{% endblock %}
+{% block title %}{% trans %}Event index{% endtrans %}{% endblock %}
 
 {% block body %}
-    <h1>Event index</h1>
+
+<div class="column is-two-fifths-desktop is-two-thirds-tablet has-background-light">
+    <h1>{% trans %}Event index{% endtrans %}</h1>
 
     <table class="table">
         <thead>
             <tr>
-                <th>Title</th>
-                <th>Datetime</th>
-                <th>Country</th>
-                <th>City</th>
-                <th>Cp</th>
-                <th>Street</th>
-                <th>Ics_file</th>
-                <th>actions</th>
+                <th>{% trans %}Title{% endtrans %}</th>
+                <th>{% trans %}Datetime{% endtrans %}</th>
+                <th>{% trans %}Country{% endtrans %}</th>
+                <th>{% trans %}City{% endtrans %}</th>
+                <th>{% trans %}Post code{% endtrans %}</th>
+                <th>{% trans %}Street{% endtrans %}</th>
+                <th>{% trans %}Ics_file{% endtrans %}</th>
+                <th>{% trans %}Actions{% endtrans %}</th>
             </tr>
         </thead>
         <tbody>
@@ -29,17 +31,19 @@
                 <td>{{ event.street }}</td>
                 <td>{{ event.icsFile }}</td>
                 <td>
-                    <a href="{{ path('events_show', {'id': event.id}) }}">show</a>
-                    <a href="{{ path('events_edit', {'id': event.id}) }}">edit</a>
+                    <a href="{{ path('events_show', {'id': event.id}) }}">{% trans %}show{% endtrans %}</a>
+                    <a href="{{ path('events_edit', {'id': event.id}) }}">{% trans %}edit{% endtrans %}</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="9">no records found</td>
+                <td colspan="9">{% trans %}no records found{% endtrans %}</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href="{{ path('events_new') }}">Create new</a>
+    <a href="{{ path('events_new') }}">{% trans %}Create new{% endtrans %}</a>
+
+</div>
 {% endblock %}

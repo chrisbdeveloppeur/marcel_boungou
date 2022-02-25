@@ -4,14 +4,6 @@
 
 {% block body %}
     <div class="section has-text-white">
-        {% if is_granted('ROLE_ADMIN') %}
-            <div class="column px-0">
-                <div class="buttons">
-                    <a href="{{ path('album_index') }}" class="button is-success is-light is-fullwidth">{% trans %}Manage Albums{% endtrans %}</a>
-                    <a href="{{ path('music_index') }}" class="button is-success is-light is-fullwidth">{% trans %}Manage Musics{% endtrans %}</a>
-                </div>
-            </div>
-        {% endif %}
         <h1 class="title has-text-white">{% trans %}Discography{% endtrans %}</h1>
         <h2 class="subtitle has-text-white">{% trans %}Welcome to the discography page of the artist Marcel BOUNGOU{% endtrans %}</h2>
         <p>
