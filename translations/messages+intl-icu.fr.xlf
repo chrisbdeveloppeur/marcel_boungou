@@ -685,6 +685,154 @@
         <source>Add song</source>
         <target>Ajouter une chanson</target>
       </trans-unit>
+      <trans-unit id="vJcbNdc" resname="Désinscription effecuté avec succès pour le mail : ">
+        <source>Désinscription effecuté avec succès pour le mail : </source>
+        <target>__Désinscription effecuté avec succès pour le mail : </target>
+      </trans-unit>
+      <trans-unit id="fl2pzk2" resname="Album index">
+        <source>Album index</source>
+        <target>Liste des Albums</target>
+      </trans-unit>
+      <trans-unit id="3NHVIj9" resname="Name">
+        <source>Name</source>
+        <target>Nom</target>
+      </trans-unit>
+      <trans-unit id="ifaDJWD" resname="Year">
+        <source>Year</source>
+        <target>Année</target>
+      </trans-unit>
+      <trans-unit id="hmTYo3I" resname="Feat">
+        <source>Feat</source>
+        <target>Feat</target>
+      </trans-unit>
+      <trans-unit id="Kw3N1AA" resname="actions">
+        <source>actions</source>
+        <target>Actions</target>
+      </trans-unit>
+      <trans-unit id="HGMzUJ3" resname="show">
+        <source>show</source>
+        <target>Détails</target>
+      </trans-unit>
+      <trans-unit id="8F6EDgB" resname="Album">
+        <source>Album</source>
+        <target>Album</target>
+      </trans-unit>
+      <trans-unit id="G1mronO" resname="Image file">
+        <source>Image file</source>
+        <target>Fichier image</target>
+      </trans-unit>
+      <trans-unit id="kzlaVNr" resname="Rendez-vous sur la page boutique afin de soutenir l'artiste et vous procurer du contenu exclusif">
+        <source>Rendez-vous sur la page boutique afin de soutenir l'artiste et vous procurer du contenu exclusif</source>
+        <target>__Rendez-vous sur la page boutique afin de soutenir l'artiste et vous procurer du contenu exclusif</target>
+      </trans-unit>
+      <trans-unit id="Z3k9Fk3" resname="boutique">
+        <source>boutique</source>
+        <target>Shop</target>
+      </trans-unit>
+      <trans-unit id="LGQ9wcB" resname="Event index">
+        <source>Event index</source>
+        <target>Liste des événements</target>
+      </trans-unit>
+      <trans-unit id="fozSBW2" resname="Title">
+        <source>Title</source>
+        <target>Titre</target>
+      </trans-unit>
+      <trans-unit id="2Hl4SgF" resname="Datetime">
+        <source>Datetime</source>
+        <target>Date</target>
+      </trans-unit>
+      <trans-unit id="_nUxZic" resname="Post code">
+        <source>Post code</source>
+        <target>Code postal</target>
+      </trans-unit>
+      <trans-unit id="xmZZHfB" resname="Street">
+        <source>Street</source>
+        <target>Rue</target>
+      </trans-unit>
+      <trans-unit id="8S5t_Am" resname="Ics_file">
+        <source>Ics_file</source>
+        <target>Ics_file</target>
+      </trans-unit>
+      <trans-unit id="bHVxKLH" resname="Manage Events">
+        <source>Manage Events</source>
+        <target>Gestion des événement</target>
+      </trans-unit>
+      <trans-unit id="wVYvRBr" resname="Manage Albums">
+        <source>Manage Albums</source>
+        <target>Gestion des Albums</target>
+      </trans-unit>
+      <trans-unit id="K_RN..i" resname="Manage Musics">
+        <source>Manage Musics</source>
+        <target>Gestion des musiques</target>
+      </trans-unit>
+      <trans-unit id="8Pbt0BW" resname="Manage Managers">
+        <source>Manage Managers</source>
+        <target>Gestion des managers</target>
+      </trans-unit>
+      <trans-unit id="pbywDoC" resname="Vous ne voulez plus recevoir de mail en provenance de www.marcel-boungou.com">
+        <source>Vous ne voulez plus recevoir de mail en provenance de www.marcel-boungou.com</source>
+        <target>__Vous ne voulez plus recevoir de mail en provenance de www.marcel-boungou.com</target>
+      </trans-unit>
+      <trans-unit id="CtvaNN9" resname="se désinscrire">
+        <source>se désinscrire</source>
+        <target>__se désinscrire</target>
+      </trans-unit>
+      <trans-unit id="WaDzXQi" resname="Music list">
+        <source>Music list</source>
+        <target>Liste des musiques</target>
+      </trans-unit>
+      <trans-unit id="UACc4dp" resname="File">
+        <source>File</source>
+        <target>Fichier</target>
+      </trans-unit>
+      <trans-unit id="brALSyY" resname="Music">
+        <source>Music</source>
+        <target>Musique</target>
+      </trans-unit>
+      <trans-unit id="eOeSABC" resname="Titre">
+        <source>Titre</source>
+        <target>__Titre</target>
+      </trans-unit>
+      <trans-unit id="XaaXJvv" resname="Add an album">
+        <source>Add an album</source>
+        <target>Ajouter un Album</target>
+      </trans-unit>
+      <trans-unit id="OsV13M4" resname="Download image">
+        <source>Download image</source>
+        <target>Télécharger l'image</target>
+      </trans-unit>
+      <trans-unit id="_7yY7mO" resname="Delete image">
+        <source>Delete image</source>
+        <target>Supprimer l'image</target>
+      </trans-unit>
+      <trans-unit id="gFQm07Y" resname="'Are you sure you want to delete the image?'">
+        <source>'Are you sure you want to delete the image?'</source>
+        <target>'Êtes-vous sûr de vouloir supprimer l'image?'</target>
+      </trans-unit>
+      <trans-unit id="HX4t1uQ" resname="Current file :">
+        <source>Current file :</source>
+        <target>Fichier actuel :</target>
+      </trans-unit>
+      <trans-unit id="LsOmrmU" resname="Unsubscribe successfully for email : ">
+        <source>Unsubscribe successfully for email : </source>
+        <target>Se désabonner avec succès pour l'e-mail : </target>
+      </trans-unit>
+      <trans-unit id="N1Ez4hs" resname="Want to listen without limit">
+        <source>Want to listen without limit</source>
+        <target>Envie d'écouter sans limite</target>
+      </trans-unit>
+      <trans-unit id="JWFcALg" resname="Go to the shop page to support the artist and get exclusive content">
+        <source>Go to the shop page to support the artist and get exclusive content</source>
+        <target>Rendez-vous sur la page de la boutique pour soutenir l'artiste et obtenir du contenu exclusif</target>
+      </trans-unit>
+      <trans-unit id="oQ5VD6c" resname="You no longer want to receive emails from www.marcel-boungou.com">
+        <source>You no longer want to receive emails from www.marcel-boungou.com</source>
+        <target>Vous ne souhaitez plus recevoir d'e-mails de www.marcel-boungou.com</target>
+      </trans-unit>
+      <trans-unit id="PpLvt2Z" resname="Unsubscribe">
+        <source>Unsubscribe</source>
+        <target>Se désabonner</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
