@@ -17,13 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fb825b455
-DTSTAMP;TZID=Europe/Paris:20220224T224122
+UID:621b5a85079f2
+DTSTAMP;TZID=Europe/Paris:20220227T120333
 SUMMARY:impedit
-DESCRIPTION:Doloremque eum et cum in. Enim nulla ipsam inventore consequatu
- r. Dolorum dolor dicta tempore sit.
-LOCATION:92\, boulevard de Blot\, 73 329 Carpentier\, Carpentier
-DTSTART;TZID=Europe/Paris:20220408T173847
-DTEND;TZID=Europe/Paris:20220408T173847
+DESCRIPTION:Vel consequuntur sed dolores unde aliquid. Sunt in sed itaque n
+ ecessitatibus. Tenetur laudantium aut et et atque pariatur modi. Quia duci
+ mus sed sint nam vero ut maxime necessitatibus. Officia dolores consequunt
+ ur aliquid ex ipsam rem enim ut.
+LOCATION:rue Didier\, 89 930 Duvalboeuf\, Duvalboeuf
+DTSTART;TZID=Europe/Paris:20220228T060843
+DTEND;TZID=Europe/Paris:20220228T060843
 END:VEVENT
 END:VCALENDAR

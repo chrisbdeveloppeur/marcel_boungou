@@ -17,15 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fcc319987
-DTSTAMP;TZID=Europe/Paris:20220224T224643
+UID:621b5a85066e4
+DTSTAMP;TZID=Europe/Paris:20220227T120333
 SUMMARY:a
-DESCRIPTION:Ipsa temporibus tempore est animi accusantium deleniti mollitia
- . Ex quisquam tenetur beatae et natus vel. Qui sint dolores labore. Totam 
- quia temporibus et error quasi excepturi. Saepe perspiciatis autem et nost
- rum ea ut.
-LOCATION:825\, avenue Denis Lebreton\, 43204 Mauricenec\, Mauricenec
-DTSTART;TZID=Europe/Paris:20220223T204406
-DTEND;TZID=Europe/Paris:20220223T204406
+DESCRIPTION:Sit aut et eveniet delectus. Est eligendi ut culpa voluptatem. 
+ Odit perferendis qui sed sunt soluta dolorum. Qui autem dolor minus perfer
+ endis dignissimos qui praesentium. Tenetur sapiente ullam tempora nobis so
+ luta. Aspernatur architecto quae laborum ipsam itaque. Doloremque enim con
+ sequatur est. Laborum est temporibus consequatur maxime suscipit.
+LOCATION:14\, chemin Brun\, 58925 Auger\, Auger
+DTSTART;TZID=Europe/Paris:20220226T223143
+DTEND;TZID=Europe/Paris:20220226T223143
 END:VEVENT
 END:VCALENDAR

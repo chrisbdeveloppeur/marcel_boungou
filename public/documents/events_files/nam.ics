@@ -17,16 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621779297eb6a
-DTSTAMP;TZID=Europe/Paris:20220224T132513
+UID:621b5f96cae41
+DTSTAMP;TZID=Europe/Paris:20220227T122510
 SUMMARY:nam
-DESCRIPTION:Officiis dolores veritatis voluptates temporibus. Repudiandae r
- erum qui ipsam quia similique. Quae quidem magnam et non. Quo atque archit
- ecto numquam aut deleniti sint. Natus cum voluptatum deserunt omnis et hic
- . Ut eligendi asperiores veniam quia natus et excepturi. Molestias qui ull
- am sit in culpa consequatur.
-LOCATION:54\, rue de Chauvin\, 47347 Beguedan\, Beguedan
-DTSTART;TZID=Europe/Paris:20220222T024446
-DTEND;TZID=Europe/Paris:20220222T024446
+DESCRIPTION:Animi sunt autem debitis porro aliquid. Sed quae eum quas qui. 
+ Qui sapiente voluptas porro quasi. In architecto ut et ut.
+LOCATION:place de Brunel\, 39177 RocheVille\, RocheVille
+DTSTART;TZID=Europe/Paris:20220225T020409
+DTEND;TZID=Europe/Paris:20220225T020409
 END:VEVENT
 END:VCALENDAR

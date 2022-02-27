@@ -17,16 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62178822b6674
-DTSTAMP;TZID=Europe/Paris:20220224T142906
+UID:621b52bd3dbba
+DTSTAMP;TZID=Europe/Paris:20220227T113021
 SUMMARY:dolor
-DESCRIPTION:Delectus iste et sunt quas totam eos. Iste ea omnis id similiqu
- e voluptates dolorem sunt quia. Nostrum est aut facilis qui nemo provident
-  reiciendis. Quis autem quibusdam rerum. Non velit ullam quis rerum reicie
- ndis recusandae dolorum. Rerum sed sint ut est accusantium doloribus error
- . Tempore blanditiis aliquid maiores esse. Itaque omnis et repellat et ea.
-LOCATION:8\, place Laurent Peltier\, 40332 Peltier\, Peltier
-DTSTART;TZID=Europe/Paris:20220322T055127
-DTEND;TZID=Europe/Paris:20220322T055127
+DESCRIPTION:Aliquam quia tempora quo earum est earum placeat. Minus provide
+ nt quia eaque quos. Enim quod recusandae voluptatem cupiditate harum labor
+ um nihil. Omnis saepe eos assumenda maiores. Sunt qui nam est vel cum ab a
+ ut. Quod suscipit incidunt voluptatem.
+LOCATION:4\, rue Jean\, 00 288 Hamonboeuf\, Hamonboeuf
+DTSTART;TZID=Europe/Paris:20220421T000921
+DTEND;TZID=Europe/Paris:20220421T000921
 END:VEVENT
 END:VCALENDAR

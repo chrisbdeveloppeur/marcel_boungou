@@ -17,14 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621780491c7a7
-DTSTAMP;TZID=Europe/Paris:20220224T135537
+UID:621b5e46d4587
+DTSTAMP;TZID=Europe/Paris:20220227T121934
 SUMMARY:facilis
-DESCRIPTION:Possimus quos sunt sed deleniti modi. Et ratione non temporibus
- . Voluptatibus eos blanditiis ea similique quia. Voluptas eum voluptates a
- rchitecto accusamus. Ut ullam doloribus eveniet ipsa fugiat quam sequi.
-LOCATION:81\, rue de Lemaitre\, 49 604 Lopez\, Lopez
-DTSTART;TZID=Europe/Paris:20220418T182510
-DTEND;TZID=Europe/Paris:20220418T182510
+DESCRIPTION:Itaque et velit laudantium. Temporibus ut et ut corporis mollit
+ ia vel. Voluptas odit alias sit error inventore. Similique natus rerum dic
+ ta quos rem. Reiciendis rerum facere dolor quam.
+LOCATION:26\, impasse de Benoit\, 69401 Lacroix-les-Bains\, Lacroix-les-Bai
+ ns
+DTSTART;TZID=Europe/Paris:20220303T001103
+DTEND;TZID=Europe/Paris:20220303T001103
 END:VEVENT
 END:VCALENDAR

@@ -17,16 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217554607279
-DTSTAMP;TZID=Europe/Paris:20220224T105206
+UID:621b58b6bc5b1
+DTSTAMP;TZID=Europe/Paris:20220227T115550
 SUMMARY:vero
-DESCRIPTION:Necessitatibus voluptatem aut rerum iusto et et qui. Adipisci e
- t ut delectus sed laboriosam molestias consequatur. Nobis quaerat dolore o
- fficiis ratione qui quos. At voluptatum quis accusantium aliquid. Autem vo
- luptas aliquam nihil quos iure. Accusantium id veritatis voluptas unde odi
- o rerum. Officiis sequi et maxime autem aliquid.
-LOCATION:place Noël Laine\, 61105 Clerc\, Clerc
-DTSTART;TZID=Europe/Paris:20220418T030027
-DTEND;TZID=Europe/Paris:20220418T030027
+DESCRIPTION:Autem ad velit qui nihil dolor fugiat ullam. Necessitatibus a i
+ d quas sint est. Ut tempore error consectetur dolorem veritatis animi quae
+  esse.
+LOCATION:avenue Brigitte Georges\, 38648 Lenoir\, Lenoir
+DTSTART;TZID=Europe/Paris:20220312T020930
+DTEND;TZID=Europe/Paris:20220312T020930
 END:VEVENT
 END:VCALENDAR

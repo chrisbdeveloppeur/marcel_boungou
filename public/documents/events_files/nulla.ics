@@ -17,15 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fca907b15
-DTSTAMP;TZID=Europe/Paris:20220224T224617
+UID:621b5f96de945
+DTSTAMP;TZID=Europe/Paris:20220227T122510
 SUMMARY:nulla
-DESCRIPTION:Sed placeat est voluptates eos. Dolorem id numquam sit molestia
- s quas hic. Est recusandae tempore ut distinctio eaque velit amet. Et quas
-  porro sed dolor rerum eligendi.
-LOCATION:456\, impasse de Teixeira\, 34143 Riviere-sur-Mer\, Riviere-sur-Me
- r
-DTSTART;TZID=Europe/Paris:20220222T122850
-DTEND;TZID=Europe/Paris:20220222T122850
+DESCRIPTION:Deserunt quam voluptas eos et sit ducimus. Qui aut dolorem et d
+ ebitis quibusdam. Eum dolore et dolorum.
+LOCATION:54\, place Margot Menard\, 97 785 GimenezBourg\, GimenezBourg
+DTSTART;TZID=Europe/Paris:20220325T180634
+DTEND;TZID=Europe/Paris:20220325T180634
 END:VEVENT
 END:VCALENDAR

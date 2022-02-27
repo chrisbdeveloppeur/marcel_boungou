@@ -17,15 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fb6ec07e6
-DTSTAMP;TZID=Europe/Paris:20220224T224102
+UID:621b58b6b4424
+DTSTAMP;TZID=Europe/Paris:20220227T115550
 SUMMARY:alias
-DESCRIPTION:Dolore et qui vel quasi sunt. Delectus nostrum animi dolorem no
- n. Omnis laudantium odit quia. Doloribus ex eligendi sunt odit. Consequatu
- r quis consequuntur consequuntur rerum. Deserunt laudantium non sunt place
- at. Ducimus provident officia qui est aut reprehenderit doloribus.
-LOCATION:80\, place de Albert\, 99 744 Henry-la-Forêt\, Henry-la-Forêt
-DTSTART;TZID=Europe/Paris:20220315T024746
-DTEND;TZID=Europe/Paris:20220315T024746
+DESCRIPTION:Delectus numquam reprehenderit neque possimus illum. Accusantiu
+ m est sed porro magnam cupiditate nemo deserunt.
+LOCATION:32\, place Victoire Robert\, 36563 GrosVille\, GrosVille
+DTSTART;TZID=Europe/Paris:20220225T023703
+DTEND;TZID=Europe/Paris:20220225T023703
 END:VEVENT
 END:VCALENDAR

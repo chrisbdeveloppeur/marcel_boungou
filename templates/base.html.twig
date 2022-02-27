@@ -39,11 +39,13 @@
     {{ include('includes/admin_nav.html.twig') }}
 {% endif %}
 <section class="body">
-    <div class="main-background" style="background: center / cover no-repeat url()">
+    <div class="main-background">
         {% block main_background_img %}<img src="{{ asset('build/images/scene.e7204ad8.jpg') }}" alt="">{% endblock %}
         <div class="main-background-layer"></div>
     </div>
-    {% block body %}{% endblock %}
+    <div class="container is-flex-tablet is-flex-direction-column is-justify-content-center is-align-items-center">
+        {% block body %}{% endblock %}
+    </div>
 </section>
 
 {% block arrow_up %}

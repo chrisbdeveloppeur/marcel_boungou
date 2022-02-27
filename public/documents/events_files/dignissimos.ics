@@ -17,14 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f8aa7884c
-DTSTAMP;TZID=Europe/Paris:20220223T100442
+UID:621b5a850b7da
+DTSTAMP;TZID=Europe/Paris:20220227T120333
 SUMMARY:dignissimos
-DESCRIPTION:Voluptatem aut est nesciunt facilis numquam. Quaerat accusamus 
- et est rem dolorem soluta accusantium. In excepturi voluptatem ut sit vel 
- ratione. Necessitatibus id repudiandae cupiditate perspiciatis.
-LOCATION:914\, rue Charles\, 95241 Philippe\, Philippe
-DTSTART;TZID=Europe/Paris:20220308T060050
-DTEND;TZID=Europe/Paris:20220308T060050
+DESCRIPTION:Est ea commodi corrupti. Reiciendis et iusto commodi. Nam tempo
+ re temporibus saepe totam.
+LOCATION:174\, impasse de Munoz\, 77 167 Delattre\, Delattre
+DTSTART;TZID=Europe/Paris:20220312T175356
+DTEND;TZID=Europe/Paris:20220312T175356
 END:VEVENT
 END:VCALENDAR

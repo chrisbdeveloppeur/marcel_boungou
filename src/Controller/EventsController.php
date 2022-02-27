@@ -147,7 +147,7 @@ class EventsController extends AbstractController
     /**
      * @Route("/reminder/add/{id}", name="add_email_reminder", methods={"POST","GET"})
      */
-    public function addEmailReminder($id, EventRepository $eventRepository, TranslatorInterface $translator, EntityManagerInterface $em){
+    public function addEmailReminder($id, EventRepository $eventRepository, TranslatorInterface $translator, EntityManagerInterface $em, Request $request){
         $event = $eventRepository->find($id);
 
         if ($_POST){
@@ -163,7 +163,8 @@ class EventsController extends AbstractController
                 $this->addFlash('success', $msg);
             }
 
-            return $this->redirectToRoute('events_home');
+            $previousUrl = $request->headers->get('referer');
+            return $this->redirect($previousUrl);
         }
     }
 

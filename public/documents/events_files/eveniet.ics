@@ -17,15 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621780491a62d
-DTSTAMP;TZID=Europe/Paris:20220224T135537
+UID:621b5f96e0ec9
+DTSTAMP;TZID=Europe/Paris:20220227T122510
 SUMMARY:eveniet
-DESCRIPTION:Quidem tempore quia deserunt ullam. Ullam illo totam occaecati 
- illum deserunt harum. Ratione voluptas tempore ipsum optio quidem. Sit vel
- it tempore consequatur. Omnis qui quis quia dolores voluptates magni. Blan
- ditiis possimus dolor ut. Ex et magni omnis.
-LOCATION:471\, place de Martineau\, 07624 Allard\, Allard
-DTSTART;TZID=Europe/Paris:20220322T085149
-DTEND;TZID=Europe/Paris:20220322T085149
+DESCRIPTION:Fugiat qui sunt non rerum sit voluptatibus. Consequatur eum sus
+ cipit voluptas consectetur. Rerum nesciunt iure dolor.
+LOCATION:8\, rue Julien Moreno\, 60 484 Parent\, Parent
+DTSTART;TZID=Europe/Paris:20220411T233132
+DTEND;TZID=Europe/Paris:20220411T233132
 END:VEVENT
 END:VCALENDAR

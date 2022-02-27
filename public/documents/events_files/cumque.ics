@@ -17,14 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fb5c461e1
-DTSTAMP;TZID=Europe/Paris:20220224T224044
+UID:621b52bd3670f
+DTSTAMP;TZID=Europe/Paris:20220227T113021
 SUMMARY:cumque
-DESCRIPTION:Est veritatis earum blanditiis exercitationem excepturi quaerat
-  explicabo et. Et omnis suscipit aperiam ut iure pariatur quisquam. Offici
- is qui et et id velit. Omnis quae asperiores nesciunt non velit maiores.
-LOCATION:41\, rue de Levy\, 73 873 Baron-sur-Descamps\, Baron-sur-Descamps
-DTSTART;TZID=Europe/Paris:20220315T111539
-DTEND;TZID=Europe/Paris:20220315T111539
+DESCRIPTION:Aliquid qui minima nobis voluptatem voluptas sit. Et veniam et 
+ odio illo omnis dolore. Consequuntur fugiat numquam eum totam et laudantiu
+ m doloribus.
+LOCATION:70\, chemin Richard Bouvet\, 93193 Guillouboeuf\, Guillouboeuf
+DTSTART;TZID=Europe/Paris:20220312T144419
+DTEND;TZID=Europe/Paris:20220312T144419
 END:VEVENT
 END:VCALENDAR

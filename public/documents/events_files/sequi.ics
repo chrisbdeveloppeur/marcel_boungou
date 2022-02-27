@@ -17,18 +17,18 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f88d1ab44
-DTSTAMP;TZID=Europe/Paris:20220223T100413
+UID:621b58db6a50d
+DTSTAMP;TZID=Europe/Paris:20220227T115627
 SUMMARY:sequi
-DESCRIPTION:Quam quae quasi aspernatur quia enim non pariatur. Tempore quas
-  et placeat sint aut ex est. Sed explicabo soluta nisi animi dolor commodi
- . Perspiciatis non rerum id sit quis. Ut aut amet ut ut enim odit. Non com
- modi possimus commodi. Corrupti corporis alias occaecati ipsa veritatis po
- ssimus. Facere quibusdam consectetur quasi ut minus. Minima molestiae offi
- ciis quia nisi.
-LOCATION:358\, impasse Margot Gallet\, 82 743 Langlois-sur-Teixeira\, Langl
- ois-sur-Teixeira
-DTSTART;TZID=Europe/Paris:20220221T010715
-DTEND;TZID=Europe/Paris:20220221T010715
+DESCRIPTION:Distinctio ut rerum aliquid in aut veritatis neque. A incidunt 
+ doloribus quis voluptatum accusamus. Cum sit perferendis unde non saepe el
+ igendi dolorum. Culpa et repudiandae natus doloremque dolor et. Voluptatum
+  optio sit commodi sint quo. Et officiis omnis et consectetur. Et rerum vi
+ tae libero maxime atque asperiores. Expedita velit quas soluta aliquid et 
+ aut vitae sapiente. Ut pariatur perspiciatis laudantium. Dolore omnis earu
+ m sed sed. Sit et omnis officiis in corporis non.
+LOCATION:39\, rue de Lemaitre\, 04674 Lecoq\, Lecoq
+DTSTART;TZID=Europe/Paris:20220226T125602
+DTEND;TZID=Europe/Paris:20220226T125602
 END:VEVENT
 END:VCALENDAR

@@ -17,14 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217804916965
-DTSTAMP;TZID=Europe/Paris:20220224T135537
+UID:621b58b6bafdb
+DTSTAMP;TZID=Europe/Paris:20220227T115550
 SUMMARY:quia
-DESCRIPTION:Quia qui fugit qui aut fuga vel occaecati. Rerum accusantium mo
- lestiae debitis fugiat facere et. Molestiae deleniti neque nesciunt numqua
- m molestiae officia iure.
-LOCATION:chemin de Bazin\, 41070 DiazVille\, DiazVille
-DTSTART;TZID=Europe/Paris:20220225T052438
-DTEND;TZID=Europe/Paris:20220225T052438
+DESCRIPTION:Fuga explicabo voluptatem ipsam odio officiis quia veritatis. R
+ epudiandae est incidunt et tempore corporis. Reprehenderit aliquid molliti
+ a dolorem architecto qui repellat. Possimus voluptatem et consequatur id a
+ ut et et. Doloremque et sapiente ad dolor ut qui. Ut eius dolores eligendi
+  laboriosam sint.
+LOCATION:29\, rue de Guillon\, 94 359 Buisson\, Buisson
+DTSTART;TZID=Europe/Paris:20220307T104619
+DTEND;TZID=Europe/Paris:20220307T104619
 END:VEVENT
 END:VCALENDAR

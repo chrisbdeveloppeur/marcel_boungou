@@ -251,7 +251,7 @@ class Event
         $array = $this->mails_to_remind;
         if (in_array($mail, $array)){
             if (($key = array_search($mail, $array, true)) !== false) {
-                array_splice($array,$key);
+                unset($array[$key]);
             }
             $this->mails_to_remind = $array;
         }

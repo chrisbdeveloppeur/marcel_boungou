@@ -17,17 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621514d9d2ca8
-DTSTAMP;TZID=Europe/Paris:20220222T175241
+UID:621b5f96d739a
+DTSTAMP;TZID=Europe/Paris:20220227T122510
 SUMMARY:tempora
-DESCRIPTION:Ut sit architecto voluptas repellendus placeat eos quos. Conseq
- uatur odit autem aspernatur sint repellat nesciunt. Quas culpa dicta ducim
- us earum perspiciatis qui numquam. Porro assumenda vero necessitatibus rep
- ellendus. Consequuntur velit quod consequatur. Aliquid voluptas voluptatib
- us quo quae. Labore est omnis sunt est nam cum libero in.
-LOCATION:63\, place Benoît Humbert\, 80 692 Marchand-sur-Mer\, Marchand-su
- r-Mer
-DTSTART;TZID=Europe/Paris:20220226T013705
-DTEND;TZID=Europe/Paris:20220226T013705
+DESCRIPTION:Maiores pariatur et molestias voluptatem hic. Ea sequi porro eo
+ s animi ullam nam ut voluptatem. Est quia unde dolor quo enim vero qui.
+LOCATION:2\, place Toussaint\, 65 886 Royer\, Royer
+DTSTART;TZID=Europe/Paris:20220226T233858
+DTEND;TZID=Europe/Paris:20220226T233858
 END:VEVENT
 END:VCALENDAR

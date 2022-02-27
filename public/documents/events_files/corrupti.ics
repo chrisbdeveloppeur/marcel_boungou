@@ -17,16 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62178822b2da9
-DTSTAMP;TZID=Europe/Paris:20220224T142906
+UID:621b5a60ca763
+DTSTAMP;TZID=Europe/Paris:20220227T120256
 SUMMARY:corrupti
-DESCRIPTION:Ea dignissimos molestias consequatur ipsum voluptatem. Sit tota
- m facilis delectus mollitia eius nostrum iusto. Architecto possimus offici
- is odio consequatur illum id minima. Asperiores aut voluptatem facere null
- a facilis. Non unde quisquam iure beatae magni. Eveniet totam dolores veli
- t architecto hic saepe dolor.
-LOCATION:10\, rue Louise Duhamel\, 22356 Thibault\, Thibault
-DTSTART;TZID=Europe/Paris:20220225T173606
-DTEND;TZID=Europe/Paris:20220225T173606
+DESCRIPTION:Qui sint quia velit ipsum. Ea iure est et. Eveniet excepturi ni
+ hil sunt consequuntur quis. Est voluptates ratione nam ut est exercitation
+ em. Et impedit aliquam sed ab. Nulla exercitationem dolores minus et. Erro
+ r itaque quasi consequatur perferendis modi officia alias. Et harum volupt
+ as quia repudiandae quidem.
+LOCATION:402\, boulevard Rousset\, 96 067 Brun-sur-Delorme\, Brun-sur-Delor
+ me
+DTSTART;TZID=Europe/Paris:20220226T031757
+DTEND;TZID=Europe/Paris:20220226T031757
 END:VEVENT
 END:VCALENDAR

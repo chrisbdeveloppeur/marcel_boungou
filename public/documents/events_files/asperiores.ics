@@ -17,16 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621771c0bbcd8
-DTSTAMP;TZID=Europe/Paris:20220224T125336
+UID:621b58b6c1b57
+DTSTAMP;TZID=Europe/Paris:20220227T115550
 SUMMARY:asperiores
-DESCRIPTION:Repellat id voluptates maiores veniam dolor. Quasi voluptas qui
- a a iste. Hic ut et autem quam aut. Vero modi aut iste qui sed modi harum 
- deleniti. Quis ut est mollitia aspernatur delectus. Quis quod animi ducimu
- s vitae placeat totam tenetur.
-LOCATION:192\, impasse Laetitia De Sousa\, 18364 Bouvet-sur-Marques\, Bouve
- t-sur-Marques
-DTSTART;TZID=Europe/Paris:20220330T185833
-DTEND;TZID=Europe/Paris:20220330T185833
+DESCRIPTION:Numquam sed quos ullam odio. Eius enim maxime quod sint cumque 
+ quibusdam. Praesentium natus accusantium dolores ea ratione architecto sit
+ . Ducimus eos libero architecto magnam et. Doloribus sint eos laudantium v
+ elit ea aut blanditiis. Recusandae nulla voluptate blanditiis qui eum.
+LOCATION:421\, place de Pierre\, 82543 Bodin\, Bodin
+DTSTART;TZID=Europe/Paris:20220411T143933
+DTEND;TZID=Europe/Paris:20220411T143933
 END:VEVENT
 END:VCALENDAR

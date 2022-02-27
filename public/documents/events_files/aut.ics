@@ -17,14 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fcc324d8d
-DTSTAMP;TZID=Europe/Paris:20220224T224643
+UID:621b5e46db240
+DTSTAMP;TZID=Europe/Paris:20220227T121934
 SUMMARY:aut
-DESCRIPTION:Qui est incidunt eum vel. Quisquam quis a corporis odit ratione
-  sunt. Et voluptatem voluptatem et et accusantium. Voluptatibus quia venia
- m autem.
-LOCATION:4\, place Adrien Wagner\, 69 129 Francois\, Francois
-DTSTART;TZID=Europe/Paris:20220418T101305
-DTEND;TZID=Europe/Paris:20220418T101305
+DESCRIPTION:Magnam qui consequuntur repellat dolorem consectetur natus rem.
+  Aut nihil quis necessitatibus omnis. Omnis cupiditate repudiandae quibusd
+ am aut qui. Animi delectus optio neque. Aut voluptate dolores reiciendis a
+ ccusamus atque ut porro veritatis.
+LOCATION:88\, avenue Laine\, 51449 Neveu-sur-Mer\, Neveu-sur-Mer
+DTSTART;TZID=Europe/Paris:20220402T224253
+DTEND;TZID=Europe/Paris:20220402T224253
 END:VEVENT
 END:VCALENDAR

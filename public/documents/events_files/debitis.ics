@@ -17,17 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f700977b0
-DTSTAMP;TZID=Europe/Paris:20220223T095736
+UID:621b5a85107e6
+DTSTAMP;TZID=Europe/Paris:20220227T120333
 SUMMARY:debitis
-DESCRIPTION:Quaerat doloribus ex nisi occaecati autem dignissimos nisi. Eni
- m numquam nesciunt quo velit. A dolore assumenda nostrum et. Aut dolor fug
- a qui corrupti. Sunt corporis neque natus optio. Inventore eum rem nihil v
- elit asperiores sint vel. Et cupiditate dolorem nihil. Eos eos eveniet per
- ferendis voluptate accusantium. Non consectetur saepe excepturi quidem et 
- repudiandae.
-LOCATION:chemin de Barthelemy\, 02 264 GuillonVille\, GuillonVille
-DTSTART;TZID=Europe/Paris:20220221T174842
-DTEND;TZID=Europe/Paris:20220221T174842
+DESCRIPTION:Molestias vel sed ea ut iusto perferendis. Distinctio minus qui
+ s et et.
+LOCATION:43\, place de Thibault\, 87787 Delahaye-sur-Carpentier\, Delahaye-
+ sur-Carpentier
+DTSTART;TZID=Europe/Paris:20220411T062301
+DTEND;TZID=Europe/Paris:20220411T062301
 END:VEVENT
 END:VCALENDAR

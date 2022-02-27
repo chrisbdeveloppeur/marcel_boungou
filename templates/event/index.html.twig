@@ -4,11 +4,12 @@
 
 {% block body %}
 
-<div class="column is-two-fifths-desktop is-two-thirds-tablet has-background-light">
-    <h1>{% trans %}Event index{% endtrans %}</h1>
 
-    <table class="table">
-        <thead>
+    <h1 class="title has-text-white">{% trans %}Event index{% endtrans %}</h1>
+
+    <div class="table-container">
+        <table class="table">
+            <thead>
             <tr>
                 <th>{% trans %}Title{% endtrans %}</th>
                 <th>{% trans %}Datetime{% endtrans %}</th>
@@ -19,31 +20,33 @@
                 <th>{% trans %}Ics_file{% endtrans %}</th>
                 <th>{% trans %}Actions{% endtrans %}</th>
             </tr>
-        </thead>
-        <tbody>
-        {% for event in events %}
-            <tr>
-                <td>{{ event.title }}</td>
-                <td>{{ event.datetime ? event.datetime|date('Y-m-d H:i:s') : '' }}</td>
-                <td>{{ event.country }}</td>
-                <td>{{ event.city }}</td>
-                <td>{{ event.cp }}</td>
-                <td>{{ event.street }}</td>
-                <td>{{ event.icsFile }}</td>
-                <td>
-                    <a href="{{ path('events_show', {'id': event.id}) }}">{% trans %}show{% endtrans %}</a>
-                    <a href="{{ path('events_edit', {'id': event.id}) }}">{% trans %}edit{% endtrans %}</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="9">{% trans %}no records found{% endtrans %}</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+            {% for event in events %}
+                <tr>
+                    <td>{{ event.title }}</td>
+                    <td>{{ event.datetime ? event.datetime|date('Y-m-d H:i:s') : '' }}</td>
+                    <td>{{ event.country }}</td>
+                    <td>{{ event.city }}</td>
+                    <td>{{ event.cp }}</td>
+                    <td>{{ event.street }}</td>
+                    <td>{{ event.icsFile }}</td>
+                    <td>
+                        <a href="{{ path('events_show', {'id': event.id}) }}">{% trans %}show{% endtrans %}</a>
+                        <a href="{{ path('events_edit', {'id': event.id}) }}">{% trans %}edit{% endtrans %}</a>
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="9">{% trans %}no records found{% endtrans %}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
 
-    <a href="{{ path('events_new') }}">{% trans %}Create new{% endtrans %}</a>
+    <div class="column">
+        <a class="button is-success" href="{{ path('events_new') }}">{% trans %}Create new{% endtrans %}</a>
+    </div>
 
-</div>
 {% endblock %}

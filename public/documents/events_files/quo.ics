@@ -17,16 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217804919c37
-DTSTAMP;TZID=Europe/Paris:20220224T135537
+UID:621b5a84f03cd
+DTSTAMP;TZID=Europe/Paris:20220227T120332
 SUMMARY:quo
-DESCRIPTION:Nesciunt enim mollitia harum velit eos est voluptatem. Itaque q
- uis rerum magnam et. Aut dolores numquam eos aut rerum et corrupti. Ut vol
- uptatibus magnam aut architecto minus. Dignissimos aspernatur temporibus i
- llum vero et mollitia. Itaque tempora et eligendi temporibus est accusanti
- um. Eaque impedit dolor ipsum tempora officia repellendus suscipit ut.
-LOCATION:64\, rue Guillet\, 95 116 Rocher\, Rocher
-DTSTART;TZID=Europe/Paris:20220315T084646
-DTEND;TZID=Europe/Paris:20220315T084646
+DESCRIPTION:Dicta non commodi fuga libero. Ut occaecati labore ipsa veniam.
+  Non animi unde minus labore. Aperiam aperiam occaecati assumenda et excep
+ turi molestias tempore. Quaerat perferendis quia minus facere aut nulla. O
+ dio rerum eum et blanditiis rerum ipsa. Rerum ab doloremque assumenda vel 
+ eos qui.
+LOCATION:26\, avenue Dupre\, 63371 Weiss\, Weiss
+DTSTART;TZID=Europe/Paris:20220225T053345
+DTEND;TZID=Europe/Paris:20220225T053345
 END:VEVENT
 END:VCALENDAR

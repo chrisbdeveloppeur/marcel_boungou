@@ -17,18 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621733d14372f
-DTSTAMP;TZID=Europe/Paris:20220224T082921
+UID:621b5a850a020
+DTSTAMP;TZID=Europe/Paris:20220227T120333
 SUMMARY:fuga
-DESCRIPTION:Qui facere voluptas molestiae minima veniam fugit. Placeat repe
- llendus quam tempore repellendus ut autem. Blanditiis dolor totam enim ill
- um consequatur qui optio earum. Velit ut delectus nesciunt qui ratione occ
- aecati. Accusantium hic qui numquam eum et. Sit odit sunt quis cupiditate 
- in eaque fugit. Praesentium cupiditate maxime error laudantium repudiandae
- . Ut et tempora veritatis corrupti similique quia ut similique. Iure aut q
- uo praesentium ducimus.
-LOCATION:boulevard de Devaux\, 09 892 Bourgeois-sur-Mer\, Bourgeois-sur-Mer
-DTSTART;TZID=Europe/Paris:20220223T202330
-DTEND;TZID=Europe/Paris:20220223T202330
+DESCRIPTION:Reprehenderit sunt ut dolor cum expedita id nam. Libero ducimus
+  dolore et ut quam delectus ut. Provident exercitationem deserunt impedit 
+ consequuntur consequatur doloremque odio sit.
+LOCATION:65\, rue Augustin Menard\, 62797 Barbe\, Barbe
+DTSTART;TZID=Europe/Paris:20220307T032924
+DTEND;TZID=Europe/Paris:20220307T032924
 END:VEVENT
 END:VCALENDAR

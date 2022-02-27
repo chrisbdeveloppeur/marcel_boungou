@@ -17,13 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fb8fb542a
-DTSTAMP;TZID=Europe/Paris:20220224T224135
+UID:621b58db70f79
+DTSTAMP;TZID=Europe/Paris:20220227T115627
 SUMMARY:omnis
-DESCRIPTION:Ratione est quia ut qui harum. Itaque vero repellendus quas nob
- is non. Commodi sit quia eum necessitatibus vel.
-LOCATION:impasse Roux\, 98 174 Benoitboeuf\, Benoitboeuf
-DTSTART;TZID=Europe/Paris:20220304T094430
-DTEND;TZID=Europe/Paris:20220304T094430
+DESCRIPTION:Ducimus non et aspernatur impedit. Et aspernatur et nisi laudan
+ tium qui adipisci. Cupiditate facere rerum quas atque non quis. Voluptate 
+ exercitationem quia harum magni fuga. Eos cupiditate sint earum non quia p
+ erferendis illo. Sunt repudiandae illo ut magni accusantium eaque repudian
+ dae.
+LOCATION:80\, chemin Amélie Le Roux\, 74194 Guillet\, Guillet
+DTSTART;TZID=Europe/Paris:20220318T052005
+DTEND;TZID=Europe/Paris:20220318T052005
 END:VEVENT
 END:VCALENDAR

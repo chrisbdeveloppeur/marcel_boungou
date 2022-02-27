@@ -17,13 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f7313ac14
-DTSTAMP;TZID=Europe/Paris:20220223T095825
+UID:621b58db688dc
+DTSTAMP;TZID=Europe/Paris:20220227T115627
 SUMMARY:iure
-DESCRIPTION:Ipsam voluptatem sit sunt consequatur illum. Velit voluptate ac
- cusamus in ut et nobis quo non. Optio et dolores voluptatem dolor.
-LOCATION:20\, rue de Brunet\, 17158 Delahaye\, Delahaye
-DTSTART;TZID=Europe/Paris:20220303T194207
-DTEND;TZID=Europe/Paris:20220303T194207
+DESCRIPTION:Voluptatem sit esse aspernatur velit et eum. Fuga sed aut est n
+ ihil perferendis eius dolorem. Reiciendis voluptatem fugit vitae expedita 
+ possimus qui ab. Provident ipsa eveniet suscipit quae modi.
+LOCATION:place Luce Royer\, 94 727 Lefevrenec\, Lefevrenec
+DTSTART;TZID=Europe/Paris:20220225T053016
+DTEND;TZID=Europe/Paris:20220225T053016
 END:VEVENT
 END:VCALENDAR

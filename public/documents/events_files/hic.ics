@@ -17,13 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fca91f783
-DTSTAMP;TZID=Europe/Paris:20220224T224617
+UID:621b53ea2e9d3
+DTSTAMP;TZID=Europe/Paris:20220227T113522
 SUMMARY:hic
-DESCRIPTION:Ipsum molestias cumque quam ut. Qui id ea eum assumenda repelle
- ndus. Quia quis ipsam quis suscipit ipsum quas.
-LOCATION:79\, chemin Perret\, 16 065 Verdierdan\, Verdierdan
-DTSTART;TZID=Europe/Paris:20220330T114959
-DTEND;TZID=Europe/Paris:20220330T114959
+DESCRIPTION:Non expedita eum quis temporibus minus ipsa voluptatem. Eius se
+ d in culpa. Ut est et est asperiores sint et.
+LOCATION:274\, avenue Bouvet\, 24 096 Bertin-sur-Mer\, Bertin-sur-Mer
+DTSTART;TZID=Europe/Paris:20220225T103429
+DTEND;TZID=Europe/Paris:20220225T103429
 END:VEVENT
 END:VCALENDAR

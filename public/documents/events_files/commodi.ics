@@ -17,15 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215ec9b15563
-DTSTAMP;TZID=Europe/Paris:20220223T091315
+UID:621b5a8508c3e
+DTSTAMP;TZID=Europe/Paris:20220227T120333
 SUMMARY:commodi
-DESCRIPTION:Sunt eum minus et. Deserunt fugit libero dolores dicta culpa pa
- riatur. Voluptatibus et culpa ut corrupti est qui qui quaerat. Et suscipit
-  possimus unde quibusdam et. Aut dolorem est minima optio sapiente est omn
- is tenetur. Vitae aliquid soluta saepe ex natus aliquid sed odit.
-LOCATION:70\, rue Salmon\, 93 195 Richard-la-Forêt\, Richard-la-Forêt
-DTSTART;TZID=Europe/Paris:20220321T093445
-DTEND;TZID=Europe/Paris:20220321T093445
+DESCRIPTION:Dolorum deleniti officiis quia a. Ea minus culpa aut illo ipsa.
+  Nihil dignissimos omnis provident placeat voluptas. Quisquam et odit aut 
+ molestias. Magni omnis unde beatae necessitatibus est. Adipisci sequi et e
+ t natus a et. Aut nihil est iste sit. Est dolores quas et impedit aut arch
+ itecto. Aut reprehenderit quia eius eveniet non ex delectus. Quia voluptat
+ ibus aut sint ullam consequatur.
+LOCATION:838\, avenue de Lemaitre\, 03 654 Marty-sur-Mer\, Marty-sur-Mer
+DTSTART;TZID=Europe/Paris:20220303T034942
+DTEND;TZID=Europe/Paris:20220303T034942
 END:VEVENT
 END:VCALENDAR

@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:spatie/icalendar-generator
+NAME:www.marcel-boungou.com
+X-WR-CALNAME:www.marcel-boungou.com
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20211031T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20220327T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:621b58b6a8bb5
+DTSTAMP;TZID=Europe/Paris:20220227T115550
+SUMMARY:rem
+DESCRIPTION:Unde tempora nostrum voluptatum exercitationem autem dignissimo
+ s. Et qui iure nihil omnis doloremque omnis. Veritatis quis excepturi sint
+  placeat libero. Est et repellendus ea ea aut quasi soluta. Sed nisi delen
+ iti nesciunt autem ipsum. Eius et quibusdam illo voluptatem. Nesciunt aliq
+ uam a sed voluptatum in.
+LOCATION:88\, rue Thérèse Lopez\, 06 896 Auger-la-Forêt\, Auger-la-Forê
+ t
+DTSTART;TZID=Europe/Paris:20220225T172038
+DTEND;TZID=Europe/Paris:20220225T172038
+END:VEVENT
+END:VCALENDAR

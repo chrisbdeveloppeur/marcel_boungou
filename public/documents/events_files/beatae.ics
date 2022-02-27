@@ -17,15 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217792989e2f
-DTSTAMP;TZID=Europe/Paris:20220224T132513
+UID:621b5a850cb6f
+DTSTAMP;TZID=Europe/Paris:20220227T120333
 SUMMARY:beatae
-DESCRIPTION:Quia earum est ut accusamus expedita veniam. Totam eligendi ex 
- eum dignissimos est iusto quia. Porro et voluptatem qui atque id. Amet min
- us beatae et repellat distinctio. Voluptatum totam aspernatur ad commodi s
- ed cum.
-LOCATION:place de Leblanc\, 95532 Jacquesdan\, Jacquesdan
-DTSTART;TZID=Europe/Paris:20220304T135629
-DTEND;TZID=Europe/Paris:20220304T135629
+DESCRIPTION:Explicabo id quasi dolores voluptas aut. Voluptas est itaque si
+ milique esse. Vel ut dolorum et ipsam sequi.
+LOCATION:38\, boulevard Zacharie Boulanger\, 80183 Chartier\, Chartier
+DTSTART;TZID=Europe/Paris:20220318T154743
+DTEND;TZID=Europe/Paris:20220318T154743
 END:VEVENT
 END:VCALENDAR

@@ -17,14 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fb8250350
-DTSTAMP;TZID=Europe/Paris:20220224T224122
+UID:621b52bd31da9
+DTSTAMP;TZID=Europe/Paris:20220227T113021
 SUMMARY:modi
-DESCRIPTION:Quisquam minima eum molestiae quia. Hic consectetur repellat el
- igendi assumenda. Eius quos dolor magni recusandae veniam. Iusto repellat 
- ullam vero praesentium.
-LOCATION:789\, avenue Marine Gomez\, 16693 NormandVille\, NormandVille
-DTSTART;TZID=Europe/Paris:20220228T023547
-DTEND;TZID=Europe/Paris:20220228T023547
+DESCRIPTION:Sapiente est perspiciatis rem at facilis suscipit ipsa. In assu
+ menda blanditiis odit delectus. Est sunt non in perspiciatis exercitatione
+ m perspiciatis. Id sint tenetur fugit dolores aut sapiente.
+LOCATION:79\, rue Ribeiro\, 45640 Vallet\, Vallet
+DTSTART;TZID=Europe/Paris:20220228T081804
+DTEND;TZID=Europe/Paris:20220228T081804
 END:VEVENT
 END:VCALENDAR

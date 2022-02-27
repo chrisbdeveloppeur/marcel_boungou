@@ -5,8 +5,9 @@
 {% block body %}
     <h1 class="title has-text-white">{% trans %}Music list{% endtrans %}</h1>
 
-    <table class="table">
-        <thead>
+    <div class="table-container">
+        <table class="table">
+            <thead>
             <tr>
                 <th>Id</th>
                 <th>{% trans %}Title{% endtrans %}</th>
@@ -14,30 +15,34 @@
                 <th>{% trans %}Album{% endtrans %}</th>
                 <th>actions</th>
             </tr>
-        </thead>
-        <tbody>
-        {% for music in music %}
-            <tr>
-                <td>{{ music.id }}</td>
-                <td>{{ music.titre }}</td>
-                <td>{{ music.MusicName }}</td>
-                <td>
-                    {% if music.album %}
-                        <a class="has-text-success" href="{{ path('album_edit', {'id': music.album.id}) }}">{{ music.album }}</a>
-                    {% endif %}
-                </td>
-                <td>
-                    <a href="{{ path('music_show', {'id': music.id}) }}">{% trans %}show{% endtrans %}</a>
-                    <a href="{{ path('music_edit', {'id': music.id}) }}">{% trans %}edit{% endtrans %}</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="6">{% trans %}no records found{% endtrans %}</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+            {% for music in music %}
+                <tr>
+                    <td>{{ music.id }}</td>
+                    <td>{{ music.titre }}</td>
+                    <td>{{ music.MusicName }}</td>
+                    <td>
+                        {% if music.album %}
+                            <a class="has-text-success" href="{{ path('album_edit', {'id': music.album.id}) }}">{{ music.album }}</a>
+                        {% endif %}
+                    </td>
+                    <td>
+                        <a href="{{ path('music_show', {'id': music.id}) }}">{% trans %}show{% endtrans %}</a>
+                        <a href="{{ path('music_edit', {'id': music.id}) }}">{% trans %}edit{% endtrans %}</a>
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="6">{% trans %}no records found{% endtrans %}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
 
-    <a href="{{ path('music_new') }}">Create new</a>
+    <div class="column">
+        <a class="button is-success" href="{{ path('music_new') }}">{% trans %}Create new{% endtrans %}</a>
+    </div>
+
 {% endblock %}

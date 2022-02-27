@@ -17,17 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fb5c49434
-DTSTAMP;TZID=Europe/Paris:20220224T224044
+UID:621b5f96dac4e
+DTSTAMP;TZID=Europe/Paris:20220227T122510
 SUMMARY:numquam
-DESCRIPTION:Adipisci omnis odio sint voluptatem debitis quam ipsum. Volupta
- tem dolorem quisquam doloribus cum sed. Aut omnis debitis fugiat corporis 
- cum. Magnam unde quae ipsum ut optio eos. Amet quod eum et. Culpa nisi ius
- to animi sunt eligendi harum. Hic et quos veritatis fugit eos iusto. Ut ev
- eniet sit id eum odio numquam in. Voluptatum eum inventore rem deleniti il
- lum.
-LOCATION:6\, rue Christine Boucher\, 62607 Roux\, Roux
-DTSTART;TZID=Europe/Paris:20220330T084114
-DTEND;TZID=Europe/Paris:20220330T084114
+DESCRIPTION:Consequuntur doloremque fuga sint ad. Qui in est architecto et 
+ et.
+LOCATION:67\, rue Aimé Costa\, 88329 Voisin\, Voisin
+DTSTART;TZID=Europe/Paris:20220307T175348
+DTEND;TZID=Europe/Paris:20220307T175348
 END:VEVENT
 END:VCALENDAR

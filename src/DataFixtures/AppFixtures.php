@@ -38,8 +38,16 @@ class AppFixtures extends Fixture
             $event->setDescription($faker->text($faker->numberBetween('100','500')));
             $event->setTicketingLink('https://www.fnac.com/ia233457/Marcel-Boungou');
             $event->setTags($faker->word.','.$faker->word.','.$faker->word.','.$faker->word);
-            for ($j = 1; $j <= $faker->numberBetween('2','10'); $j++){
+            /*for ($j = 1; $j <= $faker->numberBetween('2','10'); $j++){
                 $mail = $faker->email;
+                $event->addMailToRemind($mail);
+            }*/
+            for ($j = 1; $j <= 2; $j++){
+                if ($j == 1){
+                    $mail = 'kenshin91cb@gmail.com';
+                }elseif ($j == 2){
+                    $mail = 'vanessa.pondi.vp@gmail.com';
+                }
                 $event->addMailToRemind($mail);
             }
             $manager->persist($event);
