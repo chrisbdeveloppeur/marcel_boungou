@@ -20,4 +20,7 @@ vich_uploader:
         music_file:
             uri_prefix: /music/file
             upload_destination: '%kernel.project_dir%/public/music/file'
+        book_img:
+            uri_prefix: /images/book_img
+            upload_destination: '%kernel.project_dir%/public/images/book_img'
 

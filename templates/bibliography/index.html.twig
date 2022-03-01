@@ -1,20 +1,94 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello BibliographyController!{% endblock %}
+{% block title %}{% trans %}Bibliography{% endtrans %}{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <div class="section has-text-white">
+        <h1 class="title has-text-white">{% trans %}Bibliography{% endtrans %}</h1>
+        <h2 class="subtitle has-text-white">{% trans %}Welcome to the bibliography page of the artist{% endtrans %}</h2>
+        <p>
+            {% trans %}Find all the books collections{% endtrans %}
+            <br>
+            {% trans %}Filter your search by using the search bar...{% endtrans %}
+        </p>
+        <div class="control has-icons-right mt-3 is-relative">
+            <input class="input" type="text" id="searchInput" onkeyup="searchFilter()" placeholder="{% trans %}Type here{% endtrans %}">
+            <div class="show-password" onclick="resetSearch()">
+                <button class="button is-primary" style="width: 100%">
+                    <span class="icon is-small">
+                        <i class="fas fa-2x fa-times"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    {% if books|length > 0 %}
+        {{ include('bibliography/books_list.html.twig') }}
+    {% endif %}
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/K4gur0/PhpstormProjects/marcel_boungou/src/Controller/BibliographyController.php'|file_link(0) }}">src/Controller/BibliographyController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/K4gur0/PhpstormProjects/marcel_boungou/templates/bibliography/home.html.twig'|file_link(0) }}">templates/bibliography/index.html.twig</a></code></li>
-    </ul>
-</div>
+{% endblock %}
+
+
+{% block javascripts %}
+
+    <script>
+
+        {#          BULMA CAROUSEL            #}
+        //initialize options :
+
+        var options = {
+            initialSlide: 0,
+            slidesToScroll: 1,
+            slidesToShow: 5,
+            infinite: false,
+            loop:true,
+            effect: 'translate',
+            autoplay: true,
+            duration:1000,
+            autoplaySpeed:2000,
+            navigationSwipe: true,
+            navigationKeys: true,
+            pagination: false,
+        };
+
+        // Initialize all div with carousel class
+        var carousels = bulmaCarousel.attach('.carousel', options);
+
+        // Loop on each carousel initialized
+        for(var i = 0; i < carousels.length; i++) {
+            // Add listener to  event
+            carousels[i].on('before:show', state => {
+
+            });
+        }
+        {#                               #}
+
+        {# SCRIPT POUR BARRE DE RECHERCHE FILTRE JS #}
+        // function searchFilter() {
+        //     // Declare variables
+        //     var input, filter, albumName, musicName, albumTxtValue, musicTxtValue, musicContainer;
+        //     input = document.getElementById('searchInput');
+        //     filter = input.value.toUpperCase();
+        //
+        //     musicContainer = document.querySelectorAll('.music-container');
+        //
+        //     // Loop through all list items, and hide those who don't match the search query
+        //     musicContainer.forEach(function (container) {
+        //         albumName = container.querySelector('.album-name');
+        //         musicName = container.querySelector('.music-name');
+        //         albumTxtValue = albumName.textContent || albumName.innerText;
+        //         musicTxtValue = musicName.textContent || musicName.innerText;
+        //         if ( (albumTxtValue.toUpperCase().indexOf(filter) > -1) || (musicTxtValue.toUpperCase().indexOf(filter) > -1) ) {
+        //             container.classList.remove('is-hidden');
+        //             container.classList.replace('opacity0', 'opacity100')
+        //         } else {
+        //             container.classList.add('is-hidden');
+        //             container.classList.replace('opacity100', 'opacity0')
+        //         }
+        //     });
+        // }
+        {#                               #}
+
+    </script>
 {% endblock %}

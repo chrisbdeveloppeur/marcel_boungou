@@ -1,0 +1,32 @@
+<!-- Start Carousel -->
+<div class="carousel">
+    {% for book in books|sort %}
+        <div class="px-5 py-5 album-carousel scalup-hover transition-1s is-relative">
+
+            {% if is_granted('ROLE_ADMIN') %}
+{#                {{ include('album/edit_album_button.html.twig') }}#}
+            {% endif %}
+
+            <a data-href="{{ book }}" onclick="searchAncrage(this)" class="card" style="width: 200px; height: 100%;">
+
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        {% if book.image %}
+                            <img src="{{ vich_uploader_asset(book, 'imageFile') }}">
+                        {% else %}
+                            <img src="https://picsum.photos/id/{{ random(1,100) }}/240/240">
+                        {% endif %}
+                    </figure>
+                </div>
+
+                <div class="column">
+                    <div class="content has-text-black">
+                        {{ book.description }}
+                    </div>
+                </div>
+
+            </a>
+        </div>
+    {% endfor %}
+</div>
+<!-- End Carousel -->

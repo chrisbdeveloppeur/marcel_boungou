@@ -17,15 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621b5f96dd32e
-DTSTAMP;TZID=Europe/Paris:20220227T122510
+UID:621de2a5645de
+DTSTAMP;TZID=Europe/Paris:20220301T100853
 SUMMARY:et
-DESCRIPTION:Eligendi dolor in nihil et assumenda. Reprehenderit maxime iust
- o rem aut non. Maiores dolorum minus sit sed reiciendis aut. Ea temporibus
-  facere quas sunt aut molestias.
-LOCATION:192\, avenue Gros\, 65064 Potier-sur-Legendre\, Potier-sur-Legendr
- e
-DTSTART;TZID=Europe/Paris:20220318T010324
-DTEND;TZID=Europe/Paris:20220318T010324
+DESCRIPTION:Consectetur quam sit atque. Alias nesciunt aut autem reiciendis
+  enim. Omnis modi accusamus fugit.
+LOCATION:78\, place Anne Lenoir\, 41951 Lagardedan\, Lagardedan
+DTSTART;TZID=Europe/Paris:20220327T071842
+DTEND;TZID=Europe/Paris:20220327T071842
 END:VEVENT
 END:VCALENDAR

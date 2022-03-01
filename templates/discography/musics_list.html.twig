@@ -11,7 +11,7 @@
         <div class="columns is-multiline">
             {% for music in musics %}
 
-                <div class="music-container transition-1s opacity0 {{ music.album }} column is-flex is-justify-content-center is-align-items-center is-flex-direction-column scalup-hover">
+                <div class="music-container fade-effect transition-1s opacity0 {{ music.album }} column is-flex is-justify-content-center is-align-items-center is-flex-direction-column scalup-hover">
 
                     <div class="is-relative" style="height: 150px;width: 150px;{% if music.album and music.album.image %}background: center / cover url({{ vich_uploader_asset(music.album, 'imageFile') }}){% else %}background: center / cover url('https://picsum.photos/id/{{ random(1,100) }}/240/240'){% endif %}">
 

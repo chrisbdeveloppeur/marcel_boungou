@@ -99,7 +99,7 @@ class EventType extends AbstractType
             ])
             ->add('tags', TextType::class,[
                 'required'=> false,
-                'label' => false,
+                'label' => $this->translator->trans('Tags'),
                 'attr' => [
                     'class' => 'tags-input',
                     'data-type' => 'tags',

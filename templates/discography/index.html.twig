@@ -5,7 +5,7 @@
 {% block body %}
     <div class="section has-text-white">
         <h1 class="title has-text-white">{% trans %}Discography{% endtrans %}</h1>
-        <h2 class="subtitle has-text-white">{% trans %}Welcome to the discography page of the artist Marcel BOUNGOU{% endtrans %}</h2>
+        <h2 class="subtitle has-text-white">{% trans %}Welcome to the discography page of the artist{% endtrans %}</h2>
         <p>
             {% trans %}Find all the musical collections, from the great classics to the most recent productions, including the essentials{% endtrans %}
             <br>
@@ -151,29 +151,6 @@
         }
         {#                               #}
 
-        {#  FADE-OUT FADE-IN DISCS  #}
-        let dics = document.querySelectorAll('.music-container');
-
-        document.addEventListener('scroll', function () {
-            dics.forEach(changeOpacityOnTopPosition);
-            // showArrowUp();
-        });
-
-        window.onload = onLoad();
-        function onLoad() {
-            dics.forEach(changeOpacityOnTopPosition);
-        }
-
-        function changeOpacityOnTopPosition(element) {
-            if ( 0 < element.getBoundingClientRect().top && element.getBoundingClientRect().top < 750 ){
-                element.classList.replace('opacity0','opacity100');
-            }else {
-                element.classList.replace('opacity100','opacity0');
-            }
-        }
-        {#                               #}
-
-
         {# SCRIPT POUR BARRE DE RECHERCHE FILTRE JS #}
         function searchFilter() {
             // Declare variables
@@ -200,7 +177,7 @@
         }
         {#                               #}
 
-        {# SCRIPT ANCRAGE ALBUM / MUSIQUES #}
+        {# SCRIPT ANCRAGE SEARCH ALBUM / MUSIQUES #}
         function searchAncrage(link) {
             var input = document.getElementById('searchInput');
             var ancrageTxt = link.getAttribute('data-href');

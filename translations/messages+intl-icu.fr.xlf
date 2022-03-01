@@ -791,7 +791,7 @@
       </trans-unit>
       <trans-unit id="eOeSABC" resname="Titre">
         <source>Titre</source>
-        <target>__Titre</target>
+        <target>Title</target>
       </trans-unit>
       <trans-unit id="XaaXJvv" resname="Add an album">
         <source>Add an album</source>
@@ -832,6 +832,50 @@
       <trans-unit id="PpLvt2Z" resname="Unsubscribe">
         <source>Unsubscribe</source>
         <target>Se désabonner</target>
+      </trans-unit>
+      <trans-unit id="8EhqcVI" resname="Back to Bibliography page">
+        <source>Back to Bibliography page</source>
+        <target>Retour à la page Bibliographie</target>
+      </trans-unit>
+      <trans-unit id="02D7SpS" resname="Redirect link for get the book">
+        <source>Redirect link for get the book</source>
+        <target>Lien de redirection pour obtenir le livre</target>
+      </trans-unit>
+      <trans-unit id="EzEnW8U" resname="Tags">
+        <source>Tags</source>
+        <target>Affiliations</target>
+      </trans-unit>
+      <trans-unit id="UFF_n2Q" resname="Picture of the book">
+        <source>Picture of the book</source>
+        <target>Image du livre</target>
+      </trans-unit>
+      <trans-unit id="PLu..xq" resname="Welcome to the bibliography page of the artist">
+        <source>Welcome to the bibliography page of the artist</source>
+        <target>Bienvenue sur la page bibliographie de l'artiste</target>
+      </trans-unit>
+      <trans-unit id="6Be2ABC" resname="Find all the books collections">
+        <source>Find all the books collections</source>
+        <target>Retrouvez toutes les collections de livres</target>
+      </trans-unit>
+      <trans-unit id="0QDTWzr" resname="Filter your search by using the search bar...">
+        <source>Filter your search by using the search bar...</source>
+        <target>Filtrez votre recherche en utilisant la barre de recherche...</target>
+      </trans-unit>
+      <trans-unit id="669Yp8H" resname="Type here">
+        <source>Type here</source>
+        <target>Écrivez ici</target>
+      </trans-unit>
+      <trans-unit id="BmYkdIW" resname="Edit Book">
+        <source>Edit Book</source>
+        <target>Modifier le livre</target>
+      </trans-unit>
+      <trans-unit id="KjgVLEj" resname="Add a new Book">
+        <source>Add a new Book</source>
+        <target>Ajouter un nouveau livre</target>
+      </trans-unit>
+      <trans-unit id="b9ZtF2M" resname="Welcome to the discography page of the artist">
+        <source>Welcome to the discography page of the artist</source>
+        <target>Bienvenue sur la page discographie de l'artiste</target>
       </trans-unit>
     </body>
   </file>

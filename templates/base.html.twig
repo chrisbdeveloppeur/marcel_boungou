@@ -231,6 +231,29 @@
     });
     {#   FIN DU SCRIPT SCROLL UP   #}
 
+
+    {#  FADE-OUT FADE-IN DISCS  #}
+    let elementsToFade = document.querySelectorAll('.fade-effect');
+
+    document.addEventListener('scroll', function () {
+        elementsToFade.forEach(changeOpacityOnTopPosition);
+        // showArrowUp();
+    });
+
+    window.onload = onLoad();
+    function onLoad() {
+        elementsToFade.forEach(changeOpacityOnTopPosition);
+    }
+
+    function changeOpacityOnTopPosition(element) {
+        if ( 0 < element.getBoundingClientRect().top && element.getBoundingClientRect().top < 750 ){
+            element.classList.replace('opacity0','opacity100');
+        }else {
+            element.classList.replace('opacity100','opacity0');
+        }
+    }
+    {#                               #}
+
 </script>
 
 {% block javascripts %}

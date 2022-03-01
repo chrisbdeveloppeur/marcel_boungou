@@ -17,17 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621755460584a
-DTSTAMP;TZID=Europe/Paris:20220224T105206
+UID:621de2a558f1f
+DTSTAMP;TZID=Europe/Paris:20220301T100853
 SUMMARY:accusamus
-DESCRIPTION:Qui fugit sunt et. Est harum non mollitia architecto in dolorib
- us magnam. Sit maxime est et et vero repudiandae. Asperiores provident nes
- ciunt ipsa quasi laudantium. Tempora id natus sunt dolorem veniam. Et inve
- ntore et sequi. Laudantium et repudiandae aperiam esse. Perferendis sint c
- orporis animi rerum inventore. Maxime hic deleniti et. Aut aut magnam ea s
- oluta nihil. Expedita cum quaerat cum incidunt.
-LOCATION:24\, rue Marcel Lemaire\, 02634 Gosselin\, Gosselin
-DTSTART;TZID=Europe/Paris:20220330T160052
-DTEND;TZID=Europe/Paris:20220330T160052
+DESCRIPTION:Temporibus vero maxime dolorem ad suscipit. Enim quia qui ut al
+ iquid dignissimos non. Ut ipsum optio qui temporibus. In aperiam explicabo
+  quod.
+LOCATION:25\, chemin de Cordier\, 04 600 Berthelotdan\, Berthelotdan
+DTSTART;TZID=Europe/Paris:20220309T114431
+DTEND;TZID=Europe/Paris:20220309T114431
 END:VEVENT
 END:VCALENDAR

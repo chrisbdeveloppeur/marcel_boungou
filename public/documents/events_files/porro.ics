@@ -17,15 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fac4753f2
-DTSTAMP;TZID=Europe/Paris:20220224T223812
+UID:621de2a563b2c
+DTSTAMP;TZID=Europe/Paris:20220301T100853
 SUMMARY:porro
-DESCRIPTION:Animi aliquid nulla tempore cumque eaque. Nostrum atque porro m
- olestiae odit rerum itaque debitis. Doloremque accusamus et ex veniam in o
- mnis. Suscipit consequatur aut repellendus quos. Porro ut ut eius at sint 
- consequatur reprehenderit. Voluptas perspiciatis ullam aut sit odio.
-LOCATION:6\, chemin de Durand\, 06112 Monnier\, Monnier
-DTSTART;TZID=Europe/Paris:20220304T194522
-DTEND;TZID=Europe/Paris:20220304T194522
+DESCRIPTION:Nobis et voluptas dolor nihil dignissimos. Ea dolorum non volup
+ tatem possimus accusantium illo consequatur est. Dolorum reprehenderit est
+  sed et aut. Vitae amet velit atque quia.
+LOCATION:1\, place de Camus\, 21 589 Pierre\, Pierre
+DTSTART;TZID=Europe/Paris:20220320T073134
+DTEND;TZID=Europe/Paris:20220320T073134
 END:VEVENT
 END:VCALENDAR
