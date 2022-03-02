@@ -1,9 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Event{% endblock %}
+{% block title %}{% trans %}Event{% endtrans %}{% endblock %}
 
 {% block body %}
-    <h1>Event</h1>
+    <h1 class="has-text-white subtitle">{% trans %}Event{% endtrans %}<b> {{ event }}</b></h1>
 
     <table class="table">
         <tbody>
@@ -12,39 +12,35 @@
                 <td>{{ event.id }}</td>
             </tr>
             <tr>
-                <th>Title</th>
+                <th>{% trans %}Title{% endtrans %}</th>
                 <td>{{ event.title }}</td>
             </tr>
             <tr>
-                <th>Datetime</th>
-                <td>{{ event.datetime ? event.datetime|date('Y-m-d H:i:s') : '' }}</td>
+                <th>{% trans %}Date & time{% endtrans %}</th>
+                <td>{{ event.datetime ? event.datetime|date('d/m/Y H:i') : '' }}</td>
             </tr>
             <tr>
-                <th>Country</th>
+                <th>{% trans %}Country{% endtrans %}</th>
                 <td>{{ event.country }}</td>
             </tr>
             <tr>
-                <th>City</th>
+                <th>{% trans %}City{% endtrans %}</th>
                 <td>{{ event.city }}</td>
             </tr>
             <tr>
-                <th>Cp</th>
+                <th>{% trans %}Code post{% endtrans %}</th>
                 <td>{{ event.cp }}</td>
             </tr>
             <tr>
-                <th>Street</th>
+                <th>{% trans %}Street{% endtrans %}</th>
                 <td>{{ event.street }}</td>
-            </tr>
-            <tr>
-                <th>Ics_file</th>
-                <td>{{ event.icsFile }}</td>
             </tr>
         </tbody>
     </table>
 
-    <a href="{{ path('events_index') }}">back to list</a>
+    <a href="{{ path('events_index') }}">{% trans %}back to events list{% endtrans %}</a>
 
-    <a href="{{ path('events_edit', {'id': event.id}) }}">edit</a>
+    <a href="{{ path('events_edit', {'id': event.id}) }}">{% trans %}edit{% endtrans %}</a>
 
     {{ include('event/_delete_form.html.twig') }}
 {% endblock %}

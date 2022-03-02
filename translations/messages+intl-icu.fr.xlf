@@ -331,7 +331,7 @@
       </trans-unit>
       <trans-unit id="D5lam8." resname="no records found">
         <source>no records found</source>
-        <target>Aucun Gestionnaires trouvés</target>
+        <target>Aucun elements trouvés</target>
       </trans-unit>
       <trans-unit id="nz33U6Q" resname="Create new">
         <source>Create new</source>
@@ -892,6 +892,38 @@
       <trans-unit id="rnpUubU" resname="Type a song or album here">
         <source>Type a song or album here</source>
         <target>Entrez un chant ou un album ici</target>
+      </trans-unit>
+      <trans-unit id="6dHGOjY" resname="Book index">
+        <source>Book index</source>
+        <target>Liste des livres</target>
+      </trans-unit>
+      <trans-unit id="jnapSsg" resname="Summary">
+        <source>Summary</source>
+        <target>Résumé</target>
+      </trans-unit>
+      <trans-unit id="pa01pK_" resname="Shop link">
+        <source>Shop link</source>
+        <target>URL boutique</target>
+      </trans-unit>
+      <trans-unit id="Th9Jqci" resname="Event">
+        <source>Event</source>
+        <target>Événement</target>
+      </trans-unit>
+      <trans-unit id="JFnqQol" resname="Date &amp; time">
+        <source>Date &amp; time</source>
+        <target>Date et heure</target>
+      </trans-unit>
+      <trans-unit id="uC5deRa" resname="Code post">
+        <source>Code post</source>
+        <target>Code postale</target>
+      </trans-unit>
+      <trans-unit id="LTyfp8Z" resname="back to events list">
+        <source>back to events list</source>
+        <target>retour à la liste des événements</target>
+      </trans-unit>
+      <trans-unit id="tRLZfny" resname="User">
+        <source>User</source>
+        <target>Gestionnaire</target>
       </trans-unit>
     </body>
   </file>

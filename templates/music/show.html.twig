@@ -1,9 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% trans %}Music{% endtrans %}{% endblock %}
+{% block title %}{{ 'Music'|trans }}{% endblock %}
 
 {% block body %}
-    <h1 class="title has-text-white">{% trans %}Music{% endtrans %}</h1>
+    <h1 class="title has-text-white">{{ 'Music'|trans }} <b> {{ music }}</b></h1>
 
     <table class="table">
         <tbody>
@@ -12,11 +12,11 @@
                 <td>{{ music.id }}</td>
             </tr>
             <tr>
-                <th>{% trans %}Titre{% endtrans %}</th>
+                <th>{{ 'Title'|trans }}</th>
                 <td>{{ music.titre }}</td>
             </tr>
             <tr>
-                <th>{% trans %}File{% endtrans %}</th>
+                <th>{{ 'File'|trans }}</th>
                 <td>
                     {% if music.musicName %}
                         <audio src="{{ vich_uploader_asset(music, 'musicFile') }}" controls></audio>

@@ -3,20 +3,23 @@
 {% block title %}{% trans %}Book index{% endtrans %}{% endblock %}
 
 {% block body %}
-    <h1>{% trans %}Book index{% endtrans %}</h1>
+    <h1 class="has-text-white title">{% trans %}Book index{% endtrans %}</h1>
+
+    <div class="column">
+        <a class="button is-success" href="{{ path('book_new') }}">{% trans %}Create new{% endtrans %}</a>
+    </div>
 
 <div class="table-container">
     <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Redirect_link</th>
-                <th>Tags</th>
-                <th>Image</th>
-                <th>UpdatedAt</th>
-                <th>actions</th>
+                <th>{% trans %}Title{% endtrans %}</th>
+                <th>{% trans %}Summary{% endtrans %}</th>
+                <th>{% trans %}Shop link{% endtrans %}</th>
+                <th>{% trans %}Tags{% endtrans %}</th>
+                <th>{% trans %}Image{% endtrans %}</th>
+                <th>{% trans %}Actions{% endtrans %}</th>
             </tr>
         </thead>
         <tbody>
@@ -28,7 +31,6 @@
                 <td>{{ book.redirectLink }}</td>
                 <td>{{ book.tags }}</td>
                 <td>{{ book.image }}</td>
-                <td>{{ book.updatedAt ? book.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
                 <td>
                     <a href="{{ path('book_show', {'id': book.id}) }}">{% trans %}show{% endtrans %}</a>
                     <a href="{{ path('book_edit', {'id': book.id}) }}">{% trans %}edit{% endtrans %}</a>
@@ -41,7 +43,10 @@
         {% endfor %}
         </tbody>
     </table>
-
-    <a class="button is-success" href="{{ path('book_new') }}">{% trans %}Create new{% endtrans %}</a>
 </div>
+
+    <div class="column">
+        <a class="button is-success" href="{{ path('book_new') }}">{% trans %}Create new{% endtrans %}</a>
+    </div>
+
 {% endblock %}
