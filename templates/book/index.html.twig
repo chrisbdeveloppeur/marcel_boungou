@@ -1,10 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Book index{% endblock %}
+{% block title %}{% trans %}Book index{% endtrans %}{% endblock %}
 
 {% block body %}
-    <h1>Book index</h1>
+    <h1>{% trans %}Book index{% endtrans %}</h1>
 
+<div class="table-container">
     <table class="table">
         <thead>
             <tr>
@@ -29,17 +30,18 @@
                 <td>{{ book.image }}</td>
                 <td>{{ book.updatedAt ? book.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
                 <td>
-                    <a href="{{ path('book_show', {'id': book.id}) }}">show</a>
-                    <a href="{{ path('book_edit', {'id': book.id}) }}">edit</a>
+                    <a href="{{ path('book_show', {'id': book.id}) }}">{% trans %}show{% endtrans %}</a>
+                    <a href="{{ path('book_edit', {'id': book.id}) }}">{% trans %}edit{% endtrans %}</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="8">no records found</td>
+                <td colspan="8">{% trans %}no records found{% endtrans %}</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href="{{ path('book_new') }}">Create new</a>
+    <a class="button is-success" href="{{ path('book_new') }}">{% trans %}Create new{% endtrans %}</a>
+</div>
 {% endblock %}
