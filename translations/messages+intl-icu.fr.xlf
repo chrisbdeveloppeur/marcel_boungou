@@ -877,6 +877,18 @@
         <source>Welcome to the discography page of the artist</source>
         <target>Bienvenue sur la page discographie de l'artiste</target>
       </trans-unit>
+      <trans-unit id="oo82HqU" resname="Go to shop">
+        <source>Go to shop</source>
+        <target>Se rendre à la boutique</target>
+      </trans-unit>
+      <trans-unit id="WiNESCj" resname="Manage">
+        <source>Manage</source>
+        <target>Administrer</target>
+      </trans-unit>
+      <trans-unit id="rM7bB1y" resname="Manage Books">
+        <source>Manage Books</source>
+        <target>Gestion des livres</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

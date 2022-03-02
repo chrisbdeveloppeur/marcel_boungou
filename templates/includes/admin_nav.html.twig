@@ -1,10 +1,35 @@
 <div class="column">
-    <div class="buttons">
-        <a href="{{ path('events_index') }}" class="button is-success is-light">{% trans %}Manage Events{% endtrans %}</a>
-        <a href="{{ path('album_index') }}" class="button is-success is-light">{% trans %}Manage Albums{% endtrans %}</a>
-        <a href="{{ path('music_index') }}" class="button is-success is-light">{% trans %}Manage Musics{% endtrans %}</a>
-        {% if is_granted('ROLE_SUPER_ADMIN') %}
-            <a href="{{ path('user_index') }}" class="button is-success is-light">{% trans %}Manage Managers{% endtrans %}</a>
-        {% endif %}
+    <div class="dropdown is-hoverable">
+        <div class="dropdown-trigger">
+            <button class="button is-success is-light" aria-haspopup="true" aria-controls="dropdown-menu4">
+                <span>{% trans %}Manage{% endtrans %}</span>
+                <span class="icon is-small">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+            </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+            <div class="dropdown-content">
+                <a href="{{ path('events_index') }}" class="dropdown-item button is-success">{% trans %}Manage Events{% endtrans %}</a>
+                <a href="{{ path('album_index') }}" class="dropdown-item button is-success">{% trans %}Manage Albums{% endtrans %}</a>
+                <a href="{{ path('music_index') }}" class="dropdown-item button is-success">{% trans %}Manage Musics{% endtrans %}</a>
+                <a href="{{ path('book_index') }}" class="dropdown-item button is-success">{% trans %}Manage Books{% endtrans %}</a>
+                {#        <a href="{{ path('picture_index') }}" class="button is-success">{% trans %}Manage Pictures{% endtrans %}</a>#}
+                {% if is_granted('ROLE_SUPER_ADMIN') %}
+                    <a href="{{ path('user_index') }}" class="dropdown-item button is-success">{% trans %}Manage Managers{% endtrans %}</a>
+                {% endif %}
+            </div>
+        </div>
     </div>
+
+{#    <div class="buttons">#}
+{#        <a href="{{ path('events_index') }}" class="button is-success">{% trans %}Manage Events{% endtrans %}</a>#}
+{#        <a href="{{ path('album_index') }}" class="button is-success">{% trans %}Manage Albums{% endtrans %}</a>#}
+{#        <a href="{{ path('music_index') }}" class="button is-success">{% trans %}Manage Musics{% endtrans %}</a>#}
+{#        <a href="{{ path('book_index') }}" class="button is-success">{% trans %}Manage Books{% endtrans %}</a>#}
+{#        <a href="{{ path('picture_index') }}" class="button is-success">{% trans %}Manage Pictures{% endtrans %}</a>#}
+{#        {% if is_granted('ROLE_SUPER_ADMIN') %}#}
+{#            <a href="{{ path('user_index') }}" class="button is-success">{% trans %}Manage Managers{% endtrans %}</a>#}
+{#        {% endif %}#}
+{#    </div>#}
 </div>
