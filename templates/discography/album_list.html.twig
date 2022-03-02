@@ -23,8 +23,7 @@
                             {% if album.image %}
                                 <img src="{{ vich_uploader_asset(album, 'imageFile') }}">
                             {% else %}
-{#                                <img src="https://picsum.photos/id/{{ random(1,100) }}/240/240">#}
-                                <img src="{{ asset('images/event_img/720x240.png') }}">
+                                <img src="https://bulma.io/images/placeholders/480x480.png">
                             {% endif %}
                         </figure>
                     </div>

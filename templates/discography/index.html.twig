@@ -3,22 +3,25 @@
 {% block title %}{% trans %}Discography{% endtrans %}{% endblock %}
 
 {% block body %}
-    <div class="section column is-full has-text-white">
+    <div class="column is-full px-0">
         <h1 class="title has-text-white">{% trans %}Discography{% endtrans %}</h1>
         <h2 class="subtitle has-text-white">{% trans %}Welcome to the discography page of the artist{% endtrans %}</h2>
-        <p>
+        <p class="has-text-white">
             {% trans %}Find all the musical collections, from the great classics to the most recent productions, including the essentials{% endtrans %}
             <br>
             {% trans %}Filter your search by clicking on an Album or by using the search bar...{% endtrans %}
         </p>
+    </div>
+
+    <div class="column has-background-light is-full" style="position: sticky;top: 3.75rem;z-index: 1">
         <div class="field">
-            <div class="control has-icons-right has-icons-left mt-3 is-relative">
-                <input class="input" type="text" id="searchInput" onkeyup="searchFilter()" placeholder="{% trans %}Type a song here{% endtrans %}">
+            <div class="control has-icons-right has-icons-left is-relative">
+                <input class="input" type="text" id="searchInput" onkeyup="searchFilter()" placeholder="{% trans %}Type a song or album here{% endtrans %}">
                 <span class="icon is-small is-left">
                     <i class="fas fa-search"></i>
                 </span>
                 <div class="show-password" onclick="resetSearch()">
-                    <button class="button is-primary" style="width: 100%">
+                    <button class="button is-danger" style="width: 100%">
                     <span class="icon is-small">
                         <i class="fas fa-2x fa-times"></i>
                     </span>
@@ -26,8 +29,8 @@
                 </div>
             </div>
         </div>
-
     </div>
+
     {% if albums|length > 0 %}
         {{ include('discography/album_list.html.twig') }}
     {% endif %}

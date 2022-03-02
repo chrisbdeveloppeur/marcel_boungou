@@ -8,7 +8,7 @@
             {% if event.image %}
                 <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="" style="height: 100%;width: 100%;object-fit: fill">
             {% else %}
-                <img src="https://picsum.photos/id/{{ random(1,100) }}/720/240" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
+                <img src="https://bulma.io/images/placeholders/720x240.png" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
             {% endif %}
             </figure>
             <div class="column has-background-success-light slider-container-child is-flex is-flex-direction-column">

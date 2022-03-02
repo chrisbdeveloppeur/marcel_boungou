@@ -7,7 +7,7 @@
         <div class="modal" id="modalEvent{{ event.id }}">
             <div class="modal-background" onclick="this.parentElement.classList.remove('is-active')"></div>
             <div class="modal-content box has-background-success-light">
-                {{ include('event/modal_event.html.twig') }}
+                {{ include('event/modal_event_details.html.twig') }}
             </div>
             <button class="modal-close is-large" aria-label="close" onclick="this.parentElement.classList.remove('is-active')"></button>
         </div>
@@ -179,8 +179,8 @@ agendas.forEach(function (agenda) {
             navigationSwipe: true,
             navigationKeys: false,
             pagination: false,
-            duration:1500,
-            autoplaySpeed:4000,
+            duration:500,
+            autoplaySpeed:2000,
         };
 
         // Initialize all div with carousel class

@@ -889,6 +889,10 @@
         <source>Manage Books</source>
         <target>Gestion des livres</target>
       </trans-unit>
+      <trans-unit id="rnpUubU" resname="Type a song or album here">
+        <source>Type a song or album here</source>
+        <target>Entrez un chant ou un album ici</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
