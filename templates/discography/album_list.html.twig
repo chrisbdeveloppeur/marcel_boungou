@@ -19,11 +19,12 @@
                 <a data-href="{{ album }}" onclick="searchAncrage(this)" class="card" style="width: 200px; height: 100%;">
 
                     <div class="card-image">
-                        <figure class="image is-4by3">
+                        <figure class="image is-square">
                             {% if album.image %}
                                 <img src="{{ vich_uploader_asset(album, 'imageFile') }}">
                             {% else %}
-                                <img src="https://picsum.photos/id/{{ random(1,100) }}/240/240">
+{#                                <img src="https://picsum.photos/id/{{ random(1,100) }}/240/240">#}
+                                <img src="{{ asset('images/event_img/720x240.png') }}">
                             {% endif %}
                         </figure>
                     </div>
