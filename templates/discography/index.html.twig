@@ -11,16 +11,22 @@
             <br>
             {% trans %}Filter your search by clicking on an Album or by using the search bar...{% endtrans %}
         </p>
-        <div class="control has-icons-right mt-3 is-relative">
-            <input class="input" type="text" id="searchInput" onkeyup="searchFilter()" placeholder="{% trans %}Type a song here{% endtrans %}">
-            <div class="show-password" onclick="resetSearch()">
-                <button class="button is-primary" style="width: 100%">
+        <div class="field">
+            <div class="control has-icons-right has-icons-left mt-3 is-relative">
+                <input class="input" type="text" id="searchInput" onkeyup="searchFilter()" placeholder="{% trans %}Type a song here{% endtrans %}">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-search"></i>
+                </span>
+                <div class="show-password" onclick="resetSearch()">
+                    <button class="button is-primary" style="width: 100%">
                     <span class="icon is-small">
                         <i class="fas fa-2x fa-times"></i>
                     </span>
-                </button>
+                    </button>
+                </div>
             </div>
         </div>
+
     </div>
     {% if albums|length > 0 %}
         {{ include('discography/album_list.html.twig') }}
