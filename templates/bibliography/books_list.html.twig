@@ -1,7 +1,7 @@
 <div class="columns is-multiline">
     {% for book in books|sort %}
-        <div class="column is-one-fifth">
-            <div class="px-5 py-5 scalup-hover transition-1s is-relative">
+        <div class="column is-one-fifth-desktop is-one-third-tablet">
+            <div class="scalup-hover transition-1s is-relative">
 
                 {% if is_granted('ROLE_ADMIN') %}
                     {{ include('book/edit_book_button.html.twig') }}
