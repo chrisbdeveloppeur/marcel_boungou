@@ -3,28 +3,28 @@
 {% block title %}{% trans %}Bibliography{% endtrans %}{% endblock %}
 
 {% block body %}
-    <div class="section has-text-white">
+
+    {% for book in books %}
+        <div class="modal" id="modalBook{{ book.id }}">
+            <div class="modal-background" onclick="this.parentElement.classList.remove('is-active')"></div>
+            <div class="modal-content">
+                {{ include('book/modal_book.html.twig') }}
+            </div>
+            <button class="modal-close is-large" aria-label="close" onclick="this.parentElement.classList.remove('is-active')"></button>
+        </div>
+    {% endfor %}
+
+    <div class="section column is-full has-text-white">
         <h1 class="title has-text-white">{% trans %}Bibliography{% endtrans %}</h1>
         <h2 class="subtitle has-text-white">{% trans %}Welcome to the bibliography page of the artist{% endtrans %}</h2>
         <p>
-            {% trans %}Find all the books collections{% endtrans %}
+            {% trans %}Find all the books collections{% endtrans %}...
             <br>
-            {% trans %}Filter your search by using the search bar...{% endtrans %}
         </p>
-        <div class="control has-icons-right mt-3 is-relative">
-            <input class="input" type="text" id="searchInput" onkeyup="searchFilter()" placeholder="{% trans %}Type here{% endtrans %}">
-            <div class="show-password" onclick="resetSearch()">
-                <button class="button is-primary" style="width: 100%">
-                    <span class="icon is-small">
-                        <i class="fas fa-2x fa-times"></i>
-                    </span>
-                </button>
-            </div>
-        </div>
     </div>
 
     {% if books|length > 0 %}
-        <div class="column">
+        <div class="column is-full">
             {{ include('bibliography/books_list.html.twig') }}
         </div>
     {% endif %}

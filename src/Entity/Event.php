@@ -80,12 +80,6 @@ class Event
      *     mimeTypes={"image/jpeg", "image/jpg","image/bmp", "image/png", "image/svg"},
      *     mimeTypesMessage="The type of the file is invalid ({{ type }})",
      * )
-     * @Assert\Image(
-     *     maxRatio="3",
-     *     maxRatioMessage="The image ratio should be between 2 and 3 (ex. between 640px/320px 720px/240px). The image ratio is {{ ratio }}.",
-     *     minRatio="2",
-     *     minRatioMessage="The image ratio should be between 2 and 3 (ex. between 640px/320px 720px/240px). The image ratio is {{ ratio }}.",
-     * )
      */
     private $imageFile;
 

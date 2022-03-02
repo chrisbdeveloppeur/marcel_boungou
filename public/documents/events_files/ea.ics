@@ -17,18 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fb8256773
-DTSTAMP;TZID=Europe/Paris:20220224T224122
+UID:621f8c507e832
+DTSTAMP;TZID=Europe/Paris:20220302T162504
 SUMMARY:ea
-DESCRIPTION:Aliquam repellendus aut iure ut voluptatem. Consequatur quaerat
-  natus voluptatem quis est. Voluptate dolor occaecati quaerat reiciendis f
- acere perferendis possimus aperiam. Ab dolorem dolorem tempore est. Perspi
- ciatis quos voluptas est. Omnis aliquam architecto quae sint est repellat 
- laborum. Hic officiis dolorem non quibusdam eius. Rerum quod nostrum nihil
-  qui necessitatibus qui a. Quibusdam veniam iste esse cum nihil molestiae 
- nesciunt et.
-LOCATION:306\, impasse Alix Klein\, 82002 Collinnec\, Collinnec
-DTSTART;TZID=Europe/Paris:20220315T000541
-DTEND;TZID=Europe/Paris:20220315T000541
+DESCRIPTION:Qui qui repellat assumenda. Dolorem dignissimos officiis odio e
+ xercitationem doloribus omnis. Et est voluptatem et atque.
+LOCATION:69\, rue Marcelle Clerc\, 74309 Bruneaudan\, Bruneaudan
+DTSTART;TZID=Europe/Paris:20220321T033840
+DTEND;TZID=Europe/Paris:20220321T033840
 END:VEVENT
 END:VCALENDAR

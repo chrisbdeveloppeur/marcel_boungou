@@ -1,0 +1,40 @@
+<div class="">
+
+    <h3 class="subtitle has-text-white has-text-centered">{{ book.title }}</h3>
+
+    <div class="is-flex is-flex-direction-row is-align-items-center">
+        <div class="column">
+            <figure class="image is-4by5">
+                {% if book.image %}
+                    <img src="{{ vich_uploader_asset(book, 'imageFile') }}">
+                {% else %}
+                    <img src="https://picsum.photos/id/{{ random(1,100) }}/240/240">
+                {% endif %}
+            </figure>
+        </div>
+
+        <div class="column">
+            <figure class="image is-4by5">
+                <img src="https://picsum.photos/id/{{ random(1,100) }}/240/240">
+            </figure>
+        </div>
+    </div>
+
+
+    {% if book.description %}
+        <div class="column">
+            <p class="has-text-grey">
+                {{ book.description }}
+            </p>
+        </div>
+    {% endif %}
+
+    {% if book.redirectlink %}
+        <div class="column">
+            <a href="{{ book.redirectlink }}" class="button is-success">
+                {% trans %}Go to shop{% endtrans %}
+            </a>
+        </div>
+    {% endif %}
+
+</div>

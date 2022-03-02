@@ -4,6 +4,7 @@ namespace App\DataFixtures;
 
 use App\Controller\CalendarController;
 use App\Entity\Album;
+use App\Entity\Book;
 use App\Entity\Event;
 use App\Entity\Music;
 use Doctrine\Bundle\FixturesBundle\Fixture;
@@ -74,6 +75,16 @@ class AppFixtures extends Fixture
             }
 
             $manager->persist($album);
+            $manager->flush();
+        }
+
+        for ($e = -1; $e <= 5; $e++){
+
+            $book = new Book();
+            $book->setTitle($faker->word);
+            $book->setDescription($faker->text($faker->numberBetween('100','500')));
+            $book->setRedirectLink('https://www.fnac.com/ia233457/Marcel-Boungou');
+            $manager->persist($book);
             $manager->flush();
         }
 

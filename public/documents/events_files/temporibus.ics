@@ -17,15 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fb5c44dda
-DTSTAMP;TZID=Europe/Paris:20220224T224044
+UID:621f8c509028c
+DTSTAMP;TZID=Europe/Paris:20220302T162504
 SUMMARY:temporibus
-DESCRIPTION:Enim corrupti et ipsam maxime praesentium. Aperiam unde asperio
- res pariatur minima. Ducimus consectetur dolor velit aut et vel nesciunt. 
- Blanditiis eligendi aliquid deleniti eum. Labore rem quo vitae. Quia sunt 
- quia consectetur iusto.
-LOCATION:95\, avenue Constance Boutin\, 35 497 Clement\, Clement
-DTSTART;TZID=Europe/Paris:20220309T003903
-DTEND;TZID=Europe/Paris:20220309T003903
+DESCRIPTION:Molestiae ut est est exercitationem sunt quasi quo. Natus vel d
+ oloremque ipsum non fugiat dolor dolorem. Vero sequi impedit repudiandae n
+ umquam et.
+LOCATION:22\, impasse Martel\, 61960 Pintoboeuf\, Pintoboeuf
+DTSTART;TZID=Europe/Paris:20220424T080723
+DTEND;TZID=Europe/Paris:20220424T080723
 END:VEVENT
 END:VCALENDAR

@@ -4,7 +4,7 @@
             {% if is_granted('ROLE_ADMIN') %}
                 {{ include('event/edit_event_button.html.twig') }}
             {% endif %}
-            <figure class="is-3by1" style="height: 100%;width: 50%">
+            <figure style="height: 100%;width: 50%">
             {% if event.image %}
                 <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="" style="height: 100%;width: 100%;object-fit: fill">
             {% else %}
