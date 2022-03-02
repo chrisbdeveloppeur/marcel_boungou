@@ -24,8 +24,12 @@
     </div>
 
     {% if books|length > 0 %}
-        {{ include('bibliography/books_list.html.twig') }}
+        <div class="column">
+            {{ include('bibliography/books_list.html.twig') }}
+        </div>
     {% endif %}
+
+
 
 {% endblock %}
 

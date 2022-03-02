@@ -10,7 +10,7 @@
     <!-- Start Carousel -->
     <div class="carousel">
         {% for album in albums|sort((a, b) => b.year <=> a.year) %}
-            <div class="px-5 py-5 album-carousel scalup-hover transition-1s is-relative">
+            <div class="px-5 py-5 scalup-hover transition-1s is-relative">
 
                 {% if is_granted('ROLE_ADMIN') %}
                     {{ include('album/edit_album_button.html.twig') }}
@@ -28,7 +28,7 @@
                         </figure>
                     </div>
 
-                    <div class="column">
+                    <div class="column has-background-light">
                         <div class="content has-text-black">
                             {{ album }}<br>
                             {% if album.year %}{{ album.year }}{% endif %}<br>

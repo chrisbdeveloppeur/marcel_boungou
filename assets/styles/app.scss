@@ -139,6 +139,7 @@ section.body{
 }
 .navbar-item:hover{
   letter-spacing: .15rem !important;
+  font-weight: bold;
 }
 
 .navbar-menu{
@@ -445,11 +446,11 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   justify-content: center;
   align-items: center;
 }
-.slider-container{
+.events-carousel>div.slider>.slider-container{
   width: 100% !important;
   max-height: 100%;
 }
-.album-carousel{
+.events-carousel{
   //height: 230px;
   //width: 200px
   height: 100%;
