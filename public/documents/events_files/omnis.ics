@@ -17,16 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621de2a547862
-DTSTAMP;TZID=Europe/Paris:20220301T100853
+UID:62212b6927247
+DTSTAMP;TZID=Europe/Paris:20220303T215609
 SUMMARY:omnis
-DESCRIPTION:Nemo quibusdam adipisci repellat. Nihil velit nisi cupiditate. 
- Sit provident placeat repellat itaque voluptate et cumque. Odio ut laudant
- ium quis dolores. Expedita aut eius quod vitae quae qui. Reprehenderit qui
-  occaecati id eveniet. Aliquid et nesciunt culpa similique. Sequi veritati
- s distinctio illo nostrum itaque laboriosam.
-LOCATION:impasse Dupre\, 24035 Baudry-sur-Gaillard\, Baudry-sur-Gaillard
-DTSTART;TZID=Europe/Paris:20220227T024735
-DTEND;TZID=Europe/Paris:20220227T024735
+DESCRIPTION:Qui eveniet praesentium vel nostrum autem. Ipsam debitis fuga n
+ esciunt doloribus. Molestiae ab commodi voluptas neque veritatis.
+LOCATION:36\, avenue Ferreira\, 50 276 CouturierBourg\, CouturierBourg
+DTSTART;TZID=Europe/Paris:20220311T211803
+DTEND;TZID=Europe/Paris:20220311T211803
 END:VEVENT
 END:VCALENDAR

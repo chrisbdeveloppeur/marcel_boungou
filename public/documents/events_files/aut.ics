@@ -17,15 +17,12 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621b5e46db240
-DTSTAMP;TZID=Europe/Paris:20220227T121934
+UID:62212b6923184
+DTSTAMP;TZID=Europe/Paris:20220303T215609
 SUMMARY:aut
-DESCRIPTION:Magnam qui consequuntur repellat dolorem consectetur natus rem.
-  Aut nihil quis necessitatibus omnis. Omnis cupiditate repudiandae quibusd
- am aut qui. Animi delectus optio neque. Aut voluptate dolores reiciendis a
- ccusamus atque ut porro veritatis.
-LOCATION:88\, avenue Laine\, 51449 Neveu-sur-Mer\, Neveu-sur-Mer
-DTSTART;TZID=Europe/Paris:20220402T224253
-DTEND;TZID=Europe/Paris:20220402T224253
+DESCRIPTION:Magnam et sed et eaque. Autem dicta ut dolor.
+LOCATION:46\, rue de Marin\, 36068 Lagarde-les-Bains\, Lagarde-les-Bains
+DTSTART;TZID=Europe/Paris:20220302T083112
+DTEND;TZID=Europe/Paris:20220302T083112
 END:VEVENT
 END:VCALENDAR
