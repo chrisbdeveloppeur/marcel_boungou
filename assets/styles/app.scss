@@ -23,6 +23,9 @@ $navbar-height: 4rem;
 $navbar-item-hover-background-color: $white-layer;
 $navbar-item-color: white;
 $navbar-burger-color: white;
+.navbar-burger:hover{
+  background: rgba(255,255,255,.5) !important;
+}
 
 $navbar-dropdown-background-color: $success;
 $navbar-dropdown-item-hover-background-color: $white-layer;

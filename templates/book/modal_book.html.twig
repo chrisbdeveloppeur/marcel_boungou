@@ -2,8 +2,8 @@
 
     <h3 class="subtitle has-text-centered">{{ book.title }}</h3>
 
-    <div class="is-flex-desktop is-flex-direction-row is-align-items-center">
-        <div class="column">
+    <div class="is-flex is-flex-direction-row is-align-items-center is-justify-content-center">
+        <div class="column is-two-thirds is-half-mobile" style="margin: auto;">
             <figure class="image is-4by5">
                 {% if book.image %}
                     <img src="{{ vich_uploader_asset(book, 'imageFile') }}">
@@ -14,7 +14,7 @@
         </div>
 
         {% if book.imageverso %}
-            <div class="column">
+            <div class="column is-two-thirds is-half-mobile" style="margin: auto;">
                 <figure class="image is-4by5">
                     <img src="{{ vich_uploader_asset(book, 'imageVersoFile') }}">
                 </figure>
