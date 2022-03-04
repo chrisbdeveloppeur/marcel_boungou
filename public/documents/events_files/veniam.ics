@@ -17,17 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621b5f96e2327
-DTSTAMP;TZID=Europe/Paris:20220227T122510
+UID:62223fb322ffe
+DTSTAMP;TZID=Europe/Paris:20220304T173459
 SUMMARY:veniam
-DESCRIPTION:Incidunt molestiae quo ad nemo voluptas. Quae vitae modi sit ac
- cusamus animi modi. Ducimus ullam ratione et cumque blanditiis id eos erro
- r. Est aut et rerum ullam sunt. Perspiciatis expedita tempore inventore qu
- asi. Sunt error et dolor laudantium minima alias modi. Quaerat cupiditate 
- aut rerum. Deleniti vitae modi eum sunt quisquam qui. Labore voluptatem ne
- sciunt eaque neque qui.
-LOCATION:425\, place Barbe\, 98473 Boyer\, Boyer
-DTSTART;TZID=Europe/Paris:20220421T041602
-DTEND;TZID=Europe/Paris:20220421T041602
+DESCRIPTION:Et molestiae consequatur cum quam et ipsa. Dolores beatae delec
+ tus et esse. Asperiores tenetur sit suscipit accusamus nam. Numquam perfer
+ endis at eos dolor architecto. Quos ipsam eum labore ut voluptate.
+LOCATION:1\, avenue de Costa\, 59194 Poulain-sur-Mer\, Poulain-sur-Mer
+DTSTART;TZID=Europe/Paris:20220426T161715
+DTEND;TZID=Europe/Paris:20220426T161715
 END:VEVENT
 END:VCALENDAR

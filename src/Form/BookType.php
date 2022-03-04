@@ -56,7 +56,15 @@ class BookType extends AbstractType
                 ],
             ])
             ->add('imageFile', FileType::class, [
-                'label' => $this->translator->trans('Picture of the book'),
+                'label' => $this->translator->trans('Cover Page (Front)'),
+                'required' => false,
+                'attr' => [
+                    'class' => 'file-input',
+                    'extra-data' => $this->translator->trans('Select an image file...'),
+                ],
+            ])
+            ->add('imageVersoFile', FileType::class, [
+                'label' => $this->translator->trans('Back of the book'),
                 'required' => false,
                 'attr' => [
                     'class' => 'file-input',

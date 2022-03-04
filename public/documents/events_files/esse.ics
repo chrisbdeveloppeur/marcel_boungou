@@ -17,18 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621b58b6b8714
-DTSTAMP;TZID=Europe/Paris:20220227T115550
+UID:62223fb321108
+DTSTAMP;TZID=Europe/Paris:20220304T173459
 SUMMARY:esse
-DESCRIPTION:Sint doloremque est velit labore tempore dignissimos. Temporibu
- s et enim exercitationem ipsa dignissimos. Enim iste modi tempore et. In i
- llo veritatis quam veniam officia. Fugit non blanditiis est consequatur po
- rro quae reprehenderit. Et alias nulla aut quis ipsum officia velit. Tenet
- ur aut aperiam in et officia voluptatibus. Ad et laudantium corrupti ratio
- ne. Reiciendis enim ut quidem. Cumque perspiciatis non ut nihil. Et offici
- a ab enim voluptatibus.
-LOCATION:96\, chemin Arnaud\, 32116 Poulain\, Poulain
-DTSTART;TZID=Europe/Paris:20220228T015547
-DTEND;TZID=Europe/Paris:20220228T015547
+DESCRIPTION:Tempore quasi maxime libero facilis quo nihil. Mollitia consequ
+ untur aut autem consequatur. Dolor qui ab esse qui quia doloremque sed. Co
+ rporis eum iste in rem. Doloremque commodi fuga quae deleniti perferendis 
+ dolor saepe. Pariatur sed illum est magnam exercitationem aut magni vel. O
+ dio dolorem possimus reiciendis officia. Numquam nobis sed expedita quam q
+ uo quo.
+LOCATION:3\, impasse Robert\, 41536 Seguin\, Seguin
+DTSTART;TZID=Europe/Paris:20220330T111726
+DTEND;TZID=Europe/Paris:20220330T111726
 END:VEVENT
 END:VCALENDAR

@@ -5,7 +5,7 @@
 {% block body %}
 
     {% for book in books %}
-        <div class="modal" id="modalBook{{ book.id }}">
+        <div class="modal transition-5ms" id="modalBook{{ book.id }}">
             <div class="modal-background" onclick="this.parentElement.classList.remove('is-active')"></div>
             <div class="modal-content">
                 {{ include('book/modal_book.html.twig') }}

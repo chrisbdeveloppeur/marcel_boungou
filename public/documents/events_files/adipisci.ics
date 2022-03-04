@@ -17,16 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621b58db75393
-DTSTAMP;TZID=Europe/Paris:20220227T115627
+UID:62223fb31e54f
+DTSTAMP;TZID=Europe/Paris:20220304T173459
 SUMMARY:adipisci
-DESCRIPTION:Illo deserunt odio consequatur quo. Deleniti odit exercitatione
- m natus voluptas consectetur. Ut vel ipsa molestiae nisi sint ea explicabo
- . Qui quia nostrum consectetur aspernatur id. Omnis unde qui perferendis q
- uas. Ullam dignissimos eius iste et voluptate sint. Saepe minima temporibu
- s et debitis vero qui. Iusto facilis veritatis laborum.
-LOCATION:243\, avenue de Maillet\, 64226 Rivierenec\, Rivierenec
-DTSTART;TZID=Europe/Paris:20220411T090726
-DTEND;TZID=Europe/Paris:20220411T090726
+DESCRIPTION:Laboriosam odit et dicta eum perferendis ut et. Sit ipsam et eu
+ m repudiandae non sit deleniti. Et in cum incidunt possimus. Nulla quis vo
+ luptate sint. Ipsum ipsa reiciendis suscipit inventore a omnis. Ipsa volup
+ tates eos corporis eum. Rerum molestiae in sunt ad.
+LOCATION:40\, place de Guillet\, 17703 Leduc\, Leduc
+DTSTART;TZID=Europe/Paris:20220308T190059
+DTEND;TZID=Europe/Paris:20220308T190059
 END:VEVENT
 END:VCALENDAR

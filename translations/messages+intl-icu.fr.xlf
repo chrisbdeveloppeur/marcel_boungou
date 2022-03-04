@@ -961,6 +961,18 @@
         <source>Or</source>
         <target>Ou</target>
       </trans-unit>
+      <trans-unit id="6hEkIWV" resname="Cover Page (Front)">
+        <source>Cover Page (Front)</source>
+        <target>Page de Couverture (Recto)</target>
+      </trans-unit>
+      <trans-unit id="YDMwQJD" resname="Back of the book">
+        <source>Back of the book</source>
+        <target>Verso du livre</target>
+      </trans-unit>
+      <trans-unit id="yUUFPns" resname="this is not required">
+        <source>this is not required</source>
+        <target>non obligatoire</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

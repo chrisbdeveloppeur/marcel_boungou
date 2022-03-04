@@ -63,6 +63,22 @@ class Book
     private $imageFile;
 
     /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @var string
+     */
+    private $imageVerso;
+
+    /**
+     * @Vich\UploadableField(mapping="book_img", fileNameProperty="imageVerso")
+     * @var File
+     * @Assert\File(
+     *     mimeTypes={"image/jpeg", "image/jpg","image/bmp", "image/png", "image/svg"},
+     *     mimeTypesMessage="The type of the file is invalid ({{ type }})",
+     * )
+     */
+    private $imageVersoFile;
+
+    /**
      * @ORM\Column(type="datetime", nullable=true)
      * @var \DateTime
      */
@@ -140,12 +156,7 @@ class Book
     public function setImageFile(File $image = null)
     {
         $this->imageFile = $image;
-
-        // VERY IMPORTANT:
-        // It is required that at least one field changes if you are using Doctrine,
-        // otherwise the event listeners won't be called and the file is lost
         if ($image) {
-            // if 'updatedAt' is not defined in your entity, use another property
             $this->updatedAt = new \DateTime('now');
         }
     }
@@ -163,5 +174,28 @@ class Book
     public function getImage()
     {
         return $this->image;
+    }
+
+    public function setImageVersoFile(File $imageVerso = null)
+    {
+        $this->imageVersoFile = $imageVerso;
+        if ($imageVerso) {
+            $this->updatedAt = new \DateTime('now');
+        }
+    }
+
+    public function getImageVersoFile()
+    {
+        return $this->imageVersoFile;
+    }
+
+    public function setImageVerso($imageVerso)
+    {
+        $this->imageVerso = $imageVerso;
+    }
+
+    public function getImageVerso()
+    {
+        return $this->imageVerso;
     }
 }

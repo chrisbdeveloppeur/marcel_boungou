@@ -17,16 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6221ed96a9731
-DTSTAMP;TZID=Europe/Paris:20220304T114438
+UID:62223fb321ba9
+DTSTAMP;TZID=Europe/Paris:20220304T173459
 SUMMARY:totam
-DESCRIPTION:A dicta porro est est perferendis. Omnis necessitatibus natus a
- ut expedita. Eum et impedit animi voluptatum dolor quis occaecati. Est eos
-  dolorum vitae maxime natus maxime. Aliquam aliquam eum repellendus ut. Re
- rum a doloribus at dignissimos non perspiciatis.
-LOCATION:48\, boulevard Chevallier\, 94401 Cordier-la-Forêt\, Cordier-la-F
- orêt
-DTSTART;TZID=Europe/Paris:20220305T093136
-DTEND;TZID=Europe/Paris:20220305T093136
+DESCRIPTION:Ut itaque molestiae numquam delectus quia. Pariatur ullam qui c
+ um.
+LOCATION:impasse Thomas\, 61 774 LeroyBourg\, LeroyBourg
+DTSTART;TZID=Europe/Paris:20220407T173937
+DTEND;TZID=Europe/Paris:20220407T173937
 END:VEVENT
 END:VCALENDAR

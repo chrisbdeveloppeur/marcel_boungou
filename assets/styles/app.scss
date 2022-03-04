@@ -263,6 +263,10 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   border-color: rgba(218, 109, 0, 0.58) !important;
 }
 
+.is-active{
+  transition: .5s;
+}
+
 .datepicker-year.is-active, .datepicker-month.is-active{
   background: $success !important;
   border-color: $success !important;

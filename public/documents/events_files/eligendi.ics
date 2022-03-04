@@ -17,15 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f906d6999
-DTSTAMP;TZID=Europe/Paris:20220223T100614
+UID:62223fb313b1c
+DTSTAMP;TZID=Europe/Paris:20220304T173459
 SUMMARY:eligendi
-DESCRIPTION:Eius doloremque culpa et nisi. Aliquam quo quas animi qui ex. N
- eque consequatur quae magni sint ipsa similique nostrum. Perspiciatis fugi
- at quaerat rerum qui. Eos doloremque nisi nisi. Necessitatibus quo alias p
- ariatur unde ut in quis.
-LOCATION:avenue Brunet\, 81 805 Delannoy\, Delannoy
-DTSTART;TZID=Europe/Paris:20220224T105023
-DTEND;TZID=Europe/Paris:20220224T105023
+DESCRIPTION:Laudantium sit rerum quibusdam. Ut ducimus reprehenderit aut qu
+ i ipsa dignissimos. Dolores commodi corporis quae quia dolores laboriosam.
+LOCATION:510\, rue de Carlier\, 91936 Mullerdan\, Mullerdan
+DTSTART;TZID=Europe/Paris:20220302T020734
+DTEND;TZID=Europe/Paris:20220302T020734
 END:VEVENT
 END:VCALENDAR

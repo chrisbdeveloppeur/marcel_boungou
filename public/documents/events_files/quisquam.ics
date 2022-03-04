@@ -17,14 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fb8259875
-DTSTAMP;TZID=Europe/Paris:20220224T224122
+UID:62223fb30aa22
+DTSTAMP;TZID=Europe/Paris:20220304T173459
 SUMMARY:quisquam
-DESCRIPTION:Est doloribus sit delectus nulla. Quaerat soluta qui quam odio 
- aut voluptatem consequuntur. Itaque iusto aut vero in accusantium laborios
- am dignissimos.
-LOCATION:49\, place Allain\, 57396 Martinnec\, Martinnec
-DTSTART;TZID=Europe/Paris:20220330T151741
-DTEND;TZID=Europe/Paris:20220330T151741
+DESCRIPTION:Cupiditate aperiam libero doloremque culpa beatae dolores. At d
+ olor tempore et hic.
+LOCATION:22\, rue Madeleine Riviere\, 67 631 Diaz\, Diaz
+DTSTART;TZID=Europe/Paris:20220302T093920
+DTEND;TZID=Europe/Paris:20220302T093920
 END:VEVENT
 END:VCALENDAR

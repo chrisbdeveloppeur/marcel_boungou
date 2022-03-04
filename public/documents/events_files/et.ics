@@ -17,17 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6221e2cdc9cfb
-DTSTAMP;TZID=Europe/Paris:20220304T105837
+UID:62223fb3225c7
+DTSTAMP;TZID=Europe/Paris:20220304T173459
 SUMMARY:et
-DESCRIPTION:Enim a omnis modi delectus velit possimus architecto modi. Sit 
- optio eveniet ut eos necessitatibus. Expedita rerum debitis cum. Et qui er
- ror non similique. Eum minus ea corrupti voluptatem enim. Minima pariatur 
- et cum autem. Nobis aut nobis eveniet fugiat ad ex voluptatem. At et rem e
- t tempora error magnam maiores. Consectetur eos omnis consequatur molestia
- e qui.
-LOCATION:708\, boulevard Gilles\, 64 868 Duboisnec\, Duboisnec
-DTSTART;TZID=Europe/Paris:20220416T152158
-DTEND;TZID=Europe/Paris:20220416T152158
+DESCRIPTION:Est nihil officiis eos rerum voluptatem. Eos nostrum et facere 
+ repellat nesciunt. Et distinctio ipsam inventore. Dolorem consequatur debi
+ tis error animi qui corporis illo deleniti. Sed ipsam delectus ipsum repud
+ iandae quibusdam enim fugiat dolor. Ratione et ipsum nihil ut fuga assumen
+ da.
+LOCATION:impasse de Bouchet\, 10444 Couturier\, Couturier
+DTSTART;TZID=Europe/Paris:20220416T121133
+DTEND;TZID=Europe/Paris:20220416T121133
 END:VEVENT
 END:VCALENDAR
