@@ -7,7 +7,7 @@
     {% for event in events %}
         <div class="modal" id="modalEvent{{ event.id }}">
             <div class="modal-background" onclick="this.parentElement.classList.remove('is-active')"></div>
-            <div class="modal-content box has-background-primary">
+            <div class="modal-content box has-background-success-light">
                 {{ include('event/modal_event_details.html.twig') }}
             </div>
             <button class="modal-close is-large" aria-label="close" onclick="this.parentElement.classList.remove('is-active')"></button>

@@ -32,6 +32,11 @@
 
             </div>
 
+        {% if events|length > 0 %}
+            <div class="column">
+                <a href="{{ path('events_all') }}" class="button is-success is-light is-fullwidth box-shadow-bulma is-uppercase has-text-weight-bold">{% trans %}See all events{% endtrans %}</a>
+            </div>
+
             <div class="column">
                 <!-- Events box for mobile -->
                 {#            {% set count_1 = 0 %}#}
@@ -47,12 +52,8 @@
                 {% endif %}
 
             </div>
+        {% endif %}
 
-            {% if events|length > 0 %}
-                <div class="column">
-                    <a href="{{ path('events_all') }}" class="button is-success is-light is-fullwidth box-shadow-bulma is-uppercase has-text-weight-bold">{% trans %}See all events{% endtrans %}</a>
-                </div>
-            {% endif %}
     </section>
 {% endblock %}
 
