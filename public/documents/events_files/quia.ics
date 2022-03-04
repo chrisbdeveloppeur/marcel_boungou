@@ -17,16 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621b58b6bafdb
-DTSTAMP;TZID=Europe/Paris:20220227T115550
+UID:6221edf9ba3c0
+DTSTAMP;TZID=Europe/Paris:20220304T114617
 SUMMARY:quia
-DESCRIPTION:Fuga explicabo voluptatem ipsam odio officiis quia veritatis. R
- epudiandae est incidunt et tempore corporis. Reprehenderit aliquid molliti
- a dolorem architecto qui repellat. Possimus voluptatem et consequatur id a
- ut et et. Doloremque et sapiente ad dolor ut qui. Ut eius dolores eligendi
-  laboriosam sint.
-LOCATION:29\, rue de Guillon\, 94 359 Buisson\, Buisson
-DTSTART;TZID=Europe/Paris:20220307T104619
-DTEND;TZID=Europe/Paris:20220307T104619
+DESCRIPTION:Molestias ipsum est voluptates rerum sunt. Autem odio corporis 
+ quas. Quam et consectetur eum omnis. Alias quia quis ratione soluta et et 
+ magni omnis. Et et aperiam eius iste accusantium aut.
+LOCATION:25\, boulevard Marie\, 05476 Bouvet\, Bouvet
+DTSTART;TZID=Europe/Paris:20220426T100408
+DTEND;TZID=Europe/Paris:20220426T100408
 END:VEVENT
 END:VCALENDAR

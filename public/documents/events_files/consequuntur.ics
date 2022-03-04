@@ -17,17 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fca915c3a
-DTSTAMP;TZID=Europe/Paris:20220224T224617
+UID:6221ed96c466f
+DTSTAMP;TZID=Europe/Paris:20220304T114438
 SUMMARY:consequuntur
-DESCRIPTION:Provident voluptatem deleniti ut inventore expedita. Expedita n
- ostrum culpa dolorem sunt unde asperiores. Et inventore cumque eum sit dol
- ores vitae. Aliquam laboriosam enim itaque omnis quas. Officia ut ipsa inv
- entore quidem. Rem occaecati dolorem minima alias. Dolor sed fugiat volupt
- ate esse sapiente nulla ipsum. Tempore delectus sapiente cum ullam eos dol
- orem molestiae. Et debitis dolores eaque saepe quis quae perferendis.
-LOCATION:514\, boulevard de Maillet\, 16246 LangloisBourg\, LangloisBourg
-DTSTART;TZID=Europe/Paris:20220223T133804
-DTEND;TZID=Europe/Paris:20220223T133804
+DESCRIPTION:At non nesciunt dignissimos minus repellat. Omnis veniam consec
+ tetur nisi libero suscipit quo. Magnam dolores corporis dolor. Rem non sim
+ ilique deleniti blanditiis quidem temporibus ut numquam.
+LOCATION:5\, chemin Pelletier\, 40 240 Becker\, Becker
+DTSTART;TZID=Europe/Paris:20220323T045606
+DTEND;TZID=Europe/Paris:20220323T045606
 END:VEVENT
 END:VCALENDAR

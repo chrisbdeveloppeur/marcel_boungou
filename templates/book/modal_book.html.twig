@@ -2,7 +2,7 @@
 
     <h3 class="subtitle has-text-white has-text-centered">{{ book.title }}</h3>
 
-    <div class="is-flex is-flex-direction-row is-align-items-center">
+    <div class="is-flex-desktop is-flex-direction-row is-align-items-center">
         <div class="column">
             <figure class="image is-4by5">
                 {% if book.image %}
@@ -21,20 +21,22 @@
     </div>
 
 
-    {% if book.description %}
-        <div class="column">
-            <p class="has-text-grey">
-                {{ book.description }}
-            </p>
-        </div>
-    {% endif %}
+    <div class="column">
+        {% if book.description %}
+            <div class="column">
+                <p class="has-text-grey">
+                    {{ book.description }}
+                </p>
+            </div>
+        {% endif %}
 
-    {% if book.redirectlink %}
-        <div class="column">
-            <a href="{{ book.redirectlink }}" class="button is-success">
-                {% trans %}Go to shop{% endtrans %}
-            </a>
-        </div>
-    {% endif %}
+        {% if book.redirectlink %}
+            <div class="column">
+                <a href="{{ book.redirectlink }}" class="button is-success">
+                    {% trans %}Go to shop{% endtrans %}
+                </a>
+            </div>
+        {% endif %}
+    </div>
 
 </div>

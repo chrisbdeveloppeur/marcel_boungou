@@ -17,17 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621f8c5059496
-DTSTAMP;TZID=Europe/Paris:20220302T162504
+UID:6221ed96a9731
+DTSTAMP;TZID=Europe/Paris:20220304T114438
 SUMMARY:totam
-DESCRIPTION:Omnis voluptas labore porro omnis cupiditate dicta velit ad. Il
- lo tempore numquam ducimus non molestiae consequatur ipsa. Doloremque plac
- eat ducimus nulla consectetur eos saepe rerum. Doloremque facilis odio sit
- . Deleniti itaque amet et occaecati enim. Et qui eum qui aspernatur fuga a
- ccusantium esse nostrum.
-LOCATION:28\, place Alphonse Launay\, 60569 Laine-les-Bains\, Laine-les-Bai
- ns
-DTSTART;TZID=Europe/Paris:20220301T011544
-DTEND;TZID=Europe/Paris:20220301T011544
+DESCRIPTION:A dicta porro est est perferendis. Omnis necessitatibus natus a
+ ut expedita. Eum et impedit animi voluptatum dolor quis occaecati. Est eos
+  dolorum vitae maxime natus maxime. Aliquam aliquam eum repellendus ut. Re
+ rum a doloribus at dignissimos non perspiciatis.
+LOCATION:48\, boulevard Chevallier\, 94401 Cordier-la-Forêt\, Cordier-la-F
+ orêt
+DTSTART;TZID=Europe/Paris:20220305T093136
+DTEND;TZID=Europe/Paris:20220305T093136
 END:VEVENT
 END:VCALENDAR

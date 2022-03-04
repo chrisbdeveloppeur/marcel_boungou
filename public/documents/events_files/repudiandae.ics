@@ -17,16 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fac4706bc
-DTSTAMP;TZID=Europe/Paris:20220224T223812
+UID:6221edf9360f7
+DTSTAMP;TZID=Europe/Paris:20220304T114617
 SUMMARY:repudiandae
-DESCRIPTION:Perspiciatis blanditiis et eaque aut. Et perspiciatis consequat
- ur enim est minus sapiente. Quam est voluptatem maxime totam sapiente sed 
- dignissimos. Reprehenderit qui dolorum tempore aut qui minus. Reiciendis e
- os ipsa qui numquam culpa voluptate. Quisquam culpa nostrum voluptatem et.
-  Veniam pariatur dolorem nisi consequatur sit.
-LOCATION:30\, rue Chantal Bonnet\, 41 843 Thierry\, Thierry
-DTSTART;TZID=Europe/Paris:20220223T213214
-DTEND;TZID=Europe/Paris:20220223T213214
+DESCRIPTION:Aut eos nam culpa et similique. Ea dolor quia eos blanditiis ve
+ l. Ipsam cupiditate voluptatem laborum veritatis quia rem. Maiores in vel 
+ quasi voluptatem quo totam est.
+LOCATION:9\, impasse Diane Klein\, 31669 Joubertboeuf\, Joubertboeuf
+DTSTART;TZID=Europe/Paris:20220308T154241
+DTEND;TZID=Europe/Paris:20220308T154241
 END:VEVENT
 END:VCALENDAR

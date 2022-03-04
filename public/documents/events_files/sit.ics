@@ -17,15 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621779298ab12
-DTSTAMP;TZID=Europe/Paris:20220224T132513
+UID:6221edf92d6b3
+DTSTAMP;TZID=Europe/Paris:20220304T114617
 SUMMARY:sit
-DESCRIPTION:Nihil quis quibusdam et sapiente quisquam hic. Quod ad perferen
- dis suscipit. Molestiae rerum neque voluptate. Sit nihil non qui. Iure qui
-  facilis ut in voluptatem saepe. Enim rerum sunt reprehenderit architecto 
- libero eveniet. Aperiam expedita rem aut cum in quo sit sint.
-LOCATION:22\, boulevard de Laurent\, 24660 Lenoir\, Lenoir
-DTSTART;TZID=Europe/Paris:20220309T191555
-DTEND;TZID=Europe/Paris:20220309T191555
+DESCRIPTION:Veniam hic aut aut. Laboriosam nesciunt veritatis id sunt liber
+ o numquam. Alias temporibus dolor eius nemo.
+LOCATION:86\, boulevard de Bouvier\, 29 870 Pinto\, Pinto
+DTSTART;TZID=Europe/Paris:20220302T010443
+DTEND;TZID=Europe/Paris:20220302T010443
 END:VEVENT
 END:VCALENDAR

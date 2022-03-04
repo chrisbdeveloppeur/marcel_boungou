@@ -17,17 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621f8c50667ba
-DTSTAMP;TZID=Europe/Paris:20220302T162504
+UID:6221ed96d6156
+DTSTAMP;TZID=Europe/Paris:20220304T114438
 SUMMARY:non
-DESCRIPTION:Quis autem distinctio tempora magnam. Officia suscipit fuga sed
-  ducimus mollitia. Esse quod dolores minima accusantium eum. Dolorem facil
- is cupiditate fugiat voluptatum dolor voluptas et. Modi aliquid iste nihil
-  saepe. Et atque aut sed dolorem reprehenderit. Quas rerum provident qui s
- it nostrum et minima. Natus dolore a est nobis voluptas cupiditate laborio
- sam. Distinctio mollitia magni non doloremque ut.
-LOCATION:405\, rue de Maillet\, 69 666 Blot\, Blot
-DTSTART;TZID=Europe/Paris:20220306T210801
-DTEND;TZID=Europe/Paris:20220306T210801
+DESCRIPTION:Quia est ex odio dignissimos neque. Occaecati et eveniet sapien
+ te sint. Nulla et temporibus et expedita dignissimos. Temporibus ipsa quis
+  quas aliquam ut optio.
+LOCATION:87\, boulevard Charles Lecomte\, 72641 MaryBourg\, MaryBourg
+DTSTART;TZID=Europe/Paris:20220426T082039
+DTEND;TZID=Europe/Paris:20220426T082039
 END:VEVENT
 END:VCALENDAR

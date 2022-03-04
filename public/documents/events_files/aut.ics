@@ -17,12 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62212b6923184
-DTSTAMP;TZID=Europe/Paris:20220303T215609
+UID:6221edf92407d
+DTSTAMP;TZID=Europe/Paris:20220304T114617
 SUMMARY:aut
-DESCRIPTION:Magnam et sed et eaque. Autem dicta ut dolor.
-LOCATION:46\, rue de Marin\, 36068 Lagarde-les-Bains\, Lagarde-les-Bains
-DTSTART;TZID=Europe/Paris:20220302T083112
-DTEND;TZID=Europe/Paris:20220302T083112
+DESCRIPTION:Accusantium culpa voluptas in velit repellat ut qui. Ipsam offi
+ cia voluptates nemo tempore. Voluptas voluptates molestiae corrupti volupt
+ atum.
+LOCATION:2\, avenue Leclerc\, 07048 Baron-sur-Mer\, Baron-sur-Mer
+DTSTART;TZID=Europe/Paris:20220302T225755
+DTEND;TZID=Europe/Paris:20220302T225755
 END:VEVENT
 END:VCALENDAR

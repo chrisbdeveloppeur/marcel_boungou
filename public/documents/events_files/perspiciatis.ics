@@ -17,15 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621771c0bd650
-DTSTAMP;TZID=Europe/Paris:20220224T125336
+UID:6221ed96a1709
+DTSTAMP;TZID=Europe/Paris:20220304T114438
 SUMMARY:perspiciatis
-DESCRIPTION:Et dolores voluptas eum vel culpa molestiae dolor. Repudiandae 
- aut id dignissimos enim vel non. Quam sapiente sapiente facere dignissimos
-  commodi maiores ut. Vel officia ad adipisci debitis numquam molestiae. Pr
- aesentium omnis et et sed beatae quia facere.
-LOCATION:1\, avenue Lemaire\, 08 158 Georges\, Georges
-DTSTART;TZID=Europe/Paris:20220418T172124
-DTEND;TZID=Europe/Paris:20220418T172124
+DESCRIPTION:Impedit quos voluptatem sed sapiente officia ut blanditiis. Rep
+ udiandae quia et similique assumenda necessitatibus. Repellendus quas et a
+ b et placeat excepturi. Eligendi nam culpa incidunt ut odit hic. Voluptate
+ m vel ipsum molestiae voluptas. Similique totam natus ut molestiae asperna
+ tur. Tempora ratione totam atque aut tenetur non adipisci.
+LOCATION:52\, rue Gabriel Martinez\, 91009 FoucherVille\, FoucherVille
+DTSTART;TZID=Europe/Paris:20220302T111150
+DTEND;TZID=Europe/Paris:20220302T111150
 END:VEVENT
 END:VCALENDAR

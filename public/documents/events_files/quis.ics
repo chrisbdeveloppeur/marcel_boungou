@@ -17,17 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fcc3234a0
-DTSTAMP;TZID=Europe/Paris:20220224T224643
+UID:6221ed96c50f6
+DTSTAMP;TZID=Europe/Paris:20220304T114438
 SUMMARY:quis
-DESCRIPTION:Temporibus eum et aut rem molestiae itaque velit. Dicta sequi f
- ugit distinctio alias consequatur. Molestiae similique consequatur perspic
- iatis sequi aut necessitatibus ut. Corporis vero et quis molestiae est nih
- il. Rerum sed quaerat reiciendis. Sunt optio quo dolor deleniti molestias 
- quis. Iusto eum et qui ex unde voluptas eligendi. Minus reprehenderit omni
- s delectus nobis. Rerum enim rerum quia nisi qui alias.
-LOCATION:98\, rue de Herve\, 99684 Bonneau\, Bonneau
-DTSTART;TZID=Europe/Paris:20220408T055041
-DTEND;TZID=Europe/Paris:20220408T055041
+DESCRIPTION:Labore dolor nesciunt dolore iste voluptas molestiae. Quidem ut
+  qui reiciendis sed earum quam enim. Impedit voluptate sit rerum dolores i
+ d nisi dignissimos.
+LOCATION:75\, impasse Nath Briand\, 04700 Bouvier-les-Bains\, Bouvier-les-B
+ ains
+DTSTART;TZID=Europe/Paris:20220330T055900
+DTEND;TZID=Europe/Paris:20220330T055900
 END:VEVENT
 END:VCALENDAR

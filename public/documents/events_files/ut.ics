@@ -17,16 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621de2a56b276
-DTSTAMP;TZID=Europe/Paris:20220301T100853
+UID:6221ed96ba258
+DTSTAMP;TZID=Europe/Paris:20220304T114438
 SUMMARY:ut
-DESCRIPTION:Nemo cupiditate ut facere quo. Aut aliquam quibusdam ipsa conse
- quatur sapiente. Dolor id repellat maiores beatae eaque. Autem ipsum sed e
- st quia. Repudiandae voluptatibus doloribus tempore doloribus aliquam arch
- itecto voluptatem. Laudantium nemo consequuntur qui alias qui. Vero repell
- at corrupti vero.
-LOCATION:522\, rue de De Oliveira\, 85846 Pascal\, Pascal
-DTSTART;TZID=Europe/Paris:20220404T165405
-DTEND;TZID=Europe/Paris:20220404T165405
+DESCRIPTION:Velit ut quia et quos ea. Nulla et quia consequuntur eum sed es
+ t. Provident labore mollitia nam minus qui quasi.
+LOCATION:place Jeannine Hoareau\, 21 586 Thomas\, Thomas
+DTSTART;TZID=Europe/Paris:20220317T011828
+DTEND;TZID=Europe/Paris:20220317T011828
 END:VEVENT
 END:VCALENDAR

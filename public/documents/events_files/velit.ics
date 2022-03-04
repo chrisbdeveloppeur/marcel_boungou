@@ -17,17 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621b58b6bdb4b
-DTSTAMP;TZID=Europe/Paris:20220227T115550
+UID:6221ed96c5ab1
+DTSTAMP;TZID=Europe/Paris:20220304T114438
 SUMMARY:velit
-DESCRIPTION:Consectetur consequatur consequatur tenetur qui natus eum. Unde
-  recusandae aut consequuntur impedit. Reiciendis cumque soluta ducimus. Au
- tem deserunt inventore accusantium eum et dicta occaecati. Dolore nisi ill
- um voluptatem. Aut adipisci et deserunt eligendi maiores assumenda. Verita
- tis sunt deserunt laboriosam consectetur tempora non. Rerum atque incidunt
-  nulla eligendi qui.
-LOCATION:place Benoît Allain\, 50884 Hardy\, Hardy
-DTSTART;TZID=Europe/Paris:20220318T234031
-DTEND;TZID=Europe/Paris:20220318T234031
+DESCRIPTION:Odit est rerum nesciunt quaerat. Dolor tempore recusandae qui v
+ oluptatum reprehenderit officia. Ratione in voluptas incidunt. Deleniti as
+ pernatur vero aut ipsa.
+LOCATION:32\, impasse de Sauvage\, 54752 Caronboeuf\, Caronboeuf
+DTSTART;TZID=Europe/Paris:20220407T121954
+DTEND;TZID=Europe/Paris:20220407T121954
 END:VEVENT
 END:VCALENDAR

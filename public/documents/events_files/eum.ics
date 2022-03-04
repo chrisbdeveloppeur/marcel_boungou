@@ -17,18 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fb8fbb4f3
-DTSTAMP;TZID=Europe/Paris:20220224T224135
+UID:6221e2cd86811
+DTSTAMP;TZID=Europe/Paris:20220304T105837
 SUMMARY:eum
-DESCRIPTION:Earum occaecati dolores atque. Fugiat et perferendis cumque pla
- ceat dignissimos. Ipsa asperiores fuga dolore expedita. Facilis id est par
- iatur aut at. Sunt nihil ipsum ab nemo. Laborum culpa adipisci quo nihil. 
- Neque est voluptatem aut. Quasi illo omnis est voluptatum qui porro. Maxim
- e quis consequatur vel ullam eos qui vitae. Beatae sed labore porro doloru
- m inventore est.
-LOCATION:19\, chemin Benoît Mace\, 15 409 Morvan-sur-Coste\, Morvan-sur-Co
- ste
-DTSTART;TZID=Europe/Paris:20220330T102230
-DTEND;TZID=Europe/Paris:20220330T102230
+DESCRIPTION:Non deserunt amet omnis ea quas. Quisquam dolor est voluptatem 
+ illo. Alias aut placeat debitis quas ut est quo. Dolor magnam tempore nihi
+ l.
+LOCATION:chemin Laurence Guerin\, 24 763 Levequedan\, Levequedan
+DTSTART;TZID=Europe/Paris:20220302T063953
+DTEND;TZID=Europe/Paris:20220302T063953
 END:VEVENT
 END:VCALENDAR

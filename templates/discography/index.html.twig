@@ -13,7 +13,7 @@
         </p>
     </div>
 
-    <div class="column has-background-light is-full" style="position: sticky;top: 3.85rem;z-index: 31">
+    <div class="column has-background-light is-full is-full-mobile" style="position: sticky;top: 3.85rem;z-index: 29">
         <div class="field">
             <div class="control has-icons-right has-icons-left is-relative">
                 <input class="input" type="text" id="searchInput" onkeyup="searchFilter()" placeholder="{% trans %}Type a song or album here{% endtrans %}">
@@ -115,11 +115,14 @@
             var musicContainer = btn.parentElement.parentElement;
             var nextContainer = musicContainer.nextElementSibling;
             var musicText = btn.parentElement.parentElement.querySelector('.music-text');
+
+            // ON MUSIC END
             audio.addEventListener('ended',function () {
                 icon.classList.replace('fa-pause', 'fa-play');
                 musicContainer.classList.remove('scalup-1-1');
-                btn.parentElement.classList.remove('box-shadow-success');
                 musicContainer.style.filter = 'grayscale(1)';
+                nextContainer = getNextVisibleContainer(nextContainer);
+                btn.parentElement.classList.remove('box-shadow-success');
 
                 musicText.classList.remove('text-shadow-success');
 
@@ -127,10 +130,29 @@
                     var nextBtnPlayAudio = nextContainer.querySelector('.play-btn');
                     nextBtnPlayAudio.click();
                 }else {
-                    musicContainer.parentElement.firstElementChild.querySelector('.play-btn').click();
+                    var firstContainer = musicContainer.parentElement.firstElementChild;
+                    nextContainer = getNextVisibleContainer(firstContainer);
+                    nextContainer.querySelector('.play-btn').click();
+                }
+
+
+                function getNextVisibleContainer(nextSong) {
+                    while (nextSong) {
+                        if (nextSong.classList.contains('is-hidden')){
+                            console.log('NEXT CONTAINER HIDDEN');
+                            console.log(nextSong);
+                            nextSong = nextSong.nextElementSibling;
+                        } else {
+                            console.log('NEXT CONTAINER VISIBLE');
+                            console.log(nextSong);
+                            return nextSong;
+                        }
+                    }
                 }
 
             });
+
+            // ON MUSIC PAUSE
             audio.onpause = function () {
                 icon.classList.replace('fa-pause', 'fa-play');
                 musicContainer.classList.remove('scalup-1-1');
@@ -138,6 +160,8 @@
                 musicContainer.style.filter = 'grayscale(1)';
                 musicText.classList.remove('text-shadow-success')
             };
+
+            // ON MUSIC PLAY
             audio.onplay = function () {
                 icon.classList.replace('fa-play', 'fa-pause');
                 musicContainer.classList.add('scalup-1-1');
