@@ -1,4 +1,4 @@
-<div class="column px-0 py-0  has-text-white">
+<div class="column px-0 py-0 ">
     <figure class="image is-3by1">
         {% if events[0].image %}
             <img src="{{ vich_uploader_asset(events[0], 'imageFile') }}" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
@@ -17,8 +17,8 @@
         </a>
     </div>
 
-    <div class="has-text-centered subtitle is-3 has-text-white">
-        Or...
+    <div class="has-text-centered subtitle is-3">
+        {{ 'Or'|trans }}...
     </div>
 
     <div class="">

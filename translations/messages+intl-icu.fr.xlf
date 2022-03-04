@@ -957,6 +957,10 @@
         <source>Edit Manager</source>
         <target>Modifier le gestionnaire</target>
       </trans-unit>
+      <trans-unit id="BWi9A7j" resname="Or">
+        <source>Or</source>
+        <target>Ou</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
