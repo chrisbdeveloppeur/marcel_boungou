@@ -1,9 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% endblock %}
+{#{% block title %}{% endblock %}#}
 
 {% block body %}
-        <div class="column is-two-fifths-desktop is-two-thirds-tablet has-background-light">
-            {{ include('themes/_form.html.twig') }}
+        <div class="is-flex-tablet is-justify-content-center">
+                <div class="box column is-two-fifths-desktop is-two-thirds-tablet">
+                        {{ include('themes/_form.html.twig') }}
+                </div>
         </div>
 {% endblock %}

@@ -50,15 +50,15 @@ class RegistrationFormType extends AbstractType
                 ],
             ])
 
-            ->add('agreeTerms', CheckboxType::class, [
-                'mapped' => false,
-                'label' => false,
-                'constraints' => [
-                    new IsTrue([
-                        'message' => $this->translator->trans('You should agree to our terms'),
-                    ]),
-                ],
-            ])
+//            ->add('agreeTerms', CheckboxType::class, [
+//                'mapped' => false,
+//                'label' => false,
+//                'constraints' => [
+//                    new IsTrue([
+//                        'message' => $this->translator->trans('You should agree to our terms'),
+//                    ]),
+//                ],
+//            ])
 
         ;
     }

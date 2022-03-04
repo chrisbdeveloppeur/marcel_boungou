@@ -120,7 +120,7 @@
             audio.addEventListener('ended',function () {
                 icon.classList.replace('fa-pause', 'fa-play');
                 musicContainer.classList.remove('scalup-1-1');
-                musicContainer.style.filter = 'grayscale(1)';
+                // musicContainer.style.filter = 'grayscale(1)';
                 nextContainer = getNextVisibleContainer(nextContainer);
                 btn.parentElement.classList.remove('box-shadow-success');
 
@@ -149,7 +149,7 @@
                 icon.classList.replace('fa-pause', 'fa-play');
                 musicContainer.classList.remove('scalup-1-1');
                 btn.parentElement.classList.remove('box-shadow-success');
-                musicContainer.style.filter = 'grayscale(1)';
+                // musicContainer.style.filter = 'grayscale(1)';
                 musicText.classList.remove('text-shadow-success')
             };
 
@@ -158,7 +158,7 @@
                 icon.classList.replace('fa-play', 'fa-pause');
                 musicContainer.classList.add('scalup-1-1');
                 btn.parentElement.classList.add('box-shadow-success');
-                musicContainer.style.filter = 'grayscale(0)';
+                // musicContainer.style.filter = 'grayscale(0)';
                 musicText.classList.add('text-shadow-success')
             };
         });

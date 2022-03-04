@@ -1,10 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New Album{% endblock %}
+{% block title %}{% trans %}Add Album{% endtrans %}{% endblock %}
 
 {% block body %}
-    <div class="column is-two-fifths-desktop is-two-thirds-tablet has-background-light">
-        <h1 class="subtitle is-3">{% trans %}Create new Album{% endtrans %}</h1>
-        {{ include('themes/_form.html.twig') }}
+    <div class="is-flex-tablet is-justify-content-center">
+        <div class="box column is-two-fifths-desktop is-two-thirds-tablet">
+            <h1 class="subtitle is-3">{% trans %}Add new Album{% endtrans %}</h1>
+            {{ include('themes/_form.html.twig') }}
+        </div>
     </div>
 {% endblock %}

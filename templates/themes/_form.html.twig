@@ -11,6 +11,9 @@
 
 {% if 'new' not in app.request.get('_route') %}
     <div class="pt-1 has-text-right">
+        <span class="icon">
+
+        </span>
         {%  include(form.vars.name~'/_delete_form.html.twig') ignore missing %}
     </div>
 {% endif %}
@@ -30,7 +33,7 @@
 <div class="field">
     {% if 'token' not in form_label(child) %}
         <div class="label is-size-7">
-            {{ form_label(child) }}
+            {{ child.vars.label }}
             {% if child.vars.required %}
                 *
             {% endif %}

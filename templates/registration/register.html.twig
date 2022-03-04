@@ -6,19 +6,10 @@
     {% for flashError in app.flashes('verify_email_error') %}
         <div class="alert alert-danger" role="alert">{{ flashError }}</div>
     {% endfor %}
-<div class="column is-two-fifths-desktop is-two-thirds-tablet has-background-light">
-    <h1 class="subtitle is-3">{% trans %}Register{% endtrans %}</h1>
-    {#
-        {{ form_start(registrationForm, {'attr':{'class':'column'}}) }}
-            {{ form_row(registrationForm.email) }}
-            {{ form_row(registrationForm.plainPassword, {
-                label: 'Password'
-            }) }}
-            {{ form_row(registrationForm.agreeTerms) }}
-
-            <button type="submit" class="button">{% trans %}Register{% endtrans %}</button>
-        {{ form_end(registrationForm) }}
-    #}
-    {{ include('themes/_form.html.twig') }}
-</div>
+    <div class="is-flex-tablet is-justify-content-center">
+        <div class="box column is-two-fifths-desktop is-two-thirds-tablet">
+            <h1 class="subtitle is-3">{% trans %}Register{% endtrans %}</h1>
+            {{ include('themes/_form.html.twig') }}
+        </div>
+    </div>
 {% endblock %}

@@ -929,6 +929,34 @@
         <source>Type your search here</source>
         <target>Tapez votre recherche ici</target>
       </trans-unit>
+      <trans-unit id="5KOrWx3" resname="Find the entire literary collection of the artist">
+        <source>Find the entire literary collection of the artist</source>
+        <target>Retrouvez l'intégralité de la collection littéraire de l'artiste</target>
+      </trans-unit>
+      <trans-unit id="8BDdtuq" resname="Add Album">
+        <source>Add Album</source>
+        <target>Ajouter un album</target>
+      </trans-unit>
+      <trans-unit id="PfFhB5R" resname="Add new Album">
+        <source>Add new Album</source>
+        <target>Ajouter un album</target>
+      </trans-unit>
+      <trans-unit id="nBr4eUN" resname="Add Book">
+        <source>Add Book</source>
+        <target>Ajouter un livre</target>
+      </trans-unit>
+      <trans-unit id="iLwnmoQ" resname="Add new Event">
+        <source>Add new Event</source>
+        <target>Ajouter un événement</target>
+      </trans-unit>
+      <trans-unit id="5HY4e7r" resname="Edit song">
+        <source>Edit song</source>
+        <target>Modifier la chanson</target>
+      </trans-unit>
+      <trans-unit id="IKgtkSG" resname="Edit Manager">
+        <source>Edit Manager</source>
+        <target>Modifier le gestionnaire</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
