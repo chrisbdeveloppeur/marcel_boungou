@@ -187,7 +187,7 @@
         {# SCRIPT POUR BARRE DE RECHERCHE FILTRE JS #}
         function searchFilter() {
             // Declare variables
-            var input, filter, albumName, musicName, albumTxtValue, musicTxtValue, musicContainer;
+            var input, filter, albumName, albumYear, musicName, albumTxtValue, musicTxtValue, albumYearValue, musicContainer;
             input = document.getElementById('searchInput');
             filter = input.value.toUpperCase();
 
@@ -196,10 +196,12 @@
             // Loop through all list items, and hide those who don't match the search query
             musicContainer.forEach(function (container) {
                 albumName = container.querySelector('.album-name');
+                albumYear = container.querySelector('.album-year');
                 musicName = container.querySelector('.music-name');
                 albumTxtValue = albumName.textContent || albumName.innerText;
+                albumYearValue = albumYear.textContent || albumYear.innerText;
                 musicTxtValue = musicName.textContent || musicName.innerText;
-                if ( (albumTxtValue.toUpperCase().indexOf(filter) > -1) || (musicTxtValue.toUpperCase().indexOf(filter) > -1) ) {
+                if ( (albumTxtValue.toUpperCase().indexOf(filter) > -1) || (albumYearValue.toUpperCase().indexOf(filter) > -1) || (musicTxtValue.toUpperCase().indexOf(filter) > -1) ) {
                     container.classList.remove('is-hidden');
                     container.classList.replace('opacity0', 'opacity100')
                 } else {
