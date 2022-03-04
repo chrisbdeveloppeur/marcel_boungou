@@ -16,7 +16,7 @@
     <div class="column has-background-light is-full is-full-mobile" style="position: sticky;top: 3.85rem;z-index: 29">
         <div class="field">
             <div class="control has-icons-right has-icons-left is-relative">
-                <input class="input" type="text" id="searchInput" onkeyup="searchFilter()" placeholder="{% trans %}Type a song or album here{% endtrans %}">
+                <input class="input" type="text" id="searchInput" onkeyup="searchFilter()" placeholder="{% trans %}Type your search here{% endtrans %}">
                 <span class="icon is-small is-left">
                     <i class="fas fa-search"></i>
                 </span>
@@ -129,22 +129,14 @@
                 if (nextContainer){
                     var nextBtnPlayAudio = nextContainer.querySelector('.play-btn');
                     nextBtnPlayAudio.click();
-                }else {
-                    var firstContainer = musicContainer.parentElement.firstElementChild;
-                    nextContainer = getNextVisibleContainer(firstContainer);
-                    nextContainer.querySelector('.play-btn').click();
                 }
 
 
                 function getNextVisibleContainer(nextSong) {
                     while (nextSong) {
                         if (nextSong.classList.contains('is-hidden')){
-                            console.log('NEXT CONTAINER HIDDEN');
-                            console.log(nextSong);
                             nextSong = nextSong.nextElementSibling;
                         } else {
-                            console.log('NEXT CONTAINER VISIBLE');
-                            console.log(nextSong);
                             return nextSong;
                         }
                     }
@@ -179,6 +171,32 @@
             var musicContainer = btn.parentElement.parentElement;
             var audio = musicContainer.querySelector('audio');
             btn.addEventListener('click',function () {
+                audio.currentTime = 0;
+            })
+        }
+        {#                               #}
+
+        {# POUR LES BOUTONS LOOP #}
+        let loopBtns = document.querySelectorAll('.loop-btn');
+        loopBtns.forEach(loopMusic);
+        function loopMusic(btn) {
+            var musicContainer = btn.parentElement.parentElement;
+            var audio = musicContainer.querySelector('audio');
+            btn.addEventListener('click',function () {
+                audio.toggleAttribute('loop');
+                btn.classList.toggle('is-light');
+            })
+        }
+        {#                               #}
+
+        {# POUR LES BOUTONS STOP #}
+        let stopBtns = document.querySelectorAll('.stop-btn');
+        stopBtns.forEach(stopMusic);
+        function stopMusic(btn) {
+            var musicContainer = btn.parentElement.parentElement;
+            var audio = musicContainer.querySelector('audio');
+            btn.addEventListener('click',function () {
+                audio.pause();
                 audio.currentTime = 0;
             })
         }

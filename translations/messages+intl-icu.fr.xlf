@@ -925,6 +925,10 @@
         <source>User</source>
         <target>Gestionnaire</target>
       </trans-unit>
+      <trans-unit id="is4Mugm" resname="Type your search here">
+        <source>Type your search here</source>
+        <target>Tapez votre recherche ici</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
