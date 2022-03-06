@@ -39,6 +39,10 @@ $card-radius: 0;
   background-color: $success !important;
 }
 
+.table{
+  margin: auto;
+}
+
 //$font-quintessential : 'Quintessential', cursive;
 //$font-nothing-you-could-do: 'Nothing You Could Do', cursive;
 //$font-kavivanar: 'Kavivanar', cursive;
@@ -88,8 +92,11 @@ body{
   min-height: 100vh;
 }
 
+
+
 section.body{
   min-height: inherit;
+  padding-top: 3rem;
 }
 
 .main-background{
