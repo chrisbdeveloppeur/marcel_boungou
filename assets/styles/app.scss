@@ -379,14 +379,15 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   z-index: 1500;
   width: 40px;
   height: 40px;
-  //background: rgba(150,150,150,0.7);
+  background: rgba(0,0,0,0.7);
   border: $success solid 3px;
+  border-radius: 50%;
   justify-content: center;
   align-items: center;
   opacity: 0;
 }
 .arrow_up:hover{
-  animation: jumpUp 1s infinite ease-in-out;
+  animation: jumpUp .8s infinite ease-in-out;
 }
 
 
@@ -573,7 +574,7 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
     transform: translateY(0%);
   }
   25% {
-    transform: translateY(-15%);
+    transform: translateY(-20%);
   }
   50%, 100% {
     transform: translateY(0%);
