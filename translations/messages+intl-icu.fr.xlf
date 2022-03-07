@@ -983,7 +983,7 @@
       </trans-unit>
       <trans-unit id="agFsa_3" resname="Filter your search by writing a word in the search bar...">
         <source>Filter your search by writing a word in the search bar...</source>
-        <target>Filter your search by writing a word in the search bar...</target>
+        <target>Filtrez votre recherche en écrivant un mot dans la barre de recherche...</target>
       </trans-unit>
       <trans-unit id="G_Tcksg" resname="Edit Picture">
         <source>Edit Picture</source>
