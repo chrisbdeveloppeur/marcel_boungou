@@ -13,10 +13,10 @@
         </p>
     </div>
 
-    <div class="column has-background-light is-full is-full-mobile" style="position: sticky;top: 3.85rem;z-index: 29">
+    <div class="column has-background-light is-full is-full-mobile search-bar">
         <div class="field">
             <div class="control has-icons-right has-icons-left is-relative">
-                <input class="input" type="text" id="searchInput" onkeyup="searchFilter()" placeholder="{% trans %}Type your search here{% endtrans %}">
+                <input class="input" type="text" id="searchInput" onkeyup="searchFilter(['.test'])" placeholder="{% trans %}Type your search here{% endtrans %}">
                 <span class="icon is-small is-left">
                     <i class="fas fa-search"></i>
                 </span>
@@ -30,4 +30,57 @@
             </div>
         </div>
     </div>
+
+    {% if pictures|length > 0 %}
+        <div class="column is-full is-full-mobile">
+            {{ include('gallery/picture_list.html.twig') }}
+        </div>
+    {% endif %}
+    {% if is_granted('ROLE_ADMIN') %}
+        <div class="column">
+            <a href="{{ path('picture_new') }}" class="button is-success">{{ 'Add a new picture'|trans }}</a>
+        </div>
+    {% endif %}
+
+{% endblock %}
+
+
+{% block javascripts %}
+    <script>
+
+        {# SCRIPT POUR BARRE DE RECHERCHE FILTRE JS #}
+        function searchFilter(classes) {
+            // Declare variables
+            classes.forEach(function (classe) {
+                if (classe !== null){
+                    addClasseFilter(classe);
+                }
+            });
+        }
+
+        function addClasseFilter(classe) {
+            var input, filter, classeElement, classeElementValue, musicContainer;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+
+            musicContainer = document.querySelectorAll('.music-container');
+
+            // Loop through all list items, and hide those who don't match the search query
+            musicContainer.forEach(function (container) {
+                classeElement = container.querySelector(classe);
+                if (classeElement){
+                    classeElementValue = classeElement.textContent || classeElement.innerText;
+                    if ( classeElementValue.toUpperCase().indexOf(filter) > -1 ) {
+                        container.classList.remove('is-hidden');
+                        container.classList.replace('opacity0', 'opacity100')
+                    } else {
+                        container.classList.add('is-hidden');
+                        container.classList.replace('opacity100', 'opacity0')
+                    }
+                }
+            });
+        }
+        {#                               #}
+
+    </script>
 {% endblock %}

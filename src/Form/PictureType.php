@@ -37,6 +37,15 @@ class PictureType extends AbstractType
                     'class' => 'input'
                 ]
             ])
+            ->add('tags', TextType::class,[
+                'required'=> false,
+                'label' => false,
+                'attr' => [
+                    'class' => 'tags-input',
+                    'data-type' => 'tags',
+                    'placeholder' => $this->translator->trans('Add a Tag')
+                ],
+            ])
         ;
     }
 

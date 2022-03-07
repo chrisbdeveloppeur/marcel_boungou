@@ -390,6 +390,11 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   animation: jumpUp .8s infinite ease-in-out;
 }
 
+.search-bar{
+  position: sticky;
+  top: 3.85rem;
+  z-index: 5
+}
 
 // BREAK RESPONSIVE FOR DESKTOP
 @media (max-width: 1023px ) {

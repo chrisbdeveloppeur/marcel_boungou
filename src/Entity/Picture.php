@@ -48,6 +48,16 @@ class Picture
      */
     private $updatedAt;
 
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $tags;
+
+    /**
+     * ORM\Column(type="array", nullable=true)
+     */
+    private $array_tags;
+
     public function __toString()
     {
         if ($this->title){
@@ -105,5 +115,24 @@ class Picture
     public function getUpdatedAt()
     {
         return $this->updatedAt;
+    }
+
+    public function getTags()
+    {
+        return $this->tags;
+    }
+
+    public function getTagsInArray()
+    {
+        $this->array_tags = explode(",",$this->tags);
+        return $this->array_tags;
+    }
+
+    public function setTags($tags)
+    {
+        $tags = strtolower(preg_replace('~[\\\\/:*?"<>|() &\']~','',$tags));
+        $this->tags = $tags;
+
+        return $this;
     }
 }

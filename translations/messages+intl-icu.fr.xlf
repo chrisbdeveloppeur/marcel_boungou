@@ -977,7 +977,7 @@
         <source>Picture title</source>
         <target>Titre de l'image</target>
       </trans-unit>
-      <trans-unit id="h8aIKuA" resname="Browse all photos and illustrations">
+      <trans-unit id="u1Ccvpy" resname="Browse all photos and illustrations">
         <source>Browse all photos and illustrations</source>
         <target>Pacrourez l'ensemble des photos et illustration</target>
       </trans-unit>
@@ -996,6 +996,10 @@
       <trans-unit id="ezeZ4i5" resname="Add a new Picture">
         <source>Add a new Picture</source>
         <target>Ajouter une nouvelle image</target>
+      </trans-unit>
+      <trans-unit id="VTH5a5y" resname="Manage Pictures">
+        <source>Manage Pictures</source>
+        <target>Gestion des images</target>
       </trans-unit>
     </body>
   </file>

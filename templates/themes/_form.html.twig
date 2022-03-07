@@ -22,7 +22,7 @@
 
     {% if 'tags' in child.vars.name %}
         <div class="label is-size-7">
-            Tags
+            {{ 'Tags'|trans }}
         </div>
         {{ form_widget(child) }}
     {% endif %}
