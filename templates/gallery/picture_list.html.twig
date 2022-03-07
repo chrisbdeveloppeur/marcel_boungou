@@ -8,35 +8,26 @@
                         {{ include('picture/edit_picture_button.html.twig') }}
                     {% endif %}
 
-                    <a data-href="{{ picture }}" onclick="document.getElementById('modalBook'+{{ picture.id }}).classList.add('is-active')" class="card" style="width: 200px; height: 100%;">
+                    <div class="pointer-hover is-flex is-flex-direction-column" onclick="document.getElementById('modalPicture'+{{ picture.id }}).classList.add('is-active')">
 
-                        <div class="card-image">
-                            <figure class="image is-square">
-                                {% if picture.image %}
-                                    <img src="{{ vich_uploader_asset(picture, 'imageFile') }}">
-                                {% else %}
-                                    <img src="https://bulma.io/images/placeholders/480x600.png">
-                                {% endif %}
-                            </figure>
-                        </div>
-
-                        <div class="column has-background-light">
-                            <div class="has-text-black help picture-name">
-                                {{ picture.title | default(picture.image) }}
+                        {% if picture.image %}
+                            <img src="{{ vich_uploader_asset(picture, 'imageFile') }}">
+                        {% else %}
+                            <img src="https://bulma.io/images/placeholders/480x600.png">
+                        {% endif %}
+                        {% if picture.tags|length > 0 %}
+                            <div class="has-background-black">
+                                <div class="px-2 py-2">
+                                    {% for tag in picture.tagsinarray %}
+                                        {% if tag %}
+                                            <a class="tag is-success picture-tag">#{{ tag }}</a>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
                             </div>
-                        </div>
+                        {% endif %}
 
-                        <div class="has-background-black">
-                            <div class="px-2 py-2">
-                                {% for tag in picture.tagsinarray %}
-                                    {% if tag %}
-                                        <a class="tag is-success picture-tag">#{{ tag }}</a>
-                                    {% endif %}
-                                {% endfor %}
-                            </div>
-                        </div>
-
-                    </a>
+                    </div>
                 </div>
             </div>
         {% endfor %}

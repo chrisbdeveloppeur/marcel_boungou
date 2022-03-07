@@ -1001,6 +1001,10 @@
         <source>Manage Pictures</source>
         <target>Gestion des images</target>
       </trans-unit>
+      <trans-unit id="l7hUSDf" resname="Add a new picture">
+        <source>Add a new picture</source>
+        <target>Ajouter une nouvelle image</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

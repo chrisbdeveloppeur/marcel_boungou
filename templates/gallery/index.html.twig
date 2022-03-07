@@ -3,6 +3,17 @@
 {% block title %}{{ 'Gallery'|trans }}{% endblock %}
 
 {% block body %}
+
+    {% for picture in pictures %}
+        <div class="modal transition-5ms" id="modalPicture{{ picture.id }}">
+            <div class="modal-background" onclick="this.parentElement.classList.remove('is-active')"></div>
+            <div class="modal-content">
+                {{ include('picture/modal_picture.html.twig') }}
+            </div>
+            <button class="modal-close is-large" aria-label="close" onclick="this.parentElement.classList.remove('is-active')"></button>
+        </div>
+    {% endfor %}
+
     <div class="column is-full">
         <h1 class="title has-text-white">{% trans %}Gallery{% endtrans %}</h1>
         <h2 class="subtitle has-text-white">{% trans %}Browse all photos and illustrations{% endtrans %}</h2>
