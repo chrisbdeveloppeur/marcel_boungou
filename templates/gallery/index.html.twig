@@ -16,7 +16,7 @@
     <div class="column has-background-light is-full is-full-mobile search-bar">
         <div class="field">
             <div class="control has-icons-right has-icons-left is-relative">
-                <input class="input" type="text" id="searchInput" onkeyup="searchFilter(['.test'])" placeholder="{% trans %}Type your search here{% endtrans %}">
+                <input class="input" type="text" id="searchInput" onkeyup="searchFilter(['.picture-tag'])" placeholder="{% trans %}Type your search here{% endtrans %}">
                 <span class="icon is-small is-left">
                     <i class="fas fa-search"></i>
                 </span>
@@ -59,17 +59,21 @@
         }
 
         function addClasseFilter(classe) {
-            var input, filter, classeElement, classeElementValue, musicContainer;
+            var input, filter, classeElement, classeElementValue, musicContainer, tagsArray;
             input = document.getElementById('searchInput');
             filter = input.value.toUpperCase();
 
-            musicContainer = document.querySelectorAll('.music-container');
+            musicContainer = document.querySelectorAll('.picture-container');
 
             // Loop through all list items, and hide those who don't match the search query
             musicContainer.forEach(function (container) {
-                classeElement = container.querySelector(classe);
+                classeElement = container.querySelectorAll(classe);
                 if (classeElement){
-                    classeElementValue = classeElement.textContent || classeElement.innerText;
+                    //classeElement.forEach(function (elem) {
+                    //    classeElementValue = elem.textContent || elem.innerText;
+                    //    tagsArray.push(classeElementValue);
+                    //});
+                    classeElementValue = elem.textContent || elem.innerText;
                     if ( classeElementValue.toUpperCase().indexOf(filter) > -1 ) {
                         container.classList.remove('is-hidden');
                         container.classList.replace('opacity0', 'opacity100')
@@ -81,6 +85,14 @@
             });
         }
         {#                               #}
+
+
+        {# SCRIPT RESET SEARCH #}
+        function resetSearch() {
+            var input = document.getElementById('searchInput');
+            input.value = '';
+            searchFilter(['.picture-tag']);
+        }
 
     </script>
 {% endblock %}

@@ -24,7 +24,7 @@ class PictureType extends AbstractType
         $builder
             ->add('imageFile', FileType::class, [
                 'label' => $this->translator->trans('Image file'),
-                'required' => true,
+                'required' => false,
                 'attr' => [
                     'class' => 'file-input',
                     'extra-data' => $this->translator->trans('Select an image file...'),
