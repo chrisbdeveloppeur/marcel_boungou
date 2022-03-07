@@ -977,9 +977,9 @@
         <source>Picture title</source>
         <target>Titre de l'image</target>
       </trans-unit>
-      <trans-unit id="h8aIKuA" resname="Pacrourez l'ensemble des photos et illustration">
-        <source>Pacrourez l'ensemble des photos et illustration</source>
-        <target>__Pacrourez l'ensemble des photos et illustration</target>
+      <trans-unit id="h8aIKuA" resname="Browse all photos and illustrations">
+        <source>Browse all photos and illustrations</source>
+        <target>Pacrourez l'ensemble des photos et illustration</target>
       </trans-unit>
       <trans-unit id="agFsa_3" resname="Filter your search by writing a word in the search bar...">
         <source>Filter your search by writing a word in the search bar...</source>
