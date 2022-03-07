@@ -85,7 +85,7 @@
                                 <i class="fas fa-lg fa-download"></i>
                             </span>
                         </a>
-                        <a href="{{ path('events_image_delete', {'id': event.id}) }}" class="button is-danger is-rounded px-3 py-3 is-small" title="{% trans %}Delete image{% endtrans %}" onclick="return confirm({% trans %}'Are you sure you want to delete the image?'{% endtrans %})">
+                        <a href="{{ path('events_image_delete', {'id': event.id}) }}" class="button is-danger is-rounded px-3 py-3 is-small" title="{% trans %}Delete image{% endtrans %}" onclick="return confirm('Are you sure you want to delete the image?')">
                             <span class="icon">
                                 <i class="fas fa-lg fa-times"></i>
                             </span>
@@ -97,7 +97,14 @@
             {% if album is defined and album.image %}
                 <figure class="is-flex is-justify-content-center is-relative">
                     <img src="{{ vich_uploader_asset(album, 'imageFile') }}" alt="{{ album.image }}">
-                    <a href="{{ path('album_image_delete', {'id': album.id}) }}" class="delete is-large" style="position: absolute;right: .5rem;top: .5rem;"></a>
+                    <a href="{{ path('album_image_delete', {'id': album.id}) }}" class="delete is-large" title="{{ 'Delete image'|trans }}" onclick="return confirm('Are you sure you want to delete the image?')" style="position: absolute;right: .5rem;top: .5rem;"></a>
+                </figure>
+            {% endif %}
+        {% elseif form.vars.name == 'picture' %}
+            {% if picture is defined and picture.image %}
+                <figure class="is-flex is-justify-content-center is-relative">
+                    <img src="{{ vich_uploader_asset(picture, 'imageFile') }}" alt="{{ picture.image }}">
+                    <a href="{{ path('picture_image_delete', {'id': picture.id}) }}" class="delete is-large" title="{{ 'Delete image'|trans }}" onclick="return confirm('Are you sure you want to delete the image?')" style="position: absolute;right: .5rem;top: .5rem;"></a>
                 </figure>
             {% endif %}
         {% endif %}

@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}Picture list{% endtrans %}{% endblock %}
+
+{% block body %}
+<h1 class="title has-text-white">{% trans %}Picture list{% endtrans %}</h1>
+
+<div class="column">
+    <a class="button is-success" href="{{ path('picture_new') }}">{% trans %}Create new{% endtrans %}</a>
+</div>
+
+<div class="table-container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Image</th>
+                <th>UpdatedAt</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for picture in pictures %}
+            <tr>
+                <td>{{ picture.id }}</td>
+                <td>{{ picture.title }}</td>
+                <td>{{ picture.image }}</td>
+                <td>{{ picture.updatedAt ? picture.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
+                <td>
+                    <a href="{{ path('picture_show', {'id': picture.id}) }}">show</a>
+                    <a href="{{ path('picture_edit', {'id': picture.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+    <div class="column">
+        <a class="button is-success" href="{{ path('picture_new') }}">{% trans %}Create new{% endtrans %}</a>
+    </div>
+{% endblock %}

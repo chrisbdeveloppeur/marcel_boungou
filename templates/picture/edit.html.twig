@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}Edit Picture{% endtrans %}{% endblock %}
+
+{% block body %}
+    <div class="is-flex-tablet is-justify-content-center">
+        <div class="box column is-two-fifths-desktop is-two-thirds-tablet">
+            <h1 class="subtitle is-3">{% trans %}Edit Picture{% endtrans %}</h1>
+            {{ include('themes/_form.html.twig') }}
+        </div>
+    </div>
+{% endblock %}

@@ -175,7 +175,8 @@ class Album
         return $this->image;
     }
 
-    public function getUpdatedAt(){
+    public function getUpdatedAt()
+    {
         return $this->updatedAt;
     }
 }

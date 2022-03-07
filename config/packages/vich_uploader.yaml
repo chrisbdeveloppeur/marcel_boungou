@@ -14,9 +14,9 @@ vich_uploader:
         news_img:
             uri_prefix: /images/news_img
             upload_destination: '%kernel.project_dir%/public/images/news_img'
-        gallery_img:
-            uri_prefix: /images/gallery_img
-            upload_destination: '%kernel.project_dir%/public/images/gallery_img'
+        picture_img:
+            uri_prefix: /images/picture_img
+            upload_destination: '%kernel.project_dir%/public/images/picture_img'
         music_file:
             uri_prefix: /music/file
             upload_destination: '%kernel.project_dir%/public/music/file'

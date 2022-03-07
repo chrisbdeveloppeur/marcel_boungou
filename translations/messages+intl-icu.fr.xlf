@@ -973,6 +973,30 @@
         <source>this is not required</source>
         <target>non obligatoire</target>
       </trans-unit>
+      <trans-unit id="Rlk.q8l" resname="Picture title">
+        <source>Picture title</source>
+        <target>Titre de l'image</target>
+      </trans-unit>
+      <trans-unit id="h8aIKuA" resname="Pacrourez l'ensemble des photos et illustration">
+        <source>Pacrourez l'ensemble des photos et illustration</source>
+        <target>__Pacrourez l'ensemble des photos et illustration</target>
+      </trans-unit>
+      <trans-unit id="agFsa_3" resname="Filter your search by writing a word in the search bar...">
+        <source>Filter your search by writing a word in the search bar...</source>
+        <target>Filter your search by writing a word in the search bar...</target>
+      </trans-unit>
+      <trans-unit id="G_Tcksg" resname="Edit Picture">
+        <source>Edit Picture</source>
+        <target>Modifier l'image</target>
+      </trans-unit>
+      <trans-unit id="nSItwZ1" resname="Picture list">
+        <source>Picture list</source>
+        <target>Liste d'images</target>
+      </trans-unit>
+      <trans-unit id="ezeZ4i5" resname="Add a new Picture">
+        <source>Add a new Picture</source>
+        <target>Ajouter une nouvelle image</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
