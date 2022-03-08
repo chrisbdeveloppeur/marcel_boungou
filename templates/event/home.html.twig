@@ -34,7 +34,9 @@
 
         {% if events|length > 0 %}
             <div class="column">
-                <a href="{{ path('events_all') }}" class="button is-success is-light is-fullwidth box-shadow-bulma is-uppercase has-text-weight-bold">{% trans %}See all events{% endtrans %}</a>
+                <a href="{{ path('events_all') }}" class="button is-size-4 is-success is-light is-fullwidth box-shadow-bulma is-uppercase has-text-weight-bold">
+                    {% trans %}See all events{% endtrans %}
+                </a>
             </div>
 
             <div class="column">
@@ -177,8 +179,8 @@ agendas.forEach(function (agenda) {
             navigationSwipe: true,
             navigationKeys: false,
             pagination: false,
-            duration:2000,
-            autoplaySpeed:5000,
+            duration:1500,
+            autoplaySpeed:3000,
         };
 
         // Initialize all div with carousel class

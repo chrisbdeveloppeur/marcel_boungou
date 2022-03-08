@@ -7,6 +7,7 @@ use App\Entity\Album;
 use App\Entity\Book;
 use App\Entity\Event;
 use App\Entity\Music;
+use App\Entity\Picture;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use Faker;
@@ -85,6 +86,15 @@ class AppFixtures extends Fixture
             $book->setDescription($faker->text($faker->numberBetween('100','500')));
             $book->setRedirectLink('https://www.fnac.com/ia233457/Marcel-Boungou');
             $manager->persist($book);
+            $manager->flush();
+        }
+
+        for ($f = -1; $f <= 50; $f++){
+
+            $picture = new Picture();
+            $picture->setTitle($faker->word);
+            $picture->setImage($faker->text($faker->numberBetween('100','500')));
+            $manager->persist($picture);
             $manager->flush();
         }
 
