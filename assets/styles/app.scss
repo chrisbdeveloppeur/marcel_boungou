@@ -351,7 +351,7 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   /* The image used */
 
   /* Set a specific height */
-  min-height: 100vh !important;
+  //min-height: 100vh !important;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed !important;
@@ -361,20 +361,6 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   //object-fit: cover;
 }
 
-.parallax > *{
-  min-height: 100vh;
-  color: white;
-  padding: 11rem 0;
-  //backdrop-filter: blur(1px);
-}
-
-.separator{
-  width: 100%;
-  background: $black;
-  box-shadow: 0 0 5rem 10rem $black;
-  position: relative;
-  z-index: 1;
-}
 
 .arrow_up{
   position: fixed;
