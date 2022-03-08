@@ -14,12 +14,14 @@
         </div>
     {% endfor %}
 
+    <div class="section column">
+        <h1 class="title has-text-weight-bold has-text-white">{% trans %}All next events{% endtrans %}</h1>
+        <p class="has-text-white">{% trans %}Consult the list of all upcoming events{% endtrans %}</p>
+    </div>
+
     <section class="container">
         <div class="column">
-            <div class="column px-0">
-                <h1 class="title has-text-weight-bold has-text-white">{% trans %}All next events{% endtrans %}</h1>
-                <h2 class="subtitle has-text-white">{% trans %}Consult the list of all upcoming events{% endtrans %}</h2>
-
+            <div class="mb-3">
                 <a href="{{ path('events_home') }}" class="button is-primary">
                     <span class="icon">
                         <i class="fas fa-lg fa-caret-left"></i>
@@ -28,8 +30,8 @@
                         {% trans %}Events lobby{% endtrans %}
                     </span>
                 </a>
-
             </div>
+
             <div class="columns is-multiline">
                 {% for event in events %}
                     {% if date(event.datetime) >= date('now') %}

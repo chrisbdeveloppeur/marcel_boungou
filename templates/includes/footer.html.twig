@@ -1,5 +1,34 @@
 <footer class="footer">
     <div class="content has-text-centered">
+        <div class="columns">
+            <div class="column">
+                <ul>
+                    <li><a href="{{ path('home_index') }}">{{ 'home'|trans }}</a></li>
+                    <li><a href="{{ path('events_home') }}">{{ 'events'|trans }}</a></li>
+                    <li><a href="{{ path('events_all') }}">{{ 'all events'|trans }}</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><a href="{{ path('discography_index') }}">{{ 'discographiy'|trans }}</a></li>
+                    <li><a href="{{ path('bibliography_index') }}">{{ 'bibliography'|trans }}</a></li>
+                    <li><a href="{{ path('gallery_index') }}">{{ 'gallery'|trans }}</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><a href="{{ path('discography_index') }}">{{ 'bio'|trans }}</a></li>
+                    <li><a href="{{ path('bibliography_index') }}">{{ 'contact'|trans }}</a></li>
+                    <li><a href="{{ path('gallery_index') }}">{{ 'partner'|trans }}</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><a href="{{ path('discography_index') }}">{{ 'CGU'|trans }}</a></li>
+                    <li><a href="{{ path('app_login') }}">{{ 'backoffice'|trans }}</a></li>
+                </ul>
+            </div>
+        </div>
         <p>
             <strong>MB Ministry</strong>
             © 2022 | <a href="{{ path('home_index') }}">www.marcel-boungou.com</a> | Property of Marcel BOUNGOU. All rights reserved.

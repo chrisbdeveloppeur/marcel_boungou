@@ -12,15 +12,17 @@
             <button class="modal-close is-large" aria-label="close" onclick="this.parentElement.classList.remove('is-active')"></button>
         </div>
     {% endfor %}
+
+    <div class="section column has-text-white">
+        <h1 class="title has-text-white">{% trans %}Events page{% endtrans %}</h1>
+        <p class="has-text-white">
+            {% trans %}Find all the information about the next events{% endtrans %}
+            <br>
+            {% trans %}Dates and times, places and reservation, opt for reminders so you don't miss anything{% endtrans %}
+        </p>
+    </div>
+
     <section class="container">
-            <div class="column has-text-white">
-                <h1 class="title has-text-white">{% trans %}Events page{% endtrans %}</h1>
-                <p class="has-text-white">
-                    {% trans %}Find all the information about the next events{% endtrans %}
-                    <br>
-                    {% trans %}Dates and times, places and reservation, opt for reminders so you don't miss anything{% endtrans %}
-                </p>
-            </div>
 
             <div class="is-flex-tablet is-flex-direction-row">
 

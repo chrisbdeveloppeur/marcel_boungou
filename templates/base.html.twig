@@ -254,6 +254,28 @@
     }
     {#                               #}
 
+    {#  FADE-OUT FADE-IN PARALLAX  #}
+    let parallaxToFade = document.querySelectorAll('.parallax.fade-effect');
+
+    console.log(parallaxToFade[0]);
+    document.addEventListener('scroll', function () {
+        parallaxToFade.forEach(changeBlurOnTopPosition);
+        // showArrowUp();
+    });
+
+    window.onload = function onLoad() {
+        parallaxToFade.forEach(changeBlurOnTopPosition);
+    };
+
+    function changeBlurOnTopPosition(element) {
+        if ( 50 < element.getBoundingClientRect().top && element.getBoundingClientRect().top < 550 ) {
+            element.classList.remove('grayscale100');
+        }else {
+            element.classList.add('grayscale100');
+        }
+    }
+    {#                               #}
+
 </script>
 
 {% block javascripts %}

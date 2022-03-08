@@ -101,7 +101,7 @@ body{
 
 section.body{
   min-height: inherit;
-  padding-top: 3rem;
+  //padding-top: 3rem;
 }
 
 .main-background{
@@ -185,6 +185,26 @@ section.body{
 //.music-container{
 //  filter: grayscale(1);
 //}
+
+.blur1rem{
+  filter: blur(1rem);
+}
+
+.blur05rem{
+  filter: blur(.5rem);
+}
+
+.blur4px{
+  filter: blur(4px);
+}
+
+.grayscale100{
+  filter: grayscale(100);
+}
+
+.z-index-1{
+  z-index: 1;
+}
 
 .next-event-logo{
   z-index: 1;
@@ -329,6 +349,10 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
 
 .transition-1s{
   transition: 1s !important;
+}
+
+.transition-2s{
+  transition: 2s !important;
 }
 
 .opacity0{
