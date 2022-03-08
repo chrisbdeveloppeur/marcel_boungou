@@ -1,6 +1,6 @@
-<div class="box has-background-success-light">
+{#<div class="has-background-success-light">#}
 
-    <h3 class="subtitle has-text-centered">{{ book.title }}</h3>
+    <h3 class="has-text-white has-text-centered">{{ book.title }}</h3>
 
     <div class="is-flex is-flex-direction-row is-align-items-center is-justify-content-center">
         <div class="column is-half" style="margin: auto;">
@@ -27,19 +27,13 @@
     <div class="column">
         {% if book.description %}
             <div class="column">
-                <p class="has-text-grey">
+                <p class="has-text-white">
                     {{ book.description }}
                 </p>
             </div>
         {% endif %}
-
-        {% if book.redirectlink %}
-            <div class="column">
-                <a href="{{ book.redirectlink }}" class="button is-success">
-                    {% trans %}Go to shop{% endtrans %}
-                </a>
-            </div>
-        {% endif %}
     </div>
 
-</div>
+{#</div>#}
+
+

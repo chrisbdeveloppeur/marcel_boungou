@@ -1,16 +1,16 @@
 
-    <h3 class="subtitle has-text-centered has-text-white">{{ picture.title | default(picture.image) }}</h3>
+    <h3 class="help has-text-white">{{ picture.title | default(picture.image) }}</h3>
 
-    <div class="is-flex is-flex-direction-row is-align-items-center is-justify-content-center">
-        <div class="column is-half" style="margin: auto;">
-            <figure>
+{#    <div class="is-flex is-flex-direction-row is-align-items-center is-justify-content-center">#}
+{#        <div class="column is-half" style="margin: auto;">#}
+            <figure class="is-flex is-justify-content-center is-align-items-center">
                 {% if picture.image %}
                     <img src="{{ vich_uploader_asset(picture, 'imageFile') }}">
                 {% else %}
                     <img src="https://bulma.io/images/placeholders/480x600.png">
                 {% endif %}
             </figure>
-        </div>
+{#        </div>#}
 
-    </div>
+{#    </div>#}
 

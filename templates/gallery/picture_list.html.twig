@@ -20,8 +20,8 @@
                                 <div class="px-2 py-2">
                                     {% for tag in picture.tagsinarray %}
                                         {% if tag %}
-                                            <a class="tag is-success picture-tag">#{{ tag }}</a>
-                                        {% endif %}
+                                            <a  class="tag is-success picture-tag" data-href="{{ tag }}">#{{ tag }}</a>
+                                        {% endif %}modal
                                     {% endfor %}
                                 </div>
                             </div>

@@ -93,6 +93,13 @@
         }
         {#                               #}
 
+        {# SCRIPT ANCRAGE SEARCH ALBUM / MUSIQUES #}
+        function searchAncrage(link) {
+            var input = document.getElementById('searchInput');
+            var ancrageTxt = link.getAttribute('data-href');
+            input.value = ancrageTxt;
+            searchFilter(['.picture-name']);
+        }
 
         {# SCRIPT RESET SEARCH #}
         function resetSearch() {

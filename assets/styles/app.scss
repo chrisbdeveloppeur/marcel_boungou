@@ -35,6 +35,11 @@ $dropdown-divider-background-color: $white-layer;
 
 $card-radius: 0;
 
+$modal-content-width: auto;
+.modal-content{
+  max-width: 1000px;
+}
+
 .tag.is-active{
   background-color: $success !important;
 }
