@@ -27,6 +27,9 @@
                                     </div>
                                 </div>
                             {% endif %}
+                            <div class="picture-name is-hidden">
+                                {{ picture.title | default(picture.image) }}
+                            </div>
 
                         </div>
                     </div>

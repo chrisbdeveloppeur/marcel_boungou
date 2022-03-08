@@ -13,11 +13,9 @@
             <button class="modal-close is-large" aria-label="close" onclick="this.parentElement.classList.remove('is-active')"></button>
             <div class="column" style="position: fixed;bottom: 0;">
                 {% if book.redirectlink %}
-{#                    <div class="column">#}
                         <a href="{{ book.redirectlink }}" class="button is-success">
                             {% trans %}Go to shop{% endtrans %}
                         </a>
-{#                    </div>#}
                 {% endif %}
             </div>
         </div>
