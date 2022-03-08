@@ -62,7 +62,7 @@ class SubscribController extends AbstractController
                 $event->removeMailToRemind($email);
                 $em->flush();
             }
-            $this->addFlash('info', $this->translator->trans('Unsubscribe successfully for email : '. $email));
+            $this->addFlash('info', $this->translator->trans('Successfully unsubscribed for email : '). $email);
         }
 
         return $this->render('themes/just_the_form.html.twig',[

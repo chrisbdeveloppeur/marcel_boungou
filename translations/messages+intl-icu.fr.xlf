@@ -813,9 +813,9 @@
         <source>Current file :</source>
         <target>Fichier actuel :</target>
       </trans-unit>
-      <trans-unit id="LsOmrmU" resname="Unsubscribe successfully for email : ">
-        <source>Unsubscribe successfully for email : </source>
-        <target>Se désabonner avec succès pour l'e-mail : </target>
+      <trans-unit id="LsOmrmU" resname="Successfully unsubscribed for email : ">
+        <source>Successfully unsubscribed for email : </source>
+        <target>Désabonnement effectué avec succès pour l'e-mail : </target>
       </trans-unit>
       <trans-unit id="N1Ez4hs" resname="Want to listen without limit">
         <source>Want to listen without limit</source>

@@ -262,12 +262,23 @@
 
 {% if 'reset_password' in form.vars.name %}
     <div class="field has-text-centered" id="save">
-        <button class="button is-success btn-submit">
+        <button class="button is-fullwidth is-success btn-submit">
         <span class="icon">
             <i class="fas fa-paper-plane"></i>
         </span>
             <span>
             {% trans %}Send{% endtrans %}
+        </span>
+        </button>
+    </div>
+{% elseif form.vars.name == 'subscriber' %}
+    <div class="field has-text-centered" id="save">
+        <button class="button is-fullwidth is-success btn-submit">
+        <span class="icon">
+            <i class="fas fa-times"></i>
+        </span>
+            <span>
+            {% trans %}Unsubscribe{% endtrans %}
         </span>
         </button>
     </div>

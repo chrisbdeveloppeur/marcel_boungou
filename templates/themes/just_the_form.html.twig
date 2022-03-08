@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{#{% block title %}{% endblock %}#}
+{% block title %}{{ form.vars.name|default('') }}{% endblock %}
 
 {% block body %}
         <div class="is-flex-tablet is-justify-content-center">
