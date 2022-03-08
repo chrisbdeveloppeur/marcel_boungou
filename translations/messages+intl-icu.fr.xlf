@@ -1005,6 +1005,26 @@
         <source>Add a new picture</source>
         <target>Ajouter une nouvelle image</target>
       </trans-unit>
+      <trans-unit id="Tt0_ZJo" resname="Element deleted successfuly">
+        <source>Element deleted successfuly</source>
+        <target>Élément supprimé avec succès</target>
+      </trans-unit>
+      <trans-unit id="WxnZ_w_" resname="Back to Discography page">
+        <source>Back to Discography page</source>
+        <target>Retour à la page Discographie</target>
+      </trans-unit>
+      <trans-unit id="CJlG8HR" resname="Back to Events page">
+        <source>Back to Events page</source>
+        <target>Retour à la page des événements</target>
+      </trans-unit>
+      <trans-unit id="9UJ1R3N" resname="Back to Gallery page">
+        <source>Back to Gallery page</source>
+        <target>Retour à la page Galerie</target>
+      </trans-unit>
+      <trans-unit id="dsVQX.L" resname="Back to home">
+        <source>Back to home</source>
+        <target>Retour à l'accueil</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

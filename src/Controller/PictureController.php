@@ -78,8 +78,9 @@ class PictureController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
-
-            return $this->redirectToRoute('picture_index', [], Response::HTTP_SEE_OTHER);
+            $this->addFlash('info', $this->translator->trans('Changes made successfully'));
+            $previousUrl = $request->headers->get('referer');
+            return $this->redirect($previousUrl);
         }
 
         return $this->render('picture/edit.html.twig', [
@@ -97,8 +98,8 @@ class PictureController extends AbstractController
             $entityManager->remove($picture);
             $entityManager->flush();
         }
-
-        return $this->redirectToRoute('picture_index', [], Response::HTTP_SEE_OTHER);
+        $this->addFlash('warning', $this->translator->trans('Changes made successfully'));
+        return $this->redirectToRoute('gallery_index');
     }
 
     /**
@@ -108,7 +109,7 @@ class PictureController extends AbstractController
     {
         $picture->setImage(null);
         $em->flush();
-        $this->addFlash('info', $this->translator->trans('Image removed successfully'));
+        $this->addFlash('warning', $this->translator->trans('Element deleted successfuly'));
         return $this->redirect($request->headers->get('referer'));
     }
 }

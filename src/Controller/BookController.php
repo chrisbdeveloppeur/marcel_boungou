@@ -51,7 +51,6 @@ class BookController extends AbstractController
             return $this->redirectToRoute('book_index', [], Response::HTTP_SEE_OTHER);
         }
 
-        $previousUrl = $request->headers->get('referer');
         return $this->render('book/new.html.twig', [
             'book' => $book,
             'form' => $form->createView(),
@@ -82,8 +81,9 @@ class BookController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
-
-            return $this->redirectToRoute('book_index', [], Response::HTTP_SEE_OTHER);
+            $this->addFlash('info', $this->translator->trans('Changes made successfully'));
+            $previousUrl = $request->headers->get('referer');
+            return $this->redirect($previousUrl);
         }
 
         return $this->render('book/edit.html.twig', [
@@ -101,7 +101,7 @@ class BookController extends AbstractController
             $entityManager->remove($book);
             $entityManager->flush();
         }
-
-        return $this->redirectToRoute('book_index', [], Response::HTTP_SEE_OTHER);
+        $this->addFlash('warning', $this->translator->trans('Element deleted successfuly'));
+        return $this->redirectToRoute('bibliography_index');
     }
 }

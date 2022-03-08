@@ -1,35 +1,37 @@
 <div class="container">
     <div class="columns is-multiline is-justify-content-center">
         {% for picture in pictures|sort %}
-            <div class="column is-one-fifth-desktop is-one-third-tablet picture-container fade-effect transition-1s opacity0">
-                <div class="scalup-hover transition-1s is-relative">
+            {% if picture.image %}
+                <div class="column is-one-fifth-desktop is-one-third-tablet picture-container fade-effect transition-1s opacity0">
+                    <div class="scalup-hover transition-1s is-relative">
 
-                    {% if is_granted('ROLE_ADMIN') %}
-                        {{ include('picture/edit_picture_button.html.twig') }}
-                    {% endif %}
-
-                    <div class="pointer-hover is-flex is-flex-direction-column" onclick="document.getElementById('modalPicture'+{{ picture.id }}).classList.add('is-active')">
-
-                        {% if picture.image %}
-                            <img src="{{ vich_uploader_asset(picture, 'imageFile') }}">
-                        {% else %}
-                            <img src="https://bulma.io/images/placeholders/480x600.png">
+                        {% if is_granted('ROLE_ADMIN') %}
+                            {{ include('picture/edit_picture_button.html.twig') }}
                         {% endif %}
-                        {% if picture.tags|length > 0 %}
-                            <div class="has-background-black">
-                                <div class="px-2 py-2">
-                                    {% for tag in picture.tagsinarray %}
-                                        {% if tag %}
-                                            <a  class="tag is-success picture-tag" data-href="{{ tag }}">#{{ tag }}</a>
-                                        {% endif %}modal
-                                    {% endfor %}
+
+                        <div class="pointer-hover is-flex is-flex-direction-column" onclick="document.getElementById('modalPicture'+{{ picture.id }}).classList.add('is-active')">
+
+                            {% if picture.image %}
+                                <img src="{{ vich_uploader_asset(picture, 'imageFile') }}">
+                            {% else %}
+                                <img src="https://bulma.io/images/placeholders/480x600.png">
+                            {% endif %}
+                            {% if picture.tags|length > 0 %}
+                                <div class="has-background-black">
+                                    <div class="px-2 py-2">
+                                        {% for tag in picture.tagsinarray %}
+                                            {% if tag %}
+                                                <a  class="tag is-success picture-tag" data-href="{{ tag }}">#{{ tag }}</a>
+                                            {% endif %}modal
+                                        {% endfor %}
+                                    </div>
                                 </div>
-                            </div>
-                        {% endif %}
+                            {% endif %}
 
+                        </div>
                     </div>
                 </div>
-            </div>
+            {% endif %}
         {% endfor %}
     </div>
 </div>

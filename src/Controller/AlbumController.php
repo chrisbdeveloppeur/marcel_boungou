@@ -78,8 +78,9 @@ class AlbumController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
-
-            return $this->redirectToRoute('discography_index', [], Response::HTTP_SEE_OTHER);
+            $this->addFlash('info', $this->translator->trans('Changes made successfully'));
+            $previousUrl = $request->headers->get('referer');
+            return $this->redirect($previousUrl);
         }
 
         return $this->render('album/edit.html.twig', [
@@ -101,8 +102,8 @@ class AlbumController extends AbstractController
             $entityManager->remove($album);
             $entityManager->flush();
         }
-
-        return $this->redirectToRoute('album_index', [], Response::HTTP_SEE_OTHER);
+        $this->addFlash('warning', $this->translator->trans('Element deleted successfuly'));
+        return $this->redirectToRoute('discography_index');
     }
 
     /**

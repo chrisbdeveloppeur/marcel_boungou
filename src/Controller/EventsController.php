@@ -115,7 +115,6 @@ class EventsController extends AbstractController
             $this->addFlash('info', $this->translator->trans('Changes made successfully'));
             $previousUrl = $request->headers->get('referer');
             return $this->redirect($previousUrl);
-            //return $this->redirectToRoute('events_home', [], Response::HTTP_SEE_OTHER);
         }
 
         $redirect_link = $this->redirectToRoute('events_home')->getTargetUrl();
@@ -139,8 +138,8 @@ class EventsController extends AbstractController
             $entityManager->remove($event);
             $entityManager->flush();
         }
-
-        return $this->redirectToRoute('events_home', [], Response::HTTP_SEE_OTHER);
+        $this->addFlash('warning', $this->translator->trans('Element deleted successfuly'));
+        return $this->redirectToRoute('events_home');
     }
 
 

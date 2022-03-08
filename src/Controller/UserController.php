@@ -116,7 +116,7 @@ class UserController extends AbstractController
             $this->container->get('security.token_storage')->setToken(null);
             $em->remove($user);
             $em->flush();
-            $this->addFlash('danger', $this->translator->trans('Account deleted !'));
+            $this->addFlash('warning', $this->translator->trans('Account deleted !'));
             return $this->redirectToRoute('home_index');
         }
     }
