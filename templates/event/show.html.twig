@@ -26,8 +26,12 @@
                 <td>{{ event.title }}</td>
             </tr>
             <tr>
-                <th>{% trans %}Date & time{% endtrans %}</th>
-                <td>{{ event.datetime ? event.datetime|date('d/m/Y H:i') : '' }}</td>
+                <th>{% trans %}Date{% endtrans %}</th>
+                <td>{{ event.datetime ? event.datetime|date('d/m/Y') : '' }}</td>
+            </tr>
+            <tr>
+                <th>{% trans %}Time{% endtrans %}</th>
+                <td>{{ event.datetime ? event.datetime|date('H:i') : '' }}</td>
             </tr>
             <tr>
                 <th>{% trans %}Country{% endtrans %}</th>
@@ -44,6 +48,18 @@
             <tr>
                 <th>{% trans %}Street{% endtrans %}</th>
                 <td>{{ event.street }}</td>
+            </tr>
+            <tr>
+                <th>{% trans %}Subscribers{% endtrans %}</th>
+                <td>
+                    <div class="select is-multiple is-fullwidth">
+                        <select multiple size="5">
+                            {% for subscriber in event.mailsToRemind %}
+                                <option value="{{ subscriber }}">{{ subscriber }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </td>
             </tr>
         </tbody>
     </table>

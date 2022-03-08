@@ -9,6 +9,11 @@
 </span>
 {% endif %}
 
+        {% if redirect is defined %}
+            <a href="{{ redirect.link }}" class="button is-fullwidth is-dark">
+                {{ redirect.txt }}
+            </a>
+        {% endif %}
 {% if 'edit' in app.request.get('_route') %}
     <div class="pt-1 has-text-right">
         {%  include(form.vars.name~'/_delete_form.html.twig') ignore missing %}
@@ -292,9 +297,6 @@
             {% trans %}Confirm{% endtrans %}
             </span>
         </button>
-        {% if redirect is defined %}
-            <a href="{{ redirect.link }}" class="button is-fullwidth is-dark">{{ redirect.txt }}</a>
-        {% endif %}
     </div>
 {% endif %}
 
