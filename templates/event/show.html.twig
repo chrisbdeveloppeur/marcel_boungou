@@ -3,8 +3,18 @@
 {% block title %}{% trans %}Event{% endtrans %}{% endblock %}
 
 {% block body %}
-    <h1 class="has-text-white subtitle">{% trans %}Event{% endtrans %}<b> {{ event }}</b></h1>
+    <h1 class="has-text-white subtitle has-text-centered">{% trans %}Event{% endtrans %}<b> {{ event }}</b></h1>
 
+    <div class="column is-flex-tablet is-flex-direction-row is-justify-content-center">
+        <div class="px-1 py-1">
+            <a class="button is-dark is-fullwidth" href="{{ path('events_index') }}">{% trans %}back to events list{% endtrans %}</a>
+        </div>
+        <div class="px-1 py-1">
+            <a class="button is-success is-fullwidth" href="{{ path('events_edit', {'id': event.id}) }}">{% trans %}edit{% endtrans %}</a>
+        </div>
+    </div>
+
+<div class="table-container">
     <table class="table">
         <tbody>
             <tr>
@@ -37,10 +47,8 @@
             </tr>
         </tbody>
     </table>
-
-    <a href="{{ path('events_index') }}">{% trans %}back to events list{% endtrans %}</a>
-
-    <a href="{{ path('events_edit', {'id': event.id}) }}">{% trans %}edit{% endtrans %}</a>
+</div>
 
     {{ include('event/_delete_form.html.twig') }}
+
 {% endblock %}
