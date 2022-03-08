@@ -32,7 +32,7 @@
             </div>
             <div class="columns is-multiline">
                 {% for event in events %}
-                    {% if event.datetime|date >= "now"|date %}
+                    {% if date(event.datetime) >= date('now') %}
                         {{ include('event/event_card.html.twig') }}
                     {% endif %}
                 {% endfor %}

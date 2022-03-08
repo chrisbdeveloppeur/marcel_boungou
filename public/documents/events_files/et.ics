@@ -17,16 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62223fb3225c7
-DTSTAMP;TZID=Europe/Paris:20220304T173459
+UID:6227b697ef5ef
+DTSTAMP;TZID=Europe/Paris:20220308T210335
 SUMMARY:et
-DESCRIPTION:Est nihil officiis eos rerum voluptatem. Eos nostrum et facere 
- repellat nesciunt. Et distinctio ipsam inventore. Dolorem consequatur debi
- tis error animi qui corporis illo deleniti. Sed ipsam delectus ipsum repud
- iandae quibusdam enim fugiat dolor. Ratione et ipsum nihil ut fuga assumen
- da.
-LOCATION:impasse de Bouchet\, 10444 Couturier\, Couturier
-DTSTART;TZID=Europe/Paris:20220416T121133
-DTEND;TZID=Europe/Paris:20220416T121133
+DESCRIPTION:Esse incidunt ipsa ut quia. Rem atque quia numquam id. Tempora 
+ autem eum ut placeat et. Minima et tenetur nam et omnis quia dicta repudia
+ ndae.
+LOCATION:84\, chemin Hamel\, 66607 Loiseaunec\, Loiseaunec
+DTSTART;TZID=Europe/Paris:20220420T021033
+DTEND;TZID=Europe/Paris:20220420T021033
 END:VEVENT
 END:VCALENDAR

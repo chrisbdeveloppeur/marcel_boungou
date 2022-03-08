@@ -17,16 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f8d37695b
-DTSTAMP;TZID=Europe/Paris:20220223T100523
+UID:6227b697e3b39
+DTSTAMP;TZID=Europe/Paris:20220308T210335
 SUMMARY:quidem
-DESCRIPTION:Et deserunt qui asperiores excepturi labore. Repellendus non pl
- aceat esse odit voluptates amet qui. Dolores optio dolor dolor rerum. Qui 
- quo nemo aspernatur quae iure in possimus. Animi animi et nihil dicta culp
- a quia accusantium.
-LOCATION:431\, chemin Laurent Legrand\, 00 275 Denis-sur-Marie\, Denis-sur-
- Marie
-DTSTART;TZID=Europe/Paris:20220227T082341
-DTEND;TZID=Europe/Paris:20220227T082341
+DESCRIPTION:Iusto rerum odit quo velit. Dolore est voluptatem et nobis odit
+  qui quas. Officiis autem molestiae laborum eos et repudiandae. Soluta iur
+ e cum et quo iste. Ipsum libero et eos fugit et. Reprehenderit ut quam dol
+ oremque et. Minus officiis aspernatur maiores.
+LOCATION:4\, boulevard Lemoine\, 38 534 Lopezdan\, Lopezdan
+DTSTART;TZID=Europe/Paris:20220307T102314
+DTEND;TZID=Europe/Paris:20220307T102314
 END:VEVENT
 END:VCALENDAR

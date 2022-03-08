@@ -17,14 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62212b692e18c
-DTSTAMP;TZID=Europe/Paris:20220303T215609
+UID:6227b697ec6be
+DTSTAMP;TZID=Europe/Paris:20220308T210335
 SUMMARY:nam
-DESCRIPTION:Rerum voluptates distinctio voluptas rerum. Sint eum eveniet ni
- si quo facere. A et voluptatibus cupiditate enim sequi impedit maxime.
-LOCATION:2\, avenue de Ribeiro\, 67524 Jacquet-la-Forêt\, Jacquet-la-Forê
- t
-DTSTART;TZID=Europe/Paris:20220415T152008
-DTEND;TZID=Europe/Paris:20220415T152008
+DESCRIPTION:Laudantium eum iure sed et. Laudantium veritatis provident cons
+ equuntur sed. Tempora sed cupiditate quos et rem possimus porro.
+LOCATION:52\, chemin Nathalie Meyer\, 91174 Lefevre-les-Bains\, Lefevre-les
+ -Bains
+DTSTART;TZID=Europe/Paris:20220403T023948
+DTEND;TZID=Europe/Paris:20220403T023948
 END:VEVENT
 END:VCALENDAR

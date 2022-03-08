@@ -97,14 +97,36 @@
             {% if album is defined and album.image %}
                 <figure class="is-flex is-justify-content-center is-relative">
                     <img src="{{ vich_uploader_asset(album, 'imageFile') }}" alt="{{ album.image }}">
-                    <a href="{{ path('album_image_delete', {'id': album.id}) }}" class="delete is-large" title="{{ 'Delete image'|trans }}" onclick="return confirm('Are you sure you want to delete the image?')" style="position: absolute;right: .5rem;top: .5rem;"></a>
+                    <div class="buttons"  style="position: absolute;right: .5rem;top: .5rem;">
+                        <a href="{{ vich_uploader_asset(album, 'imageFile') }}" class="button is-dark is-rounded px-3 py-3 is-small" download="{{ album.image }}" title="{% trans %}Download image{% endtrans %}">
+                            <span class="icon">
+                                <i class="fas fa-lg fa-download"></i>
+                            </span>
+                        </a>
+                        <a href="{{ path('album_image_delete', {'id': album.id}) }}" class="button is-danger is-rounded px-3 py-3 is-small" title="{% trans %}Delete image{% endtrans %}" onclick="return confirm('Are you sure you want to delete the image?')">
+                            <span class="icon">
+                                <i class="fas fa-lg fa-times"></i>
+                            </span>
+                        </a>
+                    </div>
                 </figure>
             {% endif %}
         {% elseif form.vars.name == 'picture' %}
             {% if picture is defined and picture.image %}
                 <figure class="is-flex is-justify-content-center is-relative">
                     <img src="{{ vich_uploader_asset(picture, 'imageFile') }}" alt="{{ picture.image }}">
-                    <a href="{{ path('picture_image_delete', {'id': picture.id}) }}" class="delete is-large" title="{{ 'Delete image'|trans }}" onclick="return confirm('Are you sure you want to delete the image?')" style="position: absolute;right: .5rem;top: .5rem;"></a>
+                    <div class="buttons"  style="position: absolute;right: .5rem;top: .5rem;">
+                        <a href="{{ vich_uploader_asset(picture, 'imageFile') }}" class="button is-dark is-rounded px-3 py-3 is-small" download="{{ picture.image }}" title="{% trans %}Download image{% endtrans %}">
+                            <span class="icon">
+                                <i class="fas fa-lg fa-download"></i>
+                            </span>
+                        </a>
+                        <a href="{{ path('picture_image_delete', {'id': picture.id}) }}" class="button is-danger is-rounded px-3 py-3 is-small" title="{% trans %}Delete image{% endtrans %}" onclick="return confirm('Are you sure you want to delete the image?')">
+                            <span class="icon">
+                                <i class="fas fa-lg fa-times"></i>
+                            </span>
+                        </a>
+                    </div>
                 </figure>
             {% endif %}
         {% endif %}
@@ -251,9 +273,6 @@
     </div>
 {% else %}
     <div class="field has-text-right" id="save">
-        {% if redirect is defined %}
-            <a href="{{ redirect.link }}" class="button is-fullwidth mb-1 is-dark">{{ redirect.txt }}</a>
-        {% endif %}
         <button class="button is-fullwidth is-success btn-submit">
             <span class="icon">
                 <i class="fas fa-check"></i>
@@ -262,6 +281,9 @@
             {% trans %}Confirm{% endtrans %}
             </span>
         </button>
+        {% if redirect is defined %}
+            <a href="{{ redirect.link }}" class="button is-fullwidth is-dark">{{ redirect.txt }}</a>
+        {% endif %}
     </div>
 {% endif %}
 

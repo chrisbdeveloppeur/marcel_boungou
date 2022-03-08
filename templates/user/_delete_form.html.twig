@@ -2,7 +2,7 @@
     <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ user.id) }}">
     <button class="button is-danger" {% if 'ROLE_SUPER_ADMIN' in user.roles %}disabled title="{% trans %}You cannot delete the super admin account{% endtrans %}" {% endif %}>
         <span class="icon">
-            <i class="fas fa-times"></i>
+            <i class="fas fa-trash-alt"></i>
         </span>
         <span>
             {% trans %}Delete{% endtrans %}
