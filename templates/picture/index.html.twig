@@ -5,10 +5,14 @@
 {% block body %}
 <h1 class="title has-text-white">{% trans %}Picture list{% endtrans %}</h1>
 
-<div class="column">
-    <a class="button is-dark" href="{{ path('home_index') }}">{{ 'Back to Gallery page'|trans }}</a>
-    <a class="button is-success" href="{{ path('picture_new') }}">{% trans %}Create new{% endtrans %}</a>
-</div>
+    <div class="column is-flex-tablet is-flex-direction-row">
+        <div class="px-1 py-1">
+            <a class="button is-dark is-fullwidth" href="{{ path('home_index') }}">{{ 'Back to Gallery page'|trans }}</a>
+        </div>
+        <div class="px-1 py-1">
+            <a class="button is-success is-fullwidth" href="{{ path('picture_new') }}">{% trans %}Create new{% endtrans %}</a>
+        </div>
+    </div>
 
 <div class="table-container">
     <table class="table">
@@ -42,8 +46,12 @@
     </table>
 </div>
 
-    <div class="column">
-        <a class="button is-dark" href="{{ path('home_index') }}">{{ 'Back to Gallery page'|trans }}</a>
-        <a class="button is-success" href="{{ path('picture_new') }}">{% trans %}Create new{% endtrans %}</a>
+    <div class="column is-flex-tablet is-flex-direction-row">
+        <div class="px-1 py-1">
+            <a class="button is-dark is-fullwidth" href="{{ path('home_index') }}">{{ 'Back to Gallery page'|trans }}</a>
+        </div>
+        <div class="px-1 py-1">
+            <a class="button is-success is-fullwidth" href="{{ path('picture_new') }}">{% trans %}Create new{% endtrans %}</a>
+        </div>
     </div>
 {% endblock %}
