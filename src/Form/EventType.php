@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\Event;
 use App\Entity\Tag;
+use FOS\CKEditorBundle\Form\Type\CKEditorType;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
@@ -90,7 +91,8 @@ class EventType extends AbstractType
                 ],
                 'label' => $this->translator->trans('Redirect link for tickets'),
             ])
-            ->add('description', TextareaType::class,[
+            ->add('description', CKEditorType::class,[
+                'config' => ['toolbar' => 'standard'],
                 'required' => false,
                 'attr' => [
                     'class' => 'textarea'

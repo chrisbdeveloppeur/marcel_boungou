@@ -25,6 +25,7 @@
         "bulma": "^0.9.3",
         "bulma-calendar": "^6.1.16",
         "bulma-carousel": "^4.0.24",
-        "bulma-extensions": "^6.2.7"
+        "bulma-extensions": "^6.2.7",
+        "ckeditor4": "4.13.0"
     }
 }
