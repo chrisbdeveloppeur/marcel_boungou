@@ -759,7 +759,7 @@
       </trans-unit>
       <trans-unit id="wVYvRBr" resname="Manage Albums">
         <source>Manage Albums</source>
-        <target>Gestion des Albums</target>
+        <target>Gestion des albums</target>
       </trans-unit>
       <trans-unit id="K_RN..i" resname="Manage Musics">
         <source>Manage Musics</source>
@@ -767,7 +767,7 @@
       </trans-unit>
       <trans-unit id="8Pbt0BW" resname="Manage Managers">
         <source>Manage Managers</source>
-        <target>Gestion des Gestionnaires</target>
+        <target>Gestion des gestionnaires</target>
       </trans-unit>
       <trans-unit id="pbywDoC" resname="Vous ne voulez plus recevoir de mail en provenance de www.marcel-boungou.com">
         <source>Vous ne voulez plus recevoir de mail en provenance de www.marcel-boungou.com</source>
