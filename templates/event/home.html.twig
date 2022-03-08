@@ -169,16 +169,16 @@ agendas.forEach(function (agenda) {
         var options = {
             initialSlide: 0,
             slidesToShow: 1,
-            infinite: false,
+            infinite: true,
             loop:true,
-            effect: 'fade',
+            effect: 'translate',
             autoplay: true,
             navigation:true,
             navigationSwipe: true,
             navigationKeys: false,
             pagination: false,
-            duration:500,
-            autoplaySpeed:2000,
+            duration:2000,
+            autoplaySpeed:5000,
         };
 
         // Initialize all div with carousel class
@@ -187,9 +187,16 @@ agendas.forEach(function (agenda) {
         // Loop on each carousel initialized
         for(var i = 0; i < carousels.length; i++) {
             // Add listener to  event
-            carousels[i].on('before:show', state => {
-
-            });
+            // carousels[i].on('show', state => {
+            //     var slides = state.slides;
+            //     slides.forEach(function (slide) {
+            //         if (slide.classList.contains('is-current')){
+            //             slide.style.zIndex = '1';
+            //         } else {
+            //             slide.style.zIndex = '0';
+            //         }
+            //     })
+            // });
         }
 
         // Access to bulmaCarousel instance of an element

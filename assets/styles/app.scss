@@ -477,19 +477,23 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   justify-content: center;
   align-items: center;
 }
+//.slider-item.is-current *div.tags{
+//  z-index: 1 !important;
+//}
+
 .events-carousel>div.slider>.slider-container{
-  width: 100% !important;
+  //width: 100% !important;
   max-height: 100%;
 }
-.events-carousel{
-  //height: 230px;
-  //width: 200px
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+//.events-carousel{
+//  //height: 230px;
+//  //width: 200px
+//  height: 100%;
+//  width: 100%;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//}
 .disc:hover{
   cursor: pointer;
 }
