@@ -45,7 +45,7 @@
                             {{ include('event/edit_event_button.html.twig') }}
                         {% endif %}
                         <div class="column px-0 py-0 mx-1 my-2" style="z-index: 1;">
-                            <div class="is-flex is-align-items-center shadow-box-1 my-1">
+                            <div class="is-flex is-align-items-center shadow-box-1 my-2">
                                 <div class="is-uppercase has-text-centered has-text-success has-text-weight-bold is-size-5 column py-1">
                                     <span>
                                         {{ event.title }}
@@ -55,7 +55,7 @@
                         </div>
                         <div class="column slider-container-child is-flex-desktop is-justify-content-space-between px-0 py-0">
 
-                            <div class="column px-0 py-0 mx-1 my-1 is-flex shadow-box-1">
+                            <div class="column px-0 py-0 mx-1 my-2 is-flex shadow-box-1">
                                 <div class="column is-expanded has-text-success is-flex is-justify-content-center is-align-items-center">
                                     <span class="has-text-success-light">
                                         {{ event.adresse }}
@@ -70,7 +70,7 @@
                                 </div>
                             </div>
 
-                            <div class="column px-0 py-0 mx-1 my-1 is-flex shadow-box-1">
+                            <div class="column px-0 py-0 mx-1 my-2 is-flex shadow-box-1">
                                 <div class="column is-expanded has-text-success is-flex is-justify-content-center is-align-items-center">
                                     <span class="has-text-success-light">
                                         {{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}
@@ -86,7 +86,7 @@
                             </div>
 
                             {% if event.ticketingLink %}
-                                <div class="column px-0 py-0 mx-1 my-1 is-flex is-justify-content-center is-align-items-center rotationX transition-3ms">
+                                <div class="column px-0 py-0 mx-1 my-2 is-flex is-justify-content-center is-align-items-center rotationX transition-3ms">
                                     <a href="{{ event.ticketingLink }}" target="_blank" class="shadow-box-1 is-fullwidth is-height-100-percent column is-flex is-justify-content-center is-align-items-center is-size-4">
                                         <span class="icon is-large">
                                             <i class="fas fa-lg fa-ticket"></i>
@@ -100,7 +100,7 @@
 
                         </div>
 
-                        <div class="column">
+                        <div class="column px-0 py-0 mx-1 my-2">
                             <div class="tags is-justify-content-end">
                                 {% for tag in event.tagsinarray %}
                                     {% if tag %}
