@@ -203,7 +203,7 @@
         {#                               #}
 
         {# SCRIPT POUR BARRE DE RECHERCHE FILTRE JS #}
-        function searchFilter(classes) {
+        function searchFilter() {
             // Declare variables
             var input, filter, albumName, albumYear, musicName, albumTxtValue, musicTxtValue, albumYearValue, musicContainer;
             input = document.getElementById('searchInput');
@@ -230,13 +230,38 @@
 
         }
 
+        {# SCRIPT POUR BARRE DE RECHERCHE FILTRE JS #}
+        function searchAlbum(album) {
+            // Declare variables
+            var albumSelected, albumName, musicContainer;
+            // filter = input.value.toUpperCase();
+
+            musicContainer = document.querySelectorAll('.music-container');
+            albumSelected = album.querySelector('.album-name').textContent.toUpperCase();
+
+            console.log(albumSelected);
+
+            // Loop through all list items, and hide those who don't match the search query
+            musicContainer.forEach(function (container) {
+                albumName = container.querySelector('.album-name').textContent.toUpperCase();
+                if (albumName === albumSelected){
+                    container.classList.remove('is-hidden');
+                    container.classList.replace('opacity0', 'opacity100')
+                }else {
+                    container.classList.add('is-hidden');
+                    container.classList.replace('opacity100', 'opacity0')
+                }
+            });
+
+        }
+
 
         {# SCRIPT ANCRAGE SEARCH ALBUM / MUSIQUES #}
         function searchAncrage(link) {
-            var input = document.getElementById('searchInput');
-            var ancrageTxt = link.getAttribute('data-href');
-            input.value = ancrageTxt;
-            searchFilter();
+            // var input = document.getElementById('searchInput');
+            // var ancrageTxt = link.getAttribute('data-href');
+            // input.value = ancrageTxt;
+            searchAlbumFilter();
         }
 
 

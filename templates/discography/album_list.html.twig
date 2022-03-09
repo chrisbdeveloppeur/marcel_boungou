@@ -16,7 +16,7 @@
                     {{ include('album/edit_album_button.html.twig') }}
                 {% endif %}
 
-                <a data-href="{{ album }}" onclick="searchAncrage(this)" class="card" style="width: 200px; height: 100%;">
+                <a data-href="{{ album }}" onclick="searchAlbum(this)" class="card" style="width: 200px; height: 100%;">
 
                     <div class="card-image">
                         <figure class="image is-square">
@@ -30,7 +30,7 @@
 
                     <div class="column has-background-light">
                         <div class="content has-text-black">
-                            {{ album }}<br>
+                            <span class="album-name">{{ album }}</span><br>
                             {% if album.year %}{{ album.year }}{% endif %}<br>
                             {% if album.feat %}<span class="help">{% trans %}Featuring : {% endtrans %} {{ album.feat }}</span>{% endif %}
                         </div>
