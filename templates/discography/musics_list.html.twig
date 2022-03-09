@@ -11,9 +11,9 @@
         <div class="columns is-multiline">
             {% for music in musics %}
 
-                <div class="music-container fade-effect transition-1s opacity0 {{ music.album }} column is-flex is-justify-content-center is-align-items-center is-flex-direction-column scalup-hover">
+                <div class="music-container fade-effect transition-1s opacity0 {{ music.album }} column is-flex is-justify-content-center is-align-items-center is-flex-direction-column scalup-hover" id="{{ music }}">
 
-                    <div class="is-relative" style="height: 150px;width: 150px;{% if music.album and music.album.image %}background: center / 100% 100% no-repeat url({{ vich_uploader_asset(music.album, 'imageFile') }}){% else %}background: center / 100% 100% no-repeat url('https://bulma.io/images/placeholders/480x480.png'){% endif %}">
+                    <div class="is-relative" id="musicImage" style="height: 150px;width: 150px;{% if music.album and music.album.image %}background: center / 100% 100% no-repeat url({{ vich_uploader_asset(music.album, 'imageFile') }}){% else %}background: center / 100% 100% no-repeat url('https://bulma.io/images/placeholders/480x480.png'){% endif %}">
 
                         {% if is_granted('ROLE_ADMIN') %}
                             {{ include('music/edit_music_button.html.twig') }}

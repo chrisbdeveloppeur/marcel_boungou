@@ -79,7 +79,6 @@
             // Loop through all list items, and hide those who don't match the search query
             musicContainer.forEach(function (container) {
                 classeElement = container.querySelector(classe);
-                console.log(classeElement);
                 if (classeElement){
                     classeElementValue = classeElement.textContent || classeElement.innerText;
                     if ( classeElementValue.toUpperCase().indexOf(filter) > -1 ) {

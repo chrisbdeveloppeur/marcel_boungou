@@ -32,6 +32,10 @@
         </div>
     </div>
 
+    <div class="column has-background-light is-full is-full-mobile" id="musicNav" style="height: 10rem;">
+        <span class="current-music-played">{{ 'no music played'|trans }}</span>
+    </div>
+
     {% if albums|length > 0 %}
         {{ include('discography/album_list.html.twig') }}
     {% endif %}
@@ -93,11 +97,14 @@
         {# SCRIPT POUR LE BOUTON PLAY DES PLAYERS #}
         function startMusic(btn){
             let audio = btn.parentElement.querySelector('audio');
+            let musicContainer = btn.parentElement.parentElement;
             if (!audio.paused){
                 pauseAllMusics(audio);
+                showCurrentMusicPlayedIntoMusicNav(audio, musicContainer, 'pause');
             } else {
                 pauseAllMusics(audio);
                 audio.play();
+                showCurrentMusicPlayedIntoMusicNav(audio, musicContainer, 'play');
             }
         }
         function pauseAllMusics(target){
@@ -199,6 +206,7 @@
             btn.addEventListener('click',function () {
                 audio.pause();
                 audio.currentTime = 0;
+                showCurrentMusicPlayedIntoMusicNav(null, musicContainer);
             })
         }
         {#                               #}
@@ -231,7 +239,7 @@
 
         }
 
-        {# SCRIPT POUR BARRE DE RECHERCHE FILTRE JS #}
+        {# SCRIPT POUR FILTRE ALBUM #}
         function searchAlbum(album) {
             // Declare variables
             var albumSelected, albumName, musicContainer;
@@ -255,20 +263,30 @@
         }
 
 
-        {# SCRIPT ANCRAGE SEARCH ALBUM / MUSIQUES #}
-        function searchAncrage(link) {
-            // var input = document.getElementById('searchInput');
-            // var ancrageTxt = link.getAttribute('data-href');
-            // input.value = ancrageTxt;
-            searchAlbumFilter();
-        }
-
-
         {# SCRIPT RESET SEARCH #}
         function resetSearch() {
             var input = document.getElementById('searchInput');
             input.value = '';
             searchFilter();
+        }
+
+
+        {# SCRIPT GET CURRENT MUSIC PLAYED AND SHOW IN MUSIC-NAV #}
+        function showCurrentMusicPlayedIntoMusicNav(audio, musicContainer, musicState) {
+            // console.log(audio);
+            var musicNav, musicNavMusicName, album, year, currentMusicNameTxt, musicImage;
+            currentMusicNameTxt = musicContainer.querySelector('.music-name').textContent;
+            musicImage = musicContainer.querySelector('#musicImage');
+            musicNav = document.querySelector('#musicNav');
+            musicNavMusicName = musicNav.querySelector('.current-music-played');
+            console.log(musicImage.style.background);
+            if (audio === null){
+                musicNavMusicName.innerText = {% trans %}'no music played'{% endtrans %};
+            }else if (musicState === 'pause') {
+                musicNavMusicName.innerText = currentMusicNameTxt + {% trans %}' (pause)'{% endtrans %};
+            } else {
+                musicNavMusicName.innerText = currentMusicNameTxt
+            }
         }
 
 
