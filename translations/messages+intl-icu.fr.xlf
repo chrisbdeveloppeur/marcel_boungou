@@ -813,7 +813,7 @@
         <source>Current file :</source>
         <target>Fichier actuel :</target>
       </trans-unit>
-      <trans-unit id="LsOmrmU" resname="Successfully unsubscribed for email : ">
+      <trans-unit id="cwG7PrN" resname="Successfully unsubscribed for email : ">
         <source>Successfully unsubscribed for email : </source>
         <target>Désabonnement effectué avec succès pour l'e-mail : </target>
       </trans-unit>
@@ -1024,6 +1024,78 @@
       <trans-unit id="dsVQX.L" resname="Back to home">
         <source>Back to home</source>
         <target>Retour à l'accueil</target>
+      </trans-unit>
+      <trans-unit id="pr8p9Sh" resname="Add a Music">
+        <source>Add a Music</source>
+        <target>Ajouter une musique</target>
+      </trans-unit>
+      <trans-unit id="Ji2YEaQ" resname="Add a Picture">
+        <source>Add a Picture</source>
+        <target>Ajouter une image</target>
+      </trans-unit>
+      <trans-unit id="GWqRIVr" resname="reset filter">
+        <source>reset filter</source>
+        <target>réinitialiser le filtre</target>
+      </trans-unit>
+      <trans-unit id="mcQKtAW" resname="Date">
+        <source>Date</source>
+        <target>Date</target>
+      </trans-unit>
+      <trans-unit id="M7k0ds9" resname="Time">
+        <source>Time</source>
+        <target>Heure</target>
+      </trans-unit>
+      <trans-unit id="o0TInWY" resname="Subscribers">
+        <source>Subscribers</source>
+        <target>Les abonnés</target>
+      </trans-unit>
+      <trans-unit id="TqFAWIF" resname="home">
+        <source>home</source>
+        <target>menu principal</target>
+      </trans-unit>
+      <trans-unit id="hiQXuef" resname="events">
+        <source>events</source>
+        <target>événements</target>
+      </trans-unit>
+      <trans-unit id="BiHrvMO" resname="all events">
+        <source>all events</source>
+        <target>tous les évènements</target>
+      </trans-unit>
+      <trans-unit id="Mc1CQ1O" resname="discography">
+        <source>discography</source>
+        <target>discographie</target>
+      </trans-unit>
+      <trans-unit id="YoFzDl4" resname="bibliography">
+        <source>bibliography</source>
+        <target>bibliographie</target>
+      </trans-unit>
+      <trans-unit id="zjh9Xgo" resname="gallery">
+        <source>gallery</source>
+        <target>galerie</target>
+      </trans-unit>
+      <trans-unit id="BTIBgmN" resname="bio">
+        <source>bio</source>
+        <target>bio</target>
+      </trans-unit>
+      <trans-unit id="CT59X9u" resname="contact">
+        <source>contact</source>
+        <target>nous contacter</target>
+      </trans-unit>
+      <trans-unit id="fz_kjKi" resname="partner">
+        <source>partner</source>
+        <target>partenariats</target>
+      </trans-unit>
+      <trans-unit id="IeAitoB" resname="CGU">
+        <source>CGU</source>
+        <target>CGU</target>
+      </trans-unit>
+      <trans-unit id="h.fM0_h" resname="backoffice">
+        <source>backoffice</source>
+        <target>gestion</target>
+      </trans-unit>
+      <trans-unit id="l2YZoxD" resname="Add new Manager">
+        <source>Add new Manager</source>
+        <target>Ajouter un nouveau gestionnaire</target>
       </trans-unit>
     </body>
   </file>
