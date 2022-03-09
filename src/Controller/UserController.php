@@ -91,13 +91,14 @@ class UserController extends AbstractController
         }
 
         $redirectLink = $this->redirectToRoute('user_index')->getTargetUrl();
-        return $this->render('user/edit.html.twig', [
+        return $this->render('themes/just_the_form.html.twig', [
             'user' => $user,
             'redirect' => [
                 'txt' => $this->translator->trans('back to list'),
                 'link' => $redirectLink,
             ],
             'form' => $form->createView(),
+            'form_title' => $this->translator->trans('Edit Manager'),
         ]);
     }
 

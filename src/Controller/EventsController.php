@@ -80,9 +80,10 @@ class EventsController extends AbstractController
         }
 
         $redirect_link = $this->redirectToRoute('events_home')->getTargetUrl();
-        return $this->render('event/new.html.twig', [
+        return $this->render('themes/just_the_form.html.twig', [
             'event' => $event,
             'form' => $form->createView(),
+            'form_title' => $this->translator->trans('Add new Event'),
             'redirect' => [
                 'link' => $redirect_link,
                 'txt' => $this->translator->trans('Back to Events home'),
@@ -118,9 +119,10 @@ class EventsController extends AbstractController
         }
 
         $redirect_link = $this->redirectToRoute('events_home')->getTargetUrl();
-        return $this->render('event/edit.html.twig', [
+        return $this->render('themes/just_the_form.html.twig', [
             'event' => $event,
             'form' => $form->createView(),
+            'form_title' => $this->translator->trans('Edit Event'),
             'redirect' => [
                 'link' => $redirect_link,
                 'txt' => $this->translator->trans('Back to Events home'),
@@ -192,10 +194,10 @@ class EventsController extends AbstractController
         }
 
         $redirect_link = $this->redirectToRoute('events_home')->getTargetUrl();
-        $form_title = $translator->trans('You are about to unsubscribe for the event reminder : ') .'<b>'. $event->getTitle() .'</b>';
+        $form_info = $translator->trans('You are about to unsubscribe for the event reminder : ') .'<b>'. $event->getTitle() .'</b>';
         return $this->render('themes/just_the_form.html.twig',[
             'form' => $form->createView(),
-            'form_title' => $form_title,
+            'form_info' => $form_info,
             'redirect' => [
                 'link' => $redirect_link,
                 'txt' => $this->translator->trans('Cancel'),

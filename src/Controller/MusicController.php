@@ -53,9 +53,10 @@ class MusicController extends AbstractController
             return $this->redirectToRoute('music_index', [], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->render('music/new.html.twig', [
+        return $this->render('themes/just_the_form.html.twig', [
             'music' => $music,
             'form' => $form->createView(),
+            'form_title' => $this->translator->trans('Add a Music'),
         ]);
     }
 
@@ -87,9 +88,10 @@ class MusicController extends AbstractController
             return $this->redirect($previousUrl);
         }
 
-        return $this->render('music/edit.html.twig', [
+        return $this->render('themes/just_the_form.html.twig', [
             'music' => $music,
             'form' => $form->createView(),
+            'form_title' => $this->translator->trans('Edit Music'),
             'redirect' => [
                 'link' => $this->redirectToRoute('discography_index')->getTargetUrl(),
                 'txt' => $this->translator->trans('Redirect to discography'),

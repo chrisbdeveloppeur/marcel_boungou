@@ -52,9 +52,10 @@ class PictureController extends AbstractController
             return $this->redirectToRoute('picture_index', [], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->render('picture/new.html.twig', [
+        return $this->render('themes/just_the_form.html.twig', [
             'picture' => $picture,
             'form' => $form->createView(),
+            'form_title' => $this->translator->trans('Add a Picture'),
         ]);
     }
 
@@ -83,9 +84,10 @@ class PictureController extends AbstractController
             return $this->redirect($previousUrl);
         }
 
-        return $this->render('picture/edit.html.twig', [
+        return $this->render('themes/just_the_form.html.twig', [
             'picture' => $picture,
             'form' => $form->createView(),
+            'form_title' => $this->translator->trans('Edit Picture'),
         ]);
     }
 

@@ -1,305 +1,314 @@
-{% if form_title is defined %}
-<span class="help">
-    <span class="icon">
-        <i class="fas fa-info-circle"></i>
+<div class="column is-half is-full-mobile px-2 py-2 my-6 shadow-box-1 has-text-white" style="margin: auto">
+    {% if form_title is defined %}
+        <h1 class="subtitle is-3 has-text-white">{{ form_title|raw }}</h1>
+    {% endif %}
+    {% if form_info is defined %}
+        <span class="help has-text-white">
+            <span class="icon">
+                <i class="fas fa-lg fa-info-circle"></i>
+            </span>
+            <span>
+                {{ form_info|raw }}
+            </span>
     </span>
-    <span>
-        {{ form_title|raw }}
-    </span>
-</span>
-{% endif %}
-
-        {% if redirect is defined %}
-            <a href="{{ redirect.link }}" class="button is-fullwidth is-dark">
-                {{ redirect.txt }}
-            </a>
-        {% endif %}
-{% if 'edit' in app.request.get('_route') %}
-    <div class="pt-1 has-text-right">
-        {%  include(form.vars.name~'/_delete_form.html.twig') ignore missing %}
-    </div>
-{% endif %}
-
-
-{{ form_start(form, {'attr': {'class': '', 'id': form.vars.name } }) }}
-
-{% for child in form %}
-
-    {% if 'tags' in child.vars.name %}
-        <div class="label is-size-7">
-            {{ 'Tags'|trans }}
-        </div>
-        {{ form_widget(child) }}
     {% endif %}
 
-<div class="field">
-    {% if 'token' not in form_label(child) %}
-        <div class="label is-size-7">
-            {% if child.vars.label %}
-                {{ child.vars.label }}
-                {% if child.vars.required %}
-                    *
+            {% if 'edit' in app.request.get('_route') %}
+                <div class="pt-1 has-text-right">
+                    {%  include(form.vars.name~'/_delete_form.html.twig') ignore missing %}
+                </div>
+            {% endif %}
+
+
+    {{ form_start(form, {'attr': {'class': '', 'id': form.vars.name } }) }}
+
+    {% for child in form %}
+
+        {% if 'tags' in child.vars.name %}
+            <div class="label has-text-white is-size-7">
+                {{ 'Tags'|trans }}
+            </div>
+            {{ form_widget(child) }}
+        {% endif %}
+
+    <div class="field">
+        {% if 'token' not in form_label(child) %}
+            <div class="label has-text-white is-size-7">
+                {% if child.vars.label %}
+                    {{ child.vars.label }}
+                    {% if child.vars.required %}
+                        *
+                    {% endif %}
+                {% endif %}
+            </div>
+        {% endif %}
+
+        {% if child.vars.block_prefixes[1] == 'choice' %}
+
+            {% if child.vars.name == 'album' %}
+                <div class="field has-addons">
+                    <div class="control is-expanded">
+                        <div class="select is-fullwidth">
+                            {{ form_widget(child) }}
+                        </div>
+                    </div>
+                    <div class="control">
+                        <a href="{{ path('album_new') }}" class="button is-primary">{% trans %}Add an album{% endtrans %}</a>
+                    </div>
+                </div>
+            {% else %}
+                <div class="select is-fullwidth">
+
+                    {{ form_widget(child) }}
+
+                </div>
+            {% endif %}
+
+        {% elseif child.vars.block_prefixes[1] == 'checkbox' %}
+            {% if 'agreeTerms' in child.vars.name %}
+                <label class="checkbox">
+                    {{ form_widget(child) }}
+                    {% trans %}I agree to the{% endtrans %} <a href="#">{% trans %}terms and conditions{% endtrans %}</a>
+                </label>
+            {% elseif 'isVerified' in child.vars.name %}
+                <label class="checkbox">
+                    {{ form_widget(child) }}
+                    {% trans %}Is verified{% endtrans %}
+                </label>
+            {% endif %}
+
+        {% elseif child.vars.block_prefixes[1] == 'file' or child.vars.block_prefixes[1] == 'vich_file' %}
+    {#        {{ form_widget(child) }}#}
+            {% if form.vars.name == 'event' %}
+                {% if event is defined and event.image %}
+                    <figure class="image is-2by1 is-relative">
+                        <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="{{ event.image }}">
+                        <div class="buttons"  style="position: absolute;right: .5rem;top: .5rem;">
+                            <a href="{{ vich_uploader_asset(event, 'imageFile') }}" class="button is-dark is-rounded px-3 py-3 is-small" download="{{ event.image }}" title="{% trans %}Download image{% endtrans %}">
+                                <span class="icon">
+                                    <i class="fas fa-lg fa-download"></i>
+                                </span>
+                            </a>
+                            <a href="{{ path('events_image_delete', {'id': event.id}) }}" class="button is-danger is-rounded px-3 py-3 is-small" title="{% trans %}Delete image{% endtrans %}" onclick="return confirm('Are you sure you want to delete the image?')">
+                                <span class="icon">
+                                    <i class="fas fa-lg fa-times"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </figure>
+                {% endif %}
+            {% elseif form.vars.name == 'album' %}
+                {% if album is defined and album.image %}
+                    <figure class="is-flex is-justify-content-center is-relative">
+                        <img src="{{ vich_uploader_asset(album, 'imageFile') }}" alt="{{ album.image }}">
+                        <div class="buttons"  style="position: absolute;right: .5rem;top: .5rem;">
+                            <a href="{{ vich_uploader_asset(album, 'imageFile') }}" class="button is-dark is-rounded px-3 py-3 is-small" download="{{ album.image }}" title="{% trans %}Download image{% endtrans %}">
+                                <span class="icon">
+                                    <i class="fas fa-lg fa-download"></i>
+                                </span>
+                            </a>
+                            <a href="{{ path('album_image_delete', {'id': album.id}) }}" class="button is-danger is-rounded px-3 py-3 is-small" title="{% trans %}Delete image{% endtrans %}" onclick="return confirm('Are you sure you want to delete the image?')">
+                                <span class="icon">
+                                    <i class="fas fa-lg fa-times"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </figure>
+                {% endif %}
+            {% elseif form.vars.name == 'picture' %}
+                {% if picture is defined and picture.image %}
+                    <figure class="is-flex is-justify-content-center is-relative">
+                        <img src="{{ vich_uploader_asset(picture, 'imageFile') }}" alt="{{ picture.image }}">
+                        <div class="buttons"  style="position: absolute;right: .5rem;top: .5rem;">
+                            <a href="{{ vich_uploader_asset(picture, 'imageFile') }}" class="button is-dark is-rounded px-3 py-3 is-small" download="{{ picture.image }}" title="{% trans %}Download image{% endtrans %}">
+                                <span class="icon">
+                                    <i class="fas fa-lg fa-download"></i>
+                                </span>
+                            </a>
+                            <a href="{{ path('picture_image_delete', {'id': picture.id}) }}" class="button is-danger is-rounded px-3 py-3 is-small" title="{% trans %}Delete image{% endtrans %}" onclick="return confirm('Are you sure you want to delete the image?')">
+                                <span class="icon">
+                                    <i class="fas fa-lg fa-times"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </figure>
                 {% endif %}
             {% endif %}
-        </div>
-    {% endif %}
 
-    {% if child.vars.block_prefixes[1] == 'choice' %}
-
-        {% if child.vars.name == 'album' %}
-            <div class="field has-addons">
-                <div class="control is-expanded">
-                    <div class="select is-fullwidth">
-                        {{ form_widget(child) }}
-                    </div>
-                </div>
-                <div class="control">
-                    <a href="{{ path('album_new') }}" class="button is-primary">{% trans %}Add an album{% endtrans %}</a>
-                </div>
-            </div>
-        {% else %}
-            <div class="select is-fullwidth">
-
-                {{ form_widget(child) }}
-
-            </div>
-        {% endif %}
-
-    {% elseif child.vars.block_prefixes[1] == 'checkbox' %}
-        {% if 'agreeTerms' in child.vars.name %}
-            <label class="checkbox">
-                {{ form_widget(child) }}
-                {% trans %}I agree to the{% endtrans %} <a href="#">{% trans %}terms and conditions{% endtrans %}</a>
-            </label>
-        {% elseif 'isVerified' in child.vars.name %}
-            <label class="checkbox">
-                {{ form_widget(child) }}
-                {% trans %}Is verified{% endtrans %}
-            </label>
-        {% endif %}
-
-    {% elseif child.vars.block_prefixes[1] == 'file' or child.vars.block_prefixes[1] == 'vich_file' %}
-{#        {{ form_widget(child) }}#}
-        {% if form.vars.name == 'event' %}
-            {% if event is defined and event.image %}
-                <figure class="image is-2by1 is-relative">
-                    <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="{{ event.image }}">
-                    <div class="buttons"  style="position: absolute;right: .5rem;top: .5rem;">
-                        <a href="{{ vich_uploader_asset(event, 'imageFile') }}" class="button is-dark is-rounded px-3 py-3 is-small" download="{{ event.image }}" title="{% trans %}Download image{% endtrans %}">
-                            <span class="icon">
-                                <i class="fas fa-lg fa-download"></i>
-                            </span>
-                        </a>
-                        <a href="{{ path('events_image_delete', {'id': event.id}) }}" class="button is-danger is-rounded px-3 py-3 is-small" title="{% trans %}Delete image{% endtrans %}" onclick="return confirm('Are you sure you want to delete the image?')">
-                            <span class="icon">
-                                <i class="fas fa-lg fa-times"></i>
-                            </span>
-                        </a>
-                    </div>
-                </figure>
+            {% if music is defined and music.musicName %}
+                <span class="help">{% trans %}Current file : {% endtrans %} {{ music.musicName }}</span>
+                <audio src="{{ vich_uploader_asset(music, 'musicFile') }}" controls style="width: 100%;"></audio>
             {% endif %}
-        {% elseif form.vars.name == 'album' %}
-            {% if album is defined and album.image %}
-                <figure class="is-flex is-justify-content-center is-relative">
-                    <img src="{{ vich_uploader_asset(album, 'imageFile') }}" alt="{{ album.image }}">
-                    <div class="buttons"  style="position: absolute;right: .5rem;top: .5rem;">
-                        <a href="{{ vich_uploader_asset(album, 'imageFile') }}" class="button is-dark is-rounded px-3 py-3 is-small" download="{{ album.image }}" title="{% trans %}Download image{% endtrans %}">
-                            <span class="icon">
-                                <i class="fas fa-lg fa-download"></i>
-                            </span>
-                        </a>
-                        <a href="{{ path('album_image_delete', {'id': album.id}) }}" class="button is-danger is-rounded px-3 py-3 is-small" title="{% trans %}Delete image{% endtrans %}" onclick="return confirm('Are you sure you want to delete the image?')">
-                            <span class="icon">
-                                <i class="fas fa-lg fa-times"></i>
-                            </span>
-                        </a>
-                    </div>
-                </figure>
-            {% endif %}
-        {% elseif form.vars.name == 'picture' %}
-            {% if picture is defined and picture.image %}
-                <figure class="is-flex is-justify-content-center is-relative">
-                    <img src="{{ vich_uploader_asset(picture, 'imageFile') }}" alt="{{ picture.image }}">
-                    <div class="buttons"  style="position: absolute;right: .5rem;top: .5rem;">
-                        <a href="{{ vich_uploader_asset(picture, 'imageFile') }}" class="button is-dark is-rounded px-3 py-3 is-small" download="{{ picture.image }}" title="{% trans %}Download image{% endtrans %}">
-                            <span class="icon">
-                                <i class="fas fa-lg fa-download"></i>
-                            </span>
-                        </a>
-                        <a href="{{ path('picture_image_delete', {'id': picture.id}) }}" class="button is-danger is-rounded px-3 py-3 is-small" title="{% trans %}Delete image{% endtrans %}" onclick="return confirm('Are you sure you want to delete the image?')">
-                            <span class="icon">
-                                <i class="fas fa-lg fa-times"></i>
-                            </span>
-                        </a>
-                    </div>
-                </figure>
-            {% endif %}
-        {% endif %}
-
-        {% if music is defined and music.musicName %}
-            <span class="help">{% trans %}Current file : {% endtrans %} {{ music.musicName }}</span>
-            <audio src="{{ vich_uploader_asset(music, 'musicFile') }}" controls style="width: 100%;"></audio>
-        {% endif %}
-    <div class="file has-name is-fullwidth">
-        <label class="file-label">
-            {{ form_widget(child) }}
-            <span class="file-cta has-background-white">
-                <span class="file-icon">
-                    <i class="fas fa-upload"></i>
+        <div class="file has-name is-fullwidth">
+            <label class="file-label">
+                {{ form_widget(child) }}
+                <span class="file-cta has-background-white">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label is-hidden-mobile">
+                        {% if child.vars.attr['extra-data'] is defined %}
+                            {{ child.vars.attr['extra-data'] }}
+                        {% else %}
+                            {% trans %}Select a file{% endtrans %}
+                        {% endif %}
+                    </span>
                 </span>
-                <span class="file-label is-hidden-mobile">
-                    {% if child.vars.attr['extra-data'] is defined %}
-                        {{ child.vars.attr['extra-data'] }}
+                <span class="file-name">
+                    {% if event is defined and event.image %}
+                        {{ event.image }}
                     {% else %}
-                        {% trans %}Select a file{% endtrans %}
+                        {% trans %}Empty{% endtrans %}
                     {% endif %}
                 </span>
-            </span>
-            <span class="file-name">
-                {% if event is defined and event.image %}
-                    {{ event.image }}
-                {% else %}
-                    {% trans %}Empty{% endtrans %}
-                {% endif %}
-            </span>
 
-        </label>
-    </div>
-    {% else %}
+            </label>
+        </div>
+        {% else %}
 
-        {% if 'mail' in child.vars.name %}
-            <div class="control has-icons-left">
-                {{ form_widget(child) }}
-                <span class="icon is-small is-left">
-                    <i class="fas fa-at"></i>
-                </span>
-            </div>
-        {% elseif 'phone' in child.vars.name or 'Phone' in child.vars.name %}
-            <div class="control has-icons-left">
-                {{ form_widget(child) }}
-                <span class="icon is-small is-left">
-                    <i class="fas fa-phone"></i>
-                </span>
-            </div>
-        {% elseif ('street' in child.vars.name) or ('cp' in child.vars.name) or ('city' in child.vars.name) or ('building' in child.vars.name) or ('Adresse' in child.vars.name) %}
-            <div class="control has-icons-left">
-                {{ form_widget(child) }}
-                <span class="icon is-small is-left">
-                    <i class="fas fa-map-marked-alt"></i>
-                </span>
-            </div>
-        {% elseif ('name' in child.vars.name) or ('Name' in child.vars.name) or ('Contact' in child.vars.name) %}
-            <div class="control has-icons-left">
-                {{ form_widget(child) }}
-                <span class="icon is-small is-left">
-                    <i class="fas fa-signature"></i>
-                </span>
-            </div>
-        {% elseif ('password' in child.vars.name) or ('Password' in child.vars.name) %}
-            <div class="control has-icons-left">
-                {{ form_widget(child) }}
-                <span class="icon is-small is-left">
-                    <i class="fas fa-key"></i>
-                </span>
-                <div class="show-password">
-                    <span class="icon is-small">
-                        <i class="fas fa-eye-slash"></i>
+            {% if 'mail' in child.vars.name %}
+                <div class="control has-icons-left">
+                    {{ form_widget(child) }}
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-at"></i>
                     </span>
                 </div>
-            </div>
-        {% elseif 'datetime' in child.vars.name %}
-            <div class="control has-icons-left">
-                {{ form_widget(child) }}
-                <span class="icon is-small is-left">
-                    <i class="fas fa-calendar-alt"></i>
-                </span>
-            </div>
-        {% elseif 'country' in child.vars.name %}
-            <div class="control has-icons-left">
-                {{ form_widget(child) }}
-                <span class="icon is-small is-left">
-                    <i class="fas fa-globe"></i>
-                </span>
-            </div>
-        {% else %}
-            <p class="control">
-                {{ form_widget(child) }}
-            </p>
+            {% elseif 'phone' in child.vars.name or 'Phone' in child.vars.name %}
+                <div class="control has-icons-left">
+                    {{ form_widget(child) }}
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-phone"></i>
+                    </span>
+                </div>
+            {% elseif ('street' in child.vars.name) or ('cp' in child.vars.name) or ('city' in child.vars.name) or ('building' in child.vars.name) or ('Adresse' in child.vars.name) %}
+                <div class="control has-icons-left">
+                    {{ form_widget(child) }}
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </span>
+                </div>
+            {% elseif ('name' in child.vars.name) or ('Name' in child.vars.name) or ('Contact' in child.vars.name) %}
+                <div class="control has-icons-left">
+                    {{ form_widget(child) }}
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-signature"></i>
+                    </span>
+                </div>
+            {% elseif ('password' in child.vars.name) or ('Password' in child.vars.name) %}
+                <div class="control has-icons-left">
+                    {{ form_widget(child) }}
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-key"></i>
+                    </span>
+                    <div class="show-password">
+                        <span class="icon is-small">
+                            <i class="fas fa-eye-slash"></i>
+                        </span>
+                    </div>
+                </div>
+            {% elseif 'datetime' in child.vars.name %}
+                <div class="control has-icons-left">
+                    {{ form_widget(child) }}
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-calendar-alt"></i>
+                    </span>
+                </div>
+            {% elseif 'country' in child.vars.name %}
+                <div class="control has-icons-left">
+                    {{ form_widget(child) }}
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-globe"></i>
+                    </span>
+                </div>
+            {% else %}
+                <p class="control">
+                    {{ form_widget(child) }}
+                </p>
+            {% endif %}
+
+
         {% endif %}
 
 
-    {% endif %}
-
-
-    {% if form_help(child) %}
-    <span class="help is-info mt-0">
-        <span class="icon-text" style="flex-wrap: nowrap">
-            <span class="icon">
-                <i class="fas fa-info-circle"></i>
+        {% if form_help(child) %}
+        <span class="help is-info mt-0">
+            <span class="icon-text" style="flex-wrap: nowrap">
+                <span class="icon">
+                    <i class="fas fa-info-circle"></i>
+                </span>
+                <span>{{ form_help(child) }}</span>
             </span>
-            <span>{{ form_help(child) }}</span>
-        </span>
-    </span>
-    {% endif %}
-
-    {% if form_errors(child) %}
-        <span class="help has-background-danger has-text-light px-2 py-1">
-            {{ form_errors(child) }}
-        </span>
-    {% endif %}
-
-    {% for sub_child in child.children %}
-        {% if form_errors(sub_child) %}
-        <span class="help has-background-danger has-text-light px-2 py-1">
-            {{ form_errors(sub_child) }}
         </span>
         {% endif %}
+
+        {% if form_errors(child) %}
+            <span class="help has-background-danger has-text-light px-2 py-1">
+                {{ form_errors(child) }}
+            </span>
+        {% endif %}
+
+        {% for sub_child in child.children %}
+            {% if form_errors(sub_child) %}
+            <span class="help has-background-danger has-text-light px-2 py-1">
+                {{ form_errors(sub_child) }}
+            </span>
+            {% endif %}
+        {% endfor %}
+
+    {#    {% if child.vars.name == 'tags' %}#}
+    {#        {{ form_widget(child,{'attr':{'type':'tags'}}) }}#}
+    {#        <input class="input" type="tags" placeholder="Add Tag" value="{% for tag in event.tags %}{{ tag }}{% endfor %}">#}
+    {#    {% endif %}#}
+
+    </div>
     {% endfor %}
 
-{#    {% if child.vars.name == 'tags' %}#}
-{#        {{ form_widget(child,{'attr':{'type':'tags'}}) }}#}
-{#        <input class="input" type="tags" placeholder="Add Tag" value="{% for tag in event.tags %}{{ tag }}{% endfor %}">#}
-{#    {% endif %}#}
+    <div class="is-flex-tablet is-flex-direction-row is-justify-content-end">
+        {% if redirect is defined %}
+            <div class="column px-0 py-0 is-half">
+                <a href="{{ redirect.link }}" class="button is-fullwidth is-dark">
+                    {{ redirect.txt }}
+                </a>
+            </div>
+        {% endif %}
+        {% if 'reset_password' in form.vars.name %}
+            <div class="column px-0 py-0 is-half has-text-centered" id="save">
+                <button class="button is-fullwidth is-success btn-submit">
+                    <span class="icon">
+                        <i class="fas fa-paper-plane"></i>
+                    </span>
+                    <span>
+                        {% trans %}Send{% endtrans %}
+                    </span>
+                </button>
+            </div>
+        {% elseif form.vars.name == 'subscriber' %}
+            <div class="column px-0 py-0 is-half has-text-centered" id="save">
+                <button class="button is-fullwidth is-success btn-submit">
+                    <span class="icon">
+                        <i class="fas fa-times"></i>
+                    </span>
+                    <span>
+                        {% trans %}Unsubscribe{% endtrans %}
+                    </span>
+                </button>
+            </div>
+        {% else %}
+            <div class="column px-0 py-0 is-half has-text-right" id="save">
+                <button class="button is-fullwidth is-success btn-submit">
+                    <span class="icon">
+                        <i class="fas fa-check"></i>
+                    </span>
+                    <span>
+                        {% trans %}Confirm{% endtrans %}
+                    </span>
+                </button>
+            </div>
+        {% endif %}
+
+    </div>
+
+    {{ form_end(form) }}
 
 </div>
-{% endfor %}
-
-
-{% if 'reset_password' in form.vars.name %}
-    <div class="field has-text-centered" id="save">
-        <button class="button is-fullwidth is-success btn-submit">
-        <span class="icon">
-            <i class="fas fa-paper-plane"></i>
-        </span>
-            <span>
-            {% trans %}Send{% endtrans %}
-        </span>
-        </button>
-    </div>
-{% elseif form.vars.name == 'subscriber' %}
-    <div class="field has-text-centered" id="save">
-        <button class="button is-fullwidth is-success btn-submit">
-        <span class="icon">
-            <i class="fas fa-times"></i>
-        </span>
-            <span>
-            {% trans %}Unsubscribe{% endtrans %}
-        </span>
-        </button>
-    </div>
-{% else %}
-    <div class="field has-text-right" id="save">
-        <button class="button is-fullwidth is-success btn-submit">
-            <span class="icon">
-                <i class="fas fa-check"></i>
-            </span>
-            <span>
-            {% trans %}Confirm{% endtrans %}
-            </span>
-        </button>
-    </div>
-{% endif %}
-
-{{ form_end(form) }}
-
 

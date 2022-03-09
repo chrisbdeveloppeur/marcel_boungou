@@ -51,9 +51,10 @@ class BookController extends AbstractController
             return $this->redirectToRoute('book_index', [], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->render('book/new.html.twig', [
+        return $this->render('themes/just_the_form.html.twig', [
             'book' => $book,
             'form' => $form->createView(),
+            'form_title' => $this->translator->trans('Add a new Book'),
             'redirect' =>[
                 'link' => $this->redirectToRoute('bibliography_index')->getTargetUrl(),
                 'txt' => $this->translator->trans('Back to Bibliography page'),
@@ -86,9 +87,10 @@ class BookController extends AbstractController
             return $this->redirect($previousUrl);
         }
 
-        return $this->render('book/edit.html.twig', [
+        return $this->render('themes/just_the_form.html.twig', [
             'book' => $book,
             'form' => $form->createView(),
+            'form_title' => $this->translator->trans('Edit Book'),
         ]);
     }
 

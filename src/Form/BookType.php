@@ -51,7 +51,7 @@ class BookType extends AbstractType
 
             ->add('tags', TextType::class,[
                 'required'=> false,
-                'label' => $this->translator->trans('Tags'),
+//                'label' => $this->translator->trans('Tags'),
                 'attr' => [
                     'class' => 'tags-input',
                     'data-type' => 'tags',

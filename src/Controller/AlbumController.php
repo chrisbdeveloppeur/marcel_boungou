@@ -52,9 +52,10 @@ class AlbumController extends AbstractController
             return $this->redirectToRoute('album_index', [], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->render('album/new.html.twig', [
+        return $this->render('themes/just_the_form.html.twig', [
             'album' => $album,
             'form' => $form->createView(),
+            'form_title' => $this->translator->trans('Add new Album'),
         ]);
     }
 
@@ -83,9 +84,10 @@ class AlbumController extends AbstractController
             return $this->redirect($previousUrl);
         }
 
-        return $this->render('album/edit.html.twig', [
+        return $this->render('themes/just_the_form.html.twig', [
             'album' => $album,
             'form' => $form->createView(),
+            'form_title' => $this->translator->trans('Edit Album'),
             'redirect' => [
                 'link' => $this->redirectToRoute('discography_index')->getTargetUrl(),
                 'txt' => $this->translator->trans('Redirect to discography'),

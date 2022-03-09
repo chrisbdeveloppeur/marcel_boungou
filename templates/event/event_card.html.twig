@@ -1,8 +1,5 @@
 <div class="column is-narrow is-one-third-desktop is-half-tablet is-relative scalup-hover transition-3ms">
-    <div class="card is-relative has-background-black" style="height: 100%;">
-        {% if is_granted('ROLE_ADMIN') %}
-            {{ include('event/edit_event_button.html.twig') }}
-        {% endif %}
+    <div class="card is-relative" style="height: 100%;background: rgba(0,0,0,0)">
         <div class="card-image">
             <figure class="image is-3by1">
                 {% if event.image %}
@@ -11,70 +8,73 @@
                     <img src="https://bulma.io/images/placeholders/720x240.png" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
                 {% endif %}
             </figure>
-            <div class="column has-background-success-light has-text-success has-text-centered has-text-weight-bold is-uppercase">
-                {{ event }}
-            </div>
         </div>
 
-        <div class="column has-background-black slider-container-child px-0 py-0">
-            {% if event.ticketingLink %}
-                <div class="column is-flex is-justify-content-center is-align-items-center rotationX">
-                    <a href="{{ event.ticketingLink }}" target="_blank" class="button is-rounded is-light is-fullwidth is-success px-4 py-4 is-flex is-justify-content-center is-align-items-center">
-                        <span class="icon is-large">
-                            <i class="fas fa-lg fa-ticket"></i>
-                        </span>
-                        <span>
-                            {% trans %}Reservation{% endtrans %}
-                        </span>
-                    </a>
-                </div>
+        <div class="borderless is-relative">
+            {% if is_granted('ROLE_ADMIN') %}
+                {{ include('event/edit_event_button.html.twig') }}
             {% endif %}
-
-            <div class="column is-flex px-0 py-0">
-                <div class="column has-text-centered is-expanded has-text-success is-flex is-justify-content-center is-align-items-center">
-                    <span class="icon-text is-justify-content-center">
-                        <span class="icon has-text-success is-hidden-touch">
-                            <i class="fas fa-lg fa-map"></i>
+            <div class="column px-0 py-0 mx-1 my-2" style="z-index: 1;">
+                <div class="is-flex is-align-items-center shadow-box-1 my-2">
+                    <div class="is-uppercase has-text-centered has-text-success has-text-weight-bold is-size-5 column py-1">
+                        <span>
+                            {{ event.title }}
                         </span>
-                        <span class="has-text-success-light is-size-7-touch">
+                    </div>
+                </div>
+            </div>
+            <div class="column px-0 py-0">
+
+                <div class="column px-0 py-0 mx-1 my-2 is-flex shadow-box-1">
+                    <div class="column is-expanded has-text-success is-flex is-justify-content-center is-align-items-center">
+                        <span class="has-text-success-light">
                             {{ event.adresse }}
                         </span>
-                    </span>
+                    </div>
+                    <div class="is-flex is-justify-content-center is-align-items-center px-2 py-2">
+                        <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="button rotationY is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
+                            <span  class="icon">
+                                <i class="fas fa-lg fa-map-marker-alt"></i>
+                            </span>
+                        </a>
+                    </div>
                 </div>
-                <div class="is-flex is-justify-content-center is-align-items-center px-2 py-2">
-                    <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="button is-primary is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
-                        <span  class="icon">
-                            <i class="fas fa-lg fa-map-marker-alt"></i>
-                        </span>
-                    </a>
-                </div>
-            </div>
 
-            <div class="column is-flex px-0 py-0">
-                <div class="column has-text-centered is-expanded has-text-success is-flex is-justify-content-center is-align-items-center">
-                    <span class="icon-text is-justify-content-center">
-                        <span class="icon has-text-success is-hidden-touch">
-                            <i class="fas fa-lg fa-calendar-alt"></i>
-                        </span>
-                        <span class="has-text-success-light is-size-7-touch">
+                <div class="column px-0 py-0 mx-1 my-2 is-flex shadow-box-1">
+                    <div class="column is-expanded has-text-success is-flex is-justify-content-center is-align-items-center">
+                        <span class="has-text-success-light">
                             {{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}
                         </span>
-                    </span>
+                    </div>
+                    <div class="is-flex is-justify-content-center is-align-items-center px-2 py-2">
+                        <a class="button rotationY is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center"  onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
+                            <span class="icon">
+                                <i class="fas fa-lg fa-bell"></i>
+                            </span>
+                        </a>
+                    </div>
                 </div>
-                <div class="is-flex is-justify-content-center is-align-items-center px-2 py-2">
-                    <a class="button is-primary is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center"  onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
-                        <span class="icon">
-                            <i class="fas fa-lg fa-bell"></i>
-                        </span>
-                    </a>
-                </div>
+
+                {% if event.ticketingLink %}
+                    <div class="column px-0 py-0 mx-1 my-2 is-flex is-justify-content-center is-align-items-center rotationX transition-3ms">
+                        <a href="{{ event.ticketingLink }}" target="_blank" class="shadow-box-1 is-fullwidth is-height-100-percent column is-flex is-justify-content-center is-align-items-center is-size-4">
+                            <span class="icon is-large">
+                                <i class="fas fa-lg fa-ticket"></i>
+                            </span>
+                            <span>
+                                {% trans %}Reservation{% endtrans %}
+                            </span>
+                        </a>
+                    </div>
+                {% endif %}
+
             </div>
 
-            <div class="column">
-                <div class="tags" style="z-index: 1">
+            <div class="column px-0 py-0 mx-1 my-2">
+                <div class="tags is-justify-content-end">
                     {% for tag in event.tagsinarray %}
                         {% if tag %}
-                            <a class="tag is-success">#{{ tag }}</a>
+                            <a class="tag shadow-box-1">#{{ tag }}</a>
                         {% endif %}
                     {% endfor %}
                 </div>
