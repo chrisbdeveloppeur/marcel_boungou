@@ -97,7 +97,11 @@ body{
   min-height: 100vh;
 }
 
-
+.shadow-box-1{
+  background: rgba(255,255,255,.1);
+  border-radius:.5rem;
+  box-shadow: 0 0 5px rgba(255,255,255,.9);
+}
 
 section.body{
   min-height: inherit;

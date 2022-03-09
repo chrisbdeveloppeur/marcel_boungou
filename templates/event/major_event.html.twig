@@ -40,20 +40,54 @@
                         {% endif %}
                     </figure>
 
-                    <div class="box-shadow-bulma-event-card is-relative">
+                    <div class="borderless is-relative" style="background: rgba(0,0,0,.5)">
                         {% if is_granted('ROLE_ADMIN') %}
                             {{ include('event/edit_event_button.html.twig') }}
                         {% endif %}
-                        <div class="column has-background-success-light is-flex is-align-items-center is-justify-content-center" style="z-index: 1;">
-                            <h3 class="has-text-primary title has-text-weight-bold is-size-4 is-size-6-touch">
-                                {{ event.title }}
-                            </h3>
+                        <div class="column px-0 py-0 mx-1 my-2" style="z-index: 1;">
+                            <div class="is-flex is-align-items-center shadow-box-1 my-1">
+                                <div class="is-uppercase has-text-centered has-text-success has-text-weight-bold is-size-5 column py-1">
+                                    <span>
+                                        {{ event.title }}
+                                    </span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="column has-background-black slider-container-child is-flex-desktop is-justify-content-space-between px-0 py-0">
+                        <div class="column slider-container-child is-flex-desktop is-justify-content-space-between px-0 py-0">
+
+                            <div class="column px-0 py-0 mx-1 my-1 is-flex shadow-box-1">
+                                <div class="column is-expanded has-text-success is-flex is-justify-content-center is-align-items-center">
+                                    <span class="has-text-success-light">
+                                        {{ event.adresse }}
+                                    </span>
+                                </div>
+                                <div class="is-flex is-justify-content-center is-align-items-center px-2 py-2">
+                                    <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="button rotationY is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
+                                        <span  class="icon">
+                                            <i class="fas fa-lg fa-map-marker-alt"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="column px-0 py-0 mx-1 my-1 is-flex shadow-box-1">
+                                <div class="column is-expanded has-text-success is-flex is-justify-content-center is-align-items-center">
+                                    <span class="has-text-success-light">
+                                        {{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}
+                                    </span>
+                                </div>
+                                <div class="is-flex is-justify-content-center is-align-items-center px-2 py-2">
+                                    <a class="button rotationY is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center"  onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
+                                        <span class="icon">
+                                            <i class="fas fa-lg fa-bell"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
 
                             {% if event.ticketingLink %}
-                                <div class="column is-flex is-justify-content-center is-align-items-center rotationX scalup-hover transition-3ms">
-                                    <a href="{{ event.ticketingLink }}" target="_blank" class="button is-fullwidth is-height-100-percent is-success is-light is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center is-size-4 is-size-6-touch">
+                                <div class="column px-0 py-0 mx-1 my-1 is-flex is-justify-content-center is-align-items-center rotationX transition-3ms">
+                                    <a href="{{ event.ticketingLink }}" target="_blank" class="shadow-box-1 is-fullwidth is-height-100-percent column is-flex is-justify-content-center is-align-items-center is-size-4">
                                         <span class="icon is-large">
                                             <i class="fas fa-lg fa-ticket"></i>
                                         </span>
@@ -64,52 +98,13 @@
                                 </div>
                             {% endif %}
 
-                            <div class="column is-flex px-0 py-0">
-                                <div class="column has-text-centered is-expanded has-text-success is-flex is-justify-content-center is-align-items-center">
-                                    <span class="icon-text is-justify-content-center">
-                                        <span class="icon has-text-success is-hidden-touch">
-                                            <i class="fas fa-lg fa-map"></i>
-                                        </span>
-                                        <span class="has-text-success-light is-size-7-touch">
-                                            {{ event.adresse }}
-                                        </span>
-                                    </span>
-                                </div>
-                                <div class="is-flex is-justify-content-center is-align-items-center px-2 py-2">
-                                    <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="button is-primary is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
-                                        <span  class="icon">
-                                            <i class="fas fa-lg fa-map-marker-alt"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="column is-flex px-0 py-0">
-                                <div class="column has-text-centered is-expanded has-text-success is-flex is-justify-content-center is-align-items-center">
-                                    <span class="icon-text is-justify-content-center">
-                                        <span class="icon has-text-success is-hidden-touch">
-                                            <i class="fas fa-lg fa-calendar-alt"></i>
-                                        </span>
-                                        <span class="has-text-success-light is-size-7-touch">
-                                            {{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}
-                                        </span>
-                                    </span>
-                                </div>
-                                <div class="is-flex is-justify-content-center is-align-items-center px-2 py-2">
-                                    <a class="button is-primary is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center"  onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
-                                        <span class="icon">
-                                            <i class="fas fa-lg fa-bell"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
                         </div>
 
-                        <div class="has-background-black px-2 px-2">
+                        <div class="column">
                             <div class="tags is-justify-content-end">
                                 {% for tag in event.tagsinarray %}
                                     {% if tag %}
-                                        <a class="tag is-success">#{{ tag }}</a>
+                                        <a class="tag shadow-box-1">#{{ tag }}</a>
                                     {% endif %}
                                 {% endfor %}
                             </div>
