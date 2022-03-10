@@ -17,14 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621de2a558f1f
-DTSTAMP;TZID=Europe/Paris:20220301T100853
+UID:6229e017b8a8e
+DTSTAMP;TZID=Europe/Paris:20220310T122511
 SUMMARY:accusamus
-DESCRIPTION:Temporibus vero maxime dolorem ad suscipit. Enim quia qui ut al
- iquid dignissimos non. Ut ipsum optio qui temporibus. In aperiam explicabo
-  quod.
-LOCATION:25\, chemin de Cordier\, 04 600 Berthelotdan\, Berthelotdan
-DTSTART;TZID=Europe/Paris:20220309T114431
-DTEND;TZID=Europe/Paris:20220309T114431
+DESCRIPTION:Rem nulla et repellendus sunt aut est. Ea necessitatibus rerum 
+ aut unde sunt. Quo et illo est inventore nemo expedita eaque.
+LOCATION:2\, avenue Monnier\, 31 998 DialloVille\, DialloVille
+DTSTART;TZID=Europe/Paris:20220308T180652
+DTEND;TZID=Europe/Paris:20220308T180652
 END:VEVENT
 END:VCALENDAR

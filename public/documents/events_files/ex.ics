@@ -15,18 +15,22 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6221edf945be4
-DTSTAMP;TZID=Europe/Paris:20220304T114617
+UID:6229e017e12ba
+DTSTAMP;TZID=Europe/Paris:20220310T122511
 SUMMARY:ex
-DESCRIPTION:Dolorem autem voluptas perferendis sunt nostrum praesentium. Un
- de iusto sunt animi consequatur. Dolore nulla molestias nemo in magni opti
- o earum ut. Quisquam sapiente alias eos minus cupiditate. Animi doloremque
-  iusto explicabo minus explicabo commodi quas. Optio est dignissimos venia
- m perspiciatis quibusdam minima.
-LOCATION:155\, boulevard de Raynaud\, 51103 Prevost\, Prevost
-DTSTART;TZID=Europe/Paris:20220317T221317
-DTEND;TZID=Europe/Paris:20220317T221317
+DESCRIPTION:Deserunt nulla expedita est sunt cumque eius harum. Nisi et vol
+ uptatem commodi ut modi ratione ratione. Tenetur veniam impedit architecto
+  id et aliquid. Laudantium nisi occaecati ullam quibusdam libero quam reic
+ iendis. Ea culpa aut assumenda error quasi velit officiis.
+LOCATION:3\, boulevard de Guillaume\, 05 006 De Oliveira\, De Oliveira
+DTSTART;TZID=Europe/Paris:20220502T031436
+DTEND;TZID=Europe/Paris:20220502T031436
 END:VEVENT
 END:VCALENDAR

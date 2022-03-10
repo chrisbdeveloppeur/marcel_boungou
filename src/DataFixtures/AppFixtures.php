@@ -93,7 +93,7 @@ class AppFixtures extends Fixture
 
             $picture = new Picture();
             $picture->setTitle($faker->word);
-            $picture->setImage($faker->text($faker->numberBetween('100','500')));
+            $picture->setImage('https://bulma.io/images/placeholders/240x720.png');
             $manager->persist($picture);
             $manager->flush();
         }

@@ -17,15 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6221ed96c50f6
-DTSTAMP;TZID=Europe/Paris:20220304T114438
+UID:6229d8ae9e5a3
+DTSTAMP;TZID=Europe/Paris:20220310T115334
 SUMMARY:quis
-DESCRIPTION:Labore dolor nesciunt dolore iste voluptas molestiae. Quidem ut
-  qui reiciendis sed earum quam enim. Impedit voluptate sit rerum dolores i
- d nisi dignissimos.
-LOCATION:75\, impasse Nath Briand\, 04700 Bouvier-les-Bains\, Bouvier-les-B
- ains
-DTSTART;TZID=Europe/Paris:20220330T055900
-DTEND;TZID=Europe/Paris:20220330T055900
+DESCRIPTION:Quia et ipsa praesentium sint minus. Vero ex labore harum moles
+ tiae. Omnis necessitatibus quod omnis eos minima.
+LOCATION:69\, impasse Leveque\, 37501 Perez-les-Bains\, Perez-les-Bains
+DTSTART;TZID=Europe/Paris:20220309T122256
+DTEND;TZID=Europe/Paris:20220309T122256
 END:VEVENT
 END:VCALENDAR

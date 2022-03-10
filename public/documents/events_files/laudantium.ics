@@ -17,17 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621b5e46d8945
-DTSTAMP;TZID=Europe/Paris:20220227T121934
+UID:6229e017d80aa
+DTSTAMP;TZID=Europe/Paris:20220310T122511
 SUMMARY:laudantium
-DESCRIPTION:Minima nostrum esse aliquid repellendus. Ex ipsam et aliquid vo
- luptatibus. Eos aut ea et non ab nisi iusto. Nam omnis minima optio evenie
- t beatae aliquam est veniam. Natus maxime a sed minima vero. Velit exercit
- ationem exercitationem et eius minus eveniet ad maxime. Eligendi magnam cu
- lpa occaecati eos incidunt.
-LOCATION:7\, boulevard de Boyer\, 04 245 Bonneau-la-Forêt\, Bonneau-la-For
- êt
-DTSTART;TZID=Europe/Paris:20220318T070427
-DTEND;TZID=Europe/Paris:20220318T070427
+DESCRIPTION:Recusandae debitis soluta veniam dolorem aut maxime. Quae non b
+ landitiis aut sunt quidem. Dolores quisquam quae accusamus rerum et volupt
+ as. Est tempora labore veniam. Ut iusto eum voluptates quo. Voluptatem sae
+ pe similique tempore voluptas. Consequatur culpa numquam ut et distinctio.
+LOCATION:rue de Guichard\, 33222 Girauddan\, Girauddan
+DTSTART;TZID=Europe/Paris:20220413T123259
+DTEND;TZID=Europe/Paris:20220413T123259
 END:VEVENT
 END:VCALENDAR

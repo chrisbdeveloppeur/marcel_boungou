@@ -17,14 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:620f56a017462
-DTSTAMP;TZID=Europe/Paris:20220218T091944
+UID:6229d92bc5946
+DTSTAMP;TZID=Europe/Paris:20220310T115539
 SUMMARY:aliquid
-DESCRIPTION:Ducimus aut voluptas et dolor id modi aspernatur accusantium. E
- a nihil est et ipsum provident repellat. Illo quisquam corporis dicta blan
- ditiis. Magni ab modi deserunt neque et qui similique.
-LOCATION:555\, impasse Vincent Robert\, 59 101 Bonneau\, Bonneau
-DTSTART;TZID=Europe/Paris:20220223T105728
-DTEND;TZID=Europe/Paris:20220223T105728
+DESCRIPTION:Quo dolore non nam omnis animi nesciunt. Magnam occaecati quia 
+ quis molestias ratione laborum. Et cumque fuga vel omnis adipisci.
+LOCATION:23\, impasse Guilbert\, 69306 Renard-sur-Mer\, Renard-sur-Mer
+DTSTART;TZID=Europe/Paris:20220308T210130
+DTEND;TZID=Europe/Paris:20220308T210130
 END:VEVENT
 END:VCALENDAR

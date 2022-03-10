@@ -17,17 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621b53ea4df58
-DTSTAMP;TZID=Europe/Paris:20220227T113522
+UID:6229e017d4443
+DTSTAMP;TZID=Europe/Paris:20220310T122511
 SUMMARY:qui
-DESCRIPTION:Assumenda autem optio ducimus quo modi cupiditate vel. Dolorem 
- aut debitis quasi magni vel distinctio. Enim exercitationem vel similique.
-  Magni libero ratione rem officia rerum quia eligendi. Sint itaque et magn
- i asperiores repellat laborum. Occaecati omnis accusamus praesentium eveni
- et ut dolores ipsum et. Placeat eaque illum laudantium et. Omnis sapiente 
- debitis quidem suscipit enim perspiciatis natus.
-LOCATION:41\, rue Léon Philippe\, 30045 Traoreboeuf\, Traoreboeuf
-DTSTART;TZID=Europe/Paris:20220421T030730
-DTEND;TZID=Europe/Paris:20220421T030730
+DESCRIPTION:Aperiam in aut et voluptatem ea fugit illum. Eum vel porro fuga
+  et. Quo placeat ut autem corrupti. Praesentium nihil laborum corrupti nul
+ la fugiat facere. Est dolorum animi id perferendis voluptates excepturi di
+ stinctio.
+LOCATION:60\, rue de Alexandre\, 52182 Coste\, Coste
+DTSTART;TZID=Europe/Paris:20220323T014314
+DTEND;TZID=Europe/Paris:20220323T014314
 END:VEVENT
 END:VCALENDAR

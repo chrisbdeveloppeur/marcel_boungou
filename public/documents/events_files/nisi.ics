@@ -17,14 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621b58b6b9aff
-DTSTAMP;TZID=Europe/Paris:20220227T115550
+UID:6229e017cbeb1
+DTSTAMP;TZID=Europe/Paris:20220310T122511
 SUMMARY:nisi
-DESCRIPTION:Consequatur aut quaerat quas. Repellat quia totam aspernatur it
- aque porro tempore aperiam. Pariatur quam sed magnam nisi at autem qui. Se
- d magni ullam neque ab in fugit.
-LOCATION:700\, rue Claude Petit\, 87749 Schneider\, Schneider
-DTSTART;TZID=Europe/Paris:20220303T184329
-DTEND;TZID=Europe/Paris:20220303T184329
+DESCRIPTION:Eveniet optio nihil fuga itaque repellat asperiores incidunt. A
+ utem ex perspiciatis dolor minima quia. Delectus ut ab ut eum.
+LOCATION:98\, impasse Duhamel\, 50167 MilletBourg\, MilletBourg
+DTSTART;TZID=Europe/Paris:20220318T043630
+DTEND;TZID=Europe/Paris:20220318T043630
 END:VEVENT
 END:VCALENDAR

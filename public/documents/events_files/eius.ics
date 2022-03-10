@@ -17,19 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6227b697e5541
-DTSTAMP;TZID=Europe/Paris:20220308T210335
+UID:6229e002988b1
+DTSTAMP;TZID=Europe/Paris:20220310T122450
 SUMMARY:eius
-DESCRIPTION:Voluptatum mollitia alias reiciendis veniam alias in vitae et. 
- Perspiciatis nobis neque nulla dolor nihil earum architecto quos. Et qui f
- acilis eaque aperiam molestiae beatae quia. Quae labore laborum soluta vol
- uptates libero vel. Totam quia aut odio delectus. Non minima architecto vo
- luptas magnam ab. Aperiam aspernatur debitis cum sequi magnam. Nostrum ut 
- animi dolorem sint quis. Sed est dolore est quidem. Quo aut unde doloremqu
- e blanditiis accusantium.
-LOCATION:76\, impasse René Salmon\, 00092 Guichard-sur-Mer\, Guichard-sur-
- Mer
-DTSTART;TZID=Europe/Paris:20220309T013324
-DTEND;TZID=Europe/Paris:20220309T013324
+DESCRIPTION:Omnis autem vel natus unde autem. Eum nostrum nihil eaque quia 
+ voluptatem. Fugiat ea occaecati et ullam. Quia eum est et quas. Praesentiu
+ m ut nisi maxime eaque eum. Aut aut sunt consequuntur omnis voluptas. Nesc
+ iunt fugiat vero accusamus iste qui velit. Omnis voluptatibus alias consec
+ tetur qui in.
+LOCATION:129\, place Noël Dumas\, 73 951 Pichondan\, Pichondan
+DTSTART;TZID=Europe/Paris:20220318T135050
+DTEND;TZID=Europe/Paris:20220318T135050
 END:VEVENT
 END:VCALENDAR

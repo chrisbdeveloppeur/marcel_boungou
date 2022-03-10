@@ -17,14 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fb5c4c36e
-DTSTAMP;TZID=Europe/Paris:20220224T224044
+UID:6229d92c2c3aa
+DTSTAMP;TZID=Europe/Paris:20220310T115540
 SUMMARY:minima
-DESCRIPTION:Labore et qui veniam facere. Et voluptatum nulla facere molesti
- ae. Id sit corporis possimus et velit. Saepe non quasi omnis rerum autem e
- t omnis.
-LOCATION:95\, rue Hoarau\, 19 293 Collet\, Collet
-DTSTART;TZID=Europe/Paris:20220418T165754
-DTEND;TZID=Europe/Paris:20220418T165754
+DESCRIPTION:Iste est quidem voluptatem ea iure. Atque fugit eaque aspernatu
+ r magnam minus omnis. Ipsam debitis alias et earum sunt.
+LOCATION:avenue Alphonse Begue\, 49 448 Daniel-les-Bains\, Daniel-les-Bains
+DTSTART;TZID=Europe/Paris:20220323T005112
+DTEND;TZID=Europe/Paris:20220323T005112
 END:VEVENT
 END:VCALENDAR

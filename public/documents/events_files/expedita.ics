@@ -17,15 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217345179e25
-DTSTAMP;TZID=Europe/Paris:20220224T083129
+UID:6229d92c4180a
+DTSTAMP;TZID=Europe/Paris:20220310T115540
 SUMMARY:expedita
-DESCRIPTION:Nulla ullam magni consequuntur accusamus voluptatum. Tempore re
- prehenderit minus omnis adipisci maxime. Exercitationem recusandae ullam e
- nim officiis adipisci aperiam. Natus ducimus et consequuntur deserunt ad o
- dio dolorum.
-LOCATION:1\, avenue de Sauvage\, 38 196 Dupuy\, Dupuy
-DTSTART;TZID=Europe/Paris:20220418T104713
-DTEND;TZID=Europe/Paris:20220418T104713
+DESCRIPTION:Commodi consequuntur consequuntur repellat incidunt ea. Nesciun
+ t officia sint voluptas accusamus rerum. Ratione quis facere cumque delect
+ us doloribus velit. Neque ea ab in enim facilis ad occaecati. Aut eligendi
+  dolorem illo. Optio enim aspernatur a magni qui inventore voluptate. Temp
+ ora nobis et eos aut. Quasi vitae temporibus culpa non sed qui.
+LOCATION:impasse Noel\, 23271 Roche-sur-Mer\, Roche-sur-Mer
+DTSTART;TZID=Europe/Paris:20220413T220127
+DTEND;TZID=Europe/Paris:20220413T220127
 END:VEVENT
 END:VCALENDAR

@@ -17,18 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62212b692cc56
-DTSTAMP;TZID=Europe/Paris:20220303T215609
+UID:6229e0029f2f7
+DTSTAMP;TZID=Europe/Paris:20220310T122450
 SUMMARY:iure
-DESCRIPTION:Quis qui libero pariatur et veritatis tempore. Magni minima tem
- pore excepturi dolore. Rem commodi velit sint voluptatem dolor ea magnam. 
- Reprehenderit nam quia atque est aliquam et. Deserunt ut vero assumenda mo
- di consectetur non. Quod nemo quia aut. Ab neque maxime at quo. Dolores es
- t odit repellendus ipsam et delectus voluptas. Deleniti et qui inventore e
- t optio et. Dolorem sed ut facilis labore suscipit nulla. Ut nesciunt quae
-  id eveniet id eaque.
-LOCATION:9\, chemin Roy\, 97 695 Duprenec\, Duprenec
-DTSTART;TZID=Europe/Paris:20220406T113603
-DTEND;TZID=Europe/Paris:20220406T113603
+DESCRIPTION:Porro possimus sed ducimus. Dolores voluptas consequatur corrup
+ ti dolore. Et molestiae accusamus id velit pariatur illum odio. Ratione in
+ ventore illo voluptatem aspernatur saepe id.
+LOCATION:rue de Faure\, 63 653 Mendes\, Mendes
+DTSTART;TZID=Europe/Paris:20220323T001913
+DTEND;TZID=Europe/Paris:20220323T001913
 END:VEVENT
 END:VCALENDAR

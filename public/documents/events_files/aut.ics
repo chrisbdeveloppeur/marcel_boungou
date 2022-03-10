@@ -17,14 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6221edf92407d
-DTSTAMP;TZID=Europe/Paris:20220304T114617
+UID:6229e00296759
+DTSTAMP;TZID=Europe/Paris:20220310T122450
 SUMMARY:aut
-DESCRIPTION:Accusantium culpa voluptas in velit repellat ut qui. Ipsam offi
- cia voluptates nemo tempore. Voluptas voluptates molestiae corrupti volupt
- atum.
-LOCATION:2\, avenue Leclerc\, 07048 Baron-sur-Mer\, Baron-sur-Mer
-DTSTART;TZID=Europe/Paris:20220302T225755
-DTEND;TZID=Europe/Paris:20220302T225755
+DESCRIPTION:Debitis incidunt illo fugit dolor doloribus. Vel modi ipsum nih
+ il aut unde possimus. Magni esse fugit asperiores natus sed consequuntur.
+LOCATION:304\, chemin Loiseau\, 96 279 Prevost\, Prevost
+DTSTART;TZID=Europe/Paris:20220311T211552
+DTEND;TZID=Europe/Paris:20220311T211552
 END:VEVENT
 END:VCALENDAR

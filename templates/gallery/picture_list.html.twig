@@ -11,11 +11,11 @@
 
                         <div class="pointer-hover is-flex is-flex-direction-column" onclick="document.getElementById('modalPicture'+{{ picture.id }}).classList.add('is-active')">
 
-                            {% if picture.image %}
-                                <img src="{{ vich_uploader_asset(picture, 'imageFile') }}">
-                            {% else %}
-                                <img src="https://bulma.io/images/placeholders/480x600.png">
-                            {% endif %}
+
+{#                                <img src="{{ vich_uploader_asset(picture, 'imageFile') }}">#}
+
+                                <img src="https://bulma.io/images/placeholders/240x720.png">
+
                             {% if picture.tags|length > 0 %}
                                 <div class="has-background-black">
                                     <div class="px-2 py-2">

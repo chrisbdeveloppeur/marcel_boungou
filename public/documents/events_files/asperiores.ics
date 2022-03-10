@@ -17,15 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621b58b6c1b57
-DTSTAMP;TZID=Europe/Paris:20220227T115550
+UID:6229e002bab9b
+DTSTAMP;TZID=Europe/Paris:20220310T122450
 SUMMARY:asperiores
-DESCRIPTION:Numquam sed quos ullam odio. Eius enim maxime quod sint cumque 
- quibusdam. Praesentium natus accusantium dolores ea ratione architecto sit
- . Ducimus eos libero architecto magnam et. Doloribus sint eos laudantium v
- elit ea aut blanditiis. Recusandae nulla voluptate blanditiis qui eum.
-LOCATION:421\, place de Pierre\, 82543 Bodin\, Bodin
-DTSTART;TZID=Europe/Paris:20220411T143933
-DTEND;TZID=Europe/Paris:20220411T143933
+DESCRIPTION:Nesciunt esse quisquam explicabo est minus dicta. Tempore sit f
+ acilis dolore expedita odio eos voluptatum et. Dolorem soluta quia aperiam
+  neque omnis. Molestiae minima voluptas nesciunt praesentium ducimus volup
+ tatibus excepturi accusantium.
+LOCATION:29\, impasse Caron\, 99 244 DidierVille\, DidierVille
+DTSTART;TZID=Europe/Paris:20220413T232340
+DTEND;TZID=Europe/Paris:20220413T232340
 END:VEVENT
 END:VCALENDAR

@@ -17,15 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62178822b738a
-DTSTAMP;TZID=Europe/Paris:20220224T142906
+UID:6229d92c4f1aa
+DTSTAMP;TZID=Europe/Paris:20220310T115540
 SUMMARY:illo
-DESCRIPTION:Qui sed nihil ut culpa quaerat. Perspiciatis aut odio rerum ull
- am vitae et. Ipsam nihil fugit fugit accusamus ab dignissimos. Eum quibusd
- am molestiae voluptate exercitationem et harum. Qui dolorem vel ducimus ne
- que earum ut magni.
-LOCATION:impasse de Lesage\, 84 106 Rossi-sur-Hamel\, Rossi-sur-Hamel
-DTSTART;TZID=Europe/Paris:20220330T152415
-DTEND;TZID=Europe/Paris:20220330T152415
+DESCRIPTION:Libero natus omnis consequatur. Quisquam voluptates rerum eum. 
+ Nulla repellat aut exercitationem. Tempore soluta commodi ducimus cupidita
+ te ratione magnam alias voluptas.
+LOCATION:54\, rue de Legendre\, 80461 Ferreira\, Ferreira
+DTSTART;TZID=Europe/Paris:20220422T213741
+DTEND;TZID=Europe/Paris:20220422T213741
 END:VEVENT
 END:VCALENDAR

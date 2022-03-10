@@ -15,16 +15,20 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fb8fbc9fa
-DTSTAMP;TZID=Europe/Paris:20220224T224135
+UID:6229d92c63845
+DTSTAMP;TZID=Europe/Paris:20220310T115540
 SUMMARY:dolores
-DESCRIPTION:Quia voluptatem aliquam nesciunt. Et nisi natus libero dolore a
- speriores totam. Voluptate aut nostrum illum molestiae illum assumenda aut
- . Saepe vel officiis animi quos corporis.
-LOCATION:56\, avenue Alfred Perret\, 03 887 Mary-sur-Labbe\, Mary-sur-Labbe
-DTSTART;TZID=Europe/Paris:20220408T104536
-DTEND;TZID=Europe/Paris:20220408T104536
+DESCRIPTION:Sapiente quia quod quia aspernatur ea officia. Minima veritatis
+  architecto quo est ipsam quae est. Omnis error quae illum a id et.
+LOCATION:52\, rue de Michel\, 74 933 Cohen\, Cohen
+DTSTART;TZID=Europe/Paris:20220502T172205
+DTEND;TZID=Europe/Paris:20220502T172205
 END:VEVENT
 END:VCALENDAR

@@ -15,15 +15,22 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621780254a366
-DTSTAMP;TZID=Europe/Paris:20220224T135501
+UID:6229e002c58c7
+DTSTAMP;TZID=Europe/Paris:20220310T122450
 SUMMARY:soluta
-DESCRIPTION:Vel illo quas aut amet. Error ratione et adipisci esse. Ipsum i
- nventore quos ut.
-LOCATION:38\, avenue de Grenier\, 33963 Caron-la-Forêt\, Caron-la-Forêt
-DTSTART;TZID=Europe/Paris:20220222T032008
-DTEND;TZID=Europe/Paris:20220222T032008
+DESCRIPTION:Doloribus repellat voluptatem nihil eum omnis ratione quas. Pos
+ simus autem consequuntur hic dolores minus. Impedit placeat doloribus et a
+ ut perferendis.
+LOCATION:599\, boulevard de Lemaire\, 62377 Leroy-la-Forêt\, Leroy-la-For
+ êt
+DTSTART;TZID=Europe/Paris:20220502T205814
+DTEND;TZID=Europe/Paris:20220502T205814
 END:VEVENT
 END:VCALENDAR
