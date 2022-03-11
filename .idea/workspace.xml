@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c513a9b-8917-4b63-8b91-a519e09de280" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Controller/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/event/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/event/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/event/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/event/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/AlbumType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/AlbumType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/BookType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/BookType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/EventType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/EventType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/themes/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/themes/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf" beforeDir="false" afterPath="$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,8 +57,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="64" column="7" selection-start-line="64" selection-start-column="7" selection-end-line="64" selection-end-column="7" />
+            <state relative-caret-position="391">
+              <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/includes/flash_message.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/includes/admin_nav.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#641#652#0#Twig" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/themes/_form.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="231" column="45" selection-start-line="231" selection-start-column="45" selection-end-line="231" selection-end-column="45" />
+            <state relative-caret-position="230">
+              <caret line="177" column="66" selection-start-line="177" selection-start-column="66" selection-end-line="177" selection-end-column="66" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#figure#0;n#div#2;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#audio#0;n#div#2;n#div#0;n#!!top" expanded="true" />
@@ -75,76 +98,56 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Form/AlbumType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="59" column="104" selection-start-line="59" selection-start-column="104" selection-end-line="59" selection-end-column="104" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Form/EventType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="116" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Form/BookType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="74" column="88" selection-start-line="74" selection-start-column="88" selection-end-line="74" selection-end-column="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="1105" column="35" selection-start-line="1105" selection-start-column="35" selection-end-line="1105" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/security/login.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+            <state relative-caret-position="357">
+              <caret line="33" selection-start-line="33" selection-end-line="39" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/event/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
-              <folding>
-                <element signature="e#12#26#0#Twig" expanded="true" />
-                <element signature="e#360#370#0#Twig" expanded="true" />
-                <element signature="e#532#541#0#Twig" expanded="true" />
-                <element signature="e#1627#1637#0#Twig" expanded="true" />
-                <element signature="e#1738#1748#0#Twig" expanded="true" />
-                <element signature="e#2239#2249#0#Twig" expanded="true" />
-                <element signature="e#2410#2419#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/event/_delete_form.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="e#37#49#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/BookController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-              <folding>
-                <element signature="e#34#54#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/AlbumController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="40" />
-              <folding>
-                <element signature="e#1604#1636#0#PHP" expanded="true" />
-                <element signature="e#2666#2698#0#PHP" expanded="true" />
-                <element signature="e#2921#2940#1#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/styles/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="331" column="16" selection-start-line="331" selection-start-column="16" selection-end-line="331" selection-end-column="16" />
+            <state relative-caret-position="247">
+              <caret line="244" column="13" lean-forward="true" selection-start-line="244" selection-start-column="13" selection-end-line="244" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -153,7 +156,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pt-1</find>
       <find>is-active</find>
       <find>is-outl</find>
       <find>navbar-bur</find>
@@ -183,6 +185,7 @@
       <find>events</find>
       <find>file-n</find>
       <find>show</find>
+      <find>file-na</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -191,8 +194,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/bibliography/index.html.twig" />
-        <option value="$PROJECT_DIR$/templates/album/_delete_form.html.twig" />
         <option value="$PROJECT_DIR$/templates/book/_delete_form.html.twig" />
         <option value="$PROJECT_DIR$/templates/music/_delete_form.html.twig" />
         <option value="$PROJECT_DIR$/templates/picture/_delete_form.html.twig" />
@@ -205,7 +206,6 @@
         <option value="$PROJECT_DIR$/templates/event/major_event.html.twig" />
         <option value="$PROJECT_DIR$/templates/event/_all.html.twig" />
         <option value="$PROJECT_DIR$/templates/book/new.html.twig" />
-        <option value="$PROJECT_DIR$/src/Form/BookType.php" />
         <option value="$PROJECT_DIR$/templates/album/new.html.twig" />
         <option value="$PROJECT_DIR$/templates/event/new.html.twig" />
         <option value="$PROJECT_DIR$/templates/user/edit.html.twig" />
@@ -224,7 +224,6 @@
         <option value="$PROJECT_DIR$/src/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/templates/themes/just_the_form.html.twig" />
         <option value="$PROJECT_DIR$/templates/discography/album_list.html.twig" />
-        <option value="$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/templates/gallery/index.html.twig" />
         <option value="$PROJECT_DIR$/templates/discography/musics_list.html.twig" />
@@ -239,9 +238,13 @@
         <option value="$PROJECT_DIR$/templates/event/index.html.twig" />
         <option value="$PROJECT_DIR$/templates/event/_delete_form.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/BookController.php" />
-        <option value="$PROJECT_DIR$/assets/styles/app.scss" />
-        <option value="$PROJECT_DIR$/templates/themes/_form.html.twig" />
         <option value="$PROJECT_DIR$/templates/security/login.html.twig" />
+        <option value="$PROJECT_DIR$/templates/themes/_form.html.twig" />
+        <option value="$PROJECT_DIR$/src/Form/AlbumType.php" />
+        <option value="$PROJECT_DIR$/src/Form/EventType.php" />
+        <option value="$PROJECT_DIR$/src/Form/BookType.php" />
+        <option value="$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf" />
+        <option value="$PROJECT_DIR$/assets/styles/app.scss" />
       </list>
     </option>
   </component>
@@ -397,6 +400,12 @@
             <path>
               <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
               <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -416,6 +425,11 @@
               <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="marcel_boungou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="marcel_boungou" type="462c0819:PsiDirectoryNode" />
+              <item name="translations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -539,18 +553,17 @@
       <workItem from="1646835250954" duration="13466000" />
       <workItem from="1646900292086" duration="592000" />
       <workItem from="1646909505379" duration="2110000" />
-      <workItem from="1647018944006" duration="5625000" />
+      <workItem from="1647018944006" duration="6215000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="555099000" />
+    <option name="totallyTimeSpent" value="555689000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21481876" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21481876" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -568,7 +581,7 @@
       <window_info anchor="bottom" id="Database Console" order="11" weight="0.3286119" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="13" show_stripe_button="false" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.4978678" visible="true" weight="0.27735645" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="14" sideWeight="0.4978678" visible="true" weight="0.27735645" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -613,46 +626,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/event/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="100" lean-forward="true" selection-start-line="6" selection-start-column="74" selection-end-line="6" selection-end-column="100" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/music/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="100" selection-start-line="6" selection-start-column="100" selection-end-line="6" selection-end-column="100" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/picture/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="100" selection-start-line="6" selection-start-column="100" selection-end-line="6" selection-end-column="100" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/user/new.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -744,13 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
           <caret line="71" column="58" lean-forward="true" selection-start-line="71" selection-start-column="58" selection-end-line="71" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="1098" column="19" selection-start-line="1098" selection-start-column="19" selection-end-line="1098" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -963,17 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/includes/admin_nav.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#641#652#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/includes/footer.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1012,13 +967,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="64" column="7" selection-start-line="64" selection-start-column="7" selection-end-line="64" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/AlbumController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1041,17 +989,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/app.scss">
+    <entry file="file://$PROJECT_DIR$/templates/security/login.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="331" column="16" selection-start-line="331" selection-start-column="16" selection-end-line="331" selection-end-column="16" />
+        <state relative-caret-position="357">
+          <caret line="33" selection-start-line="33" selection-end-line="39" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/themes/_form.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="231" column="45" selection-start-line="231" selection-start-column="45" selection-end-line="231" selection-end-column="45" />
+        <state relative-caret-position="230">
+          <caret line="177" column="66" selection-start-line="177" selection-start-column="66" selection-end-line="177" selection-end-column="66" />
           <folding>
             <element signature="n#style#0;n#div#0;n#figure#0;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#audio#0;n#div#2;n#div#0;n#!!top" expanded="true" />
@@ -1059,10 +1007,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/security/login.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Form/AlbumType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+        <state relative-caret-position="442">
+          <caret line="59" column="104" selection-start-line="59" selection-start-column="104" selection-end-line="59" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/EventType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/BookType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="74" column="88" selection-start-line="74" selection-start-column="88" selection-end-line="74" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/translations/messages+intl-icu.fr.xlf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="1105" column="35" selection-start-line="1105" selection-start-column="35" selection-end-line="1105" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/includes/admin_nav.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#641#652#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/includes/flash_message.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="244" column="13" lean-forward="true" selection-start-line="244" selection-start-column="13" selection-end-line="244" selection-end-column="13" />
         </state>
       </provider>
     </entry>

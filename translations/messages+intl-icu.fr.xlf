@@ -1097,6 +1097,34 @@
         <source>Add new Manager</source>
         <target>Ajouter un nouveau gestionnaire</target>
       </trans-unit>
+      <trans-unit id="YJ.UcmK" resname="The music &lt;b&gt;">
+        <source>The music &lt;b&gt;</source>
+        <target><![CDATA[__The music <b>]]></target>
+      </trans-unit>
+      <trans-unit id="u5sp4xM" resname="(recommended ratio : 1, ex : 480x480)">
+        <source>(recommended ratio : 1, ex : 480x480)</source>
+        <target>(rapport recommandé : 1, ex : 480x480)</target>
+      </trans-unit>
+      <trans-unit id="4hUu_z9" resname="(recommended ratio : 4/5, ex: 480x600)">
+        <source>(recommended ratio : 4/5, ex: 480x600)</source>
+        <target>(rapport recommandé : 4/5, ex: 480x600)</target>
+      </trans-unit>
+      <trans-unit id="ncRVAb6" resname="(recommended ratio : 1/3, ex: 720x240)">
+        <source>(recommended ratio : 1/3, ex: 720x240)</source>
+        <target>(rapport recommandé : 1/3, ex: 720x240)</target>
+      </trans-unit>
+      <trans-unit id="DtR6poF" resname="no music played">
+        <source>no music played</source>
+        <target>aucune musique jouée</target>
+      </trans-unit>
+      <trans-unit id="AbuZITQ" resname="'no music played'">
+        <source>'no music played'</source>
+        <target>'aucune musique jouée'</target>
+      </trans-unit>
+      <trans-unit id="hcbqFrf" resname="' (pause)'">
+        <source>' (pause)'</source>
+        <target>' (pause)'</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -65,6 +65,7 @@ class BookType extends AbstractType
                     'class' => 'file-input',
                     'extra-data' => $this->translator->trans('Select an image file...'),
                 ],
+                'help' => 'jpeg, bmp, png, svg '.$this->translator->trans('(recommended ratio : 4/5, ex: 480x600)'),
             ])
             ->add('imageVersoFile', FileType::class, [
                 'label' => $this->translator->trans('Back of the book'),
@@ -73,6 +74,7 @@ class BookType extends AbstractType
                     'class' => 'file-input',
                     'extra-data' => $this->translator->trans('Select an image file...'),
                 ],
+                'help' => 'jpeg, bmp, png, svg '.$this->translator->trans('(recommended ratio : 4/5, ex: 480x600)'),
             ])
         ;
     }

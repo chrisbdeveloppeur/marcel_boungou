@@ -57,6 +57,7 @@ class AlbumType extends AbstractType
                     'class' => 'file-input',
                     'extra-data' => $this->translator->trans('Select an image file...'),
                 ],
+                'help' => 'jpeg, bmp, png, svg '.$this->translator->trans('(recommended ratio : 1, ex : 480x480)'),
             ])
         ;
     }
