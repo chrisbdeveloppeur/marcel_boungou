@@ -182,7 +182,7 @@
                 <span class="file-name has-background-grey-lighter has-text-dark">
                     {% if form.vars.value.image and child.vars.name == 'imageFile' %}
                         {{ form.vars.value.image }}
-                    {% elseif form.vars.value.imageVerso and child.vars.name == 'imageVersoFile' %}
+                    {% elseif form.vars.value.imageVerso is defined and child.vars.name == 'imageVersoFile' %}
                         {{ form.vars.value.imageVerso }}
                     {% else %}
                         {% trans %}Empty{% endtrans %}

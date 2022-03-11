@@ -17,16 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621b5a85066e4
-DTSTAMP;TZID=Europe/Paris:20220227T120333
+UID:622ba12f766dd
+DTSTAMP;TZID=Europe/Paris:20220311T202119
 SUMMARY:a
-DESCRIPTION:Sit aut et eveniet delectus. Est eligendi ut culpa voluptatem. 
- Odit perferendis qui sed sunt soluta dolorum. Qui autem dolor minus perfer
- endis dignissimos qui praesentium. Tenetur sapiente ullam tempora nobis so
- luta. Aspernatur architecto quae laborum ipsam itaque. Doloremque enim con
- sequatur est. Laborum est temporibus consequatur maxime suscipit.
-LOCATION:14\, chemin Brun\, 58925 Auger\, Auger
-DTSTART;TZID=Europe/Paris:20220226T223143
-DTEND;TZID=Europe/Paris:20220226T223143
+DESCRIPTION:Quae voluptas totam quibusdam adipisci. Voluptates dicta sed co
+ nsequatur. Aliquam in non quaerat. Nemo sed ipsa omnis nesciunt. Quibusdam
+  voluptas dolor rem. Qui praesentium accusamus sed suscipit fuga repellend
+ us. Est enim repudiandae at quae ea. Perspiciatis excepturi nostrum eum re
+ pellat eaque et amet.
+LOCATION:893\, avenue Fleury\, 70059 Schneider\, Schneider
+DTSTART;TZID=Europe/Paris:20220423T172818
+DTEND;TZID=Europe/Paris:20220423T172818
 END:VEVENT
 END:VCALENDAR

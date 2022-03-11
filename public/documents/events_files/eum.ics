@@ -17,17 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6229d8aedcdb9
-DTSTAMP;TZID=Europe/Paris:20220310T115334
+UID:622ba12f74e8a
+DTSTAMP;TZID=Europe/Paris:20220311T202119
 SUMMARY:eum
-DESCRIPTION:Illo quasi delectus dolore qui qui sed officiis. Quo rerum inci
- dunt est expedita sit rerum vero. Numquam quaerat ut est natus. Totam unde
-  nostrum consequuntur aliquam laudantium corporis. Deleniti mollitia est p
- erferendis omnis reprehenderit eius repudiandae id. Occaecati voluptatem d
- ignissimos maxime. Necessitatibus ex corporis numquam voluptates sit dolor
- em.
-LOCATION:134\, avenue de Lejeune\, 45 079 Leroy\, Leroy
-DTSTART;TZID=Europe/Paris:20220422T193734
-DTEND;TZID=Europe/Paris:20220422T193734
+DESCRIPTION:Sequi eius repellat dolores perferendis. Id natus est aut et et
+ . Est eius dolorem deleniti harum tenetur. Delectus et odio numquam possim
+ us voluptatem eum enim facere. Et reprehenderit vel modi aspernatur modi v
+ elit. Aut asperiores illo repudiandae et tenetur nemo. Blanditiis repellat
+  et commodi et. Ipsum quae fuga velit pariatur quibusdam et et.
+LOCATION:3\, chemin Catherine Bodin\, 45514 Millet\, Millet
+DTSTART;TZID=Europe/Paris:20220406T214601
+DTEND;TZID=Europe/Paris:20220406T214601
 END:VEVENT
 END:VCALENDAR

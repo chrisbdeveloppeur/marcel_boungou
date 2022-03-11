@@ -17,14 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6229e00295776
-DTSTAMP;TZID=Europe/Paris:20220310T122450
+UID:622ba12f34eb3
+DTSTAMP;TZID=Europe/Paris:20220311T202119
 SUMMARY:eos
-DESCRIPTION:Enim qui ullam quas corrupti. Eum totam ipsam pariatur beatae. 
- Amet aspernatur vel mollitia distinctio. Quis aut nihil et repudiandae. Ve
- ro provident aliquam assumenda tenetur ea.
-LOCATION:34\, rue David Faure\, 20 389 Masson-sur-Mer\, Masson-sur-Mer
-DTSTART;TZID=Europe/Paris:20220309T111558
-DTEND;TZID=Europe/Paris:20220309T111558
+DESCRIPTION:Fuga similique et laudantium et. Aut inventore voluptatibus rec
+ usandae qui at ut cum. Ipsam vel tempore est possimus fugiat. Enim eum con
+ sequatur voluptatem blanditiis dolorum et. Aliquam repudiandae quis laudan
+ tium velit. Qui suscipit laudantium modi soluta modi consequatur. Ut neces
+ sitatibus aut dolore provident dolor blanditiis.
+LOCATION:rue Guy Guillou\, 62154 Tessier-sur-Mer\, Tessier-sur-Mer
+DTSTART;TZID=Europe/Paris:20220309T194212
+DTEND;TZID=Europe/Paris:20220309T194212
 END:VEVENT
 END:VCALENDAR

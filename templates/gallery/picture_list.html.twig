@@ -9,12 +9,12 @@
                             {{ include('picture/edit_picture_button.html.twig') }}
                         {% endif %}
 
-                        <div class="pointer-hover is-flex is-flex-direction-column" onclick="document.getElementById('modalPicture'+{{ picture.id }}).classList.add('is-active')">
+                        <div class="pointer-hover is-flex is-flex-direction-column has-background-black" onclick="document.getElementById('modalPicture'+{{ picture.id }}).classList.add('is-active')">
 
 
 {#                                <img src="{{ vich_uploader_asset(picture, 'imageFile') }}">#}
 
-                            <figure class="image is-square" style="background: center / contain no-repeat url('https://bulma.io/images/placeholders/240x720.png')">
+                            <figure class="image is-square" style="background: center / contain no-repeat url({% if picture.image %}{{ vich_uploader_asset(picture, 'imageFile') }}{% else %}'https://bulma.io/images/placeholders/240x720.png'{% endif %})">
                             </figure>
 
                             {% if picture.tags|length > 0 %}
@@ -23,12 +23,12 @@
                                         {% for tag in picture.tagsinarray %}
                                             {% if tag %}
                                                 <a  class="tag is-success picture-tag" data-href="{{ tag }}">#{{ tag }}</a>
-                                            {% endif %}modal
+                                            {% endif %}
                                         {% endfor %}
                                     </div>
                                 </div>
                             {% endif %}
-                            <div class="picture-name is-hidden">
+                            <div class="picture-name">
                                 {{ picture.title | default(picture.image) }}
                             </div>
 

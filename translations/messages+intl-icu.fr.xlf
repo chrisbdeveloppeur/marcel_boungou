@@ -1125,6 +1125,10 @@
         <source>' (pause)'</source>
         <target>' (pause)'</target>
       </trans-unit>
+      <trans-unit id="3dGacX7" resname="Redirect to gallery">
+        <source>Redirect to gallery</source>
+        <target>Rediriger vers la galerie</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

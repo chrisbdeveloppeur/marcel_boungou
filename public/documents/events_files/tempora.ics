@@ -15,18 +15,24 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62212b692a509
-DTSTAMP;TZID=Europe/Paris:20220303T215609
+UID:622ba12f7767f
+DTSTAMP;TZID=Europe/Paris:20220311T202119
 SUMMARY:tempora
-DESCRIPTION:Error ad recusandae id. Laborum sit et id nesciunt corporis sin
- t. Blanditiis asperiores animi magni voluptatum iusto ipsa. Blanditiis deb
- itis eveniet sapiente exercitationem. Aut eaque dolorem officiis nesciunt.
-  Impedit aliquam cupiditate reprehenderit est delectus minus. Molestiae si
- t nihil voluptate nulla quo natus sint itaque.
-LOCATION:55\, impasse Chantal Millet\, 32475 Lebreton\, Lebreton
-DTSTART;TZID=Europe/Paris:20220322T055754
-DTEND;TZID=Europe/Paris:20220322T055754
+DESCRIPTION:Deserunt laborum eum aut placeat voluptatem et ducimus. Similiq
+ ue odit culpa praesentium non fuga sequi. Aperiam ut est corrupti quidem. 
+ Dolor maiores voluptatem illum reprehenderit quo voluptatem quam. Perferen
+ dis ducimus ex ut a. Sunt nihil voluptatum quisquam dolorem et atque. Et l
+ aboriosam harum perferendis dolores. Id illum incidunt qui laboriosam ut v
+ oluptatibus qui. Molestiae tenetur aut eum.
+LOCATION:7\, place de Rey\, 11 198 Lemaitre\, Lemaitre
+DTSTART;TZID=Europe/Paris:20220503T222745
+DTEND;TZID=Europe/Paris:20220503T222745
 END:VEVENT
 END:VCALENDAR

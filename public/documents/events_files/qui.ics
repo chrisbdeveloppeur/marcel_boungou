@@ -17,15 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6229e017d4443
-DTSTAMP;TZID=Europe/Paris:20220310T122511
+UID:622ba12f694e3
+DTSTAMP;TZID=Europe/Paris:20220311T202119
 SUMMARY:qui
-DESCRIPTION:Aperiam in aut et voluptatem ea fugit illum. Eum vel porro fuga
-  et. Quo placeat ut autem corrupti. Praesentium nihil laborum corrupti nul
- la fugiat facere. Est dolorum animi id perferendis voluptates excepturi di
- stinctio.
-LOCATION:60\, rue de Alexandre\, 52182 Coste\, Coste
-DTSTART;TZID=Europe/Paris:20220323T014314
-DTEND;TZID=Europe/Paris:20220323T014314
+DESCRIPTION:In voluptatem quas aut quod. Praesentium non est et autem. Quos
+  cum harum eos. Deleniti quis architecto laboriosam eos.
+LOCATION:84\, avenue Weber\, 35 175 Guillet\, Guillet
+DTSTART;TZID=Europe/Paris:20220319T213059
+DTEND;TZID=Europe/Paris:20220319T213059
 END:VEVENT
 END:VCALENDAR
