@@ -43,6 +43,7 @@ class MusicType extends AbstractType
 
             ->add('album', EntityType::class, [
                 'class' => Album::class,
+                'label' => 'Album',
                 'required' => false,
                 'attr' => [
                     'class' => 'select',

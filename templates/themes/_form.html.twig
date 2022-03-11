@@ -53,7 +53,7 @@
                         </div>
                     </div>
                     <div class="control">
-                        <a href="{{ path('album_new') }}" class="button is-primary">{% trans %}Add an album{% endtrans %}</a>
+                        <a href="{{ path('album_new') }}" class="button is-success is-light">{% trans %}Add an album{% endtrans %}</a>
                     </div>
                 </div>
             {% else %}
@@ -140,10 +140,12 @@
                     </span>
                 </span>
                 <span class="file-name has-background-grey-lighter has-text-dark">
-                    {% if form.vars.value.image and child.vars.name == 'imageFile' %}
+                    {% if form.vars.value.image is defined and child.vars.name == 'imageFile' %}
                         {{ form.vars.value.image }}
                     {% elseif form.vars.value.imageVerso is defined and child.vars.name == 'imageVersoFile' %}
                         {{ form.vars.value.imageVerso }}
+                    {% elseif form.vars.value.musicName is defined and child.vars.name == 'musicFile' %}
+                        {{ form.vars.value.musicName }}
                     {% else %}
                         {% trans %}Empty{% endtrans %}
                     {% endif %}
