@@ -16,7 +16,7 @@ use Symfony\Component\Translation\Translator;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
 /**
- * @Route("/event", name="events_")
+ * @Route("/event", name="event_")
  */
 class EventsController extends AbstractController
 {
@@ -76,10 +76,10 @@ class EventsController extends AbstractController
             $this->calendarController->createIcsFile($event->getId());
             $msg = $this->translator->trans('Event <b>'.$event->getTitle().'</b> created with success');
             $this->addFlash('success',$msg);
-            return $this->redirectToRoute('events_home', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('event_home', [], Response::HTTP_SEE_OTHER);
         }
 
-        $redirect_link = $this->redirectToRoute('events_home')->getTargetUrl();
+        $redirect_link = $this->redirectToRoute('event_home')->getTargetUrl();
         return $this->render('themes/just_the_form.html.twig', [
             'event' => $event,
             'form' => $form->createView(),
@@ -118,7 +118,7 @@ class EventsController extends AbstractController
             return $this->redirect($previousUrl);
         }
 
-        $redirect_link = $this->redirectToRoute('events_home')->getTargetUrl();
+        $redirect_link = $this->redirectToRoute('event_home')->getTargetUrl();
         return $this->render('themes/just_the_form.html.twig', [
             'event' => $event,
             'form' => $form->createView(),
@@ -141,7 +141,7 @@ class EventsController extends AbstractController
             $entityManager->flush();
         }
         $this->addFlash('warning', $this->translator->trans('Element deleted successfuly'));
-        return $this->redirectToRoute('events_home');
+        return $this->redirectToRoute('event_home');
     }
 
 
@@ -190,10 +190,10 @@ class EventsController extends AbstractController
                 $em->flush();
                 $this->addFlash('success', $msg);
             }
-            return $this->redirectToRoute('events_home');
+            return $this->redirectToRoute('event_home');
         }
 
-        $redirect_link = $this->redirectToRoute('events_home')->getTargetUrl();
+        $redirect_link = $this->redirectToRoute('event_home')->getTargetUrl();
         $form_info = $translator->trans('You are about to unsubscribe for the event reminder : ') .'<b>'. $event->getTitle() .'</b>';
         return $this->render('themes/just_the_form.html.twig',[
             'form' => $form->createView(),

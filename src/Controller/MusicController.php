@@ -14,7 +14,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
 /**
- * @Route("/music")
+ * @Route("/music", name="music_")
  * @Security("is_granted('ROLE_ADMIN')")
  */
 class MusicController extends AbstractController
@@ -27,7 +27,7 @@ class MusicController extends AbstractController
     }
 
     /**
-     * @Route("/", name="music_index", methods={"GET"})
+     * @Route("/", name="index", methods={"GET"})
      */
     public function index(MusicRepository $musicRepository): Response
     {
@@ -37,7 +37,7 @@ class MusicController extends AbstractController
     }
 
     /**
-     * @Route("/new", name="music_new", methods={"GET", "POST"})
+     * @Route("/new", name="new", methods={"GET", "POST"})
      */
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
@@ -49,8 +49,8 @@ class MusicController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->persist($music);
             $entityManager->flush();
-
-            return $this->redirectToRoute('music_index', [], Response::HTTP_SEE_OTHER);
+            $this->addFlash('info', $this->translator->trans('The music <b>'.$music.'</b> has been added'));
+            return $this->redirectToRoute('discography_index');
         }
 
         return $this->render('themes/just_the_form.html.twig', [
@@ -61,7 +61,7 @@ class MusicController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="music_show", methods={"GET"})
+     * @Route("/{id}", name="show", methods={"GET"})
      */
     public function show(Music $music): Response
     {
@@ -71,7 +71,7 @@ class MusicController extends AbstractController
     }
 
     /**
-     * @Route("/{id}/edit", name="music_edit", methods={"GET", "POST"})
+     * @Route("/{id}/edit", name="edit", methods={"GET", "POST"})
      */
     public function edit(Request $request, Music $music, EntityManagerInterface $entityManager): Response
     {
@@ -100,7 +100,7 @@ class MusicController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="music_delete", methods={"POST"})
+     * @Route("/{id}", name="delete", methods={"POST"})
      */
     public function delete(Request $request, Music $music, EntityManagerInterface $entityManager): Response
     {

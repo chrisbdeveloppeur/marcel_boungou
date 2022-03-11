@@ -13,7 +13,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
 /**
- * @Route("/book")
+ * @Route("/book", name="book_")
  */
 class BookController extends AbstractController
 {
@@ -26,7 +26,7 @@ class BookController extends AbstractController
     }
 
     /**
-     * @Route("/", name="book_index", methods={"GET"})
+     * @Route("/", name="index", methods={"GET"})
      */
     public function index(BookRepository $bookRepository): Response
     {
@@ -36,7 +36,7 @@ class BookController extends AbstractController
     }
 
     /**
-     * @Route("/new", name="book_new", methods={"GET", "POST"})
+     * @Route("/new", name="new", methods={"GET", "POST"})
      */
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
@@ -63,7 +63,7 @@ class BookController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="book_show", methods={"GET"})
+     * @Route("/{id}", name="show", methods={"GET"})
      */
     public function show(Book $book): Response
     {
@@ -73,7 +73,7 @@ class BookController extends AbstractController
     }
 
     /**
-     * @Route("/{id}/edit", name="book_edit", methods={"GET", "POST"})
+     * @Route("/{id}/edit", name="edit", methods={"GET", "POST"})
      */
     public function edit(Request $request, Book $book, EntityManagerInterface $entityManager): Response
     {
@@ -95,7 +95,7 @@ class BookController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="book_delete", methods={"POST"})
+     * @Route("/{id}", name="delete", methods={"POST"})
      */
     public function delete(Request $request, Book $book, EntityManagerInterface $entityManager): Response
     {
@@ -106,4 +106,21 @@ class BookController extends AbstractController
         $this->addFlash('warning', $this->translator->trans('Element deleted successfuly'));
         return $this->redirectToRoute('bibliography_index');
     }
+
+
+    /**
+     * @Route("/image/delete/{id}/{face?}", name="image_delete")
+     */
+    public function deleteImg($id, $face, Book $book, EntityManagerInterface $em, Request $request): Response
+    {
+        if($face == 'verso'){
+            $book->setImageVersoFile(null);
+        }else{
+            $book->setImage(null);
+        }
+        $em->flush();
+        $this->addFlash('info', $this->translator->trans('Image removed successfully'));
+        return $this->redirect($request->headers->get('referer'));
+    }
+
 }
