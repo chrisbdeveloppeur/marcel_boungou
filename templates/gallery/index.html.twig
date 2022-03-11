@@ -80,18 +80,29 @@
             // Loop through all list items, and hide those who don't match the search query
             pictureContainer.forEach(function (container) {
                 tags = container.querySelectorAll(classe);
-                for (let i = 0;i < tags.length; i++){
-                    console.log(tags[i]);
-                    var tagElement = tags[i].innerText.toUpperCase();
-                    if (tagElement.indexOf(filter) > -1) {
-                        container.classList.remove('is-hidden');
-                        container.classList.replace('opacity0', 'opacity100');
-                        break
-                    } else {
+                if (tags.length === 0){
+                    if (filter){
                         container.classList.add('is-hidden');
                         container.classList.replace('opacity100', 'opacity0')
+                    } else {
+                        container.classList.remove('is-hidden');
+                        container.classList.replace('opacity0', 'opacity100');
+                    }
+
+                }else {
+                    for (let i = 0;i < tags.length; i++){
+                        var tagElement = tags[i].innerText.toUpperCase();
+                        if (tagElement.indexOf(filter) > -1) {
+                            container.classList.remove('is-hidden');
+                            container.classList.replace('opacity0', 'opacity100');
+                            break
+                        } else {
+                            container.classList.add('is-hidden');
+                            container.classList.replace('opacity100', 'opacity0')
+                        }
                     }
                 }
+
             });
         }
         {#                               #}
