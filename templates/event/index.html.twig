@@ -9,10 +9,10 @@
 
     <div class="column is-flex-tablet is-flex-direction-row">
         <div class="px-1 py-1">
-            <a class="button is-dark is-fullwidth" href="{{ path('events_home') }}">{{ 'Back to Events page'|trans }}</a>
+            <a class="button is-dark is-fullwidth" href="{{ path('event_home') }}">{{ 'Back to Events page'|trans }}</a>
         </div>
         <div class="px-1 py-1">
-            <a class="button is-success is-fullwidth" href="{{ path('events_new') }}">{% trans %}Create new{% endtrans %}</a>
+            <a class="button is-success is-fullwidth" href="{{ path('event_new') }}">{% trans %}Create new{% endtrans %}</a>
         </div>
     </div>
 
@@ -39,8 +39,8 @@
                     <td>{{ event.cp }}</td>
                     <td>{{ event.street }}</td>
                     <td>
-                        <a href="{{ path('events_show', {'id': event.id}) }}">{% trans %}show{% endtrans %}</a>
-                        <a href="{{ path('events_edit', {'id': event.id}) }}">{% trans %}edit{% endtrans %}</a>
+                        <a href="{{ path('event_show', {'id': event.id}) }}">{% trans %}show{% endtrans %}</a>
+                        <a href="{{ path('event_edit', {'id': event.id}) }}">{% trans %}edit{% endtrans %}</a>
                     </td>
                 </tr>
             {% else %}
@@ -54,10 +54,10 @@
 
     <div class="column is-flex-tablet is-flex-direction-row">
         <div class="px-1 py-1">
-            <a class="button is-dark is-fullwidth" href="{{ path('events_home') }}">{{ 'Back to Events page'|trans }}</a>
+            <a class="button is-dark is-fullwidth" href="{{ path('event_home') }}">{{ 'Back to Events page'|trans }}</a>
         </div>
         <div class="px-1 py-1">
-            <a class="button is-success is-fullwidth" href="{{ path('events_new') }}">{% trans %}Create new{% endtrans %}</a>
+            <a class="button is-success is-fullwidth" href="{{ path('event_new') }}">{% trans %}Create new{% endtrans %}</a>
         </div>
     </div>
 

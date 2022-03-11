@@ -180,9 +180,11 @@
                     </span>
                 </span>
                 <span class="file-name">
-                    {% if form.vars.value.image %}
+                    {% if form.vars.value.image and child.vars.name == 'imageFile' %}
                         {{ form.vars.value.image }}
-                    {% elseif form.vars.value %}
+                    {% elseif form.vars.value.imageVerso %}
+                        {{ form.vars.value.imageVerso }}
+                    {% else %}
                         {% trans %}Empty{% endtrans %}
                     {% endif %}
                 </span>
@@ -226,8 +228,10 @@
                         <i class="fas fa-key"></i>
                     </span>
                     <div class="show-password">
-                        <span class="icon is-small">
-                            <i class="fas fa-eye-slash"></i>
+                        <span class="button">
+                            <span class="icon is-small">
+                                <i class="fas fa-eye-slash"></i>
+                            </span>
                         </span>
                     </div>
                 </div>
