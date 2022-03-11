@@ -27,15 +27,16 @@
     <div class="column has-background-light is-full is-full-mobile search-bar">
         <div class="field">
             <div class="control has-icons-right has-icons-left is-relative">
-                <input class="input" type="text" id="searchInput" onkeyup="searchFilter(['.picture-name'])" placeholder="{% trans %}Type your search here{% endtrans %}">
+                <input class="input" type="text" id="searchInput" onkeyup="searchFilter(['.picture-tag'])" placeholder="{% trans %}Type your search here{% endtrans %}">
                 <span class="icon is-small is-left">
                     <i class="fas fa-search"></i>
                 </span>
                 <div class="show-password" onclick="resetSearch()">
                     <button class="button is-danger" style="width: 100%">
-                    <span class="icon is-small">
-                        <i class="fas fa-2x fa-times"></i>
-                    </span>
+                        <i class="fas fa-lg fa-times mr-2"></i>
+                        <span>
+                            {{ 'reset filter'|trans }}
+                        </span>
                     </button>
                 </div>
             </div>
@@ -70,20 +71,22 @@
         }
 
         function addClasseFilter(classe) {
-            var input, filter, classeElement, classeElementValue, musicContainer;
+            var input, filter, tags, pictureContainer;
             input = document.getElementById('searchInput');
             filter = input.value.toUpperCase();
 
-            musicContainer = document.querySelectorAll('.picture-container');
+            pictureContainer = document.querySelectorAll('.picture-container');
 
             // Loop through all list items, and hide those who don't match the search query
-            musicContainer.forEach(function (container) {
-                classeElement = container.querySelector(classe);
-                if (classeElement){
-                    classeElementValue = classeElement.textContent || classeElement.innerText;
-                    if ( classeElementValue.toUpperCase().indexOf(filter) > -1 ) {
+            pictureContainer.forEach(function (container) {
+                tags = container.querySelectorAll(classe);
+                for (let i = 0;i < tags.length; i++){
+                    console.log(tags[i]);
+                    var tagElement = tags[i].innerText.toUpperCase();
+                    if (tagElement.indexOf(filter) > -1) {
                         container.classList.remove('is-hidden');
-                        container.classList.replace('opacity0', 'opacity100')
+                        container.classList.replace('opacity0', 'opacity100');
+                        break
                     } else {
                         container.classList.add('is-hidden');
                         container.classList.replace('opacity100', 'opacity0')
@@ -96,9 +99,9 @@
         {# SCRIPT ANCRAGE SEARCH ALBUM / MUSIQUES #}
         function searchAncrage(link) {
             var input = document.getElementById('searchInput');
-            var ancrageTxt = link.getAttribute('data-href');
+            var ancrageTxt = link.querySelector('.picture-tag').getAttribute('data-href');
             input.value = ancrageTxt;
-            searchFilter(['.picture-name']);
+            searchFilter(['.picture-tag']);
         }
 
         {# SCRIPT RESET SEARCH #}
