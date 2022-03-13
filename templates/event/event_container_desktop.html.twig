@@ -11,7 +11,7 @@
                 <img src="https://bulma.io/images/placeholders/720x240.png" alt="" style="height: 100%;max-height: 100%;width: 100%;object-fit: fill">
             {% endif %}
             </figure>
-            <div class="column slider-container-child is-flex is-flex-direction-column">
+            <div class="column slider-container-child is-flex is-flex-direction-column" style="width: 50%;">
                 <div class="is-flex is-align-items-center shadow-box-1 my-2">
                     <div class="has-text-success has-text-weight-bold is-size-5 column py-1">
                         <span>
@@ -20,12 +20,15 @@
                     </div>
                 </div>
                 <div class="is-flex is-align-items-center shadow-box-1 my-2">
-                    <div class="has-text-white column py-1">
+                    <div class="has-text-white column py-1 overflow-ellipsis" style="max-width: 90%">
                         <span  class="icon has-text-success">
                             <i class="fas fa-lg fa-map"></i>
                         </span>
                         <span>
-                            {{ event.adresse }}
+                            {{ event.city }},
+                            <span class="is-uppercase">
+                                {{ event.country }}
+                            </span>
                         </span>
                     </div>
                 </div>
@@ -35,7 +38,7 @@
                             <i class="fas fa-lg fa-calendar-alt"></i>
                         </span>
                         <span>
-                            {{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}
+                            {{ event.datetime|format_datetime('full','none',locale=app.request.locale) }}
                         </span>
                     </div>
                 </div>

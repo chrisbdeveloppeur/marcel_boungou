@@ -33,12 +33,12 @@
             {% trans %} (1 month / 1 week / 1 day before){% endtrans %}<br>
         </span>
     </div>
-    <form action="{{ path('events_add_email_reminder', {'id': event.id}) }}" method="post" class="column pb-0 pt-3 px-0">
+    <form action="{{ path('event_add_email_reminder', {'id': event.id}) }}" method="post" class="column pb-0 pt-3 px-0">
         <div class="field">
             <input type="email" class="input has-text-centered" placeholder="{% trans %}my@email.com{% endtrans %}" name="email" required>
         </div>
         <div class="is-flex is-justify-content-end">
-            <a href="{{ path('events_remove_email_reminder', {'id': event.id}) }}" class="button is-success is-light">
+            <a href="{{ path('event_remove_email_reminder', {'id': event.id}) }}" class="button is-success is-light">
                 <span class="icon">
                     <i class="far fa-bell-slash"></i>
                 </span>
