@@ -17,18 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6229e002948a1
-DTSTAMP;TZID=Europe/Paris:20220310T122450
+UID:622e5fd97f064
+DTSTAMP;TZID=Europe/Paris:20220313T221921
 SUMMARY:rerum
-DESCRIPTION:Est officia provident iste iste. Et tenetur dolores ea rerum. O
- fficia recusandae praesentium eos et. Eos eum libero similique voluptatem 
- veritatis. Quia dolore voluptatibus autem sed id consequuntur quis totam. 
- Non non voluptatum repudiandae magnam. Rerum accusantium nisi culpa autem.
-  Aliquid et nobis commodi eligendi magnam aliquid harum. Commodi aut harum
-  tenetur animi. Quis porro qui quas tenetur. Sit itaque id et dolorum dese
- runt.
-LOCATION:72\, place Benjamin Bernier\, 98691 Devauxboeuf\, Devauxboeuf
-DTSTART;TZID=Europe/Paris:20220308T115332
-DTEND;TZID=Europe/Paris:20220308T115332
+DESCRIPTION:Quasi et asperiores nihil qui porro accusantium neque. Hic omni
+ s quasi aut quidem dicta veritatis eaque. Autem nesciunt voluptatem earum 
+ consequatur. Ullam sed magni reprehenderit cupiditate.
+LOCATION:49\, impasse Diallo\, 75 877 Blot\, Blot
+DTSTART;TZID=Europe/Paris:20220311T043736
+DTEND;TZID=Europe/Paris:20220311T043736
 END:VEVENT
 END:VCALENDAR

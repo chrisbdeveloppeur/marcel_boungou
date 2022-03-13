@@ -17,15 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6221ed96a8c5f
-DTSTAMP;TZID=Europe/Paris:20220304T114438
+UID:622e5fd98af66
+DTSTAMP;TZID=Europe/Paris:20220313T221921
 SUMMARY:nihil
-DESCRIPTION:Excepturi harum explicabo inventore quis nostrum. Tenetur dicta
-  et sit doloribus at. Nisi aut dolor sit ut minus. Blanditiis distinctio i
- n quia libero et. Nostrum quis unde quas. Eveniet pariatur sequi atque asp
- eriores reprehenderit eos.
-LOCATION:77\, chemin de Hamon\, 20734 MartelBourg\, MartelBourg
-DTSTART;TZID=Europe/Paris:20220303T170613
-DTEND;TZID=Europe/Paris:20220303T170613
+DESCRIPTION:Soluta consequatur dolores nobis doloremque. Aut nobis quo rati
+ one maiores vel nemo ea. Et voluptas quibusdam in. Rem culpa accusamus sin
+ t non aliquam quis aliquid. Hic rerum tempora architecto aliquam debitis q
+ ui. Numquam et aut quia aut quae.
+LOCATION:63\, place de Bouchet\, 02 129 Godard-les-Bains\, Godard-les-Bains
+DTSTART;TZID=Europe/Paris:20220416T132734
+DTEND;TZID=Europe/Paris:20220416T132734
 END:VEVENT
 END:VCALENDAR

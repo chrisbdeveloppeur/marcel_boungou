@@ -15,19 +15,22 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fac4783c7
-DTSTAMP;TZID=Europe/Paris:20220224T223812
+UID:622e5fd98dd68
+DTSTAMP;TZID=Europe/Paris:20220313T221921
 SUMMARY:consectetur
-DESCRIPTION:Quidem blanditiis earum natus temporibus magni consequatur ex. 
- Nisi quidem autem sed similique dicta laudantium. Quam voluptates aut blan
- ditiis non vel aut est perspiciatis. Ad alias cum ducimus perspiciatis qui
- busdam provident. Dolore accusamus iste amet quas reiciendis autem. Dicta 
- est ut harum ipsa. Voluptates adipisci consectetur velit et qui delectus q
- uis consectetur.
-LOCATION:3\, rue de Neveu\, 49 447 Rolland\, Rolland
-DTSTART;TZID=Europe/Paris:20220315T233132
-DTEND;TZID=Europe/Paris:20220315T233132
+DESCRIPTION:Ea sed maxime et consequatur voluptatem blanditiis. Animi iusto
+  unde et est ipsam omnis. Laboriosam quo ducimus enim aliquid. Placeat cor
+ rupti ab est numquam soluta debitis et voluptate. Voluptatem culpa dolorem
+  quasi laboriosam.
+LOCATION:rue Benjamin Antoine\, 64824 Tessier\, Tessier
+DTSTART;TZID=Europe/Paris:20220505T092333
+DTEND;TZID=Europe/Paris:20220505T092333
 END:VEVENT
 END:VCALENDAR

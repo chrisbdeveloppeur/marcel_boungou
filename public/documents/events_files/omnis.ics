@@ -17,16 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6227b697e20ce
-DTSTAMP;TZID=Europe/Paris:20220308T210335
+UID:622e5fd8af880
+DTSTAMP;TZID=Europe/Paris:20220313T221920
 SUMMARY:omnis
-DESCRIPTION:Nihil est non exercitationem et. Accusantium eveniet iure dolor
- emque. Quae quasi labore incidunt dolorem qui. Accusantium maiores ex perf
- erendis. Harum aut aliquid officiis modi et delectus accusamus. Quo quo la
- udantium autem sint earum alias impedit. Neque esse et provident autem ill
- o quae sunt. Rerum autem qui dignissimos ratione.
-LOCATION:493\, avenue Lejeune\, 78624 Bourgeois\, Bourgeois
-DTSTART;TZID=Europe/Paris:20220306T070517
-DTEND;TZID=Europe/Paris:20220306T070517
+DESCRIPTION:Quam quia dolorem iure reiciendis aut optio consectetur. Saepe 
+ deserunt dolore quae et.
+LOCATION:rue Stéphane Carre\, 52 265 Dubois\, Dubois
+DTSTART;TZID=Europe/Paris:20220311T214534
+DTEND;TZID=Europe/Paris:20220311T214534
 END:VEVENT
 END:VCALENDAR

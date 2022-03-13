@@ -17,14 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62223fb322ffe
-DTSTAMP;TZID=Europe/Paris:20220304T173459
+UID:622e5fd9861b4
+DTSTAMP;TZID=Europe/Paris:20220313T221921
 SUMMARY:veniam
-DESCRIPTION:Et molestiae consequatur cum quam et ipsa. Dolores beatae delec
- tus et esse. Asperiores tenetur sit suscipit accusamus nam. Numquam perfer
- endis at eos dolor architecto. Quos ipsam eum labore ut voluptate.
-LOCATION:1\, avenue de Costa\, 59194 Poulain-sur-Mer\, Poulain-sur-Mer
-DTSTART;TZID=Europe/Paris:20220426T161715
-DTEND;TZID=Europe/Paris:20220426T161715
+DESCRIPTION:Saepe aut quia blanditiis voluptatem cum placeat minima. In vol
+ uptatem nam ex eos quis.
+LOCATION:23\, chemin Lemaitre\, 35120 Delorme-la-Forêt\, Delorme-la-Forêt
+DTSTART;TZID=Europe/Paris:20220326T213653
+DTEND;TZID=Europe/Paris:20220326T213653
 END:VEVENT
 END:VCALENDAR
