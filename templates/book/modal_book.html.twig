@@ -3,7 +3,7 @@
     <h3 class="has-text-white has-text-centered">{{ book.title }}</h3>
 
     <div class="is-flex is-flex-direction-row is-align-items-center is-justify-content-center">
-        <div class="column is-half" style="margin: auto;">
+        <div class="column is-one-third" style="margin: auto;">
             <figure class="image is-4by5">
                 {% if book.image %}
                     <img src="{{ vich_uploader_asset(book, 'imageFile') }}">
@@ -14,7 +14,7 @@
         </div>
 
         {% if book.imageverso %}
-            <div class="column is-half" style="margin: auto;">
+            <div class="column is-one-third" style="margin: auto;">
                 <figure class="image is-4by5">
                     <img src="{{ vich_uploader_asset(book, 'imageVersoFile') }}">
                 </figure>
@@ -26,10 +26,8 @@
 
     <div class="column">
         {% if book.description %}
-            <div class="column">
-                <p class="has-text-white">
-                    {{ book.description }}
-                </p>
+            <div class="column has-text-white">
+                {{ book.description|raw }}
             </div>
         {% endif %}
     </div>
