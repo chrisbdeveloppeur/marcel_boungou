@@ -17,15 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fca916e09
-DTSTAMP;TZID=Europe/Paris:20220224T224617
+UID:622e6018e2bdf
+DTSTAMP;TZID=Europe/Paris:20220313T222024
 SUMMARY:minus
-DESCRIPTION:Atque perferendis consequatur dicta atque. Deserunt quisquam do
- lores voluptas magnam. Corporis minus eligendi aliquid voluptatem omnis in
- . Officia omnis adipisci quae provident quo. Expedita quia error ut quis q
- uia tenetur.
-LOCATION:avenue de Le Goff\, 44798 Voisin\, Voisin
-DTSTART;TZID=Europe/Paris:20220225T084534
-DTEND;TZID=Europe/Paris:20220225T084534
+DESCRIPTION:Error saepe ea officiis eveniet sunt enim. Voluptas voluptas es
+ t voluptatum reprehenderit laboriosam pariatur est. Fuga cum est est.
+LOCATION:565\, chemin Diane Leroux\, 69 834 Techer\, Techer
+DTSTART;TZID=Europe/Paris:20220317T181450
+DTEND;TZID=Europe/Paris:20220317T181450
 END:VEVENT
 END:VCALENDAR

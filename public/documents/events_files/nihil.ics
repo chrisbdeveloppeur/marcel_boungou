@@ -17,15 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:622e5fd98af66
-DTSTAMP;TZID=Europe/Paris:20220313T221921
+UID:622e6018dd854
+DTSTAMP;TZID=Europe/Paris:20220313T222024
 SUMMARY:nihil
-DESCRIPTION:Soluta consequatur dolores nobis doloremque. Aut nobis quo rati
- one maiores vel nemo ea. Et voluptas quibusdam in. Rem culpa accusamus sin
- t non aliquam quis aliquid. Hic rerum tempora architecto aliquam debitis q
- ui. Numquam et aut quia aut quae.
-LOCATION:63\, place de Bouchet\, 02 129 Godard-les-Bains\, Godard-les-Bains
-DTSTART;TZID=Europe/Paris:20220416T132734
-DTEND;TZID=Europe/Paris:20220416T132734
+DESCRIPTION:Temporibus aut qui dolorem temporibus saepe iusto. Et eligendi 
+ minus quia. Et aut deserunt dicta non velit accusamus. Asperiores sed minu
+ s error deleniti id soluta. Nostrum delectus quasi velit laborum ex. Quasi
+  qui non dolor autem. Rerum dolor aperiam eveniet aliquid molestiae eligen
+ di.
+LOCATION:rue de Turpin\, 35133 Perez\, Perez
+DTSTART;TZID=Europe/Paris:20220311T105719
+DTEND;TZID=Europe/Paris:20220311T105719
 END:VEVENT
 END:VCALENDAR

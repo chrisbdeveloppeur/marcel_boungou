@@ -15,16 +15,25 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fb6eabe3f
-DTSTAMP;TZID=Europe/Paris:20220224T224102
+UID:622e60190179a
+DTSTAMP;TZID=Europe/Paris:20220313T222025
 SUMMARY:assumenda
-DESCRIPTION:Amet alias dolores saepe cumque. Et minima pariatur dolorum. Qu
- i excepturi perferendis eum eligendi accusantium suscipit. Voluptatem quam
-  odio aliquam at omnis.
-LOCATION:71\, avenue Grenier\, 69 542 Hebert\, Hebert
-DTSTART;TZID=Europe/Paris:20220222T225914
-DTEND;TZID=Europe/Paris:20220222T225914
+DESCRIPTION:Consectetur adipisci sit ex qui hic in qui nihil. Vel quidem co
+ rrupti sit qui sunt aut. Aliquam occaecati necessitatibus possimus amet co
+ nsequuntur harum eveniet. Eos omnis qui aut tenetur quia labore error. Non
+  molestiae quia pariatur ducimus sit vero eos. Veritatis vel voluptatum ut
+  eaque quia. Pariatur saepe reiciendis veritatis quia. Veritatis cumque ma
+ gnam placeat tempore. Sit non magnam architecto et vero quod. Suscipit aut
+  eveniet possimus quo id. Facilis impedit aut ullam cumque.
+LOCATION:chemin Pottier\, 55 512 CarlierBourg\, CarlierBourg
+DTSTART;TZID=Europe/Paris:20220505T142159
+DTEND;TZID=Europe/Paris:20220505T142159
 END:VEVENT
 END:VCALENDAR

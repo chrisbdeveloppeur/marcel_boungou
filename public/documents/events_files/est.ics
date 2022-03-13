@@ -17,17 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6229d92c3f1cb
-DTSTAMP;TZID=Europe/Paris:20220310T115540
+UID:622e6018f3d6e
+DTSTAMP;TZID=Europe/Paris:20220313T222024
 SUMMARY:est
-DESCRIPTION:Repudiandae perferendis quibusdam quis. Animi suscipit amet err
- or voluptatem sapiente. Cupiditate vel aut rerum illo minima est qui. Volu
- ptas commodi autem suscipit sint sint voluptas animi ut. Maxime consectetu
- r vel impedit voluptas architecto. Praesentium perspiciatis ullam est odio
- . Consequatur nihil unde repellat omnis. Maiores magni quasi non velit vit
- ae odit.
-LOCATION:60\, rue Giraud\, 52993 Vaillant\, Vaillant
-DTSTART;TZID=Europe/Paris:20220329T193715
-DTEND;TZID=Europe/Paris:20220329T193715
+DESCRIPTION:Vel ipsum qui aliquam quo nesciunt velit. Accusamus placeat fug
+ a ex ducimus. Cupiditate dolores quo qui sit ut. Voluptatibus sunt hic con
+ sectetur dolores omnis eum. Veniam commodi voluptas eveniet sed. Magnam po
+ rro deleniti sit. Quod error nobis quas aut eos. Rerum laborum culpa labor
+ um repudiandae. Provident aut occaecati dolore voluptatem. Quia aspernatur
+  aut natus omnis aliquid. Illo et aut architecto dignissimos nostrum.
+LOCATION:946\, impasse Chantal Lenoir\, 72951 Renaud\, Renaud
+DTSTART;TZID=Europe/Paris:20220425T140308
+DTEND;TZID=Europe/Paris:20220425T140308
 END:VEVENT
 END:VCALENDAR
