@@ -155,7 +155,7 @@ class Event
 
     public function setCountry(string $country): self
     {
-        $this->country = $country;
+        $this->country = strtoupper($country);
 
         return $this;
     }
