@@ -348,19 +348,19 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   height: 100% !important;
 }
 
-.transition-3ms{
+.transition-3ms *{
   transition: .3s !important;
 }
 
-.transition-5ms{
+.transition-5ms *{
   transition: .5s !important;
 }
 
-.transition-1s{
+.transition-1s *{
   transition: 1s !important;
 }
 
-.transition-2s{
+.transition-2s *{
   transition: 2s !important;
 }
 
@@ -432,73 +432,11 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   text-overflow: ellipsis;
 }
 
-// BREAK RESPONSIVE FOR DESKTOP
-@media (max-width: 1023px ) {
-
-  #navbarBasic{
-   // background: $primary !important;
-    height: 100vh;
-  }
-  .has-text-white-desktop{
-    color: white !important;
-  }
-  .has-text-dark-desktop{
-    color: $dark !important;
-  }
-}
-// BREAK RESPONSIVE FOR TOUCH (MOBIL & TABLET)
-@media (min-width: 1023px ) {
-  #majorEvent figure{
-    height: 300px;
-  }
-  .has-text-dark-touch{
-    color: $dark !important;
-  }
-  .has-text-white-touch{
-    color: white !important;
-  }
-  .disc{
-    position: absolute;
-    transition: .3s;
-    z-index: 1;
-  }
-  .disc-hidden{
-    display: none !important;
-  }
-  .disc-far-left{
-    left:25vw;
-  }
-  .disc-near-left{
-    left:30vw;
-  }
-  .disc-near-right{
-    right:30vw;
-  }
-  .disc-far-right{
-    right:25vw;
-  }
-  .disc-far-left, .disc-far-right{
-    opacity : .2;
-    z-index : 1;
-    transform : scale(.90);
-  }
-  .disc-near-left, .disc-near-right{
-    opacity : .5;
-    z-index : 2;
-    transform : scale(.95);
-  }
-  .disc-selected{
-    opacity: 1;
-    z-index: 3;
-    transform: scale(1);
-  }
-}
-
 .slider{
   height: 100%;
 }
 .slider-item{
- // display: flex;
+  // display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -577,6 +515,86 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   opacity: 1;
   visibility: visible;
 }
+
+
+// BREAK RESPONSIVE FOR DESKTOP
+@media (max-width: 1023px ) {
+
+  #navbarBasic{
+   // background: $primary !important;
+    height: 100vh;
+  }
+  .has-text-white-desktop{
+    color: white !important;
+  }
+  .has-text-dark-desktop{
+    color: $dark !important;
+  }
+  .navbar-menu-touch div.is-minimized{
+    height: 0px !important;
+    overflow: hidden !important;
+    display: none !important;
+  }
+  .dropdown-divider{
+    width: 70%;
+    margin: auto !important;
+    height: 5px !important;
+  }
+  a.navbar-item{
+    width: 70% !important;
+    margin: auto !important;
+  }
+}
+
+
+// BREAK RESPONSIVE FOR TOUCH (MOBIL & TABLET)
+@media (min-width: 1023px ) {
+  #majorEvent figure{
+    height: 300px;
+  }
+  .has-text-dark-touch{
+    color: $dark !important;
+  }
+  .has-text-white-touch{
+    color: white !important;
+  }
+  .disc{
+    position: absolute;
+    transition: .3s;
+    z-index: 1;
+  }
+  .disc-hidden{
+    display: none !important;
+  }
+  .disc-far-left{
+    left:25vw;
+  }
+  .disc-near-left{
+    left:30vw;
+  }
+  .disc-near-right{
+    right:30vw;
+  }
+  .disc-far-right{
+    right:25vw;
+  }
+  .disc-far-left, .disc-far-right{
+    opacity : .2;
+    z-index : 1;
+    transform : scale(.90);
+  }
+  .disc-near-left, .disc-near-right{
+    opacity : .5;
+    z-index : 2;
+    transform : scale(.95);
+  }
+  .disc-selected{
+    opacity: 1;
+    z-index: 3;
+    transform: scale(1);
+  }
+}
+
 
 
 @keyframes waviy {

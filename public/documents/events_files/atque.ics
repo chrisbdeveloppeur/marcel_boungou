@@ -15,18 +15,22 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6221e2cdaeab3
-DTSTAMP;TZID=Europe/Paris:20220304T105837
+UID:622f932847815
+DTSTAMP;TZID=Europe/Paris:20220314T201032
 SUMMARY:atque
-DESCRIPTION:Ut suscipit et eveniet dolor est rerum. Tenetur id ducimus et u
- t dolores id. Voluptas sed harum saepe delectus aliquam fugit et quo. Et q
- uod rerum vitae doloribus quos doloribus. Ipsam ducimus voluptas dolor max
- ime architecto. Incidunt sint quia numquam est et quia nemo. Ut velit veni
- am ut dignissimos. Rem sapiente ex ducimus.
-LOCATION:avenue Hortense Lenoir\, 08 615 PelletierVille\, PelletierVille
-DTSTART;TZID=Europe/Paris:20220323T193242
-DTEND;TZID=Europe/Paris:20220323T193242
+DESCRIPTION:Corrupti eligendi non assumenda dolor inventore atque iusto con
+ sequatur. Officia occaecati sit neque. Dolor ut sed modi enim. Qui distinc
+ tio culpa cumque molestiae repellendus quos animi. Nemo at provident et ra
+ tione.
+LOCATION:9\, rue Benard\, 26 444 Guillotnec\, Guillotnec
+DTSTART;TZID=Europe/Paris:20220506T114706
+DTEND;TZID=Europe/Paris:20220506T114706
 END:VEVENT
 END:VCALENDAR

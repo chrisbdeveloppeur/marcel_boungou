@@ -17,15 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6221ed96afdb1
-DTSTAMP;TZID=Europe/Paris:20220304T114438
+UID:622f93283523f
+DTSTAMP;TZID=Europe/Paris:20220314T201032
 SUMMARY:aliquam
-DESCRIPTION:Qui sed quibusdam iure et. Sed accusamus dicta molestiae atque 
- culpa quae vel. Nam et autem magnam vero nam. A consequuntur voluptas quia
-  quos assumenda quasi. Atque sunt neque dolores et quas voluptatem numquam
- . Sapiente sequi eaque itaque ipsa.
-LOCATION:965\, rue de Reynaud\, 45 105 Gregoire\, Gregoire
-DTSTART;TZID=Europe/Paris:20220308T032036
-DTEND;TZID=Europe/Paris:20220308T032036
+DESCRIPTION:Est maxime est nisi quas et quis. Alias veritatis vel aut unde 
+ sed. Ab asperiores et et ad.
+LOCATION:39\, chemin de Gilbert\, 60798 Richard\, Richard
+DTSTART;TZID=Europe/Paris:20220409T183711
+DTEND;TZID=Europe/Paris:20220409T183711
 END:VEVENT
 END:VCALENDAR

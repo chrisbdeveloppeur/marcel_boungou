@@ -17,15 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:622e6018e143c
-DTSTAMP;TZID=Europe/Paris:20220313T222024
+UID:622f9327c36f4
+DTSTAMP;TZID=Europe/Paris:20220314T201031
 SUMMARY:non
-DESCRIPTION:Aut quaerat exercitationem qui blanditiis eius ad aliquid. Amet
-  et veritatis est sit quo amet. At ut nihil iste qui molestiae sit. Sunt i
- psa esse quia. Eum voluptas quo ut maiores. Quidem dolorem quis molestiae 
- dolore facilis unde.
-LOCATION:62\, impasse de Nicolas\, 21 986 Laroche\, Laroche
-DTSTART;TZID=Europe/Paris:20220314T200321
-DTEND;TZID=Europe/Paris:20220314T200321
+DESCRIPTION:Est esse et est. Id qui repellendus expedita laudantium porro i
+ psum fuga. Aut exercitationem illo commodi qui iusto commodi ducimus.
+LOCATION:834\, boulevard Charles Camus\, 52900 NavarroBourg\, NavarroBourg
+DTSTART;TZID=Europe/Paris:20220315T125624
+DTEND;TZID=Europe/Paris:20220315T125624
 END:VEVENT
 END:VCALENDAR

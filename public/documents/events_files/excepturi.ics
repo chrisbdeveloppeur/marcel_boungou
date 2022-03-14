@@ -17,18 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6221edf92f32e
-DTSTAMP;TZID=Europe/Paris:20220304T114617
+UID:622f93284662f
+DTSTAMP;TZID=Europe/Paris:20220314T201032
 SUMMARY:excepturi
-DESCRIPTION:Nihil asperiores itaque aut quae doloribus. Maxime error sint s
- ed sint dolorum praesentium. Voluptas omnis asperiores incidunt natus nece
- ssitatibus voluptatibus velit. Voluptatem facere sit sunt laudantium rerum
-  omnis. Possimus quam est provident qui et unde nulla. Natus sunt qui iure
-  quo quibusdam rerum. Molestias qui quibusdam quaerat odio saepe. Mollitia
-  est quia ea ad. Aut officia eos vero repellat. In fugiat repellat pariatu
- r natus.
-LOCATION:25\, rue de Sanchez\, 94227 Michaud-sur-Mer\, Michaud-sur-Mer
-DTSTART;TZID=Europe/Paris:20220305T232930
-DTEND;TZID=Europe/Paris:20220305T232930
+DESCRIPTION:Sit veritatis pariatur repellat consequatur ex et. Animi pariat
+ ur aut omnis dolorem. Porro in sint sed et amet. Qui consectetur consequun
+ tur culpa error ut praesentium. Nesciunt quia mollitia nihil occaecati. Pe
+ rspiciatis cum nam et rerum ut velit explicabo. Dolorum nam autem magni am
+ et. Nostrum repudiandae harum debitis sunt delectus.
+LOCATION:370\, place de Baudry\, 68 070 Labbe\, Labbe
+DTSTART;TZID=Europe/Paris:20220426T160225
+DTEND;TZID=Europe/Paris:20220426T160225
 END:VEVENT
 END:VCALENDAR

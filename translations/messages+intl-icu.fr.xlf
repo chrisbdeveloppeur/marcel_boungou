@@ -1157,6 +1157,10 @@
         <source> Click here</source>
         <target> Cliquez ici</target>
       </trans-unit>
+      <trans-unit id="agrbVaV" resname="In future">
+        <source>In future</source>
+        <target>Prochainement</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
