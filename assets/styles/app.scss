@@ -97,10 +97,16 @@ body{
   min-height: 100vh;
 }
 
+//.shadow-box-1{
+//  background: rgba(255,255,255,.1);
+//  border-radius:.5rem;
+//  box-shadow: 0 0 5px rgba(255,255,255,.9);
+//}
+
 .shadow-box-1{
-  background: rgba(255,255,255,.1);
+  background: rgba(72, 50, 19, .5);
   border-radius:.5rem;
-  box-shadow: 0 0 5px rgba(255,255,255,.9);
+  box-shadow: 0 0 5px rgba(255, 219, 127, 0.9);
 }
 
 section.body{
