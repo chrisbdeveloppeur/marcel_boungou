@@ -1145,6 +1145,18 @@
         <source>Click here</source>
         <target>Cliquez ici</target>
       </trans-unit>
+      <trans-unit id="gxW6baa" resname="Thanks you ! You will be notified by mail when the event ">
+        <source>Thanks you ! You will be notified by mail when the event </source>
+        <target>Merci ! Vous serez averti par mail lorsque la date de l'événement </target>
+      </trans-unit>
+      <trans-unit id="HtByozE" resname=" date is approaching">
+        <source> date is approaching</source>
+        <target> sera proche</target>
+      </trans-unit>
+      <trans-unit id="vxQ1dXT" resname=" Click here">
+        <source> Click here</source>
+        <target> Cliquez ici</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -162,7 +162,7 @@ class EventsController extends AbstractController
                 $msg = $translator->trans('You are already in the list of contacts to call back');
                 $this->addFlash('warning', $msg);
             }else{
-                $msg = $translator->trans('Thanks you ! You will be notified by mail when the event date is approaching');
+                $msg = $translator->trans('Thanks you ! You will be notified by mail when the event ').'<b>'.$event.'</b>'.$this->translator->trans(' date is approaching');
                 $event->addMailToRemind($mail);
                 $em->persist($event);
                 $em->flush();
