@@ -146,13 +146,18 @@ class EventsController extends AbstractController
 
 
     /**
-     * @Route("/reminder/add/{id}", name="add_email_reminder", methods={"POST","GET"})
+     * @Route("/reminder/add/{id}/{email?}", name="add_email_reminder", methods={"POST","GET"})
      */
-    public function addEmailReminder($id, EventRepository $eventRepository, TranslatorInterface $translator, EntityManagerInterface $em, Request $request){
+    public function addEmailReminder($id, EventRepository $eventRepository, TranslatorInterface $translator, EntityManagerInterface $em, Request $request, $email){
         $event = $eventRepository->find($id);
 
         if ($_POST){
             $mail = $_POST['email'];
+        }else if($email){
+            $mail = $email;
+        }
+
+        if ($mail){
             if (in_array($mail, $event->getMailsToRemind())){
                 $msg = $translator->trans('You are already in the list of contacts to call back');
                 $this->addFlash('warning', $msg);
@@ -163,7 +168,6 @@ class EventsController extends AbstractController
                 $em->flush();
                 $this->addFlash('success', $msg);
             }
-
             $previousUrl = $request->headers->get('referer');
             return $this->redirect($previousUrl);
         }
@@ -184,7 +188,7 @@ class EventsController extends AbstractController
                 $msg = $translator->trans('This mail is not in the list of contacts to call back');
                 $this->addFlash('warning', $msg);
             }else{
-                $msg = $translator->trans('You have removed the mail : ') .$mail. $translator->trans(' from the list of contacts to call back');
+                $msg = $translator->trans('The Email ').'<b>'.$mail.'</b>'. $translator->trans(' will no longer receive reminders about the event ').'<b>'.$event->getTitle().'</b><br><span class="help">'.$this->translator->trans('You reconsider your decision ?').'<a href="'.$this->redirectToRoute('event_add_email_reminder',['id'=> $event->getId(), 'email'=> $mail])->getTargetUrl().'">'.$this->translator->trans(' Click here').'</a></span>';
                 $event->removeMailToRemind($mail);
                 $em->persist($event);
                 $em->flush();

@@ -1129,6 +1129,22 @@
         <source>Redirect to gallery</source>
         <target>Rediriger vers la galerie</target>
       </trans-unit>
+      <trans-unit id="vuYZNQ3" resname="The Email ">
+        <source>The Email </source>
+        <target>L'Email </target>
+      </trans-unit>
+      <trans-unit id="tlppM.Y" resname=" will no longer receive reminders about the event ">
+        <source> will no longer receive reminders about the event </source>
+        <target> ne recevra plus de rappels concernant l'événement </target>
+      </trans-unit>
+      <trans-unit id="DQ39xvU" resname="You reconsider your decision ?">
+        <source>You reconsider your decision ?</source>
+        <target>Vous reconsidérez votre décision ?</target>
+      </trans-unit>
+      <trans-unit id="YtygB6C" resname="Click here">
+        <source>Click here</source>
+        <target>Cliquez ici</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

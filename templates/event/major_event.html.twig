@@ -46,7 +46,7 @@
                         {% endif %}
                         <div class="column px-0 py-0 mx-1 my-2" style="z-index: 1;">
                             <div class="is-flex is-align-items-center shadow-box-1 my-2">
-                                <div class="is-uppercase has-text-centered has-text-success has-text-weight-bold is-size-5 column py-1">
+                                <div class="has-text-centered has-text-success has-text-weight-bold is-size-5 column py-1">
                                     <span>
                                         {{ event.title }}
                                     </span>
@@ -61,8 +61,8 @@
                                         {{ event.adresse }}
                                     </span>
                                 </div>
-                                <div class="is-flex is-justify-content-center is-align-items-center px-2 py-2">
-                                    <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="button rotationY is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
+                                <div class="is-flex is-justify-content-center is-align-items-center px-2 py-2 rotationY">
+                                    <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="button is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
                                         <span  class="icon">
                                             <i class="fas fa-lg fa-map-marker-alt"></i>
                                         </span>
@@ -76,8 +76,8 @@
                                         {{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}
                                     </span>
                                 </div>
-                                <div class="is-flex is-justify-content-center is-align-items-center px-2 py-2">
-                                    <a class="button rotationY is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center"  onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
+                                <div class="is-flex is-justify-content-center is-align-items-center px-2 py-2 rotationY">
+                                    <a class="button is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center"  onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
                                         <span class="icon">
                                             <i class="fas fa-lg fa-bell"></i>
                                         </span>
