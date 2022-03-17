@@ -1,0 +1,14 @@
+{% if new is defined %}
+    <article class="shadow-box-1 m-2 p-2 is-relative">
+        <span class="help has-text-grey">{{ new.datetime|format_datetime('full','medium',locale=app.request.locale) }}</span>
+        {% if is_granted('ROLE_ADMIN') %}
+            {{ include('news/edit_news_button.html.twig') }}
+        {% endif %}
+        <div class="">
+            {% if new.title %}
+                <h3 class="subtitle has-text-white">{{ new }}</h3>
+            {% endif %}
+            {{ new.description|raw }}
+        </div>
+    </article>
+{% endif %}

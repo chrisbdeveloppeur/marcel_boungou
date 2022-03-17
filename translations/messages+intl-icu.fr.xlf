@@ -1213,6 +1213,10 @@
         <source>back to news list</source>
         <target>Retour à la liste des nouvelles</target>
       </trans-unit>
+      <trans-unit id="G05kME6" resname="Last news">
+        <source>Last news</source>
+        <target>Dernières nouvelles</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

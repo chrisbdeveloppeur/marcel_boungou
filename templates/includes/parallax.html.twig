@@ -1,27 +1,18 @@
-<div id="parallax-0">
+<div id="parallax-0" class="parallax has-background-black">
     <div class="is-flex-tablet is-align-items-center">
         <div class="column is-half has-text-white">
-            <h2 class="title has-text-white">{{ 'Last news'|trans }} !</h2>
+            <h2 class="subtitle is-2 has-text-success has-text-white">{{ 'Last news'|trans }} !</h2>
             {% set compteur = 0 %}
             <div style="max-height: 70vh;overflow: auto">
                 {% for new in news %}
                     {% if compteur < 5 %}
-                        <article class="shadow-box-1 m-2 p-2 is-relative">
-                            {% if is_granted('ROLE_ADMIN') %}
-                                {{ include('news/edit_news_button.html.twig') }}
-                            {% endif %}
-                            <div class="">
-                                {% if new.title %}
-                                    <h3 class="subtitle has-text-white">{{ new }}</h3>
-                                {% endif %}
-                                {{ new.description|raw }}
-                                <br><br>
-                                <span class="help has-text-right">{{ new.datetime|date('d/m/Y H:i:s') }}</span>
-                            </div>
-                        </article>
+                        {{ include('news/news_article_box.html.twig') }}
                     {% endif %}
                     {% set compteur = compteur + 1 %}
                 {% endfor %}
+            </div>
+            <div class="column">
+                <a href="" class="button is-success is-light box-shadow-bulma has-text-weight-bold">{{ 'All news'|trans }} ...</a>
             </div>
         </div>
         <div class="column is-half">
