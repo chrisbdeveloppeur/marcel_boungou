@@ -1,9 +1,18 @@
 <div id="parallax-0">
     <div class="is-flex-tablet is-align-items-center">
-        <div class="column is-half">
-            <h1 class="title is-1 has-text-success">Hello Parallax</h1>
-            <h2 class="subtitle has-text-success">A simple boilerplate for setting up parallax <br> using the Bulma Hero container.</h2>
-            <a href="#" class="button is-success is-medium is-outlined">Learn More&ensp;<i class="fad fa-chevron-right"></i></a>
+        <div class="column is-half has-text-white">
+            {% for new in news %}
+                <article class="message">
+                    {% if new.title %}
+                        <h3 class="subtitle">{{ new }}</h3>
+                    {% endif %}
+                    <div class="message-body">
+                        {{ new.description|raw }}
+                        <br>
+                        <span class="help">{{ new.datetime|date('d/m/Y H:i:s') }}</span>
+                    </div>
+                </article>
+            {% endfor %}
         </div>
         <div class="column is-half">
             <figure class="" style="position:relative;height: 90vh;">

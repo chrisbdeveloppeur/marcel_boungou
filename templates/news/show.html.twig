@@ -10,7 +10,7 @@
             <a class="button is-dark is-fullwidth" href="{{ path('news_index') }}">{% trans %}back to news list{% endtrans %}</a>
         </div>
         <div class="px-1 py-1">
-            <a class="button is-success is-fullwidth" href="{{ path('news_edit', {'id': new.id}) }}">{% trans %}edit{% endtrans %}</a>
+            <a class="button is-success is-fullwidth" href="{{ path('news_edit', {'id': news.id}) }}">{% trans %}edit{% endtrans %}</a>
         </div>
     </div>
 
@@ -27,11 +27,11 @@
             </tr>
             <tr>
                 <th>{% trans %}Description{% endtrans %}</th>
-                <td>{{ news.description }}</td>
+                <td>{{ news.description|raw }}</td>
             </tr>
             <tr>
                 <th>{% trans %}Datetime{% endtrans %}</th>
-                <td>{{ news.datetime ? news.datetime|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ news.datetime ? news.datetime|date('d/m/Y H:i:s') : '' }}</td>
             </tr>
             </tbody>
         </table>
