@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}News{% endtrans %}{% endblock %}
+
+{% block body %}
+    <h1 class="has-text-white subtitle has-text-centered">{% trans %}News{% endtrans %}<b> {{ news }}</b></h1>
+
+    <div class="column is-flex-tablet is-flex-direction-row is-justify-content-center">
+        <div class="px-1 py-1">
+            <a class="button is-dark is-fullwidth" href="{{ path('news_index') }}">{% trans %}back to news list{% endtrans %}</a>
+        </div>
+        <div class="px-1 py-1">
+            <a class="button is-success is-fullwidth" href="{{ path('news_edit', {'id': new.id}) }}">{% trans %}edit{% endtrans %}</a>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <table class="table">
+            <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ news.id }}</td>
+            </tr>
+            <tr>
+                <th>{% trans %}Title{% endtrans %}</th>
+                <td>{{ news.title }}</td>
+            </tr>
+            <tr>
+                <th>{% trans %}Description{% endtrans %}</th>
+                <td>{{ news.description }}</td>
+            </tr>
+            <tr>
+                <th>{% trans %}Datetime{% endtrans %}</th>
+                <td>{{ news.datetime ? news.datetime|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    {{ include('news/_delete_form.html.twig') }}
+
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}News index{% endtrans %}{% endblock %}
+
+{% block body %}
+    <h1 class="title has-text-white">{% trans %}News index{% endtrans %}</h1>
+
+    <div class="column is-flex-tablet is-flex-direction-row">
+        <div class="px-1 py-1">
+            <a class="button is-dark is-fullwidth" href="{{ path('home_index') }}">{{ 'Back to News page'|trans }}</a>
+        </div>
+        <div class="px-1 py-1">
+            <a class="button is-success is-fullwidth" href="{{ path('news_new') }}">{% trans %}Create new{% endtrans %}</a>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>{% trans %}Title{% endtrans %}</th>
+                    <th>{% trans %}Content{% endtrans %}</th>
+                    <th>{% trans %}Datetime{% endtrans %}</th>
+                    <th>{% trans %}Actions{% endtrans %}</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for news in news %}
+                <tr>
+                    <td>{{ news.id }}</td>
+                    <td>{{ news.title }}</td>
+                    <td>{{ news.description|raw }}</td>
+                    <td>{{ news.datetime ? news.datetime|date('Y-m-d H:i:s') : '' }}</td>
+                    <td>
+                        <a href="{{ path('news_show', {'id': news.id}) }}">{% trans %}show{% endtrans %}</a>
+                        <a href="{{ path('news_edit', {'id': news.id}) }}">{% trans %}edit{% endtrans %}</a>
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="5">{% trans %}no records found{% endtrans %}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="column is-flex-tablet is-flex-direction-row">
+        <div class="px-1 py-1">
+            <a class="button is-dark is-fullwidth" href="{{ path('news_home') }}">{{ 'Back to News page'|trans }}</a>
+        </div>
+        <div class="px-1 py-1">
+            <a class="button is-success is-fullwidth" href="{{ path('news_new') }}">{% trans %}Create new{% endtrans %}</a>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}Add a News{% endtrans %}{% endblock %}
+
+{% block body %}
+    {% block body %}
+        <div class="is-flex align-content-center is-justify-content-center is-100vh">
+            <div class="is-flex is-flex-direction-column is-align-items-center">
+                <h1 class="subtitle is-3 has-text-white">{% trans %}Add a News{% endtrans %}</h1>
+                {{ include('themes/_form.html.twig') }}
+            </div>
+        </div>
+    {% endblock %}
+{% endblock %}
