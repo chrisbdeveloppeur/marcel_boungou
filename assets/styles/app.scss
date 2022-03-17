@@ -40,6 +40,14 @@ $modal-content-width: auto;
   max-width: 1000px;
 }
 
+.has-background-success-layer{
+  background: $success-layer;
+}
+.has-background-primary-layer{
+  background: $primary-layer;
+}
+
+
 .tag.is-active{
   background-color: $success !important;
 }
