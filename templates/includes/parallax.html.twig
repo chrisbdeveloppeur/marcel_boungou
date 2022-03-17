@@ -6,13 +6,13 @@
             <div style="max-height: 70vh;overflow: auto">
                 {% for new in news %}
                     {% if compteur < 5 %}
-                        <article class="message is-small is-relative">
+                        <article class="shadow-box-1 m-2 p-2 is-relative">
                             {% if is_granted('ROLE_ADMIN') %}
                                 {{ include('news/edit_news_button.html.twig') }}
                             {% endif %}
-                            <div class="message-body">
+                            <div class="">
                                 {% if new.title %}
-                                    <h3 class="subtitle">{{ new }}</h3>
+                                    <h3 class="subtitle has-text-white">{{ new }}</h3>
                                 {% endif %}
                                 {{ new.description|raw }}
                                 <br><br>
