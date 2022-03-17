@@ -6,6 +6,7 @@ use App\Repository\AlbumRepository;
 use App\Repository\BookRepository;
 use App\Repository\EventRepository;
 use App\Repository\MusicRepository;
+use App\Repository\NewsRepository;
 use App\Repository\PictureRepository;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\ControllerEvent;
@@ -13,10 +14,10 @@ use Twig\Environment;
 
 class TwigEventSubscriber implements EventSubscriberInterface
 {
-    private $twig, $eventRepository, $musicRepository, $albumRepository, $bookRepository, $pictureRepository;
+    private $twig, $eventRepository, $musicRepository, $albumRepository, $bookRepository, $pictureRepository, $newsRepository;
 
 
-    public function __construct(Environment $twig, EventRepository $eventRepository, MusicRepository $musicRepository, AlbumRepository $albumRepository, BookRepository $bookRepository, PictureRepository $pictureRepository)
+    public function __construct(Environment $twig, EventRepository $eventRepository, MusicRepository $musicRepository, AlbumRepository $albumRepository, BookRepository $bookRepository, PictureRepository $pictureRepository, NewsRepository $newsRepository)
     {
         $this->twig = $twig;
         $this->eventRepository = $eventRepository;
@@ -24,6 +25,7 @@ class TwigEventSubscriber implements EventSubscriberInterface
         $this->albumRepository = $albumRepository;
         $this->bookRepository = $bookRepository;
         $this->pictureRepository = $pictureRepository;
+        $this->newsRepository = $newsRepository;
     }
 
     public function onControllerEvent(ControllerEvent $event)
@@ -34,11 +36,13 @@ class TwigEventSubscriber implements EventSubscriberInterface
         $albums = $this->albumRepository->findByYear();
         $books = $this->bookRepository->findAll();
         $pictures = $this->pictureRepository->findAll();
+        $news = $this->newsRepository->findAll();
         $this->twig->addGlobal('events', $events);
         $this->twig->addGlobal('musics', $musics);
         $this->twig->addGlobal('albums', $albums);
         $this->twig->addGlobal('books', $books);
         $this->twig->addGlobal('pictures', $pictures);
+        $this->twig->addGlobal('news', $news);
     }
 
     public static function getSubscribedEvents()

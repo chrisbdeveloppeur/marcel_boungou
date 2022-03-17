@@ -1161,6 +1161,58 @@
         <source>In future</source>
         <target>Prochainement</target>
       </trans-unit>
+      <trans-unit id="XrGmQB8" resname="News &lt;b&gt;">
+        <source>News &lt;b&gt;</source>
+        <target><![CDATA[__News <b>]]></target>
+      </trans-unit>
+      <trans-unit id="Hhp3MSt" resname="Add a News">
+        <source>Add a News</source>
+        <target>Ajouter une nouvelle</target>
+      </trans-unit>
+      <trans-unit id="2vKC5kR" resname="Back to News list">
+        <source>Back to News list</source>
+        <target>Retour à la liste des nouvelles</target>
+      </trans-unit>
+      <trans-unit id="bVSUjmh" resname="Edit News">
+        <source>Edit News</source>
+        <target>Modifier la nouvelle</target>
+      </trans-unit>
+      <trans-unit id="Qv.O4vB" resname="New's title">
+        <source>New's title</source>
+        <target>Titre de la nouvelle</target>
+      </trans-unit>
+      <trans-unit id="DWy9drF" resname="New's content">
+        <source>New's content</source>
+        <target>Contenu de la nouvelle</target>
+      </trans-unit>
+      <trans-unit id="0aaie9C" resname="New Event">
+        <source>New Event</source>
+        <target>Ajouter une nouvelle</target>
+      </trans-unit>
+      <trans-unit id="2_flmdx" resname="Manage News">
+        <source>Manage News</source>
+        <target>Gérer les nouvelles</target>
+      </trans-unit>
+      <trans-unit id="1OBK6Qg" resname="News index">
+        <source>News index</source>
+        <target>Liste des nouvelles</target>
+      </trans-unit>
+      <trans-unit id="2uQKeAN" resname="Back to News page">
+        <source>Back to News page</source>
+        <target>Retour à la page des nouvelles</target>
+      </trans-unit>
+      <trans-unit id="R70pB1_" resname="Content">
+        <source>Content</source>
+        <target>Contenu</target>
+      </trans-unit>
+      <trans-unit id="aXUvIxO" resname="News">
+        <source>News</source>
+        <target>Nouvelles</target>
+      </trans-unit>
+      <trans-unit id="uqJ3G9s" resname="back to news list">
+        <source>back to news list</source>
+        <target>Retour à la liste des nouvelles</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
