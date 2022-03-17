@@ -48,7 +48,7 @@ class NewsController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->persist($news);
             $entityManager->flush();
-            $msg = $this->translator->trans('News <b>'.$news.'</b> created with success');
+            $msg = $this->translator->trans('News ').'<b>'.$news.'</b>'.$this->translator->trans(' created with success');
             $this->addFlash('success',$msg);
             return $this->redirectToRoute('news_index', [], Response::HTTP_SEE_OTHER);
         }
@@ -85,7 +85,8 @@ class NewsController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
-
+            $msg = $this->translator->trans('Changes made successfully');
+            $this->addFlash('success',$msg);
             return $this->redirectToRoute('news_index', [], Response::HTTP_SEE_OTHER);
         }
 
@@ -110,7 +111,7 @@ class NewsController extends AbstractController
             $entityManager->remove($news);
             $entityManager->flush();
         }
-
+        $this->addFlash('warning', $this->translator->trans('Element deleted successfuly'));
         return $this->redirectToRoute('news_index', [], Response::HTTP_SEE_OTHER);
     }
 }

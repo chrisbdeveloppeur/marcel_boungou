@@ -1217,6 +1217,22 @@
         <source>Last news</source>
         <target>Dernières nouvelles</target>
       </trans-unit>
+      <trans-unit id="2axInd9" resname="The title is not required">
+        <source>The title is not required</source>
+        <target>Le titre n'est pas obligatoire</target>
+      </trans-unit>
+      <trans-unit id="Z8d5DJ_" resname="All news">
+        <source>All news</source>
+        <target>Toutes les nouvelles</target>
+      </trans-unit>
+      <trans-unit id="ThWpU7s" resname="News ">
+        <source>News </source>
+        <target>Nouvelle </target>
+      </trans-unit>
+      <trans-unit id="9b01fZ9" resname=" created with success">
+        <source> created with success</source>
+        <target> créé avec succès</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

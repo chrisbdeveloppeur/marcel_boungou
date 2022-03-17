@@ -23,7 +23,8 @@ class NewsType extends AbstractType
     {
         $builder
             ->add('title', TextType::class,[
-                'required' => true,
+                'required' => false,
+                'help' => $this->translator->trans('The title is not required'),
                 'attr' => [
                     'class' => 'input'
                 ],
@@ -31,7 +32,7 @@ class NewsType extends AbstractType
             ])
             ->add('description', CKEditorType::class,[
                 'config' => ['toolbar' => 'full'],
-                'required' => false,
+                'required' => true,
                 'attr' => [
                     'class' => 'textarea'
                 ],
