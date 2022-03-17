@@ -48,7 +48,7 @@ class NewsController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->persist($news);
             $entityManager->flush();
-            $msg = $this->translator->trans('News ').'<b>'.$news.'</b>'.$this->translator->trans(' created with success');
+            $msg = $this->translator->trans('News ').'<b>'.$news->getTitle().'</b>'.$this->translator->trans(' created with success');
             $this->addFlash('success',$msg);
             return $this->redirectToRoute('news_index', [], Response::HTTP_SEE_OTHER);
         }

@@ -26,12 +26,12 @@
                 </tr>
             </thead>
             <tbody>
-            {% for news in news %}
+            {% for news in news|sort((a, b) => b.datetime <=> a.datetime) %}
                 <tr>
                     <td>{{ news.id }}</td>
                     <td>{{ news.title }}</td>
                     <td>{{ news.description|raw }}</td>
-                    <td>{{ news.datetime ? news.datetime|date('Y-m-d H:i:s') : '' }}</td>
+                    <td>{{ news.datetime ? news.datetime|date('d/m/Y H:i:s') : '' }}</td>
                     <td>
                         <a href="{{ path('news_show', {'id': news.id}) }}">{% trans %}show{% endtrans %}</a>
                         <a href="{{ path('news_edit', {'id': news.id}) }}">{% trans %}edit{% endtrans %}</a>
