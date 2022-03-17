@@ -17,13 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fb824c9e5
-DTSTAMP;TZID=Europe/Paris:20220224T224122
+UID:6232fa600853f
+DTSTAMP;TZID=Europe/Paris:20220317T100744
 SUMMARY:sint
-DESCRIPTION:In placeat est assumenda omnis vel. Qui incidunt corrupti et ex
- pedita est laborum. Consectetur iusto adipisci porro odit illo.
-LOCATION:1\, boulevard Baron\, 06 248 Boyer\, Boyer
-DTSTART;TZID=Europe/Paris:20220222T152540
-DTEND;TZID=Europe/Paris:20220222T152540
+DESCRIPTION:Rem architecto nemo consequuntur reiciendis hic impedit molesti
+ as. Omnis rem aperiam pariatur adipisci sit ea. Reprehenderit necessitatib
+ us eaque illo illum occaecati repellat provident voluptatem.
+LOCATION:15\, boulevard de Marion\, 11837 Leroydan\, Leroydan
+DTSTART;TZID=Europe/Paris:20220316T044704
+DTEND;TZID=Europe/Paris:20220316T044704
 END:VEVENT
 END:VCALENDAR

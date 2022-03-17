@@ -7,6 +7,7 @@ use App\Entity\Album;
 use App\Entity\Book;
 use App\Entity\Event;
 use App\Entity\Music;
+use App\Entity\News;
 use App\Entity\Picture;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
@@ -95,6 +96,14 @@ class AppFixtures extends Fixture
             $picture->setTitle($faker->word);
             $picture->setImage('https://bulma.io/images/placeholders/240x720.png');
             $manager->persist($picture);
+            $manager->flush();
+        }
+
+        for ($i = -1; $i <= 15; $i++){
+            $new = new News();
+            $new->setTitle($faker->randomElement([$faker->word,null]));
+            $new->setDescription($faker->text($faker->numberBetween('100','500')));
+            $manager->persist($new);
             $manager->flush();
         }
 

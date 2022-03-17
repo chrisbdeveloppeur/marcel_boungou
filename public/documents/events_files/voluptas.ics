@@ -15,21 +15,15 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
-BEGIN:STANDARD
-DTSTART:20221030T030000
-TZOFFSETFROM:+0200
-TZOFFSETTO:+0100
-END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6227b697f0f48
-DTSTAMP;TZID=Europe/Paris:20220308T210335
+UID:6232fa600fde9
+DTSTAMP;TZID=Europe/Paris:20220317T100744
 SUMMARY:voluptas
-DESCRIPTION:Aut quis libero quo alias qui laborum nesciunt. Quod aspernatur
-  enim voluptatem et inventore sit. Eligendi velit hic nam architecto et ea
-  omnis possimus. Qui est enim placeat est facere est.
-LOCATION:7\, impasse Luce Royer\, 14484 De Sousa\, De Sousa
-DTSTART;TZID=Europe/Paris:20220430T032234
-DTEND;TZID=Europe/Paris:20220430T032234
+DESCRIPTION:Asperiores dolorum quis eos quaerat omnis. Aut voluptatem nisi 
+ laborum et magni. Unde quod nemo corporis vitae itaque facilis.
+LOCATION:4\, rue Lagarde\, 09125 Maury\, Maury
+DTSTART;TZID=Europe/Paris:20220412T031228
+DTEND;TZID=Europe/Paris:20220412T031228
 END:VEVENT
 END:VCALENDAR

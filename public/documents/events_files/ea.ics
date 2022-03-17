@@ -15,15 +15,23 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621f8c507e832
-DTSTAMP;TZID=Europe/Paris:20220302T162504
+UID:6232fa60129db
+DTSTAMP;TZID=Europe/Paris:20220317T100744
 SUMMARY:ea
-DESCRIPTION:Qui qui repellat assumenda. Dolorem dignissimos officiis odio e
- xercitationem doloribus omnis. Et est voluptatem et atque.
-LOCATION:69\, rue Marcelle Clerc\, 74309 Bruneaudan\, Bruneaudan
-DTSTART;TZID=Europe/Paris:20220321T033840
-DTEND;TZID=Europe/Paris:20220321T033840
+DESCRIPTION:Est dolorem cum placeat cupiditate. Assumenda totam qui cum eos
+  a eum. Excepturi assumenda et autem. Voluptates ab ut sunt. Maiores nisi 
+ dolor corporis ad voluptates expedita et. Quae assumenda assumenda repella
+ t fugit aut. Illum voluptatem soluta ducimus perspiciatis minus et aperiam
+ . Asperiores velit quis assumenda consequatur mollitia repudiandae qui.
+LOCATION:28\, rue de Bouvier\, 18129 Joseph\, Joseph
+DTSTART;TZID=Europe/Paris:20220429T065040
+DTEND;TZID=Europe/Paris:20220429T065040
 END:VEVENT
 END:VCALENDAR

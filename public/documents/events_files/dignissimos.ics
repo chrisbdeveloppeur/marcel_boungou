@@ -15,15 +15,21 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621b5a850b7da
-DTSTAMP;TZID=Europe/Paris:20220227T120333
+UID:6232fa6013fe4
+DTSTAMP;TZID=Europe/Paris:20220317T100744
 SUMMARY:dignissimos
-DESCRIPTION:Est ea commodi corrupti. Reiciendis et iusto commodi. Nam tempo
- re temporibus saepe totam.
-LOCATION:174\, impasse de Munoz\, 77 167 Delattre\, Delattre
-DTSTART;TZID=Europe/Paris:20220312T175356
-DTEND;TZID=Europe/Paris:20220312T175356
+DESCRIPTION:Vitae atque quod reiciendis enim atque saepe est. Laudantium qu
+ i corporis molestiae alias. Ut perferendis quod sed voluptatem vero. Exerc
+ itationem et dolorem delectus. Inventore quo explicabo sunt.
+LOCATION:74\, rue Gay\, 38 080 Lecomteboeuf\, Lecomteboeuf
+DTSTART;TZID=Europe/Paris:20220509T230812
+DTEND;TZID=Europe/Paris:20220509T230812
 END:VEVENT
 END:VCALENDAR

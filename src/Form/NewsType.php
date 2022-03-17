@@ -30,7 +30,7 @@ class NewsType extends AbstractType
                 'label' => $this->translator->trans('New\'s title'),
             ])
             ->add('description', CKEditorType::class,[
-                'config' => ['toolbar' => 'standard'],
+                'config' => ['toolbar' => 'full'],
                 'required' => false,
                 'attr' => [
                     'class' => 'textarea'

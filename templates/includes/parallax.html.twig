@@ -1,18 +1,28 @@
 <div id="parallax-0">
     <div class="is-flex-tablet is-align-items-center">
         <div class="column is-half has-text-white">
-            {% for new in news %}
-                <article class="message">
-                    {% if new.title %}
-                        <h3 class="subtitle">{{ new }}</h3>
+            <h2 class="title has-text-white">{{ 'Last news'|trans }} !</h2>
+            {% set compteur = 0 %}
+            <div style="max-height: 70vh;overflow: auto">
+                {% for new in news %}
+                    {% if compteur < 5 %}
+                        <article class="message is-small is-relative">
+                            {% if is_granted('ROLE_ADMIN') %}
+                                {{ include('news/edit_news_button.html.twig') }}
+                            {% endif %}
+                            <div class="message-body">
+                                {% if new.title %}
+                                    <h3 class="subtitle">{{ new }}</h3>
+                                {% endif %}
+                                {{ new.description|raw }}
+                                <br><br>
+                                <span class="help has-text-right">{{ new.datetime|date('d/m/Y H:i:s') }}</span>
+                            </div>
+                        </article>
                     {% endif %}
-                    <div class="message-body">
-                        {{ new.description|raw }}
-                        <br>
-                        <span class="help">{{ new.datetime|date('d/m/Y H:i:s') }}</span>
-                    </div>
-                </article>
-            {% endfor %}
+                    {% set compteur = compteur + 1 %}
+                {% endfor %}
+            </div>
         </div>
         <div class="column is-half">
             <figure class="" style="position:relative;height: 90vh;">
