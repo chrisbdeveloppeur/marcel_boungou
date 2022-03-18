@@ -1,5 +1,5 @@
 <div class="{{ album }} column is-one-quarter" id="{{ album }}">
-    <figure class="{{ album }}image is-s{{ album }}quare">
+    <figure class="image is-square">
         {% if album and album.image %}{{ album }}
             <img src="{{ vich_uploader_asset(album, 'imageFile') }}" alt="">
         {% else %}

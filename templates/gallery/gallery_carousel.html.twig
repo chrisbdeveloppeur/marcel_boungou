@@ -2,8 +2,10 @@
 <div class="carousel pictures-carousel box-shadow-bulma" style="height: 200px;">
     {% set count_picture = 0 %}
     {% for picture in pictures %}
-        {% if count_picture < 10 %}
-            {{ include('gallery/picture_container.html.twig') }}
+        {% if count_picture < 5 %}
+            {% if picture.image %}
+                {{ include('gallery/picture_container.html.twig') }}
+            {% endif %}
         {% endif %}
         {% set count_picture = count_picture + 1 %}
     {% endfor %}
