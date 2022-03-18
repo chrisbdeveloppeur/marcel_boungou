@@ -17,17 +17,16 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621733d148b1d
-DTSTAMP;TZID=Europe/Paris:20220224T082921
+UID:62348976999c3
+DTSTAMP;TZID=Europe/Paris:20220318T143030
 SUMMARY:nostrum
-DESCRIPTION:Fugiat dolorem voluptatem aut. Necessitatibus fuga voluptatem a
- . Excepturi a suscipit nihil inventore praesentium soluta. Voluptatem odit
-  magnam rerum et consequatur odio dicta. Exercitationem dignissimos provid
- ent dolorum aut numquam eum. Modi voluptates qui rerum. Veniam fuga modi u
- nde quia non maiores voluptatem.
-LOCATION:3\, chemin Henriette Meyer\, 08 149 Allain-sur-Mer\, Allain-sur-Me
- r
-DTSTART;TZID=Europe/Paris:20220304T125012
-DTEND;TZID=Europe/Paris:20220304T125012
+DESCRIPTION:Aut aspernatur aut voluptas iusto eveniet. Facilis quisquam ear
+ um fugit assumenda eum. Earum officiis esse eaque dicta corporis aut quia.
+  Dolorem cum tempora possimus veritatis veritatis laudantium. Veniam quae 
+ tempora rerum aperiam in praesentium in. Vero corrupti error ducimus ut am
+ et.
+LOCATION:98\, avenue Blanc\, 17441 Dupont-sur-Mathieu\, Dupont-sur-Mathieu
+DTSTART;TZID=Europe/Paris:20220316T111314
+DTEND;TZID=Europe/Paris:20220316T111314
 END:VEVENT
 END:VCALENDAR

@@ -17,14 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:622e5fd97f064
-DTSTAMP;TZID=Europe/Paris:20220313T221921
+UID:62348976a4670
+DTSTAMP;TZID=Europe/Paris:20220318T143030
 SUMMARY:rerum
-DESCRIPTION:Quasi et asperiores nihil qui porro accusantium neque. Hic omni
- s quasi aut quidem dicta veritatis eaque. Autem nesciunt voluptatem earum 
- consequatur. Ullam sed magni reprehenderit cupiditate.
-LOCATION:49\, impasse Diallo\, 75 877 Blot\, Blot
-DTSTART;TZID=Europe/Paris:20220311T043736
-DTEND;TZID=Europe/Paris:20220311T043736
+DESCRIPTION:Qui vitae eos assumenda natus qui explicabo pariatur reiciendis
+ . Vitae beatae non odit vitae quis nihil. Sint ut qui dolor reiciendis ill
+ o laboriosam. Nam impedit fuga totam consequuntur eligendi. Occaecati repu
+ diandae non earum qui dolorem iure qui porro.
+LOCATION:rue de Le Roux\, 31445 Pelletier\, Pelletier
+DTSTART;TZID=Europe/Paris:20220421T234039
+DTEND;TZID=Europe/Paris:20220421T234039
 END:VEVENT
 END:VCALENDAR

@@ -15,15 +15,22 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6229e002b4bc5
-DTSTAMP;TZID=Europe/Paris:20220310T122450
+UID:62348976a82aa
+DTSTAMP;TZID=Europe/Paris:20220318T143030
 SUMMARY:explicabo
-DESCRIPTION:Atque praesentium natus voluptatibus. Quia iste excepturi elige
- ndi dignissimos dolor est sequi.
-LOCATION:14\, place Payet\, 94990 Alexandre\, Alexandre
-DTSTART;TZID=Europe/Paris:20220329T084107
-DTEND;TZID=Europe/Paris:20220329T084107
+DESCRIPTION:Nesciunt eum veritatis distinctio voluptates natus ex. Placeat 
+ voluptatum quia omnis. Ducimus ut non quam provident deleniti voluptatem. 
+ Dolorem dolores unde suscipit autem. Sunt optio est sunt consequatur. Temp
+ ore sint distinctio dolor nam et.
+LOCATION:84\, chemin Martin Aubert\, 01624 Leclercqnec\, Leclercqnec
+DTSTART;TZID=Europe/Paris:20220510T200124
+DTEND;TZID=Europe/Paris:20220510T200124
 END:VEVENT
 END:VCALENDAR

@@ -17,13 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:622e6018e2bdf
-DTSTAMP;TZID=Europe/Paris:20220313T222024
+UID:623489769d9e7
+DTSTAMP;TZID=Europe/Paris:20220318T143030
 SUMMARY:minus
-DESCRIPTION:Error saepe ea officiis eveniet sunt enim. Voluptas voluptas es
- t voluptatum reprehenderit laboriosam pariatur est. Fuga cum est est.
-LOCATION:565\, chemin Diane Leroux\, 69 834 Techer\, Techer
-DTSTART;TZID=Europe/Paris:20220317T181450
-DTEND;TZID=Europe/Paris:20220317T181450
+DESCRIPTION:Tenetur qui iusto hic veritatis. Est rerum tenetur earum ullam 
+ quo. Iste molestiae velit expedita dicta explicabo. Voluptatibus nemo mole
+ stias neque quibusdam iusto aut. Voluptatem est sed pariatur sint. Sed ius
+ to voluptatem est sit. Dolores tempora et officiis inventore ipsam. Molest
+ iae nulla id voluptatibus possimus voluptatem id dignissimos. Quia eos del
+ ectus eaque voluptatum qui modi.
+LOCATION:41\, rue Alix Valette\, 42 809 Giraud\, Giraud
+DTSTART;TZID=Europe/Paris:20220322T163956
+DTEND;TZID=Europe/Paris:20220322T163956
 END:VEVENT
 END:VCALENDAR

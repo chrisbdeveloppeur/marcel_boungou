@@ -17,18 +17,14 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621b5a60d138d
-DTSTAMP;TZID=Europe/Paris:20220227T120256
+UID:62348976a09e8
+DTSTAMP;TZID=Europe/Paris:20220318T143030
 SUMMARY:vitae
-DESCRIPTION:Delectus libero similique quas aut. Deserunt et culpa nobis. Ut
-  voluptas beatae ut sed amet consequatur. Incidunt quia voluptatem eum rei
- ciendis ducimus debitis. Tempora quia harum ullam commodi. Quaerat ut in n
- umquam provident doloremque. Maxime aut nulla neque sint rerum eligendi cu
- lpa quasi. Omnis voluptas quo nostrum perspiciatis. Pariatur sit deserunt 
- non iste sit qui et. Asperiores deleniti et omnis perferendis.
-LOCATION:491\, chemin de Martin\, 63446 Bouchet-sur-Delannoy\, Bouchet-sur-
- Delannoy
-DTSTART;TZID=Europe/Paris:20220318T172819
-DTEND;TZID=Europe/Paris:20220318T172819
+DESCRIPTION:Ipsa sed voluptatem totam aut eveniet modi cumque neque. Omnis 
+ quia provident necessitatibus et. Odio corporis sed optio placeat quasi co
+ nsequatur quos.
+LOCATION:46\, rue Lemoine\, 34599 Chretien\, Chretien
+DTSTART;TZID=Europe/Paris:20220331T091953
+DTEND;TZID=Europe/Paris:20220331T091953
 END:VEVENT
 END:VCALENDAR
