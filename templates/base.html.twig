@@ -304,6 +304,54 @@
 </script>
 
 {% block javascripts %}
+    {#          BULMA CAROUSEL            #}
+    <script>
+        //initialize options :
+
+        var options = {
+            initialSlide: 0,
+            slidesToShow: 1,
+            infinite: true,
+            loop:true,
+            effect: 'translate',
+            autoplay: true,
+            navigation:true,
+            navigationSwipe: true,
+            navigationKeys: false,
+            pagination: false,
+            duration:1500,
+            autoplaySpeed:3000,
+        };
+
+        // Initialize all div with carousel class
+        var carousels = bulmaCarousel.attach('.carousel', options);
+
+        // Loop on each carousel initialized
+        for(var i = 0; i < carousels.length; i++) {
+            // Add listener to  event
+            // carousels[i].on('show', state => {
+            //     var slides = state.slides;
+            //     slides.forEach(function (slide) {
+            //         if (slide.classList.contains('is-current')){
+            //             slide.style.zIndex = '1';
+            //         } else {
+            //             slide.style.zIndex = '0';
+            //         }
+            //     })
+            // });
+        }
+
+        // Access to bulmaCarousel instance of an element
+        /*
+        var element = document.querySelector('#my-element');
+        if (element && element.bulmaCarousel) {
+            // bulmaCarousel instance is available as element.bulmaCarousel
+            element.bulmaCarousel.on('before-show', function(state) {
+
+            });
+        }
+        */
+    </script>
 {% endblock %}
 
 

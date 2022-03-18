@@ -1,0 +1,13 @@
+<div class="" style="height: 100%;">
+    <div class="item-{{ count_picture }}" style="height: 100%;">
+        <div class="is-flex is-flex-direction-row is-relative"  style="height: 100%;background:rgba(0,0,0,0)">
+            <figure style="height: 100%;width: 100%">
+            {% if picture.image %}
+                <img src="{{ vich_uploader_asset(picture, 'imageFile') }}" alt="" style="height: 100%;width: 100%;object-fit: fill">
+            {% else %}
+                <img src="https://bulma.io/images/placeholders/720x240.png" alt="" style="height: 100%;max-height: 100%;width: 100%;object-fit: fill">
+            {% endif %}
+            </figure>
+        </div>
+    </div>
+</div>
