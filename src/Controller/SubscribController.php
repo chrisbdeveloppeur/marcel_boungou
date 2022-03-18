@@ -25,16 +25,16 @@ class SubscribController extends AbstractController
     }
 
     /**
-     * @Route("/news/add", name="news_add")
+     * @Route("/news/add", name="news_add", methods={"post"})
      */
-    /*
-    public function newsAdd(): Response
+    public function newsAdd(Request $request): Response
     {
-        return $this->render('subscrib/index.html.twig', [
-            'controller_name' => 'SubscribController',
+        dd($request);
+        return $this->render('home/index.html.twig', [
+
         ]);
     }
-*/
+
 
     /**
      * @Route("/news/remove, name="news_remove")

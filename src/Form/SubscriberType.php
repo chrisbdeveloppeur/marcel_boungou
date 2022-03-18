@@ -24,8 +24,9 @@ class SubscriberType extends AbstractType
             ->add('email', EmailType::class,[
                 'label' => $this->translator->trans('Email'),
                 'attr' => [
-                    'class' => 'input'
-                ]
+                    'class' => 'input has-text-centered',
+                    'placeholder' => $this->translator->trans( 'enter your email here')
+                ],
             ])
         ;
     }

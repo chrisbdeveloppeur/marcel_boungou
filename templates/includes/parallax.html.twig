@@ -48,11 +48,11 @@
     </div>
 
     <div class="column has-background-black">
-        <form action="" class="column is-half is-full-touch has-text-centered">
+        <form class="column is-half is-full-touch has-text-centered" method="post">
             <h3 class="subtitle is-size-4-touch has-text-white">{{ 'You wish to subscribe to our newsletter'|trans }} ?</h3>
             <div class="field has-addons">
                 <div class="control is-expanded">
-                    <input type="email" class="input has-text-centered" placeholder="{{ 'enter your email here'|trans }}">
+                    <input name="email" type="email" class="input has-text-centered" placeholder="{{ 'enter your email here'|trans }}">
                 </div>
                 <div class="control">
                     <button class="button is-full-touch is-success">{{ 'Subscribe now'|trans }}</button>
