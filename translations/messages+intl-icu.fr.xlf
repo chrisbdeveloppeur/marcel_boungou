@@ -1253,6 +1253,22 @@
         <source>Visit Gallery</source>
         <target>Visitez la galerie</target>
       </trans-unit>
+      <trans-unit id="jKa6y.m" resname="Element deleted successfuly : ">
+        <source>Element deleted successfuly : </source>
+        <target>Élément supprimé avec succès : </target>
+      </trans-unit>
+      <trans-unit id="Bz9y9mb" resname="You wish to subscribe to our newsletter">
+        <source>You wish to subscribe to our newsletter</source>
+        <target>Vous souhaitez vous inscrire à notre newsletter</target>
+      </trans-unit>
+      <trans-unit id="_PbjsXS" resname="enter your email here">
+        <source>enter your email here</source>
+        <target>entrez votre email ici</target>
+      </trans-unit>
+      <trans-unit id="xe.ague" resname="Subscribe now">
+        <source>Subscribe now</source>
+        <target>Abonnez-vous maintenant</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
