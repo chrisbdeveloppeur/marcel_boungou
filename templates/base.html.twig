@@ -310,22 +310,29 @@
 
         var options = {
             initialSlide: 0,
-            slidesToShow: 1,
+            slidesToShow: 2,
             infinite: true,
             loop:true,
             effect: 'translate',
             autoplay: true,
-            navigation:true,
+            navigation:false,
             navigationSwipe: true,
             navigationKeys: false,
             pagination: false,
-            duration:4000,
+            duration:6000,
             autoplaySpeed:0,
+            timing: 'linear',
+            pauseOnHover: false,
         };
+
 
         // Initialize all div with carousel class
         var carousels = bulmaCarousel.attach('.carousel', options);
 
+        var nextBtn = document.querySelector(('.slider-navigation-next'));
+        nextBtn.style.display = 'none';
+        var prevBtn = document.querySelector(('.slider-navigation-previous'));
+        prevBtn.style.display = 'none';
         // Loop on each carousel initialized
         for(var i = 0; i < carousels.length; i++) {
             // Add listener to  event

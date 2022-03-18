@@ -1241,6 +1241,18 @@
         <source>What is the latest news at MB Ministry</source>
         <target>Quelles sont les dernières nouvelles chez MB Ministry</target>
       </trans-unit>
+      <trans-unit id="x234BDK" resname="Visit discography">
+        <source>Visit discography</source>
+        <target>Consulter la discographie</target>
+      </trans-unit>
+      <trans-unit id="aCvzyoE" resname="Visit bibliography">
+        <source>Visit bibliography</source>
+        <target>Consulter la bibliographie</target>
+      </trans-unit>
+      <trans-unit id="aHCBRN1" resname="Visit Gallery">
+        <source>Visit Gallery</source>
+        <target>Visitez la galerie</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
