@@ -5,10 +5,12 @@ $success: #da6d00;
 $success-layer: rgba(218, 112, 0, 0.7);
 $primary: #7C4A8C;
 $primary-layer : rgba(124, 74, 140, 0.7);
+$primary-dark-layer : rgba(35, 13, 41, 0.8);
 $black: #0a0a0a;
 $dark: #4a4a4a;
 $white-layer: rgba(255, 255, 255, 0.7);
 $black-layer: rgba(0, 0, 0, 0.7);
+$black-layerless: rgba(0, 0, 0, 0.5);
 
 $footer-background-color: $black;
 $footer-color: $dark;
@@ -45,6 +47,15 @@ $modal-content-width: auto;
 }
 .has-background-primary-layer{
   background: $primary-layer;
+}
+.has-background-primary-dark-layer{
+  background: $primary-dark-layer;
+}
+.has-background-black-layer{
+  background: $black-layer;
+}
+.has-background-black-layerless{
+  background: $black-layerless;
 }
 
 

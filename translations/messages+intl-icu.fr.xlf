@@ -1233,6 +1233,14 @@
         <source> created with success</source>
         <target> créé avec succès</target>
       </trans-unit>
+      <trans-unit id="ALm7EE2" resname="What are the latest news">
+        <source>What are the latest news</source>
+        <target>Quelles sont les dernières nouvelles</target>
+      </trans-unit>
+      <trans-unit id="IorqreK" resname="What is the latest news at MB Ministry">
+        <source>What is the latest news at MB Ministry</source>
+        <target>Quelles sont les dernières nouvelles chez MB Ministry</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
