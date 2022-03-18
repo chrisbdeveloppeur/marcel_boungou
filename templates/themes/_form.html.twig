@@ -102,7 +102,7 @@
                 {% else %}
                     {% if form.vars.value.image is defined and form.vars.value.image %}
                         {% set imageFile = child.vars.name %}
-                        <figure class="image is-2by1 is-relative" style="background: center / contain no-repeat url({{ vich_uploader_asset(form.vars.value, imageFile ) }})">
+                        <figure class="image is-2by1 is-relative" style="background: center / contain no-repeat url('{{ vich_uploader_asset(form.vars.value, imageFile ) }}')">
 {#                            <img src="{{ vich_uploader_asset(form.vars.value, imageFile ) }}" alt="{{ form.vars.value.image }}">#}
                             <div class="buttons"  style="position: absolute;right: .5rem;top: .5rem;">
                                 <a href="{{ vich_uploader_asset(form.vars.value, imageFile ) }}" class="button is-dark is-rounded px-3 py-3 is-small" download="{{ form.vars.value.image }}" title="{% trans %}Download image{% endtrans %}">
