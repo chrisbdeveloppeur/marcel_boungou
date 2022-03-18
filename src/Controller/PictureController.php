@@ -100,12 +100,13 @@ class PictureController extends AbstractController
      */
     public function delete(Request $request, Picture $picture, EntityManagerInterface $entityManager): Response
     {
+        $element = $picture;
         if ($this->isCsrfTokenValid('delete'.$picture->getId(), $request->request->get('_token'))) {
             $entityManager->remove($picture);
             $entityManager->flush();
         }
-        $this->addFlash('warning', $this->translator->trans('Changes made successfully'));
-        return $this->redirectToRoute('gallery_index');
+        $this->addFlash('warning', $this->translator->trans('Element deleted successfuly : ').$picture);
+        return $this->redirectToRoute('picture_index');
     }
 
     /**

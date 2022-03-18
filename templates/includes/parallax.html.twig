@@ -2,6 +2,7 @@
     <div class="is-flex is-justify-content-center is-align-items-center has-background-black-layer">
         <div class="column" style="min-height: 100vh">
             <h3 class="subtitle is-2 has-text-success">WELCOME...</h3>
+            <p class="subtitle has-text-grey-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur at dolorem doloremque dolorum est ex expedita in magnam, nobis officiis provident reiciendis sit tempora ut velit vitae. Illum, velit.</p>
             <div class="container has-text-white">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi debitis doloremque dolores iure, maxime praesentium quidem repellendus. A deleniti hic id inventore, minima minus placeat possimus praesentium quasi rerum veniam.
             </div>
@@ -23,6 +24,7 @@
     <div class="is-flex-desktop is-align-items-center">
         <div class="column is-half-desktop has-text-white is-flex is-flex-direction-column is-justify-content-center">
             <h2 class="subtitle is-4 has-text-white has-text-centered">{{ 'What is the latest news at MB Ministry'|trans }} ?</h2>
+            <p class="subtitle has-text-grey-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur at dolorem doloremque dolorum est ex expedita in magnam, nobis officiis provident reiciendis sit tempora ut velit vitae. Illum, velit.</p>
             {% set compteur = 0 %}
             <div style="max-height: 70vh;overflow: auto">
                 {% for new in news|sort((a, b) => b.datetime <=> a.datetime) %}
@@ -58,6 +60,7 @@
 
     <div class="section">
         <h3 class="subtitle is-2 has-text-white has-text-centered">{{ 'Discography'|trans }}</h3>
+        <p class="subtitle has-text-grey-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur at dolorem doloremque dolorum est ex expedita in magnam, nobis officiis provident reiciendis sit tempora ut velit vitae. Illum, velit.</p>
         <div class="is-flex-tablet is-flex-direction-row is-justify-content-center">
             {% for album in albums %}
                 {% if loop.index <= 3 %}
@@ -72,6 +75,7 @@
 
     <div class="section">
         <h3 class="subtitle is-2 has-text-white has-text-centered">{{ 'Bibliography'|trans }}</h3>
+        <p class="subtitle has-text-grey-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur at dolorem doloremque dolorum est ex expedita in magnam, nobis officiis provident reiciendis sit tempora ut velit vitae. Illum, velit.</p>
         <div class="is-flex-tablet is-flex-direction-row is-justify-content-center">
             {% set book = books[random(books|length-1)] %}
             {{ include('includes/book_box.html.twig') }}
@@ -83,6 +87,7 @@
 
     <div class="section">
         <h3 class="subtitle is-2 has-text-white has-text-centered">{{ 'Gallery'|trans }}</h3>
+        <p class="subtitle has-text-grey-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur at dolorem doloremque dolorum est ex expedita in magnam, nobis officiis provident reiciendis sit tempora ut velit vitae. Illum, velit.</p>
         <div class="column">
             {{ include('gallery/gallery_carousel.html.twig') }}
         </div>
