@@ -11,48 +11,7 @@
         <div class="columns is-multiline">
             {% for music in musics %}
 
-                <div class="music-container fade-effect transition-1s opacity0 {{ music.album }} column is-one-third-tablet is-one-quarter-desktop is-one-fifth-fullhd is-flex is-justify-content-center is-align-items-center is-flex-direction-column scalup-hover" id="{{ music }}">
-
-                    <div class="is-relative" id="musicImage" style="height: 150px;width: 150px;{% if music.album and music.album.image %}background: center / 100% 100% no-repeat url({{ vich_uploader_asset(music.album, 'imageFile') }}){% else %}background: center / 100% 100% no-repeat url('https://bulma.io/images/placeholders/480x480.png'){% endif %}">
-
-                        {% if is_granted('ROLE_ADMIN') %}
-                            {{ include('music/edit_music_button.html.twig') }}
-                        {% endif %}
-
-                        <span class="icon has-text-black pointer-hover play-btn" onclick="startMusic(this)" style="position: absolute;height: 100%;width: 100%;z-index: 1">
-                            <button class="button is-success px-3 py-3 is-rounded">
-                                <i class="fas fa-lg fa-play icon-play"></i>
-                            </button>
-                        </span>
-
-                        <button class="button is-success is-light is-small is-rounded px-3 py-3 loop-btn" style="position: absolute;bottom: .3rem;right: .3rem;z-index: 1">
-                            <span class="icon">
-                                <i class="fas fa-repeat"></i>
-                            </span>
-                        </button>
-
-                        <button class="button is-success is-small is-rounded px-3 py-3 stop-btn" style="position: absolute;bottom: .3rem;left: .3rem;z-index: 1">
-                            <span class="icon">
-                                <i class="fas fa-stop"></i>
-                            </span>
-                        </button>
-
-                        {% if music.musicname %}
-                            <div>
-                                <audio src="{{ vich_uploader_asset(music, 'musicFile') }}" preload="auto"></audio>
-                            </div>
-                        {% endif %}
-
-                    </div>
-
-                    <div class="is-flex is-flex-direction-column is-justify-content-center column px-3 py-3">
-                        <div class="has-text-centered has-text-white music-text">
-                            <span class="has-text-weight-bold music-name">{{ music }}</span>
-                            {% if music.album %}<a data-href="{{ music.album }}" onclick="searchAlbum(this)" class="help"><span class="album-name">{{ music.album }}</span> <span class="album-year">({{ music.album.year }})</span></a>{% endif %}
-                        </div>
-                    </div>
-
-                </div>
+                {{ include('includes/music_container.html.twig') }}
 
             {% endfor %}
         </div>
