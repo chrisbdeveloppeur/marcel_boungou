@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Form\SubcriberType;
 use App\Form\SubscriberType;
 use App\Repository\EventRepository;
+use App\Repository\SubscriberRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -51,17 +52,21 @@ class SubscribController extends AbstractController
     /**
      * @Route("/remove/all", name="remove_all")
      */
-    public function removeAll(EventRepository $eventRepository, Request $request, EntityManagerInterface $em): Response
+    public function removeAll(EventRepository $eventRepository, SubscriberRepository $subscriberRepository, Request $request, EntityManagerInterface $em): Response
     {
         $events = $eventRepository->findAll();
         $form = $this->createForm(SubscriberType::class);
         $form->handleRequest($request);
-        if ($form->isSubmitted() && $form->isValid()){
+        if ($form->isSubmitted()){
             $email = $form->get('email')->getData();
+            $subscriber = $subscriberRepository->findOneBy(['email' => $email]);
+            if ($subscriber){
+                $em->remove($subscriber);
+            }
             foreach ($events as $event){
                 $event->removeMailToRemind($email);
-                $em->flush();
             }
+            $em->flush();
             $this->addFlash('info', $this->translator->trans('Successfully unsubscribed for email : '). $email);
         }
 

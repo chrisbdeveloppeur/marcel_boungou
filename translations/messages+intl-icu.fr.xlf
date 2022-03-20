@@ -1269,6 +1269,18 @@
         <source>Subscribe now</source>
         <target>Abonnez-vous maintenant</target>
       </trans-unit>
+      <trans-unit id="CzbKqdG" resname="Thank you for subscribing to the newsletter">
+        <source>Thank you for subscribing to the newsletter</source>
+        <target>Merci de vous être abonné à la newsletter</target>
+      </trans-unit>
+      <trans-unit id="Thr3x0C" resname="Operation failed">
+        <source>Operation failed</source>
+        <target>L'opération a échoué</target>
+      </trans-unit>
+      <trans-unit id="nwRNa2d" resname="Characters not allowed">
+        <source>Characters not allowed</source>
+        <target>Caractères non autorisés</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
