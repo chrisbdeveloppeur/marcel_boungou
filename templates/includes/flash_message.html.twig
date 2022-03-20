@@ -5,7 +5,40 @@
             <div class="notification is-{{ type }} column is-full is-full-touch borderless has-text-centered">
                 <button class="delete" onclick="this.parentElement.parentElement.removeChild(this.parentElement);"></button>
                 {{ message|raw }}
+
+                {% if subs_form is defined %}
+                    {% set child = subs_form.email %}
+                    {% if form_errors(child) %}
+                            {{ form_errors(child) }}
+                    {% endif %}
+
+                    {% for sub_child in child.children %}
+                        {% if form_errors(sub_child) %}
+                                {{ form_errors(sub_child) }}
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+
+                {% if form is defined %}
+
+                    {% for child in form %}
+                        {% if form_errors(child) %}
+                            {{ form_errors(child) }}
+                        {% endif %}
+
+                        {% for sub_child in child.children %}
+                            {% if form_errors(sub_child) %}
+                                {{ form_errors(sub_child) }}
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+
+                {% endif %}
+
             </div>
         {% endfor %}
     </div>
 {% endfor %}
+
+
+

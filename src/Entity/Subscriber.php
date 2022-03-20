@@ -9,7 +9,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=SubscriberRepository::class)
- * @UniqueEntity(fields={"email"}, message="There is already an account with this email")
+ * @UniqueEntity(fields={"email"}, message="This email is already subscribed to the newsletter")
  */
 class Subscriber
 {
@@ -24,6 +24,11 @@ class Subscriber
      * @ORM\Column(type="string", length=255)
      */
     private $email;
+
+    public function __toString()
+    {
+        return $this->email;
+    }
 
     public function getId(): ?int
     {

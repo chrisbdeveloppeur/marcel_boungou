@@ -2,10 +2,12 @@
 
 namespace App\Form;
 
+use App\Entity\Subscriber;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Validator\Constraints\Regex;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
 class SubscriberType extends AbstractType
@@ -27,6 +29,13 @@ class SubscriberType extends AbstractType
                     'class' => 'input has-text-centered',
                     'placeholder' => $this->translator->trans( 'enter your email here')
                 ],
+                'constraints' => [
+                    new Regex([
+                        'pattern' => "/[&;:<>{}\/]/",
+                        'match' => false,
+                        'message' => $this->translator->trans('Characters not allowed'),
+                    ]),
+                ],
             ])
         ;
     }
@@ -34,7 +43,7 @@ class SubscriberType extends AbstractType
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
-            // Configure your form options here
+            'data_class' => Subscriber::class,
         ]);
     }
 }
