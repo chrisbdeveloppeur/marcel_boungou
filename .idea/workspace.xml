@@ -71,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/emails/event_reminder.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+            <state relative-caret-position="544">
+              <caret line="35" column="130" selection-start-line="35" selection-start-column="130" selection-end-line="35" selection-end-column="130" />
               <folding>
                 <element signature="e#5#93#0#HTML" expanded="true" />
                 <element signature="e#410#452#0#HTML" expanded="true" />
@@ -82,6 +82,9 @@
                 <element signature="e#1178#1467#0#HTML" expanded="true" />
                 <element signature="e#1597#1886#0#HTML" expanded="true" />
                 <element signature="e#2040#2082#0#HTML" expanded="true" />
+                <element signature="e#2117#2142#0#HTML" expanded="true" />
+                <element signature="e#2231#2250#0#HTML" expanded="true" />
+                <element signature="e#2349#2374#0#HTML" expanded="true" />
                 <element signature="e#2204#2223#0#HTML" expanded="true" />
                 <element signature="e#1967#1986#0#HTML" expanded="true" />
               </folding>
@@ -561,12 +564,12 @@
       <workItem from="1647622440161" duration="2445000" />
       <workItem from="1647791386556" duration="6076000" />
       <workItem from="1647963581070" duration="357000" />
-      <workItem from="1647982418443" duration="4025000" />
+      <workItem from="1647982418443" duration="4271000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="620256000" />
+    <option name="totallyTimeSpent" value="620502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1003,8 +1006,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/emails/event_reminder.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+        <state relative-caret-position="544">
+          <caret line="35" column="130" selection-start-line="35" selection-start-column="130" selection-end-line="35" selection-end-column="130" />
           <folding>
             <element signature="e#5#93#0#HTML" expanded="true" />
             <element signature="e#410#452#0#HTML" expanded="true" />
@@ -1014,6 +1017,9 @@
             <element signature="e#1178#1467#0#HTML" expanded="true" />
             <element signature="e#1597#1886#0#HTML" expanded="true" />
             <element signature="e#2040#2082#0#HTML" expanded="true" />
+            <element signature="e#2117#2142#0#HTML" expanded="true" />
+            <element signature="e#2231#2250#0#HTML" expanded="true" />
+            <element signature="e#2349#2374#0#HTML" expanded="true" />
             <element signature="e#2204#2223#0#HTML" expanded="true" />
             <element signature="e#1967#1986#0#HTML" expanded="true" />
           </folding>
