@@ -11,7 +11,7 @@
     <br>Date de l'événement : <span style="font-size: large;font-weight: bold">{{ event.datetime|format_datetime('full','none',locale='fr') }}</span><br>
     Heure : <span style="font-size: large;font-weight: bold">{{ event.datetime|format_datetime('none','short',locale='fr') }}</span>
 
-    <br><br><b>Adresse</b> : <span>{{ event.adresse }}</span><br>
+    <br><br><span>Adresse</span> : <b>{{ event.adresse }}</b><br>
     <a href="https://www.google.com/maps/search/{{ event.adresse }}" style="margin: 5px;font-weight:bold;display: inline-block; background: #fcc245; color: #000000; font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 120%;text-transform: none; padding: 5px 10px; mso-padding-alt: 0px; border-radius: 3px; text-decoration: none;" target="_blank">
         Voir sur maps
     </a>
@@ -32,9 +32,9 @@
     <br><br><br>
 
     <div style="text-align: center;font-size: 12px">
-        Vous voulez stoper <span style="font-weight: bold">les rappels concernant cet évenement</span> ? <a href="http://127.0.0.1:8000/event/reminder/remove/{{ event.id }}" style="color: grey;text-decoration: none">se désabonner</a>
+        Vous voulez stoper <span style="font-weight: bold">les rappels concernant cet évenement</span> ? <a href="http://127.0.0.1:8000/event/reminder/remove/{{ event.id }}" style="color: grey;text-decoration: none">se désabonner</a><br>
         Si vous ne souhaitez ne plus recevoir <span style="font-weight: bold">d'e-mails de www.marcel-boungou.com</span> ? <a href="http://127.0.0.1:8000/event/reminder/remove/all" style="color: grey;text-decoration: none">se désabonner</a>
-        <br><a href="https://marcel-boungou.com" style="color: grey">www.marcel-boungou.com</a>
+        <br><br><a href="https://marcel-boungou.com" style="color: grey">www.marcel-boungou.com</a>
     </div>
 
 </div>
