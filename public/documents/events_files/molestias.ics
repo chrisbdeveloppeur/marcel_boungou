@@ -17,14 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621de2a548297
-DTSTAMP;TZID=Europe/Paris:20220301T100853
+UID:623a39d992f4b
+DTSTAMP;TZID=Europe/Paris:20220322T220425
 SUMMARY:molestias
-DESCRIPTION:Officia placeat dolorum perferendis. Explicabo voluptate quisqu
- am quia consequatur. Tempora eligendi repudiandae ipsa id tenetur minima. 
- Quis ut quia ducimus consequatur est.
-LOCATION:72\, boulevard Philippe Delannoy\, 16388 Loiseau\, Loiseau
-DTSTART;TZID=Europe/Paris:20220228T041848
-DTEND;TZID=Europe/Paris:20220228T041848
+DESCRIPTION:Ipsa enim natus praesentium quia. Repudiandae sequi ducimus ull
+ am a omnis hic. Quis enim voluptas non id excepturi fugiat praesentium.
+LOCATION:4\, chemin Georges Ruiz\, 21 509 Loiseau\, Loiseau
+DTSTART;TZID=Europe/Paris:20220417T011454
+DTEND;TZID=Europe/Paris:20220417T011454
 END:VEVENT
 END:VCALENDAR

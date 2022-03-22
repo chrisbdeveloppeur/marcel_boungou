@@ -17,13 +17,15 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6232fa600fde9
-DTSTAMP;TZID=Europe/Paris:20220317T100744
+UID:623a39d97438e
+DTSTAMP;TZID=Europe/Paris:20220322T220425
 SUMMARY:voluptas
-DESCRIPTION:Asperiores dolorum quis eos quaerat omnis. Aut voluptatem nisi 
- laborum et magni. Unde quod nemo corporis vitae itaque facilis.
-LOCATION:4\, rue Lagarde\, 09125 Maury\, Maury
-DTSTART;TZID=Europe/Paris:20220412T031228
-DTEND;TZID=Europe/Paris:20220412T031228
+DESCRIPTION:Et eaque vel aliquid dignissimos. Et architecto culpa id eum re
+ rum. Adipisci consequatur ut aut voluptatum. Non dolorem maxime nemo non s
+ unt non nam similique. Eligendi iusto non consequatur veritatis facilis. V
+ ero non ut dolores.
+LOCATION:48\, boulevard Joseph Duval\, 40291 Petitdan\, Petitdan
+DTSTART;TZID=Europe/Paris:20220326T224307
+DTEND;TZID=Europe/Paris:20220326T224307
 END:VEVENT
 END:VCALENDAR

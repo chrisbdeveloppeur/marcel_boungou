@@ -75,7 +75,6 @@ class EventReminderCommand extends Command
 
             $mails = $event->getMailsToRemind();
 
-
             if ($date == $dateEventMonth || $date == $dateEventWeek || $date == $dateEventDay){
                 $email = (new TemplatedEmail())
                     ->from('admin@marcelboungou.com')

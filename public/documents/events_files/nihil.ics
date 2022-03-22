@@ -17,16 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:622e6018dd854
-DTSTAMP;TZID=Europe/Paris:20220313T222024
+UID:623a39d986cdd
+DTSTAMP;TZID=Europe/Paris:20220322T220425
 SUMMARY:nihil
-DESCRIPTION:Temporibus aut qui dolorem temporibus saepe iusto. Et eligendi 
- minus quia. Et aut deserunt dicta non velit accusamus. Asperiores sed minu
- s error deleniti id soluta. Nostrum delectus quasi velit laborum ex. Quasi
-  qui non dolor autem. Rerum dolor aperiam eveniet aliquid molestiae eligen
- di.
-LOCATION:rue de Turpin\, 35133 Perez\, Perez
-DTSTART;TZID=Europe/Paris:20220311T105719
-DTEND;TZID=Europe/Paris:20220311T105719
+DESCRIPTION:Praesentium minima accusamus ullam eveniet. Non libero officia 
+ odit tempora.
+LOCATION:12\, avenue Roger Rocher\, 39 043 Marchal\, Marchal
+DTSTART;TZID=Europe/Paris:20220410T152008
+DTEND;TZID=Europe/Paris:20220410T152008
 END:VEVENT
 END:VCALENDAR

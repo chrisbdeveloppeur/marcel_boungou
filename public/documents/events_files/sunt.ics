@@ -17,14 +17,17 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6221edf948fc7
-DTSTAMP;TZID=Europe/Paris:20220304T114617
+UID:623a39d97cf44
+DTSTAMP;TZID=Europe/Paris:20220322T220425
 SUMMARY:sunt
-DESCRIPTION:Autem ut id odit dolorem. Explicabo quia qui voluptatem sit mod
- i perferendis modi. Et eos molestiae libero et distinctio. Sed optio et ut
- .
-LOCATION:impasse de Leduc\, 80 325 Benard\, Benard
-DTSTART;TZID=Europe/Paris:20220416T124029
-DTEND;TZID=Europe/Paris:20220416T124029
+DESCRIPTION:Aliquid non placeat in itaque omnis quo quo. Ipsam neque facere
+  non molestias sit. Quibusdam quia sed ex. Est consequatur nostrum quam fu
+ git non ut. Hic expedita corporis unde quas. Dolores rerum velit magni. Es
+ t et assumenda ipsum quo reprehenderit aspernatur aperiam. Nobis esse quae
+  exercitationem omnis neque et nihil. Deserunt veniam et laboriosam quis e
+ a voluptate.
+LOCATION:221\, boulevard de Chevallier\, 32 157 Peron\, Peron
+DTSTART;TZID=Europe/Paris:20220404T202343
+DTEND;TZID=Europe/Paris:20220404T202343
 END:VEVENT
 END:VCALENDAR

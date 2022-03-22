@@ -15,15 +15,21 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6215f906dd5b5
-DTSTAMP;TZID=Europe/Paris:20220223T100614
+UID:623a39d99d8a1
+DTSTAMP;TZID=Europe/Paris:20220322T220425
 SUMMARY:reiciendis
-DESCRIPTION:Ullam quis eaque beatae quas consequuntur. Cumque reiciendis au
- tem quis est aut.
-LOCATION:74\, rue Leduc\, 54 618 Guyot-la-Forêt\, Guyot-la-Forêt
-DTSTART;TZID=Europe/Paris:20220417T204136
-DTEND;TZID=Europe/Paris:20220417T204136
+DESCRIPTION:Magnam dolorem ut laborum voluptas. Deserunt molestiae ut quia 
+ rerum voluptatum. Officia voluptate vero nam incidunt commodi fugit. Quibu
+ sdam dolore totam omnis.
+LOCATION:rue de Lemonnier\, 21573 Mercier-sur-Adam\, Mercier-sur-Adam
+DTSTART;TZID=Europe/Paris:20220514T173619
+DTEND;TZID=Europe/Paris:20220514T173619
 END:VEVENT
 END:VCALENDAR

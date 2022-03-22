@@ -15,17 +15,24 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:622ba12edcc58
-DTSTAMP;TZID=Europe/Paris:20220311T202118
+UID:623a39d99ce04
+DTSTAMP;TZID=Europe/Paris:20220322T220425
 SUMMARY:quae
-DESCRIPTION:Quod aut sit eius error voluptas. Ut repellendus ea aut veritat
- is ab et. Tenetur maxime modi minus quam laudantium. Libero incidunt id ex
- pedita. Adipisci illo sit molestias et. Id aut dolores sapiente velit enim
-  aspernatur.
-LOCATION:787\, boulevard de Dias\, 49081 Samson-sur-Dias\, Samson-sur-Dias
-DTSTART;TZID=Europe/Paris:20220309T001318
-DTEND;TZID=Europe/Paris:20220309T001318
+DESCRIPTION:Ex voluptate sapiente adipisci doloribus dolores. Tenetur et qu
+ as hic commodi qui. Dolor repellendus ratione ut et expedita voluptate sus
+ cipit. Animi excepturi laborum est sit quia minima. Tempora dolor quis sae
+ pe possimus magnam ut quaerat. Ut animi modi consequatur. Et deleniti occa
+ ecati maxime.
+LOCATION:98\, impasse Suzanne Blanchet\, 81092 Baron-sur-Lambert\, Baron-su
+ r-Lambert
+DTSTART;TZID=Europe/Paris:20220504T060941
+DTEND;TZID=Europe/Paris:20220504T060941
 END:VEVENT
 END:VCALENDAR
