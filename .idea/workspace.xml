@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c513a9b-8917-4b63-8b91-a519e09de280" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/public/documents/events_files/at.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/at.ics" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/documents/events_files/facere.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/facere.ics" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/documents/events_files/iure.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/iure.ics" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/documents/events_files/molestias.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/molestias.ics" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/documents/events_files/nihil.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/nihil.ics" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/documents/events_files/quae.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/quae.ics" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/documents/events_files/quibusdam.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/quibusdam.ics" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/documents/events_files/reiciendis.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/reiciendis.ics" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/documents/events_files/sunt.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/sunt.ics" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/documents/events_files/tenetur.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/tenetur.ics" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/documents/events_files/ut.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/ut.ics" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/documents/events_files/voluptas.ics" beforeDir="false" afterPath="$PROJECT_DIR$/public/documents/events_files/voluptas.ics" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/EventReminderCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/EventReminderCommand.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/emails/event_reminder.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/emails/event_reminder.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/event/event_card.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/event/event_card.html.twig" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,18 +71,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/emails/event_reminder.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="527">
+              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
               <folding>
                 <element signature="e#5#93#0#HTML" expanded="true" />
-                <element signature="e#332#356#0#HTML" expanded="true" />
-                <element signature="e#398#440#0#HTML" expanded="true" />
-                <element signature="e#534#576#0#HTML" expanded="true" />
+                <element signature="e#410#452#0#HTML" expanded="true" />
+                <element signature="e#546#588#0#HTML" expanded="true" />
                 <element signature="e#714#1014#0#HTML" expanded="true" />
                 <element signature="e#1074#1100#0#HTML" expanded="true" />
                 <element signature="e#1178#1467#0#HTML" expanded="true" />
                 <element signature="e#1597#1886#0#HTML" expanded="true" />
-                <element signature="e#1939#1965#0#HTML" expanded="true" />
+                <element signature="e#2040#2082#0#HTML" expanded="true" />
+                <element signature="e#2204#2223#0#HTML" expanded="true" />
                 <element signature="e#1967#1986#0#HTML" expanded="true" />
               </folding>
             </state>
@@ -575,12 +561,12 @@
       <workItem from="1647622440161" duration="2445000" />
       <workItem from="1647791386556" duration="6076000" />
       <workItem from="1647963581070" duration="357000" />
-      <workItem from="1647982418443" duration="3371000" />
+      <workItem from="1647982418443" duration="4025000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="619602000" />
+    <option name="totallyTimeSpent" value="620256000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1017,18 +1003,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/emails/event_reminder.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="527">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
           <folding>
             <element signature="e#5#93#0#HTML" expanded="true" />
-            <element signature="e#332#356#0#HTML" expanded="true" />
-            <element signature="e#398#440#0#HTML" expanded="true" />
-            <element signature="e#534#576#0#HTML" expanded="true" />
+            <element signature="e#410#452#0#HTML" expanded="true" />
+            <element signature="e#546#588#0#HTML" expanded="true" />
             <element signature="e#714#1014#0#HTML" expanded="true" />
             <element signature="e#1074#1100#0#HTML" expanded="true" />
             <element signature="e#1178#1467#0#HTML" expanded="true" />
             <element signature="e#1597#1886#0#HTML" expanded="true" />
-            <element signature="e#1939#1965#0#HTML" expanded="true" />
+            <element signature="e#2040#2082#0#HTML" expanded="true" />
+            <element signature="e#2204#2223#0#HTML" expanded="true" />
             <element signature="e#1967#1986#0#HTML" expanded="true" />
           </folding>
         </state>
