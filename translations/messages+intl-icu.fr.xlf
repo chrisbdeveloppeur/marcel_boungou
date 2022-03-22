@@ -1281,6 +1281,10 @@
         <source>Characters not allowed</source>
         <target>Caractères non autorisés</target>
       </trans-unit>
+      <trans-unit id="jRW8hmZ" resname="Visit events page">
+        <source>Visit events page</source>
+        <target>Visitez la page des événements</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

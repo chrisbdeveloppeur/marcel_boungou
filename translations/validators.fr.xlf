@@ -545,6 +545,10 @@
         <source>The image ratio should be between 2 and 3 (ex. between 640px/320px 720px/240px). The image ratio is {{ ratio }}.</source>
         <target>Le rapport d'image doit être compris entre 2 et 3 (ex. entre 640px/320px 720px/240px). Le rapport d'image est {{ ratio }}.</target>
       </trans-unit>
+      <trans-unit id="8jLbRPf" resname="This email is already subscribed to the newsletter">
+        <source>This email is already subscribed to the newsletter</source>
+        <target>Cet email est déjà inscrit à la newsletter</target>
+      </trans-unit>
       <trans-unit id="YRKYC4." resname="There is already an account with this email">
         <source>There is already an account with this email</source>
         <target>Il existe déjà un compte avec cet email</target>

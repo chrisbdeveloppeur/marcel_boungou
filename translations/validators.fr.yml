@@ -1,2 +1,3 @@
 "The type of the file is invalid ({{ type }})": Le type de fichier n'est pas valide ({{ type }})
 "The image ratio should be between 2 and 3 (ex. between 640px/320px 720px/240px). The image ratio is {{ ratio }}.": Le rapport d'image doit être compris entre 2 et 3 (ex. entre 640px/320px 720px/240px). Le rapport d'image est {{ ratio }}.
+"This email is already subscribed to the newsletter": Cet email est déjà inscrit à la newsletter
