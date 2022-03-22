@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c513a9b-8917-4b63-8b91-a519e09de280" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/emails/event_reminder.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/emails/event_reminder.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="8c513a9b-8917-4b63-8b91-a519e09de280" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/emails/event_reminder.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="35" column="130" selection-start-line="35" selection-start-column="130" selection-end-line="35" selection-end-column="130" />
+            <state relative-caret-position="425">
+              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
               <folding>
                 <element signature="e#5#93#0#HTML" expanded="true" />
                 <element signature="e#410#452#0#HTML" expanded="true" />
@@ -83,9 +81,9 @@
                 <element signature="e#1597#1886#0#HTML" expanded="true" />
                 <element signature="e#2040#2082#0#HTML" expanded="true" />
                 <element signature="e#2117#2142#0#HTML" expanded="true" />
-                <element signature="e#2231#2250#0#HTML" expanded="true" />
+                <element signature="e#2258#2299#0#HTML" expanded="true" />
                 <element signature="e#2349#2374#0#HTML" expanded="true" />
-                <element signature="e#2204#2223#0#HTML" expanded="true" />
+                <element signature="e#2500#2541#0#HTML" expanded="true" />
                 <element signature="e#1967#1986#0#HTML" expanded="true" />
               </folding>
             </state>
@@ -564,15 +562,16 @@
       <workItem from="1647622440161" duration="2445000" />
       <workItem from="1647791386556" duration="6076000" />
       <workItem from="1647963581070" duration="357000" />
-      <workItem from="1647982418443" duration="4271000" />
+      <workItem from="1647982418443" duration="4587000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="620502000" />
+    <option name="totallyTimeSpent" value="620818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24413647" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1006,8 +1005,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/emails/event_reminder.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="35" column="130" selection-start-line="35" selection-start-column="130" selection-end-line="35" selection-end-column="130" />
+        <state relative-caret-position="425">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
           <folding>
             <element signature="e#5#93#0#HTML" expanded="true" />
             <element signature="e#410#452#0#HTML" expanded="true" />
@@ -1018,9 +1017,9 @@
             <element signature="e#1597#1886#0#HTML" expanded="true" />
             <element signature="e#2040#2082#0#HTML" expanded="true" />
             <element signature="e#2117#2142#0#HTML" expanded="true" />
-            <element signature="e#2231#2250#0#HTML" expanded="true" />
+            <element signature="e#2258#2299#0#HTML" expanded="true" />
             <element signature="e#2349#2374#0#HTML" expanded="true" />
-            <element signature="e#2204#2223#0#HTML" expanded="true" />
+            <element signature="e#2500#2541#0#HTML" expanded="true" />
             <element signature="e#1967#1986#0#HTML" expanded="true" />
           </folding>
         </state>

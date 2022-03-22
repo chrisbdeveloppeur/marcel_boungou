@@ -71,7 +71,8 @@ class SubscribController extends AbstractController
         }
 
         return $this->render('themes/just_the_form.html.twig',[
-            'form' => $form->createView()
+            'form' => $form->createView(),
+            'form_info' => $this->translator->trans('You are about to unsubscribe from the site, you will no longer receive any emails from www.marcel-boungou.com')
         ]);
     }
 
