@@ -4,7 +4,7 @@
         {% if is_granted('ROLE_ADMIN') %}
             {{ include('news/edit_news_button.html.twig') }}
         {% endif %}
-        <div class="">
+        <div class="has-text-white">
             {% if new.title %}
                 <h3 class="title is-4 has-text-white">{{ new }}</h3>
             {% endif %}

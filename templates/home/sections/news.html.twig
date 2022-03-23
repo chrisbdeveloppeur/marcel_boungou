@@ -6,10 +6,10 @@
     </div>
 </div>
 
-<div class="has-background-black">
-    <div class="is-flex-desktop is-align-items-center">
-        <div class="column is-half-desktop has-text-white is-flex is-flex-direction-column is-justify-content-center">
-            <h2 class="subtitle is-4 has-text-white has-text-centered">{{ 'What is the latest news at MB Ministry'|trans }} ?</h2>
+<div class="parallax is-relative z-index-1" style="background-size: contain !important;background: right no-repeat url({{ asset('build/images/mb_cost_blue_1.4e43ac8e.jpg') }})">
+    <div class="is-flex is-justify-content-center is-align-items-center">
+        <div class="column is-half-desktop is-flex is-flex-direction-column is-justify-content-center" style="min-height: 100vh">
+            <h3 class="subtitle is-2 has-text-white has-text-centered">{{ 'What is the latest news at MB Ministry'|trans }} ?</h3>
             <p class="subtitle has-text-grey-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur at dolorem doloremque dolorum est ex expedita in magnam, nobis officiis provident reiciendis sit tempora ut velit vitae. Illum, velit.</p>
             {% set compteur = 0 %}
             <div style="max-height: 70vh;overflow: auto">
@@ -21,14 +21,13 @@
                 {% endfor %}
             </div>
         </div>
-        <div class="column is-half-desktop">
-            <figure class="" style="position:relative;height: 100vh;">
-                <div style="position: absolute;top: 0;left: 0;height:100%;width: 100%;background: center / contain no-repeat url({{ asset('build/images/mb_cost_blue_1.4e43ac8e.jpg') }})"></div>
-            </figure>
-        </div>
+        <div class="column is-half-desktop is-hidden-touch"></div>
     </div>
+</div>
 
-    <div class="column has-background-black">
+<div class="has-background-black">
+
+    <div class="column is-flex is-justify-content-center has-background-black">
         {#        <form class="column is-half is-full-touch has-text-centered" method="post">#}
         {{ form_start(subs_form,{'attr': {'class':'column is-half is-full-touch has-text-centered'}}) }}
         <h3 class="subtitle is-size-4-touch has-text-white">{{ 'You wish to subscribe to our newsletter'|trans }} ?</h3>
