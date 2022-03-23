@@ -369,13 +369,24 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   cursor: pointer;
 }
 
-.slide-fade-right{
+.slide-fade-left{
   opacity: 0;
   position: relative;
-  right: -100vw;
+  left: 100vw;
   transition: 1s;
 }
 .is-sliding-left{
+  opacity: 1 !important;
+  left: 0 !important;
+}
+
+.slide-fade-right{
+  opacity: 0;
+  position: relative;
+  right: 100vw;
+  transition: 1s;
+}
+.is-sliding-right{
   opacity: 1 !important;
   right: 0 !important;
 }

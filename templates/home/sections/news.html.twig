@@ -12,7 +12,7 @@
             <h3 class="subtitle is-2 has-text-white has-text-centered">{{ 'What is the latest news at MB Ministry'|trans }} ?</h3>
             <p class="subtitle has-text-grey-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur at dolorem doloremque dolorum est ex expedita in magnam, nobis officiis provident reiciendis sit tempora ut velit vitae. Illum, velit.</p>
             {% set compteur = 0 %}
-            <div style="max-height: 70vh;overflow: auto">
+            <div class="slide-fade-left" style="max-height: 70vh;overflow: auto">
                 {% for new in news|sort((a, b) => b.datetime <=> a.datetime) %}
                     {% if compteur < 5 %}
                         {{ include('news/news_article_box.html.twig') }}
