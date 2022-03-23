@@ -229,6 +229,7 @@
     {#   FIN DU SCRIPT SCROLL UP   #}
 
 
+    let heightScreen = window.innerHeight;
     {#  FADE-OUT FADE-IN DISCS  #}
     let elementsToFade = document.querySelectorAll('.fade-effect');
 
@@ -283,7 +284,6 @@
     };
 
     function slideFadeRight(element) {
-        var heightScreen = window.innerHeight;
         var pourcentage = 20;
         var percentHeightScreen = (heightScreen*pourcentage)/100;
         percentHeightScreen = heightScreen-percentHeightScreen;
@@ -308,7 +308,6 @@
     };
 
     function slideFadeLeft(element) {
-        var heightScreen = window.innerHeight;
         var pourcentage = 20;
         var percentHeightScreen = (heightScreen*pourcentage)/100;
         percentHeightScreen = heightScreen-percentHeightScreen;
@@ -317,6 +316,31 @@
             element.classList.add('is-sliding-left');
         }else {
             element.classList.remove('is-sliding-left');
+        }
+    }
+    {#                               #}
+
+    {#  SCALE-UP-FADE OBJECT  #}
+    let scaleUpFadeOjects = document.querySelectorAll('.scale-up-fade');
+
+    document.addEventListener('scroll', function () {
+        scaleUpFadeOjects.forEach(scaleUpFade);
+    });
+
+    window.onload = function () {
+        scaleUpFadeOjects.forEach(scaleUpFade);
+    };
+
+    function scaleUpFade(element) {
+        var pourcentage = 20;
+        var percentHeightScreen = (heightScreen*pourcentage)/100;
+        percentHeightScreen = heightScreen-percentHeightScreen;
+        var yPosition = element.getBoundingClientRect().y;
+        console.log(percentHeightScreen, heightScreen);
+        if ( (-percentHeightScreen < yPosition) && (yPosition < percentHeightScreen) ) {
+            element.classList.add('is-scaling-up');
+        }else {
+            element.classList.remove('is-scaling-up');
         }
     }
     {#                               #}
