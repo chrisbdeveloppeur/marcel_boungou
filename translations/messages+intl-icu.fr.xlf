@@ -1293,6 +1293,10 @@
         <source>Welcome to the official website of Marcel Boungou</source>
         <target>Welcome to the official website of Marcel Boungou</target>
       </trans-unit>
+      <trans-unit id="QlQCszs" resname="MB Ministry partners">
+        <source>MB Ministry partners</source>
+        <target>Partenaires de MB Ministry</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
