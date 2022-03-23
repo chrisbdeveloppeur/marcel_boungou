@@ -1,0 +1,73 @@
+<div id="parallax-0" class="parallax" style="background: right no-repeat url({{ asset('build/images/retro-microphone.d743201e.jpg') }})">
+    <div class="is-flex is-justify-content-center is-align-items-center has-background-success-layer">
+        <div class="column">
+            <h2 class="title has-text-black has-text-centered py-5 has-text-weight-bold" style="font-size: 13vw">{{ 'News'|trans }}</h2>
+        </div>
+    </div>
+</div>
+
+<div class="has-background-black">
+    <div class="is-flex-desktop is-align-items-center">
+        <div class="column is-half-desktop has-text-white is-flex is-flex-direction-column is-justify-content-center">
+            <h2 class="subtitle is-4 has-text-white has-text-centered">{{ 'What is the latest news at MB Ministry'|trans }} ?</h2>
+            <p class="subtitle has-text-grey-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur at dolorem doloremque dolorum est ex expedita in magnam, nobis officiis provident reiciendis sit tempora ut velit vitae. Illum, velit.</p>
+            {% set compteur = 0 %}
+            <div style="max-height: 70vh;overflow: auto">
+                {% for new in news|sort((a, b) => b.datetime <=> a.datetime) %}
+                    {% if compteur < 5 %}
+                        {{ include('news/news_article_box.html.twig') }}
+                    {% endif %}
+                    {% set compteur = compteur + 1 %}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="column is-half-desktop">
+            <figure class="" style="position:relative;height: 100vh;">
+                <div style="position: absolute;top: 0;left: 0;height:100%;width: 100%;background: center / contain no-repeat url({{ asset('build/images/mb_cost_blue_1.4e43ac8e.jpg') }})"></div>
+            </figure>
+        </div>
+    </div>
+
+    <div class="column has-background-black">
+        {#        <form class="column is-half is-full-touch has-text-centered" method="post">#}
+        {{ form_start(subs_form,{'attr': {'class':'column is-half is-full-touch has-text-centered'}}) }}
+        <h3 class="subtitle is-size-4-touch has-text-white">{{ 'You wish to subscribe to our newsletter'|trans }} ?</h3>
+        <div class="field has-addons">
+            <div class="control is-expanded">
+                {{ form_widget(subs_form.email) }}
+            </div>
+            <div class="control">
+                <button class="button is-full-touch is-success">{{ 'Subscribe now'|trans }}</button>
+            </div>
+        </div>
+
+        {% set child = subs_form.email %}
+        {% if form_help(child) %}
+            <span class="help is-info mt-0">
+                        <span class="icon-text" style="flex-wrap: nowrap">
+                            <span class="icon">
+                                <i class="fas fa-info-circle"></i>
+                            </span>
+                            <span>{{ form_help(child) }}</span>
+                        </span>
+                    </span>
+        {% endif %}
+
+        {% if form_errors(child) %}
+            <span class="help has-background-danger has-text-light px-2 py-1">
+                        {{ form_errors(child) }}
+                    </span>
+        {% endif %}
+
+        {% for sub_child in child.children %}
+            {% if form_errors(sub_child) %}
+                <span class="help has-background-danger has-text-light px-2 py-1">
+                            {{ form_errors(sub_child) }}
+                        </span>
+            {% endif %}
+        {% endfor %}
+
+        {{ form_end(subs_form) }}
+        {#        </form>#}
+    </div>
+</div>

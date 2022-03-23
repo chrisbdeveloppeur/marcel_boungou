@@ -1,0 +1,28 @@
+<div id="parallax-2" class="parallax" style="background: right no-repeat url({{ asset('build/images/tickets.b76bd569.jpg') }})">
+    <div class="is-flex is-justify-content-center is-align-items-center has-background-success-layer">
+        <div class="column">
+            <h2 class="title has-text-black has-text-centered py-5 has-text-weight-bold" style="font-size: 13vw">{{ 'Events'|trans }}</h2>
+        </div>
+    </div>
+</div>
+
+{% set event = events|first %}
+<div class="modal" id="modalEvent{{ event.id }}">
+    <div class="modal-background" onclick="this.parentElement.classList.remove('is-active')"></div>
+    <div class="modal-content box has-background-success-light">
+        {{ include('event/modal_event_details.html.twig') }}
+    </div>
+    <button class="modal-close is-large" aria-label="close" onclick="this.parentElement.classList.remove('is-active')"></button>
+</div>
+
+<div class="has-background-black is-relative z-index-1" style="min-height: 100vh">
+    <div class="section">
+        <div class="column">
+            <p class="subtitle has-text-grey-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium, amet autem, corporis debitis, deleniti dicta dignissimos distinctio eaque fugiat iure sequi ullam vitae voluptatem voluptates. Expedita mollitia quibusdam similique.</p>
+            {{ include('event/major_event.html.twig') }}
+        </div>
+        <div class="has-text-centered">
+            <a href="{{ path('event_home') }}" class="button is-large has-text-weight-bold is-success">{{ 'Visit events page'|trans }}</a>
+        </div>
+    </div>
+</div>
