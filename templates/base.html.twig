@@ -285,11 +285,10 @@
 
     function slideFadeRight(element) {
         var heightScreen = window.innerHeight;
-        var pourcentage = 10;
+        var pourcentage = 20;
         var percentHeightScreen = (heightScreen*pourcentage)/100;
         percentHeightScreen = heightScreen-percentHeightScreen;
         var yPosition = element.getBoundingClientRect().y;
-        console.log(-percentHeightScreen);
         if ( (-percentHeightScreen < yPosition) && (yPosition < percentHeightScreen) ) {
             slideLeft(element)
         }else {

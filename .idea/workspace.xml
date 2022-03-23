@@ -4,6 +4,7 @@
     <list default="true" id="8c513a9b-8917-4b63-8b91-a519e09de280" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/sections/partners.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/sections/partners.html.twig" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/home/sections/partners.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="99" selection-start-line="2" selection-start-column="99" selection-end-line="2" selection-end-column="99" />
+              <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -120,11 +121,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="291" column="58" selection-start-line="291" selection-start-column="58" selection-end-line="291" selection-end-column="58" />
+            <state relative-caret-position="229">
+              <caret line="290" column="58" selection-start-line="290" selection-start-column="58" selection-end-line="290" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -256,8 +257,8 @@
         <option value="$PROJECT_DIR$/templates/event/major_event.html.twig" />
         <option value="$PROJECT_DIR$/templates/home/sections/welcome.html.twig" />
         <option value="$PROJECT_DIR$/assets/styles/app.scss" />
-        <option value="$PROJECT_DIR$/templates/home/sections/partners.html.twig" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/templates/home/sections/partners.html.twig" />
       </list>
     </option>
   </component>
@@ -549,12 +550,12 @@
       <workItem from="1647791386556" duration="6076000" />
       <workItem from="1647963581070" duration="357000" />
       <workItem from="1647982418443" duration="6242000" />
-      <workItem from="1648032803910" duration="9241000" />
+      <workItem from="1648032803910" duration="9728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="631714000" />
+    <option name="totallyTimeSpent" value="632201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
@@ -985,17 +986,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home/sections/partners.html.twig">
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="99" selection-start-line="2" selection-start-column="99" selection-end-line="2" selection-end-column="99" />
+        <state relative-caret-position="229">
+          <caret line="290" column="58" selection-start-line="290" selection-start-column="58" selection-end-line="290" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+    <entry file="file://$PROJECT_DIR$/templates/home/sections/partners.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="291" column="58" selection-start-line="291" selection-start-column="58" selection-end-line="291" selection-end-column="58" />
+        <state relative-caret-position="34">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
         </state>
       </provider>
     </entry>
