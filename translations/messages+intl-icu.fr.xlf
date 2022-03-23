@@ -1289,6 +1289,10 @@
         <source>You are about to unsubscribe from the site, you will no longer receive any emails from www.marcel-boungou.com</source>
         <target>Vous êtes sur le point de vous désinscrire du site, vous ne recevrez plus d'e-mails de www.marcel-boungou.com</target>
       </trans-unit>
+      <trans-unit id="H4B8Cry" resname="Welcome to the official website of Marcel Boungou">
+        <source>Welcome to the official website of Marcel Boungou</source>
+        <target>Welcome to the official website of Marcel Boungou</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
