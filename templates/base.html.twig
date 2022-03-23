@@ -237,10 +237,9 @@
         // showArrowUp();
     });
 
-    window.onload = onLoad();
-    function onLoad() {
+    window.onload = function(){
         elementsToFade.forEach(changeOpacityOnTopPosition);
-    }
+    };
 
     function changeOpacityOnTopPosition(element) {
         if ( 0 < element.getBoundingClientRect().top && element.getBoundingClientRect().top < 750 ){
@@ -259,7 +258,7 @@
         // showArrowUp();
     });
 
-    window.onload = function onLoad() {
+    window.onload = function () {
         parallaxToFade.forEach(changeBlurOnTopPosition);
     };
 
@@ -269,6 +268,34 @@
         }else {
             //element.classList.add('grayscale100');
         }
+    }
+    {#                               #}
+
+    {#  SLIDE-FADE-RIGHT OBJECT  #}
+    let slideFadeRightOjects = document.querySelectorAll('.slide-fade-right');
+
+    document.addEventListener('scroll', function () {
+        slideFadeRightOjects.forEach(slideFadeRight);
+        // showArrowUp();
+    });
+
+    window.onload = function () {
+        slideFadeRightOjects.forEach(slideFadeRight);
+    };
+
+    function slideFadeRight(element) {
+        var topPosition = element.getBoundingClientRect().top;
+        if ( -250 < topPosition && topPosition < 100 ) {
+            slideLeft(element)
+        }else {
+            slideRight(element)
+        }
+    }
+    function slideLeft(elem) {
+        elem.classList.add('is-sliding-left');
+    }
+    function slideRight(elem) {
+        elem.classList.remove('is-sliding-left');
     }
     {#                               #}
 
