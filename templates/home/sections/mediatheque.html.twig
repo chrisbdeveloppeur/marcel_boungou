@@ -18,8 +18,8 @@
                 {% endif %}
             {% endfor %}
         </div>
-        <div class="has-text-centered">
-            <a href="{{ path('discography_index') }}" class="button is-fullwidth is-size-6-mobile is-large has-text-weight-bold is-success">{{ 'Visit discography'|trans }}</a>
+        <div class="has-text-centered rotationX">
+            <a href="{{ path('discography_index') }}" class="column shadow-box-1 is-fullwidth is-size-6-mobile is-large has-text-weight-bold is-success">{{ 'Visit discography'|trans }}</a>
         </div>
     </div>
 
@@ -30,8 +30,8 @@
             {% set book = books[random(books|length-1)] %}
             {{ include('includes/book_box.html.twig') }}
         </div>
-        <div class="has-text-centered">
-            <a href="{{ path('bibliography_index') }}" class="button is-fullwidth is-size-6-mobile is-large has-text-weight-bold is-success">{{ 'Visit bibliography'|trans }}</a>
+        <div class="has-text-centered rotationX">
+            <a href="{{ path('bibliography_index') }}" class="column shadow-box-1 is-fullwidth is-size-6-mobile is-large has-text-weight-bold is-success">{{ 'Visit bibliography'|trans }}</a>
         </div>
     </div>
 
@@ -41,8 +41,8 @@
         <div class="column">
             {{ include('gallery/gallery_carousel.html.twig') }}
         </div>
-        <div class="has-text-centered">
-            <a href="{{ path('gallery_index') }}" class="button is-fullwidth is-size-6-mobile is-large has-text-weight-bold is-success">{{ 'Visit Gallery'|trans }}</a>
+        <div class="has-text-centered rotationX">
+            <a href="{{ path('gallery_index') }}" class="column shadow-box-1 is-fullwidth is-size-6-mobile is-large has-text-weight-bold is-success">{{ 'Visit Gallery'|trans }}</a>
         </div>
     </div>
 
