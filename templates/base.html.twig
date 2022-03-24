@@ -230,7 +230,7 @@
 
 
     let heightScreen = window.innerHeight;
-    let percent = 20;
+    let percent = 30;
     let percentHeightScreen = (heightScreen*percent)/100;
     {#  FADE-OUT FADE-IN DISCS  #}
     let elementsToFade = document.querySelectorAll('.fade-effect');
@@ -242,7 +242,7 @@
 
     function changeOpacityOnTopPosition(element) {
         var yPosition = element.getBoundingClientRect().y;
-        if ( (-percentHeightScreen < yPosition) && (yPosition < (heightScreen-percentHeightScreen)) ){
+        if ( (-(heightScreen-percentHeightScreen) < yPosition) && (yPosition < (heightScreen-percentHeightScreen)) ){
             element.classList.replace('opacity0','opacity100');
         }else {
             element.classList.replace('opacity100','opacity0');
@@ -260,7 +260,7 @@
 
     function changeBlurOnTopPosition(element) {
         var yPosition = element.getBoundingClientRect().y;
-        if ( (-percentHeightScreen < yPosition) && (yPosition < (heightScreen-percentHeightScreen)) ) {
+        if ( (-(heightScreen-percentHeightScreen) < yPosition) && (yPosition < (heightScreen-percentHeightScreen)) ) {
             //element.classList.remove('grayscale100');
         }else {
             //element.classList.add('grayscale100');
@@ -277,7 +277,7 @@
 
     function slideFadeRight(element) {
         var yPosition = element.getBoundingClientRect().y;
-        if ( (-percentHeightScreen < yPosition) && (yPosition < (heightScreen-percentHeightScreen)) ) {
+        if ( (-(heightScreen-percentHeightScreen) < yPosition) && (yPosition < (heightScreen-percentHeightScreen)) ) {
             element.classList.add('is-sliding-right');
         }else {
             element.classList.remove('is-sliding-right');
@@ -294,7 +294,7 @@
 
     function slideFadeLeft(element) {
         var yPosition = element.getBoundingClientRect().y;
-        if ( (-percentHeightScreen < yPosition) && (yPosition < (heightScreen-percentHeightScreen)) ) {
+        if ( (-(heightScreen-percentHeightScreen) < yPosition) && (yPosition < (heightScreen-percentHeightScreen)) ) {
             element.classList.add('is-sliding-left');
         }else {
             element.classList.remove('is-sliding-left');
@@ -311,7 +311,7 @@
 
     function scaleUpFade(element) {
         var yPosition = element.getBoundingClientRect().y;
-        if ( (-percentHeightScreen < yPosition) && (yPosition < (heightScreen-percentHeightScreen)) ) {
+        if ( (-(heightScreen-percentHeightScreen) < yPosition) && (yPosition < (heightScreen-percentHeightScreen)) ) {
             element.classList.add('is-scaling-up');
         }else {
             element.classList.remove('is-scaling-up');
@@ -408,7 +408,7 @@
 
         window.onload = function(){
             elementsToFade.forEach(changeOpacityOnTopPosition);
-            scaleUpFadeOjects.forEach(scaleUpFade);
+            scaleUpFadeOjects.forEach(obj => console.log(obj));
             slideFadeLeftOjects.forEach(slideFadeLeft);
             slideFadeRightOjects.forEach(slideFadeRight);
             parallaxToFade.forEach(changeBlurOnTopPosition);
