@@ -467,8 +467,8 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   z-index: 30;
   width: 40px;
   height: 40px;
-  background: $success;
-  border: white solid 3px;
+  background: $success-layer;
+  border: $success solid 3px;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
