@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c513a9b-8917-4b63-8b91-a519e09de280" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/event/major_event.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/event/major_event.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/sections/events.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/sections/events.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/sections/mediatheque.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/sections/mediatheque.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/sections/partners.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/sections/partners.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/album_box.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/album_box.html.twig" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -140,8 +136,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="304" column="9" lean-forward="true" selection-start-line="304" selection-start-column="9" selection-end-line="304" selection-end-column="9" />
+            <state relative-caret-position="212">
+              <caret line="263" column="51" lean-forward="true" selection-start-line="263" selection-start-column="51" selection-end-line="263" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -150,7 +146,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>label</find>
       <find>tag</find>
       <find>prima</find>
       <find>edi</find>
@@ -180,6 +175,7 @@
       <find>arrow</find>
       <find>window.onload</find>
       <find>conso</find>
+      <find>cons</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -354,7 +350,7 @@
       <path value="$PROJECT_DIR$/vendor/friendsofsymfony/ckeditor-bundle" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="980" />
@@ -525,12 +521,12 @@
       <workItem from="1647982418443" duration="6242000" />
       <workItem from="1648032803910" duration="12680000" />
       <workItem from="1648111468908" duration="611000" />
-      <workItem from="1648119640593" duration="7660000" />
+      <workItem from="1648119640593" duration="8899000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="643424000" />
+    <option name="totallyTimeSpent" value="644663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
@@ -961,8 +957,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="304" column="9" lean-forward="true" selection-start-line="304" selection-start-column="9" selection-end-line="304" selection-end-column="9" />
+        <state relative-caret-position="212">
+          <caret line="263" column="51" lean-forward="true" selection-start-line="263" selection-start-column="51" selection-end-line="263" selection-end-column="51" />
         </state>
       </provider>
     </entry>
