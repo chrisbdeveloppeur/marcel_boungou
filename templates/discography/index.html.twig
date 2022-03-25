@@ -94,6 +94,7 @@
 
         {# SCRIPT POUR LE BOUTON PLAY DES PLAYERS #}
         function startMusic(btn){
+            toogleMusicNav('extend');
             let audio = btn.parentElement.querySelector('audio');
             let musicContainer = btn.parentElement.parentElement;
             if (!audio.paused){
@@ -276,13 +277,35 @@
             musicImage = musicContainer.querySelector('#musicImage');
             musicNav = document.querySelector('#musicNav');
             musicNavMusicName = musicNav.querySelector('.current-music-played');
-            console.log(musicImage.style.background);
             if (audio === null){
                 musicNavMusicName.innerText = {% trans %}'no music played'{% endtrans %};
             }else if (musicState === 'pause') {
                 musicNavMusicName.innerText = currentMusicNameTxt + {% trans %}' (pause)'{% endtrans %};
             } else {
                 musicNavMusicName.innerText = currentMusicNameTxt
+            }
+        }
+        function toogleMusicNav(setState) {
+            let musicNav = document.getElementById('musicNav');
+            let musicNavEllipsis = document.getElementById('musicNavEllipsis');
+            let icon = musicNavEllipsis.querySelector('i');
+            if (setState === 'retract'){
+                musicNav.classList.remove('is-active');
+                if (icon.classList.contains('fa-caret-square-down')) {
+                    icon.classList.replace('fa-caret-square-down','fa-ellipsis-h');
+                }
+            } else if (setState === 'extend'){
+                musicNav.classList.add('is-active');
+                if (icon.classList.contains('fa-ellipsis-h')) {
+                    icon.classList.replace('fa-ellipsis-h','fa-caret-square-down');
+                }
+            } else {
+                musicNav.classList.toggle('is-active');
+                if (icon.classList.contains('fa-ellipsis-h')) {
+                    icon.classList.replace('fa-ellipsis-h','fa-caret-square-down');
+                } else {
+                    icon.classList.replace('fa-caret-square-down','fa-ellipsis-h');
+                }
             }
         }
 

@@ -456,7 +456,17 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   //object-fit: cover;
 }
 
-
+#musicNav #musicNavContent{
+  visibility: hidden;
+  opacity: 0;
+  height: 0em;
+  transition: 1s;
+}
+#musicNav.is-active #musicNavContent{
+  visibility: visible;
+  opacity: 1;
+  height: 5em;
+}
 
 
 .arrow_up{
