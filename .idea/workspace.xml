@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c513a9b-8917-4b63-8b91-a519e09de280" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/discography/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/discography/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/discography/music_nav.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/discography/music_nav.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/includes/music_container.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/music_container.html.twig" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,8 +82,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/discography/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="98" column="40" lean-forward="true" selection-start-line="98" selection-start-column="40" selection-end-line="98" selection-end-column="40" />
+            <state relative-caret-position="229">
+              <caret line="280" column="40" selection-start-line="280" selection-start-column="40" selection-end-line="280" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/discography/musics_list.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/includes/music_container.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="251" selection-start-column="251" selection-end-column="251" />
             </state>
           </provider>
         </entry>
@@ -91,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/discography/music_nav.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+            <state>
+              <caret column="71" selection-start-column="71" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -101,7 +119,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>musicNav</find>
       <find>searc</find>
       <find>file</find>
       <find>file-n</find>
@@ -131,6 +148,7 @@
       <find>arr</find>
       <find>news</find>
       <find>play</find>
+      <find>console.l</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -152,7 +170,6 @@
         <option value="$PROJECT_DIR$/src/Controller/NewsController.php" />
         <option value="$PROJECT_DIR$/templates/news/index.html.twig" />
         <option value="$PROJECT_DIR$/templates/includes/header.html.twig" />
-        <option value="$PROJECT_DIR$/templates/includes/music_container.html.twig" />
         <option value="$PROJECT_DIR$/templates/discography/musics_list.html.twig" />
         <option value="$PROJECT_DIR$/templates/includes/music_box.html.twig" />
         <option value="$PROJECT_DIR$/templates/includes/book_box.html.twig" />
@@ -188,6 +205,7 @@
         <option value="$PROJECT_DIR$/templates/home/sections/events.html.twig" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/assets/styles/app.scss" />
+        <option value="$PROJECT_DIR$/templates/includes/music_container.html.twig" />
         <option value="$PROJECT_DIR$/templates/discography/music_nav.html.twig" />
         <option value="$PROJECT_DIR$/templates/discography/index.html.twig" />
       </list>
@@ -305,7 +323,7 @@
       <path value="$PROJECT_DIR$/vendor/friendsofsymfony/ckeditor-bundle" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="980" />
@@ -487,12 +505,12 @@
       <workItem from="1647982418443" duration="6242000" />
       <workItem from="1648032803910" duration="12680000" />
       <workItem from="1648111468908" duration="611000" />
-      <workItem from="1648119640593" duration="16187000" />
+      <workItem from="1648119640593" duration="16804000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="651951000" />
+    <option name="totallyTimeSpent" value="652568000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
@@ -561,16 +579,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/gallery/picture_container.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Form/AlbumType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -905,17 +913,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/discography/musics_list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/discography/music_nav.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        <state>
+          <caret column="71" selection-start-column="71" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/includes/music_container.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="251" selection-start-column="251" selection-end-column="251" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/discography/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="98" column="40" lean-forward="true" selection-start-line="98" selection-start-column="40" selection-end-line="98" selection-end-column="40" />
+        <state relative-caret-position="229">
+          <caret line="280" column="40" selection-start-line="280" selection-start-column="40" selection-end-line="280" selection-end-column="40" />
         </state>
       </provider>
     </entry>

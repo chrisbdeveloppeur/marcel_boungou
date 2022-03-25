@@ -272,10 +272,15 @@
         {# SCRIPT GET CURRENT MUSIC PLAYED AND SHOW IN MUSIC-NAV #}
         function showCurrentMusicPlayedIntoMusicNav(audio, musicContainer, musicState) {
             // console.log(audio);
-            var musicNav, musicNavMusicName, album, year, currentMusicNameTxt, musicImage;
-            currentMusicNameTxt = musicContainer.querySelector('.music-name').textContent;
-            musicImage = musicContainer.querySelector('#musicImage');
+            var musicNav, musicNavMusicName, album, year, currentMusicNameTxt, musicImage, musicId, musicNavAncrage;
             musicNav = document.querySelector('#musicNav');
+            musicImage = musicContainer.querySelector('#musicImage');
+            musicId = '#'+musicContainer.id;
+            musicNavAncrage = musicNav.querySelector('a.current-music-played');
+            console.log(musicId);
+            console.log(musicNavAncrage);
+            musicNavAncrage.href = musicId;
+            currentMusicNameTxt = musicContainer.querySelector('.music-name').textContent;
             musicNavMusicName = musicNav.querySelector('.current-music-played');
             if (audio === null){
                 musicNavMusicName.innerText = {% trans %}'no music played'{% endtrans %};
