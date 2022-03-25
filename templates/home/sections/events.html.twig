@@ -18,7 +18,9 @@
 <div class="has-background-black is-relative z-index-1" style="min-height: 100vh">
     <div class="section">
         <p class="subtitle has-text-grey-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium, amet autem, corporis debitis, deleniti dicta dignissimos distinctio eaque fugiat iure sequi ullam vitae voluptatem voluptates. Expedita mollitia quibusdam similique.</p>
-        {{ include('event/major_event.html.twig') }}
+        <div class="scale-up-fade">
+            {{ include('event/major_event.html.twig') }}
+        </div>
         <div class="has-text-centered rotationX">
             <a href="{{ path('event_home') }}" class="column shadow-box-1 is-fullwidth is-size-6-mobile is-large has-text-weight-bold is-success">{{ 'Visit events page'|trans }}</a>
         </div>

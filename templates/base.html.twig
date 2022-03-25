@@ -48,8 +48,8 @@
 {% block arrow_up %}
     <div class="arrow_up transition-5ms">
         <a href="#top" class="is-flex align-items-center justify-content-center">
-            <span class="icon justify-content-center align-items-center is-size-4 has-text-black">
-                <i class="fas fa-caret-up"></i>
+            <span class="icon justify-content-center align-items-center is-size-4 has-text-white">
+                <i class="fas fa-arrow-up"></i>
             </span>
         </a>
     </div>
@@ -136,12 +136,14 @@
     {# POSITIONNEMENT DES INFOBULL EN FONCTION DE LECRAN #}
     let hovertextbefore = document.querySelectorAll('.hovertext');
     hovertextbefore.forEach(function (el) {
-        var w = window.innerWidth;
-        var rect = el.getBoundingClientRect();
-        if (rect.right >= (w / 2)){
-            el.classList.add('right');
-        }else {
-            el.classList.add('left');
+        if (el){
+            var w = window.innerWidth;
+            var rect = el.getBoundingClientRect();
+            if (rect.right >= (w / 2)){
+                el.classList.add('right');
+            }else {
+                el.classList.add('left');
+            }
         }
     });
 
@@ -254,7 +256,6 @@
     let slideFadeRightOjects = document.querySelectorAll('.slide-fade-right');
 
     document.addEventListener('scroll', function () {
-        console.log(slideFadeRightOjects[0].getBoundingClientRect().y);
         slideFadeRightOjects.forEach(slideFadeRight);
     });
 
