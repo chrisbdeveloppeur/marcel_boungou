@@ -32,9 +32,7 @@
         </div>
     </div>
 
-    <div class="column has-background-light is-full is-full-mobile" id="musicNav" style="height: 10rem;">
-        <span class="current-music-played">{{ 'no music played'|trans }}</span>
-    </div>
+    {{ include('discography/music_nav.html.twig') }}
 
     {% if albums|length > 0 %}
         {{ include('discography/album_list.html.twig') }}
