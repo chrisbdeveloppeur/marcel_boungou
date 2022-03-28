@@ -1191,7 +1191,7 @@
       </trans-unit>
       <trans-unit id="2_flmdx" resname="Manage News">
         <source>Manage News</source>
-        <target>Gérer les nouvelles</target>
+        <target>Gestion des nouvelles</target>
       </trans-unit>
       <trans-unit id="1OBK6Qg" resname="News index">
         <source>News index</source>
