@@ -221,7 +221,7 @@
     {
         scroll_position = window.scrollY;
         if (scroll_position >= 500){
-            divScroll[0].style.display = 'flex';
+            divScroll[0].style.displayplay = 'flex';
             divScroll[0].style.opacity = 1;
             divScroll[0].style.bottom = '2rem';
         } else {
@@ -333,6 +333,14 @@
             // console.log(drop)
         })
     }
+
+    window.onload = function(){
+        elementsToFade.forEach(changeOpacityOnTopPosition);
+        scaleUpFadeOjects.forEach(scaleUpFade);
+        slideFadeLeftOjects.forEach(slideFadeLeft);
+        slideFadeRightOjects.forEach(slideFadeRight);
+    };
+
 </script>
 
 {% block javascripts %}
@@ -390,13 +398,6 @@
             });
         }
         */
-
-        window.onload = function(){
-            elementsToFade.forEach(changeOpacityOnTopPosition);
-            scaleUpFadeOjects.forEach(scaleUpFade);
-            slideFadeLeftOjects.forEach(slideFadeLeft);
-            slideFadeRightOjects.forEach(slideFadeRight);
-        };
 
     </script>
 {% endblock %}

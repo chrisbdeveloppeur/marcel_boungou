@@ -3,11 +3,11 @@
 
 {#    <div class="is-flex is-flex-direction-row is-align-items-center is-justify-content-center">#}
 {#        <div class="column is-half" style="margin: auto;">#}
-            <figure class="is-flex is-justify-content-center is-align-items-center">
+            <figure class="is-flex is-justify-content-center is-align-items-center" style="max-height: 80vh">
                 {% if picture.image %}
-                    <img src="{{ vich_uploader_asset(picture, 'imageFile') }}">
+                    <img src="{{ vich_uploader_asset(picture, 'imageFile') }}" style="max-height: 80vh;object-fit: contain">
                 {% else %}
-                    <img src="https://bulma.io/images/placeholders/480x600.png">
+                    <img src="https://bulma.io/images/placeholders/480x600.png" style="max-height: 80vh;object-fit: contain">
                 {% endif %}
             </figure>
 {#        </div>#}

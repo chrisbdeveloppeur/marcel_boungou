@@ -7,7 +7,7 @@
     {% for picture in pictures %}
         <div class="modal transition-5ms" id="modalPicture{{ picture.id }}">
             <div class="modal-background" onclick="this.parentElement.classList.remove('is-active')"></div>
-            <div class="modal-content">
+            <div class="modal-content p-2">
                 {{ include('picture/modal_picture.html.twig') }}
             </div>
             <button class="modal-close is-large" aria-label="close" onclick="this.parentElement.classList.remove('is-active')"></button>
@@ -34,7 +34,7 @@
                 <div class="show-password" onclick="resetSearch()">
                     <button class="button is-danger" style="width: 100%">
                         <i class="fas fa-lg fa-times mr-2"></i>
-                        <span>
+                        <span class="is-hidden-mobile">
                             {{ 'reset filter'|trans }}
                         </span>
                     </button>
