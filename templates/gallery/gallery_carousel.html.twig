@@ -3,9 +3,7 @@
     {% set count_picture = 0 %}
     {% for picture in pictures %}
         {% if count_picture < 5 %}
-            {% if picture.image %}
-                {{ include('gallery/picture_container.html.twig') }}
-            {% endif %}
+            {{ include('gallery/picture_container.html.twig') }}
         {% endif %}
         {% set count_picture = count_picture + 1 %}
     {% endfor %}

@@ -6,40 +6,14 @@
 
     {{ include('home/sections/welcome.html.twig') }}
 
-    {{ include('home/sections/partners.html.twig') }}
-
     {{ include('home/sections/news.html.twig') }}
 
     {{ include('home/sections/mediatheque.html.twig') }}
 
     {{ include('home/sections/events.html.twig') }}
 
-    <div id="parallax-3" class="parallax" style="background: center no-repeat url({{ asset('build/images/younger_mb_4.6543a861.jpg') }})">
-        <div class="is-flex is-justify-content-center is-align-items-center has-background-primary-layer">
-            <div class="column">
-                <h2 class="title has-text-black has-text-centered py-5 has-text-weight-bold" style="font-size: 13vw">{{ 'MB Ministry'|trans }}</h2>
-            </div>
-        </div>
-    </div>
+    {{ include('home/sections/partners.html.twig') }}
 
-    <div class="has-background-black is-relative z-index-1" style="min-height: 100vh">
-        <div class="column">
-            <h3 class="subtitle is-2 has-text-success">MB Ministry</h3>
-        </div>
-    </div>
-
-    <div id="parallax-4" class="parallax" style="background: right no-repeat url({{ asset('build/images/sunset.50dc6889.jpg') }})">
-        <div class="is-flex is-justify-content-center is-align-items-center has-background-success-layer">
-            <div class="column">
-                <h2 class="title has-text-black has-text-centered py-5 has-text-weight-bold" style="font-size: 13vw">{{ 'MB Ministry'|trans }}</h2>
-            </div>
-        </div>
-    </div>
-
-    <div class="has-background-black is-relative z-index-1" style="min-height: 100vh">
-        <div class="column">
-            <h3 class="subtitle is-2 has-text-success">Contact / Subs Etc...</h3>
-        </div>
-    </div>
+    {{ include('home/sections/mb_ministry.html.twig') }}
 
 {% endblock %}

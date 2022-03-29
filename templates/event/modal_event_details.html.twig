@@ -1,6 +1,6 @@
 <div class="column px-0 py-0 ">
     <div class="column pt-0 has-text-weight-bold has-text-centered">
-        <span>{{ 'Be there on' }}</span><br>
+        <span>{{ 'Be there on'|trans }}</span><br>
         <span class="is-size-4">
             {{ event.datetime|format_datetime('full','none',locale=app.request.locale)|capitalize }}
         </span><br>

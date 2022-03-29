@@ -639,7 +639,7 @@
       </trans-unit>
       <trans-unit id="LfU83eo" resname="Opt for the reminder by Email">
         <source>Opt for the reminder by Email</source>
-        <target>Optez pour le rappel par Email</target>
+        <target>Opter pour le rappel par Email</target>
       </trans-unit>
       <trans-unit id="YoIT6cn" resname="Consult the list of all upcoming events">
         <source>Consult the list of all upcoming events</source>
@@ -1304,6 +1304,10 @@
       <trans-unit id="1dCjC1F" resname="Calendar">
         <source>Calendar</source>
         <target>Calendrier</target>
+      </trans-unit>
+      <trans-unit id="dFj1BK." resname="Be there on">
+        <source>Be there on</source>
+        <target>Rendez-vous le </target>
       </trans-unit>
     </body>
   </file>
