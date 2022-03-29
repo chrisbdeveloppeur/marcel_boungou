@@ -1,31 +1,35 @@
 <footer class="footer">
-    <div class="content has-text-centered">
+    <div class="content container has-text-centered">
         <div class="columns list-no-style">
-            <div class="column">
+            <div class="column is-flex is-justify-content-center is-align-items-center is-flex-direction-column">
+                <p class="is-size-5 has-text-centered has-text-weight-bold">{{ 'Events & News'|trans|capitalize }}</p>
                 <ul>
-                    <li><a href="{{ path('home_index') }}">{{ 'home'|trans }}</a></li>
-                    <li><a href="{{ path('event_home') }}">{{ 'events'|trans }}</a></li>
-                    <li><a href="{{ path('event_all') }}">{{ 'all events'|trans }}</a></li>
+                    <li><a href="{{ path('home_index') }}">{{ 'home'|trans|capitalize }}</a></li>
+                    <li><a href="{{ path('event_home') }}">{{ 'events'|trans|capitalize }}</a></li>
+                    <li><a href="{{ path('event_all') }}">{{ 'all events'|trans|capitalize }}</a></li>
                 </ul>
             </div>
-            <div class="column">
+            <div class="column is-flex is-justify-content-center is-align-items-center is-flex-direction-column">
+                <p class="is-size-5 has-text-centered has-text-weight-bold">{{ 'Media'|trans|capitalize }}</p>
                 <ul>
-                    <li><a href="{{ path('discography_index') }}">{{ 'discography'|trans }}</a></li>
-                    <li><a href="{{ path('bibliography_index') }}">{{ 'bibliography'|trans }}</a></li>
-                    <li><a href="{{ path('gallery_index') }}">{{ 'gallery'|trans }}</a></li>
+                    <li><a href="{{ path('discography_index') }}">{{ 'discography'|trans|capitalize }}</a></li>
+                    <li><a href="{{ path('bibliography_index') }}">{{ 'bibliography'|trans|capitalize }}</a></li>
+                    <li><a href="{{ path('gallery_index') }}">{{ 'gallery'|trans|capitalize }}</a></li>
                 </ul>
             </div>
-            <div class="column">
+            <div class="column is-flex is-justify-content-center is-align-items-center is-flex-direction-column">
+                <p class="is-size-5 has-text-centered has-text-weight-bold">{{ 'MB Ministry'|trans|capitalize }}</p>
                 <ul>
-                    <li><a href="{{ path('discography_index') }}">{{ 'bio'|trans }}</a></li>
-                    <li><a href="{{ path('bibliography_index') }}">{{ 'contact'|trans }}</a></li>
-                    <li><a href="{{ path('gallery_index') }}">{{ 'partner'|trans }}</a></li>
+                    <li><a href="{{ path('discography_index') }}">{{ 'bio'|trans|capitalize }}</a></li>
+                    <li><a href="{{ path('bibliography_index') }}">{{ 'contact'|trans|capitalize }}</a></li>
+                    <li><a href="{{ path('gallery_index') }}">{{ 'partner'|trans|capitalize }}</a></li>
                 </ul>
             </div>
-            <div class="column">
+            <div class="column is-flex is-justify-content-center is-align-items-center is-flex-direction-column">
+                <p class="is-size-5 has-text-centered has-text-weight-bold">{{ ''|trans|capitalize }}</p>
                 <ul>
-                    <li><a href="{{ path('discography_index') }}">{{ 'CGU'|trans }}</a></li>
-                    <li><a href="{{ path('app_login') }}">{{ 'backoffice'|trans }}</a></li>
+                    <li><a href="{{ path('discography_index') }}">{{ 'CGU'|trans|capitalize }}</a></li>
+                    <li><a href="{{ path('app_login') }}">{{ 'backoffice'|trans|capitalize }}</a></li>
                 </ul>
             </div>
         </div>

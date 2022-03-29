@@ -16,6 +16,10 @@ $footer-background-color: $black;
 $footer-color: $dark;
 $footer-padding: 3rem 1.5rem 6rem;
 
+.content ul{
+  margin: 0 !important;
+}
+
 $dropdown-menu-min-width: 0;
 $dropdown-content-padding-top: 0;
 $dropdown-content-padding-bottom: 0;
@@ -66,6 +70,10 @@ $modal-content-width: auto;
 }
 
 .table{
+  margin: auto;
+}
+
+.margin-auto{
   margin: auto;
 }
 
