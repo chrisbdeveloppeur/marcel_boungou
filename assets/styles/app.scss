@@ -25,6 +25,8 @@ $navbar-height: 4rem;
 $navbar-item-hover-background-color: $white-layer;
 $navbar-item-color: white;
 $navbar-burger-color: white;
+$navbar-item-active-color: none;
+$navbar-item-active-background-color : $white-layer;
 .navbar-burger:hover{
   background: rgba(255,255,255,.5) !important;
 }

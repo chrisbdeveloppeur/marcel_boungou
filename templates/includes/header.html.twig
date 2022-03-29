@@ -1,3 +1,8 @@
+{% if app.request.get('_route') == 'home_index' %}
+    {% set home = true %}
+{% else %}
+    {% set home = false %}
+{% endif %}
 <nav class="navbar is-fixed-top box-shadow-bulma-dark font-quicksand transition-5ms" role="navigation" aria-label="main navigation">
     <div class="nav-background">
         <img src="{{ asset('build/images/background_design.a6a92814.jpg') }}" alt="">
@@ -21,16 +26,10 @@
                 {% trans %}Home{% endtrans %}
             </a>
 
-            {#
-            <a class="navbar-item is-size-5-touch">
-                {% trans %}Shop{% endtrans %}
-            </a>
-            #}
-
             <hr class="dropdown-divider">
 
             <div class="navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
-                <a class="navbar-item is-size-5-touch">
+                <a {% if home %}href="#events"{% endif %} class="navbar-item is-size-5-touch">
                     {% trans %}Events{% endtrans %}
                 </a>
 
@@ -47,7 +46,7 @@
             <hr class="dropdown-divider">
 
             <div class="navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
-                <a class="navbar-item is-size-5-touch">
+                <a {% if home %}href="#mediatheque"{% endif %} class="navbar-item is-size-5-touch">
                     {% trans %}Media{% endtrans %}
                 </a>
 
@@ -67,17 +66,17 @@
             <hr class="dropdown-divider">
 
             <div class="navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
-                <a class="navbar-item is-size-5-touch">
+                <a {% if home %}href="#mbMinistry"{% endif %} class="navbar-item is-size-5-touch">
                     {% trans %}MB Ministry{% endtrans %}
                 </a>
                 <div class="navbar-dropdown is-minimized">
-                    <a class="navbar-item is-size-5-touch">
+                    <a {% if home %}href="#bio"{% endif %} class="navbar-item is-size-5-touch">
                         {% trans %}Biography{% endtrans %}
                     </a>
-                    <a class="navbar-item is-size-5-touch">
+                    <a {% if home %}href="#contact"{% endif %} class="navbar-item is-size-5-touch">
                         {% trans %}Contact{% endtrans %}
                     </a>
-                    <a class="navbar-item is-size-5-touch">
+                    <a {% if home %}href="#partners"{% endif %} class="navbar-item is-size-5-touch">
                         {% trans %}Partners{% endtrans %}
                     </a>
                 </div>

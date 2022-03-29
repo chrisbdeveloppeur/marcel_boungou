@@ -311,27 +311,25 @@
     var elements = navbar.querySelectorAll('.navbar-menu-touch');
     elements.forEach(function(elem) {
         elem.addEventListener('click', function () {
-            var thisDrop = elem.querySelector('.navbar-dropdown');
-            retractMenuNavbarTouch(thisDrop);
+            retractMenuNavbarTouch();
+            extendMenuNavbarTouch(elem);
         })
     });
 
-    function retractMenuNavbarTouch(dropClicked) {
+    function retractMenuNavbarTouch() {
         var navbar = document.querySelector('.navbar');
         var dropdowns = navbar.querySelectorAll('.navbar-dropdown');
         dropdowns.forEach(function (drop) {
-            if (dropClicked === drop){
-                dropClicked.classList.remove('is-minimized');
-                var menuTitle = dropClicked.parentElement.querySelector('a.navbar-item');
-                menuTitle.classList.add('is-active', 'has-text-weight-bold');
-            } else {
-                drop.classList.add('is-minimized');
-                var dropMenuTitle = drop.parentElement.querySelector('a.navbar-item');
-                dropMenuTitle.classList.remove('is-active', 'has-text-weight-bold');
-            }
-            // drop.classList.add('is-minimized');
-            // console.log(drop)
+            drop.classList.add('is-minimized');
+            var dropMenuTitle = drop.parentElement.querySelector('a.navbar-item');
+            dropMenuTitle.classList.remove('is-active', 'has-text-weight-bold');
         })
+    }
+    function extendMenuNavbarTouch(dropdown){
+            dropdown = dropdown.querySelector('.navbar-dropdown');
+            dropdown.classList.remove('is-minimized');
+            var menuTitle = dropdown.parentElement.querySelector('a.navbar-item');
+            menuTitle.classList.add('is-active', 'has-text-weight-bold');
     }
 
     window.onload = function(){
