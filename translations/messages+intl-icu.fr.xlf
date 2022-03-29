@@ -1291,11 +1291,19 @@
       </trans-unit>
       <trans-unit id="H4B8Cry" resname="Welcome to the official website of Marcel Boungou">
         <source>Welcome to the official website of Marcel Boungou</source>
-        <target>Welcome to the official website of Marcel Boungou</target>
+        <target>Bienvenue sur le site officiel de Marcel Boungou</target>
       </trans-unit>
       <trans-unit id="QlQCszs" resname="MB Ministry partners">
         <source>MB Ministry partners</source>
         <target>Partenaires de MB Ministry</target>
+      </trans-unit>
+      <trans-unit id="FbYZdLJ" resname="Location">
+        <source>Location</source>
+        <target>Lieu</target>
+      </trans-unit>
+      <trans-unit id="1dCjC1F" resname="Calendar">
+        <source>Calendar</source>
+        <target>Calendrier</target>
       </trans-unit>
     </body>
   </file>
