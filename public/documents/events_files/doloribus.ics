@@ -15,16 +15,20 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6229e002c4c50
-DTSTAMP;TZID=Europe/Paris:20220310T122450
+UID:6242da804ceb7
+DTSTAMP;TZID=Europe/Paris:20220329T120800
 SUMMARY:doloribus
-DESCRIPTION:Quibusdam nesciunt et consequatur esse eaque. Ut similique magn
- i necessitatibus natus. Numquam voluptatem quia sed rerum dolor distinctio
-  vero. Accusantium numquam rerum ducimus consequatur ducimus fugit sit.
-LOCATION:97\, chemin Perret\, 69430 Nicolas\, Nicolas
-DTSTART;TZID=Europe/Paris:20220422T235321
-DTEND;TZID=Europe/Paris:20220422T235321
+DESCRIPTION:Sint ducimus commodi tenetur aspernatur eum. Eum dolore veniam 
+ voluptate sapiente ut.
+LOCATION:80\, avenue Arthur Benard\, 68156 Guibert\, Guibert
+DTSTART;TZID=Europe/Paris:20220502T085807
+DTEND;TZID=Europe/Paris:20220502T085807
 END:VEVENT
 END:VCALENDAR

@@ -18,9 +18,9 @@
                             {% endif %}
                             ({% trans %}Paris time{% endtrans %})
                         </p>
-                        <p class="help">
+                        <span class="help">
                             {{ event.description|raw|length > 100 ? event.description|slice(0, 100) ~ '...' : event.description|raw }}
-                        </p>
+                        </span>
                     </a>
 
 

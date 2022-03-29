@@ -17,16 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6229e002988b1
-DTSTAMP;TZID=Europe/Paris:20220310T122450
+UID:6242da8044d09
+DTSTAMP;TZID=Europe/Paris:20220329T120800
 SUMMARY:eius
-DESCRIPTION:Omnis autem vel natus unde autem. Eum nostrum nihil eaque quia 
- voluptatem. Fugiat ea occaecati et ullam. Quia eum est et quas. Praesentiu
- m ut nisi maxime eaque eum. Aut aut sunt consequuntur omnis voluptas. Nesc
- iunt fugiat vero accusamus iste qui velit. Omnis voluptatibus alias consec
- tetur qui in.
-LOCATION:129\, place Noël Dumas\, 73 951 Pichondan\, Pichondan
-DTSTART;TZID=Europe/Paris:20220318T135050
-DTEND;TZID=Europe/Paris:20220318T135050
+DESCRIPTION:Perspiciatis aspernatur repudiandae perspiciatis quaerat amet. 
+ Explicabo rerum dignissimos enim omnis voluptatem ab ut.
+LOCATION:9\, avenue Étienne Chauveau\, 97 539 Leroux\, Leroux
+DTSTART;TZID=Europe/Paris:20220330T145359
+DTEND;TZID=Europe/Paris:20220330T145359
 END:VEVENT
 END:VCALENDAR

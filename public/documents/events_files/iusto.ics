@@ -15,17 +15,21 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6217fb8fbe5f5
-DTSTAMP;TZID=Europe/Paris:20220224T224135
+UID:6242da804e39b
+DTSTAMP;TZID=Europe/Paris:20220329T120800
 SUMMARY:iusto
-DESCRIPTION:Quo nam est delectus repellendus earum itaque hic. Nemo est vol
- uptatem blanditiis temporibus autem. Vitae porro ullam quasi aut quasi tem
- pore sit cupiditate. Asperiores aut facilis quis aut enim.
-LOCATION:rue Fouquet\, 98 441 Langlois-sur-Goncalves\, Langlois-sur-Goncalv
- es
-DTSTART;TZID=Europe/Paris:20220418T221944
-DTEND;TZID=Europe/Paris:20220418T221944
+DESCRIPTION:Enim non reprehenderit ut ipsa odio voluptatum molestias est. O
+ fficiis nihil dolores dolorem quae. Facilis quis perferendis magnam facere
+ .
+LOCATION:331\, place de Besnard\, 66853 Descamps-sur-Mer\, Descamps-sur-Mer
+DTSTART;TZID=Europe/Paris:20220511T213300
+DTEND;TZID=Europe/Paris:20220511T213300
 END:VEVENT
 END:VCALENDAR
