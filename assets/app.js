@@ -30,6 +30,7 @@ const vinyles = require('./images/jpg/vinyl.jpg');
 const default_event_affiche = require('./images/png/720x240.png');
 const default_event_affiche_2 = require('./images/png/640x320.png');
 const no_img = require('./images/png/no-pictures.png');
+const background_design = require('./images/jpg/background_design.jpg');
 
 // start the Stimulus application
 import './bootstrap';
