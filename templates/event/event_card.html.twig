@@ -18,41 +18,33 @@
                 <div class="is-flex is-align-items-center shadow-box-1 my-2">
                     <div class="has-text-centered has-text-success has-text-weight-bold is-size-5 column py-1">
                         <span>
-                            {{ event.title }}
+                            {{ event.title|capitalize }}
                         </span>
                     </div>
                 </div>
             </div>
             <div class="column px-0 py-0">
 
-                <div class="column px-0 py-0 mx-1 my-2 is-flex shadow-box-1">
-                    <div class="column is-expanded has-text-success is-flex is-justify-content-center is-align-items-center">
-                        <span class="has-text-success-light">
-                            {{ event.adresse }}
+                <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="column px-0 py-0 mx-1 my-2 is-flex is-justify-content-center is-align-items-center rotationX transition-3ms" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
+                    <div class="shadow-box-1 is-fullwidth is-height-100-percent column is-flex is-justify-content-center is-align-items-center is-size-4">
+                        <span class="icon is-large">
+                            <i class="fas fa-lg fa-location-dot"></i>
+                        </span>
+                        <span>
+                            {% trans %}Location{% endtrans %}
                         </span>
                     </div>
-                    <div class="is-flex is-justify-content-center is-align-items-center px-2 py-2 rotationY">
-                        <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="button is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
-                            <span  class="icon">
-                                <i class="fas fa-lg fa-map-marker-alt"></i>
-                            </span>
-                        </a>
-                    </div>
-                </div>
+                </a>
 
-                <div class="column px-0 py-0 mx-1 my-2 is-flex shadow-box-1">
-                    <div class="column is-expanded has-text-success is-flex is-justify-content-center is-align-items-center">
-                        <span class="has-text-success-light">
-                            {{ event.datetime|format_datetime('full','short',locale=app.request.locale) }}
+                <div class="column px-0 py-0 mx-1 my-2 is-flex is-justify-content-center is-align-items-center rotationX transition-3ms" onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
+                    <a class="shadow-box-1 is-fullwidth is-height-100-percent column is-flex is-justify-content-center is-align-items-center is-size-4">
+                        <span class="icon is-large">
+                            <i class="fas fa-lg fa-calendar-alt"></i>
                         </span>
-                    </div>
-                    <div class="is-flex is-justify-content-center is-align-items-center px-2 py-2 rotationY">
-                        <a class="button is-rounded px-4 py-4 is-flex is-justify-content-center is-align-items-center"  onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
-                            <span class="icon">
-                                <i class="fas fa-lg fa-bell"></i>
-                            </span>
-                        </a>
-                    </div>
+                        <span>
+                            {% trans %}Calendar{% endtrans %}
+                        </span>
+                    </a>
                 </div>
 
                 {% if event.ticketingLink %}
