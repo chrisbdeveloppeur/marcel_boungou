@@ -465,6 +465,12 @@ li{
   width: 100vw;
 }
 
+.ancrage-home-sections{
+  position: absolute;
+  top: -64px;
+  visibility: hidden;
+}
+
 .title-parallax{
   font-size: 10vw !important;
 }
