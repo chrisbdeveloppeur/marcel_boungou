@@ -20,8 +20,8 @@
                 <tr>
                     <th>Id</th>
                     <th>{% trans %}Title{% endtrans %}</th>
-                    <th class="class="is-hidden-touch"">{% trans %}Content{% endtrans %}</th>
-                    <th>{% trans %}Datetime{% endtrans %}</th>
+                    <th class="is-hidden-touch">{% trans %}Content{% endtrans %}</th>
+                    <th>{% trans %}Creation date{% endtrans %}</th>
                     <th>{% trans %}Actions{% endtrans %}</th>
                 </tr>
             </thead>
@@ -35,7 +35,7 @@
                     <td>
                         <a class="button is-success is-small is-rounded m-1" href="{{ path('news_show', {'id': news.id}) }}">{% trans %}show{% endtrans %}</a>
                         <a class="button is-success is-small is-rounded m-1" href="{{ path('news_edit', {'id': news.id}) }}">{% trans %}edit{% endtrans %}</a><br>
-                        <a class="button is-success is-small is-rounded m-1" href="{{ path('news_news_sender', {'id': news.id}) }}" onclick="return confirm('êtes-vous sur de vouloir envoyer cette newsletter à l\'enssemble des abonnées ?')">{% trans %}send news to subscribers{% endtrans %}</a>
+                        <a class="button is-success is-small is-rounded m-1" href="{{ path('news_news_sender', {'id': news.id}) }}" onclick="return confirm({% trans %}'are you sure you want to send this newsletter to all subscribers ?'{% endtrans %})">{% trans %}send news to subscribers{% endtrans %}</a>
                     </td>
                 </tr>
             {% else %}

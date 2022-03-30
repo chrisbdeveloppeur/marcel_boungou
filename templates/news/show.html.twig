@@ -12,6 +12,9 @@
         <div class="px-1 py-1">
             <a class="button is-success is-fullwidth" href="{{ path('news_edit', {'id': news.id}) }}">{% trans %}edit{% endtrans %}</a>
         </div>
+        <div class="px-1 py-1">
+            <a class="button is-success is-fullwidth" href="{{ path('news_news_sender', {'id': news.id}) }}" onclick="return confirm({% trans %}'are you sure you want to send this newsletter to all subscribers ?'{% endtrans %})">{% trans %}send news to subscribers{% endtrans %}</a>
+        </div>
     </div>
 
     <div class="table-container">
@@ -30,7 +33,7 @@
                 <td>{{ news.description|raw }}</td>
             </tr>
             <tr>
-                <th>{% trans %}Datetime{% endtrans %}</th>
+                <th>{% trans %}Creation date{% endtrans %}</th>
                 <td>{{ news.datetime ? news.datetime|date('d/m/Y H:i:s') : '' }}</td>
             </tr>
             </tbody>

@@ -1345,6 +1345,18 @@
         <source>Shortly</source>
         <target>Prochainement</target>
       </trans-unit>
+      <trans-unit id="Toelw4B" resname="La newsletter &lt;b&gt;">
+        <source>La newsletter &lt;b&gt;</source>
+        <target><![CDATA[__La newsletter <b>]]></target>
+      </trans-unit>
+      <trans-unit id="pq8J2tV" resname="send news to subscribers">
+        <source>send news to subscribers</source>
+        <target>Envoyer les news aux abonnés</target>
+      </trans-unit>
+      <trans-unit id="DyK9UZJ" resname="'are you sure you want to send this newsletter to all subscribers ?'">
+        <source>'are you sure you want to send this newsletter to all subscribers ?'</source>
+        <target>'êtes-vous sûr de vouloir envoyer cette newsletter à tous les abonnés ?'</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
