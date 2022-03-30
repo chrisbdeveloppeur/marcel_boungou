@@ -60,9 +60,7 @@
     <h3>{{ news.title }}</h3>
 
     {% if news.description %}
-        <p>
-            {{ news.description|raw }}
-        </p>
+        {{ news.description|raw }}
     {% endif %}
 
     <br><br><br>
