@@ -33,6 +33,7 @@ $navbar-item-active-color: none;
 $navbar-item-active-background-color : $white-layer;
 .navbar-burger:hover{
   background: rgba(255,255,255,.5) !important;
+  color: $success !important;
 }
 
 $navbar-dropdown-background-color: $success;
@@ -651,7 +652,7 @@ li{
     width: 100% !important;
     margin: auto !important;
   }
-  div.navbar-dropdown a, a.navbar-burger{
+  div.navbar-dropdown a{
     color: $success !important;
   }
   .has-background-black-layerless-touch{

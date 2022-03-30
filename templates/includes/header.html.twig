@@ -3,7 +3,7 @@
 {% else %}
     {% set home = false %}
 {% endif %}
-<nav class="navbar is-fixed-top box-shadow-bulma-dark font-quicksand transition-5ms" role="navigation" aria-label="main navigation">
+<nav class="navbar is-fixed-top box-shadow-bulma font-quicksand transition-5ms" role="navigation" aria-label="main navigation">
     <div class="nav-background">
         <img src="{{ asset('build/images/background_design.a6a92814.jpg') }}" alt="">
         <div class="nav-background-layer"></div>
@@ -23,7 +23,7 @@
     <div id="navbarBasic" class="navbar-menu has-text-centered-touch">
         <div class="navbar-start">
 
-            <div class="box-shadow-bulma-dark navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
+            <div class="box-shadow-bulma navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
                 <a {% if home %}href="#mediatheque"{% endif %} class="navbar-item is-size-5-touch">
                     {% trans %}Media{% endtrans %}
                 </a>
@@ -42,7 +42,7 @@
             </div>
 
 
-            <div class="box-shadow-bulma-dark navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
+            <div class="box-shadow-bulma navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
                 <a {% if home %}href="#events"{% endif %} class="navbar-item is-size-5-touch">
                     {% trans %}Events{% endtrans %}
                 </a>
@@ -58,7 +58,7 @@
             </div>
 
 
-            <div class="box-shadow-bulma-dark navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
+            <div class="box-shadow-bulma navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
                 <a {% if home %}href="#mbMinistry"{% endif %} class="navbar-item is-size-5-touch">
                     {% trans %}MB Ministry{% endtrans %}
                 </a>
@@ -77,7 +77,7 @@
 
             {% if is_granted('ROLE_ADMIN') %}
 
-                <div class="box-shadow-bulma-dark navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
+                <div class="box-shadow-bulma navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
                     <a class="navbar-item is-size-5-touch">
                         {% trans %}Manage{% endtrans %}
                     </a>
@@ -100,7 +100,7 @@
 
         <div class="navbar-end">
             {% if app.user %}
-                <div class="box-shadow-bulma-dark navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
+                <div class="box-shadow-bulma navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
                     <a class="navbar-item is-size-5-touch">
                         {{ app.user.username }}
                     </a>
