@@ -4,7 +4,7 @@
             {% for event in events %}
                 <div class="highlight-info is-hidden has-background-success has-text-light px-3 py-3 highlight-{{ event.id }} box-shadow-bulma" id="{{ event.datetime|date('d/m/Y') }}">
                     <button class="delete" style="position: absolute;top: .5rem;right: .5rem" onclick="this.parentElement.classList.add('is-hidden')"></button>
-                    <a href="#" class="has-text-light mb-2" onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
+                    <a class="has-text-light mb-2" onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
                         <h3 class="has-text-weight-bold">
                             {{ event.title }}
                         </h3>
