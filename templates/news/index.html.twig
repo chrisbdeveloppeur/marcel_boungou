@@ -30,7 +30,7 @@
                 <tr>
                     <td>{{ news.id }}</td>
                     <td>{{ news.title }}</td>
-                    <td>{{ news.description|raw }}</td>
+                    <td>{{ news.description|raw|length > 50 ? news.description|slice(0, 50) ~ '...' : news.description|raw }}</td>
                     <td>{{ news.datetime ? news.datetime|date('d/m/Y H:i:s') : '' }}</td>
                     <td>
                         <a href="{{ path('news_show', {'id': news.id}) }}">{% trans %}show{% endtrans %}</a>
