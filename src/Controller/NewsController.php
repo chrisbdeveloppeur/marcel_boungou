@@ -2,9 +2,11 @@
 
 namespace App\Controller;
 
+use App\Command\NewsSenderCommand;
 use App\Entity\News;
 use App\Form\NewsType;
 use App\Repository\NewsRepository;
+use App\Repository\SubscriberRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -20,10 +22,12 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 class NewsController extends AbstractController
 {
     private $translator;
+    private $newsSenderCommande;
 
-    public function __construct(TranslatorInterface $translator)
+    public function __construct(TranslatorInterface $translator, NewsSenderCommand $newsSenderCommande)
     {
         $this->translator = $translator;
+        $this->newsSenderCommande = $newsSenderCommande;
     }
 
     /**
@@ -112,6 +116,19 @@ class NewsController extends AbstractController
             $entityManager->flush();
         }
         $this->addFlash('warning', $this->translator->trans('Element deleted successfuly'));
+        return $this->redirectToRoute('news_index', [], Response::HTTP_SEE_OTHER);
+    }
+
+    /**
+     * @Route("/send-news/{id}", name="news_sender")
+     */
+    public function newsSender($id, NewsRepository $newsRepository, SubscriberRepository $subscriberRepository): Response
+    {
+        $subscribers = $subscriberRepository->findAll();
+        $nbSubscribers = count($subscribers);
+        $news = $newsRepository->find($id);
+        $this->newsSenderCommande->sendNews($news);
+        $this->addFlash('warning', $this->translator->trans('La newsletter <b>'.$news->getTitle().'</b> a bien été envoyée aux <b>'.$nbSubscribers.'</b> abonnés'));
         return $this->redirectToRoute('news_index', [], Response::HTTP_SEE_OTHER);
     }
 }

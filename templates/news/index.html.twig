@@ -33,8 +33,9 @@
                     <td class="is-hidden-touch">{{ news.description|raw }}</td>
                     <td>{{ news.datetime ? news.datetime|date('d/m/Y H:i:s') : '' }}</td>
                     <td>
-                        <a href="{{ path('news_show', {'id': news.id}) }}">{% trans %}show{% endtrans %}</a>
-                        <a href="{{ path('news_edit', {'id': news.id}) }}">{% trans %}edit{% endtrans %}</a>
+                        <a class="button is-success is-small is-rounded m-1" href="{{ path('news_show', {'id': news.id}) }}">{% trans %}show{% endtrans %}</a>
+                        <a class="button is-success is-small is-rounded m-1" href="{{ path('news_edit', {'id': news.id}) }}">{% trans %}edit{% endtrans %}</a><br>
+                        <a class="button is-success is-small is-rounded m-1" href="{{ path('news_news_sender', {'id': news.id}) }}" onclick="return confirm('êtes-vous sur de vouloir envoyer cette newsletter à l\'enssemble des abonnées ?')">{% trans %}send news to subscribers{% endtrans %}</a>
                     </td>
                 </tr>
             {% else %}
