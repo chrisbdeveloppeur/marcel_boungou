@@ -1309,6 +1309,34 @@
         <source>Be there on</source>
         <target>Rendez-vous le </target>
       </trans-unit>
+      <trans-unit id="FBaZOwq" resname="Events &amp; News">
+        <source>Events &amp; News</source>
+        <target><![CDATA[__Events & News]]></target>
+      </trans-unit>
+      <trans-unit id="47DEQpj" resname="">
+        <source></source>
+        <target>__</target>
+      </trans-unit>
+      <trans-unit id="V7ym4cb" resname="Albums">
+        <source>Albums</source>
+        <target>Albums</target>
+      </trans-unit>
+      <trans-unit id="dp56TP4" resname="Musics">
+        <source>Musics</source>
+        <target>Musiques</target>
+      </trans-unit>
+      <trans-unit id="naf3a8g" resname="Books">
+        <source>Books</source>
+        <target>Livres</target>
+      </trans-unit>
+      <trans-unit id="HmJFAJ1" resname="Pictures">
+        <source>Pictures</source>
+        <target>Images</target>
+      </trans-unit>
+      <trans-unit id="VsLJFiO" resname="Managers">
+        <source>Managers</source>
+        <target>Gestionnaires</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

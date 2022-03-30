@@ -22,18 +22,13 @@
 
     <div id="navbarBasic" class="navbar-menu has-text-centered-touch">
         <div class="navbar-start">
-            <a class="navbar-item is-size-5-touch" href="{{ path('home_index') }}">
-                {% trans %}Home{% endtrans %}
-            </a>
 
-            <hr class="dropdown-divider">
-
-            <div class="navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
+            <div class="box-shadow-bulma-dark navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
                 <a {% if home %}href="#mediatheque"{% endif %} class="navbar-item is-size-5-touch">
                     {% trans %}Media{% endtrans %}
                 </a>
 
-                <div class="navbar-dropdown is-minimized">
+                <div class="navbar-dropdown has-background-white-layer is-minimized">
                     <a href="{{ path('discography_index') }}" class="navbar-item is-size-5-touch">
                         {% trans %}Discography{% endtrans %}
                     </a>
@@ -46,14 +41,13 @@
                 </div>
             </div>
 
-            <hr class="dropdown-divider">
 
-            <div class="navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
+            <div class="box-shadow-bulma-dark navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
                 <a {% if home %}href="#events"{% endif %} class="navbar-item is-size-5-touch">
                     {% trans %}Events{% endtrans %}
                 </a>
 
-                <div class="navbar-dropdown is-minimized">
+                <div class="navbar-dropdown has-background-white-layer is-minimized">
                     <a class="navbar-item is-size-5-touch" href="{{ path('event_home') }}">
                         {% trans %}In future{% endtrans %}
                     </a>
@@ -63,13 +57,12 @@
                 </div>
             </div>
 
-            <hr class="dropdown-divider">
 
-            <div class="navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
+            <div class="box-shadow-bulma-dark navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
                 <a {% if home %}href="#mbMinistry"{% endif %} class="navbar-item is-size-5-touch">
                     {% trans %}MB Ministry{% endtrans %}
                 </a>
-                <div class="navbar-dropdown is-minimized">
+                <div class="navbar-dropdown has-background-white-layer is-minimized">
                     <a {% if home %}href="#bio"{% endif %} class="navbar-item is-size-5-touch">
                         {% trans %}Biography{% endtrans %}
                     </a>
@@ -83,21 +76,20 @@
             </div>
 
             {% if is_granted('ROLE_ADMIN') %}
-                <hr class="dropdown-divider">
 
-                <div class="navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
+                <div class="box-shadow-bulma-dark navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
                     <a class="navbar-item is-size-5-touch">
                         {% trans %}Manage{% endtrans %}
                     </a>
-                    <div class="navbar-dropdown is-minimized">
-                        <a href="{{ path('news_index') }}" class="navbar-item is-size-5-touch">{% trans %}Manage News{% endtrans %}</a>
-                        <a href="{{ path('event_index') }}" class="navbar-item is-size-5-touch">{% trans %}Manage Events{% endtrans %}</a>
-                        <a href="{{ path('album_index') }}" class="navbar-item is-size-5-touch">{% trans %}Manage Albums{% endtrans %}</a>
-                        <a href="{{ path('music_index') }}" class="navbar-item is-size-5-touch">{% trans %}Manage Musics{% endtrans %}</a>
-                        <a href="{{ path('book_index') }}" class="navbar-item is-size-5-touch">{% trans %}Manage Books{% endtrans %}</a>
-                        <a href="{{ path('picture_index') }}" class="navbar-item is-size-5-touch">{% trans %}Manage Pictures{% endtrans %}</a>
+                    <div class="navbar-dropdown has-background-white-layer is-minimized">
+                        <a href="{{ path('news_index') }}" class="navbar-item is-size-5-touch">{% trans %}News{% endtrans %}</a>
+                        <a href="{{ path('event_index') }}" class="navbar-item is-size-5-touch">{% trans %}Events{% endtrans %}</a>
+                        <a href="{{ path('album_index') }}" class="navbar-item is-size-5-touch">{% trans %}Albums{% endtrans %}</a>
+                        <a href="{{ path('music_index') }}" class="navbar-item is-size-5-touch">{% trans %}Musics{% endtrans %}</a>
+                        <a href="{{ path('book_index') }}" class="navbar-item is-size-5-touch">{% trans %}Books{% endtrans %}</a>
+                        <a href="{{ path('picture_index') }}" class="navbar-item is-size-5-touch">{% trans %}Pictures{% endtrans %}</a>
                         {% if is_granted('ROLE_SUPER_ADMIN') %}
-                            <a href="{{ path('user_index') }}" class="navbar-item is-size-5-touch">{% trans %}Manage Managers{% endtrans %}</a>
+                            <a href="{{ path('user_index') }}" class="navbar-item is-size-5-touch">{% trans %}Managers{% endtrans %}</a>
                         {% endif %}
                     </div>
                 </div>
@@ -105,15 +97,14 @@
 
         </div>
 
-        <hr class="dropdown-divider">
 
         <div class="navbar-end">
             {% if app.user %}
-                <div class="navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
+                <div class="box-shadow-bulma-dark navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
                     <a class="navbar-item is-size-5-touch">
                         {{ app.user.username }}
                     </a>
-                    <div class="navbar-dropdown is-minimized">
+                    <div class="navbar-dropdown has-background-white-layer is-minimized">
                         <a class="navbar-item is-size-5-touch" href="{{ path('user_edit', {'id': app.user.id}) }}">
                             {% trans %}Edit my profile{% endtrans %}
                         </a>

@@ -63,6 +63,9 @@ $modal-content-width: auto;
 .has-background-black-layerless{
   background: $black-layerless;
 }
+.has-background-white-layer{
+  background: $white-layer;
+}
 
 
 .tag.is-active{
@@ -641,11 +644,15 @@ li{
   .dropdown-divider{
     width: 70%;
     margin: auto !important;
-    height: 5px !important;
+    opacity: 70%;
+    height: 2px !important;
   }
   a.navbar-item{
-    width: 70% !important;
+    width: 100% !important;
     margin: auto !important;
+  }
+  div.navbar-dropdown a, a.navbar-burger{
+    color: $success !important;
   }
   .has-background-black-layerless-touch{
     background: $black-layerless;
