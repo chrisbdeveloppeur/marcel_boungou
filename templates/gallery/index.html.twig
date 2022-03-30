@@ -43,6 +43,12 @@
         </div>
     </div>
 
+    {% if is_granted('ROLE_ADMIN') %}
+        <div class="column">
+            <a href="{{ path('picture_new') }}" class="button is-success">{{ 'Add a new picture'|trans }}</a>
+        </div>
+    {% endif %}
+
     {% if pictures|length > 0 %}
         <div class="column is-full is-full-mobile">
             {{ include('gallery/picture_list.html.twig') }}

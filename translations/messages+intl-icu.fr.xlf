@@ -591,7 +591,7 @@
       </trans-unit>
       <trans-unit id="B9NhoxR" resname="Add a Tag">
         <source>Add a Tag</source>
-        <target>Ajouter un Tag</target>
+        <target>Ajouter une balise</target>
       </trans-unit>
       <trans-unit id="g074Mwd" resname="Edit Album">
         <source>Edit Album</source>
@@ -843,7 +843,7 @@
       </trans-unit>
       <trans-unit id="EzEnW8U" resname="Tags">
         <source>Tags</source>
-        <target>Affiliations</target>
+        <target>Balises</target>
       </trans-unit>
       <trans-unit id="UFF_n2Q" resname="Picture of the book">
         <source>Picture of the book</source>
@@ -1336,6 +1336,10 @@
       <trans-unit id="VsLJFiO" resname="Managers">
         <source>Managers</source>
         <target>Gestionnaires</target>
+      </trans-unit>
+      <trans-unit id="IVlPbLK" resname="Attention, the tags are used in particular for the search/filter bar">
+        <source>Attention, the tags are used in particular for the search/filter bar</source>
+        <target>Attention, les balises servent notamment pour la barre de recherche/filtre</target>
       </trans-unit>
     </body>
   </file>

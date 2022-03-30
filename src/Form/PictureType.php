@@ -40,6 +40,7 @@ class PictureType extends AbstractType
             ->add('tags', TextType::class,[
                 'required'=> false,
                 'label' => false,
+                'help' => $this->translator->trans('Attention, the tags are used in particular for the search/filter bar'),
                 'attr' => [
                     'class' => 'tags-input',
                     'data-type' => 'tags',
