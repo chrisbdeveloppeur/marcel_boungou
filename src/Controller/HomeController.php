@@ -38,13 +38,12 @@ class HomeController extends AbstractController
                 $em->persist($subscriber);
                 $em->flush();
                 $this->addFlash('info', $this->translator->trans('Thank you for subscribing to the newsletter'));
-                $previousUrl = $request->headers->get('referer');
-                return $this->redirect($previousUrl);
             }else{
-                $this->addFlash('danger', $this->translator->trans('Operation failed'));
-                $url = $this->redirectToRoute('home_index')->getTargetUrl().'#subscribeForm';
-                return $this->redirect($url);
+                $errMsg = $form->get('email')->getErrors()->current()->getMessage();
+                $this->addFlash('danger', $this->translator->trans('Operation failed').'<br>'.$errMsg);
             }
+            $url = $this->redirectToRoute('home_index')->getTargetUrl().'#subscribeForm';
+            return $this->redirect($url);
         }
         return $this->render('home/index.html.twig',[
             'subs_form' => $form->createView(),

@@ -1159,11 +1159,11 @@
       </trans-unit>
       <trans-unit id="Hhp3MSt" resname="Add a News">
         <source>Add a News</source>
-        <target>Ajouter une nouvelle</target>
+        <target>Ajouter une News</target>
       </trans-unit>
       <trans-unit id="2vKC5kR" resname="Back to News list">
         <source>Back to News list</source>
-        <target>Retour à la liste des nouvelles</target>
+        <target>Retour à la liste des News</target>
       </trans-unit>
       <trans-unit id="bVSUjmh" resname="Edit News">
         <source>Edit News</source>
@@ -1171,27 +1171,27 @@
       </trans-unit>
       <trans-unit id="Qv.O4vB" resname="New's title">
         <source>New's title</source>
-        <target>Titre de la nouvelle</target>
+        <target>Titre de la News</target>
       </trans-unit>
       <trans-unit id="DWy9drF" resname="New's content">
         <source>New's content</source>
-        <target>Contenu de la nouvelle</target>
+        <target>Contenu de la News</target>
       </trans-unit>
       <trans-unit id="0aaie9C" resname="New Event">
         <source>New Event</source>
-        <target>Ajouter une nouvelle</target>
+        <target>Ajouter une News</target>
       </trans-unit>
       <trans-unit id="2_flmdx" resname="Manage News">
         <source>Manage News</source>
-        <target>Gestion des nouvelles</target>
+        <target>Gestion des News</target>
       </trans-unit>
       <trans-unit id="1OBK6Qg" resname="News index">
         <source>News index</source>
-        <target>Liste des nouvelles</target>
+        <target>Liste des News</target>
       </trans-unit>
       <trans-unit id="2uQKeAN" resname="Back to News page">
         <source>Back to News page</source>
-        <target>Retour à la page des nouvelles</target>
+        <target>Retour à la page des News</target>
       </trans-unit>
       <trans-unit id="R70pB1_" resname="Content">
         <source>Content</source>
@@ -1199,15 +1199,15 @@
       </trans-unit>
       <trans-unit id="aXUvIxO" resname="News">
         <source>News</source>
-        <target>Nouvelles</target>
+        <target>News</target>
       </trans-unit>
       <trans-unit id="uqJ3G9s" resname="back to news list">
         <source>back to news list</source>
-        <target>Retour à la liste des nouvelles</target>
+        <target>Retour à la liste des News</target>
       </trans-unit>
       <trans-unit id="G05kME6" resname="Last news">
         <source>Last news</source>
-        <target>Dernières nouvelles</target>
+        <target>Dernières News</target>
       </trans-unit>
       <trans-unit id="2axInd9" resname="The title is not required">
         <source>The title is not required</source>
@@ -1215,11 +1215,11 @@
       </trans-unit>
       <trans-unit id="Z8d5DJ_" resname="All news">
         <source>All news</source>
-        <target>Toutes les nouvelles</target>
+        <target>Toutes les News</target>
       </trans-unit>
       <trans-unit id="ThWpU7s" resname="News ">
         <source>News </source>
-        <target>Nouvelle </target>
+        <target>News </target>
       </trans-unit>
       <trans-unit id="9b01fZ9" resname=" created with success">
         <source> created with success</source>

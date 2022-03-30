@@ -17,7 +17,6 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 
 /**
  * @Route("/news", name="news_")
- * @Security("is_granted('ROLE_ADMIN')")
  */
 class NewsController extends AbstractController
 {
@@ -32,6 +31,7 @@ class NewsController extends AbstractController
 
     /**
      * @Route("/", name="index", methods={"GET"})
+     * @Security("is_granted('ROLE_ADMIN')")
      */
     public function index(NewsRepository $newsRepository): Response
     {
@@ -42,6 +42,7 @@ class NewsController extends AbstractController
 
     /**
      * @Route("/new", name="new", methods={"GET", "POST"})
+     * @Security("is_granted('ROLE_ADMIN')")
      */
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
@@ -70,7 +71,8 @@ class NewsController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="show", methods={"GET"})
+     * @Route("/{id}/show", name="show", methods={"GET"})
+     * @Security("is_granted('ROLE_ADMIN')")
      */
     public function show(News $news): Response
     {
@@ -81,6 +83,7 @@ class NewsController extends AbstractController
 
     /**
      * @Route("/{id}/edit", name="edit", methods={"GET", "POST"})
+     * @Security("is_granted('ROLE_ADMIN')")
      */
     public function edit(Request $request, News $news, EntityManagerInterface $entityManager): Response
     {
@@ -107,7 +110,8 @@ class NewsController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="delete", methods={"POST"})
+     * @Route("/{id}/delete", name="delete", methods={"POST"})
+     * @Security("is_granted('ROLE_ADMIN')")
      */
     public function delete(Request $request, News $news, EntityManagerInterface $entityManager): Response
     {
@@ -119,8 +123,24 @@ class NewsController extends AbstractController
         return $this->redirectToRoute('news_index', [], Response::HTTP_SEE_OTHER);
     }
 
+
+    /**
+     * @param NewsRepository $newsRepository
+     * @return Response
+     * @Route("/all", name="all", methods={"GET"})
+     */
+    public function allNews(NewsRepository $newsRepository): Response
+    {
+        $allNews = $newsRepository->findAll();
+        return $this->render('news/_all.html.twig',[
+            'news' => $allNews,
+        ]);
+    }
+
+
     /**
      * @Route("/send-news/{id}", name="news_sender")
+     * @Security("is_granted('ROLE_ADMIN')")
      */
     public function newsSender($id, NewsRepository $newsRepository, SubscriberRepository $subscriberRepository): Response
     {
