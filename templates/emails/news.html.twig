@@ -1,0 +1,75 @@
+<head>
+    <style>
+        *{
+            font-family: Ubuntu, Helvetica, Arial, sans-serif
+        }
+        .shadow-box-1{
+            background: rgba(72, 50, 19, .5);
+            border-radius:.5rem;
+            box-shadow: 0 0 5px rgba(255, 219, 127, 0.9);
+            padding: .75em;
+            margin: .25em;
+            text-decoration: none;
+            color: #da6d00;
+        }
+        .has-text-white{
+            color: white;
+        }
+        .has-text-link{
+            color: #987f00;
+        }
+        .has-text-link-hover{
+            color: #c2a800;
+        }
+        .has-text-success{
+            color: #da6d00;
+        }
+        .has-text-success-layer{
+            color: rgba(218, 112, 0, 0.7);
+        }
+        .has-text-primary{
+            color:#7C4A8C;
+        }
+        .has-text-primary-layer {
+            color:rgba(124, 74, 140, 0.7);
+        }
+        .has-text-primary-dark-layer {
+            color:rgba(35, 13, 41, 0.8);
+        }
+        .has-text-black{
+            color:#0a0a0a;
+        }
+        .has-text-dark{
+            color:#4a4a4a;
+        }
+        .has-text-white-layer{
+            color:rgba(255, 255, 255, 0.7);
+        }
+        .has-text-black-layer{
+            color:rgba(0, 0, 0, 0.7);
+        }
+        .has-text-black-layerless{
+            color:rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<div style="font-family: sans-serif; background: lightgrey; padding: 30px;text-align: center">
+    <h2>Bonjour à vous !</h2>
+    <h3>Voici les nouvelles sur www.marcel-boungou.com</h3>
+
+    {% if news.description|raw %}
+        <p>
+            {{ news.description|raw }}
+        </p>
+    {% endif %}
+
+    <br><br><br>
+
+    <div style="text-align: center;font-size: 12px">
+        Vous voulez stoper <span style="font-weight: bold">les rappels concernant cet évenement</span> ? <a href="http://127.0.0.1:8000/event/reminder/remove/{{ event.id }}" style="color: grey;text-decoration: none">se désabonner</a><br>
+        Si vous ne souhaitez ne plus recevoir <span style="font-weight: bold">d'e-mails de www.marcel-boungou.com</span> ? <a href="http://127.0.0.1:8000/subscrib/remove/all" style="color: grey;text-decoration: none">se désabonner</a>
+        <br><br><a href="https://marcel-boungou.com" style="color: grey">www.marcel-boungou.com</a>
+    </div>
+
+</div>

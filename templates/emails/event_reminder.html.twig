@@ -1,29 +1,89 @@
-<div style="font-family: sans-serif; background: lightgrey; padding: 30px;text-align: center">
+<head>
+    <style>
+        *{
+            font-family: Ubuntu, Helvetica, Arial, sans-serif
+        }
+        .shadow-box-1{
+            background: rgba(72, 50, 19, .5);
+            border-radius:.5rem;
+            box-shadow: 0 0 5px rgba(255, 219, 127, 0.9);
+            padding: .75em;
+            margin: .25em;
+            text-decoration: none;
+            color: #da6d00;
+        }
+        .has-text-white{
+            color: white;
+        }
+        .has-text-link{
+            color: #987f00;
+        }
+        .has-text-link-hover{
+            color: #c2a800;
+        }
+        .has-text-success{
+            color: #da6d00;
+        }
+        .has-text-success-layer{
+            color: rgba(218, 112, 0, 0.7);
+        }
+        .has-text-primary{
+            color:#7C4A8C;
+        }
+        .has-text-primary-layer {
+            color:rgba(124, 74, 140, 0.7);
+        }
+        .has-text-primary-dark-layer {
+            color:rgba(35, 13, 41, 0.8);
+        }
+        .has-text-black{
+            color:#0a0a0a;
+        }
+        .has-text-dark{
+            color:#4a4a4a;
+        }
+        .has-text-white-layer{
+            color:rgba(255, 255, 255, 0.7);
+        }
+        .has-text-black-layer{
+            color:rgba(0, 0, 0, 0.7);
+        }
+        .has-text-black-layerless{
+            color:rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<div class="has-text-white" style="font-family: sans-serif; background: rgb(41,41,41); padding: 30px;text-align: center">
+    <h1>www.marcel-boungou.com</h1>
     <h2>Bonjour à vous !</h2>
     <h3>Vous êtes abonné aux rappels pour l'événement : {{ event.title }}</h3>
 
-    {% if event.description %}
+    {% if event.description|raw %}
         <p>
-            {{ event.description }}
+            {{ event.description|raw }}
         </p>
     {% endif %}
 
     <br>Date de l'événement : <span style="font-size: large;font-weight: bold">{{ event.datetime|format_datetime('full','none',locale='fr') }}</span><br>
     Heure : <span style="font-size: large;font-weight: bold">{{ event.datetime|format_datetime('none','short',locale='fr') }}</span>
 
-    <br><br><span>Adresse</span> : <b>{{ event.adresse }}</b><br>
-    <a href="https://www.google.com/maps/search/{{ event.adresse }}" style="margin: 5px;font-weight:bold;display: inline-block; background: #fcc245; color: #000000; font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 120%;text-transform: none; padding: 5px 10px; mso-padding-alt: 0px; border-radius: 3px; text-decoration: none;" target="_blank">
-        Voir sur maps
-    </a>
-    <br><br>
+    <br><br><p>
+        <span>Adresse</span> : <b>{{ event.adresse }}</b>
+    </p>
+    <br>
 
     <div style="text-align: center">
-        <a href="http://127.0.0.1:8000/event/all#event{{ event.id }}" style="margin: 5px;font-weight:bold;display: inline-block; background: #fcc245; color: #000000; font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 120%;text-transform: none; padding: 10px 25px; mso-padding-alt: 0px; border-radius: 3px; text-decoration: none;" target="_blank">
+        <a class="shadow-box-1" href="https://www.google.com/maps/search/{{ event.adresse }}" target="_blank">
+            Voir sur maps
+        </a>
+
+        <a href="http://127.0.0.1:8000/event/all#event{{ event.id }}" class="shadow-box-1" target="_blank">
             Voir l'évenement
         </a>
 
         {% if event.ticketinglink %}
-            <a href="{{ event.ticketinglink }}" style="margin: 5px;font-weight:bold;display: inline-block; background: #fcc245; color: #000000; font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 120%;text-transform: none; padding: 10px 25px; mso-padding-alt: 0px; border-radius: 3px; text-decoration: none;" target="_blank">
+            <a href="{{ event.ticketinglink }}" class="shadow-box-1" target="_blank">
                 Billeterie
             </a>
         {% endif %}
