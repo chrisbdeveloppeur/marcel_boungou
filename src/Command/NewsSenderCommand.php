@@ -47,7 +47,7 @@ class NewsSenderCommand extends Command
         $io = new SymfonyStyle($input, $output);
         $news = $this->newsRepository->findOneBy(
             [],
-            ['datetime' => 'ASC']
+            ['datetime' => 'DESC']
         );
         $this->sendNews($news);
         $io->note('MailReminder sended for the event');
