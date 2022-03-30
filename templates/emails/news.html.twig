@@ -57,9 +57,9 @@
 <div class="has-text-white" style="font-family: sans-serif; background: rgb(41,41,41); padding: 30px;text-align: center">
     <h1>www.marcel-boungou.com</h1>
     <h2>Bonjour à vous !</h2>
-    <h3>Voici les nouvelles sur www.marcel-boungou.com</h3>
+    <h3>{{ news.title }}</h3>
 
-    {% if news.description|raw %}
+    {% if news.description %}
         <p>
             {{ news.description|raw }}
         </p>
@@ -68,7 +68,6 @@
     <br><br><br>
 
     <div style="text-align: center;font-size: 12px">
-        Vous voulez stoper <span style="font-weight: bold">les rappels concernant cet évenement</span> ? <a href="http://127.0.0.1:8000/event/reminder/remove/{{ event.id }}" style="color: grey;text-decoration: none">se désabonner</a><br>
         Si vous ne souhaitez ne plus recevoir <span style="font-weight: bold">d'e-mails de www.marcel-boungou.com</span> ? <a href="http://127.0.0.1:8000/subscrib/remove/all" style="color: grey;text-decoration: none">se désabonner</a>
         <br><br><a href="https://marcel-boungou.com" style="color: grey">www.marcel-boungou.com</a>
     </div>

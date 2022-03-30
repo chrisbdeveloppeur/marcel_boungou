@@ -15,17 +15,20 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6229e017c46c3
-DTSTAMP;TZID=Europe/Paris:20220310T122511
+UID:62445b51b97ba
+DTSTAMP;TZID=Europe/Paris:20220330T152953
 SUMMARY:odit
-DESCRIPTION:Officiis nam voluptatem est et. Numquam aliquam reprehenderit a
- lias. Officia velit laborum sequi mollitia. Officia voluptatum exercitatio
- nem quae.
-LOCATION:1\, impasse de Gerard\, 52 089 Hamon-sur-Valette\, Hamon-sur-Valet
- te
-DTSTART;TZID=Europe/Paris:20220309T045409
-DTEND;TZID=Europe/Paris:20220309T045409
+DESCRIPTION:Unde voluptatibus ullam adipisci. Excepturi qui dolores minima 
+ alias.
+LOCATION:rue Guy Blin\, 10 893 Paris\, Paris
+DTSTART;TZID=Europe/Paris:20220512T081838
+DTEND;TZID=Europe/Paris:20220512T081838
 END:VEVENT
 END:VCALENDAR

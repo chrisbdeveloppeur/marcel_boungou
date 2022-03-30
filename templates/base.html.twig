@@ -311,17 +311,8 @@
     var elements = navbar.querySelectorAll('.navbar-menu-touch');
     elements.forEach(function(elem) {
         elem.addEventListener('click', function () {
-            elements.forEach(function (el) {
-                el.classList.remove('is-active');
-                el.classList.remove('is-active');
-            });
             retractMenuNavbarTouch();
-            if (elem.classList.contains('is-active')){
-                elem.classList.remove('is-active');
-            } else {
-                elem.classList.add('is-active');
-                extendMenuNavbarTouch(elem);
-            }
+            extendMenuNavbarTouch(elem);
         })
     });
 

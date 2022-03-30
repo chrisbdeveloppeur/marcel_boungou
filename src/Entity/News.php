@@ -34,13 +34,18 @@ class News
 
     public function __construct()
     {
+        date_default_timezone_set('Europe/Paris');
         $dateTime = new \DateTime('now');
         $this->setDatetime($dateTime);
     }
 
     public function __toString()
     {
-        return $this->getTitle();
+        if ($this->getTitle()){
+            return $this->getTitle();
+        }else{
+            return 'Sans titre';
+        }
     }
 
     public function getId(): ?int

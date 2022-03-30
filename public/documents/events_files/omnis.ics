@@ -15,15 +15,21 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:622e5fd8af880
-DTSTAMP;TZID=Europe/Paris:20220313T221920
+UID:62445b51bb1c0
+DTSTAMP;TZID=Europe/Paris:20220330T152953
 SUMMARY:omnis
-DESCRIPTION:Quam quia dolorem iure reiciendis aut optio consectetur. Saepe 
- deserunt dolore quae et.
-LOCATION:rue Stéphane Carre\, 52 265 Dubois\, Dubois
-DTSTART;TZID=Europe/Paris:20220311T214534
-DTEND;TZID=Europe/Paris:20220311T214534
+DESCRIPTION:Officia ut et est rem accusantium. Sed quia ad voluptas neque c
+ upiditate quidem aliquam. Porro vitae qui totam enim aspernatur. Enim ad q
+ uisquam et hic totam ratione sed.
+LOCATION:1\, rue Goncalves\, 96864 Boulanger\, Boulanger
+DTSTART;TZID=Europe/Paris:20220522T055557
+DTEND;TZID=Europe/Paris:20220522T055557
 END:VEVENT
 END:VCALENDAR

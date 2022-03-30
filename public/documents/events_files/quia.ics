@@ -15,16 +15,20 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6221edf9ba3c0
-DTSTAMP;TZID=Europe/Paris:20220304T114617
+UID:62445b51b7b11
+DTSTAMP;TZID=Europe/Paris:20220330T152953
 SUMMARY:quia
-DESCRIPTION:Molestias ipsum est voluptates rerum sunt. Autem odio corporis 
- quas. Quam et consectetur eum omnis. Alias quia quis ratione soluta et et 
- magni omnis. Et et aperiam eius iste accusantium aut.
-LOCATION:25\, boulevard Marie\, 05476 Bouvet\, Bouvet
-DTSTART;TZID=Europe/Paris:20220426T100408
-DTEND;TZID=Europe/Paris:20220426T100408
+DESCRIPTION:Quis nihil et ad explicabo. Natus voluptatem nesciunt iure et. 
+ Cum omnis repudiandae in dignissimos.
+LOCATION:6\, avenue de Lopez\, 53126 Vincent-sur-Hardy\, Vincent-sur-Hardy
+DTSTART;TZID=Europe/Paris:20220503T000039
+DTEND;TZID=Europe/Paris:20220503T000039
 END:VEVENT
 END:VCALENDAR

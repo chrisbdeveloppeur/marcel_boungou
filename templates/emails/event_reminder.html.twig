@@ -59,7 +59,7 @@
     <h2>Bonjour à vous !</h2>
     <h3>Vous êtes abonné aux rappels pour l'événement : {{ event.title }}</h3>
 
-    {% if event.description|raw %}
+    {% if event.description %}
         <p>
             {{ event.description|raw }}
         </p>

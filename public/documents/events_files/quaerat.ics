@@ -15,21 +15,15 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
-BEGIN:STANDARD
-DTSTART:20221030T030000
-TZOFFSETFROM:+0200
-TZOFFSETTO:+0100
-END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62348976a6739
-DTSTAMP;TZID=Europe/Paris:20220318T143030
+UID:62445b510db30
+DTSTAMP;TZID=Europe/Paris:20220330T152953
 SUMMARY:quaerat
-DESCRIPTION:Et soluta dolore tempore quis totam asperiores dignissimos veli
- t. Et voluptatem accusantium hic impedit fuga vel qui. Maiores dolorum ten
- etur repudiandae rerum labore inventore.
-LOCATION:rue de Chartier\, 09 691 Dupont\, Dupont
-DTSTART;TZID=Europe/Paris:20220430T020701
-DTEND;TZID=Europe/Paris:20220430T020701
+DESCRIPTION:Aut consequatur molestiae natus voluptatum minima. Dolores cons
+ equuntur qui rerum odio. Dolorem rerum et et delectus ratione est quis.
+LOCATION:24\, impasse Julien Mathieu\, 11 373 Marydan\, Marydan
+DTSTART;TZID=Europe/Paris:20220328T130024
+DTEND;TZID=Europe/Paris:20220328T130024
 END:VEVENT
 END:VCALENDAR

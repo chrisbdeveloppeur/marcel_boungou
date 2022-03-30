@@ -9,6 +9,7 @@ use App\Entity\Event;
 use App\Entity\Music;
 use App\Entity\News;
 use App\Entity\Picture;
+use App\Entity\Subscriber;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use Faker;
@@ -104,6 +105,13 @@ class AppFixtures extends Fixture
             $new->setTitle($faker->randomElement([$faker->word,null]));
             $new->setDescription($faker->text($faker->numberBetween('100','500')));
             $manager->persist($new);
+            $manager->flush();
+        }
+
+        for ($i = -1; $i <= 20; $i++){
+            $subscriber = new Subscriber();
+            $subscriber->setEmail($faker->email);
+            $manager->persist($subscriber);
             $manager->flush();
         }
 

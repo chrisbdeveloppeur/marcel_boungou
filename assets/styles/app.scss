@@ -73,6 +73,10 @@ $modal-content-width: auto;
   background-color: $success !important;
 }
 
+.overflow-wrap-break-word{
+  overflow-wrap: break-word;
+}
+
 .table{
   margin: auto;
 }

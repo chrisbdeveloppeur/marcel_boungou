@@ -17,18 +17,13 @@ TZOFFSETTO:+0200
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621b5e46d9ded
-DTSTAMP;TZID=Europe/Paris:20220227T121934
+UID:62445b51b533c
+DTSTAMP;TZID=Europe/Paris:20220330T152953
 SUMMARY:placeat
-DESCRIPTION:Ipsam ut est est non autem quasi laudantium. Natus eos repudian
- dae quasi ea magni dolor quas. Illum quia magni sunt odit soluta similique
-  aliquid rerum. Explicabo laboriosam magni repellat quia. Est minus qui ut
-  omnis ab sint. Labore temporibus illum officia earum saepe cumque. Enim v
- elit voluptatem ut voluptatum. Beatae dignissimos ut quo id ipsam eos volu
- ptatem.
-LOCATION:8\, boulevard Petitjean\, 35 588 Joubert-sur-Bousquet\, Joubert-su
- r-Bousquet
-DTSTART;TZID=Europe/Paris:20220325T014312
-DTEND;TZID=Europe/Paris:20220325T014312
+DESCRIPTION:Commodi vitae sed harum dicta itaque natus. Rerum officia quasi
+  rerum sed sint.
+LOCATION:6\, rue Aubry\, 25933 Collinboeuf\, Collinboeuf
+DTSTART;TZID=Europe/Paris:20220418T165611
+DTEND;TZID=Europe/Paris:20220418T165611
 END:VEVENT
 END:VCALENDAR
