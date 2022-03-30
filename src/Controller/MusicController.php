@@ -49,7 +49,7 @@ class MusicController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->persist($music);
             $entityManager->flush();
-            $this->addFlash('info', $this->translator->trans('The music <b>'.$music.'</b> has been added'));
+            $this->addFlash('info', $this->translator->trans('The music').'<b>'.$music.'</b>'. $this->translator->trans('has been added') );
             return $this->redirectToRoute('discography_index');
         }
 

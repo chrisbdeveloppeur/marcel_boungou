@@ -128,7 +128,7 @@ class NewsController extends AbstractController
         $nbSubscribers = count($subscribers);
         $news = $newsRepository->find($id);
         $this->newsSenderCommande->sendNews($news);
-        $this->addFlash('warning', $this->translator->trans('La newsletter <b>'.$news->getTitle().'</b> a bien été envoyée aux <b>'.$nbSubscribers.'</b> abonnés'));
+        $this->addFlash('warning', $this->translator->trans('The newsletter ').'<b>'.$news->getTitle().'</b>'.$this->translator->trans(' has been sent to ').'<b>'.$nbSubscribers.'</b>'.$this->translator->trans(' subscribers'));
         return $this->redirectToRoute('news_index', [], Response::HTTP_SEE_OTHER);
     }
 }

@@ -42,6 +42,8 @@ class HomeController extends AbstractController
                 return $this->redirect($previousUrl);
             }else{
                 $this->addFlash('danger', $this->translator->trans('Operation failed'));
+                $url = $this->redirectToRoute('home_index')->getTargetUrl().'#subscribeForm';
+                return $this->redirect($url);
             }
         }
         return $this->render('home/index.html.twig',[

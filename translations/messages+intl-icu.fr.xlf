@@ -687,7 +687,7 @@
       </trans-unit>
       <trans-unit id="vJcbNdc" resname="Désinscription effecuté avec succès pour le mail : ">
         <source>Désinscription effecuté avec succès pour le mail : </source>
-        <target>__Désinscription effecuté avec succès pour le mail : </target>
+        <target>Désinscription effecuté avec succès pour le mail : </target>
       </trans-unit>
       <trans-unit id="fl2pzk2" resname="Album index">
         <source>Album index</source>
@@ -723,7 +723,7 @@
       </trans-unit>
       <trans-unit id="kzlaVNr" resname="Rendez-vous sur la page boutique afin de soutenir l'artiste et vous procurer du contenu exclusif">
         <source>Rendez-vous sur la page boutique afin de soutenir l'artiste et vous procurer du contenu exclusif</source>
-        <target>__Rendez-vous sur la page boutique afin de soutenir l'artiste et vous procurer du contenu exclusif</target>
+        <target>Rendez-vous sur la page boutique afin de soutenir l'artiste et vous procurer du contenu exclusif</target>
       </trans-unit>
       <trans-unit id="Z3k9Fk3" resname="boutique">
         <source>boutique</source>
@@ -771,11 +771,11 @@
       </trans-unit>
       <trans-unit id="pbywDoC" resname="Vous ne voulez plus recevoir de mail en provenance de www.marcel-boungou.com">
         <source>Vous ne voulez plus recevoir de mail en provenance de www.marcel-boungou.com</source>
-        <target>__Vous ne voulez plus recevoir de mail en provenance de www.marcel-boungou.com</target>
+        <target>Vous ne voulez plus recevoir de mail en provenance de www.marcel-boungou.com</target>
       </trans-unit>
       <trans-unit id="CtvaNN9" resname="se désinscrire">
         <source>se désinscrire</source>
-        <target>__se désinscrire</target>
+        <target>Se désinscrire</target>
       </trans-unit>
       <trans-unit id="WaDzXQi" resname="Music list">
         <source>Music list</source>
@@ -1097,10 +1097,6 @@
         <source>Add new Manager</source>
         <target>Ajouter un nouveau gestionnaire</target>
       </trans-unit>
-      <trans-unit id="YJ.UcmK" resname="The music &lt;b&gt;">
-        <source>The music &lt;b&gt;</source>
-        <target><![CDATA[__The music <b>]]></target>
-      </trans-unit>
       <trans-unit id="u5sp4xM" resname="(recommended ratio : 1, ex : 480x480)">
         <source>(recommended ratio : 1, ex : 480x480)</source>
         <target>(rapport recommandé : 1, ex : 480x480)</target>
@@ -1160,10 +1156,6 @@
       <trans-unit id="agrbVaV" resname="In future">
         <source>In future</source>
         <target>Prochainement</target>
-      </trans-unit>
-      <trans-unit id="XrGmQB8" resname="News &lt;b&gt;">
-        <source>News &lt;b&gt;</source>
-        <target><![CDATA[__News <b>]]></target>
       </trans-unit>
       <trans-unit id="Hhp3MSt" resname="Add a News">
         <source>Add a News</source>
@@ -1309,14 +1301,6 @@
         <source>Be there on</source>
         <target>Rendez-vous le </target>
       </trans-unit>
-      <trans-unit id="FBaZOwq" resname="Events &amp; News">
-        <source>Events &amp; News</source>
-        <target><![CDATA[__Events & News]]></target>
-      </trans-unit>
-      <trans-unit id="47DEQpj" resname="">
-        <source></source>
-        <target>__</target>
-      </trans-unit>
       <trans-unit id="V7ym4cb" resname="Albums">
         <source>Albums</source>
         <target>Albums</target>
@@ -1345,10 +1329,6 @@
         <source>Shortly</source>
         <target>Prochainement</target>
       </trans-unit>
-      <trans-unit id="Toelw4B" resname="La newsletter &lt;b&gt;">
-        <source>La newsletter &lt;b&gt;</source>
-        <target><![CDATA[__La newsletter <b>]]></target>
-      </trans-unit>
       <trans-unit id="pq8J2tV" resname="send news to subscribers">
         <source>send news to subscribers</source>
         <target>Envoyer les news aux abonnés</target>
@@ -1356,6 +1336,42 @@
       <trans-unit id="DyK9UZJ" resname="'are you sure you want to send this newsletter to all subscribers ?'">
         <source>'are you sure you want to send this newsletter to all subscribers ?'</source>
         <target>'êtes-vous sûr de vouloir envoyer cette newsletter à tous les abonnés ?'</target>
+      </trans-unit>
+      <trans-unit id="YJ.UcmK" resname="The music &lt;b&gt;">
+        <source>The music &lt;b&gt;</source>
+        <target><![CDATA[__The music <b>]]></target>
+      </trans-unit>
+      <trans-unit id="CYDP5KA" resname="Events and News">
+        <source>Events and News</source>
+        <target>Événements et News</target>
+      </trans-unit>
+      <trans-unit id="47DEQpj" resname="">
+        <source></source>
+        <target>__</target>
+      </trans-unit>
+      <trans-unit id="bk0LHGc" resname="Creation date">
+        <source>Creation date</source>
+        <target>Date de création</target>
+      </trans-unit>
+      <trans-unit id="NH69ayi" resname="The music">
+        <source>The music</source>
+        <target>La musique</target>
+      </trans-unit>
+      <trans-unit id="AGRK1jX" resname="has been added">
+        <source>has been added</source>
+        <target>a été ajoutée</target>
+      </trans-unit>
+      <trans-unit id="jtwBZv1" resname="The newsletter ">
+        <source>The newsletter </source>
+        <target>La newsletter </target>
+      </trans-unit>
+      <trans-unit id="5xhYS1K" resname=" has been sent to ">
+        <source> has been sent to </source>
+        <target> a été envoyé aux </target>
+      </trans-unit>
+      <trans-unit id="h7Xd3B_" resname=" subscribers">
+        <source> subscribers</source>
+        <target> abonnés</target>
       </trans-unit>
     </body>
   </file>
