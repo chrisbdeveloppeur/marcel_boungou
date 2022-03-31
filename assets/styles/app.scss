@@ -67,6 +67,9 @@ $modal-content-width: auto;
 .has-background-white-layer{
   background: $white-layer;
 }
+.has-background-transparent{
+  background: rgba(0,0,0,0);
+}
 
 
 .tag.is-active{
@@ -179,7 +182,7 @@ section.body{
   background: $success;
 }
 .main-background-layer{
-  background: black;
+  background: $primary-dark-layer;
 }
 .nav-background{
   position: absolute;
