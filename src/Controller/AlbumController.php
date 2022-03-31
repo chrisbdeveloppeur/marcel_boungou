@@ -89,8 +89,8 @@ class AlbumController extends AbstractController
             'form' => $form->createView(),
             'form_title' => $this->translator->trans('Edit Album'),
             'redirect' => [
-                'link' => $this->redirectToRoute('discography_index')->getTargetUrl(),
-                'txt' => $this->translator->trans('Redirect to discography'),
+                'link' => $this->redirectToRoute('album_index')->getTargetUrl(),
+                'txt' => $this->translator->trans('Redirect to Albums list'),
             ]
         ]);
     }

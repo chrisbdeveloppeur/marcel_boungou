@@ -23,8 +23,8 @@ class NewsType extends AbstractType
     {
         $builder
             ->add('title', TextType::class,[
-                'required' => false,
-                'help' => $this->translator->trans('The title is not required'),
+                'required' => true,
+                'help' => $this->translator->trans('The title is required'),
                 'attr' => [
                     'class' => 'input'
                 ],

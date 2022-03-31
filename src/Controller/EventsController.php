@@ -118,14 +118,14 @@ class EventsController extends AbstractController
             return $this->redirect($previousUrl);
         }
 
-        $redirect_link = $this->redirectToRoute('event_home')->getTargetUrl();
+        $redirect_link = $this->redirectToRoute('event_index')->getTargetUrl();
         return $this->render('themes/just_the_form.html.twig', [
             'event' => $event,
             'form' => $form->createView(),
             'form_title' => $this->translator->trans('Edit Event'),
             'redirect' => [
                 'link' => $redirect_link,
-                'txt' => $this->translator->trans('Back to Events home'),
+                'txt' => $this->translator->trans('Back to Events list'),
             ]
         ]);
     }

@@ -93,8 +93,8 @@ class MusicController extends AbstractController
             'form' => $form->createView(),
             'form_title' => $this->translator->trans('Edit Music'),
             'redirect' => [
-                'link' => $this->redirectToRoute('discography_index')->getTargetUrl(),
-                'txt' => $this->translator->trans('Redirect to discography'),
+                'link' => $this->redirectToRoute('music_index')->getTargetUrl(),
+                'txt' => $this->translator->trans('Redirect to Musics list'),
             ]
         ]);
     }

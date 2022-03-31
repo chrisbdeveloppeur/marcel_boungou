@@ -20,7 +20,6 @@
                 <tr>
                     <th>Id</th>
                     <th>{% trans %}Title{% endtrans %}</th>
-                    <th class="is-hidden-touch">{% trans %}Content{% endtrans %}</th>
                     <th>{% trans %}Creation date{% endtrans %}</th>
                     <th>{% trans %}Actions{% endtrans %}</th>
                 </tr>
@@ -30,7 +29,6 @@
                 <tr>
                     <td>{{ news.id }}</td>
                     <td>{{ news.title }}</td>
-                    <td class="is-hidden-touch">{{ news.description|raw }}</td>
                     <td>{{ news.datetime ? news.datetime|date('d/m/Y H:i:s') : '' }}</td>
                     <td>
                         {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'show', 'entity' : news, 'entity_type' : 'news', 'text': 'Show'|trans } %}

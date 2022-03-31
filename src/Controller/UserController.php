@@ -94,7 +94,7 @@ class UserController extends AbstractController
         return $this->render('themes/just_the_form.html.twig', [
             'user' => $user,
             'redirect' => [
-                'txt' => $this->translator->trans('back to list'),
+                'txt' => $this->translator->trans('back to Users list'),
                 'link' => $redirectLink,
             ],
             'form' => $form->createView(),

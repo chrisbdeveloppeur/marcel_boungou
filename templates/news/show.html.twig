@@ -32,12 +32,12 @@
                 <td>{{ news.title }}</td>
             </tr>
             <tr>
-                <th>{% trans %}Description{% endtrans %}</th>
-                <td>{{ news.description|raw }}</td>
-            </tr>
-            <tr>
                 <th>{% trans %}Creation date{% endtrans %}</th>
                 <td>{{ news.datetime ? news.datetime|date('d/m/Y H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>{% trans %}Description{% endtrans %}</th>
+                <td>{{ news.description|raw }}</td>
             </tr>
             </tbody>
         </table>

@@ -1465,6 +1465,26 @@
         <source>Delete picture</source>
         <target>Supprimer l'image</target>
       </trans-unit>
+      <trans-unit id="_bqOI_m" resname="The title is required">
+        <source>The title is required</source>
+        <target>Le titre est obligatoire</target>
+      </trans-unit>
+      <trans-unit id="3gcUsiK" resname="Redirect to Albums list">
+        <source>Redirect to Albums list</source>
+        <target>Rediriger vers la liste des albums</target>
+      </trans-unit>
+      <trans-unit id="sOvx.Zi" resname="Redirect to Musics list">
+        <source>Redirect to Musics list</source>
+        <target>Rediriger vers la liste des musiques</target>
+      </trans-unit>
+      <trans-unit id="5DTNRem" resname="Redirect to Pictures list">
+        <source>Redirect to Pictures list</source>
+        <target>Rediriger vers la liste des images</target>
+      </trans-unit>
+      <trans-unit id="ZMt6aUE" resname="back to Users list">
+        <source>back to Users list</source>
+        <target>Rediriger à la liste des utilisateurs</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
