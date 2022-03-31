@@ -368,9 +368,13 @@
         var carousels = bulmaCarousel.attach('.carousel', options);
 
         var nextBtn = document.querySelector(('.slider-navigation-next'));
-        nextBtn.style.display = 'none';
+        if (nextBtn){
+            nextBtn.style.display = 'none';
+        }
         var prevBtn = document.querySelector(('.slider-navigation-previous'));
-        prevBtn.style.display = 'none';
+        if (prevBtn){
+            prevBtn.style.display = 'none';
+        }
         // Loop on each carousel initialized
         for(var i = 0; i < carousels.length; i++) {
             // Add listener to  event

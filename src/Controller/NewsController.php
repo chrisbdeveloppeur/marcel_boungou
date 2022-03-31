@@ -4,7 +4,9 @@ namespace App\Controller;
 
 use App\Command\NewsSenderCommand;
 use App\Entity\News;
+use App\Entity\Subscriber;
 use App\Form\NewsType;
+use App\Form\SubscriberType;
 use App\Repository\NewsRepository;
 use App\Repository\SubscriberRepository;
 use Doctrine\ORM\EntityManagerInterface;
@@ -127,13 +129,29 @@ class NewsController extends AbstractController
     /**
      * @param NewsRepository $newsRepository
      * @return Response
-     * @Route("/all", name="all", methods={"GET"})
+     * @Route("/all", name="all", methods={"GET", "POST"})
      */
-    public function allNews(NewsRepository $newsRepository): Response
+    public function allNews(NewsRepository $newsRepository, Request $request, EntityManagerInterface $em): Response
     {
+        $subscriber = new Subscriber();
+        $form = $this->createForm(SubscriberType::class, $subscriber);
+        $form->handleRequest($request);
+        if ($form->isSubmitted()){
+            if ($form->isValid()){
+                $em->persist($subscriber);
+                $em->flush();
+                $this->addFlash('info', $this->translator->trans('Thank you for subscribing to the newsletter'));
+            }else{
+                $errMsg = $form->get('email')->getErrors()->current()->getMessage();
+                $this->addFlash('danger', $this->translator->trans('Operation failed').'<br>'.$errMsg);
+            }
+            $url = $this->redirectToRoute('news_all')->getTargetUrl();
+            return $this->redirect($url);
+        }
         $allNews = $newsRepository->findAll();
         return $this->render('news/_all.html.twig',[
             'news' => $allNews,
+            'subs_form' => $form->createView(),
         ]);
     }
 

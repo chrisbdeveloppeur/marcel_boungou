@@ -8,15 +8,15 @@
 
 <div class="z-index-1">
     <div class="parallax2 slide-fade-right" style="background-size: contain !important;background: right no-repeat url({{ asset('build/images/mb_cost_blue_1.4e43ac8e.jpg') }})"></div>
-    <div class="is-flex is-justify-content-center is-align-items-center">
-        <div class="column is-three-quarters-desktop is-flex is-flex-direction-column is-justify-content-center z-index-1" style="min-height: 100vh">
+    <div class="is-flex-tablet is-justify-content-center is-align-items-center is-relative">
+        <div class="column is-three-quarters-desktop is-flex-tablet is-flex-direction-column is-justify-content-center z-index-1" style="min-height: 100vh">
             <div class="section">
                 <h3 class="subtitle is-2 has-text-white has-text-centered">{{ 'What is the latest news at MB Ministry'|trans }} ?</h3>
                 <p class="subtitle has-text-grey-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur at dolorem doloremque dolorum est ex expedita in magnam, nobis officiis provident reiciendis sit tempora ut velit vitae. Illum, velit.</p>
             </div>
             {% set compteur = 0 %}
             <div class="slide-fade-left" style="max-height: 70vh;overflow: auto">
-                <div class="column p-0 is-half margin-auto">
+                <div class="column p-0 is-two-thirds margin-auto">
                     {% for new in news|sort((a, b) => b.datetime <=> a.datetime) %}
                         {% if compteur < 1 %}
                             {{ include('news/news_article_box.html.twig') }}
@@ -36,47 +36,6 @@
 <div class="has-background-black is-relative">
     <div class="ancrage-home-sections" id="subscribeForm"></div>
     <div class="column is-flex is-justify-content-center has-background-black">
-        {{ form_start(subs_form,{'attr': {'class':'column is-half is-full-touch has-text-centered'}}) }}
-        <h3 class="subtitle is-size-4-touch has-text-white">{{ 'You wish to subscribe to our newsletter'|trans }} ?</h3>
-        <div class="field has-addons is-flex-direction-column">
-            <div class="control is-expanded">
-                {{ form_widget(subs_form.email) }}
-            </div>
-            <div class="control">
-                <button class="button is-outlined is-fullwidth is-success">{{ 'Subscribe now'|trans }}</button>
-            </div>
-        </div>
-
-        {% set child = subs_form.email %}
-        {% if form_help(child) %}
-            <span class="help is-info mt-0">
-                <span class="icon-text" style="flex-wrap: nowrap">
-                    <span class="icon">
-                        <i class="fas fa-info-circle"></i>
-                    </span>
-                    <span>{{ form_help(child) }}</span>
-                </span>
-            </span>
-        {% endif %}
-
-        {% if form_errors(child) %}
-            <span class="help has-background-danger has-text-light px-2 py-1">
-                {{ form_errors(child) }}
-            </span>
-        {% elseif error_msg is defined and error_msg %}
-            <span class="help has-background-danger has-text-light px-2 py-1">
-                {{ error_msg }}
-            </span>
-        {% endif %}
-
-        {% for sub_child in child.children %}
-            {% if form_errors(sub_child) %}
-                <span class="help has-background-danger has-text-light px-2 py-1">
-                    {{ form_errors(sub_child) }}
-                </span>
-            {% endif %}
-        {% endfor %}
-
-        {{ form_end(subs_form) }}
+        {% include 'news/subs_form.html.twig' %}
     </div>
 </div>
