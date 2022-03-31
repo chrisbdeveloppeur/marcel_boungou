@@ -7,10 +7,10 @@
 
     <div class="column is-flex-tablet is-justify-content-center is-flex-direction-row">
         <div class="px-1 py-1">
-            <a class="button is-dark is-fullwidth" href="{{ path('discography_index') }}">{{ 'Back to Discography page'|trans }}</a>
+            <a class="button is-outlined has-text-weight-bold is-rounded p-3 m-1" href="{{ path('discography_index') }}">{{ 'Back to Discography page'|trans }}</a>
         </div>
         <div class="px-1 py-1">
-            <a class="button is-success is-fullwidth" href="{{ path('music_new') }}">{% trans %}Create new{% endtrans %}</a>
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'new', 'entity' : null, 'entity_type' : 'music', 'text': 'Add'|trans } %}
         </div>
     </div>
 
@@ -53,10 +53,10 @@
 
     <div class="column is-flex-tablet is-justify-content-center is-flex-direction-row">
         <div class="px-1 py-1">
-            <a class="button is-dark is-fullwidth" href="{{ path('discography_index') }}">{{ 'Back to Discography page'|trans }}</a>
+            <a class="button is-outlined has-text-weight-bold is-rounded p-3 m-1" href="{{ path('discography_index') }}">{{ 'Back to Discography page'|trans }}</a>
         </div>
         <div class="px-1 py-1">
-            <a class="button is-success is-fullwidth" href="{{ path('music_new') }}">{% trans %}Create new{% endtrans %}</a>
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'new', 'entity' : null, 'entity_type' : 'music', 'text': 'Add'|trans } %}
         </div>
     </div>
 

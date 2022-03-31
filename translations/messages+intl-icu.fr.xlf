@@ -1485,6 +1485,10 @@
         <source>back to Users list</source>
         <target>Rediriger à la liste des utilisateurs</target>
       </trans-unit>
+      <trans-unit id="n9coxmy" resname="Add">
+        <source>Add</source>
+        <target>__Add</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -86,7 +86,7 @@ class EventsController extends AbstractController
             'form_title' => $this->translator->trans('Add new Event'),
             'redirect' => [
                 'link' => $redirect_link,
-                'txt' => $this->translator->trans('Back to Events home'),
+                'txt' => $this->translator->trans('Back to Events list'),
             ]
         ]);
     }

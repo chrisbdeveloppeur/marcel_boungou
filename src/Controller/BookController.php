@@ -58,8 +58,8 @@ class BookController extends AbstractController
             'form' => $form->createView(),
             'form_title' => $this->translator->trans('Add a new Book'),
             'redirect' =>[
-                'link' => $this->redirectToRoute('bibliography_index')->getTargetUrl(),
-                'txt' => $this->translator->trans('Back to Bibliography page'),
+                'link' => $this->redirectToRoute('book_index')->getTargetUrl(),
+                'txt' => $this->translator->trans('Back to Books list'),
             ]
         ]);
     }

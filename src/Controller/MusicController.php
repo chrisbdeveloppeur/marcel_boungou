@@ -57,6 +57,10 @@ class MusicController extends AbstractController
             'music' => $music,
             'form' => $form->createView(),
             'form_title' => $this->translator->trans('Add a Music'),
+            'redirect' => [
+                'link' => $this->redirectToRoute('music_index')->getTargetUrl(),
+                'txt' => $this->translator->trans('Redirect to Musics list'),
+            ]
         ]);
     }
 

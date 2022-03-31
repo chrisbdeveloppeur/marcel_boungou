@@ -56,6 +56,10 @@ class PictureController extends AbstractController
             'picture' => $picture,
             'form' => $form->createView(),
             'form_title' => $this->translator->trans('Add a Picture'),
+            'redirect' => [
+                'link' => $this->redirectToRoute('picture_index')->getTargetUrl(),
+                'txt' => $this->translator->trans('Redirect to Pictures list'),
+            ]
         ]);
     }
 
