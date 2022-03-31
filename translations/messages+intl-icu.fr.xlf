@@ -1487,7 +1487,7 @@
       </trans-unit>
       <trans-unit id="n9coxmy" resname="Add">
         <source>Add</source>
-        <target>__Add</target>
+        <target>Ajouter</target>
       </trans-unit>
     </body>
   </file>
