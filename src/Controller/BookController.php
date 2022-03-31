@@ -97,15 +97,15 @@ class BookController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="delete", methods={"POST"})
+     * @Route("/{id}", name="delete", methods={"POST", "GET"})
      */
-    public function delete(Request $request, Book $book, EntityManagerInterface $entityManager): Response
+    public function delete(Request $request, $id, EntityManagerInterface $entityManager, BookRepository $bookRepository): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$book->getId(), $request->request->get('_token'))) {
-            $entityManager->remove($book);
-            $entityManager->flush();
-        }
-        $this->addFlash('warning', $this->translator->trans('Element deleted successfuly'));
+        $book = $bookRepository->find($id);
+        $title = $book->getTitle();
+        $entityManager->remove($book);
+        $entityManager->flush();
+        $this->addFlash('warning', $this->translator->trans('Element deleted successfuly : ').'<b>'.$title.'</b>');
         return $this->redirectToRoute('bibliography_index');
     }
 

@@ -1373,6 +1373,98 @@
         <source> subscribers</source>
         <target> abonnés</target>
       </trans-unit>
+      <trans-unit id="DfbxytN" resname="Show">
+        <source>Show</source>
+        <target>Voir</target>
+      </trans-unit>
+      <trans-unit id="RkxP.QG" resname="Edit">
+        <source>Edit</source>
+        <target>Éditer</target>
+      </trans-unit>
+      <trans-unit id="1f7daGT" resname="Reservation link">
+        <source>Reservation link</source>
+        <target>Lien de réservation</target>
+      </trans-unit>
+      <trans-unit id="6lO9jyw" resname="Visit news page">
+        <source>Visit news page</source>
+        <target>Visitez la page des News</target>
+      </trans-unit>
+      <trans-unit id="NlHD0EE" resname="All News">
+        <source>All News</source>
+        <target>Toutes les News</target>
+      </trans-unit>
+      <trans-unit id="1P1O8ww" resname="Send news to subscribers">
+        <source>Send news to subscribers</source>
+        <target>Envoyer la News aux abonnés</target>
+      </trans-unit>
+      <trans-unit id="D2m0KVa" resname="are you sure you want to send this newsletter to all subscribers ?">
+        <source>are you sure you want to send this newsletter to all subscribers ?</source>
+        <target>êtes-vous sûr de vouloir envoyer cette News à tous les abonnés ?</target>
+      </trans-unit>
+      <trans-unit id="7L_Hh7S" resname="Delete news">
+        <source>Delete news</source>
+        <target>Supprimer la News</target>
+      </trans-unit>
+      <trans-unit id="REE8PZe" resname="Are you sure you want to delete this item?">
+        <source>Are you sure you want to delete this item?</source>
+        <target>Êtes-vous sûr de bien vouloir supprimer cet élément?</target>
+      </trans-unit>
+      <trans-unit id="CPI_eyo" resname="Send news">
+        <source>Send news</source>
+        <target>Envoyer la News</target>
+      </trans-unit>
+      <trans-unit id="034PjtY" resname="are you sure you want to delete this newsletter ?">
+        <source>are you sure you want to delete this newsletter ?</source>
+        <target>êtes-vous sûr de vouloir supprimer cette News ?</target>
+      </trans-unit>
+      <trans-unit id="_f4ZJ0S" resname="Delete album">
+        <source>Delete album</source>
+        <target>Supprimer l'album</target>
+      </trans-unit>
+      <trans-unit id="yRfKlEr" resname="Back to Albums list">
+        <source>Back to Albums list</source>
+        <target>Retour à la liste des albums</target>
+      </trans-unit>
+      <trans-unit id="G6_Z23J" resname="Delete book">
+        <source>Delete book</source>
+        <target>Supprimer le livre</target>
+      </trans-unit>
+      <trans-unit id="kJy4ESf" resname="Book">
+        <source>Book</source>
+        <target>Livre</target>
+      </trans-unit>
+      <trans-unit id="ZJKsZ4Q" resname="Back to Books list">
+        <source>Back to Books list</source>
+        <target>Retour à la liste des livres</target>
+      </trans-unit>
+      <trans-unit id="uHKkLtT" resname="Delete event">
+        <source>Delete event</source>
+        <target>Supprimer l'événement</target>
+      </trans-unit>
+      <trans-unit id="f6nGEsH" resname="Back to Events list">
+        <source>Back to Events list</source>
+        <target>Retour à la liste des événements</target>
+      </trans-unit>
+      <trans-unit id="gPaNl1J" resname="Delete music">
+        <source>Delete music</source>
+        <target>Supprimer la musique</target>
+      </trans-unit>
+      <trans-unit id="IZJQxbQ" resname="Back to Musics list">
+        <source>Back to Musics list</source>
+        <target>Retour à la liste des musiques</target>
+      </trans-unit>
+      <trans-unit id="mhxU9V5" resname="Picture">
+        <source>Picture</source>
+        <target>Image</target>
+      </trans-unit>
+      <trans-unit id="IFz4S2d" resname="Back to Pictures list">
+        <source>Back to Pictures list</source>
+        <target>Retour à la liste des images</target>
+      </trans-unit>
+      <trans-unit id="h1g_a5b" resname="Delete picture">
+        <source>Delete picture</source>
+        <target>Supprimer l'image</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

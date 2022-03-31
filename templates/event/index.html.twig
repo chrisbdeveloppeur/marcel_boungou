@@ -5,7 +5,7 @@
 {% block body %}
 
 
-    <h1 class="title has-text-white">{% trans %}Event index{% endtrans %}</h1>
+    <h1 class="title has-text-white has-text-centered pt-3">{% trans %}Event index{% endtrans %}</h1>
 
     <div class="column is-flex-tablet is-flex-direction-row">
         <div class="px-1 py-1">
@@ -26,6 +26,7 @@
                 <th>{% trans %}City{% endtrans %}</th>
                 <th>{% trans %}Post code{% endtrans %}</th>
                 <th>{% trans %}Street{% endtrans %}</th>
+                <th>{% trans %}Reservation link{% endtrans %}</th>
                 <th>{% trans %}Actions{% endtrans %}</th>
             </tr>
             </thead>
@@ -38,9 +39,11 @@
                     <td>{{ event.city }}</td>
                     <td>{{ event.cp }}</td>
                     <td>{{ event.street }}</td>
+                    <td>{{ event.ticketingLink }}</td>
                     <td>
                         {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'show', 'entity' : event, 'entity_type' : 'event', 'text': 'Show'|trans } %}
                         {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'edit', 'entity' : event, 'entity_type' : 'event', 'text': 'Edit'|trans } %}
+                        {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'delete', 'entity' : event, 'entity_type' : 'event', 'text': 'Delete event'|trans, 'confirm_msg': 'Are you sure you want to delete this item?'|trans } %}
                     </td>
                 </tr>
             {% else %}

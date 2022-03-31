@@ -3,7 +3,19 @@
 {% block title %}Book{% endblock %}
 
 {% block body %}
-    <h1>Book</h1>
+    <h1 class="subtitle has-text-white has-text-centered pt-3">{{ 'Book'|trans }}</h1>
+
+    <div class="column is-flex-tablet is-flex-direction-row is-justify-content-center">
+        <div class="px-1 py-1">
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'index', 'entity' : book, 'entity_type' : 'book', 'text': 'Back to Books list'|trans } %}
+        </div>
+        <div class="px-1 py-1">
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'edit', 'entity' : book, 'entity_type' : 'book', 'text': 'Edit'|trans } %}
+        </div>
+        <div class="px-1 py-1">
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'delete', 'entity' : book, 'entity_type' : 'book', 'text': 'Delete book'|trans, 'confirm_msg':'Are you sure you want to delete this item?'|trans } %}
+        </div>
+    </div>
 
     <table class="table">
         <tbody>
@@ -38,9 +50,4 @@
         </tbody>
     </table>
 
-    <a href="{{ path('book_index') }}">back to list</a>
-
-    <a href="{{ path('book_edit', {'id': book.id}) }}">edit</a>
-
-    {{ include('book/_delete_form.html.twig') }}
 {% endblock %}

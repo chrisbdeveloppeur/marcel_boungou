@@ -96,15 +96,15 @@ class AlbumController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="delete", methods={"POST"})
+     * @Route("/{id}/delete", name="delete", methods={"POST", "GET"})
      */
-    public function delete(Request $request, Album $album, EntityManagerInterface $entityManager): Response
+    public function delete(Request $request, $id, EntityManagerInterface $entityManager, AlbumRepository $albumRepository): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$album->getId(), $request->request->get('_token'))) {
-            $entityManager->remove($album);
-            $entityManager->flush();
-        }
-        $this->addFlash('warning', $this->translator->trans('Element deleted successfuly'));
+        $album = $albumRepository->find($id);
+        $title = $album->getName();
+        $entityManager->remove($album);
+        $entityManager->flush();
+        $this->addFlash('warning', $this->translator->trans('Element deleted successfuly : ').'<b>'.$title.'</b>');
         return $this->redirectToRoute('discography_index');
     }
 

@@ -100,15 +100,15 @@ class MusicController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="delete", methods={"POST"})
+     * @Route("/{id}/delete", name="delete", methods={"POST", "GET"})
      */
-    public function delete(Request $request, Music $music, EntityManagerInterface $entityManager): Response
+    public function delete(Request $request, $id, EntityManagerInterface $entityManager, MusicRepository $musicRepository): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$music->getId(), $request->request->get('_token'))) {
-            $entityManager->remove($music);
-            $entityManager->flush();
-        }
-        $this->addFlash('warning', $this->translator->trans('Element deleted successfuly'));
+        $music = $musicRepository->find($id);
+        $title = $music->getTitre();
+        $entityManager->remove($music);
+        $entityManager->flush();
+        $this->addFlash('warning', $this->translator->trans('Element deleted successfuly : ').'<b>'.$title.'</b>');
         return $this->redirectToRoute('discography_index');
     }
 

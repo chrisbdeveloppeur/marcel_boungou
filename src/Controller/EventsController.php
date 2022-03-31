@@ -131,17 +131,17 @@ class EventsController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="delete", methods={"POST"})
+     * @Route("/{id}/delete", name="delete", methods={"POST", "GET"})
      * @Security("is_granted('ROLE_ADMIN')")
      */
-    public function delete(Request $request, Event $event, EntityManagerInterface $entityManager): Response
+    public function delete(Request $request, $id, EntityManagerInterface $entityManager, EventRepository $eventRepository): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$event->getId(), $request->request->get('_token'))) {
-            $entityManager->remove($event);
-            $entityManager->flush();
-        }
-        $this->addFlash('warning', $this->translator->trans('Element deleted successfuly'));
-        return $this->redirectToRoute('event_home');
+        $event = $eventRepository->find($id);
+        $title = $event->getTitle();
+        $entityManager->remove($event);
+        $entityManager->flush();
+        $this->addFlash('warning', $this->translator->trans('Element deleted successfuly : ').'<b>'.$title.'</b>');
+        return $this->redirectToRoute('event_index');
     }
 
 

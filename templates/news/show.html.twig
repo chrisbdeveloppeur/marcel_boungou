@@ -3,17 +3,20 @@
 {% block title %}{% trans %}News{% endtrans %}{% endblock %}
 
 {% block body %}
-    <h1 class="has-text-white subtitle has-text-centered">{% trans %}News{% endtrans %}<b> {{ news }}</b></h1>
+    <h1 class="subtitle has-text-white has-text-centered pt-3">{% trans %}News{% endtrans %}<b> {{ news }}</b></h1>
 
     <div class="column is-flex-tablet is-flex-direction-row is-justify-content-center">
         <div class="px-1 py-1">
-            <a class="button is-dark is-fullwidth" href="{{ path('news_index') }}">{% trans %}back to news list{% endtrans %}</a>
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'index', 'entity' : news, 'entity_type' : 'news', 'text': 'Back to News list'|trans } %}
         </div>
         <div class="px-1 py-1">
-            <a class="button is-success is-fullwidth" href="{{ path('news_edit', {'id': news.id}) }}">{% trans %}edit{% endtrans %}</a>
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'edit', 'entity' : news, 'entity_type' : 'news', 'text': 'Edit'|trans } %}
         </div>
         <div class="px-1 py-1">
-            <a class="button is-success is-fullwidth" href="{{ path('news_news_sender', {'id': news.id}) }}" onclick="return confirm({% trans %}'are you sure you want to send this newsletter to all subscribers ?'{% endtrans %})">{% trans %}send news to subscribers{% endtrans %}</a>
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'send', 'entity' : news, 'entity_type' : 'news', 'text': 'Send news'|trans, 'confirm_msg':'are you sure you want to send this newsletter to all subscribers ?'|trans } %}
+        </div>
+        <div class="px-1 py-1">
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'delete', 'entity' : news, 'entity_type' : 'news', 'text': 'Delete news'|trans, 'confirm_msg':'are you sure you want to delete this newsletter ?'|trans } %}
         </div>
     </div>
 
@@ -39,7 +42,5 @@
             </tbody>
         </table>
     </div>
-
-    {{ include('news/_delete_form.html.twig') }}
 
 {% endblock %}

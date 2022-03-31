@@ -110,16 +110,16 @@ class NewsController extends AbstractController
     }
 
     /**
-     * @Route("/{id}/delete", name="delete", methods={"POST"})
+     * @Route("/{id}/delete", name="delete", methods={"POST", "GET"})
      * @Security("is_granted('ROLE_ADMIN')")
      */
-    public function delete(Request $request, News $news, EntityManagerInterface $entityManager): Response
+    public function delete(Request $request, $id, EntityManagerInterface $entityManager, NewsRepository $newsRepository): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$news->getId(), $request->request->get('_token'))) {
-            $entityManager->remove($news);
-            $entityManager->flush();
-        }
-        $this->addFlash('warning', $this->translator->trans('Element deleted successfuly'));
+        $news = $newsRepository->find($id);
+        $title = $news->getTitle();
+        $entityManager->remove($news);
+        $entityManager->flush();
+        $this->addFlash('warning', $this->translator->trans('Element deleted successfuly : ').'<b>'.$title.'</b>');
         return $this->redirectToRoute('news_index', [], Response::HTTP_SEE_OTHER);
     }
 

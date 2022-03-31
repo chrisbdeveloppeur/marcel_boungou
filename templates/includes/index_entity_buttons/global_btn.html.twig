@@ -1,7 +1,7 @@
-<a href="{{ path(entity_type~'_'~action, {'id': entity.id}) }}" class="button {% if action == 'delete' %}is-danger{% else %}is-success{% endif %} is-small is-rounded p-3" {% if confirm_msg is defined and confirm_msg %}onclick="return confirm('{{ confirm_msg }}')"{% endif %}>
+<a href="{{ path(entity_type~'_'~action, {'id': entity.id}) }}" class="button is-outlined has-text-weight-bold is-small is-rounded p-3 m-1 {% if action == 'delete' %}is-danger{% else %}is-success{% endif %}" {% if confirm_msg is defined and confirm_msg %}onclick="return confirm('{{ confirm_msg }}')"{% endif %}>
     {% if action == 'show' %}
         <span class="icon">
-            <i class="fas fa-lg fa-eye"></i>
+            <i class="fas fa-lg fa-magnifying-glass"></i>
         </span>
     {% elseif action == 'edit' %}
         <span class="icon">
@@ -10,6 +10,10 @@
     {% elseif action == 'delete' %}
         <span class="icon">
             <i class="fas fa-lg fa-trash-alt"></i>
+        </span>
+    {% elseif action == 'send' %}
+        <span class="icon">
+            <i class="fas fa-lg fa-paper-plane"></i>
         </span>
     {% else %}
         {{ text }}
