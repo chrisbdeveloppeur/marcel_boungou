@@ -102,7 +102,7 @@ class AppFixtures extends Fixture
 
         for ($i = -1; $i <= 15; $i++){
             $new = new News();
-            $new->setTitle($faker->randomElement([$faker->word,null]));
+            $new->setTitle($faker->word);
             $new->setDescription($faker->text($faker->numberBetween('100','500')));
             $manager->persist($new);
             $manager->flush();

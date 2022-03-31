@@ -15,17 +15,20 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62348976a4670
-DTSTAMP;TZID=Europe/Paris:20220318T143030
+UID:6245b3e41fc65
+DTSTAMP;TZID=Europe/Paris:20220331T160004
 SUMMARY:rerum
-DESCRIPTION:Qui vitae eos assumenda natus qui explicabo pariatur reiciendis
- . Vitae beatae non odit vitae quis nihil. Sint ut qui dolor reiciendis ill
- o laboriosam. Nam impedit fuga totam consequuntur eligendi. Occaecati repu
- diandae non earum qui dolorem iure qui porro.
-LOCATION:rue de Le Roux\, 31445 Pelletier\, Pelletier
-DTSTART;TZID=Europe/Paris:20220421T234039
-DTEND;TZID=Europe/Paris:20220421T234039
+DESCRIPTION:Quaerat nam officiis vel saepe aut. Atque et nulla neque illum 
+ eos alias vel. Qui est assumenda a fugit.
+LOCATION:6\, rue Maggie Normand\, 46925 Guillon\, Guillon
+DTSTART;TZID=Europe/Paris:20220504T145316
+DTEND;TZID=Europe/Paris:20220504T145316
 END:VEVENT
 END:VCALENDAR

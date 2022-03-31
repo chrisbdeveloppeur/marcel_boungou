@@ -15,18 +15,21 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62348976999c3
-DTSTAMP;TZID=Europe/Paris:20220318T143030
+UID:6245b3e421639
+DTSTAMP;TZID=Europe/Paris:20220331T160004
 SUMMARY:nostrum
-DESCRIPTION:Aut aspernatur aut voluptas iusto eveniet. Facilis quisquam ear
- um fugit assumenda eum. Earum officiis esse eaque dicta corporis aut quia.
-  Dolorem cum tempora possimus veritatis veritatis laudantium. Veniam quae 
- tempora rerum aperiam in praesentium in. Vero corrupti error ducimus ut am
- et.
-LOCATION:98\, avenue Blanc\, 17441 Dupont-sur-Mathieu\, Dupont-sur-Mathieu
-DTSTART;TZID=Europe/Paris:20220316T111314
-DTEND;TZID=Europe/Paris:20220316T111314
+DESCRIPTION:Nam neque deserunt voluptatem atque nam unde eos. Id similique 
+ consequatur nobis qui. Occaecati rerum laborum ut illum animi veritatis fu
+ giat at. Dicta delectus consequatur eum consequatur.
+LOCATION:59\, rue Loiseau\, 38 591 Reynaud\, Reynaud
+DTSTART;TZID=Europe/Paris:20220513T162035
+DTEND;TZID=Europe/Paris:20220513T162035
 END:VEVENT
 END:VCALENDAR

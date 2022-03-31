@@ -15,15 +15,22 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:62445b51b533c
-DTSTAMP;TZID=Europe/Paris:20220330T152953
+UID:6245b3e422c75
+DTSTAMP;TZID=Europe/Paris:20220331T160004
 SUMMARY:placeat
-DESCRIPTION:Commodi vitae sed harum dicta itaque natus. Rerum officia quasi
-  rerum sed sint.
-LOCATION:6\, rue Aubry\, 25933 Collinboeuf\, Collinboeuf
-DTSTART;TZID=Europe/Paris:20220418T165611
-DTEND;TZID=Europe/Paris:20220418T165611
+DESCRIPTION:Placeat id incidunt et facilis. Itaque suscipit quia debitis qu
+ i aut quae eos. Unde ratione tenetur in et. Quod facere recusandae archite
+ cto veniam.
+LOCATION:885\, boulevard de Devaux\, 29 923 Boucher-les-Bains\, Boucher-les
+ -Bains
+DTSTART;TZID=Europe/Paris:20220523T031118
+DTEND;TZID=Europe/Paris:20220523T031118
 END:VEVENT
 END:VCALENDAR
