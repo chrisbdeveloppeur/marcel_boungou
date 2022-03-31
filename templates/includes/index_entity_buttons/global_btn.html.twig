@@ -1,0 +1,3 @@
+<a href="{{ path(entity_type~'_'~action, {'id': entity.id}) }}" class="button is-success is-small is-rounded m-1" {% if confirm_msg is defined and confirm_msg %}onclick="return confirm('{{ confirm_msg }}')"{% endif %}>
+    {{ text }}
+</a>

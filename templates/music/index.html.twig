@@ -37,8 +37,8 @@
                         {% endif %}
                     </td>
                     <td>
-                        <a href="{{ path('music_show', {'id': music.id}) }}">{% trans %}show{% endtrans %}</a>
-                        <a href="{{ path('music_edit', {'id': music.id}) }}">{% trans %}edit{% endtrans %}</a>
+                        {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'show', 'entity' : music, 'entity_type' : 'music', 'text': 'Show'|trans } %}
+                        {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'dit', 'entity' : music, 'entity_type' : 'music', 'text': 'Edit'|trans } %}
                     </td>
                 </tr>
             {% else %}

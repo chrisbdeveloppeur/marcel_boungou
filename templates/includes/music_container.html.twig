@@ -3,7 +3,7 @@
     <div class="is-relative" id="musicImage" style="height: 150px;width: 150px;{% if music.album and music.album.image %}background: center / 100% 100% no-repeat url({{ vich_uploader_asset(music.album, 'imageFile') }}){% else %}background: center / 100% 100% no-repeat url('https://bulma.io/images/placeholders/480x480.png'){% endif %}">
 
         {% if is_granted('ROLE_ADMIN') %}
-            {{ include('music/edit_music_button.html.twig') }}
+            {% include 'includes/edit_entity_button.html.twig' with {'entity' : music, 'entity_type' : 'music' } %}
         {% endif %}
 
         <span class="icon has-text-black pointer-hover play-btn" onclick="startMusic(this)" style="position: absolute;height: 100%;width: 100%;z-index: 1">

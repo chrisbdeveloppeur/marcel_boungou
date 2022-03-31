@@ -37,8 +37,8 @@
                 <td>{{ book.tags }}</td>
                 <td>{{ book.image }}</td>
                 <td>
-                    <a href="{{ path('book_show', {'id': book.id}) }}">{% trans %}show{% endtrans %}</a>
-                    <a href="{{ path('book_edit', {'id': book.id}) }}">{% trans %}edit{% endtrans %}</a>
+                    {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'show', 'entity' : book, 'entity_type' : 'book', 'text': 'Show'|trans } %}
+                    {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'edit', 'entity' : book, 'entity_type' : 'book', 'text': 'Show'|trans } %}
                 </td>
             </tr>
         {% else %}

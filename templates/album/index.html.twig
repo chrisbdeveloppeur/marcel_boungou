@@ -35,8 +35,8 @@
                     <td>{{ album.feat }}</td>
                     <td>{{ album.image }}</td>
                     <td>
-                        <a href="{{ path('album_show', {'id': album.id}) }}">{% trans %}show{% endtrans %}</a>
-                        <a href="{{ path('album_edit', {'id': album.id}) }}">{% trans %}edit{% endtrans %}</a>
+                        {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'show', 'entity' : album, 'entity_type' : 'album', 'text': 'Show'|trans } %}
+                        {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'edit', 'entity' : album, 'entity_type' : 'album', 'text': 'Edit'|trans } %}
                     </td>
                 </tr>
             {% else %}

@@ -5,7 +5,7 @@
                 <div class="scalup-hover transition-1s is-relative">
 
                     {% if is_granted('ROLE_ADMIN') %}
-                        {{ include('book/edit_book_button.html.twig') }}
+                        {% include 'includes/edit_entity_button.html.twig' with {'entity' : book, 'entity_type' : 'book' } %}
                     {% endif %}
 
                     <a data-href="{{ book }}" onclick="document.getElementById('modalBook'+{{ book.id }}).classList.add('is-active')" class="card" style="width: 200px; height: 100%;">

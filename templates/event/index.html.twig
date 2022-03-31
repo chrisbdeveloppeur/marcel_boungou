@@ -39,8 +39,8 @@
                     <td>{{ event.cp }}</td>
                     <td>{{ event.street }}</td>
                     <td>
-                        <a href="{{ path('event_show', {'id': event.id}) }}">{% trans %}show{% endtrans %}</a>
-                        <a href="{{ path('event_edit', {'id': event.id}) }}">{% trans %}edit{% endtrans %}</a>
+                        {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'show', 'entity' : event, 'entity_type' : 'event', 'text': 'Show'|trans } %}
+                        {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'edit', 'entity' : event, 'entity_type' : 'event', 'text': 'Edit'|trans } %}
                     </td>
                 </tr>
             {% else %}

@@ -12,7 +12,7 @@
 
         <div class="borderless is-relative">
             {% if is_granted('ROLE_ADMIN') %}
-                {{ include('event/edit_event_button.html.twig') }}
+                {% include 'includes/edit_entity_button.html.twig' with {'entity' : event, 'entity_type' : 'event' } %}
             {% endif %}
             <div class="column px-0 py-0 mx-1 my-2" style="z-index: 1;">
                 <div class="is-flex is-align-items-center shadow-box-1 my-2">

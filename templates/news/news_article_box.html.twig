@@ -2,7 +2,7 @@
     <article class="shadow-box-1 m-2 p-2 is-relative">
         <span class="help has-text-grey">{{ new.datetime|format_datetime('full','medium',locale=app.request.locale) }}</span>
         {% if is_granted('ROLE_ADMIN') %}
-            {{ include('news/edit_news_button.html.twig') }}
+            {% include 'includes/edit_entity_button.html.twig' with {'entity' : new, 'entity_type' : 'news' } %}
         {% endif %}
         <div class="has-text-white overflow-wrap-break-word">
             {% if new.title %}

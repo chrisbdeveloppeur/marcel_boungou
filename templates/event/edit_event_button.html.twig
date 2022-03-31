@@ -1,8 +1,0 @@
-{% if event is not defined %}
-    {% set event = events[0] %}
-{% endif %}
-<a href="{{ path('event_edit', {'id': event.id}) }}" class="button p-3 is-rounded is-warning is-small" style="position:absolute;right: 0;top: 0;z-index: 2;">
-    <span class="icon">
-        <i class="fas fa-lg fa-edit"></i>
-    </span>
-</a>

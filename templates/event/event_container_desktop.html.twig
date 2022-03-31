@@ -2,7 +2,7 @@
     <div class="item-{{ count_2 }}" style="height: 100%;">
         <div class="is-flex is-flex-direction-row is-relative"  style="height: 100%;background:rgba(0,0,0,0)">
             {% if is_granted('ROLE_ADMIN') %}
-                {{ include('event/edit_event_button.html.twig') }}
+                {% include 'includes/edit_entity_button.html.twig' with {'entity' : event, 'entity_type' : 'event' } %}
             {% endif %}
             <figure style="height: 100%;width: 50%">
             {% if event.image %}

@@ -139,7 +139,7 @@ class NewsController extends AbstractController
 
 
     /**
-     * @Route("/send-news/{id}", name="news_sender")
+     * @Route("/send-news/{id}", name="send")
      * @Security("is_granted('ROLE_ADMIN')")
      */
     public function newsSender($id, NewsRepository $newsRepository, SubscriberRepository $subscriberRepository): Response

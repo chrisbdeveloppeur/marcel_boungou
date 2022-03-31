@@ -33,9 +33,9 @@
                     <td class="is-hidden-touch">{{ news.description|raw }}</td>
                     <td>{{ news.datetime ? news.datetime|date('d/m/Y H:i:s') : '' }}</td>
                     <td>
-                        <a class="button is-success is-small is-rounded m-1" href="{{ path('news_show', {'id': news.id}) }}">{% trans %}show{% endtrans %}</a>
-                        <a class="button is-success is-small is-rounded m-1" href="{{ path('news_edit', {'id': news.id}) }}">{% trans %}edit{% endtrans %}</a><br>
-                        <a class="button is-success is-small is-rounded m-1" href="{{ path('news_news_sender', {'id': news.id}) }}" onclick="return confirm({% trans %}'are you sure you want to send this newsletter to all subscribers ?'{% endtrans %})">{% trans %}send news to subscribers{% endtrans %}</a>
+                        {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'show', 'entity' : news, 'entity_type' : 'news', 'text': 'Show'|trans } %}
+                        {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'edit', 'entity' : news, 'entity_type' : 'news', 'text': 'Edit'|trans } %}<br>
+                        {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'send', 'entity' : news, 'entity_type' : 'news', 'text': 'Send news to subscribers'|trans, 'confirm_msg': 'are you sure you want to send this newsletter to all subscribers ?'|trans } %}
                     </td>
                 </tr>
             {% else %}

@@ -5,7 +5,7 @@
                     <div class="scalup-hover transition-1s is-relative">
 
                         {% if is_granted('ROLE_ADMIN') %}
-                            {{ include('picture/edit_picture_button.html.twig') }}
+                            {% include 'includes/edit_entity_button.html.twig' with {'entity' : picture, 'entity_type' : 'picture' } %}
                         {% endif %}
 
                         <div class="is-flex is-flex-direction-column has-background-black">
