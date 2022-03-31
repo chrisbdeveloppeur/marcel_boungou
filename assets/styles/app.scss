@@ -10,7 +10,7 @@ $black: #0a0a0a;
 $dark: #4a4a4a;
 $white-layer: rgba(255, 255, 255, 0.7);
 $black-layer: rgba(0, 0, 0, 0.7);
-$black-layerless: rgba(0, 0, 0, 0.5);
+$black-layerless: rgba(0, 0, 0, 0.4);
 
 $footer-background-color: $black;
 $footer-color: $dark;
@@ -69,6 +69,10 @@ $modal-content-width: auto;
 }
 .has-background-transparent{
   background: rgba(0,0,0,0);
+}
+.has-background-black-layer-gradient-left{
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6979166666666667) 3%, rgba(0,0,0,0.6951155462184874) 100%);
 }
 
 
@@ -149,6 +153,12 @@ body{
   box-shadow: 0 0 5px rgba(255, 219, 127, 0.9);
 }
 
+.shadow-box-2{
+  background: $primary-dark-layer;
+  border-radius:.5rem;
+  box-shadow: 0 0 5px rgba(124, 74, 140, 0.91);
+}
+
 section.body{
   min-height: inherit;
   //padding-top: 3rem;
@@ -176,13 +186,14 @@ section.body{
   width: 100%;
   position: absolute;
   z-index: 1;
-  opacity: 70%;
 }
 .nav-background-layer{
   background: $success;
+  opacity: 70%;
 }
 .main-background-layer{
   background: $primary-dark-layer;
+  opacity: 20%;
 }
 .nav-background{
   position: absolute;

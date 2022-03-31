@@ -86,8 +86,9 @@ class UserController extends AbstractController
             $entityManager->flush();
 
             $msg = $this->translator->trans('Saved account information');
-            $this->addFlash('success', $msg);
-            return $this->redirectToRoute('user_edit', ['id' => $id], Response::HTTP_SEE_OTHER);
+            $this->addFlash('info', $msg);
+            $previousUrl = $request->headers->get('referer');
+            return $this->redirect($previousUrl);
         }
 
         $redirectLink = $this->redirectToRoute('user_index')->getTargetUrl();

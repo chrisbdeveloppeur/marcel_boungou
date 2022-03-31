@@ -43,9 +43,4 @@
         </tbody>
     </table>
 
-    <a href="{{ path('music_index') }}">{% trans %}back to list{% endtrans %}</a>
-
-    <a href="{{ path('music_edit', {'id': music.id}) }}">{% trans %}edit{% endtrans %}</a>
-
-    {{ include('music/_delete_form.html.twig') }}
 {% endblock %}

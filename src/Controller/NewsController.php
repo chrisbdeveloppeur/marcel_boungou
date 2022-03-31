@@ -95,8 +95,9 @@ class NewsController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
             $msg = $this->translator->trans('Changes made successfully');
-            $this->addFlash('success',$msg);
-            return $this->redirectToRoute('news_index', [], Response::HTTP_SEE_OTHER);
+            $this->addFlash('info',$msg);
+            $previousUrl = $request->headers->get('referer');
+            return $this->redirect($previousUrl);
         }
 
         $redirect_link = $this->redirectToRoute('news_index')->getTargetUrl();

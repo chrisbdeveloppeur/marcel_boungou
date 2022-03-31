@@ -7,13 +7,13 @@
 
     <div class="column is-flex-tablet is-flex-direction-row is-justify-content-center">
         <div class="px-1 py-1">
-            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'index', 'entity' : album, 'entity_type' : 'album', 'text': 'Back to Albums list'|trans } %}
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'index', 'type':'success', 'entity' : album, 'entity_type' : 'album', 'text': 'Back to Albums list'|trans } %}
         </div>
         <div class="px-1 py-1">
-            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'edit', 'entity' : album, 'entity_type' : 'album', 'text': 'Edit'|trans } %}
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'edit', 'type':'success', 'entity' : album, 'entity_type' : 'album', 'text': 'Edit'|trans } %}
         </div>
         <div class="px-1 py-1">
-            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'delete', 'entity' : album, 'entity_type' : 'album', 'text': 'Delete album'|trans, 'confirm_msg':'Are you sure you want to delete this item?'|trans } %}
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'delete', 'type':'danger', 'entity' : album, 'entity_type' : 'album', 'text': 'Delete album'|trans, 'confirm_msg':'Are you sure you want to delete this item?'|trans } %}
         </div>
     </div>
 

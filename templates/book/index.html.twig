@@ -10,7 +10,7 @@
             <a class="button is-outlined has-text-weight-bold is-rounded p-3 m-1" href="{{ path('bibliography_index') }}">{{ 'Back to Bibliography page'|trans }}</a>
         </div>
         <div class="px-1 py-1">
-            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'new', 'entity' : null, 'entity_type' : 'book', 'text': 'Add'|trans } %}
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'new','type':'success', 'entity' : null, 'entity_type' : 'book', 'text': 'Add'|trans } %}
         </div>
     </div>
 
@@ -32,14 +32,16 @@
             <tr>
                 <td>{{ book.id }}</td>
                 <td>{{ book.title }}</td>
-                <td>{{ book.description }}</td>
-                <td>{{ book.redirectLink }}</td>
+                <td>{{ book.description|raw }}</td>
+                <td><a href="{{ book.redirectLink }}">{{ book.redirectLink }}</a></td>
                 <td>{{ book.tags }}</td>
                 <td>{{ book.image }}</td>
                 <td>
-                    {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'show', 'entity' : book, 'entity_type' : 'book', 'text': 'Show'|trans } %}
-                    {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'edit', 'entity' : book, 'entity_type' : 'book', 'text': 'Show'|trans } %}
-                    {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'delete', 'entity' : book, 'entity_type' : 'book', 'text': 'Delete book'|trans, 'confirm_msg': 'Are you sure you want to delete this item?'|trans } %}
+                    <div class="is-flex">
+                        {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'show', 'type':'success', 'entity' : book, 'entity_type' : 'book', 'text': 'Show'|trans } %}
+                        {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'edit', 'type':'success', 'entity' : book, 'entity_type' : 'book', 'text': 'Show'|trans } %}
+                        {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'delete', 'type':'danger', 'entity' : book, 'entity_type' : 'book', 'text': 'Delete book'|trans, 'confirm_msg': 'Are you sure you want to delete this item?'|trans } %}
+                    </div>
                 </td>
             </tr>
         {% else %}
@@ -56,7 +58,7 @@
             <a class="button is-outlined has-text-weight-bold is-rounded p-3 m-1" href="{{ path('bibliography_index') }}">{{ 'Back to Bibliography page'|trans }}</a>
         </div>
         <div class="px-1 py-1">
-            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'new', 'entity' : null, 'entity_type' : 'book', 'text': 'Add'|trans } %}
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'new', 'type':'success', 'entity' : null, 'entity_type' : 'book', 'text': 'Add'|trans } %}
         </div>
     </div>
 
