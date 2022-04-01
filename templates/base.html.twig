@@ -29,6 +29,11 @@
 </head>
 <body>
 
+{% if app.request.get('_route') == 'home_index' %}
+    {% set home = true %}
+{% else %}
+    {% set home = false %}
+{% endif %}
 {% block header %}
     {{ include('includes/header.html.twig') }}
 {% endblock %}

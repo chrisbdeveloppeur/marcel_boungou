@@ -1,8 +1,3 @@
-{% if app.request.get('_route') == 'home_index' %}
-    {% set home = true %}
-{% else %}
-    {% set home = false %}
-{% endif %}
 <nav class="navbar is-fixed-top box-shadow-bulma font-quicksand transition-5ms" role="navigation" aria-label="main navigation">
     <div class="nav-background">
         <img src="{{ asset('build/images/background_design.a6a92814.jpg') }}" alt="">
@@ -86,6 +81,9 @@
                     </a>
                     <a {% if home %}href="#contact" {% else %}href="{{ path('home_index') }}#contact"{% endif %} class="navbar-item is-size-5-touch">
                         {% trans %}Contact{% endtrans %}
+                    </a>
+                    <a {% if home %}href="#donation" {% else %}href="{{ path('home_index') }}#donation"{% endif %} class="navbar-item is-size-5-touch">
+                        {% trans %}Donation{% endtrans %}
                     </a>
                 </div>
             </div>

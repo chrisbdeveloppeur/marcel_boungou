@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="content container has-text-centered">
         <div class="columns list-no-style">
-            <div class="column is-flex is-justify-content-center is-align-items-center is-flex-direction-column">
+            <div class="column is-flex is-align-items-center is-flex-direction-column">
                 <p class="is-size-5 has-text-centered has-text-weight-bold">{{ 'Events and News'|trans|capitalize }}</p>
                 <ul>
                     <li><a href="{{ path('home_index') }}">{{ 'home'|trans|capitalize }}</a></li>
@@ -9,7 +9,7 @@
                     <li><a href="{{ path('event_all') }}">{{ 'all events'|trans|capitalize }}</a></li>
                 </ul>
             </div>
-            <div class="column is-flex is-justify-content-center is-align-items-center is-flex-direction-column">
+            <div class="column is-flex is-align-items-center is-flex-direction-column">
                 <p class="is-size-5 has-text-centered has-text-weight-bold">{{ 'Media'|trans|capitalize }}</p>
                 <ul>
                     <li><a href="{{ path('discography_index') }}">{{ 'discography'|trans|capitalize }}</a></li>
@@ -17,24 +17,27 @@
                     <li><a href="{{ path('gallery_index') }}">{{ 'gallery'|trans|capitalize }}</a></li>
                 </ul>
             </div>
-            <div class="column is-flex is-justify-content-center is-align-items-center is-flex-direction-column">
+            <div class="column is-flex is-align-items-center is-flex-direction-column">
                 <p class="is-size-5 has-text-centered has-text-weight-bold">{{ 'MB Ministry'|trans|capitalize }}</p>
                 <ul>
-                    <li><a href="{{ path('discography_index') }}">{{ 'biography'|trans|capitalize }}</a></li>
-                    <li><a href="{{ path('gallery_index') }}">{{ 'partner'|trans|capitalize }}</a></li>
-                    <li><a href="{{ path('bibliography_index') }}">{{ 'contact'|trans|capitalize }}</a></li>
+                    <li><a {% if home %}href="#biography" {% else %}href="{{ path('home_index') }}#biography"{% endif %}>{{ 'biography'|trans|capitalize }}</a></li>
+                    <li><a {% if home %}href="#partners" {% else %}href="{{ path('home_index') }}#partners"{% endif %}>{{ 'partners'|trans|capitalize }}</a></li>
+                    <li><a {% if home %}href="#contact" {% else %}href="{{ path('home_index') }}#contact"{% endif %}>{{ 'contact'|trans|capitalize }}</a></li>
+                    <li><a {% if home %}href="#donation" {% else %}href="{{ path('home_index') }}#donation"{% endif %}>{{ 'donation'|trans|capitalize }}</a></li>
                 </ul>
             </div>
-            <div class="column is-flex is-justify-content-center is-align-items-center is-flex-direction-column">
-                <p class="is-size-5 has-text-centered has-text-weight-bold">{{ ''|trans|capitalize }}</p>
+            <div class="column is-flex is-align-items-center is-flex-direction-column">
+                <p class="is-size-5 has-text-centered has-text-weight-bold">{{ 'Other'|trans|capitalize }}</p>
                 <ul>
-                    <li><a href="{{ path('discography_index') }}">{{ 'CGU'|trans }}</a></li>
+                    {#
+                    <li><a href="">{{ 'CGU'|trans }}</a></li>
+                    #}
                     <li><a href="{{ path('app_login') }}">{{ 'backoffice'|trans|capitalize }}</a></li>
                 </ul>
             </div>
         </div>
         <p>
-            <strong>MB Ministry</strong>
+            <b>MB Ministry</b>
             © 2022 | <a href="{{ path('home_index') }}">www.marcel-boungou.com</a> | Property of Marcel BOUNGOU. All rights reserved.
             The source code is licensed.
         </p>

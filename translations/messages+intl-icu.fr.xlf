@@ -1537,6 +1537,30 @@
         <source>Picture add successfully : </source>
         <target>Image ajoutée avec succès : </target>
       </trans-unit>
+      <trans-unit id="tSRDFm7" resname="You want to make a move for MB Ministry">
+        <source>You want to make a move for MB Ministry</source>
+        <target>__You want to make a move for MB Ministry</target>
+      </trans-unit>
+      <trans-unit id="0EpCL4i" resname="Make a donation">
+        <source>Make a donation</source>
+        <target>__Make a donation</target>
+      </trans-unit>
+      <trans-unit id="Bst18TJ" resname="partners">
+        <source>partners</source>
+        <target>__partners</target>
+      </trans-unit>
+      <trans-unit id="NDOESkQ" resname="donation">
+        <source>donation</source>
+        <target>__donation</target>
+      </trans-unit>
+      <trans-unit id="_X6doOO" resname="Other">
+        <source>Other</source>
+        <target>__Other</target>
+      </trans-unit>
+      <trans-unit id="iCahT1c" resname="Donation">
+        <source>Donation</source>
+        <target>__Donation</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
