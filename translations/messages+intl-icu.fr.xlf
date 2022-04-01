@@ -1073,9 +1073,9 @@
         <source>gallery</source>
         <target>galerie</target>
       </trans-unit>
-      <trans-unit id="BTIBgmN" resname="bio">
-        <source>bio</source>
-        <target>bio</target>
+      <trans-unit id="Si_Zhpr" resname="biography">
+        <source>biography</source>
+        <target>biographie</target>
       </trans-unit>
       <trans-unit id="CT59X9u" resname="contact">
         <source>contact</source>
@@ -1488,6 +1488,22 @@
       <trans-unit id="n9coxmy" resname="Add">
         <source>Add</source>
         <target>Ajouter</target>
+      </trans-unit>
+      <trans-unit id="7vmMUk2" resname="Edit Biography">
+        <source>Edit Biography</source>
+        <target>Modifier la biographie</target>
+      </trans-unit>
+      <trans-unit id="QSLnGaU" resname="Redirect to Biography">
+        <source>Redirect to Biography</source>
+        <target>Rediriger vers la biographie</target>
+      </trans-unit>
+      <trans-unit id="of2xNSR" resname="Text in French">
+        <source>Text in French</source>
+        <target>Texte en français</target>
+      </trans-unit>
+      <trans-unit id="ax_ZN96" resname="Text in English">
+        <source>Text in English</source>
+        <target>Texte en anglais</target>
       </trans-unit>
     </body>
   </file>

@@ -81,11 +81,11 @@
                     <a {% if home %}href="#bio" {% else %}href="{{ path('home_index') }}#bio"{% endif %} class="navbar-item is-size-5-touch">
                         {% trans %}Biography{% endtrans %}
                     </a>
-                    <a {% if home %}href="#contact" {% else %}href="{{ path('home_index') }}#contact"{% endif %} class="navbar-item is-size-5-touch">
-                        {% trans %}Contact{% endtrans %}
-                    </a>
                     <a {% if home %}href="#partners" {% else %}href="{{ path('home_index') }}#partners"{% endif %} class="navbar-item is-size-5-touch">
                         {% trans %}Partners{% endtrans %}
+                    </a>
+                    <a {% if home %}href="#contact" {% else %}href="{{ path('home_index') }}#contact"{% endif %} class="navbar-item is-size-5-touch">
+                        {% trans %}Contact{% endtrans %}
                     </a>
                 </div>
             </div>
