@@ -28,8 +28,9 @@
         </div>
     </div>
 
-    <div class="ancrage-home-sections" id="contact"></div>
-    <div class="column">
+    <div class="column is-relative">
+        <div class="ancrage-home-sections" id="contact"></div>
         <h3 class="subtitle is-2 has-text-white has-text-centered">{{ 'Contact'|trans }}</h3>
+        {% include 'includes/contact_form.html.twig' %}
     </div>
 </div>

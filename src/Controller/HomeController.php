@@ -3,7 +3,9 @@
 namespace App\Controller;
 
 use App\Entity\Biography;
+use App\Entity\Message;
 use App\Entity\Subscriber;
+use App\Form\ContactType;
 use App\Form\SubscriberType;
 use App\Repository\BiographyRepository;
 use App\Repository\SubscriberRepository;
@@ -50,6 +52,22 @@ class HomeController extends AbstractController
             return $this->redirect($url);
         }
 
+        // CONTACT FORM CONTROL
+        $message = new Message();
+        $contactForm = $this->createForm(ContactType::class, $message);
+        $contactForm->handleRequest($request);
+        if ($contactForm->isSubmitted()){
+            if ($contactForm->isValid()){
+                $em->persist($message);
+                $em->flush();
+                $this->addFlash('info', $this->translator->trans('Thank you for your message !'));
+            }else{
+                $this->addFlash('danger', $this->translator->trans('Operation failed'));
+            }
+            $url = $this->redirectToRoute('home_index')->getTargetUrl().'#contact';
+            return $this->redirect($url);
+        }
+
         // BIOGRAPHY CHECK / CONTROL
         $bios = $biographyRepository->findAll();
         $bioNb = count($bios);
@@ -63,6 +81,7 @@ class HomeController extends AbstractController
 
         return $this->render('home/index.html.twig',[
             'subs_form' => $form->createView(),
+            'contact_form' => $contactForm->createView(),
             'biography' => $biography,
         ]);
     }

@@ -1,0 +1,25 @@
+{{ form_start(contact_form,{'attr': {'class':'column is-half margin-auto is-full-touch has-text-centered'}}) }}
+<h3 class="subtitle is-size-4-touch has-text-white">{{ 'You wish to contact MB Ministry'|trans }} ?</h3>
+
+<div class="column field p-0 is-flex-tablet is-flex-direction-row">
+    <div class="column p-0 is-half">
+        {{ form_widget(contact_form.sender) }}
+    </div>
+    <div class="column p-0 is-half">
+        {{ form_widget(contact_form.subject) }}
+    </div>
+</div>
+
+<div class="field">
+    <div class="control">
+        {{ form_widget(contact_form.content) }}
+    </div>
+</div>
+
+<div class="field">
+    <div class="control">
+        <button class="button is-fullwidth is-success">{{ 'Send'|trans }}</button>
+    </div>
+</div>
+
+{{ form_end(contact_form) }}
