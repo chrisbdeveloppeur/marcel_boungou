@@ -10,11 +10,21 @@
 
     <div class="ancrage-home-sections" id="bio"></div>
     <div class="column">
-        <h3 class="subtitle is-2 has-text-white">Biography</h3>
+        <h3 class="subtitle is-2 has-text-white has-text-centered">Biography</h3>
+        <div>
+            {% if app.request.locale == 'fr' %}
+                {{ biography.content }}
+            {% else %}
+                {{ biography.contentEn }}
+            {% endif %}
+        </div>
+        {% if is_granted('ROLE_ADMIN') %}
+            {% include 'includes/edit_entity_button.html.twig' with {'entity' : biography, 'entity_type' : 'biography' } %}
+        {% endif %}
     </div>
 
     <div class="ancrage-home-sections" id="contact"></div>
     <div class="column">
-        <h3 class="subtitle is-2 has-text-white">Contact</h3>
+        <h3 class="subtitle is-2 has-text-white has-text-centered">Contact</h3>
     </div>
 </div>

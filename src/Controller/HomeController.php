@@ -2,8 +2,10 @@
 
 namespace App\Controller;
 
+use App\Entity\Biography;
 use App\Entity\Subscriber;
 use App\Form\SubscriberType;
+use App\Repository\BiographyRepository;
 use App\Repository\SubscriberRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -28,8 +30,10 @@ class HomeController extends AbstractController
     /**
      * @Route("/", name="index")
      */
-    public function home(Request $request, SubscriberRepository $subscriberRepository, EntityManagerInterface $em): Response
+    public function home(Request $request, SubscriberRepository $subscriberRepository, EntityManagerInterface $em, BiographyRepository $biographyRepository): Response
     {
+
+        // SUBSCRIBER FORM CONTROL
         $subscriber = new Subscriber();
         $form = $this->createForm(SubscriberType::class, $subscriber);
         $form->handleRequest($request);
@@ -45,8 +49,21 @@ class HomeController extends AbstractController
             $url = $this->redirectToRoute('home_index')->getTargetUrl().'#subscribeForm';
             return $this->redirect($url);
         }
+
+        // BIOGRAPHY CHECK / CONTROL
+        $bios = $biographyRepository->findAll();
+        $bioNb = count($bios);
+        if ($bioNb > 0){
+            $biography = $bios[0];
+        }else{
+            $biography = new Biography();
+            $em->persist($biography);
+            $em->flush();
+        }
+
         return $this->render('home/index.html.twig',[
             'subs_form' => $form->createView(),
+            'biography' => $biography,
         ]);
     }
 }
