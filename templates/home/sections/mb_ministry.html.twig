@@ -15,7 +15,7 @@
 
     <div class="ancrage-home-sections" id="bio"></div>
     <div class="column">
-        <h3 class="subtitle is-2 has-text-white has-text-centered">Biography</h3>
+        <h3 class="subtitle is-2 has-text-white has-text-centered">{{ 'Biography'|trans }}</h3>
         <div class="has-text-white container is-relative px-5">
             {% if app.request.locale == 'fr' %}
                 {{ biography.content|raw }}
@@ -30,6 +30,6 @@
 
     <div class="ancrage-home-sections" id="contact"></div>
     <div class="column">
-        <h3 class="subtitle is-2 has-text-white has-text-centered">Contact</h3>
+        <h3 class="subtitle is-2 has-text-white has-text-centered">{{ 'Contact'|trans }}</h3>
     </div>
 </div>
