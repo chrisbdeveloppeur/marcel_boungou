@@ -1,10 +1,15 @@
-<div class="column p-0 has-background-light is-full is-full-mobile box-shadow-bulma" id="musicNav">
-    <a class="column is-flex is-align-items-center is-justify-content-center" onclick="toogleMusicNav()" id="musicNavEllipsis">
+<div class="column p-0 is-flex has-background-light is-full is-full-mobile box-shadow-bulma" id="musicNav">
+    <div class="transition-1s m-1" id="musicNavImage"></div>
+    <div class="column p-0 is-flex is-flex-direction-column">
+        <a class="column p-0 is-flex is-align-items-center is-justify-content-center" onclick="toogleMusicNav()" id="musicNavEllipsis">
         <span class="icon is-size-3 has-text-grey">
             <i class="fas fa-ellipsis-h"></i>
         </span>
-    </a>
-    <div class="is-flex is-justify-content-center is-align-items-center" id="musicNavContent">
-        <a href="" class="current-music-played">{{ 'no music played'|trans }}</a>
+        </a>
+        <div class="is-flex is-justify-content-center is-align-items-center is-relative" id="musicNavContent">
+            <div class="column has-text-centered">
+                <a class="current-music-played">{{ 'no music played'|trans }}</a>
+            </div>
+        </div>
     </div>
 </div>

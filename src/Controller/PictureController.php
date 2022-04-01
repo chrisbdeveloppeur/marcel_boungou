@@ -48,7 +48,7 @@ class PictureController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->persist($picture);
             $entityManager->flush();
-
+            $this->addFlash('info', $this->translator->trans('Picture add successfully : ').'<b>'.$picture.'</b>');
             return $this->redirectToRoute('picture_index', [], Response::HTTP_SEE_OTHER);
         }
 

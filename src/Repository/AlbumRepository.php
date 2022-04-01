@@ -22,7 +22,7 @@ class AlbumRepository extends ServiceEntityRepository
     public function findByYear()
     {
         return $this->createQueryBuilder('e')
-            ->orderBy('e.year', 'ASC')
+            ->orderBy('e.year', 'DESC')
             ->setMaxResults(500)
             ->getQuery()
             ->getResult()

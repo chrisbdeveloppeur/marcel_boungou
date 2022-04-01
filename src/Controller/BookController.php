@@ -49,7 +49,7 @@ class BookController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->persist($book);
             $entityManager->flush();
-
+            $this->addFlash('info', $this->translator->trans('Book add successfully : ').'<b>'.$book.'</b>');
             return $this->redirectToRoute('book_index', [], Response::HTTP_SEE_OTHER);
         }
 

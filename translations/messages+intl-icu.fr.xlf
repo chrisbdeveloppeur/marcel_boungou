@@ -1505,6 +1505,38 @@
         <source>Text in English</source>
         <target>Texte en anglais</target>
       </trans-unit>
+      <trans-unit id="3KcK3JF" resname="Thank you for your message !">
+        <source>Thank you for your message !</source>
+        <target>Merci pour votre message !</target>
+      </trans-unit>
+      <trans-unit id="EvxGDwX" resname="Your denomination...">
+        <source>Your denomination...</source>
+        <target>Votre dénomination...</target>
+      </trans-unit>
+      <trans-unit id="qm4HwEw" resname="The subject of the message...">
+        <source>The subject of the message...</source>
+        <target>Le sujet du message...</target>
+      </trans-unit>
+      <trans-unit id="gvYWw0o" resname="Your message...">
+        <source>Your message...</source>
+        <target>Votre message...</target>
+      </trans-unit>
+      <trans-unit id="CzPopUj" resname="You wish to contact MB Ministry">
+        <source>You wish to contact MB Ministry</source>
+        <target>Vous souhaitez contacter MB Ministry</target>
+      </trans-unit>
+      <trans-unit id="xxco6nG" resname="Album add successfully : ">
+        <source>Album add successfully : </source>
+        <target>Album ajouté avec succès : </target>
+      </trans-unit>
+      <trans-unit id="xRagOsb" resname="Book add successfully : ">
+        <source>Book add successfully : </source>
+        <target>Livre ajouté avec succès : </target>
+      </trans-unit>
+      <trans-unit id="dW6z_pZ" resname="Picture add successfully : ">
+        <source>Picture add successfully : </source>
+        <target>Image ajoutée avec succès : </target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

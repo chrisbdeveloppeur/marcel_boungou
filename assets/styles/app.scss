@@ -1,6 +1,7 @@
 
 $link: #987f00;
 $link-hover: #c2a800;
+$info: #7ba266;
 $success: #da6d00;
 $success-layer: rgba(218, 112, 0, 0.7);
 $primary: #7C4A8C;
@@ -522,6 +523,18 @@ li{
   visibility: visible;
   opacity: 1;
   height: 5em;
+}
+#musicNavImage{
+  //position: absolute;
+  //left: 0;
+  //bottom: 0;
+  height: 0px;
+  width: 128px;
+  opacity: 0%;
+}
+#musicNavImage.is-extended{
+  height: 128px !important;
+  opacity: 100% !important;
 }
 
 

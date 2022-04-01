@@ -47,11 +47,6 @@
             <p>{% trans %}Go to the shop page to support the artist and get exclusive content{% endtrans %}</p>
             <a href="#" class="button is-fullwidth is-success">{% trans %}Shop{% endtrans %}</a>
         </div>
-        <div class="column is-half-tablet">
-            <figure class="image is-1by1">
-                <img class="object-fit-contain" src="{{ asset('build/images/mb_cost_blue_1.4e43ac8e.jpg') }}" alt="">
-            </figure>
-        </div>
     </div>
 
 {% endblock %}
@@ -271,9 +266,11 @@
 
         {# SCRIPT GET CURRENT MUSIC PLAYED AND SHOW IN MUSIC-NAV #}
         function showCurrentMusicPlayedIntoMusicNav(audio, musicContainer, musicState) {
-            var musicNav, musicNavMusicName, album, year, currentMusicNameTxt, musicImage, musicId, musicNavAncrage;
+            var musicNav, musicNavMusicName, album, year, currentMusicNameTxt, musicImage, musicNavImage, musicId, musicNavAncrage;
             musicNav = document.querySelector('#musicNav');
+            musicNavImage = document.querySelector('#musicNavImage');
             musicImage = musicContainer.querySelector('#musicImage');
+            console.log(musicImage.style.background);
             musicId = '#'+musicContainer.id;
             musicNavAncrage = musicNav.querySelector('a.current-music-played');
             musicNavAncrage.href = musicId;
@@ -281,14 +278,17 @@
             musicNavMusicName = musicNav.querySelector('.current-music-played');
             if (audio === null){
                 musicNavMusicName.innerText = {% trans %}'no music played'{% endtrans %};
+                musicNavImage.style.background = 'none';
             }else if (musicState === 'pause') {
                 musicNavMusicName.innerText = currentMusicNameTxt + {% trans %}' (pause)'{% endtrans %};
             } else {
-                musicNavMusicName.innerText = currentMusicNameTxt
+                musicNavMusicName.innerText = currentMusicNameTxt;
+                musicNavImage.style.background = musicImage.style.background;
             }
         }
         function toogleMusicNav(setState) {
             let musicNav = document.getElementById('musicNav');
+            let musicNavImage = document.querySelector('#musicNavImage');
             let musicNavEllipsis = document.getElementById('musicNavEllipsis');
             let icon = musicNavEllipsis.querySelector('i');
             if (setState === 'retract'){
@@ -299,13 +299,16 @@
             } else if (setState === 'extend'){
                 musicNav.classList.add('is-active');
                 if (icon.classList.contains('fa-ellipsis-h')) {
+                    musicNavImage.classList.add('is-extended');
                     icon.classList.replace('fa-ellipsis-h','fa-caret-square-down');
                 }
             } else {
                 musicNav.classList.toggle('is-active');
                 if (icon.classList.contains('fa-ellipsis-h')) {
+                    musicNavImage.classList.add('is-extended');
                     icon.classList.replace('fa-ellipsis-h','fa-caret-square-down');
                 } else {
+                    musicNavImage.classList.remove('is-extended');
                     icon.classList.replace('fa-caret-square-down','fa-ellipsis-h');
                 }
             }

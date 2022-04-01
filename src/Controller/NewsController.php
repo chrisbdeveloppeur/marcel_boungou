@@ -38,7 +38,7 @@ class NewsController extends AbstractController
     public function index(NewsRepository $newsRepository): Response
     {
         return $this->render('news/index.html.twig', [
-            'news' => $newsRepository->findAll(),
+            'news' => $newsRepository->findByYear(),
         ]);
     }
 
@@ -56,7 +56,7 @@ class NewsController extends AbstractController
             $entityManager->persist($news);
             $entityManager->flush();
             $msg = $this->translator->trans('News ').'<b>'.$news->getTitle().'</b>'.$this->translator->trans(' created with success');
-            $this->addFlash('success',$msg);
+            $this->addFlash('info',$msg);
             return $this->redirectToRoute('news_index', [], Response::HTTP_SEE_OTHER);
         }
 

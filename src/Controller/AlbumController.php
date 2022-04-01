@@ -32,7 +32,7 @@ class AlbumController extends AbstractController
     public function index(AlbumRepository $albumRepository): Response
     {
         return $this->render('album/index.html.twig', [
-            'albums' => $albumRepository->findAll(),
+            'albums' => $albumRepository->findByYear(),
         ]);
     }
 
@@ -48,7 +48,7 @@ class AlbumController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->persist($album);
             $entityManager->flush();
-
+            $this->addFlash('info', $this->translator->trans('Album add successfully : ').'<b>'.$album.'</b>');
             return $this->redirectToRoute('album_index', [], Response::HTTP_SEE_OTHER);
         }
 

@@ -2,7 +2,7 @@
 {% for type, message_list in app.flashes %}
     <div class="flash-msg">
         {% for message in message_list %}
-            <div class="notification is-{{ type }} column is-full is-full-touch borderless has-text-centered">
+            <div class="notification is-{{ type }} m-2 is-full is-full-touch borderless has-text-centered">
                 <button class="delete" onclick="this.parentElement.parentElement.removeChild(this.parentElement);"></button>
                 {{ message|raw }}
 

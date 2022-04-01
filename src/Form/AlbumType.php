@@ -38,8 +38,8 @@ class AlbumType extends AbstractType
             ->add('year', ChoiceType::class,[
                 'label' => $this->translator->trans('Year of production'),
                 'required' => false,
-                'choices' => $this->getYears(1950),
-                'data' => $this->date,
+                'choices' => $this->getYears(1951),
+                //'data' => $this->date,
                 'placeholder' => false,
                 'attr' => []
             ])
