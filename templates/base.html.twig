@@ -172,7 +172,6 @@
     let rotationXItems = document.querySelectorAll('.rotationX');
     rotationXItems.forEach(function (el) {
         el.addEventListener('mouseenter', function () {
-            console.log(this);
             this.firstElementChild.style.WebkitTransitionDuration='.5s';
             this.firstElementChild.style.webkitTransform = 'rotateX(360deg)';
         }, false);
