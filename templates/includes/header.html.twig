@@ -66,7 +66,7 @@
                     <a href="{{ path('news_all') }}" class="navbar-item is-size-5-touch">
                         {% trans %}All News{% endtrans %}
                     </a>
-                    <a class="navbar-item is-size-5-touch" href="#subscribeForm">
+                    <a class="navbar-item is-size-5-touch" {% if home %}href="#subscribeForm" {% else %}href="{{ path('home_index') }}#subscribeForm"{% endif %}>
                         {% trans %}Subscribe{% endtrans %}
                     </a>
                 </div>

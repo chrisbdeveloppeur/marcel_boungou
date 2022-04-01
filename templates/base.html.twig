@@ -36,9 +36,22 @@
 {{ include('includes/flash_message.html.twig') }}
 
 <section class="body">
+    {% set route_name = app.request.get('_route') %}
     <div class="main-background has-background-black">
         {% block main_background_img %}
-            <img src="{{ asset('build/images/texture_wallpaper_4.c42aae7d.jpg') }}" alt="">
+            {% if 'discography' in route_name %}
+                <img class="opacity-25" src="{{ asset('build/images/vinyl.c7aa7d16.jpg') }}" alt="">
+            {% elseif 'bibliography' in route_name %}
+                <img class="opacity-25" src="{{ asset('build/images/book.b031aa2a.jpg') }}" alt="">
+            {% elseif 'gallery' in route_name %}
+                <img class="opacity-25" src="{{ asset('build/images/seance_photo.0026efbb.jpg') }}" alt="">
+            {% elseif 'event' in route_name %}
+                <img class="opacity-25" src="{{ asset('build/images/tickets.b76bd569.jpg') }}" alt="">
+            {% elseif 'news' in route_name %}
+                <img class="opacity-25" src="{{ asset('build/images/mic.ae149990.jpg') }}" alt="">
+            {% else %}
+                <img src="{{ asset('build/images/texture_wallpaper_4.c42aae7d.jpg') }}" alt="">
+            {% endif %}
         {% endblock %}
         <div class="main-background-layer"></div>
     </div>

@@ -35,6 +35,8 @@ const background_design_1 = require('./images/jpg/texture_wallpaper_1.jpg');
 const background_design_2 = require('./images/jpg/texture_wallpaper_2.jpg');
 const background_design_3 = require('./images/jpg/texture_wallpaper_3.jpg');
 const background_design_4 = require('./images/jpg/texture_wallpaper_4.jpg');
+const book = require('./images/jpg/book.jpg');
+const seance_photo = require('./images/jpg/seance_photo.jpg');
 
 // start the Stimulus application
 import './bootstrap';
