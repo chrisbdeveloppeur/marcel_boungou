@@ -496,10 +496,8 @@ li{
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed !important;
-  //background-position: left !important;
   background-repeat: no-repeat !important;
-  background-size: cover !important;
-  //object-fit: cover;
+  background-size: cover;
 }
 .parallax2{
   position: absolute;

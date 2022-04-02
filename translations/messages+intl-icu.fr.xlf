@@ -1561,6 +1561,10 @@
         <source>Donation</source>
         <target>Donation</target>
       </trans-unit>
+      <trans-unit id="ROk8HBm" resname="Voici toutes les nouvelles de MB Ministry">
+        <source>Voici toutes les nouvelles de MB Ministry</source>
+        <target>Here is all the news from MB Ministry</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
