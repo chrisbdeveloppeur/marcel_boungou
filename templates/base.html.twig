@@ -55,7 +55,7 @@
             {% elseif 'news' in route_name %}
                 <img class="opacity-25" src="{{ asset('build/images/mic.ae149990.jpg') }}" alt="">
             {% else %}
-                <img src="{{ asset('build/images/texture_wallpaper_4.c42aae7d.jpg') }}" alt="">
+                <img src="{{ asset('build/images/texture_wallpaper_2.51466cea.jpg') }}" alt="">
             {% endif %}
         {% endblock %}
         <div class="main-background-layer"></div>
@@ -357,6 +357,27 @@
         slideFadeLeftOjects.forEach(slideFadeLeft);
         slideFadeRightOjects.forEach(slideFadeRight);
     };
+
+
+
+
+    {#  SCRIPT POUR SCROLL LAST NEWS HOMEPAGE  #}
+
+    function slideDownLastNews() {
+        let lastNewsBox = document.getElementById('lastNewsBox');
+        let heightSlide = lastNewsBox.offsetHeight / 2;
+        if (lastNewsBox){
+            lastNewsBox.scrollTop = lastNewsBox.scrollTop + heightSlide;
+        }
+    }
+    function slideUpLastNews() {
+        let lastNewsBox = document.getElementById('lastNewsBox');
+        let heightSlide = lastNewsBox.offsetHeight / 2;
+        if (lastNewsBox){
+            lastNewsBox.scrollTop = lastNewsBox.scrollTop - heightSlide;
+        }
+    }
+
 
 </script>
 

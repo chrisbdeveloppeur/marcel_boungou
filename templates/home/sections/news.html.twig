@@ -14,8 +14,13 @@
                 <h3 class="subtitle is-2 has-text-white has-text-centered">{{ 'What is the latest news at MB Ministry'|trans }} ?</h3>
                 <p class="subtitle has-text-grey-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur at dolorem doloremque dolorum est ex expedita in magnam, nobis officiis provident reiciendis sit tempora ut velit vitae. Illum, velit.</p>
             </div>
+            <div class="p-2 slide-buttons-last-news has-text-centered pointer-hover" onclick="slideUpLastNews()">
+                <span class="icon has-text-white is-size-2">
+                    <i class="fas fa-angle-up"></i>
+                </span>
+            </div>
             {% set compteur = 0 %}
-            <div class="slide-fade-left" style="max-height: 70vh;overflow: auto">
+            <div class="slide-fade-left" style="max-height: 70vh;overflow: hidden" id="lastNewsBox">
                 <div class="column p-0 is-two-thirds margin-auto">
                     {% for new in news|sort((a, b) => b.datetime <=> a.datetime) %}
                         {% if compteur < 1 %}
@@ -24,6 +29,11 @@
                         {% set compteur = compteur + 1 %}
                     {% endfor %}
                 </div>
+            </div>
+            <div class="p-2 slide-buttons-last-news has-text-centered pointer-hover" onclick="slideDownLastNews()">
+                <span class="icon has-text-white is-size-2">
+                    <i class="fas fa-angle-down"></i>
+                </span>
             </div>
         </div>
         <div class="column is-hidden-touch"></div>
