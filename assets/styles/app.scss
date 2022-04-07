@@ -414,6 +414,12 @@ button.datepicker-nav-next:active, button.datepicker-nav-next:focus, button.date
   cursor: pointer;
 }
 
+.slide-buttons-last-news{
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+}
+
 .slide-fade-left{
   opacity: 0;
   position: relative;

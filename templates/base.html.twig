@@ -56,7 +56,7 @@
             {% elseif 'news' in route_name %}
                 <img class="opacity-25" src="{{ asset('build/images/texture_wallpaper_2.51466cea.jpg') }}" alt="">
             {% else %}
-                <img src="{{ asset('build/images/texture_wallpaper_4.c42aae7d.jpg') }}" alt="">
+                <img src="{{ asset('build/images/texture_wallpaper_2.51466cea.jpg') }}" alt="">
             {% endif %}
         {% endblock %}
         <div class="main-background-layer"></div>
@@ -378,6 +378,23 @@
             lastNewsBox.scrollTop = lastNewsBox.scrollTop - heightSlide;
         }
     }
+    function showArrowsLastNewsBox() {
+        let arrows = document.querySelectorAll('.slide-buttons-last-news');
+        arrows.forEach(function (el) {
+            el.style.visibility = 'visible';
+            el.style.opacity = 100;
+        })
+    }
+    function hideArrowsLastNewsBox() {
+        let arrows = document.querySelectorAll('.slide-buttons-last-news');
+        arrows.forEach(function (el) {
+            el.style.visibility = 'hidden';
+            el.style.opacity = 0;
+        })
+    }
+    let lastNewsBox = document.getElementById('lastNewsBox').parentElement;
+    lastNewsBox.addEventListener('mouseenter', showArrowsLastNewsBox);
+    lastNewsBox.addEventListener('mouseleave', hideArrowsLastNewsBox);
 
 
 </script>

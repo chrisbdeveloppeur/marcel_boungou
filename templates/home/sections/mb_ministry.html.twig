@@ -6,11 +6,6 @@
     </div>
 </div>
 
-<div class="is-relative">
-    <div class="ancrage-home-sections" id="partners"></div>
-    {{ include('home/sections/partners.html.twig') }}
-</div>
-
 <div class="has-background-black is-relative z-index-1">
 
     <div class="ancrage-home-sections" id="bio"></div>
@@ -28,11 +23,17 @@
         </div>
     </div>
 
-    <div class="column is-relative">
-        <div class="ancrage-home-sections" id="contact"></div>
-        <h3 class="subtitle is-2 has-text-white has-text-centered">{{ 'Contact'|trans }}</h3>
-        {% include 'includes/contact_form.html.twig' %}
-    </div>
+</div>
+
+<div class="is-relative py-6 has-background-black">
+    <div class="ancrage-home-sections" id="partners"></div>
+    {{ include('home/sections/partners.html.twig') }}
+</div>
+
+<div class="column py-6 is-relative">
+    <div class="ancrage-home-sections" id="contact"></div>
+    <h3 class="subtitle is-2 has-text-white has-text-centered">{{ 'Contact'|trans }}</h3>
+    {% include 'includes/contact_form.html.twig' %}
 </div>
 
 <div class="is-relative">
