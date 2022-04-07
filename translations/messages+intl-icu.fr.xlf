@@ -1565,6 +1565,10 @@
         <source>Voici toutes les nouvelles de MB Ministry</source>
         <target>Here is all the news from MB Ministry</target>
       </trans-unit>
+      <trans-unit id="ZHr_.q0" resname="Official website of gospel artist Marcel BOUNGOU. Discover all the news on the latest events and announcements of the pastor and cantor Marcel BOUNGOU. Learn more about the MB Ministry label">
+        <source>Official website of gospel artist Marcel BOUNGOU. Discover all the news on the latest events and announcements of the pastor and cantor Marcel BOUNGOU. Learn more about the MB Ministry label</source>
+        <target>Site officiel de l'artiste gospel Marcel BOUNGOU. Découvrez toutes les actualités sur les derniers événements et annonces du pasteur et chantre Marcel BOUNGOU. En savoir plus sur le label MB Ministry</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
