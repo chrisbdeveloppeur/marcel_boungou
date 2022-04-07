@@ -19,10 +19,12 @@
                 {% endif %}
             {% endfor %}
         </div>
-        <div class="is-flex is-justify-content-center is-align-items-center has-text-centered rotationX">
-            <a href="{{ path('discography_index') }}" class="shadow-box-1 column is-one-third is-size-4 is-light box-shadow-bulma has-text-weight-bold">
-                {{ 'Visit discography'|trans }}
-            </a>
+        <div class="is-flex is-justify-content-center is-align-items-center has-text-centered">
+            <div class="rotationX">
+                <a href="{{ path('discography_index') }}" class="shadow-box-1 column is-size-4 is-light box-shadow-bulma has-text-weight-bold">
+                    {{ 'Visit discography'|trans }}
+                </a>
+            </div>
         </div>
     </div>
 
@@ -36,8 +38,10 @@
                 {{ include('includes/book_box.html.twig') }}
             {% endif %}
         </div>
-        <div class="is-flex is-justify-content-center is-align-items-center has-text-centered rotationX">
-            <a href="{{ path('bibliography_index') }}" class="shadow-box-1 column is-one-third is-size-4 is-light box-shadow-bulma has-text-weight-bold">{{ 'Visit bibliography'|trans }}</a>
+        <div class="is-flex is-justify-content-center is-align-items-center has-text-centered">
+            <div class="rotationX">
+                <a href="{{ path('bibliography_index') }}" class="shadow-box-1 column is-size-4 is-light box-shadow-bulma has-text-weight-bold">{{ 'Visit bibliography'|trans }}</a>
+            </div>
         </div>
     </div>
 
@@ -48,8 +52,10 @@
         <div class="column">
             {{ include('gallery/gallery_carousel.html.twig') }}
         </div>
-        <div class="is-flex is-justify-content-center is-align-items-center has-text-centered rotationX">
-            <a href="{{ path('gallery_index') }}" class="shadow-box-1 column is-one-third is-size-4 is-light box-shadow-bulma has-text-weight-bold">{{ 'Visit Gallery'|trans }}</a>
+        <div class="is-flex is-justify-content-center is-align-items-center has-text-centered">
+            <div class="rotationX">
+                <a href="{{ path('gallery_index') }}" class="shadow-box-1 column is-size-4 is-light box-shadow-bulma has-text-weight-bold">{{ 'Visit Gallery'|trans }}</a>
+            </div>
         </div>
     </div>
 

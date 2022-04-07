@@ -21,8 +21,10 @@
         <div class="scale-up-fade column p-0 is-two-thirds-desktop margin-auto">
             {{ include('event/major_event.html.twig') }}
         </div>
-        <div class="is-flex is-justify-content-center is-align-items-center has-text-centered rotationX">
-            <a href="{{ path('event_home') }}" class="shadow-box-1 column is-one-third is-size-4 is-success is-light box-shadow-bulma has-text-weight-bold">{{ 'Visit events page'|trans }}</a>
+        <div class="is-flex is-justify-content-center is-align-items-center has-text-centered">
+            <div class="rotationX">
+                <a href="{{ path('event_home') }}" class="shadow-box-1 column is-size-4 is-success is-light box-shadow-bulma has-text-weight-bold">{{ 'Visit events page'|trans }}</a>
+            </div>
         </div>
     </div>
 </div>
