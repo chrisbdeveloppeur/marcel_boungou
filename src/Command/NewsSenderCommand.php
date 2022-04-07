@@ -67,20 +67,21 @@ class NewsSenderCommand extends Command
         if ($news->getTitle()){
             $title = $news->getTitle();
         }else{
-            $title = 'Voici les nouvelles';
+            $title = 'marcel-boungou.com newsletter';
         }
-        $email = (new TemplatedEmail())
-            ->from('admin@marcelboungou.com')
-            ->subject($title)
-            ->htmlTemplate('emails/news.html.twig')
-            ->context([
-                'news' => $news,
-            ])
-        ;
+
         foreach ($subscribers as $subscriber){
-            $email->addTo($subscriber->getEmail());
+            $email = (new TemplatedEmail())
+                ->from('admin@marcel-boungou.com')
+                ->addTo($subscriber->getEmail())
+                ->subject($title)
+                ->htmlTemplate('emails/news.html.twig')
+                ->context([
+                    'news' => $news,
+                ])
+            ;
+            $this->mailer->send($email);
         }
-        $this->mailer->send($email);
 
     }
 }
