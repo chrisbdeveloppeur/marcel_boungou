@@ -10,7 +10,7 @@
 
                         <div class="is-flex is-flex-direction-column">
 
-                            <figure class="image is-square pointer-hover" style="background: center / contain no-repeat url({% if picture.image %}{{ vich_uploader_asset(picture, 'imageFile') }}{% else %}{{ asset('build/images/no-pictures.4f531dc6.png') }}{% endif %})" onclick="document.getElementById('modalPicture'+{{ picture.id }}).classList.add('is-active')">
+                            <figure class="image is-square zoom-hover" style="background: center / contain no-repeat url({% if picture.image %}{{ vich_uploader_asset(picture, 'imageFile') }}{% else %}{{ asset('build/images/no-pictures.4f531dc6.png') }}{% endif %})" onclick="document.getElementById('modalPicture'+{{ picture.id }}).classList.add('is-active')">
                             </figure>
 
                             {% if picture.tags|length > 0 %}

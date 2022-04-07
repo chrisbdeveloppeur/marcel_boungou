@@ -137,6 +137,9 @@ h1, h2, h3{
 .pointer-hover:hover{
   cursor: pointer !important;
 }
+.zoom-hover:hover{
+  cursor: zoom-in !important;
+}
 
 body{
   min-height: 100vh;
