@@ -8,17 +8,17 @@
                             {% include 'includes/edit_entity_button.html.twig' with {'entity' : picture, 'entity_type' : 'picture' } %}
                         {% endif %}
 
-                        <div class="is-flex is-flex-direction-column has-background-black">
+                        <div class="is-flex is-flex-direction-column">
 
                             <figure class="image is-square pointer-hover" style="background: center / contain no-repeat url({% if picture.image %}{{ vich_uploader_asset(picture, 'imageFile') }}{% else %}{{ asset('build/images/no-pictures.4f531dc6.png') }}{% endif %})" onclick="document.getElementById('modalPicture'+{{ picture.id }}).classList.add('is-active')">
                             </figure>
 
                             {% if picture.tags|length > 0 %}
-                                <div class="has-background-black">
+                                <div class="">
                                     <div class="px-2 py-2">
                                         {% for tag in picture.tagsinarray %}
                                             {% if tag %}
-                                                <a  class="tag is-success" onclick="searchAncrage(this)"><span>#</span><span class="picture-tag" data-href="{{ tag }}">{{ tag }}</span></a>
+                                                <a  class="shadow-box-1 is-size-7 p-1 has-text-white is-success" onclick="searchAncrage(this)"><span>#</span><span class="picture-tag" data-href="{{ tag }}">{{ tag }}</span></a>
                                             {% endif %}
                                         {% endfor %}
                                     </div>

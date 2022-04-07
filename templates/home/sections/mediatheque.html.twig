@@ -31,8 +31,10 @@
         <h3 class="subtitle is-2 has-text-white has-text-centered">{{ 'Bibliography'|trans }}</h3>
         <p class="subtitle has-text-grey-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur at dolorem doloremque dolorum est ex expedita in magnam, nobis officiis provident reiciendis sit tempora ut velit vitae. Illum, velit.</p>
         <div class="is-flex-tablet is-flex-direction-row is-justify-content-center scale-up-fade">
-            {% set book = books[random(books|length-1)] %}
-            {{ include('includes/book_box.html.twig') }}
+            {% if books|length > 0 %}
+                {% set book = books[random(books|length-1)] %}
+                {{ include('includes/book_box.html.twig') }}
+            {% endif %}
         </div>
         <div class="is-flex is-justify-content-center is-align-items-center has-text-centered rotationX">
             <a href="{{ path('bibliography_index') }}" class="shadow-box-1 column is-one-third is-size-4 is-light box-shadow-bulma has-text-weight-bold">{{ 'Visit bibliography'|trans }}</a>
