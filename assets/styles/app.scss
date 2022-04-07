@@ -562,6 +562,13 @@ li{
   animation: jumpUp .8s infinite ease-in-out;
 }
 
+.smoothSlideRight{
+  animation: smoothSlideRight 10s infinite ease-in-out;
+}
+.smoothSlideLeft{
+  animation: smoothSlideLeft 10s infinite ease-in-out;
+}
+
 .search-bar{
   position: sticky;
   top: 3.85rem;
@@ -751,6 +758,30 @@ li{
     z-index: 3;
     transform: scale(1);
   }
+
+  @keyframes smoothSlideRight {
+    0% {
+      transform: translateX(-1%);
+    }
+    50%{
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-1%);
+    }
+  }
+  @keyframes smoothSlideLeft {
+    0% {
+      transform: translateX(1%);
+    }
+    50%{
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(1%);
+    }
+  }
+
 }
 
 
@@ -801,6 +832,7 @@ li{
     transform: translateY(0%);
   }
 }
+
 
 @import "~bulma";
 @import "~bulma-calendar";
