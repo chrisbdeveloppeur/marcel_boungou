@@ -21,9 +21,9 @@
                     <div class="card-image">
                         <figure class="image is-square">
                             {% if album.image %}
-                                <img src="{{ vich_uploader_asset(album, 'imageFile') }}">
+                                <img src="{{ vich_uploader_asset(album, 'imageFile') }}" alt="{{ album }}">
                             {% else %}
-                                <img src="https://bulma.io/images/placeholders/480x480.png">
+                                <img src="https://bulma.io/images/placeholders/480x480.png" alt="no image">
                             {% endif %}
                         </figure>
                     </div>

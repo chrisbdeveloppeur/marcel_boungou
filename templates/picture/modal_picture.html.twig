@@ -1,16 +1,13 @@
 
     <h3 class="help has-text-white">{{ picture.title | default(picture.image) }}</h3>
 
-{#    <div class="is-flex is-flex-direction-row is-align-items-center is-justify-content-center">#}
-{#        <div class="column is-half" style="margin: auto;">#}
+
             <figure class="is-flex is-justify-content-center is-align-items-center" style="max-height: 80vh">
                 {% if picture.image %}
-                    <img src="{{ vich_uploader_asset(picture, 'imageFile') }}" style="max-height: 80vh;object-fit: contain">
+                    <img src="{{ vich_uploader_asset(picture, 'imageFile') }}" style="max-height: 80vh;object-fit: contain" alt="{{ picture.title | default(picture.image) }}">
                 {% else %}
-                    <img src="{{ asset('build/images/no-pictures.4f531dc6.png') }}" style="max-height: 80vh;object-fit: contain">
+                    <img src="{{ asset('build/images/no-pictures.4f531dc6.png') }}" style="max-height: 80vh;object-fit: contain" alt="no picture">
                 {% endif %}
             </figure>
-{#        </div>#}
 
-{#    </div>#}
 
