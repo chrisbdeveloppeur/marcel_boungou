@@ -1567,7 +1567,15 @@
       </trans-unit>
       <trans-unit id="ZHr_.q0" resname="Official website of gospel artist Marcel BOUNGOU. Discover all the news on the latest events and announcements of the pastor and cantor Marcel BOUNGOU. Learn more about the MB Ministry label">
         <source>Official website of gospel artist Marcel BOUNGOU. Discover all the news on the latest events and announcements of the pastor and cantor Marcel BOUNGOU. Learn more about the MB Ministry label</source>
-        <target>Site officiel de l\'artiste gospel Marcel BOUNGOU. Découvrez toutes les actualités sur les derniers événements et annonces du pasteur et chantre Marcel BOUNGOU. En savoir plus sur le label MB Ministry</target>
+        <target>Site officiel de l'artiste gospel Marcel BOUNGOU. Découvrez toutes les actualités sur les derniers événements et annonces du pasteur et chantre Marcel BOUNGOU. En savoir plus sur le label MB Ministry</target>
+      </trans-unit>
+      <trans-unit id="PSNNJ4F" resname="Here is all the news from MB Ministry">
+        <source>Here is all the news from MB Ministry</source>
+        <target>Voici toute l'actualité de MB Ministry</target>
+      </trans-unit>
+      <trans-unit id="mU8xtru" resname="Here are all the news from the official website of Marcel BOUNGOU">
+        <source>Here are all the news from the official website of Marcel BOUNGOU</source>
+        <target>Voici toutes les actualités du site officiel de Marcel BOUNGOU</target>
       </trans-unit>
     </body>
   </file>
