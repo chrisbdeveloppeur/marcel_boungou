@@ -1577,6 +1577,10 @@
         <source>Here are all the news from the official website of Marcel BOUNGOU</source>
         <target>Voici toutes les actualités du site officiel de Marcel BOUNGOU</target>
       </trans-unit>
+      <trans-unit id="ZOVUrwv" resname="Oops ! Something gone wrong...">
+        <source>Oops ! Something gone wrong...</source>
+        <target>Oups ! Quelque chose a mal tourné...</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

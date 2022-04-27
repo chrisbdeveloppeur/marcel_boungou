@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Controller\Mailer\MailerController;
 use App\Entity\Biography;
 use App\Entity\Message;
 use App\Entity\Subscriber;
@@ -23,6 +24,7 @@ class HomeController extends AbstractController
 {
 
     private $translator;
+    private $mailer;
 
     public function __construct(TranslatorInterface $translator)
     {
@@ -32,7 +34,7 @@ class HomeController extends AbstractController
     /**
      * @Route("/", name="index")
      */
-    public function home(Request $request, SubscriberRepository $subscriberRepository, EntityManagerInterface $em, BiographyRepository $biographyRepository): Response
+    public function home(Request $request, SubscriberRepository $subscriberRepository, EntityManagerInterface $em, BiographyRepository $biographyRepository, MailerController $mailer): Response
     {
 
         // SUBSCRIBER FORM CONTROL
@@ -60,7 +62,11 @@ class HomeController extends AbstractController
             if ($contactForm->isValid()){
                 $em->persist($message);
                 $em->flush();
-                $this->addFlash('info', $this->translator->trans('Thank you for your message !'));
+                if ($mailer->sendMessageContact($message)){
+                    $this->addFlash('info', $this->translator->trans('Thank you for your message !'));
+                }else{
+                    $this->addFlash('danger', $this->translator->trans('Oops ! Something gone wrong...'));
+                }
             }else{
                 $this->addFlash('danger', $this->translator->trans('Operation failed'));
             }

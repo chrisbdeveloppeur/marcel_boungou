@@ -1,3 +1,11 @@
-Bonjour,
+<div style="font-family: sans-serif">
+    Message de la part de <b>{{ message.sender }}</b><br>
 
-Veuillez trouvez ci-joint la quittance de loyer de ce mois-ci.
+    <h3>Sujet : {{ message.subject }}</h3>
+
+    <p>
+        {{ message.content }}
+    </p>
+</div>
+
+
