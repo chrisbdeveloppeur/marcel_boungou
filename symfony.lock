@@ -182,6 +182,9 @@
     "spatie/icalendar-generator": {
         "version": "2.3.2"
     },
+    "swiftmailer/swiftmailer": {
+        "version": "v6.3.0"
+    },
     "symfony/apache-pack": {
         "version": "1.0",
         "recipe": {
