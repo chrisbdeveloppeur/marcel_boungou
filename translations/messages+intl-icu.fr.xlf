@@ -1625,6 +1625,50 @@
         <source>English description</source>
         <target>Descriptif en anglais</target>
       </trans-unit>
+      <trans-unit id="ZZFQ8jf" resname="Subscriber add successfully : ">
+        <source>Subscriber add successfully : </source>
+        <target>Abonné ajouté avec succès : </target>
+      </trans-unit>
+      <trans-unit id="TowMg10" resname="Create new Subscriber">
+        <source>Create new Subscriber</source>
+        <target>Créer un nouvel abonné</target>
+      </trans-unit>
+      <trans-unit id="oHraXAU" resname="Redirect to Subscribers list">
+        <source>Redirect to Subscribers list</source>
+        <target>Rediriger vers la liste des abonnés</target>
+      </trans-unit>
+      <trans-unit id="cefc0zG" resname="Edit Subscriber">
+        <source>Edit Subscriber</source>
+        <target>Modifier l'abonné</target>
+      </trans-unit>
+      <trans-unit id="7niz6m6" resname="Subscribers list">
+        <source>Subscribers list</source>
+        <target>Liste des abonnés</target>
+      </trans-unit>
+      <trans-unit id="I8XxJgo" resname="Add a new Subscriber">
+        <source>Add a new Subscriber</source>
+        <target>Ajouter un nouvel abonné</target>
+      </trans-unit>
+      <trans-unit id="b9SXlo5" resname="Subscriber">
+        <source>Subscriber</source>
+        <target>Abonné</target>
+      </trans-unit>
+      <trans-unit id="EIlbQA." resname="Back to Subscribers list">
+        <source>Back to Subscribers list</source>
+        <target>Retour à la liste des abonnés</target>
+      </trans-unit>
+      <trans-unit id="lGrN9Qe" resname="Delete subscriber">
+        <source>Delete subscriber</source>
+        <target>Supprimer l'abonné</target>
+      </trans-unit>
+      <trans-unit id="ZAHn5Aq" resname="Learn more about the MB Ministry label">
+        <source>Learn more about the MB Ministry label</source>
+        <target>En savoir plus sur le label MB Ministry</target>
+      </trans-unit>
+      <trans-unit id="wQOe6wz" resname="Official website of gospel artist Marcel BOUNGOU. Discover all the news on the latest events and announcements of the pastor and cantor Marcel BOUNGOU.">
+        <source>Official website of gospel artist Marcel BOUNGOU. Discover all the news on the latest events and announcements of the pastor and cantor Marcel BOUNGOU.</source>
+        <target>Site officiel de l'artiste gospel Marcel BOUNGOU. Découvrez toutes les actualités sur les derniers événements et annonces du pasteur et chantre Marcel BOUNGOU.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

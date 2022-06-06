@@ -568,6 +568,10 @@ li{
   animation: jumpUp .8s infinite ease-in-out;
 }
 
+.jumpDown{
+  animation: jumpDown .8s infinite ease-in-out;
+}
+
 .smoothSlideRight{
   animation: smoothSlideRight 10s infinite ease-in-out;
 }
@@ -863,6 +867,18 @@ li{
   }
   25% {
     transform: translateY(-20%);
+  }
+  50%, 100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes jumpDown {
+  0% {
+    transform: translateY(0%);
+  }
+  25% {
+    transform: translateY(20%);
   }
   50%, 100% {
     transform: translateY(0%);
