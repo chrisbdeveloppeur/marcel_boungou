@@ -4,16 +4,23 @@
 
 {% block body %}
     <h1 class="title has-text-white has-text-centered pt-3">{% trans %}Subscribers list{% endtrans %}</h1>
-
+    <div class="control">
+        <div class="tags are-large has-addons">
+            <span class="tag is-dark">{{ 'Total number of subscribers' }}</span>
+            <span class="tag is-success">{{ subscribers.getTotalItemCount }}</span>
+        </div>
+    </div>
+    <div class="navigation column">
+        {{ knp_pagination_render(subscribers) }}
+    </div>
     <div class="column is-flex is-justify-content-center is-flex-direction-row">
 {#        <div class="px-1 py-1">#}
 {#            <a class="button is-outlined has-text-weight-bold is-rounded p-3 m-1" href="{{ path('gallery_index') }}">{{ 'Back to Gallery page'|trans }}</a>#}
 {#        </div>#}
-{#        <div class="px-1 py-1">#}
-{#            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'new', 'entity' : null, 'entity_type' : 'picture', 'text': 'Add'|trans } %}#}
-{#        </div>#}
+        <div class="px-1 py-1">
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'new', 'entity' : null, 'entity_type' : 'subscrib_subscriber', 'text': 'Add'|trans } %}
+        </div>
     </div>
-
     <div class="table-container">
         <table class="table">
             <thead>

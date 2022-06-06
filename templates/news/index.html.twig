@@ -13,7 +13,15 @@
             {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'new', 'type':'success', 'entity' : null, 'entity_type' : 'news', 'text': 'Add'|trans } %}
         </div>
     </div>
-
+    <div class="control">
+        <div class="tags are-large has-addons">
+            <span class="tag is-dark">{{ 'Total number of news' }}</span>
+            <span class="tag is-success">{{ news.getTotalItemCount }}</span>
+        </div>
+    </div>
+    <div class="navigation column">
+        {{ knp_pagination_render(news) }}
+    </div>
     <div class="table-container">
         <table class="table">
             <thead>

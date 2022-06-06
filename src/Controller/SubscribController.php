@@ -8,6 +8,7 @@ use App\Form\SubscriberType;
 use App\Repository\EventRepository;
 use App\Repository\SubscriberRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -82,10 +83,21 @@ class SubscribController extends AbstractController
     /**
      * @Route("/subscribers/index", name="subscriber_index", methods={"GET"})
      */
-    public function index(SubscriberRepository $subscriberRepository): Response
+    public function index(SubscriberRepository $subscriberRepository, PaginatorInterface $paginator, Request $request): Response
     {
+        $allSubscribers = $subscriberRepository->findAll();
+        $subscribers = $paginator->paginate(
+            $allSubscribers,
+            $request->query->getInt('page',1),
+            $request->query->getInt('numItemsPerPage',20),
+            array(
+                'defaultSortFieldName' => 'subscriber.email',
+                'defaultSortDirection' => 'asc',
+            )
+        );
         return $this->render('subscriber/index.html.twig', [
-            'subscribers' => $subscriberRepository->findAll(),
+//            'subscribers' => $subscriberRepository->findAll(),
+            'subscribers' => $subscribers,
         ]);
     }
 

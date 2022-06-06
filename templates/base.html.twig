@@ -387,9 +387,11 @@
             el.style.opacity = 0;
         })
     }
-    let lastNewsBox = document.getElementById('lastNewsBox').parentElement;
-    lastNewsBox.addEventListener('mouseenter', showArrowsLastNewsBox);
-    lastNewsBox.addEventListener('mouseleave', hideArrowsLastNewsBox);
+    if (document.getElementById('lastNewsBox') && document.getElementById('lastNewsBox').parentElement) {
+        let lastNewsBox = document.getElementById('lastNewsBox').parentElement;
+        lastNewsBox.addEventListener('mouseenter', showArrowsLastNewsBox);
+        lastNewsBox.addEventListener('mouseleave', hideArrowsLastNewsBox);
+    }
 
 
 </script>

@@ -8,13 +8,26 @@
             <div class="column is-three-quarters-desktop is-flex-tablet is-flex-direction-column is-justify-content-center z-index-1" style="min-height: 100vh">
                 <h3 class="subtitle is-2 has-text-white has-text-centered">{{ 'Here are all the news from the official website of Marcel BOUNGOU'|trans }}</h3>
                 <p class="subtitle has-text-grey-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur at dolorem doloremque dolorum est ex expedita in magnam, nobis officiis provident reiciendis sit tempora ut velit vitae. Illum, velit.</p>
-                    <div class="column p-0 is-three-quarters margin-auto">
-                        {% for new in news|sort((a, b) => b.datetime <=> a.datetime) %}
-                            {{ include('news/news_article_box.html.twig') }}
-                        {% endfor %}
-
-                        {% include 'news/subs_form.html.twig' %}
+                <div class="control">
+                    <div class="tags are-large has-addons">
+                        <span class="tag is-dark">{{ 'Total number of news' }}</span>
+                        <span class="tag is-success">{{ news.getTotalItemCount }}</span>
                     </div>
+                </div>
+                <div class="navigation column">
+                    {{ knp_pagination_render(news) }}
+                </div>
+                <div class="column p-0 is-three-quarters margin-auto">
+{#                    {% for new in news|sort((a, b) => b.datetime <=> a.datetime) %}#}
+                    {% for new in news %}
+                        {{ include('news/news_article_box.html.twig') }}
+                    {% endfor %}
+
+                    {% include 'news/subs_form.html.twig' %}
+                </div>
+                <div class="navigation column">
+                    {{ knp_pagination_render(news) }}
+                </div>
             </div>
         </div>
     </div>

@@ -10,6 +10,7 @@ use App\Form\SubscriberType;
 use App\Repository\NewsRepository;
 use App\Repository\SubscriberRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Knp\Component\Pager\PaginatorInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -35,10 +36,20 @@ class NewsController extends AbstractController
      * @Route("/", name="index", methods={"GET"})
      * @Security("is_granted('ROLE_ADMIN')")
      */
-    public function index(NewsRepository $newsRepository): Response
+    public function index(NewsRepository $newsRepository, PaginatorInterface $paginator, Request $request): Response
     {
+        $allNews = $newsRepository->findAll();
+        $news = $paginator->paginate(
+            $allNews,
+            $request->query->getInt('page',1),
+            $request->query->getInt('numItemsPerPage',10),
+            [
+                'defaultSortFieldName' => 'datetime',
+                'defaultSortDirection' => 'desc',
+            ]
+        );
         return $this->render('news/index.html.twig', [
-            'news' => $newsRepository->findByYear(),
+            'news' => $news,
         ]);
     }
 
@@ -132,8 +143,19 @@ class NewsController extends AbstractController
      * @return Response
      * @Route("/all", name="all", methods={"GET", "POST"})
      */
-    public function allNews(NewsRepository $newsRepository, Request $request, EntityManagerInterface $em): Response
+    public function allNews(NewsRepository $newsRepository, Request $request, EntityManagerInterface $em, PaginatorInterface $paginator): Response
     {
+        $allNews = $newsRepository->findAll();
+        $news = $paginator->paginate(
+            $allNews,
+            $request->query->getInt('page',1),
+            $request->query->getInt('numItemsPerPage',5),
+            [
+                'defaultSortFieldName' => 'datetime',
+                'defaultSortDirection' => 'desc',
+            ]
+        );
+
         $subscriber = new Subscriber();
         $form = $this->createForm(SubscriberType::class, $subscriber);
         $form->handleRequest($request);
@@ -149,9 +171,9 @@ class NewsController extends AbstractController
             $url = $this->redirectToRoute('news_all')->getTargetUrl();
             return $this->redirect($url);
         }
-        $allNews = $newsRepository->findAll();
+
         return $this->render('news/_all.html.twig',[
-            'news' => $allNews,
+            'news' => $news,
             'subs_form' => $form->createView(),
         ]);
     }

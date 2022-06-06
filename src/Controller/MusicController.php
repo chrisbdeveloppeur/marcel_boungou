@@ -6,6 +6,7 @@ use App\Entity\Music;
 use App\Form\MusicType;
 use App\Repository\MusicRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Knp\Component\Pager\PaginatorInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -29,10 +30,20 @@ class MusicController extends AbstractController
     /**
      * @Route("/", name="index", methods={"GET"})
      */
-    public function index(MusicRepository $musicRepository): Response
+    public function index(MusicRepository $musicRepository, PaginatorInterface $paginator, Request $request): Response
     {
+        $allMusics = $musicRepository->findAll();
+        $musics = $paginator->paginate(
+            $allMusics,
+            $request->query->getInt('page',1),
+            $request->query->getInt('numItemsPerPage',10),
+            [
+                'defaultSortFieldName' => 'id',
+                'defaultSortDirection' => 'asx',
+            ]
+        );
         return $this->render('music/index.html.twig', [
-            'music' => $musicRepository->findAll(),
+            'musics' => $musics,
         ]);
     }
 
