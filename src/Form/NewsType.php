@@ -32,11 +32,20 @@ class NewsType extends AbstractType
             ])
             ->add('description', CKEditorType::class,[
                 'config' => ['toolbar' => 'full'],
+                'help' => $this->translator->trans('The french content is required'),
                 'required' => true,
                 'attr' => [
                     'class' => 'textarea'
                 ],
                 'label' => $this->translator->trans('New\'s content'),
+            ])
+            ->add('descriptionEn', CKEditorType::class,[
+                'config' => ['toolbar' => 'full'],
+                'required' => false,
+                'attr' => [
+                    'class' => 'textarea'
+                ],
+                'label' => $this->translator->trans('Content in English language'),
             ])
         ;
     }

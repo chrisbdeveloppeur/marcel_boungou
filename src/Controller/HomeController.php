@@ -36,7 +36,7 @@ class HomeController extends AbstractController
     /**
      * @Route("/", name="index")
      */
-    public function home(Request $request, SubscriberRepository $subscriberRepository, EntityManagerInterface $em, BiographyRepository $biographyRepository): Response
+    public function home(Request $request, EntityManagerInterface $em, BiographyRepository $biographyRepository): Response
     {
 
         // SUBSCRIBER FORM CONTROL

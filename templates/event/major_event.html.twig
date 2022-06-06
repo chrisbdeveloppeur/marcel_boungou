@@ -108,4 +108,6 @@
             </div>
 
     </div>
+{% elseif not event %}
+    {{ include('includes/no_content.html.twig') }}
 {% endif %}

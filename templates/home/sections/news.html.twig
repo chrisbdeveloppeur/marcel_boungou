@@ -8,33 +8,37 @@
 
 <div class="z-index-1">
     <div class="parallax2 slide-fade-right smoothSlideLeft bg-size-cover-mobile" style="background: right no-repeat url({{ asset('build/images/mb_cost_blue_1.4e43ac8e.jpg') }})"></div>
-    <div class="is-flex-tablet is-justify-content-center is-align-items-center is-relative has-background-black-layerless">
+    <div class="is-flex-tablet is-justify-content-center is-align-items-center is-relative has-background-black-layerless padding-top-50-mobile">
         <div class="column is-three-quarters-desktop is-flex-tablet is-flex-direction-column is-justify-content-center z-index-1" style="min-height: 100vh">
             <div class="section">
-                <h3 class="subtitle is-2 has-text-white has-text-centered">{{ 'What is the latest news at MB Ministry'|trans }} ?</h3>
-                <p class="subtitle has-text-grey-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur at dolorem doloremque dolorum est ex expedita in magnam, nobis officiis provident reiciendis sit tempora ut velit vitae. Illum, velit.</p>
+                <h3 class="subtitle is-2 has-text-white">{{ 'What is the latest news at MB Ministry'|trans }} ?</h3>
+                <p class="subtitle has-text-grey-light column p-0 is-two-thirds">{{ 'Stay up to date with the news page and don\'t miss anything by subscribing to our newsletter'|trans }}</p>
             </div>
-            <div class="p-2 slide-buttons-last-news has-text-centered pointer-hover" onclick="slideUpLastNews()">
-                <span class="icon has-text-white is-size-2">
-                    <i class="fas fa-angle-up"></i>
-                </span>
-            </div>
-            {% set compteur = 0 %}
-            <div class="slide-fade-left" style="max-height:50vh;overflow: hidden" id="lastNewsBox">
-                <div class="column p-0 is-two-thirds margin-auto">
-                    {% for new in news|sort((a, b) => b.datetime <=> a.datetime) %}
-                        {% if compteur < 1 %}
-                            {{ include('news/news_article_box.html.twig') }}
-                        {% endif %}
-                        {% set compteur = compteur + 1 %}
-                    {% endfor %}
+            <div class="section py-0">
+                <h3 class="is-size-3 has-text-white column p-0 is-two-thirds">{{ 'Don\'t miss the latest news below'|trans }} !</h3>
+                <div class="p-2 slide-buttons-last-news has-text-centered pointer-hover column p-0 is-two-thirds" onclick="slideUpLastNews()">
+                    <span class="icon has-text-white is-size-2">
+                        <i class="fas fa-angle-up"></i>
+                    </span>
+                </div>
+                {% set compteur = 0 %}
+                <div class="slide-fade-left" style="max-height:50vh;overflow: hidden" id="lastNewsBox">
+                    <div class="column p-0 is-two-thirds">
+                        {% for new in news|sort((a, b) => b.datetime <=> a.datetime) %}
+                            {% if compteur < 1 %}
+                                {{ include('news/news_article_box.html.twig') }}
+                            {% endif %}
+                            {% set compteur = compteur + 1 %}
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="p-4 slide-buttons-last-news has-text-centered pointer-hover column p-0 is-two-thirds" onclick="slideDownLastNews()">
+                    <span class="icon has-text-white is-size-2">
+                        <i class="fas fa-angle-down"></i>
+                    </span>
                 </div>
             </div>
-            <div class="p-4 slide-buttons-last-news has-text-centered pointer-hover" onclick="slideDownLastNews()">
-                <span class="icon has-text-white is-size-2">
-                    <i class="fas fa-angle-down"></i>
-                </span>
-            </div>
+
         </div>
         <div class="column is-hidden-touch"></div>
     </div>

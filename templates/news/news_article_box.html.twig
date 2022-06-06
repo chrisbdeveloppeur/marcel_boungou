@@ -1,27 +1,22 @@
 {% if new is defined %}
-    <article class="m-2 p-2 is-relative">
-{#        <span class="help has-text-grey">{{ new.datetime|format_datetime('full','short',locale=app.request.locale) }}</span>#}
+    <article class="is-relative my-6 has-text-white">
         {% if is_granted('ROLE_ADMIN') %}
             {% include 'includes/edit_entity_button.html.twig' with {'entity' : new, 'entity_type' : 'news' } %}
         {% endif %}
-        <div class="has-text-white overflow-wrap-break-word">
+        <div class="overflow-wrap-break-word">
             {% if new.title %}
                 <h3 class="title is-4 has-text-white">{{ new }}</h3>
             {% endif %}
-            {{ new.description|raw }}
+            <span class="help has-text-grey-light pb-3">{{ new.datetime|format_datetime('full','short',locale=app.request.locale) }}</span>
+            {% if app.request.locale == 'fr' %}
+                {{ new.description|raw }}
+            {% else %}
+                {% if new.descriptionEn %}
+                    {{ new.descriptionEn|raw }}
+                {% elseif not new.descriptionEn %}
+                    {{ include('includes/no_content.html.twig') }}
+                {% endif %}
+            {% endif %}
         </div>
-        {#
-        <nav class="level is-mobile is-justify-content-right">
-            <div class="level-right">
-                <a class="level-item" title="{{ 'share'|trans }}">
-                    <span class="icon is-small"><i class="fas fa-share"></i></span>
-                </a>
-                <a class="level-item" title="{{ 'retweet'|trans }}">
-                    <span class="icon is-small"><i class="fas fa-retweet"></i></span>
-                </a>
-            </div>
-        </nav>
-        #}
-        <span class="help has-text-grey-light has-text-right">{{ new.datetime|format_datetime('full','short',locale=app.request.locale) }}</span>
     </article>
 {% endif %}

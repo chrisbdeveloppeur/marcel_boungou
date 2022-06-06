@@ -1581,6 +1581,50 @@
         <source>Oops ! Something gone wrong...</source>
         <target>Oups ! Quelque chose a mal tourné...</target>
       </trans-unit>
+      <trans-unit id="n6Me5s_" resname="Content in English language">
+        <source>Content in English language</source>
+        <target>Contenu en langue anglaise</target>
+      </trans-unit>
+      <trans-unit id="W.zizoM" resname="Stay up to date on MB events">
+        <source>Stay up to date on MB events</source>
+        <target>Restez à jour sur les événements MB</target>
+      </trans-unit>
+      <trans-unit id="OsG8j1G" resname="Stay up to date with the news page and don't miss anything by subscribing to our newsletter">
+        <source>Stay up to date with the news page and don't miss anything by subscribing to our newsletter</source>
+        <target>Restez à jour avec la page des nouvelles et ne manquez rien en vous inscrivant à notre newsletter</target>
+      </trans-unit>
+      <trans-unit id=".eJ_F9Q" resname="Don't miss the latest news below">
+        <source>Don't miss the latest news below</source>
+        <target>Ne manquez pas la dernière News ci-dessous</target>
+      </trans-unit>
+      <trans-unit id="HLC6El_" resname="Information">
+        <source>Information</source>
+        <target>Informations</target>
+      </trans-unit>
+      <trans-unit id="7XIsNOP" resname="Unfortunately, no content is currently available. Please be patient">
+        <source>Unfortunately, no content is currently available. Please be patient</source>
+        <target>Malheureusement, aucun contenu n'est actuellement disponible. Merci de votre patience</target>
+      </trans-unit>
+      <trans-unit id="2kEhQ4p" resname="The french content is required">
+        <source>The french content is required</source>
+        <target>Le contenu français est requis</target>
+      </trans-unit>
+      <trans-unit id="9cHCT6R" resname="Find and listen to all the songs and praise of the artist. From the oldest classics to the latest productions">
+        <source>Find and listen to all the songs and praise of the artist. From the oldest classics to the latest productions</source>
+        <target>Retrouvez et écoutez toutes les chansons et louanges de l'artiste. Des plus anciens classiques aux dernières productions</target>
+      </trans-unit>
+      <trans-unit id="in9j5ia" resname="Discover MB's books">
+        <source>Discover MB's books</source>
+        <target>Découvrez les livres de MB</target>
+      </trans-unit>
+      <trans-unit id="K8j8z9f" resname="Browse the artist's photos and illustrations">
+        <source>Browse the artist's photos and illustrations</source>
+        <target>Parcourez les photos et illustrations de l'artiste</target>
+      </trans-unit>
+      <trans-unit id="s9bE2PA" resname="English description">
+        <source>English description</source>
+        <target>Descriptif en anglais</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

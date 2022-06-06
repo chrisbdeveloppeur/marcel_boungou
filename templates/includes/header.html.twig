@@ -77,6 +77,12 @@
                     <a {% if home %}href="#bio" {% else %}href="{{ path('home_index') }}#bio"{% endif %} class="navbar-item is-size-5-touch">
                         {% trans %}Biography{% endtrans %}
                     </a>
+                    <a href="{{ shop_url }}" class="navbar-item is-size-5-touch is-justify-content-space-between">
+                        {% trans %}Shop{% endtrans %}
+                        <span>
+                            <i class="fas fa-shopping-bag"></i>
+                        </span>
+                    </a>
                     <a {% if home %}href="#partners" {% else %}href="{{ path('home_index') }}#partners"{% endif %} class="navbar-item is-size-5-touch">
                         {% trans %}Partners{% endtrans %}
                     </a>
@@ -102,6 +108,7 @@
                         <a href="{{ path('music_index') }}" class="navbar-item is-size-5-touch">{% trans %}Musics{% endtrans %}</a>
                         <a href="{{ path('book_index') }}" class="navbar-item is-size-5-touch">{% trans %}Books{% endtrans %}</a>
                         <a href="{{ path('picture_index') }}" class="navbar-item is-size-5-touch">{% trans %}Pictures{% endtrans %}</a>
+                        <a href="{{ path('subscrib_subscriber_index') }}" class="navbar-item is-size-5-touch">{% trans %}Subscribers{% endtrans %}</a>
                         {% if is_granted('ROLE_SUPER_ADMIN') %}
                             <a href="{{ path('user_index') }}" class="navbar-item is-size-5-touch">{% trans %}Managers{% endtrans %}</a>
                         {% endif %}

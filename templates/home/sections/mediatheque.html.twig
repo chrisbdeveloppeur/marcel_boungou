@@ -10,12 +10,14 @@
 
     <div class="ancrage-home-sections" id="discography"></div>
     <div class="section has-background-black">
-        <h3 class="subtitle is-2 has-text-white has-text-centered">{{ 'Discography'|trans }}</h3>
-        <p class="subtitle has-text-grey-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur at dolorem doloremque dolorum est ex expedita in magnam, nobis officiis provident reiciendis sit tempora ut velit vitae. Illum, velit.</p>
+        <h3 class="subtitle is-2 has-text-white has-text-centered-tablet">{{ 'Discography'|trans }}</h3>
+        <p class="subtitle has-text-grey-light has-text-centered-tablet">{{ 'Find and listen to all the songs and praise of the artist. From the oldest classics to the latest productions'|trans }}</p>
         <div class="is-flex-tablet is-flex-direction-row is-justify-content-center is-align-items-center">
             {% for album in albums %}
                 {% if loop.index <= 3 %}
                     {{ include('includes/album_box.html.twig') }}
+                {% elseif albums|length == 0 %}
+                        {{ include('includes/no_content.html.twig') }}
                 {% endif %}
             {% endfor %}
         </div>
@@ -31,11 +33,13 @@
     <div class="ancrage-home-sections" id="bibliography"></div>
     <div class="section">
         <h3 class="subtitle is-2 has-text-white has-text-centered">{{ 'Bibliography'|trans }}</h3>
-        <p class="subtitle has-text-grey-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur at dolorem doloremque dolorum est ex expedita in magnam, nobis officiis provident reiciendis sit tempora ut velit vitae. Illum, velit.</p>
+        <p class="subtitle has-text-grey-light has-text-centered-tablet">{{ 'Discover MB\'s books'|trans }}</p>
         <div class="is-flex-tablet is-flex-direction-row is-justify-content-center scale-up-fade">
             {% if books|length > 0 %}
                 {% set book = books[random(books|length-1)] %}
                 {{ include('includes/book_box.html.twig') }}
+            {% elseif books|length == 0 %}
+                {{ include('includes/no_content.html.twig') }}
             {% endif %}
         </div>
         <div class="is-flex is-justify-content-center is-align-items-center has-text-centered">
@@ -48,9 +52,13 @@
     <div class="ancrage-home-sections" id="gallery"></div>
     <div class="section has-background-black">
         <h3 class="subtitle is-2 has-text-white has-text-centered">{{ 'Gallery'|trans }}</h3>
-        <p class="subtitle has-text-grey-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur at dolorem doloremque dolorum est ex expedita in magnam, nobis officiis provident reiciendis sit tempora ut velit vitae. Illum, velit.</p>
+        <p class="subtitle has-text-grey-light has-text-centered-tablet">{{ 'Browse the artist\'s photos and illustrations'|trans }}</p>
         <div class="column">
-            {{ include('gallery/gallery_carousel.html.twig') }}
+            {% if pictures|length > 0 %}
+                {{ include('gallery/gallery_carousel.html.twig') }}
+            {% elseif pictures|length == 0 %}
+                {{ include('includes/no_content.html.twig') }}
+            {% endif %}
         </div>
         <div class="is-flex is-justify-content-center is-align-items-center has-text-centered">
             <div class="rotationX">

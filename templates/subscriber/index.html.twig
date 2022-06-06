@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}Subscribers list{% endtrans %}{% endblock %}
+
+{% block body %}
+    <h1 class="title has-text-white has-text-centered pt-3">{% trans %}Subscribers list{% endtrans %}</h1>
+
+    <div class="column is-flex is-justify-content-center is-flex-direction-row">
+{#        <div class="px-1 py-1">#}
+{#            <a class="button is-outlined has-text-weight-bold is-rounded p-3 m-1" href="{{ path('gallery_index') }}">{{ 'Back to Gallery page'|trans }}</a>#}
+{#        </div>#}
+{#        <div class="px-1 py-1">#}
+{#            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'new', 'entity' : null, 'entity_type' : 'picture', 'text': 'Add'|trans } %}#}
+{#        </div>#}
+    </div>
+
+    <div class="table-container">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for subscriber in subscribers %}
+                <tr>
+                    <td>{{ subscriber.id }}</td>
+                    <td>{{ subscriber.email }}</td>
+                    <td>
+                        {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'show', 'entity' : subscriber, 'entity_type' : 'subscrib_subscriber', 'text': 'Show'|trans } %}
+                        {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'edit', 'entity' : subscriber, 'entity_type' : 'subscrib_subscriber', 'text': 'Edit'|trans } %}
+                        {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'delete', 'entity' : subscriber, 'entity_type' : 'subscrib_subscriber', 'text': 'Delete'|trans, 'confirm_msg':'Are you sure you want to delete this item?'|trans} %}
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="5">no records found</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="column is-flex is-justify-content-center is-flex-direction-row">
+{#        <div class="px-1 py-1">#}
+{#            <a class="button is-outlined has-text-weight-bold is-rounded p-3 m-1" href="{{ path('gallery_index') }}">{{ 'Back to Gallery page'|trans }}</a>#}
+{#        </div>#}
+        <div class="px-1 py-1">
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'new', 'entity' : null, 'entity_type' : 'subscrib_subscriber', 'text': 'Add'|trans } %}
+        </div>
+    </div>
+{% endblock %}

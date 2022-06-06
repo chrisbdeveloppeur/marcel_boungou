@@ -277,10 +277,18 @@
             <div class="column px-0 py-0 is-half has-text-centered" id="save">
                 <button class="button is-fullwidth is-success btn-submit">
                     <span class="icon">
-                        <i class="fas fa-times"></i>
+                        {% if 'new' in app.request.get('_route') %}
+                            <i class="fas fa-check"></i>
+                        {% else %}
+                            <i class="fas fa-times"></i>
+                        {% endif %}
                     </span>
                     <span>
-                        {% trans %}Unsubscribe{% endtrans %}
+                        {% if 'new' in app.request.get('_route') %}
+                            {% trans %}Subscribe{% endtrans %}
+                        {% else %}
+                            {% trans %}Unsubscribe{% endtrans %}
+                        {% endif %}
                     </span>
                 </button>
             </div>

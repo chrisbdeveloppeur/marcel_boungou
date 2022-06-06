@@ -32,6 +32,11 @@ class News
      */
     private $datetime;
 
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $description_en;
+
     public function __construct()
     {
         date_default_timezone_set('Europe/Paris');
@@ -85,6 +90,18 @@ class News
     public function setDatetime(\DateTimeInterface $datetime): self
     {
         $this->datetime = $datetime;
+
+        return $this;
+    }
+
+    public function getDescriptionEn(): ?string
+    {
+        return $this->description_en;
+    }
+
+    public function setDescriptionEn(?string $description_en): self
+    {
+        $this->description_en = $description_en;
 
         return $this;
     }
