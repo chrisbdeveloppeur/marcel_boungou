@@ -1,4 +1,4 @@
-<a href="{{ path(entity_type~'_edit', {'id': entity.id}) }}" class="button p-3 is-warning is-outlined is-small" style="position:absolute;right: 0;top: 0;z-index: 2;">
+<a href="{{ path(entity_type~'_edit', {'id': entity.id}) }}" class="button p-3 is-outlined is-small {% if color_type is defined %}{{ color_type }}{% else %}is-warning{% endif %}" style="position:absolute;right: 0;top: 0;z-index: 2;">
     <span class="icon">
         <i class="fas fa-lg fa-edit"></i>
     </span>
