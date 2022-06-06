@@ -12,7 +12,7 @@
     <div class="section has-background-black">
         <h3 class="subtitle is-2 has-text-white has-text-centered">{{ 'Discography'|trans }}</h3>
         <p class="subtitle has-text-grey-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur at dolorem doloremque dolorum est ex expedita in magnam, nobis officiis provident reiciendis sit tempora ut velit vitae. Illum, velit.</p>
-        <div class="is-flex-tablet is-flex-direction-row is-justify-content-center">
+        <div class="is-flex-tablet is-flex-direction-row is-justify-content-center is-align-items-center">
             {% for album in albums %}
                 {% if loop.index <= 3 %}
                     {{ include('includes/album_box.html.twig') }}

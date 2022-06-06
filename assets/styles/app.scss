@@ -641,6 +641,10 @@ li{
   z-index: 1;
 }
 
+.bg-size-cover-mobile{
+  background-size: contain !important;
+}
+
 // TEXTHOVER (INFOBULE)
 .hovertext {
   position: relative;
@@ -680,6 +684,17 @@ li{
   visibility: visible;
 }
 
+//  BREAK RESPONSIVE FOR MOBIL
+
+@media (max-width: 768px) {
+  .bg-size-cover-mobile{
+    background-size: cover !important;
+  }
+
+  .bg-position-70-mobile{
+    background-position: 70% !important;
+  }
+}
 
 // BREAK RESPONSIVE FOR TOUCH (MOBIL & TABLET)
 @media (max-width: 1023px ) {
@@ -720,6 +735,7 @@ li{
 
 // BREAK RESPONSIVE FOR DESKTOP
 @media (min-width: 1023px ) {
+  
   #majorEvent figure{
     height: 300px;
   }

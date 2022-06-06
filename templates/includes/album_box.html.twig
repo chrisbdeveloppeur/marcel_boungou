@@ -1,4 +1,4 @@
-<div class="{{ album }} column is-one-fifth scale-up-fade" id="{{ album|replace({' ':''}) }}">
+<div class="{{ album }} column is-one-fifth is-two-thirds-mobile scale-up-fade" id="{{ album|replace({' ':''}) }}">
     <figure class="image is-square">
         {% if album and album.image %}
             <img src="{{ vich_uploader_asset(album, 'imageFile') }}" alt="">
