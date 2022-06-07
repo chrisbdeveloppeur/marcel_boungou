@@ -34,13 +34,14 @@ class EventType extends AbstractType
             ])
             ->add('datetime', DateTimeType::class,[
                 'required' => false,
-                'label' => $this->translator->trans('Select the date'),
+                'label' => $this->translator->trans('Enter the date and time'),
                 'attr' => [
                     'class' => 'input has-text-centered',
                     'type' => 'datetime',
                 ],
                 'widget' => 'single_text',
-//                'format' => 'dd/MM/yyyy  HH:mm',
+                'format' => 'dd/MM/yyyy  HH:mm',
+                'help' => $this->translator->trans('Enter the date and time at format : dd/MM/YYYY hh:mm'),
             ])
             ->add('imageFile', FileType::class,[
                 'label' => $this->translator->trans('Image'),
@@ -67,14 +68,14 @@ class EventType extends AbstractType
                 'label' => $this->translator->trans('City'),
             ])
             ->add('cp', TextType::class,[
-                'required' => true,
+                'required' => false,
                 'attr' => [
                     'class' => 'input'
                 ],
                 'label' => $this->translator->trans('ZIP code'),
             ])
             ->add('street', TextType::class,[
-                'required' => true,
+                'required' => false,
                 'attr' => [
                     'class' => 'input'
                 ],

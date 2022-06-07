@@ -396,6 +396,110 @@
 
 </script>
 
+
+{#     BULMA CALENDAR     #}
+<script>
+
+    var today  = new Date();
+    var yesterday = new Date();
+    yesterday.setDate(today.getDate() - 1);
+    var highlightsDates = [];
+
+    {% if events is defined %}
+    let date;
+    {% for event in events %}
+    date = '{{ event.datetime|date('d/m/Y') }}';
+    highlightsDates.push(date);
+    {% endfor %}
+    {% else %}
+    highlightsDates = false;
+    {% endif %}
+
+    {% if app.request.get('_route') == 'events_new' %}
+    var defaultOptions = {
+        type: 'datetime',
+        displayMode: 'default',
+        color: 'primary',
+        showHeader: true,
+        isRange: false,
+        allowSameDayRange: true,
+        lang: '{{ app.request.locale }}',
+        startDate: today,
+        endDate: undefined,
+        minDate: undefined,
+        maxDate: null,
+        disabledDates: [],
+        disabledWeekDays: undefined,
+        highlightedDates: highlightsDates,
+        weekStart: 0,
+        dateFormat: 'dd/MM/yyyy',
+        enableMonthSwitch: false,
+        enableYearSwitch: false,
+        displayYearsCount: 50,
+        todayLabel: 'Aujourd\'hui',
+        showClearButton: true,
+        showButtons: true,
+        showTodayButton: true,
+    };
+    {% else %}
+    var defaultOptions = {
+        type: 'date',
+        displayMode: 'inline',
+        color: 'success',
+        showHeader: true,
+        isRange: false,
+        allowSameDayRange: true,
+        lang: '{{ app.request.locale }}',
+        startDate: today,
+        endDate: undefined,
+        minDate: today.toLocaleDateString('fr-FR'),
+        maxDate: null,
+        disabledDates: [],
+        disabledWeekDays: undefined,
+        highlightedDates: highlightsDates,
+        weekStart: 0,
+        dateFormat: 'dd/MM/yyyy',
+        enableMonthSwitch: false,
+        enableYearSwitch: false,
+        displayYearsCount: 50,
+        //todayLabel: {% trans %}'Today'{% endtrans %},
+        showClearButton: false,
+        showButtons: false,
+        showTodayButton: false,
+    };
+    {% endif %}
+
+    const calendars = bulmaCalendar.attach('[type="date"]', defaultOptions);
+
+    // Loop on each calendar initialized
+    calendars.forEach(calendar => {
+        // Add listener to select event
+        calendar.on('select', date => {
+        });
+    });
+
+    // To access to bulmaCalendar instance of an element
+
+    const agendas = document.querySelectorAll('.bulma-calendar');
+    agendas.forEach(function (agenda) {
+        if (agenda) {
+            // bulmaCalendar instance is available as element.bulmaCalendar
+            agenda.bulmaCalendar.on('select', datepicker => {
+                selectedDate = datepicker.data.value();
+                let highlightsInfos = document.querySelectorAll('.highlight-info');
+                highlightsInfos.forEach(highlight => highlight.classList.add('is-hidden'));
+                highlightsDates.forEach(function (highlight) {
+                    if (highlight === selectedDate){
+                        let highlightInfoId = document.getElementById(highlight);
+                        highlightInfoId.classList.remove('is-hidden');
+                    }
+                });
+            });
+        }
+    });
+
+</script>
+
 {% block javascripts %}
     {#          BULMA CAROUSEL            #}
     <script>

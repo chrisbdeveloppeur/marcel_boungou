@@ -1669,6 +1669,14 @@
         <source>Official website of gospel artist Marcel BOUNGOU. Discover all the news on the latest events and announcements of the pastor and cantor Marcel BOUNGOU.</source>
         <target>Site officiel de l'artiste gospel Marcel BOUNGOU. Découvrez toutes les actualités sur les derniers événements et annonces du pasteur et chantre Marcel BOUNGOU.</target>
       </trans-unit>
+      <trans-unit id="Kt5mzDo" resname="Enter the date and time">
+        <source>Enter the date and time</source>
+        <target>Entrez la date et l'heure</target>
+      </trans-unit>
+      <trans-unit id="OyS3VHP" resname="Enter the date and time at format : dd/MM/YYYY hh:mm">
+        <source>Enter the date and time at format : dd/MM/YYYY hh:mm</source>
+        <target>Entrez la date et l'heure au format : dd/MM/YYYY hh:mm</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
