@@ -134,6 +134,22 @@ h1, h2, h3{
   font-family: $font-quicksand;
 }
 
+.min-vh-100{
+  min-height: 100vh;
+}
+
+.min-vh-90{
+  min-height: 90vh;
+}
+
+.min-vh-80{
+  min-height: 80vh;
+}
+
+.min-vh-50{
+  min-height: 50vh;
+}
+
 .pointer-hover:hover{
   cursor: pointer !important;
 }
@@ -692,7 +708,7 @@ li{
 
 @media (max-width: 768px) {
   .bg-size-cover-mobile{
-    background-size: cover !important;
+    background-size: auto 100vh !important;
   }
 
   .bg-position-70-mobile{
@@ -753,7 +769,7 @@ li{
 
 // BREAK RESPONSIVE FOR DESKTOP
 @media (min-width: 1023px ) {
-  
+
   #majorEvent figure{
     height: 300px;
   }

@@ -53,7 +53,7 @@
     <div class="section has-background-black">
         <h3 class="subtitle is-2 has-text-white has-text-centered">{{ 'Gallery'|trans }}</h3>
         <p class="subtitle has-text-grey-light has-text-centered-tablet">{{ 'Browse the artist\'s photos and illustrations'|trans }}</p>
-        <div class="column">
+        <div class="column" style="pointer-events: none">
             {% if pictures|length > 0 %}
                 {{ include('gallery/gallery_carousel.html.twig') }}
             {% elseif pictures|length == 0 %}
