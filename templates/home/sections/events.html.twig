@@ -6,7 +6,7 @@
     </div>
 </div>
 
-{% set event = events|first %}
+{% set event = nextEvent %}
 {% if event %}
     <div class="modal" id="modalEvent{{ event.id }}">
         <div class="modal-background" onclick="this.parentElement.classList.remove('is-active')"></div>

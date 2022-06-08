@@ -14,7 +14,7 @@
                 {% if new.descriptionEn %}
                     {{ new.descriptionEn|raw }}
                 {% elseif not new.descriptionEn %}
-                    {{ include('includes/no_content.html.twig') }}
+                    {{ new.description|raw }}
                 {% endif %}
             {% endif %}
         </div>

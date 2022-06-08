@@ -745,6 +745,20 @@ li{
 // BREAK RESPONSIVE FOR TOUCH (MOBIL & TABLET)
 @media (max-width: 1023px ) {
 
+  .next-event-logo{
+    z-index: 1;
+    width: 100%;
+    text-shadow: 0 0 30px $success, 0 0 10px #daba00;
+    color: $success;
+  }
+  .next-event-logo span{
+    position: relative;
+    display: inline-block;
+    animation: none;
+    animation-delay: unset;
+    font-family: $title-font;
+  }
+
   #navbarBasic{
    // background: $primary !important;
     height: 100vh;

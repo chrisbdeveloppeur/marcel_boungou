@@ -1,0 +1,35 @@
+<h2 class="has-text-centered is-size-3 is-size-5-touch has-text-weight-bold next-event-logo is-uppercase has-background-success-light box-shadow-bulma-dark is-relative">
+    {% if app.request.locale == 'fr' %}
+        <span style="--i:1">P</span>
+        <span style="--i:2">r</span>
+        <span style="--i:3">o</span>
+        <span style="--i:4">c</span>
+        <span style="--i:5">h</span>
+        <span style="--i:6">a</span>
+        <span style="--i:7">i</span>
+        <span style="--i:8">n</span>
+        <span style="--i:9">e</span>
+        <span style="--i:10">m</span>
+        <span style="--i:11">e</span>
+        <span style="--i:12">n</span>
+        <span style="--i:13">t</span>
+    {% else %}
+        <span style="--i:1">N</span>
+        <span style="--i:2">e</span>
+        <span style="--i:3">x</span>
+        <span style="--i:4">t</span>
+        <span style="--i:5">&nbsp;E</span>
+        <span style="--i:6">v</span>
+        <span style="--i:7">e</span>
+        <span style="--i:8">n</span>
+        <span style="--i:9">t</span>
+    {% endif %}
+</h2>
+
+{#<h2 class="has-text-centered is-size-3 is-size-5-touch has-text-weight-bold next-event-logo is-uppercase has-background-success-light box-shadow-bulma-dark is-relative is-hidden-desktop">#}
+{#        {% if app.request.locale == 'fr' %}#}
+{#                <span>Prochainement</span>#}
+{#        {% else %}#}
+{#                <span>Next Event</span>#}
+{#        {% endif %}#}
+{#</h2>#}
