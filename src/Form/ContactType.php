@@ -27,7 +27,7 @@ class ContactType extends AbstractType
                 'required' => true,
                 'label' => false,
                 'attr' => [
-                    'class' => 'input has-text-centered',
+                    'class' => 'input has-text-centered is-size-5-mobile',
                     'placeholder' => $this->translator->trans( 'Your denomination...')
                 ],
                 'constraints' => [
@@ -41,7 +41,7 @@ class ContactType extends AbstractType
             ->add('subject', TextType::class,[
                 'required' => true,
                 'attr' => [
-                    'class' => 'input has-text-centered',
+                    'class' => 'input has-text-centered is-size-5-mobile',
                     'placeholder' => $this->translator->trans( 'The subject of the message...')
                 ],
                 'label' => false,
@@ -56,7 +56,7 @@ class ContactType extends AbstractType
             ->add('content', TextareaType::class,[
                 'required' => true,
                 'attr' => [
-                    'class' => 'textarea',
+                    'class' => 'textarea is-size-5-mobile',
                     'placeholder' => $this->translator->trans( 'Your message...')
                 ],
                 'label' => false,

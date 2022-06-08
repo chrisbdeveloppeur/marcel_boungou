@@ -8,6 +8,7 @@
 
 <div class="z-index-1 is-relative">
     <div class="ancrage-home-sections" id="news"></div>
+    <div style="background: -30vw /cover url({{ asset('build/images/black-monochrome-dark-text-symmetry-pattern-711352-wallhere.com.3552dc80.jpg') }});filter: contrast(1.5)" class="image-background-absolute"></div>
     <div class="parallax2 slide-fade-right smoothSlideLeft bg-size-cover-mobile" style="background: right no-repeat url({{ asset('build/images/mb_cost_blue_1.4e43ac8e.jpg') }})"></div>
     <div class="is-flex-tablet is-justify-content-center is-align-items-center is-relative has-background-black-layerless padding-top-50-mobile">
         <div class="column is-three-quarters-desktop is-flex-tablet is-flex-direction-column is-justify-content-center z-index-1" style="min-height: 100vh">
@@ -43,9 +44,16 @@
         </div>
         <div class="column is-hidden-touch"></div>
     </div>
-    <div class="column is-flex is-justify-content-center is-align-items-center has-text-centered has-background-black">
+    <div class="column is-flex is-justify-content-center is-align-items-center has-text-centered has-background-black is-relative">
         <div class="rotationX">
-            <a href="{{ path('news_all') }}" class="shadow-box-1 column is-size-4 is-success is-light box-shadow-bulma has-text-weight-bold">{{ 'Visit news page'|trans }}</a>
+            <a href="{{ path('news_all') }}" class="shadow-box-1 column is-size-4 borderless has-text-weight-bold">
+                <span>
+                    {{ 'Visit news page'|trans }}
+                </span>
+                <span class="icon">
+                    <i class="fas fa-info-circle"></i>
+                </span>
+            </a>
         </div>
     </div>
 </div>
