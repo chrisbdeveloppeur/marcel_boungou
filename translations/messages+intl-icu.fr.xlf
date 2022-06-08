@@ -1677,6 +1677,22 @@
         <source>Enter the date and time at format : dd/MM/YYYY hh:mm</source>
         <target>Entrez la date et l'heure au format : dd/MM/YYYY hh:mm</target>
       </trans-unit>
+      <trans-unit id="RZid5J_" resname="Details">
+        <source>Details</source>
+        <target>Détails</target>
+      </trans-unit>
+      <trans-unit id="Bly4YWk" resname="Locate on google Maps">
+        <source>Locate on google Maps</source>
+        <target>Localiser sur google Maps</target>
+      </trans-unit>
+      <trans-unit id="0PpWnIf" resname="Subscribe to reminder">
+        <source>Subscribe to reminder</source>
+        <target>Abonnez-vous au rappel</target>
+      </trans-unit>
+      <trans-unit id="OsbsxLb" resname="Events calendar">
+        <source>Events calendar</source>
+        <target>Calendrier des événements</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

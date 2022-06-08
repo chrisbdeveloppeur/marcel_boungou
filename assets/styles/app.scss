@@ -134,6 +134,7 @@ h1, h2, h3{
   font-family: $font-quicksand;
 }
 
+
 .min-vh-100{
   min-height: 100vh;
 }
@@ -648,6 +649,17 @@ li{
 #majorEvent{
   height: 100%;
   min-height: 30vh;
+}
+
+.navigation a{
+  color: white;
+}
+.navigation a:focus{
+  color: $success;
+  border-color: $success;
+}
+.navigation a:hover{
+  border-color: $success;
 }
 
 .slider-navigation-next, .slider-navigation-previous{

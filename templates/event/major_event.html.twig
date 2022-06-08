@@ -1,4 +1,4 @@
-{% set event = events|first %}
+{% set event = nextEvent %}
 {% if event %}
     <div class="is-relative column">
         <h2 class="has-text-centered is-size-3 is-size-5-touch has-text-weight-bold next-event-logo is-uppercase has-background-success-light box-shadow-bulma-dark is-relative">
@@ -32,54 +32,48 @@
 
             <div class="" id="majorEvent">
                 <div class="is-flex is-flex-direction-column"  style="height: 100%;">
-                    <figure class="image is-3by1">
-                        {% if event.image %}
-                            <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
-                        {% else %}
-                            <img src="https://bulma.io/images/placeholders/720x240.png" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
-                        {% endif %}
-                    </figure>
+                    {% if event.image %}
+                        <figure class="image is-3by1">
+                                <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
+    {#                        {% else %}#}
+    {#                            <img src="https://bulma.io/images/placeholders/720x240.png" alt="" style="height: 100%;max-height: 100%;object-fit: fill">#}
+                        </figure>
+                    {% endif %}
 
                     <div class="borderless is-relative">
                         {% if is_granted('ROLE_ADMIN') %}
                             {% include 'includes/edit_entity_button.html.twig' with {'entity' : event, 'entity_type' : 'event' } %}
                         {% endif %}
-                        <div class="column px-0 py-0 mx-1 my-2" style="z-index: 1;">
-                            <div class="is-flex is-align-items-center shadow-box-1 my-2">
+                        <div class="column px-0 py-0 has-background-black-layer" style="z-index: 1;">
+                            <div class="is-flex is-align-items-center borderless">
                                 <div class="has-text-centered has-text-success has-text-weight-bold is-size-5 column py-1">
-                                    <span>
-                                        {{ event.title }}
+                                    <span class="is-size-3 font-josefin-sans">
+                                        {{ event.title|capitalize }}
                                     </span>
+                                    <ul>
+                                        <li>{{ event.datetime|format_datetime('full','none',locale=app.request.locale)|capitalize }}</li>
+                                        <li>{{ event.datetime|format_datetime('none','short',locale=app.request.locale) }}</li>
+                                        <li>{{ event.adresse }}</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="column slider-container-child is-flex-desktop is-justify-content-space-between px-0 py-0">
 
-                            <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="column px-0 py-0 mx-1 my-2 is-flex is-justify-content-center is-align-items-center rotationX transition-3ms" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
-                                <div class="shadow-box-1 is-fullwidth is-height-100-percent column is-flex is-justify-content-center is-align-items-center is-size-4">
+                            <div class="column px-0 py-0 is-flex is-justify-content-center is-align-items-center rotationX transition-3ms" onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
+                                <a class="shadow-box-1 borderless is-fullwidth is-height-100-percent column is-flex is-justify-content-center is-align-items-center is-size-5">
                                     <span class="icon is-large">
-                                        <i class="fas fa-lg fa-location-dot"></i>
+                                        <i class="fas fa-lg fa-eye"></i>
                                     </span>
                                     <span>
-                                        {% trans %}Location{% endtrans %}
-                                    </span>
-                                </div>
-                            </a>
-
-                            <div class="column px-0 py-0 mx-1 my-2 is-flex is-justify-content-center is-align-items-center rotationX transition-3ms" onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
-                                <a class="shadow-box-1 is-fullwidth is-height-100-percent column is-flex is-justify-content-center is-align-items-center is-size-4">
-                                    <span class="icon is-large">
-                                        <i class="fas fa-lg fa-calendar-alt"></i>
-                                    </span>
-                                    <span>
-                                        {% trans %}Calendar{% endtrans %}
+                                        {% trans %}Details{% endtrans %}
                                     </span>
                                 </a>
                             </div>
 
                             {% if event.ticketingLink %}
-                                <div class="column px-0 py-0 mx-1 my-2 is-flex is-justify-content-center is-align-items-center rotationX transition-3ms">
-                                    <a href="{{ event.ticketingLink }}" target="_blank" class="shadow-box-1 is-fullwidth is-height-100-percent column is-flex is-justify-content-center is-align-items-center is-size-4">
+                                <div class="column px-0 py-0 is-flex is-justify-content-center is-align-items-center rotationX transition-3ms">
+                                    <a href="{{ event.ticketingLink }}" target="_blank" class="shadow-box-1 borderless is-fullwidth is-height-100-percent column is-flex is-justify-content-center is-align-items-center is-size-5">
                                         <span class="icon is-large">
                                             <i class="fas fa-lg fa-ticket"></i>
                                         </span>
@@ -90,13 +84,24 @@
                                 </div>
                             {% endif %}
 
+                            <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="column px-0 py-0 is-flex is-justify-content-center is-align-items-center rotationX transition-3ms" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
+                                <div class="shadow-box-1 borderless is-fullwidth is-height-100-percent column is-flex is-justify-content-center is-align-items-center is-size-5">
+                                    <span class="icon is-large">
+                                        <i class="fas fa-lg fa-location-dot"></i>
+                                    </span>
+                                    <span>
+                                        {% trans %}Locate on google Maps{% endtrans %}
+                                    </span>
+                                </div>
+                            </a>
+
                         </div>
 
-                        <div class="column px-0 py-0 mx-1 my-2">
+                        <div class="column px-0 py-0 mt-2">
                             <div class="tags is-justify-content-left">
                                 {% for tag in event.tagsinarray %}
                                     {% if tag %}
-                                        <a class="tag shadow-box-1">#{{ tag }}</a>
+                                        <a class="tag shadow-box-1 borderless">#{{ tag }}</a>
                                     {% endif %}
                                 {% endfor %}
                             </div>

@@ -19,29 +19,42 @@
         <p class="has-text-white">{% trans %}Consult the list of all upcoming events{% endtrans %}</p>
     </div>
 
-    <div class="container">
+    <div class="container is-flex-tablet is-flex-direction-row">
+
+            <button class="button is-success is-light is-static is-hidden-desktop is-fullwidth">
+                <span class="icon">
+                    <i class="fas fa-lg fa-caret-down"></i>
+                </span>
+                <span>
+                    {% trans %}Events calendar{% endtrans %}
+                </span>
+            </button>
+
+        <div class="column is-one-quarter-desktop is-one-third-tablet slide-fade-left">
+            {{ include('includes/calendar.html.twig') }}
+        </div>
+
         <div class="column">
-            <div class="mb-3">
-                <a href="{{ path('event_home') }}" class="button is-success is-light">
+            <div class="mb-3 is-hidden-touch">
+                <button class="button is-success is-light is-static">
                     <span class="icon">
                         <i class="fas fa-lg fa-caret-left"></i>
                     </span>
                     <span>
-                        {% trans %}Events lobby{% endtrans %}
+                        {% trans %}Events calendar{% endtrans %}
                     </span>
-                </a>
+                </button>
             </div>
             <div class="control">
                 <div class="tags are-large has-addons">
-                    <span class="tag is-dark">{{ 'Total number of Events' }}</span>
+                    <span class="tag is-dark">{{ 'Total number of upcoming events' }}</span>
                     <span class="tag is-success">{{ nextEvents.getTotalItemCount }}</span>
                 </div>
             </div>
-            <div class="navigation column">
+            <div class="navigation column px-0">
                 {{ knp_pagination_render(nextEvents) }}
             </div>
             <div class="column">
-{#                {% for event in nextEvents|sort((a, b) => a.datetime <=> b.datetime) %}#}
                 {% for event in nextEvents %}
                     {% if date(event.datetime) %}
                         {{ include('event/event_card.html.twig') }}
@@ -49,15 +62,11 @@
                 {% endfor %}
             </div>
 
-            <a href="{{ path('event_home') }}" class="button is-success is-light">
-                <span class="icon">
-                    <i class="fas fa-lg fa-caret-left"></i>
-                </span>
-                <span>
-                    {% trans %}Events lobby{% endtrans %}
-                </span>
-            </a>
+            <div class="navigation column px-0">
+                {{ knp_pagination_render(nextEvents) }}
+            </div>
 
         </div>
+
     </div>
 {% endblock %}

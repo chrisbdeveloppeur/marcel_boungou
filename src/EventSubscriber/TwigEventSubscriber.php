@@ -33,12 +33,18 @@ class TwigEventSubscriber implements EventSubscriberInterface
 //        $date = new \DateTime('now');
 //        $events = $this->eventRepository->findByDate($date);
         $events = $this->eventRepository->findAll();
+        $nextEvent = $this->eventRepository->findNextEvent();
+        $allNextEvents = $this->eventRepository->findNextEvents();
+        $allPastedEvents = $this->eventRepository->findPastedEvents();
         $musics = $this->musicRepository->findAll();
         $albums = $this->albumRepository->findByYear();
         $books = $this->bookRepository->findAll();
         $pictures = $this->pictureRepository->findAll();
         $news = $this->newsRepository->findAll();
         $this->twig->addGlobal('events', $events);
+        $this->twig->addGlobal('nextEvent', $nextEvent);
+        $this->twig->addGlobal('allNextEvents', $allNextEvents);
+        $this->twig->addGlobal('$allPastedEvents', $allPastedEvents);
         $this->twig->addGlobal('musics', $musics);
         $this->twig->addGlobal('albums', $albums);
         $this->twig->addGlobal('books', $books);

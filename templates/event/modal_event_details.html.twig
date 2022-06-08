@@ -8,13 +8,24 @@
             {{ event.datetime|format_datetime('none','short',locale=app.request.locale) }}
         </span>
     </div>
-    <figure class="image is-3by1">
-        {% if events[0].image %}
-            <img src="{{ vich_uploader_asset(events[0], 'imageFile') }}" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
-        {% else %}
-            <img src="https://bulma.io/images/placeholders/720x240.png" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
-        {% endif %}
-    </figure>
+    {% if event.image %}
+        <figure class="image is-3by1">
+                <img src="{{ vich_uploader_asset(event, 'imageFile') }}" alt="" style="height: 100%;max-height: 100%;object-fit: fill">
+    {#        {% else %}#}
+    {#            <img src="https://bulma.io/images/placeholders/720x240.png" alt="" style="height: 100%;max-height: 100%;object-fit: fill">#}
+        </figure>
+    {% endif %}
+
+    <div class="column is-two-thirds margin-auto has-text-centered ">
+        <span class="is-size-4">{{ event.adresse }}</span>
+    </div>
+
+    {% if event.description %}
+        <div class="column is-two-thirds margin-auto">
+            {{ event.description|raw }}
+        </div>
+    {% endif %}
+
     <div class="pb-3">
         <a href="{{ asset('documents/events_files/') }}{{ event.icsFile }}" target="_blank" download="{{ event.icsFile }}" class="addToCalendar button is-fullwidth is-success" title="{% trans %}Add to Calendar{% endtrans %}">
             <span class="icon">
@@ -34,20 +45,13 @@
         <div class="has-text-centered">
             {% trans %}Opt for the reminder by Email{% endtrans %}
         </div>
-        <span class="help">
-            <span class="icon">
-                <i class="fas fa-info-circle"></i>
-            </span>
-            {% trans %}By subscribing to this service, you will receive reminder emails until the day of the event{% endtrans %}.<br>
-            {% trans %} (1 month / 1 week / 1 day before){% endtrans %}<br>
-        </span>
     </div>
     <form action="{{ path('event_add_email_reminder', {'id': event.id}) }}" method="post" class="column pb-0 pt-3 px-0">
         <div class="field">
             <input type="email" class="input has-text-centered" placeholder="{% trans %}my@email.com{% endtrans %}" name="email" required>
         </div>
-        <div class="is-flex is-justify-content-end">
-            <a href="{{ path('event_remove_email_reminder', {'id': event.id}) }}" class="button is-success is-light">
+        <div class="is-flex-desktop is-justify-content-end">
+            <a href="{{ path('event_remove_email_reminder', {'id': event.id}) }}" class="button is-success is-light is-fullwidth">
                 <span class="icon">
                     <i class="far fa-bell-slash"></i>
                 </span>
@@ -60,9 +64,16 @@
                     <i class="far fa-bell"></i>
                 </span>
                 <span>
-                    {% trans %}Subscribe{% endtrans %}
+                    {% trans %}Subscribe to reminder{% endtrans %}
                 </span>
             </button>
         </div>
+        <span class="help">
+            <span class="icon">
+                <i class="fas fa-info-circle"></i>
+            </span>
+            {% trans %}By subscribing to this service, you will receive reminder emails until the day of the event{% endtrans %}.<br>
+            {% trans %} (1 month / 1 week / 1 day before){% endtrans %}<br>
+        </span>
     </form>
 </div>

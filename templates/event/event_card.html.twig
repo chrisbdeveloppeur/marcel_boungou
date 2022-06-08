@@ -1,4 +1,4 @@
-<div class="column is-relative scalup-hover transition-3ms margin-auto" id="#event{{ event.id }}">
+<div class="column is-relative transition-3ms margin-auto scale-up-fade" id="#event{{ event.id }}">
     <div class="card is-relative" style="height: 100%;background: rgba(0,0,0,0)">
 {#        {% if event.image %}#}
 {#            <div class="card-image">#}
@@ -12,13 +12,12 @@
             {% if is_granted('ROLE_ADMIN') %}
                 {% include 'includes/edit_entity_button.html.twig' with {'entity' : event, 'entity_type' : 'event' } %}
             {% endif %}
-            <div class="has-background-black-layer p-3 box-shadow-bulma-dark">
-                <div class="column px-0 py-0 mx-1 my-1" style="z-index: 1;">
-                    <div class="is-flex is-align-items-center my-2">
+                <div class="column px-0 py-0 has-background-black-layer" style="z-index: 1;">
+                    <div class="is-flex is-align-items-center">
                         <div class="has-text-left has-text-success has-text-weight-bold is-size-5 column py-1">
-                        <span class=" font-josefin-sans">
-                            {{ event.title|capitalize }}
-                        </span>
+                            <span class="is-size-3 font-josefin-sans">
+                                {{ event.title|capitalize }}
+                            </span>
                             <ul>
                                 <li>{{ event.datetime|format_datetime('full','none',locale=app.request.locale)|capitalize }}</li>
                                 <li>{{ event.datetime|format_datetime('none','short',locale=app.request.locale) }}</li>
@@ -28,48 +27,47 @@
                     </div>
                 </div>
 
-                <div class="column px-0 py-0 is-flex-desktop">
+                <div class="column px-0 py-0 is-flex-desktop has-background-black-layer">
 
-                    <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="column px-0 py-0 mx-1 my-1 is-flex is-justify-content-center is-align-items-center rotationX transition-3ms" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
-                        <div class="shadow-box-1 borderless is-fullwidth is-height-100-percent column is-flex is-justify-content-center is-align-items-center">
-                        <span class="icon is-large">
-                            <i class="fas fa-lg fa-location-dot"></i>
-                        </span>
+                    <div class="column px-0 py-0 is-flex is-justify-content-center is-align-items-center rotationX transition-3ms" onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
+                        <a class="shadow-box-1 borderless is-fullwidth is-height-100-percent column is-flex is-justify-content-center is-align-items-center is-size-5">
+                            <span class="icon is-large">
+                                <i class="fas fa-lg fa-eye"></i>
+                            </span>
                             <span>
-                            {% trans %}Locate on google Maps{% endtrans %}
-                        </span>
-                        </div>
-                    </a>
-
-                    <div class="column px-0 py-0 mx-1 my-1 is-flex is-justify-content-center is-align-items-center rotationX transition-3ms" onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
-                        <a class="shadow-box-1 borderless is-fullwidth is-height-100-percent column is-flex is-justify-content-center is-align-items-center">
-                        <span class="icon is-large">
-                            <i class="fas fa-lg fa-calendar-alt"></i>
-                        </span>
-                            <span>
-                            {% trans %}Calendar{% endtrans %}
-                        </span>
+                                {% trans %}Details{% endtrans %}
+                            </span>
                         </a>
                     </div>
 
                     {% if event.ticketingLink %}
-                        <div class="column px-0 py-0 mx-1 my-1 is-flex is-justify-content-center is-align-items-center rotationX transition-3ms">
-                            <a href="{{ event.ticketingLink }}" target="_blank" class="shadow-box-1 borderless is-fullwidth is-height-100-percent column is-flex is-justify-content-center is-align-items-center">
-                            <span class="icon is-large">
-                                <i class="fas fa-lg fa-ticket"></i>
-                            </span>
+                        <div class="column px-0 py-0 is-flex is-justify-content-center is-align-items-center rotationX transition-3ms">
+                            <a href="{{ event.ticketingLink }}" target="_blank" class="shadow-box-1 borderless is-fullwidth is-height-100-percent column is-flex is-justify-content-center is-align-items-center is-size-5">
+                                <span class="icon is-large">
+                                    <i class="fas fa-lg fa-ticket"></i>
+                                </span>
                                 <span>
-                                {% trans %}Reservation{% endtrans %}
-                            </span>
+                                    {% trans %}Reservation{% endtrans %}
+                                </span>
                             </a>
                         </div>
                     {% endif %}
 
+                    <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="column px-0 py-0 is-flex is-justify-content-center is-align-items-center rotationX transition-3ms" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
+                        <div class="shadow-box-1 borderless is-fullwidth is-height-100-percent column is-flex is-justify-content-center is-align-items-center is-size-5">
+                            <span class="icon is-large">
+                                <i class="fas fa-lg fa-location-dot"></i>
+                            </span>
+                            <span>
+                                {% trans %}Locate on google Maps{% endtrans %}
+                            </span>
+                        </div>
+                    </a>
+
                 </div>
-            </div>
 
 
-            <div class="column px-0 py-0 mx-1 my-1">
+            <div class="column px-0 py-0 mt-2">
                 <div class="tags is-justify-content-left">
                     {% for tag in event.tagsinarray %}
                         {% if tag %}
