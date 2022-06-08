@@ -1,4 +1,4 @@
-<a href="{% if entity %}{{ path(entity_type~'_'~action, {'id': entity.id}) }}{% else %}{{ path(entity_type~'_'~action) }}{% endif %}" class="button has-text-weight-bold p-4 m-1 is-normal is-{% if type is defined %}{{ type }}{% else %}{% if action == 'delete' %}danger{% elseif action == 'edit' or action == 'new' or action == 'show' %}success{% else %}white{% endif %}{% endif %}" {% if confirm_msg is defined and confirm_msg %}onclick="return confirm('{{ confirm_msg }}')"{% endif %}>
+<a href="{% if entity and entity.id is defined %}{{ path(entity_type~'_'~action, {'id': entity.id}) }}{% else %}{{ path(entity_type~'_'~action) }}{% endif %}" class="button has-text-weight-bold p-4 m-1 is-normal is-{% if type is defined %}{{ type }}{% else %}{% if action == 'delete' %}danger{% elseif action == 'edit' or action == 'new' or action == 'show' %}success{% else %}white{% endif %}{% endif %}" {% if confirm_msg is defined and confirm_msg %}onclick="return confirm('{{ confirm_msg }}')"{% endif %}>
     {% if action == 'show' %}
         <span class="icon">
             <i class="fas fa-lg fa-magnifying-glass"></i>

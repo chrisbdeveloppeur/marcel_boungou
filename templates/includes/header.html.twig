@@ -1,9 +1,12 @@
 <nav class="navbar is-fixed-top box-shadow-bulma font-quicksand transition-5ms" aria-label="main navigation">
+
     <div class="nav-background">
         <img src="{{ asset('build/images/background_design.a6a92814.jpg') }}" alt="">
         <div class="nav-background-layer"></div>
     </div>
+
     <div class="navbar-brand">
+
         <a href="{{ path('home_index') }}" class="navbar-item is-expanded is-justify-content-center">
             Logo
         </a>
@@ -13,85 +16,103 @@
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
         </a>
+
     </div>
 
     <div id="navbarBasic" class="navbar-menu has-text-centered-touch">
         <div class="navbar-start">
 
             <div class="box-shadow-bulma navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
+
                 <a {% if home %}href="#news" {% else %}href="{{ path('home_index') }}#news"{% endif %} class="navbar-item is-size-5-touch">
                     {% trans %}News{% endtrans %}
                 </a>
 
                 <div class="navbar-dropdown has-background-white-layer is-minimized">
+
                     <a href="{{ path('news_all') }}" class="navbar-item is-size-5-touch">
                         {% trans %}All News{% endtrans %}
                     </a>
+
                     <a class="navbar-item is-size-5-touch" {% if home %}href="#subscribeForm" {% else %}href="{{ path('home_index') }}#subscribeForm"{% endif %}>
                         {% trans %}Subscribe{% endtrans %}
                     </a>
+
                 </div>
+
             </div>
 
 
             <div class="box-shadow-bulma navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
+
                 <a {% if home %}href="#events" {% else %}href="{{ path('home_index') }}#events"{% endif %} class="navbar-item is-size-5-touch">
                     {% trans %}Events{% endtrans %}
                 </a>
 
                 <div class="navbar-dropdown has-background-white-layer is-minimized">
-{#                    <a class="navbar-item is-size-5-touch" href="{{ path('event_home') }}">#}
-{#                        {% trans %}Shortly{% endtrans %}#}
-{#                    </a>#}
                     <a href="{{ path('event_all') }}" class="navbar-item is-size-5-touch">
                         {% trans %}All events{% endtrans %}
                     </a>
                 </div>
+
             </div>
 
 
             <div class="box-shadow-bulma navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
+
                 <a {% if home %}href="#mediatheque" {% else %}href="{{ path('home_index') }}#mediatheque"{% endif %} class="navbar-item is-size-5-touch">
                     {% trans %}Media{% endtrans %}
                 </a>
 
                 <div class="navbar-dropdown has-background-white-layer is-minimized">
+
                     <a href="{{ path('discography_index') }}" class="navbar-item is-size-5-touch">
                         {% trans %}Discography{% endtrans %}
                     </a>
+
                     <a href="{{ path('bibliography_index') }}" class="navbar-item is-size-5-touch">
                         {% trans %}Bibliography{% endtrans %}
                     </a>
+
                     <a href="{{ path('gallery_index') }}" class="navbar-item is-size-5-touch">
                         {% trans %}Gallery{% endtrans %}
                     </a>
+
                 </div>
             </div>
 
 
             <div class="box-shadow-bulma navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
+
                 <a {% if home %}href="#mbMinistry" {% else %}href="{{ path('home_index') }}#mbMinistry"{% endif %} class="navbar-item is-size-5-touch">
                     {% trans %}MB Ministry{% endtrans %}
                 </a>
+
                 <div class="navbar-dropdown has-background-white-layer is-minimized">
-                    <a {% if home %}href="#bio" {% else %}href="{{ path('home_index') }}#bio"{% endif %} class="navbar-item is-size-5-touch">
-                        {% trans %}Biography{% endtrans %}
-                    </a>
+
                     <a href="{{ shop_url }}" class="navbar-item is-size-5-touch is-justify-content-space-between">
                         {% trans %}Shop{% endtrans %}
                         <span>
                             <i class="fas fa-shopping-bag"></i>
                         </span>
                     </a>
+
+                    <a {% if home %}href="#bio" {% else %}href="{{ path('home_index') }}#bio"{% endif %} class="navbar-item is-size-5-touch">
+                        {% trans %}Biography{% endtrans %}
+                    </a>
+
                     <a {% if home %}href="#partners" {% else %}href="{{ path('home_index') }}#partners"{% endif %} class="navbar-item is-size-5-touch">
                         {% trans %}Partners{% endtrans %}
                     </a>
+
                     <a {% if home %}href="#contact" {% else %}href="{{ path('home_index') }}#contact"{% endif %} class="navbar-item is-size-5-touch">
                         {% trans %}Contact{% endtrans %}
                     </a>
+
                     <a {% if home %}href="#donation" {% else %}href="{{ path('home_index') }}#donation"{% endif %} class="navbar-item is-size-5-touch">
                         {% trans %}Donation{% endtrans %}
                     </a>
+
                 </div>
             </div>
 

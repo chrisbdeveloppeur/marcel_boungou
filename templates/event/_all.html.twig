@@ -21,7 +21,7 @@
 
     <div class="container is-flex-tablet is-flex-direction-row">
 
-            <button class="button is-success is-light is-static is-hidden-desktop is-fullwidth">
+            <button class="button is-success is-light is-static is-hidden-tablet is-fullwidth">
                 <span class="icon">
                     <i class="fas fa-lg fa-caret-down"></i>
                 </span>
@@ -35,7 +35,7 @@
         </div>
 
         <div class="column">
-            <div class="mb-3 is-hidden-touch">
+            <div class="mb-3 is-hidden-mobile">
                 <button class="button is-success is-light is-static">
                     <span class="icon">
                         <i class="fas fa-lg fa-caret-left"></i>
@@ -47,7 +47,7 @@
             </div>
             <div class="control">
                 <div class="tags are-large has-addons">
-                    <span class="tag is-dark">{{ 'Total number of upcoming events' }}</span>
+                    <span class="tag is-dark">{{ 'Total number of upcoming events'|trans }}</span>
                     <span class="tag is-success">{{ nextEvents.getTotalItemCount }}</span>
                 </div>
             </div>

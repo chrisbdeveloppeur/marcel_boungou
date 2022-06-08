@@ -8,10 +8,10 @@
 
     <div class="column is-flex-tablet is-justify-content-center is-flex-direction-row">
         <div class="px-1 py-1">
-            <a class="button is-outlined has-text-weight-bold is-rounded p-3 m-1" href="{{ path('home_index') }}">{{ 'Back to home'|trans }}</a>
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'index', 'entity' : null, 'entity_type' : 'home', 'type':'success', 'text': 'Back to home'|trans } %}
         </div>
         <div class="px-1 py-1">
-            <a class="button is-success is-fullwidth" href="{{ path('app_register') }}">{% trans %}Add a Manager{% endtrans %}</a>
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'register', 'entity' : null, 'entity_type' : 'app', 'type':'success', 'text': 'Add a Manager'|trans } %}
         </div>
     </div>
 
@@ -58,10 +58,10 @@
 
     <div class="column is-flex-tablet is-justify-content-center is-flex-direction-row">
         <div class="px-1 py-1">
-            <a class="button is-outlined has-text-weight-bold is-rounded p-3 m-1" href="{{ path('home_index') }}">{{ 'Back to home'|trans }}</a>
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'index', 'entity' : null, 'entity_type' : 'home', 'type':'success', 'text': 'Back to home'|trans } %}
         </div>
         <div class="px-1 py-1">
-            <a class="button is-outlined has-text-weight-bold is-rounded p-3 m-1" href="{{ path('app_register') }}">{% trans %}Add a Manager{% endtrans %}</a>
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'register', 'entity' : null, 'entity_type' : 'app', 'type':'success', 'text': 'Add a Manager'|trans } %}
         </div>
     </div>
 

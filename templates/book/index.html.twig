@@ -7,7 +7,7 @@
 
     <div class="column is-flex is-justify-content-center is-flex-direction-row">
         <div class="px-1 py-1">
-            <a class="button is-outlined has-text-weight-bold is-rounded p-3 m-1" href="{{ path('bibliography_index') }}">{{ 'Back to Bibliography page'|trans }}</a>
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'index','type':'success', 'entity' : null, 'entity_type' : 'bibliography', 'text': 'Back to Bibliography page'|trans } %}
         </div>
         <div class="px-1 py-1">
             {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'new','type':'success', 'entity' : null, 'entity_type' : 'book', 'text': 'Add'|trans } %}
@@ -55,7 +55,7 @@
 
     <div class="column is-flex is-justify-content-center is-flex-direction-row">
         <div class="px-1 py-1">
-            <a class="button is-outlined has-text-weight-bold is-rounded p-3 m-1" href="{{ path('bibliography_index') }}">{{ 'Back to Bibliography page'|trans }}</a>
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'index','type':'success', 'entity' : null, 'entity_type' : 'bibliography', 'text': 'Back to Bibliography page'|trans } %}
         </div>
         <div class="px-1 py-1">
             {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'new', 'type':'success', 'entity' : null, 'entity_type' : 'book', 'text': 'Add'|trans } %}

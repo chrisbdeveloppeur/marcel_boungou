@@ -1693,6 +1693,10 @@
         <source>Events calendar</source>
         <target>Calendrier des événements</target>
       </trans-unit>
+      <trans-unit id="BFLU4sk" resname="Total number of upcoming events">
+        <source>Total number of upcoming events</source>
+        <target>Nombre total d'événements à venir</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

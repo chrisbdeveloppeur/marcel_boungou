@@ -589,6 +589,10 @@ li{
   animation: jumpDown .8s infinite ease-in-out;
 }
 
+.jumpDownBigger{
+  animation: jumpDownBigger 1s infinite ease-in-out;
+}
+
 .smoothSlideRight{
   animation: smoothSlideRight 10s infinite ease-in-out;
 }
@@ -714,6 +718,14 @@ li{
 .hovertext:hover:before, .hovertext:active:before {
   opacity: 1;
   visibility: visible;
+}
+
+.image-background-absolute{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 //  BREAK RESPONSIVE FOR MOBIL
@@ -921,6 +933,18 @@ li{
   }
   25% {
     transform: translateY(20%);
+  }
+  50%, 100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes jumpDownBigger {
+  0% {
+    transform: translateY(0%);
+  }
+  25% {
+    transform: translateY(40%);
   }
   50%, 100% {
     transform: translateY(0%);

@@ -7,7 +7,8 @@
 
     <div class="column is-flex is-justify-content-center is-flex-direction-row">
         <div class="px-1 py-1">
-            <a class="button is-outlined has-text-weight-bold is-rounded p-3 m-1" href="{{ path('gallery_index') }}">{{ 'Back to Gallery page'|trans }}</a>
+{#            <a class="button is-outlined has-text-weight-bold is-rounded p-3 m-1" href="{{ path('gallery_index') }}">{{ 'Back to Gallery page'|trans }}</a>#}
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'index', 'entity' : null, 'entity_type' : 'gallery', 'type':'success', 'text': 'Back to Gallery page'|trans } %}
         </div>
         <div class="px-1 py-1">
             {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'new', 'entity' : null, 'entity_type' : 'picture', 'text': 'Add'|trans } %}
@@ -49,7 +50,7 @@
 
     <div class="column is-flex is-justify-content-center is-flex-direction-row">
         <div class="px-1 py-1">
-            <a class="button is-outlined has-text-weight-bold is-rounded p-3 m-1" href="{{ path('gallery_index') }}">{{ 'Back to Gallery page'|trans }}</a>
+            {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'index', 'entity' : null, 'entity_type' : 'gallery', 'type':'success', 'text': 'Back to Gallery page'|trans } %}
         </div>
         <div class="px-1 py-1">
             {% include 'includes/index_entity_buttons/global_btn.html.twig' with {'action' : 'new', 'entity' : null, 'entity_type' : 'picture', 'text': 'Add'|trans } %}
