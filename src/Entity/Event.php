@@ -172,24 +172,24 @@ class Event
         return $this;
     }
 
-    public function getCp(): ?string
+    public function getCp()
     {
         return $this->cp;
     }
 
-    public function setCp(string $cp): self
+    public function setCp($cp)
     {
         $this->cp = $cp;
 
         return $this;
     }
 
-    public function getStreet(): ?string
+    public function getStreet()
     {
         return $this->street;
     }
 
-    public function setStreet(string $street): self
+    public function setStreet($street)
     {
         $this->street = $street;
 
@@ -253,7 +253,7 @@ class Event
 
     public function getAdresse()
     {
-        $adresse = $this->street.', '.$this->cp.' '.$this->city.', '.$this->country;
+        $adresse = $this->street.' '.$this->cp.' '.$this->city.' '.$this->country;
         return $adresse;
     }
 

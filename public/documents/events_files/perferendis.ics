@@ -15,18 +15,21 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6229e017c379e
-DTSTAMP;TZID=Europe/Paris:20220310T122511
+UID:62a0424c78ba9
+DTSTAMP;TZID=Europe/Paris:20220608T083140
 SUMMARY:perferendis
-DESCRIPTION:Recusandae illum molestias ut. Voluptas repellendus et quia vol
- uptate. Autem distinctio dolores nostrum. Est optio fuga quae placeat quis
-  tempore. Ea ea exercitationem ex sit deleniti. Quisquam deserunt harum au
- t illo. Quae debitis nesciunt et incidunt suscipit cumque non consequatur.
-  Sint est harum animi harum nesciunt et.
-LOCATION:43\, avenue Gilles Pineau\, 58860 Nicolas\, Nicolas
-DTSTART;TZID=Europe/Paris:20220308T112615
-DTEND;TZID=Europe/Paris:20220308T112615
+DESCRIPTION:Ad voluptas iure nulla id sit repellat accusantium tenetur. Rep
+ ellat sunt maiores minima sit impedit impedit eum. Et earum dignissimos et
+  nobis recusandae. Eveniet alias esse incidunt est atque omnis iusto.
+LOCATION:41\, place Peron\, 93 966 Gautierboeuf\, Gautierboeuf
+DTSTART;TZID=Europe/Paris:20220721T231630
+DTEND;TZID=Europe/Paris:20220721T231630
 END:VEVENT
 END:VCALENDAR

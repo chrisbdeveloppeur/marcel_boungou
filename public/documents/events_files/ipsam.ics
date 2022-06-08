@@ -15,20 +15,20 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621b58db6bb1a
-DTSTAMP;TZID=Europe/Paris:20220227T115627
+UID:62a0424bb271b
+DTSTAMP;TZID=Europe/Paris:20220608T083139
 SUMMARY:ipsam
-DESCRIPTION:Officiis eum enim qui et dolore sunt voluptas. Repellendus nemo
-  voluptatem sequi placeat voluptatem voluptatem. Aspernatur eos facere min
- us officiis fugiat necessitatibus. Dolor ad iste debitis et. Voluptas rem 
- veritatis ad est ipsa earum. Tenetur qui officiis et et error accusantium 
- dolorem. Eligendi quae eum dolorum ipsum quae. Cumque et non expedita aut 
- voluptatem. Ut nihil est voluptas nam. Impedit perspiciatis omnis rem vel 
- iure sint.
-LOCATION:rue Sauvage\, 74067 Guillaume\, Guillaume
-DTSTART;TZID=Europe/Paris:20220228T064925
-DTEND;TZID=Europe/Paris:20220228T064925
+DESCRIPTION:Nihil ut in corrupti eum. Ea dicta cum est omnis quia est liber
+ o. At est nisi ipsa dolor.
+LOCATION:76\, rue Petitjean\, 00783 Bigot\, Bigot
+DTSTART;TZID=Europe/Paris:20220609T172802
+DTEND;TZID=Europe/Paris:20220609T172802
 END:VEVENT
 END:VCALENDAR

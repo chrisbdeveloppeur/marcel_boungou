@@ -14,8 +14,10 @@ use Doctrine\Persistence\ManagerRegistry;
  */
 class EventRepository extends ServiceEntityRepository
 {
+    private $today;
     public function __construct(ManagerRegistry $registry)
     {
+        $this->today = new \DateTime('now');
         parent::__construct($registry, Event::class);
     }
 
@@ -23,16 +25,28 @@ class EventRepository extends ServiceEntityRepository
     //  * @return Event[] Returns an array of Event objects
     //  */
 
-    public function findByDate($today)
+    public function findNextEvents()
     {
         return $this->createQueryBuilder('e')
-            ->setParameter('today', $today)
+            ->setParameter('today', $this->today)
             ->andWhere('e.datetime >= :today ')
             ->orderBy('e.datetime', 'ASC')
             ->setMaxResults(500)
             ->getQuery()
             ->getResult()
         ;
+    }
+
+    public function findPastedEvents()
+    {
+        return $this->createQueryBuilder('e')
+            ->setParameter('today', $this->today)
+            ->andWhere('e.datetime < :today ')
+            ->orderBy('e.datetime', 'ASC')
+            ->setMaxResults(500)
+            ->getQuery()
+            ->getResult()
+            ;
     }
 
 

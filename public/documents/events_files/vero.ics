@@ -15,16 +15,23 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621b58b6bc5b1
-DTSTAMP;TZID=Europe/Paris:20220227T115550
+UID:62a0424c0ef95
+DTSTAMP;TZID=Europe/Paris:20220608T083140
 SUMMARY:vero
-DESCRIPTION:Autem ad velit qui nihil dolor fugiat ullam. Necessitatibus a i
- d quas sint est. Ut tempore error consectetur dolorem veritatis animi quae
-  esse.
-LOCATION:avenue Brigitte Georges\, 38648 Lenoir\, Lenoir
-DTSTART;TZID=Europe/Paris:20220312T020930
-DTEND;TZID=Europe/Paris:20220312T020930
+DESCRIPTION:Libero est possimus in voluptatum. Esse nemo neque ducimus aute
+ m officia. Dignissimos ex doloribus ut. Quia unde ut quia rerum sunt. Et r
+ em fugiat quidem eum consequatur autem praesentium ducimus. Ut et consequa
+ tur iste velit quam earum labore sed. Blanditiis aut doloremque molestiae 
+ et. Nemo omnis enim autem provident nemo aliquid deserunt.
+LOCATION:537\, chemin Guillaume Lefevre\, 75353 Marques\, Marques
+DTSTART;TZID=Europe/Paris:20220621T073301
+DTEND;TZID=Europe/Paris:20220621T073301
 END:VEVENT
 END:VCALENDAR

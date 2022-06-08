@@ -30,8 +30,9 @@ class TwigEventSubscriber implements EventSubscriberInterface
 
     public function onControllerEvent(ControllerEvent $event)
     {
-        $date = new \DateTime('now');
-        $events = $this->eventRepository->findByDate($date);
+//        $date = new \DateTime('now');
+//        $events = $this->eventRepository->findByDate($date);
+        $events = $this->eventRepository->findAll();
         $musics = $this->musicRepository->findAll();
         $albums = $this->albumRepository->findByYear();
         $books = $this->bookRepository->findAll();

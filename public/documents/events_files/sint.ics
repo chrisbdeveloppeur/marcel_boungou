@@ -15,15 +15,21 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:6245b3e419f37
-DTSTAMP;TZID=Europe/Paris:20220331T160004
+UID:62a0424c79607
+DTSTAMP;TZID=Europe/Paris:20220608T083140
 SUMMARY:sint
-DESCRIPTION:Delectus fugit molestiae sint et et ut. Ut placeat rem tempore 
- est mollitia aspernatur.
-LOCATION:18\, boulevard Menard\, 98 071 Faure\, Faure
-DTSTART;TZID=Europe/Paris:20220408T205118
-DTEND;TZID=Europe/Paris:20220408T205118
+DESCRIPTION:Laboriosam suscipit id inventore blanditiis hic dicta. Ut tempo
+ ra officia et nobis voluptatem. Odio quis sit dolores libero veritatis deb
+ itis ea.
+LOCATION:20\, avenue Breton\, 16 156 Picard\, Picard
+DTSTART;TZID=Europe/Paris:20220731T093403
+DTEND;TZID=Europe/Paris:20220731T093403
 END:VEVENT
 END:VCALENDAR

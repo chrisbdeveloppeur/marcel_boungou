@@ -15,18 +15,20 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:622ba12f74e8a
-DTSTAMP;TZID=Europe/Paris:20220311T202119
+UID:62a0424c0fc34
+DTSTAMP;TZID=Europe/Paris:20220608T083140
 SUMMARY:eum
-DESCRIPTION:Sequi eius repellat dolores perferendis. Id natus est aut et et
- . Est eius dolorem deleniti harum tenetur. Delectus et odio numquam possim
- us voluptatem eum enim facere. Et reprehenderit vel modi aspernatur modi v
- elit. Aut asperiores illo repudiandae et tenetur nemo. Blanditiis repellat
-  et commodi et. Ipsum quae fuga velit pariatur quibusdam et et.
-LOCATION:3\, chemin Catherine Bodin\, 45514 Millet\, Millet
-DTSTART;TZID=Europe/Paris:20220406T214601
-DTEND;TZID=Europe/Paris:20220406T214601
+DESCRIPTION:Ut saepe alias qui mollitia sed laudantium modi. Dolorem et sun
+ t aut sit. Quasi aut repudiandae impedit.
+LOCATION:93\, rue Arnaude Maurice\, 85 151 GrosBourg\, GrosBourg
+DTSTART;TZID=Europe/Paris:20220627T211114
+DTEND;TZID=Europe/Paris:20220627T211114
 END:VEVENT
 END:VCALENDAR

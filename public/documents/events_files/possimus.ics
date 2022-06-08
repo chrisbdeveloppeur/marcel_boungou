@@ -15,19 +15,24 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621b5a8511e96
-DTSTAMP;TZID=Europe/Paris:20220227T120333
+UID:62a0424c742eb
+DTSTAMP;TZID=Europe/Paris:20220608T083140
 SUMMARY:possimus
-DESCRIPTION:Quia et et quasi quis voluptate enim. Consequatur aut atque inv
- entore aut non non facilis expedita. Est totam dicta sunt facilis exceptur
- i perferendis pariatur. Nesciunt aut consequatur voluptates earum. Quos la
- bore facere dignissimos et sapiente fugit voluptatem est. Ut rem qui harum
-  culpa et. Expedita id velit autem nihil itaque inventore. Rem nulla quia 
- qui distinctio.
-LOCATION:place Pénélope Lombard\, 03982 Pelletier\, Pelletier
-DTSTART;TZID=Europe/Paris:20220421T062617
-DTEND;TZID=Europe/Paris:20220421T062617
+DESCRIPTION:Numquam alias qui iusto tempore est non. Asperiores doloremque 
+ quam esse aut. Ea vero deleniti repellendus dolorem porro odit. Porro blan
+ ditiis et ea excepturi debitis est fuga. Ullam amet corporis consequatur. 
+ Sint laudantium aut et autem amet. Accusantium aut in temporibus debitis e
+ nim ut a. Quaerat hic nihil adipisci asperiores rerum.
+LOCATION:68\, impasse Pasquier\, 75021 Richard-la-Forêt\, Richard-la-Forê
+ t
+DTSTART;TZID=Europe/Paris:20220704T160446
+DTEND;TZID=Europe/Paris:20220704T160446
 END:VEVENT
 END:VCALENDAR

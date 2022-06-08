@@ -7,6 +7,7 @@ use App\Form\EventType;
 use App\Form\RemoveEmailReminderType;
 use App\Repository\EventRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Knp\Component\Pager\PaginatorInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -23,11 +24,13 @@ class EventsController extends AbstractController
 
     private $calendarController;
     private $translator;
+    private $paginator;
 
-    public function __construct(CalendarController $calendarController, TranslatorInterface $translator)
+    public function __construct(CalendarController $calendarController, TranslatorInterface $translator, PaginatorInterface $paginator)
     {
         $this->calendarController = $calendarController;
         $this->translator = $translator;
+        $this->paginator = $paginator;
     }
 
     /**
@@ -42,9 +45,23 @@ class EventsController extends AbstractController
     /**
      * @Route("/all", name="all", methods={"GET"})
      */
-    public function all(): Response
+    public function all(EventRepository $repository, Request $request): Response
     {
+        $allNnextEvents = $repository->findNextEvents();
+//        $pastedEvents = $repository->findPastedEvents();
+        $nextEvents = $this->paginator->paginate(
+            $allNnextEvents,
+            $request->query->getInt('page',1),
+            $request->query->getInt('numItemsPerPage',10),
+            [
+                'defaultSortFieldName' => 'datetime',
+                'defaultSortDirection' => 'desc',
+            ]
+        );
+
         return $this->render('event/_all.html.twig', [
+            'nextEvents' => $nextEvents,
+//            'pastedEvents' => $pastedEvents
         ]);
     }
 

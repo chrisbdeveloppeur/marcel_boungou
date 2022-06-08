@@ -15,18 +15,20 @@ DTSTART:20220327T030000
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20221030T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:621b5a60d6284
-DTSTAMP;TZID=Europe/Paris:20220227T120256
+UID:62a0424b4fea7
+DTSTAMP;TZID=Europe/Paris:20220608T083139
 SUMMARY:quod
-DESCRIPTION:Recusandae repellendus recusandae dicta praesentium temporibus 
- neque. Dolorum quidem tenetur voluptatem earum blanditiis. Doloremque labo
- re dolores iure autem eligendi. Quod debitis aliquam doloribus tempore. Pr
- aesentium est blanditiis quidem autem sit incidunt. Temporibus qui commodi
-  delectus quam et pariatur expedita.
-LOCATION:17\, place Martins\, 22 827 Traore\, Traore
-DTSTART;TZID=Europe/Paris:20220421T001613
-DTEND;TZID=Europe/Paris:20220421T001613
+DESCRIPTION:Labore deleniti sunt dolorum distinctio sit. Ipsa autem officia
+  eum molestiae delectus. Labore dolore quia eos.
+LOCATION:426\, place de Becker\, 39163 LemoineVille\, LemoineVille
+DTSTART;TZID=Europe/Paris:20220606T154654
+DTEND;TZID=Europe/Paris:20220606T154654
 END:VEVENT
 END:VCALENDAR

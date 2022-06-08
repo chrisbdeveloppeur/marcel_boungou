@@ -4,7 +4,7 @@
 
 {% block body %}
 
-    {% for event in events %}
+    {% for event in nextEvents %}
         <div class="modal" id="modalEvent{{ event.id }}">
             <div class="modal-background" onclick="this.parentElement.classList.remove('is-active')"></div>
             <div class="modal-content box has-background-success-light">
@@ -31,10 +31,19 @@
                     </span>
                 </a>
             </div>
-
-            <div class="columns is-multiline">
-                {% for event in events %}
-                    {% if date(event.datetime) >= date('now') %}
+            <div class="control">
+                <div class="tags are-large has-addons">
+                    <span class="tag is-dark">{{ 'Total number of Events' }}</span>
+                    <span class="tag is-success">{{ nextEvents.getTotalItemCount }}</span>
+                </div>
+            </div>
+            <div class="navigation column">
+                {{ knp_pagination_render(nextEvents) }}
+            </div>
+            <div class="column">
+{#                {% for event in nextEvents|sort((a, b) => a.datetime <=> b.datetime) %}#}
+                {% for event in nextEvents %}
+                    {% if date(event.datetime) %}
                         {{ include('event/event_card.html.twig') }}
                     {% endif %}
                 {% endfor %}
