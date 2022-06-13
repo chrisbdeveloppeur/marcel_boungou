@@ -270,8 +270,7 @@
             musicNav = document.querySelector('#musicNav');
             musicNavImage = document.querySelector('#musicNavImage');
             musicImage = musicContainer.querySelector('#musicImage');
-            console.log(musicImage.style.background);
-            musicId = '#'+musicContainer.id;
+            musicId = '#'+musicContainer.querySelector('.ancrage-musique').id;
             musicNavAncrage = musicNav.querySelector('a.current-music-played');
             musicNavAncrage.href = musicId;
             currentMusicNameTxt = musicContainer.querySelector('.music-name').textContent;
