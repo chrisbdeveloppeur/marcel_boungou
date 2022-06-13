@@ -1,6 +1,6 @@
 {#{% set event = nextEvent %}#}
 {% if event is defined and event %}
-    <div class="is-relative column">
+    <div class="is-relative column px-0">
 
             {{ include('includes/next_events_banner_animation.html.twig') }}
 
@@ -34,7 +34,7 @@
                         </div>
                         <div class="column slider-container-child is-flex-desktop is-justify-content-space-between px-0 py-0">
 
-                            <div class="column px-0 py-0 is-flex is-justify-content-center is-align-items-center transition-3ms" onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
+                            <div class="column p-0 my-2 is-flex is-justify-content-center is-align-items-center rotationX transition-3ms" onclick="document.querySelector('#modalEvent'+{{ event.id }}).classList.add('is-active')">
                                 <a class="shadow-box-1 borderless is-fullwidth is-height-100-percent column is-flex is-justify-content-center is-align-items-center is-size-5">
                                     <span class="icon is-large">
                                         <i class="fas fa-lg fa-eye"></i>
@@ -46,7 +46,7 @@
                             </div>
 
                             {% if event.ticketingLink %}
-                                <div class="column px-0 py-0 is-flex is-justify-content-center is-align-items-center transition-3ms">
+                                <div class="column p-0 my-2 is-flex is-justify-content-center is-align-items-center rotationX transition-3ms">
                                     <a href="{{ event.ticketingLink }}" target="_blank" class="shadow-box-1 borderless is-fullwidth is-height-100-percent column is-flex is-justify-content-center is-align-items-center is-size-5">
                                         <span class="icon is-large">
                                             <i class="fas fa-lg fa-ticket"></i>
@@ -58,7 +58,7 @@
                                 </div>
                             {% endif %}
 
-                            <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="column px-0 py-0 is-flex is-justify-content-center is-align-items-center transition-3ms" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
+                            <a href="https://www.google.fr/maps/search/{{ event.adresse }}" class="column p-0 my-2 is-flex is-justify-content-center is-align-items-center rotationX transition-3ms" onclick="window.open(this.href, 'newwindow', 'height=570,width=520');return false;">
                                 <div class="shadow-box-1 borderless is-fullwidth is-height-100-percent column is-flex is-justify-content-center is-align-items-center is-size-5">
                                     <span class="icon is-large">
                                         <i class="fas fa-lg fa-location-dot"></i>

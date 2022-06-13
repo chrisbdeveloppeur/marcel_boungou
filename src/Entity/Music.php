@@ -7,6 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 use Symfony\Component\HttpFoundation\File\File;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
+use Symfony\Component\Validator\Context\ExecutionContextInterface;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
 use Symfony\Component\Validator\Constraints as Assert;
 
@@ -143,5 +144,28 @@ class Music
     public function getUpdatedAt(){
         return $this->updatedAt;
     }
+
+
+//    /**
+//     * @param ExecutionContextInterface $context
+//     */
+//    public function validate(ExecutionContextInterface $context)
+//    {
+//        if (! in_array($this->musicFile->getMimeType(), array(
+//            'audio/mpeg',
+//            'audio/mp3',
+//            'application/octet-stream',
+//            'application/x-font-gdos',
+//            'audio/x-wav',
+//            'audio/x-ms-wma',
+//            'audio/wma'
+//        ))) {
+//            $context
+//                ->buildViolation('Wrong file type (mpeg,mp3,wav,wma)')
+//                ->atPath('fileName')
+//                ->addViolation()
+//            ;
+//        }
+//    }
 
 }

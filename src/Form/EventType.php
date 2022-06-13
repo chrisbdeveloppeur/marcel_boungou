@@ -34,14 +34,25 @@ class EventType extends AbstractType
             ])
             ->add('datetime', DateTimeType::class,[
                 'required' => false,
-                'label' => $this->translator->trans('Enter the date and time'),
+                'label' => $this->translator->trans('Enter start date and time'),
                 'attr' => [
                     'class' => 'input has-text-centered',
                     'type' => 'datetime',
                 ],
                 'widget' => 'single_text',
                 'format' => 'dd/MM/yyyy  HH:mm',
-                'help' => $this->translator->trans('Enter the date and time at format : dd/MM/YYYY hh:mm'),
+                'help' => $this->translator->trans('Enter start date and time at format : dd/MM/YYYY hh:mm'),
+            ])
+            ->add('datetimeEnd', DateTimeType::class,[
+                'required' => false,
+                'label' => $this->translator->trans('Enter end date and time'),
+                'attr' => [
+                    'class' => 'input has-text-centered',
+                    'type' => 'datetime',
+                ],
+                'widget' => 'single_text',
+                'format' => 'dd/MM/yyyy  HH:mm',
+                'help' => $this->translator->trans('Enter end date and time at format : dd/MM/YYYY hh:mm'),
             ])
             ->add('imageFile', FileType::class,[
                 'label' => $this->translator->trans('Image'),
@@ -89,12 +100,20 @@ class EventType extends AbstractType
                 'label' => $this->translator->trans('Redirect link for tickets'),
             ])
             ->add('description', CKEditorType::class,[
-                'config' => ['toolbar' => 'standard'],
+                'config' => ['toolbar' => 'basic'],
                 'required' => false,
                 'attr' => [
                     'class' => 'textarea'
                 ],
-                'label' => $this->translator->trans('Description'),
+                'label' => $this->translator->trans('French description'),
+            ])
+            ->add('descriptionEn', CKEditorType::class,[
+                'config' => ['toolbar' => 'basic'],
+                'required' => false,
+                'attr' => [
+                    'class' => 'textarea'
+                ],
+                'label' => $this->translator->trans('English description'),
             ])
             ->add('tags', TextType::class,[
                 'required'=> false,

@@ -61,13 +61,13 @@
                             {% trans %}Sign in{% endtrans %}
                         </button>
 
-                        {% if error %}
-                            {% if error.line == 77 %}
-                                <a href="{{ path('app_register') }}" class="help button is-warning is-light">{% trans %}No account yet ? Add one now{% endtrans %}</a>
-                            {% elseif error.line == 92  %}
-                                <a href="{{ path('app_forgot_password_request') }}" class="help button is-warning is-light">{% trans %}Forgot your password ?{% endtrans %}</a>
-                            {% endif %}
-                        {% endif %}
+{#                        {% if error %}#}
+{#                            {% if error.line == 77 %}#}
+{#                                <a href="{{ path('app_register') }}" class="help button is-warning is-light">{% trans %}No account yet ? Add one now{% endtrans %}</a>#}
+{#                            {% elseif error.line == 92  %}#}
+{#                                <a href="{{ path('app_forgot_password_request') }}" class="help button is-warning is-light">{% trans %}Forgot your password ?{% endtrans %}</a>#}
+{#                            {% endif %}#}
+{#                        {% endif %}#}
                     </div>
 
                 </form>

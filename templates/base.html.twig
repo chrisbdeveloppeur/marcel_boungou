@@ -415,12 +415,12 @@
     highlightsDates = false;
     {% endif %}
 
-    {% if app.request.get('_route') == 'events_new' %}
+    {% if app.request.get('_route') == 'event_new' or app.request.get('_route') == 'event_edit' %}
     var defaultOptions = {
         type: 'datetime',
         displayMode: 'default',
-        color: 'primary',
-        showHeader: true,
+        color: 'dark',
+        showHeader: false,
         isRange: false,
         allowSameDayRange: true,
         lang: '{{ app.request.locale }}',
@@ -437,6 +437,7 @@
         enableYearSwitch: false,
         displayYearsCount: 50,
         todayLabel: 'Aujourd\'hui',
+        validateLabel: 'Valider',
         showClearButton: true,
         showButtons: true,
         showTodayButton: true,

@@ -27,6 +27,7 @@ class MusicType extends AbstractType
     {
         $builder
             ->add('titre', TextType::class,[
+                'label' => $this->translator->trans('Audio title'),
                 'attr' => [
                     'class' => 'input'
                 ]

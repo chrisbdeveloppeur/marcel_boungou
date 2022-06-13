@@ -4,7 +4,7 @@
 
 {% block body %}
 
-    {% for event in nextEvents %}
+    {% for event in events %}
         <div class="modal" id="modalEvent{{ event.id }}">
             <div class="modal-background" onclick="this.parentElement.classList.remove('is-active')"></div>
             <div class="modal-content box has-background-success-light">
@@ -16,7 +16,7 @@
 
     <div class="section column">
         <h1 class="title has-text-weight-bold has-text-white">{% trans %}All next events{% endtrans %}</h1>
-        <p class="has-text-white">{% trans %}Consult the list of all upcoming events{% endtrans %}</p>
+        <p class="has-text-grey-light">{% trans %}Consult the list of all upcoming events{% endtrans %}</p>
     </div>
 
     <div class="container is-flex-tablet is-flex-direction-row">

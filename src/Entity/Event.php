@@ -104,10 +104,23 @@ class Event
      */
     private $array_tags;
 
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $description_en;
+
+    /**
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private $datetime_end;
+
 
     public function __construct()
     {
-        $this->datetime = new \DateTime();
+
+        $this->datetime =  new \DateTime();
+        $today = new \DateTime();
+        $this->datetime_end = $today->add(new \DateInterval('PT3H'));
 //        $tagFormatted = strtolower(preg_replace('~[\\\\/:*?"<>|()&, \']~','',$tag));
         $this->tags = new ArrayCollection();
     }
@@ -319,6 +332,30 @@ class Event
 
     public function getUpdatedAt(){
         return $this->updatedAt;
+    }
+
+    public function getDescriptionEn(): ?string
+    {
+        return $this->description_en;
+    }
+
+    public function setDescriptionEn(?string $description_en): self
+    {
+        $this->description_en = $description_en;
+
+        return $this;
+    }
+
+    public function getDatetimeEnd(): ?\DateTimeInterface
+    {
+        return $this->datetime_end;
+    }
+
+    public function setDatetimeEnd(?\DateTimeInterface $datetime_end): self
+    {
+        $this->datetime_end = $datetime_end;
+
+        return $this;
     }
 
 }

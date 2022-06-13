@@ -19,7 +19,12 @@
                             ({% trans %}Paris time{% endtrans %})
                         </p>
                         <span class="help">
-                            {{ event.description|raw|length > 100 ? event.description|slice(0, 100) ~ '...' : event.description|raw }}
+{#                            {{ event.description|striptags|length > 100 ? event.description|raw|striptags|slice(0, 100) ~ '...' : event.description|striptags }}#}
+                            {% if app.request.locale == 'fr' %}
+                                {{ event.description|striptags|truncate(100, true, "...")|raw }}
+                            {% else %}
+                                {{ event.descriptionEn|striptags|truncate(100, true, "...")|raw }}
+                            {% endif %}
                         </span>
                     </a>
 

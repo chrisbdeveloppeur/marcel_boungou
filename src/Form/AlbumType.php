@@ -7,6 +7,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
+use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -35,13 +36,16 @@ class AlbumType extends AbstractType
                     'class' => 'input'
                 ]
             ])
-            ->add('year', ChoiceType::class,[
+            ->add('year', NumberType::class,[
                 'label' => $this->translator->trans('Year of production'),
                 'required' => false,
-                'choices' => $this->getYears(1951),
+//                'choices' => $this->getYears(1951),
                 //'data' => $this->date,
-                'placeholder' => false,
-                'attr' => []
+//                'placeholder' => 'ex : 1990',
+                'attr' => [
+                    'class' => 'input',
+                    'placeholder' => 'ex : 1990'
+                ]
             ])
             ->add('feat', TextType::class,[
                 'label' => $this->translator->trans('Featuring'),

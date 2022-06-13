@@ -112,8 +112,10 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/yaml" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfonycasts/reset-password-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfonycasts/verify-email-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/twig/extensions" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/twig/extra-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/twig/intl-extra" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/twig/string-extra" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/twig/twig" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/vich/uploader-bundle" />
     </content>

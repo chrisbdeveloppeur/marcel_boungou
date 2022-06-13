@@ -1697,6 +1697,42 @@
         <source>Total number of upcoming events</source>
         <target>Nombre total d'événements à venir</target>
       </trans-unit>
+      <trans-unit id="cS_VrYU" resname="Enter start date and time">
+        <source>Enter start date and time</source>
+        <target>Entrez la date et l'heure de début</target>
+      </trans-unit>
+      <trans-unit id="AYdeuLJ" resname="Enter start date and time at format : dd/MM/YYYY hh:mm">
+        <source>Enter start date and time at format : dd/MM/YYYY hh:mm</source>
+        <target>Entrez la date et l'heure de début au format : dd/MM/YYYY hh:mm</target>
+      </trans-unit>
+      <trans-unit id="erEI9N0" resname="Enter end date and time">
+        <source>Enter end date and time</source>
+        <target>Entrez la date et l'heure de fin</target>
+      </trans-unit>
+      <trans-unit id="YePhIT8" resname="Enter end date and time at format : dd/MM/YYYY hh:mm">
+        <source>Enter end date and time at format : dd/MM/YYYY hh:mm</source>
+        <target>Entrez la date et l'heure de fin au format : dd/MM/YYYY hh:mm</target>
+      </trans-unit>
+      <trans-unit id="NYy9WQm" resname="French description">
+        <source>French description</source>
+        <target>Descriptif français</target>
+      </trans-unit>
+      <trans-unit id="UBpP6Jo" resname="Audio title">
+        <source>Audio title</source>
+        <target>Titre audio</target>
+      </trans-unit>
+      <trans-unit id="l7gwbyU" resname="Registration to Newsletter">
+        <source>Registration to Newsletter</source>
+        <target>Inscription à la newsletter</target>
+      </trans-unit>
+      <trans-unit id="V6XDdxY" resname="Check out all the news about the worshiper of Christ">
+        <source>Check out all the news about the worshiper of Christ</source>
+        <target>Découvrez toutes les actualités sur l'adorateur du Christ</target>
+      </trans-unit>
+      <trans-unit id="AlTJaNG" resname="Total number of news">
+        <source>Total number of news</source>
+        <target>Nombre total de news</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

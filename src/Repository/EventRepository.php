@@ -17,7 +17,7 @@ class EventRepository extends ServiceEntityRepository
     private $today;
     public function __construct(ManagerRegistry $registry)
     {
-        $this->today = new \DateTime('now');
+        $this->today = new \DateTime('today');
         parent::__construct($registry, Event::class);
     }
 

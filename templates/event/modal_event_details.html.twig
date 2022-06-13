@@ -20,9 +20,13 @@
         <span class="is-size-4">{{ event.adresse }}</span>
     </div>
 
-    {% if event.description %}
+    {% if app.request.locale == 'fr' and event.description %}
         <div class="column is-two-thirds margin-auto">
             {{ event.description|raw }}
+        </div>
+    {% elseif event.descriptionEn %}
+        <div class="column is-two-thirds margin-auto">
+            {{ event.descriptionEn|raw }}
         </div>
     {% endif %}
 

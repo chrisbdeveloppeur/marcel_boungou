@@ -7,8 +7,8 @@
 
     <div class="navbar-brand">
 
-        <a href="{{ path('home_index') }}" class="navbar-item is-expanded is-justify-content-center">
-            Logo
+        <a href="{{ path('home_index') }}" class="navbar-item is-expanded is-justify-content-center has-text-white">
+            www.marcel-boungou.com
         </a>
 
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
@@ -24,7 +24,7 @@
 
             <div class="box-shadow-bulma navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
 
-                <a {% if home %}href="#news" {% else %}href="{{ path('home_index') }}#news"{% endif %} class="navbar-item is-size-5-touch">
+                <a {% if home %}href="#news"{% endif %} class="navbar-item is-size-5-touch">
                     {% trans %}News{% endtrans %}
                 </a>
 
@@ -34,8 +34,8 @@
                         {% trans %}All News{% endtrans %}
                     </a>
 
-                    <a class="navbar-item is-size-5-touch" {% if home %}href="#subscribeForm" {% else %}href="{{ path('home_index') }}#subscribeForm"{% endif %}>
-                        {% trans %}Subscribe{% endtrans %}
+                    <a class="navbar-item is-size-5-touch" href="{{ path('home_index') }}#subscribeForm">
+                        {{ 'Registration to Newsletter'|trans }}
                     </a>
 
                 </div>
@@ -45,7 +45,7 @@
 
             <div class="box-shadow-bulma navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
 
-                <a {% if home %}href="#events" {% else %}href="{{ path('home_index') }}#events"{% endif %} class="navbar-item is-size-5-touch">
+                <a {% if home %}href="#events"{% endif %} class="navbar-item is-size-5-touch">
                     {% trans %}Events{% endtrans %}
                 </a>
 
@@ -60,7 +60,7 @@
 
             <div class="box-shadow-bulma navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
 
-                <a {% if home %}href="#mediatheque" {% else %}href="{{ path('home_index') }}#mediatheque"{% endif %} class="navbar-item is-size-5-touch">
+                <a {% if home %}href="#mediatheque"{% endif %} class="navbar-item is-size-5-touch">
                     {% trans %}Media{% endtrans %}
                 </a>
 
@@ -84,7 +84,7 @@
 
             <div class="box-shadow-bulma navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
 
-                <a {% if home %}href="#mbMinistry" {% else %}href="{{ path('home_index') }}#mbMinistry"{% endif %} class="navbar-item is-size-5-touch">
+                <a {% if home %}href="#mbMinistry"{% endif %} class="navbar-item is-size-5-touch">
                     {% trans %}MB Ministry{% endtrans %}
                 </a>
 
