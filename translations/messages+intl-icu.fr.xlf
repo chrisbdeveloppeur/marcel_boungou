@@ -1733,6 +1733,10 @@
         <source>Total number of news</source>
         <target>Nombre total de news</target>
       </trans-unit>
+      <trans-unit id="Z0rEsL1" resname="en_US">
+        <source>en_US</source>
+        <target>fr_FR</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -80,6 +80,10 @@
     {{ include('includes/footer.html.twig') }}
 {% endblock %}
 
+{# SCRIPT FACEBOOK EMBED #}
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/{{ 'en_US'|trans }}/sdk.js#xfbml=1&version=v14.0" nonce="dOeYCWHL"></script>
+
 {# BULMA CALENDAR #}
 <script src="https://cdn.jsdelivr.net/npm/bulma-calendar@6.1.14/dist/js/bulma-calendar.min.js"></script>
 {# BULMA CAROUSEL #}
