@@ -19,10 +19,10 @@
             <div class="column is-flex is-align-items-center is-flex-direction-column">
                 <p class="is-size-5 has-text-centered has-text-weight-bold">{{ 'MB Ministry'|trans|capitalize }}</p>
                 <ul>
-                    <li><a {% if home %}href="#biography" {% else %}href="{{ path('home_index') }}#biography"{% endif %}>{{ 'biography'|trans|capitalize }}</a></li>
-                    <li><a {% if home %}href="#partners" {% else %}href="{{ path('home_index') }}#partners"{% endif %}>{{ 'partners'|trans|capitalize }}</a></li>
-                    <li><a {% if home %}href="#contact" {% else %}href="{{ path('home_index') }}#contact"{% endif %}>{{ 'contact'|trans|capitalize }}</a></li>
-                    <li><a {% if home %}href="#donation" {% else %}href="{{ path('home_index') }}#donation"{% endif %}>{{ 'donation'|trans|capitalize }}</a></li>
+                    <li><a {% if home %}href="javascript:;" onclick="scrollSmoothTo('mbMinistry')" {% else %}href="{{ path('home_index') }}#mbMinistry"{% endif %}>{{ 'biography'|trans|capitalize }}</a></li>
+                    <li><a {% if home %}href="javascript:;" onclick="scrollSmoothTo('partners')" {% else %}href="{{ path('home_index') }}#partners"{% endif %}>{{ 'partners'|trans|capitalize }}</a></li>
+                    <li><a {% if home %}href="javascript:;" onclick="scrollSmoothTo('contact')"{% else %}href="{{ path('home_index') }}#contact"{% endif %}>{{ 'contact'|trans|capitalize }}</a></li>
+                    <li><a {% if home %}href="javascript:;" onclick="scrollSmoothTo('donation')" {% else %}href="{{ path('home_index') }}#donation"{% endif %}>{{ 'donation'|trans|capitalize }}</a></li>
                 </ul>
             </div>
             <div class="column is-flex is-align-items-center is-flex-direction-column">

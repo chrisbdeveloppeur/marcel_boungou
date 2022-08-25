@@ -24,7 +24,7 @@
 
             <div class="box-shadow-bulma navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
 
-                <a {% if home %}href="#news"{% endif %} class="navbar-item is-size-5-touch">
+                <a {% if home %}href="javascript:;" onclick="scrollSmoothTo('news')"{% endif %} class="navbar-item is-size-5-touch">
                     {% trans %}News{% endtrans %}
                 </a>
 
@@ -45,7 +45,7 @@
 
             <div class="box-shadow-bulma navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
 
-                <a {% if home %}href="#events"{% endif %} class="navbar-item is-size-5-touch">
+                <a {% if home %}href="javascript:;" onclick="scrollSmoothTo('events')"{% endif %} class="navbar-item is-size-5-touch">
                     {% trans %}Events{% endtrans %}
                 </a>
 
@@ -60,7 +60,7 @@
 
             <div class="box-shadow-bulma navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
 
-                <a {% if home %}href="#mediatheque"{% endif %} class="navbar-item is-size-5-touch">
+                <a {% if home %}href="javascript:;" onclick="scrollSmoothTo('mediatheque')"{% endif %} class="navbar-item is-size-5-touch">
                     {% trans %}Media{% endtrans %}
                 </a>
 
@@ -84,7 +84,7 @@
 
             <div class="box-shadow-bulma navbar-item is-size-5-touch has-dropdown is-hoverable navbar-menu-touch">
 
-                <a {% if home %}href="#mbMinistry"{% endif %} class="navbar-item is-size-5-touch">
+                <a {% if home %}href="javascript:;" onclick="scrollSmoothTo('mbMinistry')"{% endif %} class="navbar-item is-size-5-touch">
                     {% trans %}MB Ministry{% endtrans %}
                 </a>
 
@@ -97,19 +97,19 @@
                         </span>
                     </a>
 
-                    <a {% if home %}href="#bio" {% else %}href="{{ path('home_index') }}#bio"{% endif %} class="navbar-item is-size-5-touch">
+                    <a {% if home %}href="javascript:;" onclick="scrollSmoothTo('bio')" {% else %}href="{{ path('home_index') }}#bio"{% endif %} class="navbar-item is-size-5-touch">
                         {% trans %}Biography{% endtrans %}
                     </a>
 
-                    <a {% if home %}href="#partners" {% else %}href="{{ path('home_index') }}#partners"{% endif %} class="navbar-item is-size-5-touch">
+                    <a {% if home %}href="javascript:;" onclick="scrollSmoothTo('partners')" {% else %}href="{{ path('home_index') }}#partners"{% endif %} class="navbar-item is-size-5-touch">
                         {% trans %}Partners{% endtrans %}
                     </a>
 
-                    <a {% if home %}href="#contact" {% else %}href="{{ path('home_index') }}#contact"{% endif %} class="navbar-item is-size-5-touch">
+                    <a {% if home %}href="javascript:;" onclick="scrollSmoothTo('contact')" {% else %}href="{{ path('home_index') }}#contact"{% endif %} class="navbar-item is-size-5-touch">
                         {% trans %}Contact{% endtrans %}
                     </a>
 
-                    <a {% if home %}href="#donation" {% else %}href="{{ path('home_index') }}#donation"{% endif %} class="navbar-item is-size-5-touch">
+                    <a {% if home %}href="javascript:;" onclick="scrollSmoothTo('donation')" {% else %}href="{{ path('home_index') }}#donation"{% endif %} class="navbar-item is-size-5-touch">
                         {% trans %}Donation{% endtrans %}
                     </a>
 
