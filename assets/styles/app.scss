@@ -125,10 +125,10 @@ h1, h2, h3{
 }
 
 .font-quicksand{
-  font-family: $font-quicksand !important;
+  font-family: $font-quicksand;
 }
 .font-josefin-sans{
-  font-family: $font-josefin-sans !important;
+  font-family: $font-josefin-sans;
 }
 .navbar-item{
   font-family: $font-quicksand;
@@ -508,7 +508,7 @@ li{
 }
 
 .scalup-hover:hover{
-  transform: scale(1.03);
+  transform: scale(1.03) !important;
 }
 .scalup-1-1{
   transform: scale(1.1) !important;
