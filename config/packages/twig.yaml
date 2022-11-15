@@ -6,5 +6,6 @@ twig:
     globals:
         locales: '%app.locales%'
         shop_url: '%env(SHOP_URL)%'
+        donation_url: '%env(DONATION_URL)%'
     form_themes:
         - '@FOSCKEditor/Form/ckeditor_widget.html.twig'

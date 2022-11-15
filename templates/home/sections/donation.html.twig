@@ -3,9 +3,25 @@
     <h4 class="is-size-4 has-text-white has-text-centered">{{ 'Make a donation'|trans }}</h4>
     <div class="column my-4 is-flex is-flex-direction-row is-justify-content-center has-background-black margin-auto">
         <div class="rotationX">
-            <a class="icon is-large is-size-1 is-success">
+            <div id="donate-button-container">
+                <div id="donate-button"></div>
+                <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                <script>
+                    PayPal.Donation.Button({
+                        env:'production',
+                        hosted_button_id:'S8QRUE5RHMWP4',
+                        image: {
+                            src:'https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif',
+                            alt:'Bouton de donation paypal',
+                        }
+                    }).render('#donate-button');
+                </script>
+            </div>
+            {#
+            <a href="{{ donation_url }}" class="icon is-large is-size-1 is-success">
                 <i class="fa-brands fa-lg fa-cc-paypal"></i>
             </a>
+            #}
         </div>
     </div>
 </div>
