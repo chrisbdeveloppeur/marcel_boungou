@@ -25,14 +25,26 @@
         {{ include('home/sections/mb_ministry.html.twig') }}
     </div>
 
+{% endblock %}
 
-
-
-
-
-
-
-
-
-
+{% block javascripts %}
+    {{ parent() }}
+{#    <script>#}
+{#        function onSubmit(token) {#}
+{#            console.log(token);#}
+{#            document.getElementsByName("contact").submit();#}
+{#        }#}
+{#    </script>#}
+    {#   GOOGLE RECAPTCHA   #}
+    <script src="https://www.google.com/recaptcha/api.js?render={{ recaptcha_client }}"></script>
+    <script>
+        function onClick(e) {
+            e.preventDefault();
+            grecaptcha.ready(function() {
+                grecaptcha.execute('{{ recaptcha_client }}', {action: 'submit'}).then(function(token) {
+                    // Add your logic to submit to your backend server here.
+                });
+            });
+        }
+    </script>
 {% endblock %}

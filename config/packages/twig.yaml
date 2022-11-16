@@ -7,5 +7,7 @@ twig:
         locales: '%app.locales%'
         shop_url: '%env(SHOP_URL)%'
         donation_url: '%env(DONATION_URL)%'
+        recaptcha_client: '%env(RECAPTCHA_CLIENT_KEY)%'
+        recaptcha_srv: '%env(RECAPTCHA_SERVER_KEY)%'
     form_themes:
         - '@FOSCKEditor/Form/ckeditor_widget.html.twig'

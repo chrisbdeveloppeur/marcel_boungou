@@ -50,6 +50,10 @@ $modal-content-width: auto;
   max-width: 1000px;
 }
 
+.grecaptcha-badge{
+  z-index: 2;
+}
+
 .has-background-success-layer{
   background: $success-layer;
 }
