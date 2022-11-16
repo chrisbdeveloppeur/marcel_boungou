@@ -1737,6 +1737,10 @@
         <source>en_US</source>
         <target>fr_FR</target>
       </trans-unit>
+      <trans-unit id="VpyEzET" resname="Browse the different sections of the site of the pastor and cantor Marcel BOUNGOU">
+        <source>Browse the different sections of the site of the pastor and cantor Marcel BOUNGOU</source>
+        <target>Parcourez les différentes rubriques du site du pasteur et chantre Marcel BOUNGOU</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
