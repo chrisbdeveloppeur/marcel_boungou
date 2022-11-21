@@ -19,8 +19,8 @@ class MailerController
     public function sendMessageContact(Message $message)
     {
         $email = (new TemplatedEmail())
-            ->from('admin@marcel-boungou.com')
-            ->to('admin@marcel-boungou.com')
+            ->from('contact@marcel-boungou.com')
+            ->to('contact@marcel-boungou.com')
             ->subject('Message de '.$message->getSender())
             ->htmlTemplate('emails/message.html.twig', [
                 'message' => $message,
