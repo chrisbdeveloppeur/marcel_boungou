@@ -182,6 +182,9 @@
             "./config/packages/sensio_framework_extra.yaml"
         ]
     },
+    "soundasleep/html2text": {
+        "version": "2.0.0"
+    },
     "spatie/enum": {
         "version": "3.11.1"
     },

@@ -34,6 +34,8 @@ class CalendarController
         }else{
             $description = $event->getDescription();
         }
+        $description = \Soundasleep\Html2Text::convert($description);
+
         $calendar = Calendar::create('www.marcel-boungou.com')
             ->event(Event::create($event->getTitle())
                 ->startsAt($event->getDatetime())

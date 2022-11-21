@@ -77,7 +77,7 @@ class EventReminderCommand extends Command
 
             if ($date == $dateEventMonth || $date == $dateEventWeek || $date == $dateEventDay){
                 $email = (new TemplatedEmail())
-                    ->from('admin@marcelboungou.com')
+                    ->from('contact@marcel-boungou.com')
                     ->subject($event->getTitle())
                     ->htmlTemplate('emails/event_reminder.html.twig')
                     ->context([

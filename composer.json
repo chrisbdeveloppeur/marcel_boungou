@@ -13,6 +13,7 @@
         "knplabs/knp-paginator-bundle": "^5.8",
         "liip/imagine-bundle": "^2.7",
         "sensio/framework-extra-bundle": "^6.2",
+        "soundasleep/html2text": "^2.0",
         "spatie/icalendar-generator": "^2.3",
         "swiftmailer/swiftmailer": "^6.0",
         "symfony/apache-pack": "^1.0",

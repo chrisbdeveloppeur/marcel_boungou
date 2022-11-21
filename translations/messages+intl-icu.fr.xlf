@@ -1741,6 +1741,10 @@
         <source>Browse the different sections of the site of the pastor and cantor Marcel BOUNGOU</source>
         <target>Parcourez les différentes rubriques du site du pasteur et chantre Marcel BOUNGOU</target>
       </trans-unit>
+      <trans-unit id="mPgG1Wx" resname="Thank you for subscribing to the newsletter. A confirmation email has just been sent to the email address indicated.">
+        <source>Thank you for subscribing to the newsletter. A confirmation email has just been sent to the email address indicated.</source>
+        <target>Merci de vous être abonné à la newsletter. Un email de confirmation vient d'être envoyé à l'adresse email indiquée.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -47,7 +47,9 @@ class HomeController extends AbstractController
             if ($form->isValid()){
                 $em->persist($subscriber);
                 $em->flush();
-                $this->addFlash('info', $this->translator->trans('Thank you for subscribing to the newsletter'));
+                $this->addFlash('info', $this->translator->trans('Thank you for subscribing to the newsletter. A confirmation email has just been sent to the email address indicated.'));
+                $message = new Message();
+                $this->mailer->sendMessageConfirmationSubNews($message, $form);
             }else{
                 $errMsg = $form->get('email')->getErrors()->current()->getMessage();
                 $this->addFlash('danger', $this->translator->trans('Operation failed').'<br>'.$errMsg);

@@ -3,8 +3,10 @@
 namespace App\Controller;
 
 use App\Entity\Event;
+use App\Entity\Message;
 use App\Form\EventType;
 use App\Form\RemoveEmailReminderType;
+use App\Mailing\MailerController;
 use App\Repository\EventRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Knp\Component\Pager\PaginatorInterface;
@@ -25,12 +27,14 @@ class EventsController extends AbstractController
     private $calendarController;
     private $translator;
     private $paginator;
+    private $mailer;
 
-    public function __construct(CalendarController $calendarController, TranslatorInterface $translator, PaginatorInterface $paginator)
+    public function __construct(CalendarController $calendarController, TranslatorInterface $translator, PaginatorInterface $paginator, MailerController $mailer)
     {
         $this->calendarController = $calendarController;
         $this->translator = $translator;
         $this->paginator = $paginator;
+        $this->mailer = $mailer;
     }
 
     /**
@@ -62,9 +66,11 @@ class EventsController extends AbstractController
      */
     public function index(EventRepository $eventRepository): Response
     {
-        $events = $eventRepository->findAll();
+        $events = $eventRepository->findNextEvents();
+        $eventsPasted = $eventRepository->findPastedEvents();
         return $this->render('event/index.html.twig', [
             'events' => $events,
+            'events_pasted' => $eventsPasted
         ]);
     }
 
@@ -174,6 +180,8 @@ class EventsController extends AbstractController
                 $event->addMailToRemind($mail);
                 $em->persist($event);
                 $em->flush();
+                $message = new Message();
+                $this->mailer->sendMessageConfirmationSubEvent($message, $mail, $event);
                 $this->addFlash('success', $msg);
             }
             $previousUrl = $request->headers->get('referer');
