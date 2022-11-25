@@ -1745,6 +1745,10 @@
         <source>Thank you for subscribing to the newsletter. A confirmation email has just been sent to the email address indicated.</source>
         <target>Merci de vous être abonné à la newsletter. Un email de confirmation vient d'être envoyé à l'adresse email indiquée.</target>
       </trans-unit>
+      <trans-unit id="sSwhjnW" resname="Your Email...">
+        <source>Your Email...</source>
+        <target>Votre Email...</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

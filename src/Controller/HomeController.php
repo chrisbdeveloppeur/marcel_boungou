@@ -69,7 +69,18 @@ class HomeController extends AbstractController
                 $this->mailer->sendMessageContact($message);
                 $this->addFlash('info', $this->translator->trans('Thank you for your message !'));
             }else{
-                $this->addFlash('danger', $this->translator->trans('Operation failed'));
+                $fields = $contactForm->all();
+                $errorsMsgs = [];
+                foreach ($fields as $field){
+                    if ($field->getErrors()->count()){
+                        $errorsField =  $field->getErrors();
+                        foreach ($errorsField as $errorField){
+                            $errorsMsgs[] = $errorField->getMessage();
+                        }
+                    }
+                }
+//                dd(implode("<br>", $errorsMsgs));
+                $this->addFlash('danger', $this->translator->trans('Operation failed').'<br>'.implode("<br>", $errorsMsgs));
             }
             $url = $this->redirectToRoute('home_index')->getTargetUrl().'#contact';
             return $this->redirect($url);

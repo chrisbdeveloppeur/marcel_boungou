@@ -28,7 +28,7 @@ class ContactType extends AbstractType
                 'label' => false,
                 'attr' => [
                     'class' => 'input has-text-centered is-size-5-mobile',
-                    'placeholder' => $this->translator->trans( 'Your denomination...')
+                    'placeholder' => $this->translator->trans( 'Your Email...')
                 ],
                 'constraints' => [
                     new Regex([
