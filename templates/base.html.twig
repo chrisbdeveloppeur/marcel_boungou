@@ -67,13 +67,13 @@
 </section>
 
 {% block arrow_up %}
-    <div class="arrow_up transition-5ms">
-        <a href="#top" class="is-flex align-items-center justify-content-center">
+    <a href="#top" class="arrow_up transition-5ms">
+        <div class="is-flex align-items-center justify-content-center">
             <span class="icon justify-content-center align-items-center is-size-4 has-text-white">
                 <i class="fas fa-arrow-up"></i>
             </span>
-        </a>
-    </div>
+        </div>
+    </a>
 {% endblock %}
 
 {% block footer %}
@@ -594,6 +594,21 @@
         */
 
     </script>
+
+
+    {#   GOOGLE RECAPTCHA   #}
+    <script src="https://www.google.com/recaptcha/api.js?render={{ recaptcha_client }}"></script>
+    <script>
+        function onClick(e) {
+            e.preventDefault();
+            grecaptcha.ready(function() {
+                grecaptcha.execute('{{ recaptcha_client }}', {action: 'submit'}).then(function(token) {
+                    // Add your logic to submit to your backend server here.
+                });
+            });
+        }
+    </script>
+
 {% endblock %}
 
 

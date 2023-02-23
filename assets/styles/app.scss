@@ -80,6 +80,11 @@ $modal-content-width: auto;
   background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6979166666666667) 3%, rgba(0,0,0,0.6951155462184874) 100%);
 }
 
+// HIDE GOOGLE RECAPTCHA
+.grecaptcha-badge {
+  visibility: hidden;
+  z-index: -999;
+}
 
 .tag.is-active{
   background-color: $success !important;
