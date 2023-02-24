@@ -25,9 +25,7 @@ class MailerController
             ->from('contact@marcel-boungou.com')
             ->to('contact@marcel-boungou.com')
             ->subject('Message de '.$message->getSender())
-            ->htmlTemplate('emails/message.html.twig', [
-                'message' => $message,
-            ])
+            ->htmlTemplate('emails/message.html.twig')
             ->context([
                 'message' => $message,
             ])
@@ -42,19 +40,22 @@ class MailerController
      */
     public function sendMessageConfirmationSubNews(Message $message, FormInterface $form)
     {
-        $email = (new TemplatedEmail())
-            ->from('contact@marcel-boungou.com')
-            ->to($form->get('email')->getData())
-            ->subject('Confirmation d\'abonnement à la newsletter')
-            ->htmlTemplate('emails/confirm_sub_news.html.twig', [
-                'message' => $message,
-            ])
-            ->context([
-                'message' => $message,
-            ])
-        ;
-
-        $this->mailerInterface->send($email);
+        $emailTo = $form->get('email')->getData();
+        if (!filter_var($emailTo, FILTER_VALIDATE_EMAIL) || !$form->isValid()){
+            return false;
+        }else{
+            $email = (new TemplatedEmail())
+                ->from('contact@marcel-boungou.com')
+                ->to($form->get('email')->getData())
+                ->subject('Confirmation d\'abonnement à la newsletter')
+                ->htmlTemplate('emails/confirm_sub_news.html.twig')
+                ->context([
+                    'message' => $message,
+                ])
+            ;
+            $this->mailerInterface->send($email);
+        }
+        return true;
     }
 
     /**
@@ -64,22 +65,23 @@ class MailerController
      */
     public function sendMessageConfirmationSubEvent(Message $message, string $toEmail, Event $event)
     {
-        $email = (new TemplatedEmail())
-            ->from('contact@marcel-boungou.com')
-            ->to($toEmail)
-            ->subject('Confirmation - Rappels évenement '. $event->getTitle())
-            ->htmlTemplate('emails/confirm_sub_event.html.twig', [
-                'message' => $message,
-                'event' => $event,
-                'toEmail' => $toEmail,
-            ])
-            ->context([
-                'message' => $message,
-                'event' => $event,
-                'toEmail' => $toEmail,
-            ])
-        ;
+        if (!filter_var($toEmail, FILTER_VALIDATE_EMAIL)){
+            return false;
+        }else{
+            $email = (new TemplatedEmail())
+                ->from('contact@marcel-boungou.com')
+                ->to($toEmail)
+                ->subject('Confirmation - Rappels évenement '. $event->getTitle())
+                ->htmlTemplate('emails/confirm_sub_event.html.twig')
+                ->context([
+                    'message' => $message,
+                    'event' => $event,
+                    'toEmail' => $toEmail,
+                ])
+            ;
 
-        $this->mailerInterface->send($email);
+            $this->mailerInterface->send($email);
+        }
+        return true;
     }
 }

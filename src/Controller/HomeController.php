@@ -44,12 +44,12 @@ class HomeController extends AbstractController
         $form = $this->createForm(SubscriberType::class, $subscriber);
         $form->handleRequest($request);
         if ($form->isSubmitted()){
-            if ($form->isValid()){
+            $message = new Message();
+            $resultSendMail = $this->mailer->sendMessageConfirmationSubNews($message, $form);
+            if ($form->isValid() && $resultSendMail){
                 $em->persist($subscriber);
                 $em->flush();
                 $this->addFlash('info', $this->translator->trans('Thank you for subscribing to the newsletter. A confirmation email has just been sent to the email address indicated.'));
-                $message = new Message();
-                $this->mailer->sendMessageConfirmationSubNews($message, $form);
             }else{
                 $errMsg = $form->get('email')->getErrors()->current()->getMessage();
                 $this->addFlash('danger', $this->translator->trans('Operation failed').'<br>'.$errMsg);

@@ -3,10 +3,12 @@
 namespace App\Controller;
 
 use App\Command\NewsSenderCommand;
+use App\Entity\Message;
 use App\Entity\News;
 use App\Entity\Subscriber;
 use App\Form\NewsType;
 use App\Form\SubscriberType;
+use App\Mailing\MailerController;
 use App\Repository\NewsRepository;
 use App\Repository\SubscriberRepository;
 use Doctrine\ORM\EntityManagerInterface;
@@ -25,11 +27,13 @@ class NewsController extends AbstractController
 {
     private $translator;
     private $newsSenderCommande;
+    private $mailer;
 
-    public function __construct(TranslatorInterface $translator, NewsSenderCommand $newsSenderCommande)
+    public function __construct(TranslatorInterface $translator, NewsSenderCommand $newsSenderCommande, MailerController $mailer)
     {
         $this->translator = $translator;
         $this->newsSenderCommande = $newsSenderCommande;
+        $this->mailer = $mailer;
     }
 
     /**
@@ -160,7 +164,9 @@ class NewsController extends AbstractController
         $form = $this->createForm(SubscriberType::class, $subscriber);
         $form->handleRequest($request);
         if ($form->isSubmitted()){
-            if ($form->isValid()){
+            $message = new Message();
+            $resultSendMail = $this->mailer->sendMessageConfirmationSubNews($message, $form);
+            if ($form->isValid() && $resultSendMail){
                 $em->persist($subscriber);
                 $em->flush();
                 $this->addFlash('info', $this->translator->trans('Thank you for subscribing to the newsletter'));
