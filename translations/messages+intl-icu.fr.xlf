@@ -1749,6 +1749,10 @@
         <source>Your Email...</source>
         <target>Votre Email...</target>
       </trans-unit>
+      <trans-unit id="zA0L4Ot" resname="please verify you are not a robot">
+        <source>please verify you are not a robot</source>
+        <target>veuillez vérifier que vous n êtes pas un robot</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

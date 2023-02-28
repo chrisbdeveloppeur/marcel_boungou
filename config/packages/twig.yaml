@@ -9,5 +9,7 @@ twig:
         donation_url: '%env(DONATION_URL)%'
         recaptcha_client: '%env(RECAPTCHA_CLIENT_KEY)%'
         recaptcha_srv: '%env(RECAPTCHA_SERVER_KEY)%'
+        recaptcha_client_localhost: '%env(RECAPTCHA_CLIENT_KEY_LOCALHOST)%'
+        recaptcha_srv_localhost: '%env(RECAPTCHA_SERVER_KEY_LOCALHOST)%'
     form_themes:
         - '@FOSCKEditor/Form/ckeditor_widget.html.twig'

@@ -171,8 +171,12 @@ class NewsController extends AbstractController
                 $em->flush();
                 $this->addFlash('info', $this->translator->trans('Thank you for subscribing to the newsletter'));
             }else{
-                $errMsg = $form->get('email')->getErrors()->current()->getMessage();
-                $this->addFlash('danger', $this->translator->trans('Operation failed').'<br>'.$errMsg);
+                $errMsg = null;
+                if ($form->get('email')->getErrors()->current()){
+                    $errMsg = $form->get('email')->getErrors()->current()->getMessage();
+                    $errMsg = '<br>'.$errMsg;
+                }
+                $this->addFlash('danger', $this->translator->trans('Operation failed').$errMsg);
             }
             $url = $this->redirectToRoute('news_all')->getTargetUrl();
             return $this->redirect($url);

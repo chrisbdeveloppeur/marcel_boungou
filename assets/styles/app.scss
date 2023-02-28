@@ -50,10 +50,6 @@ $modal-content-width: auto;
   max-width: 1000px;
 }
 
-.grecaptcha-badge{
-  z-index: 2 !important;
-}
-
 .has-background-success-layer{
   background: $success-layer;
 }
@@ -81,13 +77,20 @@ $modal-content-width: auto;
 }
 
 // HIDE GOOGLE RECAPTCHA
+/*
 .grecaptcha-badge {
   visibility: hidden;
   z-index: -999;
 }
-
+*/
 .tag.is-active{
   background-color: $success !important;
+}
+
+.g-recaptcha{
+  display: flex !important;
+  justify-content: center !important;
+  margin: 5px !important;
 }
 
 .overflow-wrap-break-word{
