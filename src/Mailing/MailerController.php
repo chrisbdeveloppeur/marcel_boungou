@@ -40,8 +40,8 @@ class MailerController
      */
     public function sendMessageConfirmationSubNews(Message $message, FormInterface $form)
     {
-        $emailTo = $form->get('email')->getData();
-        if (!filter_var($emailTo, FILTER_VALIDATE_EMAIL) || !$form->isValid()){
+        $emailValid = $this->checkEmailValidation($form->get('email')->getData());
+        if (!$emailValid || !$form->isValid()){
             return false;
         }else{
             $email = (new TemplatedEmail())
@@ -54,6 +54,22 @@ class MailerController
                 ])
             ;
             $this->mailerInterface->send($email);
+        }
+        return true;
+    }
+
+
+    public function checkEmailValidation($email)
+    {
+        $suffixEmail = explode('@',$email)[1];
+        if
+        (
+            !filter_var($email, FILTER_VALIDATE_EMAIL) ||
+            strtolower($suffixEmail) != $suffixEmail ||
+            substr_count($suffixEmail, '.') > 1
+        )
+        {
+            return false;
         }
         return true;
     }

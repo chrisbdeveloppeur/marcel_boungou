@@ -87,10 +87,8 @@ $modal-content-width: auto;
   background-color: $success !important;
 }
 
-.g-recaptcha{
-  display: flex !important;
-  justify-content: center !important;
-  margin: 5px !important;
+.grecaptcha-badge{
+  visibility: hidden;
 }
 
 .overflow-wrap-break-word{

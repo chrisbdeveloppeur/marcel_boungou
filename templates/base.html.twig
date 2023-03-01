@@ -596,31 +596,25 @@
     </script>
 
 
-    {#   GOOGLE RECAPTCHA   #}
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    {#   GOOGLE RECAPTCHA V3   #}
+    {% set recaptcha_key = '' %}
+    {% if app.environment == 'prod' %}{% set recaptcha_key = recaptcha_client %}{% elseif app.environment == 'dev' %}{% set recaptcha_key = recaptcha_client_localhost %}{% endif %}
+    <script src="https://www.google.com/recaptcha/api.js?render={{ recaptcha_key }}"></script>
     <script>
-        var validationRecaptchat = document.getElementById('submitFormValidationRecaptcha');
-        validationRecaptchat.addEventListener('click',function (e) {
-            let alertMsg = '{{ 'please verify you are not a robot'|trans }}';
-            let response = grecaptcha.getResponse();
-            if (response.length === 0) {
-                e.preventDefault();
-                alert(alertMsg);
-            }
+        let gRecaptchaFormBtn = document.querySelectorAll('.g-recaptcha');
+        gRecaptchaFormBtn.forEach(function (gRecaptcha) {
+           gRecaptcha.addEventListener('click', function (e) {
+               e.preventDefault();
+               grecaptcha.ready(function() {
+                   grecaptcha.execute('{{ recaptcha_key }}', {action: 'submit'}).then(function(token) {
+                       if (null != token){
+                           gRecaptcha.closest('form').submit();
+                       }
+                   });
+               });
+           })
         });
     </script>
-    {#<script src="https://www.google.com/recaptcha/api.js?render={{ recaptcha_client }}"></script>
-    <script>
-        function onClick(e) {
-            e.preventDefault();
-            grecaptcha.ready(function() {
-                grecaptcha.execute('{{ recaptcha_client }}', {action: 'submit'}).then(function(token) {
-                    // Add your logic to submit to your backend server here.
-                });
-            });
-        }
-    </script>
-    #}
 
 {% endblock %}
 
