@@ -66,6 +66,7 @@ class MailerController
         (
             !filter_var($email, FILTER_VALIDATE_EMAIL) ||
             strtolower($suffixEmail) != $suffixEmail ||
+            preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $suffixEmail) ||
             substr_count($suffixEmail, '.') > 1
         )
         {
