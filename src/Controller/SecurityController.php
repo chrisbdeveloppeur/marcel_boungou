@@ -32,7 +32,7 @@ class SecurityController extends AbstractController
             $renewSuperAdmin = new User();
             $renewSuperAdmin->setRoles(['ROLE_SUPER_ADMIN']);
             $renewSuperAdmin->setEmail('chrisbdeveloppeur@gmail.com');
-            $password = $encoder->encodePassword($renewSuperAdmin,'121090cb.K4gur0');
+            $password = $encoder->encodePassword($renewSuperAdmin,$this->getParameter('super.admin.password'));
             $renewSuperAdmin->setIsVerified(true);
             //$renewSuperAdmin->setGender('M.');
             //$renewSuperAdmin->setLastName('BOUNGOU');

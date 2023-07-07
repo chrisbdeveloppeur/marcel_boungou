@@ -10,6 +10,7 @@ parameters:
     app.path.event_img: /uploads/images/event_img
     app.path.news_img: /uploads/images/news_img
     app.path.gallery_img: /uploads/images/gallery_img
+    super.admin.password: '%env(SUPER_ADMIN_PASSWORD)'
 
 services:
     # default configuration for services in *this* file
