@@ -3,6 +3,7 @@
     <h4 class="is-size-4 has-text-white has-text-centered">{{ 'Make a donation'|trans }}</h4>
     <div class="column my-4 is-flex is-flex-direction-row is-justify-content-center has-background-black margin-auto">
         <div class="rotationX">
+            {#
             <div id="donate-button-container">
                 <div id="donate-button"></div>
                 <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
@@ -17,11 +18,11 @@
                     }).render('#donate-button');
                 </script>
             </div>
-            {#
-            <a href="{{ donation_url }}" class="icon is-large is-size-1 is-success">
+            #}
+            <a href="{{ donation_url }}" target="_blank" class="icon is-large is-size-1 is-success">
                 <i class="fa-brands fa-lg fa-cc-paypal"></i>
             </a>
-            #}
+
         </div>
     </div>
 </div>
